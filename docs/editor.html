@@ -59,9 +59,14 @@
 
         <div class="toolbar">
           <button class="button button--primary" id="addStageButton" type="button">Add stage</button>
+          <button class="button" id="copyJsonButton" type="button">Copy JSON</button>
           <button class="button" id="downloadButton" type="button" disabled>Download guide.json</button>
+          <button class="button" id="openIssueButton" type="button">Open GitHub issue</button>
           <button class="button button--quiet" id="resetDraftButton" type="button">Reset draft</button>
         </div>
+        <p id="submissionStatus" class="muted submission-status">
+          Copy the generated JSON, then open a TerraPath GitHub issue to submit the guide for review.
+        </p>
 
         <section class="editor-block">
           <div class="editor-block__header">

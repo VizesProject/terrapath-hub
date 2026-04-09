@@ -24,8 +24,11 @@ const classTagsInput = document.querySelector("#classTagsInput");
 const guideTagsInput = document.querySelector("#guideTagsInput");
 const summaryInput = document.querySelector("#summaryInput");
 const addStageButton = document.querySelector("#addStageButton");
+const copyJsonButton = document.querySelector("#copyJsonButton");
 const resetDraftButton = document.querySelector("#resetDraftButton");
 const downloadButton = document.querySelector("#downloadButton");
+const openIssueButton = document.querySelector("#openIssueButton");
+const submissionStatus = document.querySelector("#submissionStatus");
 const stageList = document.querySelector("#stageList");
 const guidePreview = document.querySelector("#guidePreview");
 const jsonPreview = document.querySelector("#jsonPreview");
@@ -413,6 +416,57 @@ function downloadJson() {
   URL.revokeObjectURL(url);
 }
 
+async function copyJson() {
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(latestJson);
+      submissionStatus.textContent = "guide.json copied. Open a GitHub issue and paste the JSON into the submission form.";
+      return;
+    }
+  } catch {
+    // Fallback below.
+  }
+
+  const selection = window.getSelection();
+  const range = document.createRange();
+  range.selectNodeContents(jsonPreview);
+  selection.removeAllRanges();
+  selection.addRange(range);
+  submissionStatus.textContent = "Clipboard access was blocked. The JSON preview was selected for manual copy.";
+}
+
+function detectRepositoryUrl() {
+  const { hostname, pathname } = window.location;
+
+  if (hostname.endsWith(".github.io")) {
+    const owner = hostname.slice(0, hostname.indexOf(".github.io"));
+    const repo = pathname.split("/").filter(Boolean)[0];
+    if (owner && repo) {
+      return `https://github.com/${owner}/${repo}`;
+    }
+  }
+
+  if (hostname === "github.com") {
+    const [owner, repo] = pathname.split("/").filter(Boolean);
+    if (owner && repo) {
+      return `https://github.com/${owner}/${repo}`;
+    }
+  }
+
+  return null;
+}
+
+function openIssuePage() {
+  const repositoryUrl = detectRepositoryUrl();
+  if (!repositoryUrl) {
+    submissionStatus.textContent = "Repository URL was not detected here. Open your TerraPath GitHub repository and create a new guide submission issue manually.";
+    return;
+  }
+
+  window.open(`${repositoryUrl}/issues/new`, "_blank", "noopener");
+  submissionStatus.textContent = "GitHub issues opened in a new tab. Choose the guide submission form and paste the copied JSON.";
+}
+
 function renderBossRows(stage, stageIndex) {
   if (!stage.bossRefs.length) {
     return `<p class="empty-state">No boss references yet.</p>`;
@@ -761,6 +815,8 @@ function init() {
     renderStages();
     updateOutput();
   });
+  copyJsonButton.addEventListener("click", copyJson);
+  openIssueButton.addEventListener("click", openIssuePage);
   resetDraftButton.addEventListener("click", resetDraft);
   downloadButton.addEventListener("click", downloadJson);
   updateOutput();

@@ -36,6 +36,7 @@ def build_index() -> dict:
             "classTags": guide["classTags"],
             "guideTags": guide.get("guideTags", []),
             "updatedAt": guide["updatedAt"],
+            "stageCount": len(guide.get("stages", [])),
             "path": path.relative_to(ROOT).as_posix(),
             "popularity": int(popularity.get(guide["id"], 0))
         })
