@@ -3,55 +3,57 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Browse Guides - TerraPath</title>
+    <title data-i18n="browse.title">Browse Guides - TerraPath</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
     <script src="assets/browse.js" defer></script>
   </head>
   <body>
     <nav class="nav nav--compact">
       <a class="brand" href="index.html">TerraPath</a>
       <div class="nav__links">
-        <a href="browse.html">Browse</a>
-        <a href="editor.html">Builder</a>
+        <a data-i18n="common.navBrowse" href="browse.html">Browse</a>
+        <a data-i18n="common.navBuilder" href="editor.html">Builder</a>
       </div>
+      <div class="nav__tools" data-language-toggle></div>
     </nav>
     <main class="workspace">
       <section class="panel">
-        <p class="eyebrow">Catalog preview</p>
-        <h1>Browse Guides</h1>
+        <p data-i18n="browse.eyebrow" class="eyebrow">Catalog preview</p>
+        <h1 data-i18n="browse.heading">Browse Guides</h1>
         <section class="field-grid browse-filters">
           <label class="field field--wide">
-            <span>Search</span>
-            <input id="searchInput" type="search" placeholder="Search by title, class, mod, language">
+            <span data-i18n="browse.searchLabel">Search</span>
+            <input id="searchInput" type="search" data-i18n-placeholder="browse.searchPlaceholder" placeholder="Search by title, class, mod, language">
           </label>
           <label class="field">
-            <span>Language</span>
+            <span data-i18n="browse.languageLabel">Language</span>
             <select id="languageFilter">
-              <option value="">All languages</option>
+              <option data-i18n="browse.allLanguages" value="">All languages</option>
             </select>
           </label>
           <label class="field">
-            <span>Class</span>
+            <span data-i18n="browse.classLabel">Class</span>
             <select id="classFilter">
-              <option value="">All classes</option>
+              <option data-i18n="browse.allClasses" value="">All classes</option>
             </select>
           </label>
           <label class="field">
-            <span>Required mod</span>
+            <span data-i18n="browse.modLabel">Required mod</span>
             <select id="modFilter">
-              <option value="">All mods</option>
+              <option data-i18n="browse.allMods" value="">All mods</option>
             </select>
           </label>
           <label class="field">
-            <span>Sort</span>
+            <span data-i18n="browse.sortLabel">Sort</span>
             <select id="sortFilter">
-              <option value="popularity">Popularity</option>
-              <option value="updated">Recently updated</option>
-              <option value="title">Title</option>
+              <option data-i18n="browse.sortPopularity" value="popularity">Popularity</option>
+              <option data-i18n="browse.sortUpdated" value="updated">Recently updated</option>
+              <option data-i18n="browse.sortTitle" value="title">Title</option>
             </select>
           </label>
         </section>
-        <p id="guideCountSummary" class="muted browse-summary">Loading guide count...</p>
+        <p id="guideCountSummary" data-i18n="browse.loadingGuideCount" class="muted browse-summary">Loading guide count...</p>
         <div id="guideList" class="guide-list" aria-live="polite"></div>
       </section>
     </main>

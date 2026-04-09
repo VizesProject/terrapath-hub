@@ -2,6 +2,8 @@ const guidePage = document.querySelector("#guidePage");
 const guidePageStatus = document.querySelector("#guidePageStatus");
 const rawGuideLink = document.querySelector("#rawGuideLink");
 const backToBrowse = document.querySelector("#backToBrowse");
+const site = window.terraPathSite;
+const progression = window.terraPathProgression;
 
 const CATEGORY_LABELS = {
   weapon: "Weapons",
@@ -23,6 +25,8 @@ const supportIndex = {
   bossMap: new Map()
 };
 
+let currentGuide = null;
+
 function escapeHtml(value) {
   return String(value || "")
     .replaceAll("&", "&amp;")
@@ -42,7 +46,47 @@ function initials(label) {
 }
 
 function titleCaseCategory(category) {
-  return CATEGORY_LABELS[category] || category;
+  const labels = {
+    en: CATEGORY_LABELS,
+    ru: {
+      weapon: "Оружие",
+      armor: "Броня",
+      accessory: "Аксессуары",
+      ammo: "Боеприпасы",
+      tool: "Инструменты",
+      mount: "Маунты",
+      pet: "Питомцы",
+      buff: "Баффы",
+      material: "Материалы",
+      ore: "Руды",
+      furniture: "Мебель",
+      other: "Другое"
+    }
+  };
+  const language = site?.getLanguage?.() === "ru" ? "ru" : "en";
+  return labels[language]?.[category] || CATEGORY_LABELS[category] || category;
+}
+
+function t(key, variables = {}) {
+  return site?.t?.(key, variables) ?? key;
+}
+
+function guideLanguageLabel(code) {
+  return site?.getGuideLanguageLabel?.(code) ?? code;
+}
+
+function classLabel(tag) {
+  const labels = {
+    melee: { en: "Melee", ru: "Воин" },
+    ranged: { en: "Ranged", ru: "Стрелок" },
+    magic: { en: "Magic", ru: "Маг" },
+    summoner: { en: "Summoner", ru: "Призыватель" },
+    rogue: { en: "Rogue", ru: "Разбойник" },
+    bard: { en: "Bard", ru: "Бард" },
+    other: { en: "Other", ru: "Другое" }
+  };
+  const language = site?.getLanguage?.() === "ru" ? "ru" : "en";
+  return labels[tag]?.[language] || tag;
 }
 
 function params() {
@@ -132,7 +176,7 @@ function renderItemGroups(items) {
   }
 
   if (!groups.size) {
-    return `<p class="empty-state">No item picks listed for this stage.</p>`;
+    return `<p class="empty-state">${escapeHtml(t("guide.noItems"))}</p>`;
   }
 
   return Array.from(groups.entries())
@@ -163,12 +207,42 @@ function renderItemGroups(items) {
     .join("");
 }
 
+function renderProgressionMarkers(stage) {
+  const markerIds = stage.progressionMarkers || [];
+  if (!markerIds.length) {
+    return "";
+  }
+
+  return `
+    <section class="preview-block">
+      <h4>${escapeHtml(t("common.labelMarkers"))}</h4>
+      <div class="marker-preview-grid">
+        ${markerIds.map((markerId) => {
+          const marker = progression?.getMarker?.(markerId);
+          if (!marker) {
+            return "";
+          }
+          return `
+            <article class="marker-preview-card">
+              <img class="content-icon" src="${escapeHtml(marker.icon)}" alt="${escapeHtml(progression.markerTitle(markerId, site?.getLanguage?.() || "en"))}" loading="lazy">
+              <div>
+                <strong>${escapeHtml(progression.markerTitle(markerId, site?.getLanguage?.() || "en"))}</strong>
+                <p>${escapeHtml(progression.markerDescription(markerId, site?.getLanguage?.() || "en"))}</p>
+              </div>
+            </article>
+          `;
+        }).join("")}
+      </div>
+    </section>
+  `;
+}
+
 function renderGuide(guide) {
   const metaPills = [
-    `Class: ${(guide.classTags || []).join(", ")}`,
-    `Language: ${guide.language}`,
-    `Mods: ${(guide.requiredMods || []).join(", ")}`,
-    `${(guide.stages || []).length} stages`
+    `${t("common.labelClass")}: ${(guide.classTags || []).map(classLabel).join(", ")}`,
+    `${t("common.labelLanguage")}: ${guideLanguageLabel(guide.language)}`,
+    `${t("common.labelMods")}: ${(guide.requiredMods || []).join(", ")}`,
+    `${(guide.stages || []).length} ${t("common.labelStages").toLowerCase()}`
   ];
 
   guidePage.innerHTML = `
@@ -184,12 +258,16 @@ function renderGuide(guide) {
         <article class="stage-preview">
           <div class="stage-preview__header">
             <h3>${escapeHtml(stage.title)}</h3>
-            <span class="meta-pill">${(stage.items || []).length} item picks</span>
+            <span class="meta-pill">${escapeHtml(t("guide.itemPicks", { count: (stage.items || []).length }))}</span>
+          </div>
+          <div class="chip-row">
+            <span class="meta-pill">${escapeHtml(t("common.labelEra"))}: ${escapeHtml(progression?.eraLabel?.(stage.era || "prehardmode", site?.getLanguage?.() || "en") || stage.era || "")}</span>
           </div>
           ${stage.description ? `<p>${escapeHtml(stage.description)}</p>` : ""}
+          ${renderProgressionMarkers(stage)}
           ${stage.bossRefs?.length ? `
             <section class="preview-block">
-              <h4>Bosses</h4>
+              <h4>${escapeHtml(t("common.labelBosses"))}</h4>
               <div class="chip-row">
                 ${stage.bossRefs.map((bossRef) => chip(bossRef, supportIndex.bossMap)).join("")}
               </div>
@@ -197,7 +275,7 @@ function renderGuide(guide) {
           ` : ""}
           ${stage.goals?.length ? `
             <section class="preview-block">
-              <h4>Goals</h4>
+              <h4>${escapeHtml(t("common.labelGoals"))}</h4>
               <ul class="line-list">
                 ${stage.goals.map((goal) => `<li>${escapeHtml(goal)}</li>`).join("")}
               </ul>
@@ -206,7 +284,7 @@ function renderGuide(guide) {
           ${renderItemGroups(stage.items)}
           ${stage.notes?.length ? `
             <section class="preview-block">
-              <h4>Notes</h4>
+              <h4>${escapeHtml(t("common.labelNotes"))}</h4>
               <ul class="line-list">
                 ${stage.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}
               </ul>
@@ -224,7 +302,7 @@ async function init() {
   const catalogEntry = (catalog.guides || []).find((guide) => guide.id === id) || catalog.guides?.[0];
 
   if (!catalogEntry) {
-    guidePageStatus.textContent = "No guides are available yet.";
+    guidePageStatus.textContent = t("guide.noGuides");
     rawGuideLink.hidden = true;
     return;
   }
@@ -234,6 +312,7 @@ async function init() {
   }
 
   const guide = await fetchJson(catalogEntry.path);
+  currentGuide = guide;
   rawGuideLink.href = preferredPath(catalogEntry.path);
   backToBrowse.href = id ? `browse.html?selected=${encodeURIComponent(id)}` : "browse.html";
   guidePageStatus.textContent = "";
@@ -244,4 +323,10 @@ init().catch((error) => {
   guidePageStatus.textContent = error.message;
   rawGuideLink.hidden = true;
   console.error(error);
+});
+
+site?.onChange?.(() => {
+  if (currentGuide) {
+    renderGuide(currentGuide);
+  }
 });

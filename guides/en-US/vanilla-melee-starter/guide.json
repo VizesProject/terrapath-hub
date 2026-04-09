@@ -14,6 +14,11 @@
     {
       "id": "first-night",
       "title": "First Night",
+      "era": "prehardmode",
+      "progressionMarkers": [
+        "early-exploration",
+        "pre-eye-of-cthulhu"
+      ],
       "description": "Collect basic mobility, find surface chests, and prepare a safe arena before fighting early bosses.",
       "bossRefs": [],
       "goals": [

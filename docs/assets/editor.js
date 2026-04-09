@@ -1,43 +1,45 @@
 const STORAGE_KEY = "terrapath-editor-draft-v4";
+const site = window.terraPathSite;
+const progression = window.terraPathProgression;
 
 const STEP_DEFINITIONS = [
-  { title: "Basics", description: "Set the title, author, language, and short catalog summary." },
-  { title: "Scope", description: "Pick the supported mods, class tags, and broad guide tags." },
-  { title: "Stages", description: "Build the progression path stage by stage with bosses, items, goals, and notes." },
-  { title: "Review", description: "Check the rendered guide and export the final JSON." }
+  { titleKey: "editor.basicsTitle", descriptionKey: "editor.basicsDesc" },
+  { titleKey: "editor.scopeTitle", descriptionKey: "editor.scopeDesc" },
+  { titleKey: "editor.stagesTitle", descriptionKey: "editor.stagesDesc" },
+  { titleKey: "editor.reviewTitle", descriptionKey: "editor.reviewDesc" }
 ];
 
 const LANGUAGE_OPTIONS = [
-  { value: "en-US", label: "English (US)" },
-  { value: "ru-RU", label: "Russian" }
+  { value: "en-US", labelKey: "common.languageEnglishUs" },
+  { value: "ru-RU", labelKey: "common.languageRussian" }
 ];
 
 const SUPPORTED_MOD_OPTIONS = [
-  { value: "Terraria", label: "Terraria", description: "Vanilla progression and curated content are ready now." },
-  { value: "CalamityMod", label: "Calamity Mod", description: "Metadata support is ready. Curated pickers come next." },
-  { value: "ThoriumMod", label: "Thorium Mod", description: "Metadata support is ready. Curated pickers come next." }
+  { value: "Terraria", label: "Terraria", description: { en: "Vanilla progression and curated content are ready now.", ru: "Vanilla-прогрессия и curated-контент уже готовы." } },
+  { value: "CalamityMod", label: "Calamity Mod", description: { en: "Metadata support is ready. Curated pickers come next.", ru: "Метаданные уже поддерживаются. Curated-подборки предметов будут добавлены позже." } },
+  { value: "ThoriumMod", label: "Thorium Mod", description: { en: "Metadata support is ready. Curated pickers come next.", ru: "Метаданные уже поддерживаются. Curated-подборки предметов будут добавлены позже." } }
 ];
 
 const CLASS_TAG_OPTIONS = [
-  { value: "melee", label: "Melee" },
-  { value: "ranged", label: "Ranged" },
-  { value: "magic", label: "Magic" },
-  { value: "summoner", label: "Summoner" },
-  { value: "rogue", label: "Rogue" },
-  { value: "bard", label: "Bard" },
-  { value: "other", label: "Other" }
+  { value: "melee", label: { en: "Melee", ru: "Воин" } },
+  { value: "ranged", label: { en: "Ranged", ru: "Стрелок" } },
+  { value: "magic", label: { en: "Magic", ru: "Маг" } },
+  { value: "summoner", label: { en: "Summoner", ru: "Призыватель" } },
+  { value: "rogue", label: { en: "Rogue", ru: "Разбойник" } },
+  { value: "bard", label: { en: "Bard", ru: "Бард" } },
+  { value: "other", label: { en: "Other", ru: "Другое" } }
 ];
 
 const GUIDE_TAG_OPTIONS = [
-  { value: "starter", label: "Starter" },
-  { value: "prehardmode", label: "Pre-Hardmode" },
-  { value: "hardmode", label: "Hardmode" },
-  { value: "bossing", label: "Bossing" },
-  { value: "progression", label: "Progression" },
-  { value: "vanilla", label: "Vanilla" },
-  { value: "calamity", label: "Calamity" },
-  { value: "thorium", label: "Thorium" },
-  { value: "draft", label: "Draft" }
+  { value: "starter", label: { en: "Starter", ru: "Старт" } },
+  { value: "prehardmode", label: { en: "Pre-Hardmode", ru: "До хардмода" } },
+  { value: "hardmode", label: { en: "Hardmode", ru: "Хардмод" } },
+  { value: "bossing", label: { en: "Bossing", ru: "Боссы" } },
+  { value: "progression", label: { en: "Progression", ru: "Прогрессия" } },
+  { value: "vanilla", label: { en: "Vanilla", ru: "Ванилла" } },
+  { value: "calamity", label: { en: "Calamity", ru: "Calamity" } },
+  { value: "thorium", label: { en: "Thorium", ru: "Thorium" } },
+  { value: "draft", label: { en: "Draft", ru: "Черновик" } }
 ];
 
 const CATEGORY_LABELS = {
@@ -103,6 +105,25 @@ let supportIndex = {
 
 let state = loadDraft() || createDefaultState();
 
+function uiLanguage() {
+  return site?.getLanguage?.() === "ru" ? "ru" : "en";
+}
+
+function t(key, variables = {}) {
+  return site?.t?.(key, variables) ?? key;
+}
+
+function localized(value) {
+  if (value && typeof value === "object" && !Array.isArray(value)) {
+    return value[uiLanguage()] ?? value.en ?? "";
+  }
+  return String(value || "");
+}
+
+function guideLanguageLabel(code) {
+  return site?.getGuideLanguageLabel?.(code) ?? code;
+}
+
 function createDefaultState() {
   return {
     createdAt: today(),
@@ -116,6 +137,8 @@ function createDefaultState() {
     stages: [
       createStage({
         title: "First Night",
+        era: "prehardmode",
+        progressionMarkers: ["early-exploration", "pre-eye-of-cthulhu"],
         description: "Collect movement accessories, build a simple arena, and prepare a reliable early melee option.",
         goalsText: "Find a mobility accessory\nPrepare a simple wooden arena\nCraft or loot a stronger melee option",
         notesText: "This is still an example draft.",
@@ -142,6 +165,8 @@ function createDefaultState() {
 function createStage(seed = {}) {
   return {
     title: seed.title || "New Stage",
+    era: seed.era || "prehardmode",
+    progressionMarkers: Array.isArray(seed.progressionMarkers) ? [...seed.progressionMarkers] : [],
     description: seed.description || "",
     goalsText: seed.goalsText || "",
     notesText: seed.notesText || "",
@@ -199,7 +224,24 @@ function escapeHtml(value) {
 }
 
 function titleCaseCategory(category) {
-  return CATEGORY_LABELS[category] || category;
+  const labels = {
+    en: CATEGORY_LABELS,
+    ru: {
+      weapon: "Оружие",
+      armor: "Броня",
+      accessory: "Аксессуары",
+      ammo: "Боеприпасы",
+      tool: "Инструменты",
+      mount: "Маунты",
+      pet: "Питомцы",
+      buff: "Баффы",
+      material: "Материалы",
+      ore: "Руды",
+      furniture: "Мебель",
+      other: "Другое"
+    }
+  };
+  return labels[uiLanguage()]?.[category] || CATEGORY_LABELS[category] || category;
 }
 
 function initials(label) {
@@ -277,11 +319,15 @@ function buildGuide() {
         return output;
       });
 
-    const output = { id: stageId, title, items };
+    const output = { id: stageId, title, era: stage.era || "prehardmode", items };
     const bossRefs = uniqueValues(stage.bossRefs.map((value) => value.trim()).filter(Boolean));
+    const progressionMarkers = uniqueValues((stage.progressionMarkers || []).filter(Boolean));
     const goals = splitLines(stage.goalsText);
     const notes = splitLines(stage.notesText);
 
+    if (progressionMarkers.length) {
+      output.progressionMarkers = progressionMarkers;
+    }
     if (stage.description.trim()) {
       output.description = stage.description.trim();
     }
@@ -366,15 +412,15 @@ function renderWizardSteps() {
   wizardSteps.innerHTML = STEP_DEFINITIONS.map((step, index) => {
     const isCurrent = index === currentStep;
     const isComplete = completionForStep(index);
-    const stateLabel = isCurrent ? "Current" : isComplete ? "Ready" : "Pending";
+    const stateLabel = isCurrent ? t("editor.current") : isComplete ? t("editor.ready") : t("editor.pending");
 
     return `
       <li class="wizard-step ${isCurrent ? "wizard-step--current" : ""} ${isComplete ? "wizard-step--complete" : ""}">
         <button class="wizard-step__button" type="button" data-step-target="${index}">
           <span class="wizard-step__count">${index + 1}</span>
           <span class="wizard-step__body">
-            <strong>${escapeHtml(step.title)}</strong>
-            <span>${escapeHtml(step.description)}</span>
+            <strong>${escapeHtml(t(step.titleKey))}</strong>
+            <span>${escapeHtml(t(step.descriptionKey))}</span>
           </span>
           <span class="wizard-step__state">${stateLabel}</span>
         </button>
@@ -388,29 +434,31 @@ function renderSnapshot() {
   const itemCount = state.stages.reduce((count, stage) => count + stage.items.filter((item) => item.itemId).length, 0);
 
   guideSnapshot.innerHTML = `
-    <article class="snapshot-metric"><span class="snapshot-metric__label">Title</span><strong>${escapeHtml(state.title || "Untitled guide")}</strong></article>
-    <article class="snapshot-metric"><span class="snapshot-metric__label">Author</span><strong>${escapeHtml(state.author || "Unknown author")}</strong></article>
-    <article class="snapshot-metric"><span class="snapshot-metric__label">Language</span><strong>${escapeHtml(state.language || "en-US")}</strong></article>
-    <article class="snapshot-metric"><span class="snapshot-metric__label">Stages</span><strong>${stageCount}</strong></article>
-    <article class="snapshot-metric"><span class="snapshot-metric__label">Item picks</span><strong>${itemCount}</strong></article>
-    <article class="snapshot-metric"><span class="snapshot-metric__label">Classes</span><strong>${escapeHtml(state.classTags.join(", ") || "other")}</strong></article>
+    <article class="snapshot-metric"><span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotTitle"))}</span><strong>${escapeHtml(state.title || "Untitled guide")}</strong></article>
+    <article class="snapshot-metric"><span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotAuthor"))}</span><strong>${escapeHtml(state.author || "Unknown author")}</strong></article>
+    <article class="snapshot-metric"><span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotLanguage"))}</span><strong>${escapeHtml(guideLanguageLabel(state.language || "en-US"))}</strong></article>
+    <article class="snapshot-metric"><span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotStages"))}</span><strong>${stageCount}</strong></article>
+    <article class="snapshot-metric"><span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotItems"))}</span><strong>${itemCount}</strong></article>
+    <article class="snapshot-metric"><span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotClasses"))}</span><strong>${escapeHtml((state.classTags.map((tag) => localized(CLASS_TAG_OPTIONS.find((option) => option.value === tag)?.label || tag))).join(", ") || "other")}</strong></article>
   `;
 }
 
 function renderLanguageOptions() {
   languageSelect.innerHTML = LANGUAGE_OPTIONS.map((option) => `
-    <option value="${option.value}">${escapeHtml(option.label)}</option>
+    <option value="${option.value}">${escapeHtml(t(option.labelKey))}</option>
   `).join("");
 }
 
 function buildChoiceMarkup(option, groupName, selectedValues) {
   const checked = selectedValues.includes(option.value) ? "checked" : "";
+  const title = option.labelKey ? t(option.labelKey) : localized(option.label ?? option.value);
+  const description = localized(option.description || "");
   return `
     <label class="choice-card">
       <input type="checkbox" data-choice-group="${groupName}" value="${escapeHtml(option.value)}" ${checked}>
       <span class="choice-card__copy">
-        <span class="choice-card__title">${escapeHtml(option.label)}</span>
-        <span class="choice-card__description">${escapeHtml(option.description || "")}</span>
+        <span class="choice-card__title">${escapeHtml(title)}</span>
+        <span class="choice-card__description">${escapeHtml(description)}</span>
       </span>
     </label>
   `;
@@ -465,22 +513,83 @@ function buildSelectOptions(entries, selectedValue, placeholderLabel) {
   return markup;
 }
 
+function eraOptionsMarkup(selectedEra) {
+  return (progression?.eras || []).map((era) => `
+    <option value="${era.id}" ${era.id === selectedEra ? "selected" : ""}>${escapeHtml(progression.eraLabel(era.id, uiLanguage()))}</option>
+  `).join("");
+}
+
+function renderProgressionMarkerSelector(stage, stageIndex) {
+  const eraMarkers = progression?.markersForEra?.(stage.era || "prehardmode") || [];
+  if (!eraMarkers.length) {
+    return `<p class="empty-state">No detailed markers are available for this era yet.</p>`;
+  }
+
+  return `
+    <div class="marker-grid">
+      ${eraMarkers.map((marker) => {
+        const selected = (stage.progressionMarkers || []).includes(marker.id);
+        return `
+          <button class="marker-card ${selected ? "marker-card--selected" : ""}" type="button" data-action="toggle-marker" data-stage-index="${stageIndex}" data-marker-id="${marker.id}">
+            <span class="marker-card__media"><img class="content-icon" src="${escapeHtml(marker.icon)}" alt="${escapeHtml(progression.markerTitle(marker.id, uiLanguage()))}" loading="lazy"></span>
+            <span class="marker-card__body">
+              <strong>${escapeHtml(progression.markerTitle(marker.id, uiLanguage()))}</strong>
+              <span>${escapeHtml(progression.markerDescription(marker.id, uiLanguage()))}</span>
+            </span>
+          </button>
+        `;
+      }).join("")}
+    </div>
+  `;
+}
+
+function renderSelectedMarkers(stage) {
+  const markerIds = stage.progressionMarkers || [];
+  if (!markerIds.length) {
+    return "";
+  }
+
+  return `
+    <section class="preview-block">
+      <h4>${escapeHtml(t("common.labelMarkers"))}</h4>
+      <div class="marker-preview-grid">
+        ${markerIds.map((markerId) => {
+          const marker = progression?.getMarker?.(markerId);
+          if (!marker) {
+            return "";
+          }
+          return `
+            <article class="marker-preview-card">
+              <img class="content-icon" src="${escapeHtml(marker.icon)}" alt="${escapeHtml(progression.markerTitle(markerId, uiLanguage()))}" loading="lazy">
+              <div>
+                <strong>${escapeHtml(progression.markerTitle(markerId, uiLanguage()))}</strong>
+                <p>${escapeHtml(progression.markerDescription(markerId, uiLanguage()))}</p>
+              </div>
+            </article>
+          `;
+        }).join("")}
+      </div>
+    </section>
+  `;
+}
+
 function renderStageNav() {
   stageNav.innerHTML = state.stages.map((stage, index) => {
     const selected = index === selectedStageIndex;
     const stageItemCount = stage.items.filter((item) => item.itemId).length;
+    const eraLabel = progression?.eraLabel?.(stage.era || "prehardmode", uiLanguage()) || stage.era || "";
 
     return `
       <article class="stage-tab ${selected ? "stage-tab--selected" : ""}">
         <button class="stage-tab__select" type="button" data-action="select-stage" data-stage-index="${index}">
-          <span class="stage-tab__index">Stage ${index + 1}</span>
+          <span class="stage-tab__index">${escapeHtml(t("editor.stageCounter", { index: index + 1 }))}</span>
           <strong>${escapeHtml(stage.title || `Stage ${index + 1}`)}</strong>
-          <span>${stageItemCount} item picks</span>
+          <span>${escapeHtml(eraLabel)} • ${escapeHtml(t("editor.stageItemPicks", { count: stageItemCount }))}</span>
         </button>
         <div class="stage-tab__actions">
-          <button class="button button--quiet button--tiny" type="button" data-action="move-stage-up" data-stage-index="${index}" ${index === 0 ? "disabled" : ""}>Up</button>
-          <button class="button button--quiet button--tiny" type="button" data-action="move-stage-down" data-stage-index="${index}" ${index === state.stages.length - 1 ? "disabled" : ""}>Down</button>
-          <button class="button button--quiet button--tiny" type="button" data-action="remove-stage" data-stage-index="${index}" ${state.stages.length === 1 ? "disabled" : ""}>Delete</button>
+          <button class="button button--quiet button--tiny" type="button" title="Move stage up" data-action="move-stage-up" data-stage-index="${index}" ${index === 0 ? "disabled" : ""}>↑</button>
+          <button class="button button--quiet button--tiny" type="button" title="Move stage down" data-action="move-stage-down" data-stage-index="${index}" ${index === state.stages.length - 1 ? "disabled" : ""}>↓</button>
+          <button class="button button--quiet button--tiny" type="button" title="Delete stage" data-action="remove-stage" data-stage-index="${index}" ${state.stages.length === 1 ? "disabled" : ""}>×</button>
         </div>
       </article>
     `;
@@ -489,7 +598,7 @@ function renderStageNav() {
 
 function renderBossEditors(stage, stageIndex) {
   if (!stage.bossRefs.length) {
-    return `<p class="empty-state">No boss milestones yet.</p>`;
+    return `<p class="empty-state">${escapeHtml(t("editor.noBossMilestones"))}</p>`;
   }
 
   return stage.bossRefs.map((bossRef, bossIndex) => {
@@ -502,13 +611,13 @@ function renderBossEditors(stage, stageIndex) {
           <span class="pick-card__media">${iconMarkup(entry, label)}</span>
           <div class="pick-card__copy">
             <label class="field">
-              <span>Boss milestone</span>
+              <span>${escapeHtml(t("editor.bossMilestoneLabel"))}</span>
               <select data-role="boss-id" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">
-                ${buildSelectOptions(supportIndex.bosses, bossRef, "Choose a boss")}
+                ${buildSelectOptions(supportIndex.bosses, bossRef, t("editor.chooseBoss"))}
               </select>
             </label>
           </div>
-          <button class="button button--quiet button--tiny" type="button" data-action="remove-boss" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">Remove</button>
+          <button class="button button--quiet button--tiny" type="button" data-action="remove-boss" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">${escapeHtml(t("editor.remove"))}</button>
         </div>
       </article>
     `;
@@ -517,7 +626,7 @@ function renderBossEditors(stage, stageIndex) {
 
 function renderItemEditors(stage, stageIndex) {
   if (!stage.items.length) {
-    return `<p class="empty-state">No item picks yet.</p>`;
+    return `<p class="empty-state">${escapeHtml(t("editor.noItemPicks"))}</p>`;
   }
 
   return stage.items.map((item, itemIndex) => {
@@ -530,17 +639,17 @@ function renderItemEditors(stage, stageIndex) {
           <span class="pick-card__media">${iconMarkup(entry, label)}</span>
           <div class="pick-card__copy">
             <label class="field">
-              <span>Item</span>
+              <span>${escapeHtml(t("editor.itemLabel"))}</span>
               <select data-role="item-id" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">
-                ${buildSelectOptions(supportIndex.items, item.itemId, "Choose an item")}
+                ${buildSelectOptions(supportIndex.items, item.itemId, t("editor.chooseItem"))}
               </select>
             </label>
           </div>
-          <button class="button button--quiet button--tiny" type="button" data-action="remove-item" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">Remove</button>
+          <button class="button button--quiet button--tiny" type="button" data-action="remove-item" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">${escapeHtml(t("editor.remove"))}</button>
         </div>
         <div class="pick-card__grid">
           <label class="field">
-            <span>Category</span>
+            <span>${escapeHtml(t("editor.categoryLabel"))}</span>
             <select data-role="item-category" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">
               ${CATEGORY_OPTIONS.map((category) => `
                 <option value="${category}" ${category === item.category ? "selected" : ""}>${titleCaseCategory(category)}</option>
@@ -548,13 +657,13 @@ function renderItemEditors(stage, stageIndex) {
             </select>
           </label>
           <label class="field">
-            <span>Priority</span>
+            <span>${escapeHtml(t("editor.priorityLabel"))}</span>
             <input data-role="item-priority" data-stage-index="${stageIndex}" data-item-index="${itemIndex}" type="number" min="0" max="100" value="${Number(item.priority)}">
           </label>
         </div>
         <label class="field">
-          <span>Optional note</span>
-          <textarea data-role="item-note" data-stage-index="${stageIndex}" data-item-index="${itemIndex}" rows="3" placeholder="Why this item matters here.">${escapeHtml(item.note)}</textarea>
+          <span>${escapeHtml(t("editor.itemNoteLabel"))}</span>
+          <textarea data-role="item-note" data-stage-index="${stageIndex}" data-item-index="${itemIndex}" rows="3" placeholder="${escapeHtml(t("editor.itemNotePlaceholder"))}">${escapeHtml(item.note)}</textarea>
         </label>
       </article>
     `;
@@ -565,7 +674,7 @@ function renderStageEditor() {
   const stage = state.stages[selectedStageIndex];
 
   if (!stage) {
-    stageEditor.innerHTML = `<p class="empty-state">No stage selected.</p>`;
+    stageEditor.innerHTML = `<p class="empty-state">${escapeHtml(t("editor.noSelectedStage"))}</p>`;
     return;
   }
 
@@ -573,38 +682,55 @@ function renderStageEditor() {
     <section class="stage-panel">
       <div class="section-copy">
         <h3>${escapeHtml(stage.title || `Stage ${selectedStageIndex + 1}`)}</h3>
-        <p class="muted">Keep stages narrow and actionable. One stage should feel like one chunk of progression.</p>
+        <p class="muted">${escapeHtml(t("editor.stageIntro"))}</p>
       </div>
 
       <div class="form-layout">
         <label class="field">
-          <span>Stage title</span>
+          <span>${escapeHtml(t("editor.stageTitleLabel"))}</span>
           <input data-role="stage-title" data-stage-index="${selectedStageIndex}" value="${escapeHtml(stage.title)}" placeholder="Early gear setup">
         </label>
 
-        <label class="field field--wide">
-          <span>Description</span>
-          <textarea data-role="stage-description" data-stage-index="${selectedStageIndex}" rows="4" placeholder="Explain what this part of progression is about.">${escapeHtml(stage.description)}</textarea>
+        <label class="field">
+          <span>${escapeHtml(t("editor.stageEraLabel"))}</span>
+          <select data-role="stage-era" data-stage-index="${selectedStageIndex}">
+            ${eraOptionsMarkup(stage.era || "prehardmode")}
+          </select>
         </label>
 
         <label class="field field--wide">
-          <span>Goals, one per line</span>
-          <textarea data-role="stage-goals" data-stage-index="${selectedStageIndex}" rows="4" placeholder="Build an arena&#10;Craft movement gear">${escapeHtml(stage.goalsText)}</textarea>
+          <span>${escapeHtml(t("editor.stageDescriptionLabel"))}</span>
+          <textarea data-role="stage-description" data-stage-index="${selectedStageIndex}" rows="4" placeholder="${escapeHtml(t("editor.stageDescriptionPlaceholder"))}">${escapeHtml(stage.description)}</textarea>
         </label>
 
         <label class="field field--wide">
-          <span>Notes, one per line</span>
-          <textarea data-role="stage-notes" data-stage-index="${selectedStageIndex}" rows="4" placeholder="Optional reminders or route notes">${escapeHtml(stage.notesText)}</textarea>
+          <span>${escapeHtml(t("editor.stageGoalsLabel"))}</span>
+          <textarea data-role="stage-goals" data-stage-index="${selectedStageIndex}" rows="4" placeholder="${escapeHtml(t("editor.stageGoalsPlaceholder"))}">${escapeHtml(stage.goalsText)}</textarea>
+        </label>
+
+        <label class="field field--wide">
+          <span>${escapeHtml(t("editor.stageNotesLabel"))}</span>
+          <textarea data-role="stage-notes" data-stage-index="${selectedStageIndex}" rows="4" placeholder="${escapeHtml(t("editor.stageNotesPlaceholder"))}">${escapeHtml(stage.notesText)}</textarea>
         </label>
       </div>
 
       <section class="subpanel">
         <div class="subpanel__header">
           <div class="section-copy">
-            <h4>Boss milestones</h4>
-            <p class="muted">Reference bosses that define this stage or mark the transition out of it.</p>
+            <h4>${escapeHtml(t("editor.stageMarkersTitle"))}</h4>
+            <p class="muted">${escapeHtml(t("editor.stageMarkersBody"))}</p>
           </div>
-          <button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${selectedStageIndex}">Add boss</button>
+        </div>
+        ${renderProgressionMarkerSelector(stage, selectedStageIndex)}
+      </section>
+
+      <section class="subpanel">
+        <div class="subpanel__header">
+          <div class="section-copy">
+            <h4>${escapeHtml(t("editor.bossMilestonesTitle"))}</h4>
+            <p class="muted">${escapeHtml(t("editor.bossMilestonesBody"))}</p>
+          </div>
+          <button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${selectedStageIndex}">${escapeHtml(t("editor.addBoss"))}</button>
         </div>
         <div class="stack compact-stack">
           ${renderBossEditors(stage, selectedStageIndex)}
@@ -614,10 +740,10 @@ function renderStageEditor() {
       <section class="subpanel">
         <div class="subpanel__header">
           <div class="section-copy">
-            <h4>Item picks</h4>
-            <p class="muted">Pick curated Terraria entries with real in-game icons and place them into categories.</p>
+            <h4>${escapeHtml(t("editor.itemPicksTitle"))}</h4>
+            <p class="muted">${escapeHtml(t("editor.itemPicksBody"))}</p>
           </div>
-          <button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${selectedStageIndex}">Add item</button>
+          <button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${selectedStageIndex}">${escapeHtml(t("editor.addItem"))}</button>
         </div>
         <div class="stack compact-stack">
           ${renderItemEditors(stage, selectedStageIndex)}
@@ -668,12 +794,16 @@ function renderStagePreview(stage) {
     <article class="stage-preview">
       <div class="stage-preview__header">
         <h3>${escapeHtml(stage.title)}</h3>
-        <span class="meta-pill">${stage.items.length} item picks</span>
+        <span class="meta-pill">${escapeHtml(t("editor.stageItemPicks", { count: stage.items.length }))}</span>
+      </div>
+      <div class="chip-row">
+        <span class="meta-pill">${escapeHtml(t("common.labelEra"))}: ${escapeHtml(progression?.eraLabel?.(stage.era || "prehardmode", uiLanguage()) || stage.era || "")}</span>
       </div>
       ${stage.description ? `<p>${escapeHtml(stage.description)}</p>` : ""}
+      ${renderSelectedMarkers(stage)}
       ${stage.bossRefs?.length ? `
         <section class="preview-block">
-          <h4>Bosses</h4>
+          <h4>${escapeHtml(t("common.labelBosses"))}</h4>
           <div class="chip-row">
             ${stage.bossRefs.map((bossRef) => buildContentBadge(bossRef, supportIndex.bossMap)).join("")}
           </div>
@@ -681,16 +811,16 @@ function renderStagePreview(stage) {
       ` : ""}
       ${stage.goals?.length ? `
         <section class="preview-block">
-          <h4>Goals</h4>
+          <h4>${escapeHtml(t("common.labelGoals"))}</h4>
           <ul class="line-list">
             ${stage.goals.map((goal) => `<li>${escapeHtml(goal)}</li>`).join("")}
           </ul>
         </section>
       ` : ""}
-      ${groups || `<p class="empty-state">No item picks added for this stage yet.</p>`}
+      ${groups || `<p class="empty-state">${escapeHtml(t("editor.noItemsPreview"))}</p>`}
       ${stage.notes?.length ? `
         <section class="preview-block">
-          <h4>Notes</h4>
+          <h4>${escapeHtml(t("common.labelNotes"))}</h4>
           <ul class="line-list">
             ${stage.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}
           </ul>
@@ -702,10 +832,10 @@ function renderStagePreview(stage) {
 
 function renderGuidePreview(guide) {
   const metaPills = [
-    `Class: ${guide.classTags.join(", ")}`,
-    `Language: ${guide.language}`,
-    `Mods: ${guide.requiredMods.join(", ")}`,
-    `${guide.stages.length} stages`
+    `${t("common.labelClass")}: ${guide.classTags.map((tag) => localized(CLASS_TAG_OPTIONS.find((option) => option.value === tag)?.label || tag)).join(", ")}`,
+    `${t("common.labelLanguage")}: ${guideLanguageLabel(guide.language)}`,
+    `${t("common.labelMods")}: ${guide.requiredMods.join(", ")}`,
+    `${guide.stages.length} ${t("common.labelStages").toLowerCase()}`
   ];
 
   guidePreview.innerHTML = `
@@ -732,9 +862,9 @@ function renderReview() {
 
 function renderStepMeta() {
   const definition = STEP_DEFINITIONS[currentStep];
-  stepEyebrow.textContent = `Step ${currentStep + 1} of ${STEP_DEFINITIONS.length}`;
-  stepTitle.textContent = definition.title;
-  stepDescription.textContent = definition.description;
+  stepEyebrow.textContent = t("editor.stepCounter", { current: currentStep + 1, total: STEP_DEFINITIONS.length });
+  stepTitle.textContent = t(definition.titleKey);
+  stepDescription.textContent = t(definition.descriptionKey);
 }
 
 function renderPanels() {
@@ -745,18 +875,19 @@ function renderPanels() {
 
 function renderFooter() {
   prevStepButton.disabled = currentStep === 0;
+  prevStepButton.textContent = t("editor.back");
 
   if (currentStep === STEP_DEFINITIONS.length - 1) {
-    nextStepButton.textContent = "Stay on review";
+    nextStepButton.textContent = t("editor.stayOnReview");
     nextStepButton.disabled = true;
   } else {
-    nextStepButton.textContent = currentStep === STEP_DEFINITIONS.length - 2 ? "Go to review" : "Next step";
+    nextStepButton.textContent = currentStep === STEP_DEFINITIONS.length - 2 ? t("editor.goToReview") : t("editor.nextStep");
     nextStepButton.disabled = false;
   }
 
   autosaveStatus.textContent = lastSavedAt
-    ? `Draft autosaved at ${lastSavedAt}.`
-    : "Draft autosaves in this browser.";
+    ? t("editor.autosavedAt", { time: lastSavedAt })
+    : t("editor.autosave");
 }
 
 function clampStageSelection() {
@@ -916,6 +1047,17 @@ function handleStageEditorClick(event) {
     case "remove-item":
       stage.items.splice(itemIndex, 1);
       break;
+    case "toggle-marker": {
+      const markerId = button.dataset.markerId;
+      const next = new Set(stage.progressionMarkers || []);
+      if (next.has(markerId)) {
+        next.delete(markerId);
+      } else {
+        next.add(markerId);
+      }
+      stage.progressionMarkers = Array.from(next);
+      break;
+    }
     default:
       return;
   }
@@ -951,6 +1093,14 @@ function handleStageEditorInput(event) {
       saveDraft();
       refreshDerivedViews(false);
       break;
+    case "stage-era": {
+      stage.era = target.value;
+      const allowedMarkerIds = new Set((progression?.markersForEra?.(stage.era) || []).map((marker) => marker.id));
+      stage.progressionMarkers = (stage.progressionMarkers || []).filter((markerId) => allowedMarkerIds.has(markerId));
+      saveDraft();
+      refreshDerivedViews(true);
+      break;
+    }
     case "stage-description":
       stage.description = target.value;
       saveDraft();
@@ -1005,7 +1155,7 @@ async function copyJson() {
   try {
     if (navigator.clipboard?.writeText) {
       await navigator.clipboard.writeText(latestJson);
-      submissionStatus.textContent = "guide.json copied. Open the GitHub issue form and paste the JSON there.";
+      submissionStatus.textContent = t("editor.copiedJson");
       return;
     }
   } catch {
@@ -1017,7 +1167,7 @@ async function copyJson() {
   range.selectNodeContents(jsonPreview);
   selection.removeAllRanges();
   selection.addRange(range);
-  submissionStatus.textContent = "Clipboard access was blocked, so the JSON preview has been selected for manual copy.";
+  submissionStatus.textContent = t("editor.selectedJson");
 }
 
 function downloadJson() {
@@ -1054,16 +1204,16 @@ function detectRepositoryUrl() {
 function openIssuePage() {
   const repositoryUrl = detectRepositoryUrl();
   if (!repositoryUrl) {
-    submissionStatus.textContent = "Repository URL was not detected here. Open your TerraPath repository and create a guide submission issue manually.";
+    submissionStatus.textContent = t("editor.repoUnknown");
     return;
   }
 
   window.open(`${repositoryUrl}/issues/new`, "_blank", "noopener");
-  submissionStatus.textContent = "GitHub opened in a new tab. Choose the guide submission form and paste the copied JSON.";
+  submissionStatus.textContent = t("editor.issueOpened");
 }
 
 function resetDraft() {
-  if (!confirm("Reset the current TerraPath draft?")) {
+  if (!confirm(t("editor.resetConfirm"))) {
     return;
   }
 
@@ -1072,7 +1222,7 @@ function resetDraft() {
   currentStep = 0;
   selectedStageIndex = 0;
   lastSavedAt = null;
-  submissionStatus.textContent = "Draft reset. A fresh example guide has been loaded.";
+  submissionStatus.textContent = t("editor.draftReset");
   renderAll();
 }
 
@@ -1112,9 +1262,9 @@ async function loadSupportIndex() {
       bossMap: new Map(bossEntries.map((entry) => [entry.id, entry]))
     };
 
-    supportStatus.textContent = `Curated Terraria support loaded: ${itemEntries.length} item and ore entries, ${bossEntries.length} boss entry, all using extracted in-game vanilla icons.`;
+    supportStatus.textContent = t("editor.supportLoaded", { items: itemEntries.length, bosses: bossEntries.length });
   } catch (error) {
-    supportStatus.textContent = "Curated support data could not be loaded. The editor still works, but curated content pickers may be empty.";
+    supportStatus.textContent = t("editor.supportFailed");
     console.error(error);
   }
 
@@ -1182,6 +1332,13 @@ function init() {
   downloadButton.addEventListener("click", downloadJson);
   openIssueButton.addEventListener("click", openIssuePage);
   resetDraftButton.addEventListener("click", resetDraft);
+  site?.onChange?.(() => {
+    renderLanguageOptions();
+    supportStatus.textContent = supportIndex.items.length
+      ? t("editor.supportLoaded", { items: supportIndex.items.length, bosses: supportIndex.bosses.length })
+      : t("editor.loadingSupport");
+    renderAll();
+  });
 
   renderAll();
   loadSupportIndex();

@@ -5,6 +5,7 @@ const classFilter = document.querySelector("#classFilter");
 const modFilter = document.querySelector("#modFilter");
 const sortFilter = document.querySelector("#sortFilter");
 const guideCountSummary = document.querySelector("#guideCountSummary");
+const site = window.terraPathSite;
 
 let guides = [];
 
@@ -19,6 +20,28 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+}
+
+function t(key, variables = {}) {
+  return site?.t?.(key, variables) ?? key;
+}
+
+function guideLanguageLabel(code) {
+  return site?.getGuideLanguageLabel?.(code) ?? code;
+}
+
+function classLabel(tag) {
+  const labels = {
+    melee: { en: "Melee", ru: "Воин" },
+    ranged: { en: "Ranged", ru: "Стрелок" },
+    magic: { en: "Magic", ru: "Маг" },
+    summoner: { en: "Summoner", ru: "Призыватель" },
+    rogue: { en: "Rogue", ru: "Разбойник" },
+    bard: { en: "Bard", ru: "Бард" },
+    other: { en: "Other", ru: "Другое" }
+  };
+  const language = site?.getLanguage?.() === "ru" ? "ru" : "en";
+  return labels[tag]?.[language] || tag;
 }
 
 function guideToSearchText(guide) {
@@ -40,7 +63,14 @@ function uniqueSorted(values) {
 function populateFilter(select, values, emptyLabel) {
   const current = select.value;
   select.innerHTML = [`<option value="">${emptyLabel}</option>`]
-    .concat(values.map((value) => `<option value="${escapeHtml(value)}">${escapeHtml(value)}</option>`))
+    .concat(values.map((value) => {
+      const label = select === languageFilter
+        ? guideLanguageLabel(value)
+        : select === classFilter
+          ? classLabel(value)
+          : value;
+      return `<option value="${escapeHtml(value)}">${escapeHtml(label)}</option>`;
+    }))
     .join("");
   if (values.includes(current)) {
     select.value = current;
@@ -56,14 +86,14 @@ function renderGuide(guide) {
         <h2><a class="guide-card__link" href="guide.html?id=${encodeURIComponent(guide.id)}">${escapeHtml(guide.title)}</a></h2>
         <p>${escapeHtml(guide.summary)}</p>
       </div>
-      <a class="button button--quiet button--tiny" href="guide.html?id=${encodeURIComponent(guide.id)}">Open guide</a>
+      <a class="button button--quiet button--tiny" href="guide.html?id=${encodeURIComponent(guide.id)}">${escapeHtml(t("browse.openGuide"))}</a>
     </div>
     <div class="guide-card__meta">
-      <span>Class: ${escapeHtml((guide.classTags || []).join(", "))}</span>
-      <span>Language: ${escapeHtml(guide.language)}</span>
-      <span>Popularity: ${Number(guide.popularity || 0)}</span>
-      <span>Stages: ${Number(guide.stageCount || 0)}</span>
-      <span>Mods: ${escapeHtml((guide.requiredMods || []).join(", "))}</span>
+      <span>${escapeHtml(t("common.labelClass"))}: ${escapeHtml((guide.classTags || []).map(classLabel).join(", "))}</span>
+      <span>${escapeHtml(t("common.labelLanguage"))}: ${escapeHtml(guideLanguageLabel(guide.language))}</span>
+      <span>${escapeHtml(t("common.labelPopularity"))}: ${Number(guide.popularity || 0)}</span>
+      <span>${escapeHtml(t("common.labelStages"))}: ${Number(guide.stageCount || 0)}</span>
+      <span>${escapeHtml(t("common.labelMods"))}: ${escapeHtml((guide.requiredMods || []).join(", "))}</span>
     </div>
   `;
   return card;
@@ -90,12 +120,12 @@ function render() {
     .filter((guide) => !modFilter.value || (guide.requiredMods || []).includes(modFilter.value))
     .sort(compareGuides);
 
-  guideCountSummary.textContent = `${filtered.length} of ${guides.length} guides shown`;
+  guideCountSummary.textContent = t("browse.countSummary", { shown: filtered.length, total: guides.length });
   list.replaceChildren(...filtered.map(renderGuide));
   if (!filtered.length) {
     const empty = document.createElement("p");
     empty.className = "muted";
-    empty.textContent = "No guides found for the selected filters.";
+    empty.textContent = t("browse.noGuides");
     list.append(empty);
   }
 }
@@ -126,9 +156,9 @@ function applySelectedSearchFromPage() {
 }
 
 function populateFilters() {
-  populateFilter(languageFilter, uniqueSorted(guides.map((guide) => guide.language)), "All languages");
-  populateFilter(classFilter, uniqueSorted(guides.flatMap((guide) => guide.classTags || [])), "All classes");
-  populateFilter(modFilter, uniqueSorted(guides.flatMap((guide) => guide.requiredMods || [])), "All mods");
+  populateFilter(languageFilter, uniqueSorted(guides.map((guide) => guide.language)), t("browse.allLanguages"));
+  populateFilter(classFilter, uniqueSorted(guides.flatMap((guide) => guide.classTags || [])), t("browse.allClasses"));
+  populateFilter(modFilter, uniqueSorted(guides.flatMap((guide) => guide.requiredMods || [])), t("browse.allMods"));
 }
 
 async function loadCatalog() {
@@ -147,4 +177,9 @@ sortFilter.addEventListener("change", render);
 
 loadCatalog().catch((error) => {
   list.textContent = error.message;
+});
+
+site?.onChange?.(() => {
+  populateFilters();
+  render();
 });

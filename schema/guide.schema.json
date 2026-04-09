@@ -57,10 +57,18 @@
     "stage": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "title", "items"],
+      "required": ["id", "title", "era", "items"],
       "properties": {
         "id": { "$ref": "#/$defs/tag" },
         "title": { "type": "string", "minLength": 3, "maxLength": 100 },
+        "era": {
+          "enum": ["prehardmode", "hardmode", "postmoonlord"]
+        },
+        "progressionMarkers": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/tag" }
+        },
         "description": { "type": "string", "maxLength": 1800 },
         "bossRefs": {
           "type": "array",

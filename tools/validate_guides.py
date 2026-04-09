@@ -8,6 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 GUIDES_DIR = ROOT / "guides"
 CONTENT_ID = re.compile(r"^[A-Za-z][A-Za-z0-9_]*/[A-Za-z][A-Za-z0-9_]*$")
 GUIDE_ID = re.compile(r"^[a-z0-9][a-z0-9-]{2,79}$")
+STAGE_ERAS = {"prehardmode", "hardmode", "postmoonlord"}
 
 
 def fail(path: Path, message: str) -> None:
@@ -65,6 +66,14 @@ def validate_guide(path: Path) -> dict:
     for stage in stages:
         if not isinstance(stage, dict):
             fail(path, "stage entries must be objects")
+        if stage.get("era") not in STAGE_ERAS:
+            fail(path, "stage 'era' must be one of: prehardmode, hardmode, postmoonlord")
+        if "progressionMarkers" in stage:
+            markers = stage["progressionMarkers"]
+            if not isinstance(markers, list):
+                fail(path, "stage 'progressionMarkers' must be an array")
+            if len(markers) != len(set(markers)):
+                fail(path, "stage 'progressionMarkers' must not contain duplicates")
         if not isinstance(stage.get("items"), list):
             fail(path, "stage 'items' must be an array")
         for boss_ref in stage.get("bossRefs", []):

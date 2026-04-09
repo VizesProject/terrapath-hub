@@ -3,26 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Guide Page - TerraPath</title>
+    <title data-i18n="guide.title">Guide Page - TerraPath</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
+    <script src="assets/progression.js" defer></script>
     <script src="assets/guide.js" defer></script>
   </head>
   <body>
     <nav class="nav nav--compact">
       <a class="brand" href="index.html">TerraPath</a>
       <div class="nav__links">
-        <a href="browse.html">Browse</a>
-        <a href="editor.html">Builder</a>
+        <a data-i18n="common.navBrowse" href="browse.html">Browse</a>
+        <a data-i18n="common.navBuilder" href="editor.html">Builder</a>
       </div>
+      <div class="nav__tools" data-language-toggle></div>
     </nav>
     <main class="workspace">
       <section class="panel panel--guide-page">
-        <p class="eyebrow">Guide page</p>
+        <p data-i18n="guide.eyebrow" class="eyebrow">Guide page</p>
         <div class="guide-page__topbar">
-          <a id="backToBrowse" class="button button--quiet" href="browse.html">Back to browse</a>
-          <a id="rawGuideLink" class="button" href="#" target="_blank" rel="noopener">Open raw JSON</a>
+          <a id="backToBrowse" data-i18n="guide.back" class="button button--quiet" href="browse.html">Back to browse</a>
+          <a id="rawGuideLink" data-i18n="guide.rawJson" class="button" href="#" target="_blank" rel="noopener">Open raw JSON</a>
         </div>
-        <div id="guidePageStatus" class="muted">Loading guide...</div>
+        <div id="guidePageStatus" data-i18n="guide.loading" class="muted">Loading guide...</div>
         <div id="guidePage" class="guide-preview"></div>
       </section>
     </main>

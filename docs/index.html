@@ -3,43 +3,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TerraPath Hub</title>
+    <title data-i18n="home.title">TerraPath Hub</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
   </head>
   <body>
     <header class="hero">
       <nav class="nav">
         <a class="brand" href="index.html">TerraPath</a>
         <div class="nav__links">
-          <a href="browse.html">Browse</a>
-          <a href="editor.html">Builder</a>
+          <a data-i18n="common.navBrowse" href="browse.html">Browse</a>
+          <a data-i18n="common.navBuilder" href="editor.html">Builder</a>
         </div>
+        <div class="nav__tools" data-language-toggle></div>
       </nav>
       <section class="hero__content">
-        <p class="eyebrow">Community progression guides for Terraria</p>
-        <h1>Pick a path before you enter the world.</h1>
-        <p class="hero__lede">
+        <p data-i18n="home.eyebrow" class="eyebrow">Community progression guides for Terraria</p>
+        <h1 data-i18n="home.heading">Pick a path before you enter the world.</h1>
+        <p data-i18n="home.lede" class="hero__lede">
           TerraPath turns class guides into structured stages, item groups,
           boss goals, notes, filters, and in-game recommendations.
         </p>
         <div class="actions">
-          <a class="button button--primary" href="editor.html">Open guide builder</a>
-          <a class="button" href="browse.html">Browse catalog</a>
+          <a data-i18n="home.ctaBuilder" class="button button--primary" href="editor.html">Open guide builder</a>
+          <a data-i18n="home.ctaBrowse" class="button" href="browse.html">Browse catalog</a>
         </div>
       </section>
     </header>
     <main class="section-grid">
       <article class="card">
-        <h2>Structured stages</h2>
-        <p>Split a guide into progression steps with optional descriptions, goals, boss references, and notes.</p>
+        <h2 data-i18n="home.stagesTitle">Structured stages</h2>
+        <p data-i18n="home.stagesBody">Split a guide into progression steps with optional descriptions, goals, boss references, and notes.</p>
       </article>
       <article class="card">
-        <h2>Item categories</h2>
-        <p>Group recommendations into weapons, armor, accessories, ores, materials, buffs, tools, and alternatives.</p>
+        <h2 data-i18n="home.itemsTitle">Item categories</h2>
+        <p data-i18n="home.itemsBody">Group recommendations into weapons, armor, accessories, ores, materials, buffs, tools, and alternatives.</p>
       </article>
       <article class="card">
-        <h2>Built for mods</h2>
-        <p>Guides store stable content IDs such as Terraria/HermesBoots or CalamityMod/SomeInternalName.</p>
+        <h2 data-i18n="home.modsTitle">Built for mods</h2>
+        <p data-i18n="home.modsBody">Guides store stable content IDs such as Terraria/HermesBoots or CalamityMod/SomeInternalName.</p>
       </article>
     </main>
   </body>

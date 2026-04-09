@@ -56,6 +56,11 @@ a {
   gap: clamp(0.75rem, 2vw, 2rem);
 }
 
+.nav__tools {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .nav__links a {
   color: var(--ink-soft);
   font-size: 0.95rem;
@@ -796,6 +801,32 @@ select:focus,
   background: rgba(197, 139, 67, 0.15);
 }
 
+.lang-switch {
+  background: rgba(255, 250, 240, 0.08);
+  border: 1px solid rgba(255, 250, 240, 0.14);
+  border-radius: 999px;
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+}
+
+.lang-switch__button {
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  color: #f5efe2;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  min-width: 2.5rem;
+  padding: 0.4rem 0.7rem;
+}
+
+.lang-switch__button--active {
+  background: rgba(255, 250, 240, 0.18);
+}
+
 .snapshot-card,
 .review-card,
 .stage-panel,
@@ -813,6 +844,65 @@ select:focus,
 .review-stack {
   display: grid;
   gap: 1rem;
+}
+
+.marker-grid,
+.marker-preview-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.marker-grid {
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.marker-card,
+.marker-preview-card {
+  background: var(--paper-strong);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+}
+
+.marker-card {
+  align-items: flex-start;
+  cursor: pointer;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: auto 1fr;
+  padding: 0.85rem;
+  text-align: left;
+}
+
+.marker-card--selected {
+  background: rgba(45, 106, 83, 0.08);
+  border-color: rgba(45, 106, 83, 0.24);
+}
+
+.marker-card__body,
+.marker-preview-card div {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.marker-card__body strong,
+.marker-preview-card strong {
+  color: var(--fern-strong);
+}
+
+.marker-card__body span,
+.marker-preview-card p {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.marker-preview-card {
+  align-items: flex-start;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: auto 1fr;
+  padding: 0.85rem;
 }
 
 .snapshot-grid {
