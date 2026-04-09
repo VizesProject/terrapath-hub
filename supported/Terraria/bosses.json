@@ -1,0 +1,12 @@
+{
+  "mod": "Terraria",
+  "contentType": "bosses",
+  "bosses": [
+    {
+      "id": "Terraria/EyeofCthulhu",
+      "internalName": "EyeofCthulhu",
+      "displayName": "Eye of Cthulhu",
+      "icon": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a problem with TerraPath Hub, guide data, or the in-game experience.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+  - type: input
+    id: guide
+    attributes:
+      label: Guide ID
+      description: If this is guide-specific, paste the guide ID.
+      placeholder: vanilla-melee-starter
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Mention browser, OS, tModLoader version, or relevant mods if known.
+      placeholder: Windows 11, Chrome, tModLoader ...

@@ -1,0 +1,22 @@
+name: Guide submission
+description: Submit a structured guide for review.
+title: "[Guide]: "
+labels: ["guide-submission", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please validate your guide before submitting. If you used the editor, paste the exported `guide.json` below.
+  - type: textarea
+    id: guide_json
+    attributes:
+      label: guide.json
+      description: Paste the full JSON guide here.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Submission notes
+      description: Mention required mods, tested progression, known gaps, or balance assumptions.

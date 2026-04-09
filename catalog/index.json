@@ -1,0 +1,18 @@
+{
+  "catalogSchemaVersion": 1,
+  "guides": [
+    {
+      "id": "vanilla-melee-starter",
+      "title": "Vanilla Melee Starter Path",
+      "author": "TerraPath Team",
+      "language": "en-US",
+      "summary": "A tiny example guide that demonstrates TerraPath progression stages, boss references, and categorized item picks.",
+      "requiredMods": ["Terraria"],
+      "classTags": ["melee"],
+      "guideTags": ["starter", "example", "vanilla"],
+      "updatedAt": "2026-04-09",
+      "path": "guides/en-US/vanilla-melee-starter/guide.json",
+      "popularity": 0
+    }
+  ]
+}

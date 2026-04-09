@@ -1,0 +1,27 @@
+{
+  "mod": "Terraria",
+  "contentType": "items",
+  "items": [
+    {
+      "id": "Terraria/CloudinaBottle",
+      "internalName": "CloudinaBottle",
+      "displayName": "Cloud in a Bottle",
+      "category": "accessory",
+      "icon": null
+    },
+    {
+      "id": "Terraria/EnchantedBoomerang",
+      "internalName": "EnchantedBoomerang",
+      "displayName": "Enchanted Boomerang",
+      "category": "weapon",
+      "icon": null
+    },
+    {
+      "id": "Terraria/IronBar",
+      "internalName": "IronBar",
+      "displayName": "Iron Bar",
+      "category": "material",
+      "icon": null
+    }
+  ]
+}

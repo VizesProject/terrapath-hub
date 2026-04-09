@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "vanilla-melee-starter",
+  "title": "Vanilla Melee Starter Path",
+  "author": "TerraPath Team",
+  "language": "en-US",
+  "summary": "A tiny example guide that demonstrates TerraPath progression stages, boss references, and categorized item picks.",
+  "requiredMods": ["Terraria"],
+  "classTags": ["melee"],
+  "guideTags": ["starter", "example", "vanilla"],
+  "createdAt": "2026-04-09",
+  "updatedAt": "2026-04-09",
+  "stages": [
+    {
+      "id": "first-night",
+      "title": "First Night",
+      "description": "Collect basic mobility, find surface chests, and prepare a safe arena before fighting early bosses.",
+      "bossRefs": [],
+      "goals": [
+        "Find basic movement accessories",
+        "Craft or loot a stronger melee weapon",
+        "Build a simple arena with platforms and campfires"
+      ],
+      "items": [
+        {
+          "itemId": "Terraria/EnchantedBoomerang",
+          "category": "weapon",
+          "priority": 70,
+          "note": "A safe ranged melee option if you find one in surface or underground chests."
+        },
+        {
+          "itemId": "Terraria/CloudinaBottle",
+          "category": "accessory",
+          "priority": 80,
+          "note": "Early double jump makes boss dodging much easier."
+        },
+        {
+          "itemId": "Terraria/IronBar",
+          "category": "material",
+          "priority": 45,
+          "note": "Useful early crafting material. Lead bars can replace iron in many worlds."
+        }
+      ],
+      "notes": ["This is a format example, not a complete melee walkthrough."]
+    }
+  ]
+}

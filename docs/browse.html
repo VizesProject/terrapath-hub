@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Browse Guides - TerraPath</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/browse.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav nav--compact">
+      <a class="brand" href="index.html">TerraPath</a>
+      <div class="nav__links">
+        <a href="browse.html">Browse</a>
+        <a href="editor.html">Editor</a>
+      </div>
+    </nav>
+    <main class="workspace">
+      <section class="panel">
+        <p class="eyebrow">Catalog preview</p>
+        <h1>Browse Guides</h1>
+        <label class="field">
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Search by title, class, mod, language">
+        </label>
+        <div id="guideList" class="guide-list" aria-live="polite"></div>
+      </section>
+    </main>
+  </body>
+</html>

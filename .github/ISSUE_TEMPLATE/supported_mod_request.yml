@@ -1,0 +1,24 @@
+name: Supported mod request
+description: Ask TerraPath to index a mod for the web editor.
+title: "[Supported Mod Request]: "
+labels: ["supported-mod-request", "needs-triage"]
+body:
+  - type: input
+    id: mod_name
+    attributes:
+      label: Mod name
+      placeholder: Example Mod
+    validations:
+      required: true
+  - type: input
+    id: internal_name
+    attributes:
+      label: Internal mod name
+      placeholder: ExampleMod
+  - type: textarea
+    id: why
+    attributes:
+      label: Why should this mod be supported?
+      description: Mention classes, bosses, progression changes, or community interest.
+    validations:
+      required: true

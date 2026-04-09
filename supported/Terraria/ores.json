@@ -1,0 +1,12 @@
+{
+  "mod": "Terraria",
+  "contentType": "ores",
+  "ores": [
+    {
+      "id": "Terraria/IronOre",
+      "internalName": "IronOre",
+      "displayName": "Iron Ore",
+      "icon": null
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guide Editor - TerraPath</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/editor.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav nav--compact">
+      <a class="brand" href="index.html">TerraPath</a>
+      <div class="nav__links">
+        <a href="browse.html">Browse</a>
+        <a href="editor.html">Editor</a>
+      </div>
+    </nav>
+    <main class="workspace workspace--editor">
+      <section class="panel">
+        <p class="eyebrow">Early prototype</p>
+        <h1>Guide Editor</h1>
+        <p class="muted">This first editor creates a minimal TerraPath JSON guide. Full stage and item editing will be added next.</p>
+        <form id="guideForm" class="form">
+          <label class="field">
+            <span>Title</span>
+            <input name="title" required minlength="3" placeholder="Calamity Summoner Progression">
+          </label>
+          <label class="field">
+            <span>Author</span>
+            <input name="author" required minlength="2" placeholder="Your name">
+          </label>
+          <label class="field">
+            <span>Language</span>
+            <input name="language" required value="en-US" placeholder="en-US">
+          </label>
+          <label class="field">
+            <span>Class tag</span>
+            <input name="classTag" required value="melee" placeholder="melee">
+          </label>
+          <label class="field">
+            <span>Required mod</span>
+            <input name="requiredMod" required value="Terraria" placeholder="Terraria">
+          </label>
+          <label class="field">
+            <span>Summary</span>
+            <textarea name="summary" required minlength="10" rows="4" placeholder="Short catalog description"></textarea>
+          </label>
+          <label class="field">
+            <span>First stage title</span>
+            <input name="stageTitle" required value="Getting Started" placeholder="Getting Started">
+          </label>
+          <label class="field">
+            <span>First stage description</span>
+            <textarea name="stageDescription" rows="5" placeholder="Explain what the player should focus on."></textarea>
+          </label>
+          <div class="actions">
+            <button class="button button--primary" type="submit">Generate JSON</button>
+            <button class="button" id="downloadButton" type="button" disabled>Download guide.json</button>
+          </div>
+        </form>
+      </section>
+      <section class="panel panel--preview">
+        <p class="eyebrow">Output</p>
+        <h2>guide.json</h2>
+        <pre id="jsonPreview" class="json-preview">{}</pre>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+name: UI feedback
+description: Share feedback about the guide list, editor, filters, sorting, or in-game layout.
+title: "[UI]: "
+labels: ["ui-feedback", "needs-triage"]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback
+      description: What feels confusing, slow, missing, or hard to use?
+    validations:
+      required: true

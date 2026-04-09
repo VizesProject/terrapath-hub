@@ -1,0 +1,247 @@
+:root {
+  --ink: #241b12;
+  --ink-soft: #6a5948;
+  --paper: #f8efd9;
+  --paper-strong: #fff9ea;
+  --fern: #284c34;
+  --copper: #b86634;
+  --shadow: rgba(36, 27, 18, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top right, rgba(220, 166, 77, 0.42), transparent 34rem),
+    linear-gradient(135deg, #e8d2a8 0%, #f8efd9 46%, #c9dfc0 100%);
+  font-family: Georgia, "Times New Roman", serif;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem clamp(1rem, 4vw, 4rem);
+}
+
+.nav--compact {
+  background: rgba(255, 249, 234, 0.82);
+  border-bottom: 1px solid rgba(36, 27, 18, 0.14);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(12px);
+  z-index: 10;
+}
+
+.brand {
+  color: var(--fern);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__links {
+  display: flex;
+  gap: clamp(0.75rem, 2vw, 2rem);
+}
+
+.nav__links a {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 78vh;
+  position: relative;
+}
+
+.hero::after {
+  background:
+    linear-gradient(120deg, rgba(40, 76, 52, 0.14), transparent),
+    repeating-linear-gradient(-12deg, rgba(36, 27, 18, 0.06) 0 1px, transparent 1px 16px);
+  border: 1px solid rgba(36, 27, 18, 0.12);
+  border-radius: 40% 60% 55% 45%;
+  content: "";
+  height: clamp(15rem, 34vw, 34rem);
+  position: absolute;
+  right: 4vw;
+  top: 22vh;
+  transform: rotate(-10deg);
+  width: clamp(15rem, 34vw, 34rem);
+  z-index: -1;
+}
+
+.hero__content {
+  max-width: 48rem;
+  padding: clamp(3rem, 10vw, 10rem) clamp(1rem, 6vw, 7rem);
+}
+
+.eyebrow {
+  color: var(--copper);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: var(--fern);
+  font-size: clamp(2.5rem, 8vw, 7.5rem);
+  line-height: 0.92;
+  margin: 0.5rem 0 1.25rem;
+}
+
+h2 {
+  color: var(--fern);
+  margin-top: 0;
+}
+
+.hero__lede,
+.muted {
+  color: var(--ink-soft);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.7;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  background: var(--paper-strong);
+  border: 1px solid rgba(36, 27, 18, 0.2);
+  border-radius: 999px;
+  box-shadow: 0 0.5rem 1.25rem var(--shadow);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  padding: 0.85rem 1.2rem;
+  text-decoration: none;
+}
+
+.button--primary {
+  background: var(--fern);
+  color: var(--paper-strong);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.section-grid,
+.workspace {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1rem, 4vw, 4rem);
+}
+
+.section-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.workspace--editor {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.card,
+.panel {
+  background: rgba(255, 249, 234, 0.86);
+  border: 1px solid rgba(36, 27, 18, 0.12);
+  border-radius: 2rem;
+  box-shadow: 0 1rem 2rem var(--shadow);
+  padding: clamp(1rem, 4vw, 3rem);
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.field span {
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+input,
+textarea {
+  background: #fffdf4;
+  border: 1px solid rgba(36, 27, 18, 0.2);
+  border-radius: 1rem;
+  color: var(--ink);
+  font: 1rem/1.5 Georgia, "Times New Roman", serif;
+  padding: 0.85rem 1rem;
+  width: 100%;
+}
+
+.json-preview {
+  background: #20170f;
+  border-radius: 1.25rem;
+  color: #f6e2b6;
+  font: 0.85rem/1.55 Consolas, "Courier New", monospace;
+  max-height: 70vh;
+  overflow: auto;
+  padding: 1rem;
+  white-space: pre-wrap;
+}
+
+.guide-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.guide-card {
+  background: var(--paper-strong);
+  border: 1px solid rgba(36, 27, 18, 0.14);
+  border-radius: 1.25rem;
+  padding: 1rem;
+}
+
+.guide-card__meta {
+  color: var(--ink-soft);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  gap: 0.75rem;
+}
+
+@media (max-width: 760px) {
+  .nav,
+  .nav__links {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .section-grid,
+  .workspace--editor {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+}
