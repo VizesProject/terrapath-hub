@@ -104,11 +104,20 @@ function resolveName(contentId, map) {
   return String(contentId || "").split("/").pop() || contentId;
 }
 
+function iconMarkup(entry, label) {
+  if (entry?.icon) {
+    return `<img class="content-icon" src="${escapeHtml(entry.icon)}" alt="${escapeHtml(label)}" loading="lazy">`;
+  }
+
+  return `<span class="content-token">${escapeHtml(initials(label))}</span>`;
+}
+
 function chip(contentId, map) {
+  const entry = map.get(contentId);
   const label = resolveName(contentId, map);
   return `
     <div class="content-chip">
-      <span class="content-token">${escapeHtml(initials(label))}</span>
+      <span class="content-chip__media">${iconMarkup(entry, label)}</span>
       <span>${escapeHtml(label)}</span>
     </div>
   `;
@@ -134,10 +143,11 @@ function renderItemGroups(items) {
         <div class="content-grid">
           ${entries.map((entry) => {
             const label = resolveName(entry.itemId, supportIndex.itemMap);
+            const supportEntry = supportIndex.itemMap.get(entry.itemId);
             return `
               <article class="content-card">
                 <div class="content-card__head">
-                  <span class="content-token">${escapeHtml(initials(label))}</span>
+                  <span class="content-card__media">${iconMarkup(supportEntry, label)}</span>
                   <div>
                     <strong>${escapeHtml(label)}</strong>
                     <div class="content-card__meta">${escapeHtml(entry.itemId)}</div>

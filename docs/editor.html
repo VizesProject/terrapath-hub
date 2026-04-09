@@ -20,9 +20,9 @@
         <p class="eyebrow">Structured authoring</p>
         <h1>Guide Editor</h1>
         <p class="muted">
-          Build a TerraPath guide with progression stages, grouped item picks,
-          boss references, notes, and a live preview. Drafts are autosaved in
-          your browser.
+          Build a TerraPath guide with guided controls instead of raw IDs. Drafts
+          are autosaved in your browser, and curated supported content can be
+          picked from fixed options.
         </p>
         <p id="supportStatus" class="support-status muted">Loading supported content index...</p>
 
@@ -37,20 +37,20 @@
           </label>
           <label class="field">
             <span>Language</span>
-            <input id="languageInput" value="en-US" placeholder="en-US">
+            <select id="languageSelect"></select>
           </label>
-          <label class="field">
+          <div class="field field--wide">
             <span>Required mods</span>
-            <input id="requiredModsInput" value="Terraria" placeholder="Terraria, CalamityMod">
-          </label>
-          <label class="field">
+            <div id="requiredModOptions" class="choice-grid" aria-label="Required mods"></div>
+          </div>
+          <div class="field field--wide">
             <span>Class tags</span>
-            <input id="classTagsInput" value="melee" placeholder="melee, summoner">
-          </label>
-          <label class="field">
+            <div id="classTagOptions" class="choice-grid" aria-label="Class tags"></div>
+          </div>
+          <div class="field field--wide">
             <span>Guide tags</span>
-            <input id="guideTagsInput" value="draft, starter" placeholder="starter, prehardmode">
-          </label>
+            <div id="guideTagOptions" class="choice-grid" aria-label="Guide tags"></div>
+          </div>
           <label class="field field--wide">
             <span>Summary</span>
             <textarea id="summaryInput" rows="4" placeholder="Short catalog description"></textarea>
@@ -72,15 +72,12 @@
           <div class="editor-block__header">
             <h2>Stages</h2>
             <p class="muted">
-              Each stage can describe goals, bosses, notes, and categorized item picks.
-              You can type manual IDs like <code>ModName/InternalName</code> or use the built-in suggestions.
+              Bosses and items are selected from the curated support index so the
+              editor stays consistent and easier to use.
             </p>
           </div>
           <div id="stageList" class="stage-list"></div>
         </section>
-
-        <datalist id="itemSuggestions"></datalist>
-        <datalist id="bossSuggestions"></datalist>
       </section>
 
       <div class="preview-stack">

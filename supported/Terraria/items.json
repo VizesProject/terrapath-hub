@@ -7,35 +7,35 @@
       "internalName": "CloudinaBottle",
       "displayName": "Cloud in a Bottle",
       "category": "accessory",
-      "icon": null
+      "icon": "assets/icons/terraria/items/cloud-in-a-bottle.svg"
     },
     {
       "id": "Terraria/EnchantedBoomerang",
       "internalName": "EnchantedBoomerang",
       "displayName": "Enchanted Boomerang",
       "category": "weapon",
-      "icon": null
+      "icon": "assets/icons/terraria/items/enchanted-boomerang.svg"
     },
     {
       "id": "Terraria/GoldBroadsword",
       "internalName": "GoldBroadsword",
       "displayName": "Gold Broadsword",
       "category": "weapon",
-      "icon": null
+      "icon": "assets/icons/terraria/items/gold-broadsword.svg"
     },
     {
       "id": "Terraria/HermesBoots",
       "internalName": "HermesBoots",
       "displayName": "Hermes Boots",
       "category": "accessory",
-      "icon": null
+      "icon": "assets/icons/terraria/items/hermes-boots.svg"
     },
     {
       "id": "Terraria/IronBar",
       "internalName": "IronBar",
       "displayName": "Iron Bar",
       "category": "material",
-      "icon": null
+      "icon": "assets/icons/terraria/items/iron-bar.svg"
     }
   ]
 }

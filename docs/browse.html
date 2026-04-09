@@ -19,10 +19,39 @@
       <section class="panel">
         <p class="eyebrow">Catalog preview</p>
         <h1>Browse Guides</h1>
-        <label class="field">
-          <span>Search</span>
-          <input id="searchInput" type="search" placeholder="Search by title, class, mod, language">
-        </label>
+        <section class="field-grid browse-filters">
+          <label class="field field--wide">
+            <span>Search</span>
+            <input id="searchInput" type="search" placeholder="Search by title, class, mod, language">
+          </label>
+          <label class="field">
+            <span>Language</span>
+            <select id="languageFilter">
+              <option value="">All languages</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Class</span>
+            <select id="classFilter">
+              <option value="">All classes</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Required mod</span>
+            <select id="modFilter">
+              <option value="">All mods</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Sort</span>
+            <select id="sortFilter">
+              <option value="popularity">Popularity</option>
+              <option value="updated">Recently updated</option>
+              <option value="title">Title</option>
+            </select>
+          </label>
+        </section>
+        <p id="guideCountSummary" class="muted browse-summary">Loading guide count...</p>
         <div id="guideList" class="guide-list" aria-live="polite"></div>
       </section>
     </main>

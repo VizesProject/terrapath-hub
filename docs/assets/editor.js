@@ -1,4 +1,53 @@
-const STORAGE_KEY = "terrapath-editor-draft-v2";
+const STORAGE_KEY = "terrapath-editor-draft-v3";
+
+const LANGUAGE_OPTIONS = [
+  { value: "en-US", label: "English (US)" },
+  { value: "ru-RU", label: "Russian" }
+];
+
+const SUPPORTED_MOD_OPTIONS = [
+  {
+    value: "Terraria",
+    label: "Terraria",
+    description: "Vanilla progression and content",
+    availableInEditor: true
+  },
+  {
+    value: "CalamityMod",
+    label: "Calamity Mod",
+    description: "Guide metadata can mention it; curated item support comes later",
+    availableInEditor: false
+  },
+  {
+    value: "ThoriumMod",
+    label: "Thorium Mod",
+    description: "Guide metadata can mention it; curated item support comes later",
+    availableInEditor: false
+  }
+];
+
+const CLASS_TAG_OPTIONS = [
+  { value: "melee", label: "Melee" },
+  { value: "ranged", label: "Ranged" },
+  { value: "magic", label: "Magic" },
+  { value: "summoner", label: "Summoner" },
+  { value: "rogue", label: "Rogue" },
+  { value: "bard", label: "Bard" },
+  { value: "other", label: "Other" }
+];
+
+const GUIDE_TAG_OPTIONS = [
+  { value: "starter", label: "Starter" },
+  { value: "prehardmode", label: "Pre-Hardmode" },
+  { value: "hardmode", label: "Hardmode" },
+  { value: "bossing", label: "Bossing" },
+  { value: "progression", label: "Progression" },
+  { value: "vanilla", label: "Vanilla" },
+  { value: "calamity", label: "Calamity" },
+  { value: "thorium", label: "Thorium" },
+  { value: "draft", label: "Draft" }
+];
+
 const CATEGORY_LABELS = {
   weapon: "Weapons",
   armor: "Armor",
@@ -13,15 +62,16 @@ const CATEGORY_LABELS = {
   furniture: "Furniture",
   other: "Other"
 };
+
 const CATEGORY_OPTIONS = Object.keys(CATEGORY_LABELS);
 
 const supportStatus = document.querySelector("#supportStatus");
 const titleInput = document.querySelector("#titleInput");
 const authorInput = document.querySelector("#authorInput");
-const languageInput = document.querySelector("#languageInput");
-const requiredModsInput = document.querySelector("#requiredModsInput");
-const classTagsInput = document.querySelector("#classTagsInput");
-const guideTagsInput = document.querySelector("#guideTagsInput");
+const languageSelect = document.querySelector("#languageSelect");
+const requiredModOptions = document.querySelector("#requiredModOptions");
+const classTagOptions = document.querySelector("#classTagOptions");
+const guideTagOptions = document.querySelector("#guideTagOptions");
 const summaryInput = document.querySelector("#summaryInput");
 const addStageButton = document.querySelector("#addStageButton");
 const copyJsonButton = document.querySelector("#copyJsonButton");
@@ -32,8 +82,6 @@ const submissionStatus = document.querySelector("#submissionStatus");
 const stageList = document.querySelector("#stageList");
 const guidePreview = document.querySelector("#guidePreview");
 const jsonPreview = document.querySelector("#jsonPreview");
-const itemSuggestions = document.querySelector("#itemSuggestions");
-const bossSuggestions = document.querySelector("#bossSuggestions");
 
 let latestJson = "{}";
 let supportIndex = {
@@ -51,9 +99,9 @@ function createDefaultState() {
     title: "Vanilla Melee Starter Path",
     author: "TerraPath Team",
     language: "en-US",
-    requiredModsText: "Terraria",
-    classTagsText: "melee",
-    guideTagsText: "starter, draft",
+    requiredMods: ["Terraria"],
+    classTags: ["melee"],
+    guideTags: ["starter", "progression", "vanilla", "draft"],
     summary: "A structured melee progression path that shows how TerraPath guides can be authored and previewed.",
     stages: [
       createStage({
@@ -103,6 +151,10 @@ function createItem(seed = {}) {
   };
 }
 
+function today() {
+  return new Date().toISOString().slice(0, 10);
+}
+
 function slugify(value) {
   return String(value || "")
     .trim()
@@ -112,8 +164,11 @@ function slugify(value) {
     .slice(0, 80) || "new-guide";
 }
 
-function today() {
-  return new Date().toISOString().slice(0, 10);
+function splitLines(value) {
+  return String(value || "")
+    .split(/\r?\n/)
+    .map((item) => item.trim())
+    .filter(Boolean);
 }
 
 function splitCommaSeparated(value) {
@@ -125,11 +180,8 @@ function splitCommaSeparated(value) {
   ));
 }
 
-function splitLines(value) {
-  return String(value || "")
-    .split(/\r?\n/)
-    .map((item) => item.trim())
-    .filter(Boolean);
+function uniqueValues(values) {
+  return Array.from(new Set((values || []).filter(Boolean)));
 }
 
 function escapeHtml(value) {
@@ -175,14 +227,24 @@ function normalizeState(raw) {
     return createDefaultState();
   }
 
+  const requiredMods = Array.isArray(raw.requiredMods)
+    ? raw.requiredMods
+    : splitCommaSeparated(raw.requiredModsText || "Terraria");
+  const classTags = Array.isArray(raw.classTags)
+    ? raw.classTags
+    : splitCommaSeparated(raw.classTagsText || "melee").map((tag) => tag.toLowerCase());
+  const guideTags = Array.isArray(raw.guideTags)
+    ? raw.guideTags
+    : splitCommaSeparated(raw.guideTagsText || "draft").map((tag) => tag.toLowerCase());
+
   return {
     createdAt: typeof raw.createdAt === "string" ? raw.createdAt : today(),
     title: String(raw.title || ""),
     author: String(raw.author || ""),
     language: String(raw.language || "en-US"),
-    requiredModsText: String(raw.requiredModsText || "Terraria"),
-    classTagsText: String(raw.classTagsText || "melee"),
-    guideTagsText: String(raw.guideTagsText || "draft"),
+    requiredMods: uniqueValues(requiredMods),
+    classTags: uniqueValues(classTags),
+    guideTags: uniqueValues(guideTags),
     summary: String(raw.summary || ""),
     stages: Array.isArray(raw.stages) && raw.stages.length
       ? raw.stages.map((stage) => createStage(stage))
@@ -190,20 +252,49 @@ function normalizeState(raw) {
   };
 }
 
+function buildChoiceMarkup(option, group, selectedValues) {
+  const checked = selectedValues.includes(option.value) ? "checked" : "";
+  const disabled = option.disabled ? "disabled" : "";
+  const unavailable = option.availableInEditor === false ? "choice-chip--muted" : "";
+
+  return `
+    <label class="choice-chip ${unavailable}">
+      <input
+        type="checkbox"
+        data-choice-group="${group}"
+        value="${escapeHtml(option.value)}"
+        ${checked}
+        ${disabled}>
+      <span class="choice-chip__label">${escapeHtml(option.label)}</span>
+      <span class="choice-chip__description">${escapeHtml(option.description || "")}</span>
+    </label>
+  `;
+}
+
+function renderChoiceGroups() {
+  requiredModOptions.innerHTML = SUPPORTED_MOD_OPTIONS.map((option) =>
+    buildChoiceMarkup(option, "required-mods", state.requiredMods)).join("");
+  classTagOptions.innerHTML = CLASS_TAG_OPTIONS.map((option) =>
+    buildChoiceMarkup(option, "class-tags", state.classTags)).join("");
+  guideTagOptions.innerHTML = GUIDE_TAG_OPTIONS.map((option) =>
+    buildChoiceMarkup(option, "guide-tags", state.guideTags)).join("");
+}
+
+function renderLanguageOptions() {
+  languageSelect.innerHTML = LANGUAGE_OPTIONS.map((option) => `
+    <option value="${option.value}">${escapeHtml(option.label)}</option>
+  `).join("");
+}
+
 function syncMetadataInputs() {
   titleInput.value = state.title;
   authorInput.value = state.author;
-  languageInput.value = state.language;
-  requiredModsInput.value = state.requiredModsText;
-  classTagsInput.value = state.classTagsText;
-  guideTagsInput.value = state.guideTagsText;
+  languageSelect.value = state.language;
   summaryInput.value = state.summary;
+  renderChoiceGroups();
 }
 
 function buildGuide() {
-  const requiredMods = splitCommaSeparated(state.requiredModsText);
-  const classTags = splitCommaSeparated(state.classTagsText).map((tag) => tag.toLowerCase());
-  const guideTags = splitCommaSeparated(state.guideTagsText).map((tag) => tag.toLowerCase());
   const usedStageIds = new Map();
 
   const stages = state.stages.map((stage, index) => {
@@ -216,7 +307,7 @@ function buildGuide() {
     }
     usedStageIds.set(baseId, seenCount + 1);
 
-    const bossRefs = Array.from(new Set(stage.bossRefs.map((value) => value.trim()).filter(Boolean)));
+    const bossRefs = uniqueValues(stage.bossRefs.map((value) => value.trim()).filter(Boolean));
     const goals = splitLines(stage.goalsText);
     const notes = splitLines(stage.notesText);
     const items = stage.items
@@ -267,38 +358,51 @@ function buildGuide() {
 
   const guide = {
     schemaVersion: 1,
-    id: slugify(`${requiredMods[0] || "guide"}-${classTags[0] || "path"}-${state.title}`),
+    id: slugify(`${state.requiredMods[0] || "guide"}-${state.classTags[0] || "path"}-${state.title}`),
     title: state.title.trim() || "Untitled Guide",
     author: state.author.trim() || "Unknown Author",
-    language: state.language.trim() || "en-US",
+    language: state.language || "en-US",
     summary: state.summary.trim() || "Draft guide.",
-    requiredMods: requiredMods.length ? requiredMods : ["Terraria"],
-    classTags: classTags.length ? classTags : ["other"],
+    requiredMods: state.requiredMods.length ? state.requiredMods : ["Terraria"],
+    classTags: state.classTags.length ? state.classTags : ["other"],
     createdAt: state.createdAt,
     updatedAt: today(),
     stages
   };
 
-  if (guideTags.length) {
-    guide.guideTags = guideTags;
+  if (state.guideTags.length) {
+    guide.guideTags = [...state.guideTags];
   }
 
   return guide;
 }
 
+function resolveEntry(contentId, map) {
+  return map.get(contentId) || null;
+}
+
 function resolveEntryName(contentId, map) {
-  const entry = map.get(contentId);
+  const entry = resolveEntry(contentId, map);
   if (entry?.displayName) {
     return entry.displayName;
   }
   return String(contentId || "").split("/").pop() || contentId;
 }
 
+function iconMarkup(entry, label) {
+  if (entry?.icon) {
+    return `<img class="content-icon" src="${escapeHtml(entry.icon)}" alt="${escapeHtml(label)}" loading="lazy">`;
+  }
+
+  return `<span class="content-token">${escapeHtml(initials(label))}</span>`;
+}
+
 function buildContentBadge(contentId, map) {
+  const entry = resolveEntry(contentId, map);
   const label = resolveEntryName(contentId, map);
   return `
     <div class="content-chip">
-      <span class="content-token">${escapeHtml(initials(label))}</span>
+      <span class="content-chip__media">${iconMarkup(entry, label)}</span>
       <span>${escapeHtml(label)}</span>
     </div>
   `;
@@ -320,11 +424,12 @@ function renderStagePreview(stage) {
         <h4>${escapeHtml(titleCaseCategory(category))}</h4>
         <div class="content-grid">
           ${items.map((item) => {
+            const entry = resolveEntry(item.itemId, supportIndex.itemMap);
             const label = resolveEntryName(item.itemId, supportIndex.itemMap);
             return `
               <article class="content-card">
                 <div class="content-card__head">
-                  <span class="content-token">${escapeHtml(initials(label))}</span>
+                  <span class="content-card__media">${iconMarkup(entry, label)}</span>
                   <div>
                     <strong>${escapeHtml(label)}</strong>
                     <div class="content-card__meta">${escapeHtml(item.itemId)}</div>
@@ -424,7 +529,7 @@ async function copyJson() {
       return;
     }
   } catch {
-    // Fallback below.
+    // Fall through to selection fallback.
   }
 
   const selection = window.getSelection();
@@ -467,30 +572,71 @@ function openIssuePage() {
   submissionStatus.textContent = "GitHub issues opened in a new tab. Choose the guide submission form and paste the copied JSON.";
 }
 
+function groupEntriesByMod(entries) {
+  const grouped = new Map();
+  for (const entry of entries) {
+    const modName = String(entry.id || "").split("/")[0] || "Other";
+    const group = grouped.get(modName) || [];
+    group.push(entry);
+    grouped.set(modName, group);
+  }
+  return grouped;
+}
+
+function buildSelectOptions(entries, selectedValue, placeholderLabel) {
+  const entryMap = new Map(entries.map((entry) => [entry.id, entry]));
+  let markup = `<option value="">${escapeHtml(placeholderLabel)}</option>`;
+
+  if (selectedValue && !entryMap.has(selectedValue)) {
+    markup += `<option value="${escapeHtml(selectedValue)}" selected>Unavailable: ${escapeHtml(selectedValue)}</option>`;
+  }
+
+  for (const [modName, modEntries] of groupEntriesByMod(entries)) {
+    const options = modEntries
+      .slice()
+      .sort((left, right) => left.displayName.localeCompare(right.displayName))
+      .map((entry) => `
+        <option value="${escapeHtml(entry.id)}" ${entry.id === selectedValue ? "selected" : ""}>
+          ${escapeHtml(entry.displayName)}
+        </option>
+      `).join("");
+
+    markup += `<optgroup label="${escapeHtml(modName)}">${options}</optgroup>`;
+  }
+
+  return markup;
+}
+
 function renderBossRows(stage, stageIndex) {
   if (!stage.bossRefs.length) {
     return `<p class="empty-state">No boss references yet.</p>`;
   }
 
-  return stage.bossRefs.map((bossRef, bossIndex) => `
-    <div class="inline-row inline-row--boss">
-      <input
-        data-role="boss-id"
-        data-stage-index="${stageIndex}"
-        data-boss-index="${bossIndex}"
-        list="bossSuggestions"
-        value="${escapeHtml(bossRef)}"
-        placeholder="Terraria/EyeofCthulhu">
-      <button
-        class="button button--quiet button--tiny"
-        type="button"
-        data-action="remove-boss"
-        data-stage-index="${stageIndex}"
-        data-boss-index="${bossIndex}">
-        Remove
-      </button>
-    </div>
-  `).join("");
+  return stage.bossRefs.map((bossRef, bossIndex) => {
+    const entry = resolveEntry(bossRef, supportIndex.bossMap);
+    const label = resolveEntryName(bossRef, supportIndex.bossMap);
+
+    return `
+      <div class="inline-row inline-row--boss">
+        <span class="inline-row__media">${iconMarkup(entry, label)}</span>
+        <select
+          class="inline-row__fill"
+          data-role="boss-id"
+          data-stage-index="${stageIndex}"
+          data-boss-index="${bossIndex}">
+          ${buildSelectOptions(supportIndex.bosses, bossRef, "Choose a boss")}
+        </select>
+        <button
+          class="button button--quiet button--tiny"
+          type="button"
+          data-action="remove-boss"
+          data-stage-index="${stageIndex}"
+          data-boss-index="${bossIndex}">
+          Remove
+        </button>
+      </div>
+    `;
+  }).join("");
 }
 
 function renderItemRows(stage, stageIndex) {
@@ -498,50 +644,55 @@ function renderItemRows(stage, stageIndex) {
     return `<p class="empty-state">No item picks yet.</p>`;
   }
 
-  return stage.items.map((item, itemIndex) => `
-    <div class="inline-row inline-row--item">
-      <input
-        class="inline-row__fill"
-        data-role="item-id"
-        data-stage-index="${stageIndex}"
-        data-item-index="${itemIndex}"
-        list="itemSuggestions"
-        value="${escapeHtml(item.itemId)}"
-        placeholder="Terraria/EnchantedBoomerang">
-      <select
-        data-role="item-category"
-        data-stage-index="${stageIndex}"
-        data-item-index="${itemIndex}">
-        ${CATEGORY_OPTIONS.map((category) => `
-          <option value="${category}" ${category === item.category ? "selected" : ""}>${titleCaseCategory(category)}</option>
-        `).join("")}
-      </select>
-      <input
-        data-role="item-priority"
-        data-stage-index="${stageIndex}"
-        data-item-index="${itemIndex}"
-        type="number"
-        min="0"
-        max="100"
-        value="${Number(item.priority)}"
-        placeholder="50">
-      <input
-        class="inline-row__fill"
-        data-role="item-note"
-        data-stage-index="${stageIndex}"
-        data-item-index="${itemIndex}"
-        value="${escapeHtml(item.note)}"
-        placeholder="Optional explanation">
-      <button
-        class="button button--quiet button--tiny"
-        type="button"
-        data-action="remove-item"
-        data-stage-index="${stageIndex}"
-        data-item-index="${itemIndex}">
-        Remove
-      </button>
-    </div>
-  `).join("");
+  return stage.items.map((item, itemIndex) => {
+    const entry = resolveEntry(item.itemId, supportIndex.itemMap);
+    const label = resolveEntryName(item.itemId, supportIndex.itemMap);
+
+    return `
+      <div class="inline-row inline-row--item">
+        <span class="inline-row__media">${iconMarkup(entry, label)}</span>
+        <select
+          class="inline-row__fill"
+          data-role="item-id"
+          data-stage-index="${stageIndex}"
+          data-item-index="${itemIndex}">
+          ${buildSelectOptions(supportIndex.items, item.itemId, "Choose an item")}
+        </select>
+        <select
+          data-role="item-category"
+          data-stage-index="${stageIndex}"
+          data-item-index="${itemIndex}">
+          ${CATEGORY_OPTIONS.map((category) => `
+            <option value="${category}" ${category === item.category ? "selected" : ""}>${titleCaseCategory(category)}</option>
+          `).join("")}
+        </select>
+        <input
+          data-role="item-priority"
+          data-stage-index="${stageIndex}"
+          data-item-index="${itemIndex}"
+          type="number"
+          min="0"
+          max="100"
+          value="${Number(item.priority)}"
+          placeholder="50">
+        <input
+          class="inline-row__fill"
+          data-role="item-note"
+          data-stage-index="${stageIndex}"
+          data-item-index="${itemIndex}"
+          value="${escapeHtml(item.note)}"
+          placeholder="Optional explanation">
+        <button
+          class="button button--quiet button--tiny"
+          type="button"
+          data-action="remove-item"
+          data-stage-index="${stageIndex}"
+          data-item-index="${itemIndex}">
+          Remove
+        </button>
+      </div>
+    `;
+  }).join("");
 }
 
 function renderStages() {
@@ -580,7 +731,7 @@ function renderStages() {
         <div class="subsection__header">
           <div>
             <h4>Boss references</h4>
-            <p class="muted">Shown as stage targets in the guide page.</p>
+            <p class="muted">Choose boss milestones from the curated support index.</p>
           </div>
           <button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${stageIndex}">Add boss</button>
         </div>
@@ -592,7 +743,7 @@ function renderStages() {
         <div class="subsection__header">
           <div>
             <h4>Item picks</h4>
-            <p class="muted">Group weapons, armor, accessories, ores, materials, and more.</p>
+            <p class="muted">Choose curated entries and place them into guide categories.</p>
           </div>
           <button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${stageIndex}">Add item</button>
         </div>
@@ -602,17 +753,6 @@ function renderStages() {
       </section>
     </article>
   `).join("");
-}
-
-function populateDatalist(element, entries) {
-  element.replaceChildren();
-
-  for (const entry of entries) {
-    const option = document.createElement("option");
-    option.value = entry.id;
-    option.label = entry.displayName ? `${entry.displayName} (${entry.id})` : entry.id;
-    element.append(option);
-  }
 }
 
 async function tryFetchJson(paths) {
@@ -651,14 +791,13 @@ async function loadSupportIndex() {
       bossMap: new Map(bossEntries.map((entry) => [entry.id, entry]))
     };
 
-    populateDatalist(itemSuggestions, itemEntries);
-    populateDatalist(bossSuggestions, bossEntries);
-    supportStatus.textContent = `Indexed content loaded: ${itemEntries.length} searchable item and ore entries, ${bossEntries.length} boss entries from Terraria. Manual ModName/InternalName values are still allowed.`;
+    supportStatus.textContent = `Curated editor support loaded: ${itemEntries.length} Terraria item and ore entries, ${bossEntries.length} Terraria boss entries. Metadata can already mention planned mods such as Calamity and Thorium, while their curated content pickers are still upcoming.`;
   } catch (error) {
-    supportStatus.textContent = "Supported content index could not be loaded here. The editor still works, and manual ModName/InternalName values are allowed.";
+    supportStatus.textContent = "Curated support data could not be loaded. The editor still shows saved draft data, but content selectors may be empty.";
     console.error(error);
   }
 
+  renderStages();
   updateOutput();
 }
 
@@ -667,6 +806,46 @@ function swapStages(fromIndex, toIndex) {
   const [moved] = next.splice(fromIndex, 1);
   next.splice(toIndex, 0, moved);
   state.stages = next;
+}
+
+function toggleArrayValue(array, value) {
+  return array.includes(value)
+    ? array.filter((entry) => entry !== value)
+    : [...array, value];
+}
+
+function handleMetadataChoiceChange(event) {
+  const input = event.target;
+  if (!(input instanceof HTMLInputElement)) {
+    return;
+  }
+
+  const group = input.dataset.choiceGroup;
+  if (!group) {
+    return;
+  }
+
+  if (group === "required-mods") {
+    state.requiredMods = toggleArrayValue(state.requiredMods, input.value);
+    if (!state.requiredMods.length) {
+      state.requiredMods = ["Terraria"];
+      renderChoiceGroups();
+    }
+  }
+
+  if (group === "class-tags") {
+    state.classTags = toggleArrayValue(state.classTags, input.value);
+    if (!state.classTags.length) {
+      state.classTags = ["other"];
+      renderChoiceGroups();
+    }
+  }
+
+  if (group === "guide-tags") {
+    state.guideTags = toggleArrayValue(state.guideTags, input.value);
+  }
+
+  updateOutput();
 }
 
 function handleStageAction(event) {
@@ -717,6 +896,14 @@ function handleStageAction(event) {
   updateOutput();
 }
 
+function updateStageHeading(target, title) {
+  const card = target.closest(".stage-card");
+  const heading = card?.querySelector("h3");
+  if (heading) {
+    heading.textContent = title;
+  }
+}
+
 function handleStageInput(event) {
   const target = event.target;
   const role = target.dataset.role;
@@ -732,14 +919,7 @@ function handleStageInput(event) {
   switch (role) {
     case "stage-title":
       stage.title = target.value;
-      {
-        const card = target.closest(".stage-card");
-        const title = target.value.trim() || `Stage ${stageIndex + 1}`;
-        const heading = card?.querySelector("h3");
-        if (heading) {
-          heading.textContent = title;
-        }
-      }
+      updateStageHeading(target, target.value.trim() || `Stage ${stageIndex + 1}`);
       break;
     case "stage-description":
       stage.description = target.value;
@@ -752,10 +932,17 @@ function handleStageInput(event) {
       break;
     case "boss-id":
       stage.bossRefs[bossIndex] = target.value;
+      renderStages();
       break;
-    case "item-id":
+    case "item-id": {
       stage.items[itemIndex].itemId = target.value;
+      const entry = resolveEntry(target.value, supportIndex.itemMap);
+      if (entry?.category) {
+        stage.items[itemIndex].category = entry.category;
+      }
+      renderStages();
       break;
+    }
     case "item-category":
       stage.items[itemIndex].category = target.value;
       break;
@@ -773,22 +960,29 @@ function handleStageInput(event) {
 }
 
 function bindMetadataInputs() {
-  const bindings = [
-    [titleInput, "title"],
-    [authorInput, "author"],
-    [languageInput, "language"],
-    [requiredModsInput, "requiredModsText"],
-    [classTagsInput, "classTagsText"],
-    [guideTagsInput, "guideTagsText"],
-    [summaryInput, "summary"]
-  ];
+  titleInput.addEventListener("input", () => {
+    state.title = titleInput.value;
+    updateOutput();
+  });
 
-  for (const [input, key] of bindings) {
-    input.addEventListener("input", () => {
-      state[key] = input.value;
-      updateOutput();
-    });
-  }
+  authorInput.addEventListener("input", () => {
+    state.author = authorInput.value;
+    updateOutput();
+  });
+
+  languageSelect.addEventListener("change", () => {
+    state.language = languageSelect.value;
+    updateOutput();
+  });
+
+  summaryInput.addEventListener("input", () => {
+    state.summary = summaryInput.value;
+    updateOutput();
+  });
+
+  requiredModOptions.addEventListener("change", handleMetadataChoiceChange);
+  classTagOptions.addEventListener("change", handleMetadataChoiceChange);
+  guideTagOptions.addEventListener("change", handleMetadataChoiceChange);
 }
 
 function resetDraft() {
@@ -804,6 +998,7 @@ function resetDraft() {
 }
 
 function init() {
+  renderLanguageOptions();
   syncMetadataInputs();
   renderStages();
   bindMetadataInputs();

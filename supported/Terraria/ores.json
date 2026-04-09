@@ -6,13 +6,13 @@
       "id": "Terraria/CopperOre",
       "internalName": "CopperOre",
       "displayName": "Copper Ore",
-      "icon": null
+      "icon": "assets/icons/terraria/ores/copper-ore.svg"
     },
     {
       "id": "Terraria/IronOre",
       "internalName": "IronOre",
       "displayName": "Iron Ore",
-      "icon": null
+      "icon": "assets/icons/terraria/ores/iron-ore.svg"
     }
   ]
 }
