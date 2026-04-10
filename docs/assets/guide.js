@@ -203,34 +203,38 @@ function renderRichText(textValue) {
   return parts.join("");
 }
 
-function renderItemGroups(items) {
-  if (!(items || []).length) return `<p class="empty-state">${escapeHtml(t("guide.noItems"))}</p>`;
-
-  const denseItemList = (entries) => `<ul class="wiki-items">${entries.map((entry) => {
+function renderItemsList(entries) {
+  return `<ul class="wiki-items">${entries.map((entry) => {
     const label = resolveName(entry.itemId, supportIndex.itemMap);
     const supportEntry = supportIndex.itemMap.get(entry.itemId);
     return `<li class="wiki-item"><span class="wiki-item__media">${iconMarkup(supportEntry, label)}</span><span class="wiki-item__label">${escapeHtml(label)}</span></li>`;
   }).join("")}</ul>`;
+}
 
-  return GROUPS.map((group) => {
-    const entries = (items || []).filter((entry) => group.cats.includes(entry.category || "other"));
-    if (!entries.length) return "";
+function renderGroupColumn(group, items) {
+  const entries = (items || []).filter((entry) => group.cats.includes(entry.category || "other"));
+  if (!entries.length) {
+    return `<section class="wiki-column"><header class="wiki-column__head">${escapeHtml(groupLabel(group.key))}</header><div class="wiki-column__body"></div></section>`;
+  }
 
-    if (group.key === "accessory") {
-      const subgroupOrder = [];
-      entries.forEach((entry) => {
-        const subgroup = String(entry.subgroup || "").trim();
-        if (!subgroupOrder.includes(subgroup)) subgroupOrder.push(subgroup);
-      });
+  if (group.key === "accessory") {
+    const subgroupOrder = [];
+    entries.forEach((entry) => {
+      const subgroup = String(entry.subgroup || "").trim();
+      if (!subgroupOrder.includes(subgroup)) subgroupOrder.push(subgroup);
+    });
 
-      return `<section class="wiki-group"><h4>${escapeHtml(groupLabel(group.key))}</h4>${subgroupOrder.map((subgroup) => {
-        const subgroupEntries = entries.filter((entry) => String(entry.subgroup || "").trim() === subgroup);
-        return `<div class="wiki-subgroup">${subgroup ? `<h5>${escapeHtml(subgroup)}</h5>` : ""}${denseItemList(subgroupEntries)}</div>`;
-      }).join("")}</section>`;
-    }
+    return `<section class="wiki-column"><header class="wiki-column__head">${escapeHtml(groupLabel(group.key))}</header><div class="wiki-column__body">${subgroupOrder.map((subgroup) => {
+      const subgroupEntries = entries.filter((entry) => String(entry.subgroup || "").trim() === subgroup);
+      return `<div class="wiki-column__group">${subgroup ? `<h5 class="wiki-column__subhead">${escapeHtml(subgroup)}</h5>` : ""}${renderItemsList(subgroupEntries)}</div>`;
+    }).join("")}</div></section>`;
+  }
 
-    return `<section class="wiki-group"><h4>${escapeHtml(groupLabel(group.key))}</h4>${denseItemList(entries)}</section>`;
-  }).join("");
+  return `<section class="wiki-column"><header class="wiki-column__head">${escapeHtml(groupLabel(group.key))}</header><div class="wiki-column__body">${renderItemsList(entries)}</div></section>`;
+}
+
+function renderLoadout(items) {
+  return `<section class="wiki-loadout"><div class="wiki-loadout__grid">${GROUPS.map((group) => renderGroupColumn(group, items)).join("")}</div></section>`;
 }
 
 function stagesByEra(stages) {
@@ -244,15 +248,15 @@ function stagesByEra(stages) {
 
 function renderBosses(stage) {
   if (!(stage.bossRefs || []).length) return "";
-  return `<section class="preview-block"><h4>${escapeHtml(t("common.labelBosses"))}</h4><div class="chip-row">${stage.bossRefs.map((bossRef) => {
+  return `<div class="guide-substage__bosses">${stage.bossRefs.map((bossRef) => {
     const entry = supportIndex.bossMap.get(bossRef);
     const label = resolveName(bossRef, supportIndex.bossMap);
     return `<div class="content-chip"><span class="content-chip__media">${iconMarkup(entry, label, "boss")}</span><span>${escapeHtml(label)}</span></div>`;
-  }).join("")}</div></section>`;
+  }).join("")}</div>`;
 }
 
 function renderStageEntry(stage) {
-  return `<article class="guide-substage"><section class="guide-substage__main"><div class="guide-substage__header"><h3>${renderRichText(stage.title)}</h3></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${renderBosses(stage)}</section><section class="guide-substage__loadout">${renderItemGroups(stage.items)}</section></article>`;
+  return `<article class="guide-substage"><section class="guide-substage__main"><div class="guide-substage__header"><h3>${renderRichText(stage.title)}</h3></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${renderBosses(stage)}</section>${renderLoadout(stage.items)}</article>`;
 }
 
 function renderGuide(guide) {
