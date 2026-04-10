@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: TerraPath moderation guide
+    url: https://github.com/Vizeore7/terrapath-hub/blob/main/MODERATION.md
+    about: Read the full submission, review, approval, and publication flow.

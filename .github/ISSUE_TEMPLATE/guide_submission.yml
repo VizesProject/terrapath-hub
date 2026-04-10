@@ -6,17 +6,32 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please validate your guide before submitting. If you used the editor, paste the exported `guide.json` below.
+        Submit one guide per issue.
+
+        Moderation flow:
+        1. Paste the exported `guide.json` below.
+        2. Wait for the automatic validation comment.
+        3. A maintainer reviews the guide and adds `approved` when it is ready.
+        4. TerraPath creates a publication pull request automatically.
   - type: textarea
     id: guide_json
     attributes:
       label: guide.json
-      description: Paste the full JSON guide here.
+      description: Paste the full JSON guide here exactly as exported by the editor.
       render: json
     validations:
       required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I validated the guide in the editor preview before submitting.
+          required: true
+        - label: I understand that the guide may be edited or rejected during moderation.
+          required: true
   - type: textarea
     id: notes
     attributes:
       label: Submission notes
-      description: Mention required mods, tested progression, known gaps, or balance assumptions.
+      description: Mention required mods, tested progression, known gaps, balance assumptions, or anything a moderator should review.

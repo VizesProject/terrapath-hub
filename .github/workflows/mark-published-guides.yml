@@ -1,0 +1,50 @@
+name: Mark published guides
+
+on:
+  issues:
+    types: [closed]
+
+permissions:
+  issues: write
+
+jobs:
+  mark-published:
+    if: contains(join(github.event.issue.labels.*.name, ','), 'guide-submission') && contains(join(github.event.issue.labels.*.name, ','), 'approved')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mark issue as published
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issueNumber = context.issue.number;
+            const currentLabels = context.payload.issue.labels.map((label) => label.name);
+
+            async function addLabel(name) {
+              if (currentLabels.includes(name)) return;
+              await github.rest.issues.addLabels({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                labels: [name]
+              });
+            }
+
+            async function removeLabel(name) {
+              if (!currentLabels.includes(name)) return;
+              try {
+                await github.rest.issues.removeLabel({
+                  owner,
+                  repo,
+                  issue_number: issueNumber,
+                  name
+                });
+              } catch (error) {
+                if (error.status !== 404) throw error;
+              }
+            }
+
+            await addLabel('published');
+            await removeLabel('needs-review');
+            await removeLabel('approved');

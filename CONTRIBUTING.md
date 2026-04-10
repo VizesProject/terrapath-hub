@@ -6,8 +6,9 @@ Thanks for helping improve Terraria and tModLoader guides.
 
 - Report guide mistakes through a GitHub issue.
 - Request support for a mod through a GitHub issue.
-- Submit guide JSON through a pull request.
-- Use the web editor once it is available on GitHub Pages.
+- Submit guide JSON through the guide submission issue form.
+- Use the web editor on GitHub Pages and paste the exported `guide.json`.
+- Follow the repository moderation flow documented in [MODERATION.md](MODERATION.md).
 
 ## Guide requirements
 
@@ -28,3 +29,7 @@ Guides can be written in any supported locale and are grouped by locale in `guid
 TerraPath is designed for community guides, but published catalog data should be
 valid, readable, and useful to players. Maintainers may ask for edits before a
 guide is added to the public catalog.
+
+Approved guide issues are turned into pull requests automatically. Maintainers
+should review and merge those pull requests instead of committing guide files
+directly to `main`.

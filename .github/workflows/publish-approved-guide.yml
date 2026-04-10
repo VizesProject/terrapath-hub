@@ -1,0 +1,128 @@
+name: Publish approved guide
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  publish:
+    if: github.event.label.name == 'approved' && contains(join(github.event.issue.labels.*.name, ','), 'guide-submission')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Ensure publication labels exist
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const labels = [
+              ["approved", "5319e7", "Approved by a maintainer and ready for publication"],
+              ["published", "0e8a16", "Merged into the public catalog"],
+              ["automated-pr", "0e8a16", "Pull request created by moderation workflow"]
+            ];
+            for (const [name, color, description] of labels) {
+              try {
+                await github.rest.issues.getLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name
+                });
+              } catch (error) {
+                if (error.status !== 404) throw error;
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name,
+                  color,
+                  description
+                });
+              }
+            }
+
+      - name: Export guide from issue
+        id: export
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: python tools/issue_submission.py export-issue
+
+      - name: Validate guides
+        run: python tools/validate_guides.py
+
+      - name: Rebuild catalog
+        run: python tools/build_catalog.py
+
+      - name: Create publication pull request
+        id: cpr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Publish guide from issue #${{ github.event.issue.number }}"
+          branch: "publish/issue-${{ github.event.issue.number }}"
+          delete-branch: true
+          title: "Publish guide: ${{ steps.export.outputs.guide_id }}"
+          body: |
+            Closes #${{ github.event.issue.number }}
+
+            This pull request was created automatically by the TerraPath moderation workflow.
+
+            Published guide:
+            - ID: `${{ steps.export.outputs.guide_id }}`
+            - Path: `${{ steps.export.outputs.guide_path }}`
+          labels: automated-pr
+
+      - name: Comment with pull request link
+        uses: actions/github-script@v7
+        env:
+          PR_URL: ${{ steps.cpr.outputs.pull-request-url }}
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issueNumber = context.issue.number;
+            const marker = '<!-- terrapath-publication-status -->';
+            const body = process.env.PR_URL
+              ? `${marker}
+
+Publication pull request created: ${process.env.PR_URL}
+
+Next step:
+1. Review the PR diff.
+2. Merge it into \`main\`.
+3. GitHub Pages will publish the updated catalog automatically.`
+              : `${marker}
+
+No publication PR was created. This usually means the exported guide did not change the repository.`;
+
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner,
+              repo,
+              issue_number: issueNumber,
+              per_page: 100
+            });
+            const existing = comments.find((comment) => comment.user.type === 'Bot' && comment.body.includes(marker));
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner,
+                repo,
+                comment_id: existing.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                body
+              });
+            }

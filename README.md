@@ -16,6 +16,7 @@ prepared before the first in-game release.
 - Guide browser: coming soon on GitHub Pages
 - Supported mods: [SUPPORTED_MODS.md](SUPPORTED_MODS.md)
 - Guide format: [schema/guide.schema.json](schema/guide.schema.json)
+- Moderation flow: [MODERATION.md](MODERATION.md)
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## What TerraPath does
