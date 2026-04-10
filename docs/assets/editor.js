@@ -22,7 +22,7 @@ const CLASSES = [
 
 const GROUPS = [
   { key: "weapon", cats: ["weapon"], en: "Weapons", ru: "\u041e\u0440\u0443\u0436\u0438\u0435" },
-  { key: "armor", cats: ["armor"], en: "Armor", ru: "\u0411\u0440\u043e\u043d\u044f" },
+  { key: "armor", cats: ["armor"], en: "Armor sets", ru: "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u044b \u0431\u0440\u043e\u043d\u0438" },
   { key: "accessory", cats: ["accessory"], en: "Accessories", ru: "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b" },
   { key: "buff", cats: ["buff", "ammo"], en: "Buffs / Consumables", ru: "\u0411\u0430\u0444\u0444\u044b / \u0420\u0430\u0441\u0445\u043e\u0434\u043d\u0438\u043a\u0438" }
 ];
@@ -67,6 +67,8 @@ const ARMOR_SET_ALIASES = [
   { id: "Terraria/NebulaHelmet", internalName: "NebulaHelmet", displayName: "Nebula armor set", displayNameRu: "\u0422\u0443\u043c\u0430\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
   { id: "Terraria/StardustHelmet", internalName: "StardustHelmet", displayName: "Stardust armor set", displayNameRu: "\u0417\u0432\u0435\u0437\u0434\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" }
 ];
+
+const ARMOR_SET_IDS = new Set(ARMOR_SET_ALIASES.map((entry) => entry.id));
 
 const CATEGORY_PATTERNS = {
   armor: [/helmet/i, /headgear/i, /mask/i, /hood/i, /hat$/i, /cap$/i, /chainmail/i, /breastplate/i, /greaves/i, /leggings/i, /pants$/i, /robe$/i, /cuirass/i, /tunic/i, /shirt$/i, /mail$/i],
@@ -225,8 +227,8 @@ const refs = {
   summary: $("#summaryInput"),
   mods: $("#requiredModOptions"),
   classes: $("#classTagOptions"),
-  addStage: $("#addStageButton"),
-  accordion: $("#stageAccordion"),
+  outline: $("#stageOutline"),
+  accordion: $("#stageDetail"),
   copy: $("#copyJsonButton"),
   download: $("#downloadButton"),
   issue: $("#openIssueButton"),
@@ -317,8 +319,17 @@ function pickLabel(id, map) {
 }
 
 function iconMarkup(entry, label, boss = false) {
-  if (entry?.icon) return `<img class="content-icon ${boss ? "content-icon--boss" : ""}" src="${esc(entry.icon)}" alt="${esc(label)}" loading="lazy">`;
+  if (entry?.icon) {
+    return `<img class="content-icon ${boss ? "content-icon--boss" : ""}" src="${esc(entry.icon)}" alt="${esc(label)}" title="${esc(label)}" loading="lazy">`;
+  }
   return `<span class="content-token">${esc(initials(label))}</span>`;
+}
+
+function inlineIconMarkup(entry, label, boss = false) {
+  if (entry?.icon) {
+    return `<img class="inline-flow-icon ${boss ? "inline-flow-icon--boss" : ""}" src="${esc(entry.icon)}" alt="${esc(label)}" title="${esc(label)}" loading="lazy">`;
+  }
+  return `<span class="inline-flow-token" title="${esc(label)}" aria-label="${esc(label)}">${esc(initials(label).slice(0, 1) || "?")}</span>`;
 }
 
 function classLabel(value) {
@@ -446,7 +457,7 @@ function renderRichText(textValue) {
     const bossEntry = support.bossMap.get(contentId);
     const entry = itemEntry || bossEntry;
     const label = pickLabel(contentId, itemEntry ? support.itemMap : support.bossMap);
-    parts.push(`<span class="inline-icon-token">${iconMarkup(entry, label, Boolean(bossEntry))}<span>${esc(label)}</span></span>`);
+    parts.push(inlineIconMarkup(entry, label, Boolean(bossEntry)));
     lastIndex = index + match[0].length;
   }
 
@@ -586,6 +597,7 @@ function saveAndRender(full = true) {
   }
   renderSteps();
   renderMeta();
+  renderOutline();
   renderPreview();
   renderFooter();
 }
@@ -730,6 +742,14 @@ function previewBosses(stage) {
   }).join("")}</div></section>`;
 }
 
+function denseItemList(rows) {
+  return `<ul class="wiki-items">${rows.map((itemEntry) => {
+    const entry = support.itemMap.get(itemEntry.itemId);
+    const label = pickLabel(itemEntry.itemId, support.itemMap);
+    return `<li class="wiki-item"><span class="wiki-item__media">${iconMarkup(entry, label)}</span><span class="wiki-item__label">${esc(label)}</span></li>`;
+  }).join("")}</ul>`;
+}
+
 function previewGroups(items) {
   const blocks = GROUPS.map((group) => {
     const rows = (items || []).filter((entry) => group.cats.includes(entry.category || "other"));
@@ -742,22 +762,15 @@ function previewGroups(items) {
         if (!subgroupOrder.includes(subgroup)) subgroupOrder.push(subgroup);
       });
 
-      return `<section class="category-block"><h4>${esc(group[lang()])}</h4>${subgroupOrder.map((subgroup) => {
+      return `<section class="wiki-group"><h4>${esc(group[lang()])}</h4>${subgroupOrder.map((subgroup) => {
         const subgroupRows = rows.filter((entry) => String(entry.subgroup || "").trim() === subgroup);
-        return `<div class="accessory-subgroup">${subgroup ? `<h5>${esc(subgroup)}</h5>` : ""}<div class="content-grid">${subgroupRows.map((itemEntry) => {
-          const entry = support.itemMap.get(itemEntry.itemId);
-          const label = pickLabel(itemEntry.itemId, support.itemMap);
-          return `<article class="content-card"><div class="content-card__head"><span class="content-card__media">${iconMarkup(entry, label)}</span><div><strong>${esc(label)}</strong></div></div></article>`;
-        }).join("")}</div></div>`;
+        return `<div class="wiki-subgroup">${subgroup ? `<h5>${esc(subgroup)}</h5>` : ""}${denseItemList(subgroupRows)}</div>`;
       }).join("")}</section>`;
     }
 
-    return `<section class="category-block"><h4>${esc(group[lang()])}</h4><div class="content-grid">${rows.map((itemEntry) => {
-      const entry = support.itemMap.get(itemEntry.itemId);
-      const label = pickLabel(itemEntry.itemId, support.itemMap);
-      return `<article class="content-card"><div class="content-card__head"><span class="content-card__media">${iconMarkup(entry, label)}</span><div><strong>${esc(label)}</strong></div></div></article>`;
-    }).join("")}</div></section>`;
+    return `<section class="wiki-group"><h4>${esc(group[lang()])}</h4>${denseItemList(rows)}</section>`;
   }).filter(Boolean);
+
   return blocks.join("") || `<p class="empty-state">${esc(s("noItemsPreview"))}</p>`;
 }
 
@@ -770,15 +783,30 @@ function stagesByEra(stages) {
   return ERA_IDS.map((eraId) => ({ eraId, stages: groups.get(eraId) || [] })).filter((entry) => entry.stages.length);
 }
 
+function stageStats(stage) {
+  return {
+    items: (stage.items || []).filter((entry) => entry.itemId).length,
+    bosses: (stage.bossRefs || []).length
+  };
+}
+
+function stageSummary(stage) {
+  const stats = stageStats(stage);
+  return lang() === "ru"
+    ? `${stats.items} \u043f\u0440\u0435\u0434\u043c. • ${stats.bosses} \u0431\u043e\u0441\u0441.`
+    : `${stats.items} items • ${stats.bosses} bosses`;
+}
+
 function previewSubStage(stage) {
-  return `<article class="stage-preview stage-preview--stacked"><section class="stage-overview"><div class="stage-preview__header"><h3>${renderRichText(stage.title)}</h3><span class="meta-pill">${esc(s("itemCount", { count: (stage.items || []).length }))}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${previewBosses(stage)}</section><section class="stage-loadout">${previewGroups(stage.items)}</section></article>`;
+  const stats = stageStats(stage);
+  return `<article class="guide-substage"><section class="guide-substage__main"><div class="guide-substage__header"><h3>${renderRichText(stage.title)}</h3><span class="meta-pill">${esc(s("itemCount", { count: stats.items }))}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${previewBosses(stage)}</section><section class="guide-substage__loadout">${previewGroups(stage.items)}</section></article>`;
 }
 
 function renderPreview() {
   const guide = buildGuide();
   latestJson = `${JSON.stringify(guide, null, 2)}\n`;
   refs.json.textContent = latestJson;
-  refs.preview.innerHTML = `<header class="guide-preview__header"><h2 class="guide-title">${esc(guide.title)}</h2><p>${esc(guide.summary)}</p><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelClass")}: ${classList(guide.classTags)}`)}</span><span class="meta-pill">${esc(`${t("common.labelLanguage")}: ${guideLanguageLabel(guide.language)}`)}</span><span class="meta-pill">${esc(`${t("common.labelMods")}: ${(guide.requiredMods || []).join(", ")}`)}</span><span class="meta-pill">${esc(`${guide.stages.length} ${t("common.labelStages").toLowerCase()}`)}</span></div></header><div class="guide-preview__stages">${stagesByEra(guide.stages).map((eraGroup) => `<section class="era-preview"><header class="era-preview__header"><h2>${esc(eraLabel(eraGroup.eraId))}</h2><span class="meta-pill">${esc(`${eraGroup.stages.length} ${lang() === "ru" ? "\u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u043e\u0432" : "sub-stages"}`)}</span></header><div class="era-preview__list">${eraGroup.stages.map(previewSubStage).join("")}</div></section>`).join("")}</div>`;
+  refs.preview.innerHTML = `<header class="guide-reader__header"><h2 class="guide-title">${esc(guide.title)}</h2><p>${esc(guide.summary)}</p><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelClass")}: ${classList(guide.classTags)}`)}</span><span class="meta-pill">${esc(`${t("common.labelLanguage")}: ${guideLanguageLabel(guide.language)}`)}</span><span class="meta-pill">${esc(`${t("common.labelMods")}: ${(guide.requiredMods || []).join(", ")}`)}</span><span class="meta-pill">${esc(`${guide.stages.length} ${t("common.labelStages").toLowerCase()}`)}</span></div></header><div class="guide-reader__eras">${stagesByEra(guide.stages).map((eraGroup) => `<section class="guide-era"><header class="guide-era__header"><h2>${esc(eraLabel(eraGroup.eraId))}</h2><span class="meta-pill">${esc(`${eraGroup.stages.length} ${lang() === "ru" ? "\u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u043e\u0432" : "sub-stages"}`)}</span></header><div class="guide-era__list">${eraGroup.stages.map(previewSubStage).join("")}</div></section>`).join("")}</div>`;
 }
 
 function renderSubmissionGuide() {
@@ -823,20 +851,22 @@ function bossRows(stage, stageIndex) {
   }).join("");
 }
 
+function renderItemRow(itemEntry, itemIndex, stageIndex, groupKey, subgroupId = "") {
+  const entry = support.itemMap.get(itemEntry.itemId);
+  const label = pickLabel(itemEntry.itemId, support.itemMap) || s("chooseItem");
+  return `<div class="picker-row item-row"><span class="picker-row__media">${iconMarkup(entry, label)}</span><button class="picker-select" type="button" data-action="change-item" data-stage-index="${stageIndex}" data-item-index="${itemIndex}" data-group-key="${esc(groupKey)}" data-subgroup-id="${esc(subgroupId)}">${esc(label)}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-item" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">${esc(s("remove"))}</button></div>`;
+}
+
 function accessoryGroupRows(stage, stageIndex) {
   const ungroupedItems = (stage.items || []).filter((itemEntry) => itemEntry.category === "accessory" && !itemEntry.subgroupId);
   const groups = stage.accessoryGroups || [];
+  const subgroupTitle = lang() === "ru" ? "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u043f\u043e\u0434\u0433\u0440\u0443\u043f\u043f\u044b" : "Subgroup title";
+  const addSubgroup = lang() === "ru" ? "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043f\u043e\u0434\u0433\u0440\u0443\u043f\u043f\u0443" : "Add subgroup";
 
-  const renderAccessoryRow = (itemEntry, itemIndex, subgroupId = "") => {
-    const entry = support.itemMap.get(itemEntry.itemId);
-    const label = pickLabel(itemEntry.itemId, support.itemMap) || s("chooseItem");
-    return `<div class="picker-row item-row"><span class="picker-row__media">${iconMarkup(entry, label)}</span><button class="picker-select" type="button" data-action="change-item" data-stage-index="${stageIndex}" data-item-index="${itemIndex}" data-group-key="accessory" data-subgroup-id="${esc(subgroupId)}">${esc(label)}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-item" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">${esc(s("remove"))}</button></div>`;
-  };
-
-  return `<section class="item-group"><div class="item-group__header"><h4>${esc(groupLabel("accessory"))}</h4><div class="item-group__actions"><button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${stageIndex}" data-group-key="accessory">${esc(s("addItem"))}</button><button class="button button--quiet button--tiny" type="button" data-action="add-accessory-group" data-stage-index="${stageIndex}">${esc(lang() === "ru" ? "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043f\u043e\u0434\u0440\u0430\u0437\u0434\u0435\u043b" : "Add subgroup")}</button></div></div>${ungroupedItems.length ? `<div class="accessory-subgroup"><div class="content-grid content-grid--single">${ungroupedItems.map((itemEntry) => renderAccessoryRow(itemEntry, stage.items.indexOf(itemEntry))).join("")}</div></div>` : ""}${groups.map((group) => {
+  return `<section class="loadout-section"><div class="loadout-section__header"><h4>${esc(groupLabel("accessory"))}</h4><div class="item-group__actions"><button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${stageIndex}" data-group-key="accessory">${esc(s("addItem"))}</button><button class="button button--quiet button--tiny" type="button" data-action="add-accessory-group" data-stage-index="${stageIndex}">${esc(addSubgroup)}</button></div></div>${ungroupedItems.length ? `<div class="accessory-bucket">${ungroupedItems.map((itemEntry) => renderItemRow(itemEntry, stage.items.indexOf(itemEntry), stageIndex, "accessory")).join("")}</div>` : ""}${groups.map((group) => {
     const subgroupItems = stage.items.filter((itemEntry) => itemEntry.category === "accessory" && itemEntry.subgroupId === group.id);
-    return `<section class="accessory-subgroup-editor"><div class="field-label-with-action"><input class="inline-input" data-role="accessory-group-title" data-stage-index="${stageIndex}" data-group-id="${esc(group.id)}" value="${esc(group.title)}" placeholder="${esc(lang() === "ru" ? "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u043f\u043e\u0434\u0440\u0430\u0437\u0434\u0435\u043b\u0430" : "Subgroup title")}"><div class="item-group__actions"><button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${stageIndex}" data-group-key="accessory" data-subgroup-id="${esc(group.id)}">${esc(s("addItem"))}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-accessory-group" data-stage-index="${stageIndex}" data-group-id="${esc(group.id)}">${esc(s("remove"))}</button></div></div><div class="content-grid content-grid--single">${subgroupItems.length ? subgroupItems.map((itemEntry) => renderAccessoryRow(itemEntry, stage.items.indexOf(itemEntry), group.id)).join("") : `<p class="empty-state">${esc(s("noItems"))}</p>`}</div></section>`;
-  }).join("") || ""}${!ungroupedItems.length && !groups.length ? `<p class="empty-state">${esc(s("noItems"))}</p>` : ""}</section>`;
+    return `<section class="accessory-editor-group"><div class="accessory-editor-group__header"><input class="inline-input" data-role="accessory-group-title" data-stage-index="${stageIndex}" data-group-id="${esc(group.id)}" value="${esc(group.title)}" placeholder="${esc(subgroupTitle)}"><div class="item-group__actions"><button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${stageIndex}" data-group-key="accessory" data-subgroup-id="${esc(group.id)}">${esc(s("addItem"))}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-accessory-group" data-stage-index="${stageIndex}" data-group-id="${esc(group.id)}">${esc(s("remove"))}</button></div></div><div class="accessory-bucket">${subgroupItems.length ? subgroupItems.map((itemEntry) => renderItemRow(itemEntry, stage.items.indexOf(itemEntry), stageIndex, "accessory", group.id)).join("") : `<p class="empty-state">${esc(s("noItems"))}</p>`}</div></section>`;
+  }).join("")}${!ungroupedItems.length && !groups.length ? `<p class="empty-state">${esc(s("noItems"))}</p>` : ""}</section>`;
 }
 
 function itemRows(stage, stageIndex, groupEntry) {
@@ -845,32 +875,38 @@ function itemRows(stage, stageIndex, groupEntry) {
     if (groupEntry.cats.includes(itemEntry.category || "other")) rows.push({ itemEntry, itemIndex });
   });
 
-  return `<section class="item-group"><div class="item-group__header"><h4>${esc(groupEntry[lang()])}</h4><button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${stageIndex}" data-group-key="${esc(groupEntry.key)}">${esc(s("addItem"))}</button></div>${rows.length ? rows.map(({ itemEntry, itemIndex }) => {
-    const entry = support.itemMap.get(itemEntry.itemId);
-    const label = pickLabel(itemEntry.itemId, support.itemMap) || s("chooseItem");
-    return `<div class="picker-row item-row"><span class="picker-row__media">${iconMarkup(entry, label)}</span><button class="picker-select" type="button" data-action="change-item" data-stage-index="${stageIndex}" data-item-index="${itemIndex}" data-group-key="${esc(groupEntry.key)}">${esc(label)}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-item" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">${esc(s("remove"))}</button></div>`;
-  }).join("") : `<p class="empty-state">${esc(s("noItems"))}</p>`}</section>`;
+  return `<section class="loadout-section"><div class="loadout-section__header"><h4>${esc(groupEntry[lang()])}</h4><button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${stageIndex}" data-group-key="${esc(groupEntry.key)}">${esc(s("addItem"))}</button></div><div class="accessory-bucket">${rows.length ? rows.map(({ itemEntry, itemIndex }) => renderItemRow(itemEntry, itemIndex, stageIndex, groupEntry.key)).join("") : `<p class="empty-state">${esc(s("noItems"))}</p>`}</div></section>`;
 }
 
 function stageBody(stage, stageIndex) {
-  return `<section class="stage-overview-editor"><div class="field-grid"><label class="field"><span class="field-label-with-action"><span>${esc(s("stageTitle"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-title-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><input data-role="stage-title" data-stage-index="${stageIndex}" value="${esc(stage.title)}"></label><label class="field"><span>${esc(s("era"))}</span><select data-role="stage-era" data-stage-index="${stageIndex}">${(progression?.eras || []).map((era) => `<option value="${esc(era.id)}" ${era.id === stage.era ? "selected" : ""}>${esc(era.label?.[lang()] || era.label?.en || era.id)}</option>`).join("")}</select></label></div><label class="field"><span class="field-label-with-action"><span>${esc(s("description"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-description-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><textarea data-role="stage-description" data-stage-index="${stageIndex}" rows="6" placeholder="${esc(s("descriptionPlaceholder"))}">${esc(stage.description)}</textarea></label><section class="stage-section"><div class="section-heading section-heading--with-action"><h3>${esc(s("bosses"))}</h3><button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${stageIndex}">${esc(s("addBoss"))}</button></div><div class="stage-stack">${bossRows(stage, stageIndex)}</div></section></section><section class="stage-loadout-editor"><section class="stage-section"><div class="section-heading"><h3>${esc(s("items"))}</h3></div><div class="item-group-list">${GROUPS.map((group) => group.key === "accessory" ? accessoryGroupRows(stage, stageIndex) : itemRows(stage, stageIndex, group)).join("")}</div></section></section>`;
+  const stats = stageStats(stage);
+  return `<article class="stage-detail-card"><header class="stage-detail-card__header"><div><p class="eyebrow">${esc(eraLabel(stage.era || "prehardmode"))}</p><h3>${renderRichText(stage.title || `${s("stage")} ${stageIndex + 1}`)}</h3></div><div class="stage-detail-card__meta"><span class="meta-pill">${esc(s("itemCount", { count: stats.items }))}</span><span class="meta-pill">${esc(lang() === "ru" ? `${stats.bosses} \u0431\u043e\u0441\u0441.` : `${stats.bosses} bosses`)}</span></div></header><div class="stage-detail-card__grid"><section class="stage-detail-card__main"><label class="field"><span class="field-label-with-action"><span>${esc(s("stageTitle"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-title-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><input data-role="stage-title" data-stage-index="${stageIndex}" value="${esc(stage.title)}"></label><label class="field"><span>${esc(s("era"))}</span><select data-role="stage-era" data-stage-index="${stageIndex}">${(progression?.eras || []).map((era) => `<option value="${esc(era.id)}" ${era.id === stage.era ? "selected" : ""}>${esc(era.label?.[lang()] || era.label?.en || era.id)}</option>`).join("")}</select></label><label class="field"><span class="field-label-with-action"><span>${esc(s("description"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-description-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><textarea data-role="stage-description" data-stage-index="${stageIndex}" rows="9" placeholder="${esc(s("descriptionPlaceholder"))}">${esc(stage.description)}</textarea></label><section class="stage-section stage-section--compact"><div class="section-heading section-heading--with-action"><h3>${esc(s("bosses"))}</h3><button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${stageIndex}">${esc(s("addBoss"))}</button></div><div class="stage-stack">${bossRows(stage, stageIndex)}</div></section></section><aside class="stage-detail-card__side"><section class="stage-section stage-section--loadout"><div class="section-heading"><h3>${esc(s("items"))}</h3></div><div class="loadout-grid">${GROUPS.map((group) => group.key === "accessory" ? accessoryGroupRows(stage, stageIndex) : itemRows(stage, stageIndex, group)).join("")}</div></section></aside></div></article>`;
 }
 
-function stageCard(stage, stageIndex) {
-  const opened = stageIndex === openStage;
-  const eraText = progression?.eraLabel?.(stage.era || "prehardmode", lang()) || stage.era || "";
-  const count = (stage.items || []).filter((entry) => entry.itemId).length;
-  const prevIndex = previousStageIndexInEra(stageIndex);
-  const nextIndex = nextStageIndexInEra(stageIndex);
-  return `<article class="stage-card ${opened ? "stage-card--open" : ""}"><div class="stage-card__header"><button class="stage-card__toggle" type="button" data-action="toggle-stage" data-stage-index="${stageIndex}"><span class="stage-card__title"><strong>${renderRichText(stage.title || `${s("stage")} ${stageIndex + 1}`)}</strong><span class="muted">${esc(eraText)}</span></span><span class="meta-pill">${esc(s("itemCount", { count }))}</span></button><div class="stage-card__actions"><button class="button button--quiet button--tiny" type="button" data-action="move-stage-up" data-stage-index="${stageIndex}" ${prevIndex === -1 ? "disabled" : ""}>${esc(s("moveUp"))}</button><button class="button button--quiet button--tiny" type="button" data-action="move-stage-down" data-stage-index="${stageIndex}" ${nextIndex === -1 ? "disabled" : ""}>${esc(s("moveDown"))}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-stage" data-stage-index="${stageIndex}" ${state.stages.length === 1 ? "disabled" : ""}>${esc(s("delete"))}</button></div></div><div class="stage-card__body" ${opened ? "" : "hidden"}>${stageBody(stage, stageIndex)}</div></article>`;
+function outlineStageRow(stage, stageIndex) {
+  const selected = stageIndex === openStage;
+  return `<article class="outline-stage ${selected ? "outline-stage--active" : ""}"><button class="outline-stage__select" type="button" data-action="select-stage" data-stage-index="${stageIndex}"><strong>${renderRichText(stage.title || `${s("stage")} ${stageIndex + 1}`)}</strong><span class="muted">${esc(stageSummary(stage))}</span></button><div class="outline-stage__actions"><button class="button button--quiet button--tiny" type="button" data-action="move-stage-up" data-stage-index="${stageIndex}" ${previousStageIndexInEra(stageIndex) === -1 ? "disabled" : ""}>${esc(s("moveUp"))}</button><button class="button button--quiet button--tiny" type="button" data-action="move-stage-down" data-stage-index="${stageIndex}" ${nextStageIndexInEra(stageIndex) === -1 ? "disabled" : ""}>${esc(s("moveDown"))}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-stage" data-stage-index="${stageIndex}" ${state.stages.length === 1 ? "disabled" : ""}>${esc(s("delete"))}</button></div></article>`;
 }
 
-function renderAccordion() {
-  refs.addStage.hidden = true;
-  refs.accordion.innerHTML = ERA_IDS.map((eraId) => {
+function renderOutline() {
+  refs.outline.innerHTML = ERA_IDS.map((eraId) => {
     const stages = stagesForEra(eraId);
-    return `<section class="era-editor-section"><div class="era-editor-section__header"><div class="era-editor-section__copy"><h3>${esc(eraLabel(eraId))}</h3><p class="muted">${esc(lang() === "ru" ? "\u041e\u0434\u0438\u043d \u043a\u0440\u0443\u043f\u043d\u044b\u0439 \u044d\u0442\u0430\u043f \u0438\u0433\u0440\u044b. \u041d\u0438\u0436\u0435 \u0434\u043e\u0431\u0430\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u044b \u0441 \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u044f\u043c\u0438 \u0438 \u043b\u043e\u0430\u0434\u0430\u0443\u0442\u043e\u043c." : "One main game era. Add as many sub-stages below it as you need.")}</p></div><button class="button button--primary button--tiny" type="button" data-action="add-era-stage" data-era="${esc(eraId)}">${esc(lang() === "ru" ? "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043f\u043e\u0434-\u044d\u0442\u0430\u043f" : "Add sub-stage")}</button></div><div class="era-editor-section__body">${stages.length ? stages.map(({ stage, index }) => stageCard(stage, index)).join("") : `<p class="empty-state">${esc(lang() === "ru" ? "\u0417\u0434\u0435\u0441\u044c \u043f\u043e\u043a\u0430 \u043d\u0435\u0442 \u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u043e\u0432." : "No sub-stages in this section yet.")}</p>`}</div></section>`;
+    return `<section class="outline-era"><header class="outline-era__header"><div><h3>${esc(eraLabel(eraId))}</h3><p class="muted">${esc(lang() === "ru" ? "\u041f\u043e\u0434-\u044d\u0442\u0430\u043f\u044b \u044d\u0442\u043e\u0439 \u0447\u0430\u0441\u0442\u0438 \u043f\u0440\u043e\u0433\u0440\u0435\u0441\u0441\u0438\u0438." : "Sub-stages inside this era.")}</p></div><button class="button button--primary button--tiny" type="button" data-action="add-era-stage" data-era="${esc(eraId)}">${esc(lang() === "ru" ? "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043f\u043e\u0434-\u044d\u0442\u0430\u043f" : "Add sub-stage")}</button></header><div class="outline-era__list">${stages.length ? stages.map(({ stage, index }) => outlineStageRow(stage, index)).join("") : `<p class="empty-state">${esc(lang() === "ru" ? "\u041f\u043e\u043a\u0430 \u043d\u0435\u0442 \u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u043e\u0432." : "No sub-stages yet.")}</p>`}</div></section>`;
   }).join("");
+}
+
+function renderStageDetail() {
+  const stage = state.stages[openStage];
+  if (!stage) {
+    refs.accordion.innerHTML = `<div class="empty-stage-detail"><p class="muted">${esc(lang() === "ru" ? "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0438\u043b\u0438 \u0434\u043e\u0431\u0430\u0432\u044c\u0442\u0435 \u043f\u043e\u0434-\u044d\u0442\u0430\u043f." : "Select or add a sub-stage.")}</p></div>`;
+    return;
+  }
+  refs.accordion.innerHTML = stageBody(stage, openStage);
+}
+
+function renderStageWorkspace() {
+  renderOutline();
+  renderStageDetail();
 }
 
 function renderFooter() {
@@ -922,7 +958,7 @@ function renderAll() {
   renderSteps();
   renderMeta();
   renderPanels();
-  renderAccordion();
+  renderStageWorkspace();
   renderPreview();
   renderSubmissionGuide();
   renderSubmissionActions();
@@ -1009,12 +1045,22 @@ function resetDraft() {
 }
 
 function openPicker(mode, options = {}) {
+  const nextOptions = { ...options };
+  if (mode === "description" && Number.isInteger(options.stageIndex)) {
+    const fieldRole = options.fieldRole || "stage-description";
+    const field = document.querySelector(`[data-role="${fieldRole}"][data-stage-index="${options.stageIndex}"]`);
+    if (field) {
+      nextOptions.selectionStart = field.selectionStart ?? field.value.length;
+      nextOptions.selectionEnd = field.selectionEnd ?? field.value.length;
+    }
+  }
+
   const filter = mode === "item"
     ? (options.groupKey || "other")
     : mode === "boss"
       ? "boss"
       : "all";
-  pickerState = { mode, filter, ...options };
+  pickerState = { mode, filter, ...nextOptions };
   refs.picker.hidden = false;
   refs.pickerTitle.textContent = mode === "description"
     ? s("pickerDescriptionTitle")
@@ -1045,6 +1091,9 @@ function pickerFilterOptions() {
     ];
   }
   if (pickerState.mode === "boss") return [{ key: "boss", label: s("bosses") }];
+  if (pickerState.groupKey === "armor") {
+    return [{ key: "armor", label: groupLabel("armor") }];
+  }
   return [
     { key: pickerState.groupKey || "weapon", label: groupLabel(pickerState.groupKey || "weapon") },
     { key: "all-items", label: lang() === "ru" ? "\u0412\u0441\u0435 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u044b" : "All items" }
@@ -1063,6 +1112,11 @@ function pickerEntries() {
   }
   if (pickerState.mode === "boss") {
     return support.bosses.map((entry) => ({ ...entry, pickerType: "boss" }));
+  }
+  if (pickerState.groupKey === "armor") {
+    return visibleSearchItems()
+      .filter((entry) => ARMOR_SET_IDS.has(entry.id))
+      .map((entry) => ({ ...entry, pickerType: "item" }));
   }
   return visibleSearchItems().map((entry) => ({ ...entry, pickerType: "item" }));
 }
@@ -1092,13 +1146,13 @@ function renderPickerResults() {
   }).join("") || `<p class="empty-state">${esc(s("noPickerResults"))}</p>`;
 }
 
-function insertAtCursor(textarea, value) {
-  const start = textarea.selectionStart ?? textarea.value.length;
-  const end = textarea.selectionEnd ?? textarea.value.length;
-  textarea.value = `${textarea.value.slice(0, start)}${value}${textarea.value.slice(end)}`;
+function insertAtCursor(field, value, startOverride, endOverride) {
+  const start = Number.isInteger(startOverride) ? startOverride : (field.selectionStart ?? field.value.length);
+  const end = Number.isInteger(endOverride) ? endOverride : (field.selectionEnd ?? field.value.length);
+  field.value = `${field.value.slice(0, start)}${value}${field.value.slice(end)}`;
   const nextPosition = start + value.length;
-  textarea.selectionStart = nextPosition;
-  textarea.selectionEnd = nextPosition;
+  field.selectionStart = nextPosition;
+  field.selectionEnd = nextPosition;
 }
 
 function handlePickerSelection(contentId) {
@@ -1108,7 +1162,7 @@ function handlePickerSelection(contentId) {
     const fieldRole = pickerState.fieldRole || "stage-description";
     const field = refs.accordion.querySelector(`[data-role="${fieldRole}"][data-stage-index="${pickerState.stageIndex}"]`);
     if (field) {
-      insertAtCursor(field, `{{icon:${contentId}}}`);
+      insertAtCursor(field, `{{icon:${contentId}}}`, pickerState.selectionStart, pickerState.selectionEnd);
       if (fieldRole === "stage-title") {
         state.stages[pickerState.stageIndex].title = field.value;
       } else if (fieldRole === "stage-description") {
@@ -1216,9 +1270,53 @@ refs.classes.addEventListener("change", (event) => {
   if (!state.classTags.length) state.classTags = ["other"];
   saveAndRender();
 });
-refs.addStage.addEventListener("click", () => {
-  insertStageForEra("prehardmode");
-  saveAndRender();
+
+refs.outline.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-action]");
+  if (!button) return;
+  const action = button.dataset.action;
+  const stageIndex = Number(button.dataset.stageIndex);
+  const eraId = button.dataset.era || "";
+
+  if (action === "add-era-stage") {
+    insertStageForEra(eraId || "prehardmode");
+    saveAndRender();
+    return;
+  }
+
+  if (action === "select-stage") {
+    openStage = stageIndex;
+    renderStageWorkspace();
+    renderFooter();
+    return;
+  }
+
+  const stage = state.stages[stageIndex];
+  if (!stage) return;
+
+  if (action === "move-stage-up") {
+    const targetIndex = previousStageIndexInEra(stageIndex);
+    if (targetIndex === -1) return;
+    moveStage(stageIndex, targetIndex);
+    openStage = targetIndex;
+    saveAndRender();
+    return;
+  }
+
+  if (action === "move-stage-down") {
+    const targetIndex = nextStageIndexInEra(stageIndex);
+    if (targetIndex === -1) return;
+    moveStage(stageIndex, targetIndex);
+    openStage = targetIndex;
+    saveAndRender();
+    return;
+  }
+
+  if (action === "remove-stage" && state.stages.length > 1) {
+    state.stages.splice(stageIndex, 1);
+    openStage = Math.max(0, Math.min(openStage, state.stages.length - 1));
+    saveAndRender();
+  }
 });
 
 refs.accordion.addEventListener("click", (event) => {
@@ -1231,43 +1329,10 @@ refs.accordion.addEventListener("click", (event) => {
   const groupKey = button.dataset.groupKey;
   const subgroupId = button.dataset.subgroupId || "";
   const groupId = button.dataset.groupId || "";
-  const eraId = button.dataset.era || "";
   const stage = state.stages[stageIndex];
 
-  if (action === "add-era-stage") {
-    insertStageForEra(eraId || "prehardmode");
-    saveAndRender();
-    return;
-  }
-  if (action === "toggle-stage") {
-    openStage = stageIndex;
-    renderAll();
-    return;
-  }
   if (!stage) return;
 
-  if (action === "move-stage-up") {
-    const targetIndex = previousStageIndexInEra(stageIndex);
-    if (targetIndex === -1) return;
-    moveStage(stageIndex, targetIndex);
-    openStage = targetIndex;
-    saveAndRender();
-    return;
-  }
-  if (action === "move-stage-down") {
-    const targetIndex = nextStageIndexInEra(stageIndex);
-    if (targetIndex === -1) return;
-    moveStage(stageIndex, targetIndex);
-    openStage = targetIndex;
-    saveAndRender();
-    return;
-  }
-  if (action === "remove-stage" && state.stages.length > 1) {
-    state.stages.splice(stageIndex, 1);
-    openStage = Math.max(0, Math.min(openStage, state.stages.length - 1));
-    saveAndRender();
-    return;
-  }
   if (action === "open-title-picker") return openPicker("description", { stageIndex, fieldRole: "stage-title" });
   if (action === "open-description-picker") return openPicker("description", { stageIndex, fieldRole: "stage-description" });
   if (action === "add-boss") {

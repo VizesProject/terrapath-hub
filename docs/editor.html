@@ -19,7 +19,7 @@
       <div class="nav__tools" data-language-toggle></div>
     </nav>
 
-    <main class="workspace">
+    <main class="workspace workspace--editor">
       <section class="panel editor-panel">
         <header class="page-header">
           <h1 data-i18n="editor.heading">Guide Builder</h1>
@@ -73,10 +73,14 @@
         </section>
 
         <section class="wizard-panel" data-step-panel="1" hidden>
-          <div class="stage-toolbar">
-            <button class="button button--primary" id="addStageButton" type="button" data-editor-text="addStage">Add stage</button>
+          <div class="stage-builder">
+            <aside class="stage-builder__outline">
+              <div id="stageOutline" class="stage-outline"></div>
+            </aside>
+            <section class="stage-builder__detail">
+              <div id="stageDetail" class="stage-detail"></div>
+            </section>
           </div>
-          <div id="stageAccordion" class="stage-accordion"></div>
         </section>
 
         <section class="wizard-panel" data-step-panel="2" hidden>

@@ -7,7 +7,7 @@ const progression = window.terraPathProgression;
 
 const GROUPS = [
   { key: "weapon", cats: ["weapon"], en: "Weapons", ru: "\u041e\u0440\u0443\u0436\u0438\u0435" },
-  { key: "armor", cats: ["armor"], en: "Armor", ru: "\u0411\u0440\u043e\u043d\u044f" },
+  { key: "armor", cats: ["armor"], en: "Armor sets", ru: "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u044b \u0431\u0440\u043e\u043d\u0438" },
   { key: "accessory", cats: ["accessory"], en: "Accessories", ru: "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b" },
   { key: "buff", cats: ["buff", "ammo"], en: "Buffs / Consumables", ru: "\u0411\u0430\u0444\u0444\u044b / \u0420\u0430\u0441\u0445\u043e\u0434\u043d\u0438\u043a\u0438" }
 ];
@@ -169,9 +169,16 @@ function resolveName(contentId, map) {
 
 function iconMarkup(entry, label, kind = "item") {
   if (entry?.icon) {
-    return `<img class="${kind === "boss" ? "content-icon content-icon--boss" : "content-icon"}" src="${escapeHtml(entry.icon)}" alt="${escapeHtml(label)}" loading="lazy">`;
+    return `<img class="${kind === "boss" ? "content-icon content-icon--boss" : "content-icon"}" src="${escapeHtml(entry.icon)}" alt="${escapeHtml(label)}" title="${escapeHtml(label)}" loading="lazy">`;
   }
   return `<span class="content-token">${escapeHtml(initials(label))}</span>`;
+}
+
+function inlineIconMarkup(entry, label, kind = "item") {
+  if (entry?.icon) {
+    return `<img class="inline-flow-icon ${kind === "boss" ? "inline-flow-icon--boss" : ""}" src="${escapeHtml(entry.icon)}" alt="${escapeHtml(label)}" title="${escapeHtml(label)}" loading="lazy">`;
+  }
+  return `<span class="inline-flow-token" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">${escapeHtml(initials(label).slice(0, 1) || "?")}</span>`;
 }
 
 function renderRichText(textValue) {
@@ -188,7 +195,7 @@ function renderRichText(textValue) {
     const bossEntry = supportIndex.bossMap.get(contentId);
     const entry = itemEntry || bossEntry;
     const label = resolveName(contentId, itemEntry ? supportIndex.itemMap : supportIndex.bossMap);
-    parts.push(`<span class="inline-icon-token">${iconMarkup(entry, label, bossEntry ? "boss" : "item")}<span>${escapeHtml(label)}</span></span>`);
+    parts.push(inlineIconMarkup(entry, label, bossEntry ? "boss" : "item"));
     lastIndex = index + match[0].length;
   }
 
@@ -198,6 +205,12 @@ function renderRichText(textValue) {
 
 function renderItemGroups(items) {
   if (!(items || []).length) return `<p class="empty-state">${escapeHtml(t("guide.noItems"))}</p>`;
+
+  const denseItemList = (entries) => `<ul class="wiki-items">${entries.map((entry) => {
+    const label = resolveName(entry.itemId, supportIndex.itemMap);
+    const supportEntry = supportIndex.itemMap.get(entry.itemId);
+    return `<li class="wiki-item"><span class="wiki-item__media">${iconMarkup(supportEntry, label)}</span><span class="wiki-item__label">${escapeHtml(label)}</span></li>`;
+  }).join("")}</ul>`;
 
   return GROUPS.map((group) => {
     const entries = (items || []).filter((entry) => group.cats.includes(entry.category || "other"));
@@ -210,21 +223,13 @@ function renderItemGroups(items) {
         if (!subgroupOrder.includes(subgroup)) subgroupOrder.push(subgroup);
       });
 
-      return `<section class="category-block"><h4>${escapeHtml(groupLabel(group.key))}</h4>${subgroupOrder.map((subgroup) => {
+      return `<section class="wiki-group"><h4>${escapeHtml(groupLabel(group.key))}</h4>${subgroupOrder.map((subgroup) => {
         const subgroupEntries = entries.filter((entry) => String(entry.subgroup || "").trim() === subgroup);
-        return `<div class="accessory-subgroup">${subgroup ? `<h5>${escapeHtml(subgroup)}</h5>` : ""}<div class="content-grid">${subgroupEntries.map((entry) => {
-          const label = resolveName(entry.itemId, supportIndex.itemMap);
-          const supportEntry = supportIndex.itemMap.get(entry.itemId);
-          return `<article class="content-card"><div class="content-card__head"><span class="content-card__media">${iconMarkup(supportEntry, label)}</span><div><strong>${escapeHtml(label)}</strong></div></div></article>`;
-        }).join("")}</div></div>`;
+        return `<div class="wiki-subgroup">${subgroup ? `<h5>${escapeHtml(subgroup)}</h5>` : ""}${denseItemList(subgroupEntries)}</div>`;
       }).join("")}</section>`;
     }
 
-    return `<section class="category-block"><h4>${escapeHtml(groupLabel(group.key))}</h4><div class="content-grid">${entries.map((entry) => {
-      const label = resolveName(entry.itemId, supportIndex.itemMap);
-      const supportEntry = supportIndex.itemMap.get(entry.itemId);
-      return `<article class="content-card"><div class="content-card__head"><span class="content-card__media">${iconMarkup(supportEntry, label)}</span><div><strong>${escapeHtml(label)}</strong></div></div></article>`;
-    }).join("")}</div></section>`;
+    return `<section class="wiki-group"><h4>${escapeHtml(groupLabel(group.key))}</h4>${denseItemList(entries)}</section>`;
   }).join("");
 }
 
@@ -247,7 +252,7 @@ function renderBosses(stage) {
 }
 
 function renderStageEntry(stage) {
-  return `<article class="stage-preview stage-preview--stacked"><section class="stage-overview"><div class="stage-preview__header"><h3>${renderRichText(stage.title)}</h3><span class="meta-pill">${escapeHtml(t("guide.itemPicks", { count: (stage.items || []).length }))}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${renderBosses(stage)}</section><section class="stage-loadout">${renderItemGroups(stage.items)}</section></article>`;
+  return `<article class="guide-substage"><section class="guide-substage__main"><div class="guide-substage__header"><h3>${renderRichText(stage.title)}</h3><span class="meta-pill">${escapeHtml(t("guide.itemPicks", { count: (stage.items || []).length }))}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${renderBosses(stage)}</section><section class="guide-substage__loadout">${renderItemGroups(stage.items)}</section></article>`;
 }
 
 function renderGuide(guide) {
@@ -258,7 +263,7 @@ function renderGuide(guide) {
     `${(guide.stages || []).length} ${t("common.labelStages").toLowerCase()}`
   ];
 
-  guidePage.innerHTML = `<header class="guide-preview__header"><h1 class="guide-title">${escapeHtml(guide.title)}</h1><p>${escapeHtml(guide.summary || "")}</p><div class="chip-row">${metaPills.map((pill) => `<span class="meta-pill">${escapeHtml(pill)}</span>`).join("")}</div></header><div class="guide-preview__stages">${stagesByEra(guide.stages).map((eraGroup) => `<section class="era-preview"><header class="era-preview__header"><h2>${escapeHtml(eraLabel(eraGroup.eraId))}</h2><span class="meta-pill">${escapeHtml(`${eraGroup.stages.length} ${language() === "ru" ? "\u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u043e\u0432" : "sub-stages"}`)}</span></header><div class="era-preview__list">${eraGroup.stages.map(renderStageEntry).join("")}</div></section>`).join("")}</div>`;
+  guidePage.innerHTML = `<header class="guide-reader__header"><h1 class="guide-title">${escapeHtml(guide.title)}</h1><p>${escapeHtml(guide.summary || "")}</p><div class="chip-row">${metaPills.map((pill) => `<span class="meta-pill">${escapeHtml(pill)}</span>`).join("")}</div></header><div class="guide-reader__eras">${stagesByEra(guide.stages).map((eraGroup) => `<section class="guide-era"><header class="guide-era__header"><h2>${escapeHtml(eraLabel(eraGroup.eraId))}</h2><span class="meta-pill">${escapeHtml(`${eraGroup.stages.length} ${language() === "ru" ? "\u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u043e\u0432" : "sub-stages"}`)}</span></header><div class="guide-era__list">${eraGroup.stages.map(renderStageEntry).join("")}</div></section>`).join("")}</div>`;
 }
 
 async function init() {
