@@ -446,18 +446,40 @@ function inferItemCategory(entry, groupKey) {
 
 function normalizeRichTextSource(value) {
   const iconOnlyLine = /^\s*(?:\{\{icon:[^}]+\}\}\s*)+$/;
+  const sourceLines = String(value || "").replace(/\r\n?/g, "\n").split("\n");
   const lines = [];
 
-  for (const rawLine of String(value || "").replace(/\r\n?/g, "\n").split("\n")) {
+  for (let index = 0; index < sourceLines.length; index += 1) {
+    const rawLine = sourceLines[index];
     const trimmed = rawLine.trim();
+
     if (trimmed && iconOnlyLine.test(trimmed)) {
-      let targetIndex = lines.length - 1;
-      while (targetIndex >= 0 && !String(lines[targetIndex] || "").trim()) targetIndex -= 1;
-      if (targetIndex >= 0) {
-        lines[targetIndex] = `${String(lines[targetIndex]).replace(/[ \t]+$/g, "")} ${trimmed}`;
-      } else {
-        lines.push(trimmed);
+      const iconLines = [trimmed];
+
+      while (index + 1 < sourceLines.length) {
+        const nextTrimmed = String(sourceLines[index + 1] || "").trim();
+        if (!nextTrimmed || !iconOnlyLine.test(nextTrimmed)) break;
+        iconLines.push(nextTrimmed);
+        index += 1;
       }
+
+      const iconText = iconLines.join(" ");
+      let previousIndex = lines.length - 1;
+      while (previousIndex >= 0 && !String(lines[previousIndex] || "").trim()) previousIndex -= 1;
+
+      if (previousIndex >= 0) {
+        lines[previousIndex] = `${String(lines[previousIndex]).replace(/[ \t]+$/g, "")} ${iconText}`;
+        continue;
+      }
+
+      let nextIndex = index + 1;
+      while (nextIndex < sourceLines.length && !String(sourceLines[nextIndex] || "").trim()) nextIndex += 1;
+      if (nextIndex < sourceLines.length) {
+        sourceLines[nextIndex] = `${iconText} ${String(sourceLines[nextIndex]).replace(/^[ \t]+/g, "")}`;
+        continue;
+      }
+
+      lines.push(iconText);
       continue;
     }
 
