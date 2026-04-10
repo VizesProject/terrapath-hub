@@ -162,6 +162,7 @@ const refs = {
   pickerTitle: $("#pickerTitle"),
   pickerSearchLabel: $("#pickerSearchLabel"),
   pickerSearchInput: $("#pickerSearchInput"),
+  pickerFilters: $("#pickerFilters"),
   pickerResults: $("#pickerResults"),
   pickerClose: $("#pickerCloseButton")
 };
@@ -284,6 +285,10 @@ function renderRichText(textValue) {
   return parts.join("");
 }
 
+function plainText(textValue) {
+  return String(textValue || "").replace(/\{\{icon:[^}]+\}\}/g, " ").replace(/\s+/g, " ").trim();
+}
+
 function itemTemplate(seed = {}) {
   return { itemId: seed.itemId || "", category: seed.category || "weapon" };
 }
@@ -313,7 +318,7 @@ function sampleState() {
       stageTemplate({
         title: "First Night",
         era: "prehardmode",
-        progressionMarkers: ["early-exploration", "pre-eye-of-cthulhu"],
+        progressionMarkers: ["pre-eye-of-cthulhu"],
         description: "Collect movement items, prepare a basic arena, and secure a reliable early weapon.",
         bossRefs: ["Terraria/EyeofCthulhu"],
         items: [
@@ -389,7 +394,7 @@ function buildGuide() {
   const used = new Map();
   const stages = state.stages.map((stage, index) => {
     const title = stage.title.trim() || `${s("stage")} ${index + 1}`;
-    const base = slug(title).slice(0, 40) || `stage-${index + 1}`;
+    const base = slug(plainText(title)).slice(0, 40) || `stage-${index + 1}`;
     const count = used.get(base) || 0;
     used.set(base, count + 1);
 
@@ -522,7 +527,7 @@ function renderPreview() {
   const guide = buildGuide();
   latestJson = `${JSON.stringify(guide, null, 2)}\n`;
   refs.json.textContent = latestJson;
-  refs.preview.innerHTML = `<header class="guide-preview__header"><h2 class="guide-title">${esc(guide.title)}</h2><p>${esc(guide.summary)}</p><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelClass")}: ${classList(guide.classTags)}`)}</span><span class="meta-pill">${esc(`${t("common.labelLanguage")}: ${guideLanguageLabel(guide.language)}`)}</span><span class="meta-pill">${esc(`${t("common.labelMods")}: ${(guide.requiredMods || []).join(", ")}`)}</span><span class="meta-pill">${esc(`${guide.stages.length} ${t("common.labelStages").toLowerCase()}`)}</span></div></header><div class="guide-preview__stages">${guide.stages.map((stage) => `<article class="stage-preview"><section class="stage-overview"><div class="stage-preview__header"><h3>${esc(stage.title)}</h3><span class="meta-pill">${esc(s("itemCount", { count: (stage.items || []).length }))}</span></div><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelEra")}: ${progression?.eraLabel?.(stage.era || "prehardmode", lang()) || stage.era || ""}`)}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${previewMarkers(stage)}${previewBosses(stage)}</section><section class="stage-loadout">${previewGroups(stage.items)}</section></article>`).join("")}</div>`;
+  refs.preview.innerHTML = `<header class="guide-preview__header"><h2 class="guide-title">${esc(guide.title)}</h2><p>${esc(guide.summary)}</p><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelClass")}: ${classList(guide.classTags)}`)}</span><span class="meta-pill">${esc(`${t("common.labelLanguage")}: ${guideLanguageLabel(guide.language)}`)}</span><span class="meta-pill">${esc(`${t("common.labelMods")}: ${(guide.requiredMods || []).join(", ")}`)}</span><span class="meta-pill">${esc(`${guide.stages.length} ${t("common.labelStages").toLowerCase()}`)}</span></div></header><div class="guide-preview__stages">${guide.stages.map((stage) => `<article class="stage-preview"><section class="stage-overview"><div class="stage-preview__header"><h3>${renderRichText(stage.title)}</h3><span class="meta-pill">${esc(s("itemCount", { count: (stage.items || []).length }))}</span></div><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelEra")}: ${progression?.eraLabel?.(stage.era || "prehardmode", lang()) || stage.era || ""}`)}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${previewMarkers(stage)}${previewBosses(stage)}</section><section class="stage-loadout">${previewGroups(stage.items)}</section></article>`).join("")}</div>`;
 }
 
 function bossRows(stage, stageIndex) {
@@ -530,7 +535,7 @@ function bossRows(stage, stageIndex) {
   return stage.bossRefs.map((id, bossIndex) => {
     const entry = support.bossMap.get(id);
     const label = pickLabel(id, support.bossMap);
-    return `<div class="picker-row boss-row"><span class="picker-row__media">${iconMarkup(entry, label, true)}</span><select data-role="boss-id" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">${selectOptions(support.bosses, id, s("chooseBoss"))}</select><button class="button button--quiet button--tiny" type="button" data-action="remove-boss" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">${esc(s("remove"))}</button></div>`;
+    return `<div class="picker-row boss-row"><span class="picker-row__media">${iconMarkup(entry, label, true)}</span><button class="picker-select" type="button" data-action="change-boss" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">${esc(label || s("chooseBoss"))}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-boss" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">${esc(s("remove"))}</button></div>`;
   }).join("");
 }
 
@@ -548,19 +553,21 @@ function itemRows(stage, stageIndex, groupEntry) {
 }
 
 function stageBody(stage, stageIndex) {
-  const markers = (progression?.markersForEra?.(stage.era || "prehardmode") || []).map((marker) => {
-    const selected = (stage.progressionMarkers || []).includes(marker.id);
-    return `<button class="marker-card ${selected ? "marker-card--selected" : ""}" type="button" data-action="toggle-marker" data-stage-index="${stageIndex}" data-marker-id="${esc(marker.id)}"><img class="content-icon" src="${esc(marker.icon)}" alt="${esc(marker.title?.[lang()] || marker.title?.en || marker.id)}" loading="lazy"><span class="marker-card__body"><strong>${esc(marker.title?.[lang()] || marker.title?.en || marker.id)}</strong><span>${esc(marker.description?.[lang()] || marker.description?.en || "")}</span></span></button>`;
-  }).join("");
+  const markerEntries = progression?.markersForEra?.(stage.era || "prehardmode") || [];
+  const selectedMarkerId = stage.progressionMarkers?.[0] || "";
+  const selectedMarker = markerEntries.find((entry) => entry.id === selectedMarkerId);
+  const markerPreview = selectedMarker
+    ? `<article class="marker-preview-card"><img class="content-icon" src="${esc(selectedMarker.icon)}" alt="${esc(selectedMarker.title?.[lang()] || selectedMarker.title?.en || selectedMarker.id)}" loading="lazy"><div><strong>${esc(selectedMarker.title?.[lang()] || selectedMarker.title?.en || selectedMarker.id)}</strong><p>${esc(selectedMarker.description?.[lang()] || selectedMarker.description?.en || "")}</p></div></article>`
+    : "";
 
-  return `<section class="stage-overview-editor"><div class="field-grid"><label class="field"><span>${esc(s("stageTitle"))}</span><input data-role="stage-title" data-stage-index="${stageIndex}" value="${esc(stage.title)}"></label><label class="field"><span>${esc(s("era"))}</span><select data-role="stage-era" data-stage-index="${stageIndex}">${(progression?.eras || []).map((era) => `<option value="${esc(era.id)}" ${era.id === stage.era ? "selected" : ""}>${esc(era.label?.[lang()] || era.label?.en || era.id)}</option>`).join("")}</select></label></div><label class="field"><span class="field-label-with-action"><span>${esc(s("description"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-description-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><textarea data-role="stage-description" data-stage-index="${stageIndex}" rows="5" placeholder="${esc(s("descriptionPlaceholder"))}">${esc(stage.description)}</textarea></label><section class="stage-section"><div class="section-heading"><h3>${esc(s("markers"))}</h3></div><div class="marker-grid">${markers}</div></section><section class="stage-section"><div class="section-heading section-heading--with-action"><h3>${esc(s("bosses"))}</h3><button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${stageIndex}">${esc(s("addBoss"))}</button></div><div class="stage-stack">${bossRows(stage, stageIndex)}</div></section></section><section class="stage-loadout-editor"><section class="stage-section"><div class="section-heading"><h3>${esc(s("items"))}</h3></div><div class="item-group-list">${GROUPS.map((group) => itemRows(stage, stageIndex, group)).join("")}</div></section></section>`;
+  return `<section class="stage-overview-editor"><div class="field-grid"><label class="field"><span class="field-label-with-action"><span>${esc(s("stageTitle"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-title-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><input data-role="stage-title" data-stage-index="${stageIndex}" value="${esc(stage.title)}"></label><label class="field"><span>${esc(s("era"))}</span><select data-role="stage-era" data-stage-index="${stageIndex}">${(progression?.eras || []).map((era) => `<option value="${esc(era.id)}" ${era.id === stage.era ? "selected" : ""}>${esc(era.label?.[lang()] || era.label?.en || era.id)}</option>`).join("")}</select></label></div><label class="field"><span class="field-label-with-action"><span>${esc(s("description"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-description-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><textarea data-role="stage-description" data-stage-index="${stageIndex}" rows="5" placeholder="${esc(s("descriptionPlaceholder"))}">${esc(stage.description)}</textarea></label><section class="stage-section"><div class="section-heading"><h3>${esc(s("markers"))}</h3></div><label class="field"><select data-role="stage-marker" data-stage-index="${stageIndex}"><option value="">${esc(lang() === "ru" ? "\u0411\u0435\u0437 \u043f\u043e\u0434\u044d\u0442\u0430\u043f\u0430" : "No detailed stage")}</option>${markerEntries.map((marker) => `<option value="${esc(marker.id)}" ${marker.id === selectedMarkerId ? "selected" : ""}>${esc(marker.title?.[lang()] || marker.title?.en || marker.id)}</option>`).join("")}</select></label>${markerPreview}</section><section class="stage-section"><div class="section-heading section-heading--with-action"><h3>${esc(s("bosses"))}</h3><button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${stageIndex}">${esc(s("addBoss"))}</button></div><div class="stage-stack">${bossRows(stage, stageIndex)}</div></section></section><section class="stage-loadout-editor"><section class="stage-section"><div class="section-heading"><h3>${esc(s("items"))}</h3></div><div class="item-group-list">${GROUPS.map((group) => itemRows(stage, stageIndex, group)).join("")}</div></section></section>`;
 }
 
 function stageCard(stage, stageIndex) {
   const opened = stageIndex === openStage;
   const eraText = progression?.eraLabel?.(stage.era || "prehardmode", lang()) || stage.era || "";
   const count = (stage.items || []).filter((entry) => entry.itemId).length;
-  return `<article class="stage-card ${opened ? "stage-card--open" : ""}"><div class="stage-card__header"><button class="stage-card__toggle" type="button" data-action="toggle-stage" data-stage-index="${stageIndex}"><span class="stage-card__title"><strong>${esc(stage.title || `${s("stage")} ${stageIndex + 1}`)}</strong><span class="muted">${esc(eraText)}</span></span><span class="meta-pill">${esc(s("itemCount", { count }))}</span></button><div class="stage-card__actions"><button class="button button--quiet button--tiny" type="button" data-action="move-stage-up" data-stage-index="${stageIndex}" ${stageIndex === 0 ? "disabled" : ""}>${esc(s("moveUp"))}</button><button class="button button--quiet button--tiny" type="button" data-action="move-stage-down" data-stage-index="${stageIndex}" ${stageIndex === state.stages.length - 1 ? "disabled" : ""}>${esc(s("moveDown"))}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-stage" data-stage-index="${stageIndex}" ${state.stages.length === 1 ? "disabled" : ""}>${esc(s("delete"))}</button></div></div><div class="stage-card__body" ${opened ? "" : "hidden"}>${stageBody(stage, stageIndex)}</div></article>`;
+  return `<article class="stage-card ${opened ? "stage-card--open" : ""}"><div class="stage-card__header"><button class="stage-card__toggle" type="button" data-action="toggle-stage" data-stage-index="${stageIndex}"><span class="stage-card__title"><strong>${renderRichText(stage.title || `${s("stage")} ${stageIndex + 1}`)}</strong><span class="muted">${esc(eraText)}</span></span><span class="meta-pill">${esc(s("itemCount", { count }))}</span></button><div class="stage-card__actions"><button class="button button--quiet button--tiny" type="button" data-action="move-stage-up" data-stage-index="${stageIndex}" ${stageIndex === 0 ? "disabled" : ""}>${esc(s("moveUp"))}</button><button class="button button--quiet button--tiny" type="button" data-action="move-stage-down" data-stage-index="${stageIndex}" ${stageIndex === state.stages.length - 1 ? "disabled" : ""}>${esc(s("moveDown"))}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-stage" data-stage-index="${stageIndex}" ${state.stages.length === 1 ? "disabled" : ""}>${esc(s("delete"))}</button></div></div><div class="stage-card__body" ${opened ? "" : "hidden"}>${stageBody(stage, stageIndex)}</div></article>`;
 }
 
 function renderAccordion() {
@@ -700,13 +707,23 @@ function resetDraft() {
 }
 
 function openPicker(mode, options = {}) {
-  pickerState = { mode, ...options };
+  const filter = mode === "item"
+    ? (options.groupKey || "other")
+    : mode === "boss"
+      ? "boss"
+      : "all";
+  pickerState = { mode, filter, ...options };
   refs.picker.hidden = false;
-  refs.pickerTitle.textContent = mode === "description" ? s("pickerDescriptionTitle") : s("pickerItemTitle");
+  refs.pickerTitle.textContent = mode === "description"
+    ? s("pickerDescriptionTitle")
+    : mode === "boss"
+      ? s("chooseBoss")
+      : s("pickerItemTitle");
   refs.pickerSearchLabel.textContent = s("pickerSearch");
   refs.pickerSearchInput.placeholder = s("pickerSearchPlaceholder");
   refs.pickerClose.textContent = s("pickerClose");
   refs.pickerSearchInput.value = "";
+  renderPickerFilters();
   renderPickerResults();
   refs.pickerSearchInput.focus();
 }
@@ -716,10 +733,31 @@ function closePicker() {
   refs.picker.hidden = true;
 }
 
+function pickerFilterOptions() {
+  if (!pickerState) return [];
+  if (pickerState.mode === "description") {
+    return [
+      { key: "all", label: lang() === "ru" ? "\u0412\u0441\u0435" : "All" },
+      { key: "item", label: lang() === "ru" ? "\u041f\u0440\u0435\u0434\u043c\u0435\u0442\u044b" : "Items" },
+      { key: "boss", label: s("bosses") }
+    ];
+  }
+  if (pickerState.mode === "boss") return [{ key: "boss", label: s("bosses") }];
+  return [{ key: pickerState.groupKey || "other", label: groupLabel(pickerState.groupKey || "other") }];
+}
+
+function renderPickerFilters() {
+  const filters = pickerFilterOptions();
+  refs.pickerFilters.innerHTML = filters.map((filter) => `<button class="picker-filter ${pickerState?.filter === filter.key ? "picker-filter--active" : ""}" type="button" data-picker-filter="${esc(filter.key)}" ${filters.length === 1 ? "disabled" : ""}>${esc(filter.label)}</button>`).join("");
+}
+
 function pickerEntries() {
   if (!pickerState) return [];
   if (pickerState.mode === "description") {
     return [...visibleSearchItems().map((entry) => ({ ...entry, pickerType: "item" })), ...support.bosses.map((entry) => ({ ...entry, pickerType: "boss" }))];
+  }
+  if (pickerState.mode === "boss") {
+    return support.bosses.map((entry) => ({ ...entry, pickerType: "boss" }));
   }
   return visibleSearchItems().map((entry) => ({ ...entry, pickerType: "item" }));
 }
@@ -730,7 +768,17 @@ function pickerSearchText(entry) {
 
 function renderPickerResults() {
   const query = refs.pickerSearchInput.value.trim().toLowerCase();
-  const results = pickerEntries().filter((entry) => !query || pickerSearchText(entry).includes(query)).slice(0, 200);
+  const results = pickerEntries().filter((entry) => {
+    if (pickerState?.mode === "item" && !query) {
+      const group = GROUPS.find((item) => item.key === (pickerState.groupKey || "other")) || GROUPS[0];
+      return group.cats.includes(entry.category || "__unknown__");
+    }
+    if (pickerState?.mode === "description" && pickerState.filter && pickerState.filter !== "all") {
+      if (pickerState.filter === "boss") return entry.pickerType === "boss";
+      return entry.pickerType === "item";
+    }
+    return true;
+  }).filter((entry) => !query || pickerSearchText(entry).includes(query)).slice(0, 200);
   refs.pickerResults.innerHTML = results.map((entry) => {
     const label = localizedDisplayName(entry) || String(entry.id || "").split("/").pop() || "";
     const boss = entry.pickerType === "boss";
@@ -751,10 +799,11 @@ function handlePickerSelection(contentId) {
   if (!pickerState) return;
 
   if (pickerState.mode === "description") {
-    const textarea = refs.accordion.querySelector(`[data-role="stage-description"][data-stage-index="${pickerState.stageIndex}"]`);
-    if (textarea) {
-      insertAtCursor(textarea, `{{icon:${contentId}}}`);
-      state.stages[pickerState.stageIndex].description = textarea.value;
+    const fieldRole = pickerState.fieldRole || "stage-description";
+    const field = refs.accordion.querySelector(`[data-role="${fieldRole}"][data-stage-index="${pickerState.stageIndex}"]`);
+    if (field) {
+      insertAtCursor(field, `{{icon:${contentId}}}`);
+      state.stages[pickerState.stageIndex][fieldRole === "stage-title" ? "title" : "description"] = field.value;
       saveAndRender();
     }
     closePicker();
@@ -763,6 +812,17 @@ function handlePickerSelection(contentId) {
 
   const stage = state.stages[pickerState.stageIndex];
   if (!stage) {
+    closePicker();
+    return;
+  }
+
+  if (pickerState.mode === "boss") {
+    if (Number.isInteger(pickerState.bossIndex) && stage.bossRefs[pickerState.bossIndex] !== undefined) {
+      stage.bossRefs[pickerState.bossIndex] = contentId;
+    } else {
+      stage.bossRefs.push(contentId);
+    }
+    saveAndRender();
     closePicker();
     return;
   }
@@ -885,21 +945,12 @@ refs.accordion.addEventListener("click", (event) => {
     saveAndRender();
     return;
   }
-  if (action === "toggle-marker") {
-    const next = new Set(stage.progressionMarkers || []);
-    const markerId = button.dataset.markerId;
-    if (next.has(markerId)) next.delete(markerId);
-    else next.add(markerId);
-    stage.progressionMarkers = [...next];
-    saveAndRender();
-    return;
-  }
-  if (action === "open-description-picker") return openPicker("description", { stageIndex });
+  if (action === "open-title-picker") return openPicker("description", { stageIndex, fieldRole: "stage-title" });
+  if (action === "open-description-picker") return openPicker("description", { stageIndex, fieldRole: "stage-description" });
   if (action === "add-boss") {
-    stage.bossRefs.push("");
-    saveAndRender();
-    return;
+    return openPicker("boss", { stageIndex });
   }
+  if (action === "change-boss") return openPicker("boss", { stageIndex, bossIndex });
   if (action === "remove-boss") {
     stage.bossRefs.splice(bossIndex, 1);
     saveAndRender();
@@ -933,12 +984,13 @@ refs.accordion.addEventListener("change", (event) => {
   if (role === "stage-era") {
     stage.era = target.value;
     const allowed = new Set((progression?.markersForEra?.(stage.era) || []).map((entry) => entry.id));
-    stage.progressionMarkers = (stage.progressionMarkers || []).filter((id) => allowed.has(id));
+    stage.progressionMarkers = (stage.progressionMarkers || []).filter((id) => allowed.has(id)).slice(0, 1);
     saveAndRender();
     return;
   }
-  if (role === "boss-id") {
-    stage.bossRefs[Number(target.dataset.bossIndex)] = target.value;
+
+  if (role === "stage-marker") {
+    stage.progressionMarkers = target.value ? [target.value] : [];
     saveAndRender();
   }
 });
@@ -957,6 +1009,13 @@ refs.pickerClose.addEventListener("click", closePicker);
 refs.picker.addEventListener("click", (event) => {
   if (event.target.closest("[data-picker-close]")) {
     closePicker();
+    return;
+  }
+  const filterButton = event.target.closest("[data-picker-filter]");
+  if (filterButton && pickerState) {
+    pickerState.filter = filterButton.dataset.pickerFilter;
+    renderPickerFilters();
+    renderPickerResults();
     return;
   }
   const button = event.target.closest("[data-picker-id]");

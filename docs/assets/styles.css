@@ -1046,6 +1046,26 @@ select:focus,
   padding-right: 0.25rem;
 }
 
+.picker-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.picker-filter {
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  padding: 0.45rem 0.8rem;
+}
+
+.picker-filter--active {
+  background: var(--accent-soft);
+  border-color: #4f7b68;
+  color: var(--accent-strong);
+}
+
 .picker-result {
   align-items: center;
   background: var(--surface-muted);
