@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "terraria-melee",
+  "title": "Первый",
+  "author": "ыыыыыыыыы",
+  "language": "ru-RU",
+  "summary": "A structured melee progression path that shows how TerraPath guides can be authored and reviewed.",
+  "requiredMods": [
+    "Terraria"
+  ],
+  "classTags": [
+    "melee"
+  ],
+  "createdAt": "2026-04-10",
+  "updatedAt": "2026-04-10",
+  "stages": [
+    {
+      "id": "guide",
+      "title": "Пре-босс{{icon:Terraria/KingSlime}}",
+      "era": "prehardmode",
+      "items": [
+        {
+          "itemId": "Terraria/Starfury",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/MoltenHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/CobaltShield",
+          "category": "accessory"
+        }
+      ],
+      "description": "Копаем {{icon:Terraria/GoldBar}}",
+      "bossRefs": [
+        "Terraria/HallowBoss",
+        "Terraria/QueenBee"
+      ]
+    },
+    {
+      "id": "guide-2",
+      "title": "Пре пожиратель{{icon:Terraria/EaterofWorldsHead}}",
+      "era": "prehardmode",
+      "items": [
+        {
+          "itemId": "Terraria/Zenith",
+          "category": "weapon"
+        }
+      ],
+      "description": "Крафтим",
+      "bossRefs": [
+        "Terraria/QueenBee"
+      ]
+    }
+  ],
+  "guideTags": [
+    "starter",
+    "progression",
+    "vanilla",
+    "draft"
+  ]
+}
