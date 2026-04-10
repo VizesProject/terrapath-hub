@@ -1,248 +1,179 @@
-const STORAGE_KEY = "terrapath-editor-draft-v5";
 const site = window.terraPathSite;
 const progression = window.terraPathProgression;
+const SAVE_KEY = "terrapath-editor-draft-v6";
+const LOAD_KEYS = [SAVE_KEY, "terrapath-editor-draft-v5"];
 
-const STEP_DEFINITIONS = [
-  { titleKey: "editor.basicsTitle", descriptionKey: "editor.basicsDesc" },
-  { titleKey: "editor.scopeTitle", descriptionKey: "editor.scopeDesc" },
-  { titleKey: "editor.stagesTitle", descriptionKey: "editor.stagesDesc" },
-  { titleKey: "editor.reviewTitle", descriptionKey: "editor.reviewDesc" }
+const STEPS = [
+  { title: { en: "Guide", ru: "Гайд" }, desc: { en: "Title, author, language, summary, required mods, class tags.", ru: "Название, автор, язык, описание, обязательные моды и класс." } },
+  { title: { en: "Stages", ru: "Этапы" }, desc: { en: "Vertical accordion for stages, bosses, items, and notes.", ru: "Вертикальный accordion для этапов, боссов, предметов и заметок." } },
+  { title: { en: "Export", ru: "Экспорт" }, desc: { en: "Preview the guide and export guide.json.", ru: "Проверьте гайд и выгрузите guide.json." } }
 ];
 
-const LANGUAGE_OPTIONS = [
-  { value: "en-US", labelKey: "common.languageEnglishUs" },
-  { value: "ru-RU", labelKey: "common.languageRussian" }
+const MODS = [
+  { value: "Terraria", label: "Terraria", desc: { en: "Vanilla pickers available.", ru: "Доступны vanilla-подборки." } },
+  { value: "CalamityMod", label: "Calamity Mod", desc: { en: "Metadata only.", ru: "Пока только метаданные." } },
+  { value: "ThoriumMod", label: "Thorium Mod", desc: { en: "Metadata only.", ru: "Пока только метаданные." } }
 ];
 
-const SUPPORTED_MOD_OPTIONS = [
-  {
-    value: "Terraria",
-    label: "Terraria",
-    description: {
-      en: "Ready now with curated item, ore, and boss pickers.",
-      ru: "Уже доступен с готовыми списками предметов, руд и боссов."
-    }
-  },
-  {
-    value: "CalamityMod",
-    label: "Calamity Mod",
-    description: {
-      en: "Metadata can already mention Calamity. Curated item support comes later.",
-      ru: "Метаданные уже могут ссылаться на Calamity. Полная подборка предметов появится позже."
-    }
-  },
-  {
-    value: "ThoriumMod",
-    label: "Thorium Mod",
-    description: {
-      en: "Metadata can already mention Thorium. Curated item support comes later.",
-      ru: "Метаданные уже могут ссылаться на Thorium. Полная подборка предметов появится позже."
-    }
-  }
+const CLASSES = [
+  { value: "melee", en: "Melee", ru: "Воин" },
+  { value: "ranged", en: "Ranged", ru: "Стрелок" },
+  { value: "magic", en: "Magic", ru: "Маг" },
+  { value: "summoner", en: "Summoner", ru: "Призыватель" },
+  { value: "rogue", en: "Rogue", ru: "Разбойник" },
+  { value: "bard", en: "Bard", ru: "Бард" },
+  { value: "other", en: "Other", ru: "Другое" }
 ];
 
-const CLASS_TAG_OPTIONS = [
-  { value: "melee", label: { en: "Melee", ru: "Воин" } },
-  { value: "ranged", label: { en: "Ranged", ru: "Стрелок" } },
-  { value: "magic", label: { en: "Magic", ru: "Маг" } },
-  { value: "summoner", label: { en: "Summoner", ru: "Призыватель" } },
-  { value: "rogue", label: { en: "Rogue", ru: "Разбойник" } },
-  { value: "bard", label: { en: "Bard", ru: "Бард" } },
-  { value: "other", label: { en: "Other", ru: "Другое" } }
+const GROUPS = [
+  { key: "weapon", cats: ["weapon"], en: "Weapons", ru: "Оружие" },
+  { key: "armor", cats: ["armor"], en: "Armor", ru: "Броня" },
+  { key: "accessory", cats: ["accessory"], en: "Accessories", ru: "Аксессуары" },
+  { key: "buff", cats: ["buff", "ammo"], en: "Buffs / Consumables", ru: "Баффы / Расходники" },
+  { key: "material", cats: ["material", "ore"], en: "Materials / Ores", ru: "Материалы / Руды" },
+  { key: "tool", cats: ["tool", "mount", "pet", "furniture"], en: "Tools / Utility", ru: "Инструменты / Утилити" },
+  { key: "other", cats: ["other"], en: "Other", ru: "Другое" }
 ];
 
-const GUIDE_TAG_OPTIONS = [
-  { value: "starter", label: { en: "Starter", ru: "Старт" } },
-  { value: "prehardmode", label: { en: "Pre-Hardmode", ru: "До хардмода" } },
-  { value: "hardmode", label: { en: "Hardmode", ru: "Хардмод" } },
-  { value: "bossing", label: { en: "Bossing", ru: "Боссы" } },
-  { value: "progression", label: { en: "Progression", ru: "Прогрессия" } },
-  { value: "vanilla", label: { en: "Vanilla", ru: "Ванилла" } },
-  { value: "calamity", label: { en: "Calamity", ru: "Calamity" } },
-  { value: "thorium", label: { en: "Thorium", ru: "Thorium" } },
-  { value: "draft", label: { en: "Draft", ru: "Черновик" } }
-];
-
-const CATEGORY_LABELS = {
+const COPY = {
   en: {
-    weapon: "Weapons",
-    armor: "Armor",
-    accessory: "Accessories",
-    ammo: "Ammo",
-    tool: "Tools",
-    mount: "Mounts",
-    pet: "Pets",
-    buff: "Buffs",
-    material: "Materials",
-    ore: "Ores",
-    furniture: "Furniture",
-    other: "Other"
+    previewHeading: "Preview",
+    supportLoading: "Loading curated Terraria content...",
+    supportLoaded: "Vanilla pickers ready: {items} item and ore entries, {bosses} boss entries.",
+    supportFailed: "Curated Terraria data could not be loaded.",
+    addBoss: "Add boss",
+    chooseBoss: "Choose boss",
+    noBosses: "No bosses added.",
+    noItems: "No items added.",
+    chooseItem: "Choose item",
+    notePlaceholder: "Optional note",
+    stage: "Stage",
+    stageTitle: "Stage title",
+    era: "Main era",
+    description: "Description",
+    descriptionPlaceholder: "Short description for this stage.",
+    notes: "Notes",
+    notesPlaceholder: "Optional reminders or route notes.",
+    markers: "Mini-stage markers",
+    bosses: "Bosses",
+    items: "Items",
+    itemCount: "{count} items",
+    up: "Up",
+    down: "Down",
+    delete: "Delete",
+    remove: "Remove",
+    resetConfirm: "Reset the current draft?",
+    copied: "guide.json copied.",
+    selected: "Clipboard is unavailable. The JSON preview was selected.",
+    issueOpened: "GitHub opened in a new tab.",
+    repoUnknown: "Repository URL could not be detected here.",
+    draftReset: "Draft reset.",
+    noItemsPreview: "No item picks added for this stage."
   },
   ru: {
-    weapon: "Оружие",
-    armor: "Броня",
-    accessory: "Аксессуары",
-    ammo: "Боеприпасы",
-    tool: "Инструменты",
-    mount: "Маунты",
-    pet: "Питомцы",
-    buff: "Баффы",
-    material: "Материалы",
-    ore: "Руды",
-    furniture: "Мебель",
-    other: "Другое"
+    previewHeading: "Предпросмотр",
+    supportLoading: "Загрузка curated Terraria-контента...",
+    supportLoaded: "Vanilla-подборки готовы: {items} записей предметов и руд, {bosses} записей боссов.",
+    supportFailed: "Не удалось загрузить curated Terraria-данные.",
+    addBoss: "Добавить босса",
+    chooseBoss: "Выберите босса",
+    noBosses: "Боссы не добавлены.",
+    noItems: "Предметы не добавлены.",
+    chooseItem: "Выберите предмет",
+    notePlaceholder: "Необязательная заметка",
+    stage: "Этап",
+    stageTitle: "Название этапа",
+    era: "Основной этап игры",
+    description: "Описание",
+    descriptionPlaceholder: "Короткое описание этого этапа.",
+    notes: "Заметки",
+    notesPlaceholder: "Необязательные подсказки и напоминания.",
+    markers: "Мини-этапы",
+    bosses: "Боссы",
+    items: "Предметы",
+    itemCount: "{count} предметов",
+    up: "Выше",
+    down: "Ниже",
+    delete: "Удалить этап",
+    remove: "Удалить",
+    resetConfirm: "Сбросить текущий черновик?",
+    copied: "guide.json скопирован.",
+    selected: "Буфер обмена недоступен. JSON выделен для ручного копирования.",
+    issueOpened: "GitHub открыт в новой вкладке.",
+    repoUnknown: "Не удалось определить URL репозитория.",
+    draftReset: "Черновик сброшен.",
+    noItemsPreview: "Для этого этапа пока нет предметов."
   }
 };
 
-const CATEGORY_OPTIONS = Object.keys(CATEGORY_LABELS.en);
+const $ = (selector) => document.querySelector(selector);
+const refs = {
+  support: $("#supportStatus"),
+  steps: $("#wizardSteps"),
+  eyebrow: $("#stepEyebrow"),
+  title: $("#stepTitle"),
+  desc: $("#stepDescription"),
+  panels: [...document.querySelectorAll("[data-step-panel]")],
+  titleInput: $("#titleInput"),
+  authorInput: $("#authorInput"),
+  language: $("#languageSelect"),
+  summary: $("#summaryInput"),
+  mods: $("#requiredModOptions"),
+  classes: $("#classTagOptions"),
+  addStage: $("#addStageButton"),
+  accordion: $("#stageAccordion"),
+  copy: $("#copyJsonButton"),
+  download: $("#downloadButton"),
+  issue: $("#openIssueButton"),
+  reset: $("#resetDraftButton"),
+  submission: $("#submissionStatus"),
+  preview: $("#guidePreview"),
+  json: $("#jsonPreview"),
+  prev: $("#prevStepButton"),
+  next: $("#nextStepButton"),
+  autosave: $("#autosaveStatus")
+};
 
-const wizardSteps = document.querySelector("#wizardSteps");
-const supportStatus = document.querySelector("#supportStatus");
-const guideSnapshot = document.querySelector("#guideSnapshot");
-const stepEyebrow = document.querySelector("#stepEyebrow");
-const stepTitle = document.querySelector("#stepTitle");
-const stepDescription = document.querySelector("#stepDescription");
-const stepPanels = Array.from(document.querySelectorAll("[data-step-panel]"));
-const prevStepButton = document.querySelector("#prevStepButton");
-const nextStepButton = document.querySelector("#nextStepButton");
-const autosaveStatus = document.querySelector("#autosaveStatus");
-
-const titleInput = document.querySelector("#titleInput");
-const authorInput = document.querySelector("#authorInput");
-const languageSelect = document.querySelector("#languageSelect");
-const summaryInput = document.querySelector("#summaryInput");
-
-const requiredModOptions = document.querySelector("#requiredModOptions");
-const classTagOptions = document.querySelector("#classTagOptions");
-
-const addStageButton = document.querySelector("#addStageButton");
-const stageNav = document.querySelector("#stageNav");
-const stageEditor = document.querySelector("#stageEditor");
-
-const copyJsonButton = document.querySelector("#copyJsonButton");
-const downloadButton = document.querySelector("#downloadButton");
-const openIssueButton = document.querySelector("#openIssueButton");
-const resetDraftButton = document.querySelector("#resetDraftButton");
-const submissionStatus = document.querySelector("#submissionStatus");
-const guidePreview = document.querySelector("#guidePreview");
-const jsonPreview = document.querySelector("#jsonPreview");
-
-let currentStep = 0;
-let selectedStageIndex = 0;
+let step = 0;
+let openStage = 0;
 let latestJson = "{}\n";
 let lastSavedAt = null;
+let supportState = "loading";
+let support = { items: [], bosses: [], itemMap: new Map(), bossMap: new Map() };
+let state = loadDraft() || sampleState();
 
-let supportIndex = {
-  items: [],
-  bosses: [],
-  itemMap: new Map(),
-  bossMap: new Map()
-};
+function lang() { return site?.getLanguage?.() === "ru" ? "ru" : "en"; }
+function s(key, vars = {}) { return String(COPY[lang()][key] || COPY.en[key] || key).replace(/\{(\w+)\}/g, (_, name) => String(vars[name] ?? "")); }
+function t(key, vars = {}) { return site?.t?.(key, vars) ?? key; }
+function esc(value) { return String(value || "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll("\"", "&quot;").replaceAll("'", "&#039;"); }
+function uniq(values) { return [...new Set((values || []).filter(Boolean))]; }
+function split(value) { return String(value || "").split(/\r?\n/).map((entry) => entry.trim()).filter(Boolean); }
+function slug(value) { return String(value || "").trim().toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 80) || "guide"; }
+function today() { return new Date().toISOString().slice(0, 10); }
+function timeLabel() { return new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit" }).format(new Date()); }
+function pickLabel(id, map) { return map.get(id)?.displayName || String(id || "").split("/").pop() || ""; }
+function initials(value) { return String(value || "?").split(/\s+/).slice(0, 2).map((entry) => entry[0] || "").join("").toUpperCase(); }
+function cls(value) { const entry = CLASSES.find((item) => item.value === value); return entry ? entry[lang()] : value; }
+function group(value) { return GROUPS.find((entry) => entry.cats.includes(value)) || GROUPS[GROUPS.length - 1]; }
+function groupLabel(key) { const entry = GROUPS.find((item) => item.key === key) || GROUPS[0]; return entry[lang()]; }
+function classList(values) { return (values || []).map(cls).join(", "); }
+function guideLang(value) { return site?.getGuideLanguageLabel?.(value) ?? value; }
+function icon(entry, label, boss = false) { return entry?.icon ? `<img class="content-icon ${boss ? "content-icon--boss" : ""}" src="${esc(entry.icon)}" alt="${esc(label)}" loading="lazy">` : `<span class="content-token">${esc(initials(label))}</span>`; }
 
-let state = loadDraft() || createDefaultState();
-
-function uiLanguage() {
-  return site?.getLanguage?.() === "ru" ? "ru" : "en";
-}
-
-function t(key, variables = {}) {
-  return site?.t?.(key, variables) ?? key;
-}
-
-function localText(en, ru) {
-  return uiLanguage() === "ru" ? ru : en;
-}
-
-function localized(value) {
-  if (value && typeof value === "object" && !Array.isArray(value)) {
-    return value[uiLanguage()] ?? value.en ?? "";
-  }
-  return String(value || "");
-}
-
-function guideLanguageLabel(code) {
-  return site?.getGuideLanguageLabel?.(code) ?? code;
-}
-
-function categoryLabel(category) {
-  return CATEGORY_LABELS[uiLanguage()]?.[category] || CATEGORY_LABELS.en[category] || category;
-}
-
-function classLabel(tag) {
-  return localized(CLASS_TAG_OPTIONS.find((option) => option.value === tag)?.label || tag);
-}
-
-function escapeHtml(value) {
-  return String(value || "")
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll("\"", "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
-function initials(label) {
-  return String(label || "?")
-    .split(/\s+/)
-    .slice(0, 2)
-    .map((part) => part[0] || "")
-    .join("")
-    .toUpperCase();
-}
-
-function slugify(value) {
-  return String(value || "")
-    .trim()
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 80) || "new-guide";
-}
-
-function splitLines(value) {
-  return String(value || "")
-    .split(/\r?\n/)
-    .map((entry) => entry.trim())
-    .filter(Boolean);
-}
-
-function uniqueValues(values) {
-  return Array.from(new Set((values || []).filter(Boolean)));
-}
-
-function today() {
-  return new Date().toISOString().slice(0, 10);
-}
-
-function nowTimeLabel() {
-  return new Intl.DateTimeFormat(undefined, { hour: "2-digit", minute: "2-digit" }).format(new Date());
-}
-
-function createItem(seed = {}) {
+function item(seed = {}) { return { itemId: seed.itemId || "", category: seed.category || "weapon", note: seed.note || "" }; }
+function stageModel(seed = {}) {
   return {
-    itemId: seed.itemId || "",
-    category: seed.category || "weapon",
-    priority: Number.isFinite(seed.priority) ? seed.priority : 50,
-    note: seed.note || ""
-  };
-}
-
-function createStage(seed = {}) {
-  return {
-    title: seed.title || localText("New Stage", "Новый этап"),
+    title: seed.title || s("stage"),
     era: seed.era || "prehardmode",
-    progressionMarkers: Array.isArray(seed.progressionMarkers) ? [...seed.progressionMarkers] : [],
+    progressionMarkers: [...(seed.progressionMarkers || [])],
     description: seed.description || "",
-    goalsText: seed.goalsText || "",
-    notesText: seed.notesText || "",
-    bossRefs: Array.isArray(seed.bossRefs) ? [...seed.bossRefs] : [],
-    items: Array.isArray(seed.items) && seed.items.length
-      ? seed.items.map((item) => createItem(item))
-      : [createItem()]
+    notesText: seed.notesText || ((seed.notes || []).join("\n")),
+    bossRefs: [...(seed.bossRefs || [])],
+    items: Array.isArray(seed.items) ? seed.items.map(item) : []
   };
 }
 
-function createDefaultState() {
+function sampleState() {
   return {
     createdAt: today(),
     title: "Vanilla Melee Starter Path",
@@ -251,187 +182,114 @@ function createDefaultState() {
     requiredMods: ["Terraria"],
     classTags: ["melee"],
     guideTags: [],
-    summary: "A structured melee progression path that shows how TerraPath guides can be authored and reviewed.",
+    summary: "A simple vanilla melee progression guide.",
     stages: [
-      createStage({
+      stageModel({
         title: "First Night",
         era: "prehardmode",
         progressionMarkers: ["early-exploration", "pre-eye-of-cthulhu"],
-        description: "Collect movement accessories, build a simple arena, and prepare a reliable early melee option.",
-        goalsText: "Find a mobility accessory\nPrepare a simple wooden arena\nCraft or loot a stronger melee option",
-        notesText: "This is still an example draft.",
+        description: "Collect movement items, prepare a basic arena, and secure a reliable early weapon.",
+        notes: ["This is an example draft."],
         bossRefs: ["Terraria/EyeofCthulhu"],
         items: [
-          {
-            itemId: "Terraria/CloudinaBottle",
-            category: "accessory",
-            priority: 85,
-            note: "Early movement is almost always worth prioritizing."
-          },
-          {
-            itemId: "Terraria/EnchantedBoomerang",
-            category: "weapon",
-            priority: 70,
-            note: "A safe ranged melee option for early exploration."
-          }
+          { itemId: "Terraria/EnchantedBoomerang", category: "weapon", note: "Safe early ranged melee option." },
+          { itemId: "Terraria/CloudinaBottle", category: "accessory", note: "Early mobility matters." }
         ]
       })
     ]
   };
 }
 
-function normalizeState(raw) {
-  if (!raw || typeof raw !== "object") {
-    return createDefaultState();
-  }
-
+function normalize(raw) {
+  if (!raw || typeof raw !== "object") return sampleState();
   return {
     createdAt: typeof raw.createdAt === "string" ? raw.createdAt : today(),
     title: String(raw.title || ""),
     author: String(raw.author || ""),
     language: String(raw.language || "en-US"),
-    requiredMods: uniqueValues(Array.isArray(raw.requiredMods) ? raw.requiredMods : ["Terraria"]),
-    classTags: uniqueValues(Array.isArray(raw.classTags) ? raw.classTags : ["other"]),
-    guideTags: uniqueValues(Array.isArray(raw.guideTags) ? raw.guideTags : []),
+    requiredMods: uniq(Array.isArray(raw.requiredMods) ? raw.requiredMods : ["Terraria"]),
+    classTags: uniq(Array.isArray(raw.classTags) ? raw.classTags : ["other"]),
+    guideTags: uniq(Array.isArray(raw.guideTags) ? raw.guideTags : []),
     summary: String(raw.summary || ""),
-    stages: Array.isArray(raw.stages) && raw.stages.length
-      ? raw.stages.map((stage) => createStage(stage))
-      : [createStage()]
+    stages: Array.isArray(raw.stages) && raw.stages.length ? raw.stages.map(stageModel) : [stageModel()]
   };
 }
 
 function loadDraft() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (!raw) {
-      return null;
-    }
-    return normalizeState(JSON.parse(raw));
-  } catch {
-    return null;
+  for (const key of LOAD_KEYS) {
+    try {
+      const raw = localStorage.getItem(key);
+      if (raw) return normalize(JSON.parse(raw));
+    } catch {}
   }
+  return null;
 }
 
 function saveDraft() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  lastSavedAt = nowTimeLabel();
+  localStorage.setItem(SAVE_KEY, JSON.stringify(state));
+  lastSavedAt = timeLabel();
 }
 
-function resolveEntry(contentId, map) {
-  return map.get(contentId) || null;
+function renderStatus() {
+  refs.support.textContent =
+    supportState === "loaded"
+      ? s("supportLoaded", { items: support.items.length, bosses: support.bosses.length })
+      : supportState === "failed"
+        ? s("supportFailed")
+        : s("supportLoading");
 }
 
-function resolveEntryName(contentId, map) {
-  const entry = resolveEntry(contentId, map);
-  if (entry?.displayName) {
-    return entry.displayName;
-  }
-  return String(contentId || "").split("/").pop() || localText("Unknown entry", "Неизвестная запись");
+function choiceCard(option, selected, groupName) {
+  return `<label class="choice-card"><input type="checkbox" value="${esc(option.value)}" data-choice-group="${groupName}" ${selected.includes(option.value) ? "checked" : ""}><span class="choice-card__copy"><strong class="choice-card__title">${esc(option.label || option[lang()])}</strong>${option.desc ? `<span class="choice-card__description">${esc(option.desc[lang()] || option.desc.en)}</span>` : ""}</span></label>`;
 }
 
-function iconMarkup(entry, label, kind = "item") {
-  if (entry?.icon) {
-    const className = kind === "boss" ? "content-icon content-icon--boss" : "content-icon";
-    return `<img class="${className}" src="${escapeHtml(entry.icon)}" alt="${escapeHtml(label)}" loading="lazy">`;
+function selectOptions(entries, value, placeholder) {
+  let html = `<option value="">${esc(placeholder)}</option>`;
+  const sorted = [...entries].sort((left, right) => left.displayName.localeCompare(right.displayName));
+  if (value && !sorted.some((entry) => entry.id === value)) {
+    html += `<option value="${esc(value)}" selected>${esc(value)}</option>`;
   }
-  return `<span class="content-token">${escapeHtml(initials(label))}</span>`;
-}
-
-function buildSelectOptions(entries, selectedValue, placeholderLabel) {
-  const sortedEntries = [...entries].sort((left, right) => left.displayName.localeCompare(right.displayName));
-  let markup = `<option value="">${escapeHtml(placeholderLabel)}</option>`;
-
-  if (selectedValue && !entries.some((entry) => entry.id === selectedValue)) {
-    markup += `<option value="${escapeHtml(selectedValue)}" selected>${escapeHtml(selectedValue)}</option>`;
-  }
-
-  const byMod = new Map();
-  for (const entry of sortedEntries) {
-    const modName = String(entry.id || "").split("/")[0] || "Other";
-    const bucket = byMod.get(modName) || [];
-    bucket.push(entry);
-    byMod.set(modName, bucket);
-  }
-
-  for (const [modName, modEntries] of byMod) {
-    markup += `
-      <optgroup label="${escapeHtml(modName)}">
-        ${modEntries.map((entry) => `
-          <option value="${escapeHtml(entry.id)}" ${entry.id === selectedValue ? "selected" : ""}>
-            ${escapeHtml(entry.displayName)}
-          </option>
-        `).join("")}
-      </optgroup>
-    `;
-  }
-
-  return markup;
+  return html + sorted.map((entry) => `<option value="${esc(entry.id)}" ${entry.id === value ? "selected" : ""}>${esc(entry.displayName)}</option>`).join("");
 }
 
 function buildGuide() {
-  const usedStageIds = new Map();
+  const used = new Map();
   const stages = state.stages.map((stage, index) => {
-    const title = stage.title.trim() || `${localText("Stage", "Этап")} ${index + 1}`;
-    const baseId = slugify(title).slice(0, 40) || `stage-${index + 1}`;
-    const usedCount = usedStageIds.get(baseId) || 0;
-    const stageId = usedCount ? `${baseId}-${usedCount + 1}`.slice(0, 40) : baseId;
-    usedStageIds.set(baseId, usedCount + 1);
+    const title = stage.title.trim() || `${s("stage")} ${index + 1}`;
+    const base = slug(title).slice(0, 40) || `stage-${index + 1}`;
+    const count = used.get(base) || 0;
+    used.set(base, count + 1);
 
     const output = {
-      id: stageId,
+      id: count ? `${base}-${count + 1}`.slice(0, 40) : base,
       title,
       era: stage.era || "prehardmode",
-      items: stage.items
-        .map((item) => ({
-          itemId: String(item.itemId || "").trim(),
-          category: item.category || "other",
-          priority: Number.isFinite(item.priority) ? item.priority : 50,
-          note: String(item.note || "").trim()
+      items: (stage.items || [])
+        .filter((itemEntry) => itemEntry.itemId)
+        .map((itemEntry) => ({
+          itemId: itemEntry.itemId,
+          category: itemEntry.category || "other",
+          ...(itemEntry.note.trim() ? { note: itemEntry.note.trim() } : {})
         }))
-        .filter((item) => item.itemId)
-        .map((item) => {
-          const next = { itemId: item.itemId, category: item.category };
-          if (item.priority !== 50) {
-            next.priority = item.priority;
-          }
-          if (item.note) {
-            next.note = item.note;
-          }
-          return next;
-        })
     };
 
-    const markerIds = uniqueValues(stage.progressionMarkers || []);
-    const bossRefs = uniqueValues((stage.bossRefs || []).map((value) => String(value || "").trim()).filter(Boolean));
-    const goals = splitLines(stage.goalsText);
-    const notes = splitLines(stage.notesText);
-
-    if (stage.description.trim()) {
-      output.description = stage.description.trim();
-    }
-    if (markerIds.length) {
-      output.progressionMarkers = markerIds;
-    }
-    if (bossRefs.length) {
-      output.bossRefs = bossRefs;
-    }
-    if (goals.length) {
-      output.goals = goals;
-    }
-    if (notes.length) {
-      output.notes = notes;
-    }
-
+    if (stage.description.trim()) output.description = stage.description.trim();
+    const markers = uniq(stage.progressionMarkers || []);
+    if (markers.length) output.progressionMarkers = markers;
+    const bosses = uniq((stage.bossRefs || []).map((entry) => String(entry || "").trim()).filter(Boolean));
+    if (bosses.length) output.bossRefs = bosses;
+    const notes = split(stage.notesText);
+    if (notes.length) output.notes = notes;
     return output;
   });
 
   const guide = {
     schemaVersion: 1,
-    id: slugify(`${state.requiredMods[0] || "guide"}-${state.classTags[0] || "path"}-${state.title}`),
-    title: state.title.trim() || localText("Untitled Guide", "Руководство без названия"),
-    author: state.author.trim() || localText("Unknown Author", "Неизвестный автор"),
+    id: slug(`${state.requiredMods[0] || "guide"}-${state.classTags[0] || "path"}-${state.title}`),
+    title: state.title.trim() || "Untitled Guide",
+    author: state.author.trim() || "Unknown Author",
     language: state.language || "en-US",
-    summary: state.summary.trim() || localText("Draft guide.", "Черновик руководства."),
+    summary: state.summary.trim() || "",
     requiredMods: state.requiredMods.length ? state.requiredMods : ["Terraria"],
     classTags: state.classTags.length ? state.classTags : ["other"],
     createdAt: state.createdAt,
@@ -439,808 +297,243 @@ function buildGuide() {
     stages
   };
 
-  if (state.guideTags.length) {
-    guide.guideTags = [...state.guideTags];
-  }
-
+  if (state.guideTags.length) guide.guideTags = [...state.guideTags];
   return guide;
 }
 
-function completionForStep(stepIndex) {
-  switch (stepIndex) {
-    case 0:
-      return Boolean(state.title.trim() && state.author.trim() && state.summary.trim());
-    case 1:
-      return Boolean(state.requiredMods.length && state.classTags.length);
-    case 2:
-      return state.stages.some((stage) => stage.title.trim() && stage.items.some((item) => item.itemId));
-    default:
-      return false;
+function ready(index) {
+  if (index === 0) {
+    return Boolean(state.title.trim() && state.author.trim() && state.summary.trim() && state.requiredMods.length && state.classTags.length);
   }
-}
-
-function renderWizardSteps() {
-  wizardSteps.innerHTML = STEP_DEFINITIONS.map((step, index) => {
-    const isCurrent = index === currentStep;
-    const isReady = completionForStep(index);
-    const stateLabel = isCurrent
-      ? t("editor.current")
-      : isReady
-        ? t("editor.ready")
-        : t("editor.pending");
-
-    return `
-      <li class="wizard-step ${isCurrent ? "wizard-step--current" : ""} ${isReady ? "wizard-step--complete" : ""}">
-        <button class="wizard-step__button" type="button" data-step-target="${index}">
-          <span class="wizard-step__count">${index + 1}</span>
-          <span class="wizard-step__body">
-            <strong>${escapeHtml(t(step.titleKey))}</strong>
-            <span>${escapeHtml(t(step.descriptionKey))}</span>
-          </span>
-          <span class="wizard-step__state">${escapeHtml(stateLabel)}</span>
-        </button>
-      </li>
-    `;
-  }).join("");
-}
-
-function renderSnapshot() {
-  const itemCount = state.stages.reduce((count, stage) => count + stage.items.filter((item) => item.itemId).length, 0);
-
-  guideSnapshot.innerHTML = `
-    <article class="snapshot-metric">
-      <span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotTitle"))}</span>
-      <strong>${escapeHtml(state.title || localText("Untitled guide", "Руководство без названия"))}</strong>
-    </article>
-    <article class="snapshot-metric">
-      <span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotAuthor"))}</span>
-      <strong>${escapeHtml(state.author || localText("Unknown author", "Неизвестный автор"))}</strong>
-    </article>
-    <article class="snapshot-metric">
-      <span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotLanguage"))}</span>
-      <strong>${escapeHtml(guideLanguageLabel(state.language))}</strong>
-    </article>
-    <article class="snapshot-metric">
-      <span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotStages"))}</span>
-      <strong>${state.stages.length}</strong>
-    </article>
-    <article class="snapshot-metric">
-      <span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotItems"))}</span>
-      <strong>${itemCount}</strong>
-    </article>
-    <article class="snapshot-metric">
-      <span class="snapshot-metric__label">${escapeHtml(t("editor.stageSnapshotClasses"))}</span>
-      <strong>${escapeHtml((state.classTags || []).map(classLabel).join(", ") || localText("Other", "Другое"))}</strong>
-    </article>
-  `;
-}
-
-function renderLanguageOptions() {
-  languageSelect.innerHTML = LANGUAGE_OPTIONS.map((option) => `
-    <option value="${option.value}">${escapeHtml(t(option.labelKey))}</option>
-  `).join("");
-}
-
-function buildChoiceMarkup(option, groupName, selectedValues) {
-  const checked = selectedValues.includes(option.value) ? "checked" : "";
-  const title = option.label ? localized(option.label) : t(option.labelKey);
-  const description = localized(option.description || "");
-
-  return `
-    <label class="choice-card">
-      <input type="checkbox" value="${escapeHtml(option.value)}" data-choice-group="${groupName}" ${checked}>
-      <span class="choice-card__copy">
-        <span class="choice-card__title">${escapeHtml(title)}</span>
-        <span class="choice-card__description">${escapeHtml(description)}</span>
-      </span>
-    </label>
-  `;
-}
-
-function renderChoiceGroups() {
-  requiredModOptions.innerHTML = SUPPORTED_MOD_OPTIONS.map((option) => buildChoiceMarkup(option, "required-mods", state.requiredMods)).join("");
-  classTagOptions.innerHTML = CLASS_TAG_OPTIONS.map((option) => buildChoiceMarkup(option, "class-tags", state.classTags)).join("");
-}
-
-function syncMetadataInputs() {
-  titleInput.value = state.title;
-  authorInput.value = state.author;
-  languageSelect.value = state.language;
-  summaryInput.value = state.summary;
-}
-
-function eraOptionsMarkup(selectedEra) {
-  return (progression?.eras || []).map((era) => `
-    <option value="${era.id}" ${era.id === selectedEra ? "selected" : ""}>
-      ${escapeHtml(progression.eraLabel(era.id, uiLanguage()))}
-    </option>
-  `).join("");
-}
-
-function renderProgressionMarkerSelector(stage, stageIndex) {
-  const markers = progression?.markersForEra?.(stage.era || "prehardmode") || [];
-  if (!markers.length) {
-    return `<p class="empty-state">${escapeHtml(localText("No detailed markers are available for this era yet.", "Для этого периода игры пока нет подробных мини-этапов."))}</p>`;
+  if (index === 1) {
+    return state.stages.some((entry) => entry.title.trim());
   }
-
-  return `
-    <div class="marker-grid">
-      ${markers.map((marker) => {
-        const selected = (stage.progressionMarkers || []).includes(marker.id);
-        return `
-          <button class="marker-card ${selected ? "marker-card--selected" : ""}" type="button" data-action="toggle-marker" data-stage-index="${stageIndex}" data-marker-id="${marker.id}">
-            <span class="pick-card__media">
-              <img class="content-icon" src="${escapeHtml(marker.icon)}" alt="${escapeHtml(progression.markerTitle(marker.id, uiLanguage()))}" loading="lazy">
-            </span>
-            <span class="marker-card__body">
-              <strong>${escapeHtml(progression.markerTitle(marker.id, uiLanguage()))}</strong>
-              <span>${escapeHtml(progression.markerDescription(marker.id, uiLanguage()))}</span>
-            </span>
-          </button>
-        `;
-      }).join("")}
-    </div>
-  `;
+  return ready(0) && ready(1);
 }
 
-function renderSelectedMarkers(stage) {
-  const markerIds = stage.progressionMarkers || [];
-  if (!markerIds.length) {
-    return "";
-  }
-
-  return `
-    <section class="preview-block">
-      <h4>${escapeHtml(t("common.labelMarkers"))}</h4>
-      <div class="marker-preview-grid">
-        ${markerIds.map((markerId) => {
-          const marker = progression?.getMarker?.(markerId);
-          if (!marker) {
-            return "";
-          }
-
-          return `
-            <article class="marker-preview-card">
-              <img class="content-icon" src="${escapeHtml(marker.icon)}" alt="${escapeHtml(progression.markerTitle(markerId, uiLanguage()))}" loading="lazy">
-              <div>
-                <strong>${escapeHtml(progression.markerTitle(markerId, uiLanguage()))}</strong>
-                <p>${escapeHtml(progression.markerDescription(markerId, uiLanguage()))}</p>
-              </div>
-            </article>
-          `;
-        }).join("")}
-      </div>
-    </section>
-  `;
-}
-
-function renderStageNav() {
-  const upLabel = localText("Up", "Вверх");
-  const downLabel = localText("Down", "Вниз");
-  const deleteLabel = localText("Delete", "Удалить");
-
-  stageNav.innerHTML = state.stages.map((stage, index) => {
-    const selected = index === selectedStageIndex;
-    const stageItemCount = stage.items.filter((item) => item.itemId).length;
-    const eraLabel = progression?.eraLabel?.(stage.era || "prehardmode", uiLanguage()) || stage.era || "";
-    const summary = `${eraLabel} / ${t("editor.stageItemPicks", { count: stageItemCount })}`;
-
-    return `
-      <article class="stage-tab ${selected ? "stage-tab--selected" : ""}">
-        <button class="stage-tab__select" type="button" data-action="select-stage" data-stage-index="${index}">
-          <span class="stage-tab__index">${escapeHtml(t("editor.stageCounter", { index: index + 1 }))}</span>
-          <strong>${escapeHtml(stage.title || `${localText("Stage", "Этап")} ${index + 1}`)}</strong>
-          <span>${escapeHtml(summary)}</span>
-        </button>
-        <div class="stage-tab__actions">
-          <button class="button button--quiet button--tiny" type="button" data-action="move-stage-up" data-stage-index="${index}" title="${escapeHtml(upLabel)}" ${index === 0 ? "disabled" : ""}>${escapeHtml(upLabel)}</button>
-          <button class="button button--quiet button--tiny" type="button" data-action="move-stage-down" data-stage-index="${index}" title="${escapeHtml(downLabel)}" ${index === state.stages.length - 1 ? "disabled" : ""}>${escapeHtml(downLabel)}</button>
-          <button class="button button--quiet button--tiny" type="button" data-action="remove-stage" data-stage-index="${index}" title="${escapeHtml(deleteLabel)}" ${state.stages.length === 1 ? "disabled" : ""}>${escapeHtml(deleteLabel)}</button>
-        </div>
-      </article>
-    `;
-  }).join("");
-}
-
-function renderBossEditors(stage, stageIndex) {
-  if (!stage.bossRefs.length) {
-    return `<p class="empty-state">${escapeHtml(t("editor.noBossMilestones"))}</p>`;
-  }
-
-  return stage.bossRefs.map((bossRef, bossIndex) => {
-    const entry = resolveEntry(bossRef, supportIndex.bossMap);
-    const label = resolveEntryName(bossRef, supportIndex.bossMap);
-
-    return `
-      <article class="pick-card">
-        <div class="pick-card__head">
-          <span class="pick-card__media">${iconMarkup(entry, label, "boss")}</span>
-          <div class="pick-card__copy">
-            <strong>${escapeHtml(label)}</strong>
-            <label class="field">
-              <span>${escapeHtml(t("editor.bossMilestoneLabel"))}</span>
-              <select data-role="boss-id" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">
-                ${buildSelectOptions(supportIndex.bosses, bossRef, t("editor.chooseBoss"))}
-              </select>
-            </label>
-          </div>
-          <button class="button button--quiet button--tiny" type="button" data-action="remove-boss" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">
-            ${escapeHtml(t("editor.remove"))}
-          </button>
-        </div>
-      </article>
-    `;
-  }).join("");
-}
-
-function renderItemEditors(stage, stageIndex) {
-  if (!stage.items.length) {
-    return `<p class="empty-state">${escapeHtml(t("editor.noItemPicks"))}</p>`;
-  }
-
-  return stage.items.map((item, itemIndex) => {
-    const entry = resolveEntry(item.itemId, supportIndex.itemMap);
-    const label = resolveEntryName(item.itemId, supportIndex.itemMap);
-
-    return `
-      <article class="pick-card">
-        <div class="pick-card__head">
-          <span class="pick-card__media">${iconMarkup(entry, label)}</span>
-          <div class="pick-card__copy">
-            <strong>${escapeHtml(label)}</strong>
-            <label class="field">
-              <span>${escapeHtml(t("editor.itemLabel"))}</span>
-              <select data-role="item-id" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">
-                ${buildSelectOptions(supportIndex.items, item.itemId, t("editor.chooseItem"))}
-              </select>
-            </label>
-          </div>
-          <button class="button button--quiet button--tiny" type="button" data-action="remove-item" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">
-            ${escapeHtml(t("editor.remove"))}
-          </button>
-        </div>
-        <div class="pick-card__grid">
-          <label class="field">
-            <span>${escapeHtml(t("editor.categoryLabel"))}</span>
-            <select data-role="item-category" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">
-              ${CATEGORY_OPTIONS.map((category) => `
-                <option value="${category}" ${category === item.category ? "selected" : ""}>${escapeHtml(categoryLabel(category))}</option>
-              `).join("")}
-            </select>
-          </label>
-          <label class="field">
-            <span>${escapeHtml(t("editor.priorityLabel"))}</span>
-            <input data-role="item-priority" data-stage-index="${stageIndex}" data-item-index="${itemIndex}" type="number" min="0" max="100" value="${Number(item.priority)}">
-          </label>
-        </div>
-        <label class="field">
-          <span>${escapeHtml(t("editor.itemNoteLabel"))}</span>
-          <textarea data-role="item-note" data-stage-index="${stageIndex}" data-item-index="${itemIndex}" rows="3" placeholder="${escapeHtml(t("editor.itemNotePlaceholder"))}">${escapeHtml(item.note)}</textarea>
-        </label>
-      </article>
-    `;
-  }).join("");
-}
-
-function renderStageEditor() {
-  const stage = state.stages[selectedStageIndex];
-  if (!stage) {
-    stageEditor.innerHTML = `<p class="empty-state">${escapeHtml(t("editor.noSelectedStage"))}</p>`;
-    return;
-  }
-
-  stageEditor.innerHTML = `
-    <section class="stage-panel">
-      <div class="section-copy">
-        <h3>${escapeHtml(stage.title || `${localText("Stage", "Этап")} ${selectedStageIndex + 1}`)}</h3>
-        <p class="muted">${escapeHtml(t("editor.stageIntro"))}</p>
-      </div>
-
-      <div class="form-layout">
-        <label class="field">
-          <span>${escapeHtml(t("editor.stageTitleLabel"))}</span>
-          <input data-role="stage-title" data-stage-index="${selectedStageIndex}" value="${escapeHtml(stage.title)}" placeholder="${escapeHtml(localText("Early gear setup", "Подготовка стартового снаряжения"))}">
-        </label>
-
-        <label class="field">
-          <span>${escapeHtml(t("editor.stageEraLabel"))}</span>
-          <select data-role="stage-era" data-stage-index="${selectedStageIndex}">
-            ${eraOptionsMarkup(stage.era || "prehardmode")}
-          </select>
-        </label>
-
-        <label class="field field--wide">
-          <span>${escapeHtml(t("editor.stageDescriptionLabel"))}</span>
-          <textarea data-role="stage-description" data-stage-index="${selectedStageIndex}" rows="4" placeholder="${escapeHtml(t("editor.stageDescriptionPlaceholder"))}">${escapeHtml(stage.description)}</textarea>
-        </label>
-
-        <label class="field field--wide">
-          <span>${escapeHtml(t("editor.stageGoalsLabel"))}</span>
-          <textarea data-role="stage-goals" data-stage-index="${selectedStageIndex}" rows="4" placeholder="${escapeHtml(t("editor.stageGoalsPlaceholder"))}">${escapeHtml(stage.goalsText)}</textarea>
-        </label>
-
-        <label class="field field--wide">
-          <span>${escapeHtml(t("editor.stageNotesLabel"))}</span>
-          <textarea data-role="stage-notes" data-stage-index="${selectedStageIndex}" rows="4" placeholder="${escapeHtml(t("editor.stageNotesPlaceholder"))}">${escapeHtml(stage.notesText)}</textarea>
-        </label>
-      </div>
-
-      <section class="subpanel">
-        <div class="subpanel__header">
-          <div class="section-copy">
-            <h4>${escapeHtml(t("editor.stageMarkersTitle"))}</h4>
-            <p class="muted">${escapeHtml(t("editor.stageMarkersBody"))}</p>
-          </div>
-        </div>
-        ${renderProgressionMarkerSelector(stage, selectedStageIndex)}
-      </section>
-
-      <section class="subpanel">
-        <div class="subpanel__header">
-          <div class="section-copy">
-            <h4>${escapeHtml(t("editor.bossMilestonesTitle"))}</h4>
-            <p class="muted">${escapeHtml(t("editor.bossMilestonesBody"))}</p>
-          </div>
-          <button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${selectedStageIndex}">
-            ${escapeHtml(t("editor.addBoss"))}
-          </button>
-        </div>
-        <div class="stack compact-stack">
-          ${renderBossEditors(stage, selectedStageIndex)}
-        </div>
-      </section>
-
-      <section class="subpanel">
-        <div class="subpanel__header">
-          <div class="section-copy">
-            <h4>${escapeHtml(t("editor.itemPicksTitle"))}</h4>
-            <p class="muted">${escapeHtml(t("editor.itemPicksBody"))}</p>
-          </div>
-          <button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${selectedStageIndex}">
-            ${escapeHtml(t("editor.addItem"))}
-          </button>
-        </div>
-        <div class="stack compact-stack">
-          ${renderItemEditors(stage, selectedStageIndex)}
-        </div>
-      </section>
-    </section>
-  `;
-}
-
-function buildContentBadge(contentId, map) {
-  const entry = resolveEntry(contentId, map);
-  const label = resolveEntryName(contentId, map);
-  return `
-    <div class="content-chip">
-      <span class="content-chip__media">${iconMarkup(entry, label, "boss")}</span>
-      <span>${escapeHtml(label)}</span>
-    </div>
-  `;
-}
-
-function renderStagePreview(stage) {
-  const groupedItems = new Map();
-  for (const item of stage.items || []) {
-    const key = item.category || "other";
-    const group = groupedItems.get(key) || [];
-    group.push(item);
-    groupedItems.set(key, group);
-  }
-
-  const groupsMarkup = Array.from(groupedItems.entries())
-    .sort(([left], [right]) => categoryLabel(left).localeCompare(categoryLabel(right)))
-    .map(([category, items]) => `
-      <section class="category-block">
-        <h4>${escapeHtml(categoryLabel(category))}</h4>
-        <div class="content-grid">
-          ${items.map((item) => {
-            const entry = resolveEntry(item.itemId, supportIndex.itemMap);
-            const label = resolveEntryName(item.itemId, supportIndex.itemMap);
-            return `
-              <article class="content-card">
-                <div class="content-card__head">
-                  <span class="content-card__media">${iconMarkup(entry, label)}</span>
-                  <div>
-                    <strong>${escapeHtml(label)}</strong>
-                    <div class="content-card__meta">${escapeHtml(item.itemId)}</div>
-                  </div>
-                </div>
-                ${item.note ? `<p class="content-card__note">${escapeHtml(item.note)}</p>` : ""}
-              </article>
-            `;
-          }).join("")}
-        </div>
-      </section>
-    `)
-    .join("");
-
-  return `
-    <article class="stage-preview">
-      <div class="stage-preview__header">
-        <h3>${escapeHtml(stage.title)}</h3>
-        <span class="meta-pill">${escapeHtml(t("editor.stageItemPicks", { count: (stage.items || []).length }))}</span>
-      </div>
-      <div class="chip-row">
-        <span class="meta-pill">${escapeHtml(t("common.labelEra"))}: ${escapeHtml(progression?.eraLabel?.(stage.era || "prehardmode", uiLanguage()) || stage.era || "")}</span>
-      </div>
-      ${stage.description ? `<p>${escapeHtml(stage.description)}</p>` : ""}
-      ${renderSelectedMarkers(stage)}
-      ${stage.bossRefs?.length ? `
-        <section class="preview-block">
-          <h4>${escapeHtml(t("common.labelBosses"))}</h4>
-          <div class="chip-row">
-            ${stage.bossRefs.map((bossRef) => buildContentBadge(bossRef, supportIndex.bossMap)).join("")}
-          </div>
-        </section>
-      ` : ""}
-      ${stage.goals?.length ? `
-        <section class="preview-block">
-          <h4>${escapeHtml(t("common.labelGoals"))}</h4>
-          <ul class="line-list">
-            ${stage.goals.map((goal) => `<li>${escapeHtml(goal)}</li>`).join("")}
-          </ul>
-        </section>
-      ` : ""}
-      ${groupsMarkup || `<p class="empty-state">${escapeHtml(t("editor.noItemsPreview"))}</p>`}
-      ${stage.notes?.length ? `
-        <section class="preview-block">
-          <h4>${escapeHtml(t("common.labelNotes"))}</h4>
-          <ul class="line-list">
-            ${stage.notes.map((note) => `<li>${escapeHtml(note)}</li>`).join("")}
-          </ul>
-        </section>
-      ` : ""}
-    </article>
-  `;
-}
-
-function renderGuidePreview(guide) {
-  const metaPills = [
-    `${t("common.labelClass")}: ${(guide.classTags || []).map(classLabel).join(", ")}`,
-    `${t("common.labelLanguage")}: ${guideLanguageLabel(guide.language)}`,
-    `${t("common.labelMods")}: ${(guide.requiredMods || []).join(", ")}`,
-    `${(guide.stages || []).length} ${t("common.labelStages").toLowerCase()}`
-  ];
-
-  guidePreview.innerHTML = `
-    <header class="guide-preview__header">
-      <h2 class="guide-title">${escapeHtml(guide.title)}</h2>
-      <p>${escapeHtml(guide.summary)}</p>
-      <div class="chip-row">
-        ${metaPills.map((pill) => `<span class="meta-pill">${escapeHtml(pill)}</span>`).join("")}
-      </div>
-    </header>
-    <div class="guide-preview__stages">
-      ${(guide.stages || []).map((stage) => renderStagePreview(stage)).join("")}
-    </div>
-  `;
-}
-
-function renderReview() {
-  const guide = buildGuide();
-  latestJson = `${JSON.stringify(guide, null, 2)}\n`;
-  jsonPreview.textContent = latestJson;
-  renderGuidePreview(guide);
-  downloadButton.disabled = false;
-}
-
-function renderStepMeta() {
-  const definition = STEP_DEFINITIONS[currentStep];
-  stepEyebrow.textContent = t("editor.stepCounter", { current: currentStep + 1, total: STEP_DEFINITIONS.length });
-  stepTitle.textContent = t(definition.titleKey);
-  stepDescription.textContent = t(definition.descriptionKey);
-}
-
-function renderPanels() {
-  for (const panel of stepPanels) {
-    panel.hidden = Number(panel.dataset.stepPanel) !== currentStep;
-  }
-}
-
-function renderFooter() {
-  prevStepButton.disabled = currentStep === 0;
-  prevStepButton.textContent = t("editor.back");
-
-  if (currentStep === STEP_DEFINITIONS.length - 1) {
-    nextStepButton.textContent = t("editor.stayOnReview");
-    nextStepButton.disabled = true;
-  } else {
-    nextStepButton.textContent = currentStep === STEP_DEFINITIONS.length - 2
-      ? t("editor.goToReview")
-      : t("editor.nextStep");
-    nextStepButton.disabled = false;
-  }
-
-  autosaveStatus.textContent = lastSavedAt
-    ? t("editor.autosavedAt", { time: lastSavedAt })
-    : t("editor.autosave");
-}
-
-function clampStageSelection() {
-  selectedStageIndex = Math.max(0, Math.min(selectedStageIndex, state.stages.length - 1));
-}
-
-function renderAll() {
-  clampStageSelection();
-  syncMetadataInputs();
-  renderChoiceGroups();
-  renderWizardSteps();
-  renderSnapshot();
-  renderStepMeta();
-  renderPanels();
-  renderStageNav();
-  renderStageEditor();
-  renderReview();
-  renderFooter();
-}
-
-function persistAndRender() {
-  saveDraft();
+function open(index) {
+  step = Math.max(0, Math.min(STEPS.length - 1, index));
   renderAll();
 }
 
-function refreshDerivedViews(rerenderStageEditor = false) {
-  renderWizardSteps();
-  renderSnapshot();
-  renderStageNav();
-  if (rerenderStageEditor) {
-    renderStageEditor();
-  }
-  renderReview();
+function move(offset) {
+  open(step + offset);
+}
+
+function previewGroups(items) {
+  const blocks = GROUPS.map((entry) => {
+    const rows = (items || []).filter((itemEntry) => entry.cats.includes(itemEntry.category || "other"));
+    if (!rows.length) return "";
+
+    return `<section class="category-block"><h4>${esc(entry[lang()])}</h4><div class="content-grid">${rows.map((itemEntry) => {
+      const iconEntry = support.itemMap.get(itemEntry.itemId);
+      const label = pickLabel(itemEntry.itemId, support.itemMap);
+      return `<article class="content-card"><div class="content-card__head"><span class="content-card__media">${icon(iconEntry, label)}</span><div><strong>${esc(label)}</strong><div class="content-card__meta">${esc(itemEntry.itemId)}</div></div></div>${itemEntry.note ? `<p class="content-card__note">${esc(itemEntry.note)}</p>` : ""}</article>`;
+    }).join("")}</div></section>`;
+  }).filter(Boolean);
+
+  return blocks.join("") || `<p class="empty-state">${esc(s("noItemsPreview"))}</p>`;
+}
+
+function previewMarkers(stage) {
+  if (!stage.progressionMarkers?.length) return "";
+  return `<section class="preview-block"><h4>${esc(t("common.labelMarkers"))}</h4><div class="marker-preview-grid">${stage.progressionMarkers.map((id) => {
+    const marker = progression?.getMarker?.(id);
+    if (!marker) return "";
+    return `<article class="marker-preview-card"><img class="content-icon" src="${esc(marker.icon)}" alt="${esc(marker.title?.[lang()] || marker.title?.en || id)}" loading="lazy"><div><strong>${esc(marker.title?.[lang()] || marker.title?.en || id)}</strong><p>${esc(marker.description?.[lang()] || marker.description?.en || "")}</p></div></article>`;
+  }).join("")}</div></section>`;
+}
+
+function previewBosses(stage) {
+  if (!stage.bossRefs?.length) return "";
+  return `<section class="preview-block"><h4>${esc(t("common.labelBosses"))}</h4><div class="chip-row">${stage.bossRefs.map((id) => {
+    const entry = support.bossMap.get(id);
+    const label = pickLabel(id, support.bossMap);
+    return `<div class="content-chip"><span class="content-chip__media">${icon(entry, label, true)}</span><span>${esc(label)}</span></div>`;
+  }).join("")}</div></section>`;
+}
+
+function renderPreview() {
+  const guide = buildGuide();
+  latestJson = `${JSON.stringify(guide, null, 2)}\n`;
+  refs.json.textContent = latestJson;
+  refs.preview.innerHTML = `<header class="guide-preview__header"><h2 class="guide-title">${esc(guide.title)}</h2><p>${esc(guide.summary)}</p><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelClass")}: ${classList(guide.classTags)}`)}</span><span class="meta-pill">${esc(`${t("common.labelLanguage")}: ${guideLang(guide.language)}`)}</span><span class="meta-pill">${esc(`${t("common.labelMods")}: ${(guide.requiredMods || []).join(", ")}`)}</span><span class="meta-pill">${esc(`${guide.stages.length} ${t("common.labelStages").toLowerCase()}`)}</span></div></header><div class="guide-preview__stages">${guide.stages.map((stage) => `<article class="stage-preview"><div class="stage-preview__header"><h3>${esc(stage.title)}</h3><span class="meta-pill">${esc(s("itemCount", { count: (stage.items || []).length }))}</span></div><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelEra")}: ${progression?.eraLabel?.(stage.era, lang()) || stage.era}`)}</span></div>${stage.description ? `<p>${esc(stage.description)}</p>` : ""}${previewMarkers(stage)}${previewBosses(stage)}${previewGroups(stage.items)}${stage.notes?.length ? `<section class="preview-block"><h4>${esc(t("common.labelNotes"))}</h4><ul class="line-list">${stage.notes.map((note) => `<li>${esc(note)}</li>`).join("")}</ul></section>` : ""}</article>`).join("")}</div>`;
+}
+
+function bossRows(stage, stageIndex) {
+  if (!stage.bossRefs.length) return `<p class="empty-state">${esc(s("noBosses"))}</p>`;
+  return stage.bossRefs.map((id, bossIndex) => {
+    const entry = support.bossMap.get(id);
+    const label = pickLabel(id, support.bossMap);
+    return `<div class="picker-row boss-row"><span class="picker-row__media">${icon(entry, label, true)}</span><select data-role="boss-id" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">${selectOptions(support.bosses, id, s("chooseBoss"))}</select><button class="button button--quiet button--tiny" type="button" data-action="remove-boss" data-stage-index="${stageIndex}" data-boss-index="${bossIndex}">${esc(s("remove"))}</button></div>`;
+  }).join("");
+}
+
+function itemGroupRows(stage, stageIndex, groupEntry) {
+  const rows = [];
+  (stage.items || []).forEach((itemEntry, itemIndex) => {
+    if (groupEntry.cats.includes(itemEntry.category || "other")) rows.push({ itemEntry, itemIndex });
+  });
+  const entries = support.items.filter((itemEntry) => groupEntry.cats.includes(itemEntry.category || "other"));
+
+  return `<section class="item-group"><div class="item-group__header"><h4>${esc(groupEntry[lang()])}</h4><button class="button button--quiet button--tiny" type="button" data-action="add-item" data-stage-index="${stageIndex}" data-group-key="${esc(groupEntry.key)}">+</button></div>${rows.length ? rows.map(({ itemEntry, itemIndex }) => {
+    const entry = support.itemMap.get(itemEntry.itemId);
+    const label = pickLabel(itemEntry.itemId, support.itemMap);
+    return `<div class="picker-row item-row"><span class="picker-row__media">${icon(entry, label)}</span><select data-role="item-id" data-stage-index="${stageIndex}" data-item-index="${itemIndex}" data-group-key="${esc(groupEntry.key)}">${selectOptions(entries, itemEntry.itemId, s("chooseItem"))}</select><input data-role="item-note" data-stage-index="${stageIndex}" data-item-index="${itemIndex}" value="${esc(itemEntry.note)}" placeholder="${esc(s("notePlaceholder"))}"><button class="button button--quiet button--tiny" type="button" data-action="remove-item" data-stage-index="${stageIndex}" data-item-index="${itemIndex}">${esc(s("remove"))}</button></div>`;
+  }).join("") : `<p class="empty-state">${esc(s("noItems"))}</p>`}</section>`;
+}
+
+function stageBody(stage, stageIndex) {
+  const markers = (progression?.markersForEra?.(stage.era || "prehardmode") || []).map((marker) => {
+    const selected = (stage.progressionMarkers || []).includes(marker.id);
+    return `<button class="marker-card ${selected ? "marker-card--selected" : ""}" type="button" data-action="toggle-marker" data-stage-index="${stageIndex}" data-marker-id="${esc(marker.id)}"><img class="content-icon" src="${esc(marker.icon)}" alt="${esc(marker.title?.[lang()] || marker.title?.en || marker.id)}" loading="lazy"><span class="marker-card__body"><strong>${esc(marker.title?.[lang()] || marker.title?.en || marker.id)}</strong><span>${esc(marker.description?.[lang()] || marker.description?.en || "")}</span></span></button>`;
+  }).join("");
+
+  return `<div class="field-grid"><label class="field"><span>${esc(s("stageTitle"))}</span><input data-role="stage-title" data-stage-index="${stageIndex}" value="${esc(stage.title)}"></label><label class="field"><span>${esc(s("era"))}</span><select data-role="stage-era" data-stage-index="${stageIndex}">${(progression?.eras || []).map((era) => `<option value="${esc(era.id)}" ${era.id === stage.era ? "selected" : ""}>${esc(era.label?.[lang()] || era.label?.en || era.id)}</option>`).join("")}</select></label></div><label class="field"><span>${esc(s("description"))}</span><textarea data-role="stage-description" data-stage-index="${stageIndex}" rows="3" placeholder="${esc(s("descriptionPlaceholder"))}">${esc(stage.description)}</textarea></label><section class="stage-section"><div class="section-heading"><h3>${esc(s("markers"))}</h3></div><div class="marker-grid">${markers}</div></section><section class="stage-section"><div class="section-heading section-heading--with-action"><h3>${esc(s("bosses"))}</h3><button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${stageIndex}">${esc(s("addBoss"))}</button></div><div class="stage-stack">${bossRows(stage, stageIndex)}</div></section><section class="stage-section"><div class="section-heading"><h3>${esc(s("items"))}</h3></div><div class="item-group-list">${GROUPS.map((entry) => itemGroupRows(stage, stageIndex, entry)).join("")}</div></section><label class="field"><span>${esc(s("notes"))}</span><textarea data-role="stage-notes" data-stage-index="${stageIndex}" rows="3" placeholder="${esc(s("notesPlaceholder"))}">${esc(stage.notesText)}</textarea></label>`;
+}
+
+function stageCard(stage, stageIndex) {
+  const opened = stageIndex === openStage;
+  const eraText = progression?.eraLabel?.(stage.era || "prehardmode", lang()) || stage.era || "";
+  const count = (stage.items || []).filter((itemEntry) => itemEntry.itemId).length;
+  return `<article class="stage-card ${opened ? "stage-card--open" : ""}"><div class="stage-card__header"><button class="stage-card__toggle" type="button" data-action="toggle-stage" data-stage-index="${stageIndex}"><span class="stage-card__title"><strong>${esc(stage.title || `${s("stage")} ${stageIndex + 1}`)}</strong><span class="muted">${esc(eraText)}</span></span><span class="meta-pill">${esc(s("itemCount", { count }))}</span></button><div class="stage-card__actions"><button class="button button--quiet button--tiny" type="button" data-action="move-stage-up" data-stage-index="${stageIndex}" ${stageIndex === 0 ? "disabled" : ""}>${esc(s("up"))}</button><button class="button button--quiet button--tiny" type="button" data-action="move-stage-down" data-stage-index="${stageIndex}" ${stageIndex === state.stages.length - 1 ? "disabled" : ""}>${esc(s("down"))}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-stage" data-stage-index="${stageIndex}" ${state.stages.length === 1 ? "disabled" : ""}>${esc(s("delete"))}</button></div></div><div class="stage-card__body" ${opened ? "" : "hidden"}>${stageBody(stage, stageIndex)}</div></article>`;
+}
+
+function renderSteps() {
+  refs.steps.innerHTML = STEPS.map((entry, index) => {
+    const stateText = index === step ? (lang() === "ru" ? "Текущий" : "Current") : ready(index) ? (lang() === "ru" ? "Готово" : "Ready") : (lang() === "ru" ? "Не заполнено" : "Pending");
+    return `<li class="wizard-step ${index === step ? "wizard-step--current" : ""} ${ready(index) ? "wizard-step--complete" : ""}"><button class="wizard-step__button" type="button" data-step-target="${index}"><span class="wizard-step__count">${index + 1}</span><span class="wizard-step__body"><strong>${esc(entry.title[lang()])}</strong><span>${esc(entry.desc[lang()])}</span></span><span class="wizard-step__state">${esc(stateText)}</span></button></li>`;
+  }).join("");
+}
+
+function renderMeta() {
+  refs.eyebrow.textContent = lang() === "ru" ? `Шаг ${step + 1} из ${STEPS.length}` : `Step ${step + 1} of ${STEPS.length}`;
+  refs.title.textContent = STEPS[step].title[lang()];
+  refs.desc.textContent = STEPS[step].desc[lang()];
+}
+
+function renderPanels() {
+  refs.panels.forEach((panel) => {
+    panel.hidden = Number(panel.dataset.stepPanel) !== step;
+  });
+}
+
+function renderEditorText() {
+  const map = {
+    guideTitleLabel: "editor.guideTitleLabel",
+    authorLabel: "editor.authorLabel",
+    languageLabel: "editor.guideLanguageLabel",
+    summaryLabel: "editor.summaryLabel",
+    requiredModsHeading: "editor.requiredModsTitle",
+    classTagsHeading: "editor.classTagsTitle",
+    addStage: "editor.addStage",
+    copyJson: "editor.copyJson",
+    downloadJson: "editor.downloadJson",
+    openIssue: "editor.openIssue",
+    resetDraft: "editor.resetDraft",
+    back: "editor.back",
+    nextStep: "editor.nextStep",
+    autosave: "editor.autosave"
+  };
+
+  document.querySelectorAll("[data-editor-text]").forEach((element) => {
+    const key = element.dataset.editorText;
+    if (key === "previewHeading") {
+      element.textContent = s("previewHeading");
+    } else if (key === "submissionStatus") {
+      element.textContent = t("editor.submissionStatus");
+    } else {
+      element.textContent = t(map[key]);
+    }
+  });
+}
+
+function renderGuideStep() {
+  refs.titleInput.value = state.title;
+  refs.authorInput.value = state.author;
+  refs.summary.value = state.summary;
+  refs.language.innerHTML = `<option value="en-US">${esc(t("common.languageEnglishUs"))}</option><option value="ru-RU">${esc(t("common.languageRussian"))}</option>`;
+  refs.language.value = state.language;
+  refs.titleInput.placeholder = lang() === "ru" ? "Название гайда" : "Guide title";
+  refs.authorInput.placeholder = lang() === "ru" ? "Ваше имя" : "Your name";
+  refs.summary.placeholder = lang() === "ru" ? "Короткое описание для списка руководств." : "Short description shown in the guide list.";
+  refs.mods.innerHTML = MODS.map((entry) => choiceCard(entry, state.requiredMods, "mods")).join("");
+  refs.classes.innerHTML = CLASSES.map((entry) => choiceCard(entry, state.classTags, "classes")).join("");
+}
+
+function renderFooter() {
+  refs.prev.disabled = step === 0;
+  refs.prev.textContent = t("editor.back");
+  refs.next.disabled = step === STEPS.length - 1;
+  refs.next.textContent = step === STEPS.length - 2 ? (lang() === "ru" ? "К экспорту" : "Go to export") : t("editor.nextStep");
+  refs.autosave.textContent = lastSavedAt ? t("editor.autosavedAt", { time: lastSavedAt }) : t("editor.autosave");
+}
+
+function renderAll() {
+  openStage = Math.max(0, Math.min(openStage, state.stages.length - 1));
+  renderEditorText();
+  renderStatus();
+  renderGuideStep();
+  renderSteps();
+  renderMeta();
+  renderPanels();
+  refs.addStage.textContent = t("editor.addStage");
+  refs.accordion.innerHTML = state.stages.map(stageCard).join("");
+  renderPreview();
   renderFooter();
 }
 
-function toggleArrayValue(values, value) {
-  return values.includes(value)
-    ? values.filter((entry) => entry !== value)
-    : [...values, value];
+function saveAndRender(full = true) {
+  saveDraft();
+  if (full) {
+    renderAll();
+    return;
+  }
+  renderSteps();
+  renderPreview();
+  renderFooter();
 }
 
-function swapStages(fromIndex, toIndex) {
+function toggle(list, value) {
+  return list.includes(value) ? list.filter((entry) => entry !== value) : [...list, value];
+}
+
+function moveStage(fromIndex, toIndex) {
   const next = [...state.stages];
   const [moved] = next.splice(fromIndex, 1);
   next.splice(toIndex, 0, moved);
   state.stages = next;
 }
 
-function openStep(stepIndex) {
-  currentStep = Math.max(0, Math.min(STEP_DEFINITIONS.length - 1, stepIndex));
-  renderAll();
-}
-
-function moveStep(offset) {
-  openStep(currentStep + offset);
-}
-
-function handleMetadataChoiceChange(event) {
-  const input = event.target;
-  if (!(input instanceof HTMLInputElement)) {
-    return;
+function repoUrl() {
+  const { hostname, pathname } = window.location;
+  if (hostname.endsWith(".github.io")) {
+    const owner = hostname.slice(0, hostname.indexOf(".github.io"));
+    const repo = pathname.split("/").filter(Boolean)[0];
+    if (owner && repo) return `https://github.com/${owner}/${repo}`;
   }
-
-  const group = input.dataset.choiceGroup;
-  if (!group) {
-    return;
+  if (hostname === "github.com") {
+    const [owner, repo] = pathname.split("/").filter(Boolean);
+    if (owner && repo) return `https://github.com/${owner}/${repo}`;
   }
-
-  if (group === "required-mods") {
-    state.requiredMods = toggleArrayValue(state.requiredMods, input.value);
-    if (!state.requiredMods.length) {
-      state.requiredMods = ["Terraria"];
-    }
-  }
-
-  if (group === "class-tags") {
-    state.classTags = toggleArrayValue(state.classTags, input.value);
-    if (!state.classTags.length) {
-      state.classTags = ["other"];
-    }
-  }
-
-  persistAndRender();
-}
-
-function handleStageNavClick(event) {
-  const button = event.target.closest("button[data-action]");
-  if (!button) {
-    return;
-  }
-
-  const action = button.dataset.action;
-  const stageIndex = Number(button.dataset.stageIndex);
-
-  if (action === "select-stage") {
-    selectedStageIndex = stageIndex;
-    renderAll();
-    return;
-  }
-
-  if (action === "move-stage-up" && stageIndex > 0) {
-    swapStages(stageIndex, stageIndex - 1);
-    selectedStageIndex = stageIndex - 1;
-    persistAndRender();
-    return;
-  }
-
-  if (action === "move-stage-down" && stageIndex < state.stages.length - 1) {
-    swapStages(stageIndex, stageIndex + 1);
-    selectedStageIndex = stageIndex + 1;
-    persistAndRender();
-    return;
-  }
-
-  if (action === "remove-stage" && state.stages.length > 1) {
-    state.stages.splice(stageIndex, 1);
-    selectedStageIndex = Math.max(0, Math.min(selectedStageIndex, state.stages.length - 1));
-    persistAndRender();
-  }
-}
-
-function handleStageEditorClick(event) {
-  const button = event.target.closest("button[data-action]");
-  if (!button) {
-    return;
-  }
-
-  const action = button.dataset.action;
-  const stageIndex = Number(button.dataset.stageIndex);
-  const itemIndex = Number(button.dataset.itemIndex);
-  const bossIndex = Number(button.dataset.bossIndex);
-  const stage = state.stages[stageIndex];
-
-  if (!stage) {
-    return;
-  }
-
-  if (action === "add-boss") {
-    stage.bossRefs.push("");
-    persistAndRender();
-    return;
-  }
-
-  if (action === "remove-boss") {
-    stage.bossRefs.splice(bossIndex, 1);
-    persistAndRender();
-    return;
-  }
-
-  if (action === "add-item") {
-    stage.items.push(createItem());
-    persistAndRender();
-    return;
-  }
-
-  if (action === "remove-item") {
-    stage.items.splice(itemIndex, 1);
-    if (!stage.items.length) {
-      stage.items.push(createItem());
-    }
-    persistAndRender();
-    return;
-  }
-
-  if (action === "toggle-marker") {
-    const markerId = button.dataset.markerId;
-    const next = new Set(stage.progressionMarkers || []);
-    if (next.has(markerId)) {
-      next.delete(markerId);
-    } else {
-      next.add(markerId);
-    }
-    stage.progressionMarkers = Array.from(next);
-    persistAndRender();
-  }
-}
-
-function handleStageEditorInput(event) {
-  const target = event.target;
-  const role = target.dataset.role;
-  if (!role) {
-    return;
-  }
-
-  const stageIndex = Number(target.dataset.stageIndex);
-  const itemIndex = Number(target.dataset.itemIndex);
-  const bossIndex = Number(target.dataset.bossIndex);
-  const stage = state.stages[stageIndex];
-  if (!stage) {
-    return;
-  }
-
-  if (role === "stage-title") {
-    stage.title = target.value;
-    saveDraft();
-    refreshDerivedViews(true);
-    return;
-  }
-
-  if (role === "stage-era") {
-    stage.era = target.value;
-    const allowedIds = new Set((progression?.markersForEra?.(stage.era) || []).map((marker) => marker.id));
-    stage.progressionMarkers = (stage.progressionMarkers || []).filter((markerId) => allowedIds.has(markerId));
-    saveDraft();
-    refreshDerivedViews(true);
-    return;
-  }
-
-  if (role === "stage-description") {
-    stage.description = target.value;
-    saveDraft();
-    refreshDerivedViews(false);
-    return;
-  }
-
-  if (role === "stage-goals") {
-    stage.goalsText = target.value;
-    saveDraft();
-    refreshDerivedViews(false);
-    return;
-  }
-
-  if (role === "stage-notes") {
-    stage.notesText = target.value;
-    saveDraft();
-    refreshDerivedViews(false);
-    return;
-  }
-
-  if (role === "boss-id") {
-    stage.bossRefs[bossIndex] = target.value;
-    saveDraft();
-    refreshDerivedViews(true);
-    return;
-  }
-
-  if (role === "item-id") {
-    stage.items[itemIndex].itemId = target.value;
-    const entry = resolveEntry(target.value, supportIndex.itemMap);
-    if (entry?.category) {
-      stage.items[itemIndex].category = entry.category;
-    }
-    saveDraft();
-    refreshDerivedViews(true);
-    return;
-  }
-
-  if (role === "item-category") {
-    stage.items[itemIndex].category = target.value;
-    saveDraft();
-    refreshDerivedViews(true);
-    return;
-  }
-
-  if (role === "item-priority") {
-    stage.items[itemIndex].priority = Math.max(0, Math.min(100, Number(target.value) || 0));
-    saveDraft();
-    refreshDerivedViews(false);
-    return;
-  }
-
-  if (role === "item-note") {
-    stage.items[itemIndex].note = target.value;
-    saveDraft();
-    refreshDerivedViews(false);
-  }
+  return null;
 }
 
 async function copyJson() {
   try {
     if (navigator.clipboard?.writeText) {
       await navigator.clipboard.writeText(latestJson);
-      submissionStatus.textContent = t("editor.copiedJson");
+      refs.submission.textContent = s("copied");
       return;
     }
-  } catch {
-    // Continue to selection fallback.
-  }
+  } catch {}
 
   const selection = window.getSelection();
   const range = document.createRange();
-  range.selectNodeContents(jsonPreview);
+  range.selectNodeContents(refs.json);
   selection.removeAllRanges();
   selection.addRange(range);
-  submissionStatus.textContent = t("editor.selectedJson");
+  refs.submission.textContent = s("selected");
 }
 
 function downloadJson() {
@@ -1253,167 +546,229 @@ function downloadJson() {
   URL.revokeObjectURL(url);
 }
 
-function detectRepositoryUrl() {
-  const { hostname, pathname } = window.location;
-
-  if (hostname.endsWith(".github.io")) {
-    const owner = hostname.slice(0, hostname.indexOf(".github.io"));
-    const repo = pathname.split("/").filter(Boolean)[0];
-    if (owner && repo) {
-      return `https://github.com/${owner}/${repo}`;
-    }
-  }
-
-  if (hostname === "github.com") {
-    const [owner, repo] = pathname.split("/").filter(Boolean);
-    if (owner && repo) {
-      return `https://github.com/${owner}/${repo}`;
-    }
-  }
-
-  return null;
-}
-
-function openIssuePage() {
-  const repositoryUrl = detectRepositoryUrl();
-  if (!repositoryUrl) {
-    submissionStatus.textContent = t("editor.repoUnknown");
+function openIssue() {
+  const url = repoUrl();
+  if (!url) {
+    refs.submission.textContent = s("repoUnknown");
     return;
   }
-
-  window.open(`${repositoryUrl}/issues/new`, "_blank", "noopener");
-  submissionStatus.textContent = t("editor.issueOpened");
+  window.open(`${url}/issues/new`, "_blank", "noopener");
+  refs.submission.textContent = s("issueOpened");
 }
 
 function resetDraft() {
-  if (!confirm(t("editor.resetConfirm"))) {
-    return;
-  }
-
-  localStorage.removeItem(STORAGE_KEY);
-  state = createDefaultState();
-  currentStep = 0;
-  selectedStageIndex = 0;
+  if (!confirm(s("resetConfirm"))) return;
+  LOAD_KEYS.forEach((key) => localStorage.removeItem(key));
+  state = sampleState();
+  step = 0;
+  openStage = 0;
   lastSavedAt = null;
-  submissionStatus.textContent = t("editor.draftReset");
+  refs.submission.textContent = s("draftReset");
   renderAll();
 }
 
-async function tryFetchJson(paths) {
+async function fetchJson(paths) {
   for (const path of paths) {
     try {
       const response = await fetch(path, { cache: "no-store" });
-      if (response.ok) {
-        return response.json();
-      }
-    } catch {
-      // Continue to fallback path.
-    }
+      if (response.ok) return response.json();
+    } catch {}
   }
-
-  throw new Error("Unable to load JSON.");
+  throw new Error("JSON load failed.");
 }
 
-async function loadSupportIndex() {
+async function loadSupport() {
+  supportState = "loading";
+  renderStatus();
+
   try {
     const [itemsData, oresData, bossesData] = await Promise.all([
-      tryFetchJson(["supported/Terraria/items.json", "../supported/Terraria/items.json"]),
-      tryFetchJson(["supported/Terraria/ores.json", "../supported/Terraria/ores.json"]),
-      tryFetchJson(["supported/Terraria/bosses.json", "../supported/Terraria/bosses.json"])
+      fetchJson(["supported/Terraria/items.json", "../supported/Terraria/items.json"]),
+      fetchJson(["supported/Terraria/ores.json", "../supported/Terraria/ores.json"]),
+      fetchJson(["supported/Terraria/bosses.json", "../supported/Terraria/bosses.json"])
     ]);
 
-    const itemEntries = [
-      ...(itemsData.items || []),
-      ...((oresData.ores || []).map((entry) => ({ ...entry, category: "ore" })))
-    ];
-    const bossEntries = bossesData.bosses || [];
-
-    supportIndex = {
-      items: itemEntries,
-      bosses: bossEntries,
-      itemMap: new Map(itemEntries.map((entry) => [entry.id, entry])),
-      bossMap: new Map(bossEntries.map((entry) => [entry.id, entry]))
+    support = {
+      items: [...(itemsData.items || []), ...(oresData.ores || [])],
+      bosses: bossesData.bosses || [],
+      itemMap: new Map(),
+      bossMap: new Map()
     };
-
-    supportStatus.textContent = t("editor.supportLoaded", { items: itemEntries.length, bosses: bossEntries.length });
+    support.items.forEach((entry) => support.itemMap.set(entry.id, entry));
+    support.bosses.forEach((entry) => support.bossMap.set(entry.id, entry));
+    supportState = "loaded";
   } catch (error) {
-    supportStatus.textContent = t("editor.supportFailed");
     console.error(error);
+    supportState = "failed";
   }
 
   renderAll();
 }
 
-function bindBasicInputs() {
-  titleInput.addEventListener("input", () => {
-    state.title = titleInput.value;
-    saveDraft();
-    refreshDerivedViews(false);
-  });
+refs.titleInput.addEventListener("input", () => {
+  state.title = refs.titleInput.value;
+  saveAndRender(false);
+});
 
-  authorInput.addEventListener("input", () => {
-    state.author = authorInput.value;
-    saveDraft();
-    refreshDerivedViews(false);
-  });
+refs.authorInput.addEventListener("input", () => {
+  state.author = refs.authorInput.value;
+  saveAndRender(false);
+});
 
-  languageSelect.addEventListener("change", () => {
-    state.language = languageSelect.value;
-    saveDraft();
-    refreshDerivedViews(false);
-  });
+refs.language.addEventListener("change", () => {
+  state.language = refs.language.value;
+  saveAndRender(false);
+});
 
-  summaryInput.addEventListener("input", () => {
-    state.summary = summaryInput.value;
-    saveDraft();
-    refreshDerivedViews(false);
-  });
-}
+refs.summary.addEventListener("input", () => {
+  state.summary = refs.summary.value;
+  saveAndRender(false);
+});
 
-function init() {
-  renderLanguageOptions();
-  bindBasicInputs();
+refs.mods.addEventListener("change", (event) => {
+  const input = event.target;
+  if (!(input instanceof HTMLInputElement)) return;
+  state.requiredMods = toggle(state.requiredMods, input.value);
+  if (!state.requiredMods.length) state.requiredMods = ["Terraria"];
+  saveAndRender();
+});
 
-  wizardSteps.addEventListener("click", (event) => {
-    const button = event.target.closest("[data-step-target]");
-    if (!button) {
-      return;
-    }
-    openStep(Number(button.dataset.stepTarget));
-  });
+refs.classes.addEventListener("change", (event) => {
+  const input = event.target;
+  if (!(input instanceof HTMLInputElement)) return;
+  state.classTags = toggle(state.classTags, input.value);
+  if (!state.classTags.length) state.classTags = ["other"];
+  saveAndRender();
+});
 
-  requiredModOptions.addEventListener("change", handleMetadataChoiceChange);
-  classTagOptions.addEventListener("change", handleMetadataChoiceChange);
+refs.addStage.addEventListener("click", () => {
+  state.stages.push(stageModel({ title: `${s("stage")} ${state.stages.length + 1}` }));
+  openStage = state.stages.length - 1;
+  saveAndRender();
+});
 
-  addStageButton.addEventListener("click", () => {
-    state.stages.push(createStage({ title: `${localText("Stage", "Этап")} ${state.stages.length + 1}` }));
-    selectedStageIndex = state.stages.length - 1;
-    persistAndRender();
-  });
+refs.accordion.addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-action]");
+  if (!button) return;
 
-  stageNav.addEventListener("click", handleStageNavClick);
-  stageEditor.addEventListener("click", handleStageEditorClick);
-  stageEditor.addEventListener("input", handleStageEditorInput);
-  stageEditor.addEventListener("change", handleStageEditorInput);
+  const action = button.dataset.action;
+  const stageIndex = Number(button.dataset.stageIndex);
+  const itemIndex = Number(button.dataset.itemIndex);
+  const bossIndex = Number(button.dataset.bossIndex);
+  const groupKey = button.dataset.groupKey;
+  const stage = state.stages[stageIndex];
 
-  prevStepButton.addEventListener("click", () => moveStep(-1));
-  nextStepButton.addEventListener("click", () => moveStep(1));
-
-  copyJsonButton.addEventListener("click", copyJson);
-  downloadButton.addEventListener("click", downloadJson);
-  openIssueButton.addEventListener("click", openIssuePage);
-  resetDraftButton.addEventListener("click", resetDraft);
-
-  site?.onChange?.(() => {
-    renderLanguageOptions();
-    supportStatus.textContent = supportIndex.items.length
-      ? t("editor.supportLoaded", { items: supportIndex.items.length, bosses: supportIndex.bosses.length })
-      : t("editor.loadingSupport");
+  if (action === "toggle-stage") {
+    openStage = stageIndex;
     renderAll();
-  });
+    return;
+  }
 
-  renderAll();
-  loadSupportIndex();
-}
+  if (!stage) return;
 
-init();
+  if (action === "move-stage-up" && stageIndex > 0) {
+    moveStage(stageIndex, stageIndex - 1);
+    openStage = stageIndex - 1;
+    saveAndRender();
+  }
+
+  if (action === "move-stage-down" && stageIndex < state.stages.length - 1) {
+    moveStage(stageIndex, stageIndex + 1);
+    openStage = stageIndex + 1;
+    saveAndRender();
+  }
+
+  if (action === "remove-stage" && state.stages.length > 1) {
+    state.stages.splice(stageIndex, 1);
+    openStage = Math.max(0, Math.min(openStage, state.stages.length - 1));
+    saveAndRender();
+  }
+
+  if (action === "toggle-marker") {
+    const next = new Set(stage.progressionMarkers || []);
+    if (next.has(button.dataset.markerId)) next.delete(button.dataset.markerId);
+    else next.add(button.dataset.markerId);
+    stage.progressionMarkers = [...next];
+    saveAndRender();
+  }
+
+  if (action === "add-boss") {
+    stage.bossRefs.push("");
+    saveAndRender();
+  }
+
+  if (action === "remove-boss") {
+    stage.bossRefs.splice(bossIndex, 1);
+    saveAndRender();
+  }
+
+  if (action === "add-item") {
+    const entry = GROUPS.find((groupEntry) => groupEntry.key === groupKey) || GROUPS[0];
+    stage.items.push(item({ category: entry.cats[0] }));
+    saveAndRender();
+  }
+
+  if (action === "remove-item") {
+    stage.items.splice(itemIndex, 1);
+    saveAndRender();
+  }
+});
+
+refs.accordion.addEventListener("input", (event) => {
+  const target = event.target;
+  const role = target.dataset.role;
+  if (!role) return;
+
+  const stage = state.stages[Number(target.dataset.stageIndex)];
+  if (!stage) return;
+
+  if (role === "stage-title") stage.title = target.value;
+  if (role === "stage-description") stage.description = target.value;
+  if (role === "stage-notes") stage.notesText = target.value;
+  if (role === "item-note") stage.items[Number(target.dataset.itemIndex)].note = target.value;
+  saveAndRender(false);
+});
+
+refs.accordion.addEventListener("change", (event) => {
+  const target = event.target;
+  const role = target.dataset.role;
+  if (!role) return;
+
+  const stage = state.stages[Number(target.dataset.stageIndex)];
+  if (!stage) return;
+
+  if (role === "stage-era") {
+    stage.era = target.value;
+    const allowed = new Set((progression?.markersForEra?.(stage.era) || []).map((entry) => entry.id));
+    stage.progressionMarkers = (stage.progressionMarkers || []).filter((id) => allowed.has(id));
+  }
+
+  if (role === "boss-id") {
+    stage.bossRefs[Number(target.dataset.bossIndex)] = target.value;
+  }
+
+  if (role === "item-id") {
+    const itemEntry = stage.items[Number(target.dataset.itemIndex)];
+    itemEntry.itemId = target.value;
+    const supportEntry = support.itemMap.get(target.value);
+    if (supportEntry?.category) itemEntry.category = supportEntry.category;
+  }
+
+  saveAndRender();
+});
+
+refs.steps.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-step-target]");
+  if (button) open(Number(button.dataset.stepTarget));
+});
+
+refs.prev.addEventListener("click", () => move(-1));
+refs.next.addEventListener("click", () => move(1));
+refs.copy.addEventListener("click", copyJson);
+refs.download.addEventListener("click", downloadJson);
+refs.issue.addEventListener("click", openIssue);
+refs.reset.addEventListener("click", resetDraft);
+site?.onChange?.(() => renderAll());
+
+renderAll();
+loadSupport();

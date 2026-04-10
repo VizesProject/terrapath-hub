@@ -782,6 +782,149 @@ select:focus,
   margin: 0;
 }
 
+.workspace--centered {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 7rem);
+}
+
+.hub-panel {
+  display: grid;
+  gap: 1.25rem;
+  justify-items: center;
+  max-width: 30rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hub-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.page-panel,
+.editor-panel,
+.review-card,
+.form-section,
+.stage-section,
+.item-group,
+.stage-stack,
+.item-group-list,
+.stage-accordion {
+  display: grid;
+  gap: 1rem;
+}
+
+.page-header {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.step-header {
+  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem 0;
+}
+
+.section-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.section-heading--with-action {
+  align-items: center;
+}
+
+.stage-toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.stage-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.stage-card__header {
+  align-items: start;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: 1rem;
+}
+
+.stage-card__toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.stage-card__title {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.stage-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stage-card__body {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.item-group {
+  background: var(--surface-muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-small);
+  padding: 0.9rem;
+}
+
+.item-group__header {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: space-between;
+}
+
+.picker-row {
+  align-items: center;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: auto minmax(0, 1.4fr) minmax(0, 1fr) auto;
+}
+
+.boss-row {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+.picker-row__media {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+}
+
 @media (max-width: 960px) {
   .section-grid,
   .stages-shell {
@@ -811,13 +954,40 @@ select:focus,
   .wizard-footer,
   .subpanel__header,
   .guide-page__topbar,
-  .pick-card__head {
+  .pick-card__head,
+  .stage-card__header,
+  .picker-row,
+  .boss-row {
     align-items: stretch;
     flex-direction: column;
   }
 
   .pick-card__head {
     grid-template-columns: 1fr;
+  }
+
+  .stage-card__header,
+  .picker-row,
+  .boss-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .stage-card__toggle {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .stage-card__actions,
+  .hub-actions,
+  .stage-toolbar {
+    width: 100%;
+  }
+
+  .stage-card__actions .button,
+  .hub-actions .button,
+  .stage-toolbar .button {
+    width: 100%;
   }
 
   .page-shell,

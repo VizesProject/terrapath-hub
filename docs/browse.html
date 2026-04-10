@@ -17,10 +17,13 @@
       </div>
       <div class="nav__tools" data-language-toggle></div>
     </nav>
+
     <main class="workspace">
-      <section class="panel">
-        <p data-i18n="browse.eyebrow" class="eyebrow">Catalog preview</p>
-        <h1 data-i18n="browse.heading">Browse Guides</h1>
+      <section class="panel page-panel">
+        <header class="page-header">
+          <h1 data-i18n="browse.heading">Browse Guides</h1>
+        </header>
+
         <section class="field-grid browse-filters">
           <label class="field field--wide">
             <span data-i18n="browse.searchLabel">Search</span>
@@ -53,6 +56,7 @@
             </select>
           </label>
         </section>
+
         <p id="guideCountSummary" data-i18n="browse.loadingGuideCount" class="muted browse-summary">Loading guide count...</p>
         <div id="guideList" class="guide-list" aria-live="polite"></div>
       </section>

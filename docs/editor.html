@@ -19,168 +19,92 @@
       <div class="nav__tools" data-language-toggle></div>
     </nav>
 
-    <main class="wizard-layout">
-      <aside class="panel wizard-rail">
-        <p data-i18n="editor.eyebrow" class="eyebrow">Step-by-step authoring</p>
-        <h1 data-i18n="editor.heading">Guide Builder</h1>
-        <p data-i18n="editor.intro" class="muted">
-          Create a TerraPath guide one section at a time. Title, tags, stages,
-          and export each get their own space so the screen stays readable.
-        </p>
-
-        <div id="supportStatus" data-i18n="editor.loadingSupport" class="notice notice--soft">
-          Loading curated Terraria content...
-        </div>
+    <main class="workspace">
+      <section class="panel editor-panel">
+        <header class="page-header">
+          <h1 data-i18n="editor.heading">Guide Builder</h1>
+          <p id="supportStatus" class="muted">Loading curated Terraria content...</p>
+        </header>
 
         <ol id="wizardSteps" class="wizard-steps"></ol>
 
-        <section class="snapshot-card">
-          <div class="section-copy">
-            <h2 data-i18n="editor.snapshotTitle">Guide snapshot</h2>
-            <p data-i18n="editor.snapshotBody" class="muted">
-              A quick summary of what players will see in the catalog.
-            </p>
-          </div>
-          <div id="guideSnapshot" class="snapshot-grid"></div>
-        </section>
-      </aside>
-
-      <section class="panel wizard-body">
-        <header class="wizard-header">
-          <p id="stepEyebrow" class="eyebrow">Step 1 of 4</p>
-          <h2 id="stepTitle" data-i18n="editor.basicsTitle">Basics</h2>
-          <p id="stepDescription" data-i18n="editor.basicsDesc" class="muted">
-            Set the title, author, language, and short catalog summary.
-          </p>
+        <header class="step-header">
+          <p id="stepEyebrow" class="muted">Step 1 of 3</p>
+          <h2 id="stepTitle">Guide</h2>
+          <p id="stepDescription" class="muted"></p>
         </header>
 
         <section class="wizard-panel" data-step-panel="0">
           <div class="form-layout">
             <label class="field">
-              <span data-i18n="editor.guideTitleLabel">Guide title</span>
-              <input id="titleInput" minlength="3" data-i18n-placeholder="editor.guideTitlePlaceholder" placeholder="Calamity Summoner Progression">
+              <span data-editor-text="guideTitleLabel">Guide title</span>
+              <input id="titleInput" minlength="3" placeholder="Vanilla Melee Starter Path">
             </label>
 
             <label class="field">
-              <span data-i18n="editor.authorLabel">Author</span>
-              <input id="authorInput" minlength="2" data-i18n-placeholder="editor.authorPlaceholder" placeholder="Your name">
+              <span data-editor-text="authorLabel">Author</span>
+              <input id="authorInput" minlength="2" placeholder="Your name">
             </label>
 
             <label class="field">
-              <span data-i18n="editor.guideLanguageLabel">Language</span>
+              <span data-editor-text="languageLabel">Language</span>
               <select id="languageSelect"></select>
             </label>
 
             <label class="field field--wide">
-              <span data-i18n="editor.summaryLabel">Catalog summary</span>
-              <textarea id="summaryInput" rows="5" data-i18n-placeholder="editor.summaryPlaceholder" placeholder="Short description shown in the guide list."></textarea>
+              <span data-editor-text="summaryLabel">Summary</span>
+              <textarea id="summaryInput" rows="4" placeholder="Short description shown in the guide list."></textarea>
             </label>
           </div>
 
-          <div class="callout">
-            <div class="section-copy">
-              <h3 data-i18n="editor.calloutTitle">What appears in the list</h3>
-              <p data-i18n="editor.calloutBody" class="muted">
-                The list view is meant to stay compact: title, class, popularity,
-                language, and a short summary should explain the guide at a glance.
-              </p>
+          <section class="form-section">
+            <div class="section-heading">
+              <h3 data-editor-text="requiredModsHeading">Required mods</h3>
             </div>
-            <ul class="line-list">
-              <li data-i18n="editor.calloutTip1">Use a clear build name, not a long paragraph.</li>
-              <li data-i18n="editor.calloutTip2">Keep the summary focused on progression or playstyle.</li>
-              <li data-i18n="editor.calloutTip3">Language should match the text inside the guide.</li>
-            </ul>
-          </div>
+            <div id="requiredModOptions" class="choice-grid" aria-label="Required mods"></div>
+          </section>
+
+          <section class="form-section">
+            <div class="section-heading">
+              <h3 data-editor-text="classTagsHeading">Class tags</h3>
+            </div>
+            <div id="classTagOptions" class="choice-grid" aria-label="Class tags"></div>
+          </section>
         </section>
 
         <section class="wizard-panel" data-step-panel="1" hidden>
-          <div class="stack">
-            <div class="section-copy">
-              <h3 data-i18n="editor.requiredModsTitle">Required mods</h3>
-              <p data-i18n="editor.requiredModsBody" class="muted">
-                Pick the content packs this guide depends on. Players can still see
-                the guide without them, but the game can flag missing content.
-              </p>
-            </div>
-            <div id="requiredModOptions" class="choice-grid" aria-label="Required mods"></div>
-
-            <div class="section-copy">
-              <h3 data-i18n="editor.classTagsTitle">Class tags</h3>
-              <p data-i18n="editor.classTagsBody" class="muted">
-                These tags drive filtering in the guide browser and in-game list.
-              </p>
-            </div>
-            <div id="classTagOptions" class="choice-grid" aria-label="Class tags"></div>
+          <div class="stage-toolbar">
+            <button class="button button--primary" id="addStageButton" type="button" data-editor-text="addStage">Add stage</button>
           </div>
+          <div id="stageAccordion" class="stage-accordion"></div>
         </section>
 
         <section class="wizard-panel" data-step-panel="2" hidden>
-          <div class="stages-shell">
-            <aside class="stage-sidebar">
-              <div class="stage-sidebar__header">
-                <div class="section-copy">
-                  <h3 data-i18n="editor.stageSectionTitle">Stages</h3>
-                  <p data-i18n="editor.stageSectionBody" class="muted">
-                    Split the guide into progression checkpoints instead of one long wall of text.
-                  </p>
-                </div>
-                <button data-i18n="editor.addStage" class="button button--primary" id="addStageButton" type="button">Add stage</button>
-              </div>
-              <div id="stageNav" class="stage-nav"></div>
-            </aside>
+          <section class="review-card">
+            <div class="toolbar">
+              <button class="button" id="copyJsonButton" type="button" data-editor-text="copyJson">Copy JSON</button>
+              <button class="button" id="downloadButton" type="button" data-editor-text="downloadJson">Download guide.json</button>
+              <button class="button button--primary" id="openIssueButton" type="button" data-editor-text="openIssue">Open GitHub issue</button>
+              <button class="button button--quiet" id="resetDraftButton" type="button" data-editor-text="resetDraft">Reset draft</button>
+            </div>
+            <p id="submissionStatus" class="muted" data-editor-text="submissionStatus">Drafts are saved locally.</p>
+          </section>
 
-            <div id="stageEditor" class="stage-editor"></div>
-          </div>
-        </section>
+          <section class="review-card">
+            <h3 data-editor-text="previewHeading">Preview</h3>
+            <div id="guidePreview" class="guide-preview"></div>
+          </section>
 
-        <section class="wizard-panel" data-step-panel="3" hidden>
-          <div class="review-stack">
-            <section class="review-card">
-              <div class="section-copy">
-                <h3 data-i18n="editor.submissionTitle">Submission actions</h3>
-                <p data-i18n="editor.submissionBody" class="muted">
-                  Review the rendered page first, then copy or download the JSON and open a GitHub issue.
-                </p>
-              </div>
-              <div class="toolbar">
-                <button data-i18n="editor.copyJson" class="button" id="copyJsonButton" type="button">Copy JSON</button>
-                <button data-i18n="editor.downloadJson" class="button" id="downloadButton" type="button">Download guide.json</button>
-                <button data-i18n="editor.openIssue" class="button button--primary" id="openIssueButton" type="button">Open GitHub issue</button>
-                <button data-i18n="editor.resetDraft" class="button button--quiet" id="resetDraftButton" type="button">Reset draft</button>
-              </div>
-              <p id="submissionStatus" data-i18n="editor.submissionStatus" class="muted submission-status">
-                Drafts are saved locally. Use the buttons above when this preview looks ready.
-              </p>
-            </section>
-
-            <section class="review-card">
-              <div class="section-copy">
-                <h3 data-i18n="editor.renderedPreviewTitle">Rendered guide preview</h3>
-                <p data-i18n="editor.renderedPreviewBody" class="muted">
-                  This is the full reading experience a player would get after opening the guide page.
-                </p>
-              </div>
-              <div id="guidePreview" class="guide-preview"></div>
-            </section>
-
-            <section class="review-card">
-              <div class="section-copy">
-                <h3 data-i18n="editor.jsonTitle">guide.json</h3>
-                <p data-i18n="editor.jsonBody" class="muted">
-                  Structured output used by validation, catalog building, and in-game loading.
-                </p>
-              </div>
-              <pre id="jsonPreview" class="json-preview">{}</pre>
-            </section>
-          </div>
+          <section class="review-card">
+            <h3>guide.json</h3>
+            <pre id="jsonPreview" class="json-preview">{}</pre>
+          </section>
         </section>
 
         <footer class="wizard-footer">
-          <button data-i18n="editor.back" class="button button--quiet" id="prevStepButton" type="button">Back</button>
-          <p id="autosaveStatus" data-i18n="editor.autosave" class="muted autosave-status">
-            Draft autosaves in this browser.
-          </p>
-          <button data-i18n="editor.nextStep" class="button button--primary" id="nextStepButton" type="button">Next step</button>
+          <button class="button button--quiet" id="prevStepButton" type="button" data-editor-text="back">Back</button>
+          <p id="autosaveStatus" class="muted" data-editor-text="autosave">Draft autosaves in this browser.</p>
+          <button class="button button--primary" id="nextStepButton" type="button" data-editor-text="nextStep">Next step</button>
         </footer>
       </section>
     </main>
