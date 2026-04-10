@@ -22,6 +22,29 @@
       "stageCount": 3,
       "path": "guides/en-US/vanilla-melee-starter/guide.json",
       "popularity": 0
+    },
+    {
+      "id": "terraria-melee",
+      "title": "\u041f\u0435\u0440\u0432\u044b\u0439",
+      "author": "\u044b\u044b\u044b\u044b\u044b\u044b\u044b\u044b\u044b",
+      "language": "ru-RU",
+      "summary": "A structured melee progression path that shows how TerraPath guides can be authored and reviewed.",
+      "requiredMods": [
+        "Terraria"
+      ],
+      "classTags": [
+        "melee"
+      ],
+      "guideTags": [
+        "starter",
+        "progression",
+        "vanilla",
+        "draft"
+      ],
+      "updatedAt": "2026-04-10",
+      "stageCount": 2,
+      "path": "guides/ru-RU/terraria-melee/guide.json",
+      "popularity": 0
     }
   ]
 }
