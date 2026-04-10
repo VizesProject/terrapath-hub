@@ -32,12 +32,12 @@ const ALLOWED_ITEM_CATEGORIES = new Set(GROUPS.flatMap((group) => group.cats));
 const STEP_COPY = {
   en: [
     { title: "Guide", desc: "Title, author, language, summary, required mods, and class." },
-    { title: "Stages", desc: "Stages, mini-stages, boss references, and item loadouts." },
+    { title: "Stages", desc: "Stages, sub-stages, boss references, and item loadouts." },
     { title: "Export", desc: "Preview the guide and export guide.json." }
   ],
   ru: [
     { title: "\u0413\u0430\u0439\u0434", desc: "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435, \u0430\u0432\u0442\u043e\u0440, \u044f\u0437\u044b\u043a, \u043a\u0440\u0430\u0442\u043a\u043e\u0435 \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435, \u043c\u043e\u0434\u044b \u0438 \u043a\u043b\u0430\u0441\u0441." },
-    { title: "\u042d\u0442\u0430\u043f\u044b", desc: "\u042d\u0442\u0430\u043f\u044b, \u043c\u0438\u043d\u0438-\u044d\u0442\u0430\u043f\u044b, \u0431\u043e\u0441\u0441\u044b \u0438 \u043f\u0430\u043d\u0435\u043b\u0438 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u043e\u0432." },
+    { title: "\u042d\u0442\u0430\u043f\u044b", desc: "\u042d\u0442\u0430\u043f\u044b, \u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u044b, \u0431\u043e\u0441\u0441\u044b \u0438 \u043f\u0430\u043d\u0435\u043b\u0438 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u043e\u0432." },
     { title: "\u042d\u043a\u0441\u043f\u043e\u0440\u0442", desc: "\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u0432\u0438\u0434 \u0433\u0430\u0439\u0434\u0430 \u0438 \u0432\u044b\u0433\u0440\u0443\u0437\u0438\u0442\u0435 guide.json." }
   ]
 };
@@ -84,7 +84,23 @@ const COPY = {
     issueOpened: "GitHub opened in a new tab.",
     repoUnknown: "Repository URL could not be detected here.",
     resetConfirm: "Reset the current draft?",
-    draftReset: "Draft reset."
+    draftReset: "Draft reset.",
+    exportGuideTitle: "How to publish this guide",
+    exportGuideIntro: "If you are new, follow these steps from top to bottom. The draft stays in this browser until you reset it.",
+    exportStepPreviewTitle: "Check the preview",
+    exportStepPreviewBody: "Make sure the title, stages, bosses, and item sections look correct before you export.",
+    exportStepCopyTitle: "Copy or download guide.json",
+    exportStepCopyBody: "Copy JSON is the fastest option. Download guide.json is useful as a backup if you want to save the file first.",
+    exportStepIssueTitle: "Open the GitHub submission form",
+    exportStepIssueBody: "Use Open GitHub issue to jump to the repository. A new issue page will open in another tab.",
+    exportStepSubmitTitle: "Paste JSON and send it",
+    exportStepSubmitBody: "Paste the copied JSON into the issue form, add a short note if you want, and submit the issue.",
+    submissionActionsTitle: "Export actions",
+    submissionActionsIntro: "The usual order is: copy JSON, open the GitHub issue, paste the JSON, then submit.",
+    copyJsonHelp: "Recommended first step. Copies the ready JSON so you can paste it into the GitHub form.",
+    downloadJsonHelp: "Optional backup. Downloads the same JSON as a file to your computer.",
+    openIssueHelp: "Opens the repository issue page in a new tab, where the guide submission form can be filled in.",
+    resetDraftHelp: "Clears the current draft and loads the starter example again. Use only if you want to start over."
   },
   ru: {
     current: "\u0422\u0435\u043a\u0443\u0449\u0438\u0439",
@@ -127,7 +143,23 @@ const COPY = {
     issueOpened: "GitHub \u043e\u0442\u043a\u0440\u044b\u0442 \u0432 \u043d\u043e\u0432\u043e\u0439 \u0432\u043a\u043b\u0430\u0434\u043a\u0435.",
     repoUnknown: "\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u0442\u044c URL \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0438\u044f.",
     resetConfirm: "\u0421\u0431\u0440\u043e\u0441\u0438\u0442\u044c \u0442\u0435\u043a\u0443\u0449\u0438\u0439 \u0447\u0435\u0440\u043d\u043e\u0432\u0438\u043a?",
-    draftReset: "\u0427\u0435\u0440\u043d\u043e\u0432\u0438\u043a \u0441\u0431\u0440\u043e\u0448\u0435\u043d."
+    draftReset: "\u0427\u0435\u0440\u043d\u043e\u0432\u0438\u043a \u0441\u0431\u0440\u043e\u0448\u0435\u043d.",
+    exportGuideTitle: "\u041a\u0430\u043a \u0437\u0430\u043b\u0438\u0442\u044c \u044d\u0442\u043e \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e",
+    exportGuideIntro: "\u0415\u0441\u043b\u0438 \u0432\u044b \u0434\u0435\u043b\u0430\u0435\u0442\u0435 \u044d\u0442\u043e \u0432\u043f\u0435\u0440\u0432\u044b\u0435, \u0438\u0434\u0438\u0442\u0435 \u043f\u043e \u0448\u0430\u0433\u0430\u043c \u0441\u0432\u0435\u0440\u0445\u0443 \u0432\u043d\u0438\u0437. \u0427\u0435\u0440\u043d\u043e\u0432\u0438\u043a \u0445\u0440\u0430\u043d\u0438\u0442\u0441\u044f \u0432 \u044d\u0442\u043e\u043c \u0431\u0440\u0430\u0443\u0437\u0435\u0440\u0435, \u043f\u043e\u043a\u0430 \u0432\u044b \u0435\u0433\u043e \u043d\u0435 \u0441\u0431\u0440\u043e\u0441\u0438\u0442\u0435.",
+    exportStepPreviewTitle: "\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u043f\u0440\u0435\u0432\u044c\u044e",
+    exportStepPreviewBody: "\u0423\u0431\u0435\u0434\u0438\u0442\u0435\u0441\u044c, \u0447\u0442\u043e \u043d\u0430\u0437\u0432\u0430\u043d\u0438\u0435, \u044d\u0442\u0430\u043f\u044b, \u0431\u043e\u0441\u0441\u044b \u0438 \u0441\u043f\u0438\u0441\u043a\u0438 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u043e\u0432 \u0432\u044b\u0433\u043b\u044f\u0434\u044f\u0442 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e.",
+    exportStepCopyTitle: "\u0421\u043a\u043e\u043f\u0438\u0440\u0443\u0439\u0442\u0435 \u0438\u043b\u0438 \u0441\u043a\u0430\u0447\u0430\u0439\u0442\u0435 guide.json",
+    exportStepCopyBody: "\u041a\u043d\u043e\u043f\u043a\u0430 Copy JSON \u0431\u044b\u0441\u0442\u0440\u0435\u0435 \u0432\u0441\u0435\u0433\u043e. Download guide.json \u043d\u0443\u0436\u0435\u043d \u043a\u0430\u043a \u0437\u0430\u043f\u0430\u0441\u043d\u043e\u0439 \u0432\u0430\u0440\u0438\u0430\u043d\u0442, \u0435\u0441\u043b\u0438 \u0445\u043e\u0442\u0438\u0442\u0435 \u0441\u043d\u0430\u0447\u0430\u043b\u0430 \u0441\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0444\u0430\u0439\u043b.",
+    exportStepIssueTitle: "\u041e\u0442\u043a\u0440\u043e\u0439\u0442\u0435 GitHub-\u0444\u043e\u0440\u043c\u0443 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0438",
+    exportStepIssueBody: "\u041a\u043d\u043e\u043f\u043a\u0430 Open GitHub issue \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443 \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0438\u044f \u0432 \u043d\u043e\u0432\u043e\u0439 \u0432\u043a\u043b\u0430\u0434\u043a\u0435, \u0433\u0434\u0435 \u043d\u0443\u0436\u043d\u043e \u0441\u043e\u0437\u0434\u0430\u0442\u044c issue \u0434\u043b\u044f \u0433\u0430\u0439\u0434\u0430.",
+    exportStepSubmitTitle: "\u0412\u0441\u0442\u0430\u0432\u044c\u0442\u0435 JSON \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u044c\u0442\u0435",
+    exportStepSubmitBody: "\u0412\u0441\u0442\u0430\u0432\u044c\u0442\u0435 \u0441\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 JSON \u0432 GitHub-\u0444\u043e\u0440\u043c\u0443, \u043f\u0440\u0438 \u0436\u0435\u043b\u0430\u043d\u0438\u0438 \u0434\u043e\u0431\u0430\u0432\u044c\u0442\u0435 \u043a\u043e\u0440\u043e\u0442\u043a\u0443\u044e \u0437\u0430\u043c\u0435\u0442\u043a\u0443 \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u044c\u0442\u0435 issue.",
+    submissionActionsTitle: "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u044f \u0434\u043b\u044f \u044d\u043a\u0441\u043f\u043e\u0440\u0442\u0430",
+    submissionActionsIntro: "\u041e\u0431\u044b\u0447\u043d\u044b\u0439 \u043f\u043e\u0440\u044f\u0434\u043e\u043a \u0442\u0430\u043a\u043e\u0439: \u0441\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c JSON, \u043e\u0442\u043a\u0440\u044b\u0442\u044c GitHub issue, \u0432\u0441\u0442\u0430\u0432\u0438\u0442\u044c JSON \u0438 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c.",
+    copyJsonHelp: "\u0420\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u043c\u044b\u0439 \u043f\u0435\u0440\u0432\u044b\u0439 \u0448\u0430\u0433. \u041a\u043e\u043f\u0438\u0440\u0443\u0435\u0442 \u0433\u043e\u0442\u043e\u0432\u044b\u0439 JSON, \u0447\u0442\u043e\u0431\u044b \u0435\u0433\u043e \u043c\u043e\u0436\u043d\u043e \u0431\u044b\u043b\u043e \u0441\u0440\u0430\u0437\u0443 \u0432\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0432 \u0444\u043e\u0440\u043c\u0443.",
+    downloadJsonHelp: "\u041d\u0435\u043e\u0431\u044f\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0437\u0430\u043f\u0430\u0441\u043d\u043e\u0439 \u0432\u0430\u0440\u0438\u0430\u043d\u0442. \u0421\u043a\u0430\u0447\u0438\u0432\u0430\u0435\u0442 \u0442\u043e\u0442 \u0436\u0435 JSON \u0432 \u0432\u0438\u0434\u0435 \u0444\u0430\u0439\u043b\u0430.",
+    openIssueHelp: "\u041e\u0442\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0443 issue \u0432 \u043d\u043e\u0432\u043e\u0439 \u0432\u043a\u043b\u0430\u0434\u043a\u0435, \u0433\u0434\u0435 \u043d\u0443\u0436\u043d\u043e \u0432\u044b\u0431\u0440\u0430\u0442\u044c \u0444\u043e\u0440\u043c\u0443 \u043e\u0442\u043f\u0440\u0430\u0432\u043a\u0438 \u0433\u0430\u0439\u0434\u0430.",
+    resetDraftHelp: "\u041e\u0447\u0438\u0449\u0430\u0435\u0442 \u0442\u0435\u043a\u0443\u0449\u0438\u0439 \u0447\u0435\u0440\u043d\u043e\u0432\u0438\u043a \u0438 \u0441\u043d\u043e\u0432\u0430 \u0437\u0430\u0433\u0440\u0443\u0436\u0430\u0435\u0442 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u044b\u0439 \u043f\u0440\u0438\u043c\u0435\u0440. \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435, \u0442\u043e\u043b\u044c\u043a\u043e \u0435\u0441\u043b\u0438 \u0445\u043e\u0442\u0438\u0442\u0435 \u043d\u0430\u0447\u0430\u0442\u044c \u0441 \u043d\u0443\u043b\u044f."
   }
 };
 
@@ -151,6 +183,13 @@ const refs = {
   download: $("#downloadButton"),
   issue: $("#openIssueButton"),
   reset: $("#resetDraftButton"),
+  submissionGuide: $("#submissionGuide"),
+  submissionActionsTitle: $("#submissionActionsTitle"),
+  submissionActionsIntro: $("#submissionActionsIntro"),
+  copyHelp: $("#copyJsonHelp"),
+  downloadHelp: $("#downloadJsonHelp"),
+  issueHelp: $("#openIssueHelp"),
+  resetHelp: $("#resetDraftHelp"),
   submission: $("#submissionStatus"),
   preview: $("#guidePreview"),
   json: $("#jsonPreview"),
@@ -618,6 +657,39 @@ function renderPreview() {
   refs.preview.innerHTML = `<header class="guide-preview__header"><h2 class="guide-title">${esc(guide.title)}</h2><p>${esc(guide.summary)}</p><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelClass")}: ${classList(guide.classTags)}`)}</span><span class="meta-pill">${esc(`${t("common.labelLanguage")}: ${guideLanguageLabel(guide.language)}`)}</span><span class="meta-pill">${esc(`${t("common.labelMods")}: ${(guide.requiredMods || []).join(", ")}`)}</span><span class="meta-pill">${esc(`${guide.stages.length} ${t("common.labelStages").toLowerCase()}`)}</span></div></header><div class="guide-preview__stages">${guide.stages.map((stage) => `<article class="stage-preview"><section class="stage-overview"><div class="stage-preview__header"><h3>${renderRichText(stage.title)}</h3><span class="meta-pill">${esc(s("itemCount", { count: (stage.items || []).length }))}</span></div><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelEra")}: ${progression?.eraLabel?.(stage.era || "prehardmode", lang()) || stage.era || ""}`)}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${previewSubStages(stage)}${previewBosses(stage)}</section><section class="stage-loadout">${previewGroups(stage.items)}</section></article>`).join("")}</div>`;
 }
 
+function renderSubmissionGuide() {
+  const steps = [
+    { title: s("exportStepPreviewTitle"), body: s("exportStepPreviewBody") },
+    { title: s("exportStepCopyTitle"), body: s("exportStepCopyBody") },
+    { title: s("exportStepIssueTitle"), body: s("exportStepIssueBody") },
+    { title: s("exportStepSubmitTitle"), body: s("exportStepSubmitBody") }
+  ];
+
+  refs.submissionGuide.innerHTML = `
+    <div class="review-card__header">
+      <h3>${esc(s("exportGuideTitle"))}</h3>
+      <p class="muted">${esc(s("exportGuideIntro"))}</p>
+    </div>
+    <ol class="instruction-list">
+      ${steps.map((entry) => `
+        <li>
+          <strong>${esc(entry.title)}</strong>
+          <span>${esc(entry.body)}</span>
+        </li>
+      `).join("")}
+    </ol>
+  `;
+}
+
+function renderSubmissionActions() {
+  refs.submissionActionsTitle.textContent = s("submissionActionsTitle");
+  refs.submissionActionsIntro.textContent = s("submissionActionsIntro");
+  refs.copyHelp.textContent = s("copyJsonHelp");
+  refs.downloadHelp.textContent = s("downloadJsonHelp");
+  refs.issueHelp.textContent = s("openIssueHelp");
+  refs.resetHelp.textContent = s("resetDraftHelp");
+}
+
 function bossRows(stage, stageIndex) {
   if (!stage.bossRefs.length) return `<p class="empty-state">${esc(s("noBosses"))}</p>`;
   return stage.bossRefs.map((id, bossIndex) => {
@@ -725,6 +797,8 @@ function renderAll() {
   renderPanels();
   renderAccordion();
   renderPreview();
+  renderSubmissionGuide();
+  renderSubmissionActions();
   renderFooter();
 }
 

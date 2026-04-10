@@ -80,14 +80,37 @@
         </section>
 
         <section class="wizard-panel" data-step-panel="2" hidden>
-          <section class="review-card">
-            <div class="toolbar">
-              <button class="button" id="copyJsonButton" type="button" data-editor-text="copyJson">Copy JSON</button>
-              <button class="button" id="downloadButton" type="button" data-editor-text="downloadJson">Download guide.json</button>
-              <button class="button button--primary" id="openIssueButton" type="button" data-editor-text="openIssue">Open GitHub issue</button>
-              <button class="button button--quiet" id="resetDraftButton" type="button" data-editor-text="resetDraft">Reset draft</button>
+          <section class="review-card review-card--guide" id="submissionGuide"></section>
+
+          <section class="review-card review-card--actions">
+            <div class="review-card__header">
+              <h3 id="submissionActionsTitle">Export actions</h3>
+              <p id="submissionActionsIntro" class="muted"></p>
             </div>
-            <p id="submissionStatus" class="muted" data-editor-text="submissionStatus">Drafts are saved locally.</p>
+
+            <div class="submission-actions">
+              <article class="action-card">
+                <button class="button" id="copyJsonButton" type="button" data-editor-text="copyJson">Copy JSON</button>
+                <p id="copyJsonHelp" class="muted"></p>
+              </article>
+
+              <article class="action-card">
+                <button class="button" id="downloadButton" type="button" data-editor-text="downloadJson">Download guide.json</button>
+                <p id="downloadJsonHelp" class="muted"></p>
+              </article>
+
+              <article class="action-card">
+                <button class="button button--primary" id="openIssueButton" type="button" data-editor-text="openIssue">Open GitHub issue</button>
+                <p id="openIssueHelp" class="muted"></p>
+              </article>
+
+              <article class="action-card">
+                <button class="button button--quiet" id="resetDraftButton" type="button" data-editor-text="resetDraft">Reset draft</button>
+                <p id="resetDraftHelp" class="muted"></p>
+              </article>
+            </div>
+
+            <p id="submissionStatus" class="muted">Drafts are saved locally.</p>
           </section>
 
           <section class="review-card">
