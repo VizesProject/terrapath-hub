@@ -444,9 +444,16 @@ function inferItemCategory(entry, groupKey) {
   return group.cats[0];
 }
 
+function normalizeRichTextSource(value) {
+  return String(value || "")
+    .replace(/\r\n?/g, "\n")
+    .replace(/[ \t]*\n+[ \t]*(\{\{icon:[^}]+\}\})/g, " $1")
+    .replace(/(\{\{icon:[^}]+\}\})[ \t]*\n+[ \t]*/g, "$1 ");
+}
+
 function renderRichText(textValue) {
   const tokenPattern = /\{\{icon:([^}]+)\}\}/g;
-  const source = String(textValue || "");
+  const source = normalizeRichTextSource(textValue);
   const parts = [];
   let lastIndex = 0;
 

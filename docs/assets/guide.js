@@ -181,11 +181,16 @@ function inlineIconMarkup(entry, label, kind = "item") {
   return `<span class="inline-flow-media" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}"><span class="inline-flow-token">${escapeHtml(initials(label).slice(0, 1) || "?")}</span></span>`;
 }
 
-function renderRichText(textValue) {
-  const tokenPattern = /\{\{icon:([^}]+)\}\}/g;
-  const source = String(textValue || "")
+function normalizeRichTextSource(value) {
+  return String(value || "")
+    .replace(/\r\n?/g, "\n")
     .replace(/[ \t]*\n+[ \t]*(\{\{icon:[^}]+\}\})/g, " $1")
     .replace(/(\{\{icon:[^}]+\}\})[ \t]*\n+[ \t]*/g, "$1 ");
+}
+
+function renderRichText(textValue) {
+  const tokenPattern = /\{\{icon:([^}]+)\}\}/g;
+  const source = normalizeRichTextSource(textValue);
   const parts = [];
   let lastIndex = 0;
 
