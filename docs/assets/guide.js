@@ -183,7 +183,9 @@ function inlineIconMarkup(entry, label, kind = "item") {
 
 function renderRichText(textValue) {
   const tokenPattern = /\{\{icon:([^}]+)\}\}/g;
-  const source = String(textValue || "");
+  const source = String(textValue || "")
+    .replace(/[ \t]*\n+[ \t]*(\{\{icon:[^}]+\}\})/g, " $1")
+    .replace(/(\{\{icon:[^}]+\}\})[ \t]*\n+[ \t]*/g, "$1 ");
   const parts = [];
   let lastIndex = 0;
 
@@ -256,7 +258,7 @@ function renderBosses(stage) {
 }
 
 function renderStageEntry(stage) {
-  return `<article class="guide-substage"><section class="guide-substage__main"><div class="guide-substage__header"><h3>${renderRichText(stage.title)}</h3></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${renderBosses(stage)}</section>${renderLoadout(stage.items)}</article>`;
+  return `<article class="guide-substage"><section class="guide-substage__main"><div class="guide-substage__header"><h3>${renderRichText(stage.title)}</h3></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}</section>${renderLoadout(stage.items)}${renderBosses(stage)}</article>`;
 }
 
 function renderGuide(guide) {

@@ -1658,10 +1658,10 @@ select:focus,
 }
 
 .inline-flow-media {
-  display: inline-flex;
+  display: inline-block;
   line-height: 1;
-  margin: 0 0.08em;
-  vertical-align: -0.18em;
+  margin: 0 0.05em;
+  vertical-align: -0.14em;
   white-space: nowrap;
 }
 
@@ -1670,7 +1670,7 @@ select:focus,
   border: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
-  display: block !important;
+  display: inline-block !important;
   height: 1.52em;
   image-rendering: auto;
   margin: 0;
@@ -1734,17 +1734,37 @@ select:focus,
 }
 
 .guide-reader .stage-description {
+  font-size: 1.08rem;
+  line-height: 1.74;
   max-width: none;
 }
 
 .guide-reader .guide-substage__bosses {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 0.35rem;
+  margin-top: 0.1rem;
 }
 
 .guide-reader .guide-substage__bosses .content-chip {
-  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  gap: 0.38rem;
+  padding: 0.22rem 0.45rem;
+  font-size: 0.9rem;
+}
+
+.guide-reader .guide-substage__bosses .content-icon,
+.guide-reader .guide-substage__bosses .content-token {
+  border-radius: 5px;
+  height: 18px;
+  width: 18px;
+}
+
+.guide-reader .guide-substage__bosses .content-icon {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  padding: 0;
 }
 
 .guide-reader .wiki-loadout {
