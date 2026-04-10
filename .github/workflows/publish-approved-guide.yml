@@ -91,17 +91,21 @@ jobs:
             const issueNumber = context.issue.number;
             const marker = '<!-- terrapath-publication-status -->';
             const body = process.env.PR_URL
-              ? `${marker}
-
-Publication pull request created: ${process.env.PR_URL}
-
-Next step:
-1. Review the PR diff.
-2. Merge it into \`main\`.
-3. GitHub Pages will publish the updated catalog automatically.`
-              : `${marker}
-
-No publication PR was created. This usually means the exported guide did not change the repository.`;
+              ? [
+                  marker,
+                  '',
+                  `Publication pull request created: ${process.env.PR_URL}`,
+                  '',
+                  'Next step:',
+                  '1. Review the PR diff.',
+                  '2. Merge it into `main`.',
+                  '3. GitHub Pages will publish the updated catalog automatically.'
+                ].join('\n')
+              : [
+                  marker,
+                  '',
+                  'No publication PR was created. This usually means the exported guide did not change the repository.'
+                ].join('\n');
 
             const comments = await github.paginate(github.rest.issues.listComments, {
               owner,

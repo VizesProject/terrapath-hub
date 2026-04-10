@@ -104,34 +104,38 @@ jobs:
             }
 
             const body = valid
-              ? `${marker}
-
-## TerraPath moderation status
-
-Automatic validation passed.
-
-- Guide: \`${process.env.GUIDE_ID}\`
-- Title: ${process.env.GUIDE_TITLE}
-- Target path: \`${process.env.GUIDE_PATH}\`
-
-Next step for a moderator:
-1. Read the guide in the issue.
-2. Check progression quality and naming.
-3. Add the \`approved\` label when the guide is ready for publication.`
-              : `${marker}
-
-## TerraPath moderation status
-
-Automatic validation failed.
-
-\`\`\`text
-${process.env.VALIDATION_ERROR || 'Unknown validation error'}
-\`\`\`
-
-Next step for the author:
-1. Fix the JSON in the issue.
-2. Edit the issue body.
-3. Wait for this validation check to run again.`;
+              ? [
+                  marker,
+                  '',
+                  '## TerraPath moderation status',
+                  '',
+                  'Automatic validation passed.',
+                  '',
+                  `- Guide: \`${process.env.GUIDE_ID}\``,
+                  `- Title: ${process.env.GUIDE_TITLE}`,
+                  `- Target path: \`${process.env.GUIDE_PATH}\``,
+                  '',
+                  'Next step for a moderator:',
+                  '1. Read the guide in the issue.',
+                  '2. Check progression quality and naming.',
+                  '3. Add the `approved` label when the guide is ready for publication.'
+                ].join('\n')
+              : [
+                  marker,
+                  '',
+                  '## TerraPath moderation status',
+                  '',
+                  'Automatic validation failed.',
+                  '',
+                  '```text',
+                  process.env.VALIDATION_ERROR || 'Unknown validation error',
+                  '```',
+                  '',
+                  'Next step for the author:',
+                  '1. Fix the JSON in the issue.',
+                  '2. Edit the issue body.',
+                  '3. Wait for this validation check to run again.'
+                ].join('\n');
 
             const comments = await github.paginate(github.rest.issues.listComments, {
               owner,
