@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a problem with TerraPath Hub, guide data, or the in-game experience.
+description: Report a problem with the site, editor, or published guide data.
 title: "[Bug]: "
 labels: ["bug", "needs-triage"]
 body:

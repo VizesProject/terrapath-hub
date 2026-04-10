@@ -1,8 +1,8 @@
 # TerraPath Hub
 
-TerraPath Hub is the public guide catalog and authoring workspace for TerraPath.
+TerraPath Hub is the public guide catalog and editor for TerraPath.
 
-This repository hosts the published guide catalog, the web editor, the guide
+This repository contains the published guide catalog, the web editor, the guide
 schema, curated Terraria support data, and the GitHub issue flows used to submit
 new guides and report project feedback.
 
@@ -23,7 +23,7 @@ new guides and report project feedback.
 
 ## What This Repo Contains
 
-- A GitHub Pages site with the guide catalog and guide editor.
+- A GitHub Pages site with the guide catalog and editor.
 - Public guide JSON files in `guides/`.
 - Generated catalog data in `catalog/`.
 - The guide schema in `schema/`.
@@ -31,8 +31,7 @@ new guides and report project feedback.
 - Submission and publication automation in `.github/` and `tools/`.
 
 Guides are stored as structured JSON on purpose, not as free-form wiki pages.
-That keeps them searchable, validatable, sortable, and usable inside the
-TerraPath mod later.
+That keeps them searchable, valid, sortable, and ready for future in-game use.
 
 ## Repo Map
 
@@ -54,7 +53,7 @@ tools/      Validation, catalog build, export, and publication helper scripts
 3. Export `guide.json`.
 4. Open one `Guide submission` issue per guide.
 5. Paste the exported JSON and submit it.
-6. Update the same issue if edits are requested before publication.
+6. Update the same issue if changes are requested before publication.
 
 ### For visitors
 
@@ -66,9 +65,9 @@ tools/      Validation, catalog build, export, and publication helper scripts
 ## Where To Write
 
 - Use `Bug report` issues for broken pages, wrong data, submission problems, or site regressions.
-- Use `UI feedback` issues for usability complaints, layout ideas, or missing workflow improvements.
+- Use `UI feedback` issues for usability feedback, layout ideas, or workflow improvements.
 - Use `Supported mod request` issues when you want TerraPath Hub to index a new mod for the web editor.
-- Use `Guide submission` issues only for one exported `guide.json`.
+- Use `Guide submission` issues only for one exported `guide.json` file.
 
 ## Current Status
 
@@ -80,8 +79,8 @@ tools/      Validation, catalog build, export, and publication helper scripts
 
 ## Important Notes
 
-- This repository is public by design. It contains the site code, schemas,
-  support data, and automation openly.
+- This repository is public by design. The site code, schemas, support data,
+  and automation live here openly.
 - This is not a private backend or a hidden source drop.
 - TerraPath Hub is for structured guides, not for general-purpose wiki pages.
 - The web editor only knows curated supported content. The in-game mod can

@@ -1,5 +1,5 @@
 name: Supported mod request
-description: Ask TerraPath to index a mod for the web editor.
+description: Request curated web support for a mod.
 title: "[Supported Mod Request]: "
 labels: ["supported-mod-request", "needs-triage"]
 body:

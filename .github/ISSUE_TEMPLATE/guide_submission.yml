@@ -1,12 +1,12 @@
 name: Guide submission
-description: Submit a structured guide for review.
+description: Submit one exported guide for publication.
 title: "[Guide]: "
 labels: ["guide-submission", "needs-review"]
 body:
   - type: markdown
     attributes:
       value: |
-        Submit one exported `guide.json` per issue. TerraPath validates it automatically, and published guides are reviewed before they are added to the public catalog.
+        Submit one exported `guide.json` per issue. TerraPath validates it automatically, and published guides are reviewed before they are added to the catalog.
   - type: textarea
     id: guide_json
     attributes:

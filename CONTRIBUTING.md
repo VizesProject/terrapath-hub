@@ -1,7 +1,7 @@
 # Contributing to TerraPath Hub
 
-Use this document if you want to submit a guide, report a content problem, or
-request support for a new content source.
+Use this document if you want to submit a guide or request support for a new
+content source.
 
 ## For Guide Authors
 
@@ -10,7 +10,7 @@ request support for a new content source.
 3. Export `guide.json`.
 4. Open one `Guide submission` issue per guide.
 5. Paste the exported JSON exactly as the editor generated it.
-6. Update the same issue if edits are requested before publication.
+6. Update the same issue if changes are requested before publication.
 
 ## Guide Rules
 

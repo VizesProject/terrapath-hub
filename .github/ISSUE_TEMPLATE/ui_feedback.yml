@@ -1,5 +1,5 @@
 name: UI feedback
-description: Share feedback about the guide list, editor, filters, sorting, or in-game layout.
+description: Share feedback about browsing, editing, filtering, or readability.
 title: "[UI]: "
 labels: ["ui-feedback", "needs-triage"]
 body:
