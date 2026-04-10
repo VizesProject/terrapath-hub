@@ -961,13 +961,51 @@ select:focus,
 .stage-preview {
   display: grid;
   gap: 1rem;
-  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+  grid-template-columns: 1fr;
 }
 
 .stage-description {
   display: grid;
   gap: 0.6rem;
   line-height: 1.7;
+}
+
+.era-editor-section,
+.era-preview {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.era-editor-section__header,
+.era-preview__header {
+  align-items: start;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: space-between;
+  padding-bottom: 0.9rem;
+}
+
+.era-editor-section__copy {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.era-editor-section__body,
+.era-preview__list {
+  display: grid;
+  gap: 1rem;
+}
+
+.stage-preview--stacked .stage-overview,
+.stage-preview--stacked .stage-loadout {
+  background: #10161d;
 }
 
 .field-label-with-action {

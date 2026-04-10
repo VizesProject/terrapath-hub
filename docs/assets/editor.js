@@ -27,17 +27,65 @@ const GROUPS = [
   { key: "buff", cats: ["buff", "ammo"], en: "Buffs / Consumables", ru: "\u0411\u0430\u0444\u0444\u044b / \u0420\u0430\u0441\u0445\u043e\u0434\u043d\u0438\u043a\u0438" }
 ];
 
+const ERA_IDS = ["prehardmode", "hardmode", "postmoonlord"];
+
+const ARMOR_SET_ALIASES = [
+  { id: "Terraria/WoodHelmet", internalName: "WoodHelmet", displayName: "Wood armor set", displayNameRu: "\u0414\u0435\u0440\u0435\u0432\u044f\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/CopperHelmet", internalName: "CopperHelmet", displayName: "Copper armor set", displayNameRu: "\u041c\u0435\u0434\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/TinHelmet", internalName: "TinHelmet", displayName: "Tin armor set", displayNameRu: "\u041e\u043b\u043e\u0432\u044f\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/IronHelmet", internalName: "IronHelmet", displayName: "Iron armor set", displayNameRu: "\u0416\u0435\u043b\u0435\u0437\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/LeadHelmet", internalName: "LeadHelmet", displayName: "Lead armor set", displayNameRu: "\u0421\u0432\u0438\u043d\u0446\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/SilverHelmet", internalName: "SilverHelmet", displayName: "Silver armor set", displayNameRu: "\u0421\u0435\u0440\u0435\u0431\u0440\u044f\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/TungstenHelmet", internalName: "TungstenHelmet", displayName: "Tungsten armor set", displayNameRu: "\u0412\u043e\u043b\u044c\u0444\u0440\u0430\u043c\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/GoldHelmet", internalName: "GoldHelmet", displayName: "Gold armor set", displayNameRu: "\u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/PlatinumHelmet", internalName: "PlatinumHelmet", displayName: "Platinum armor set", displayNameRu: "\u041f\u043b\u0430\u0442\u0438\u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/CactusHelmet", internalName: "CactusHelmet", displayName: "Cactus armor set", displayNameRu: "\u041a\u0430\u043a\u0442\u0443\u0441\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/ShadowHelmet", internalName: "ShadowHelmet", displayName: "Shadow armor set", displayNameRu: "\u0422\u0435\u043d\u0435\u0432\u043e\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/CrimsonHelmet", internalName: "CrimsonHelmet", displayName: "Crimson armor set", displayNameRu: "\u041a\u0440\u0438\u043c\u0437\u043e\u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/MeteorHelmet", internalName: "MeteorHelmet", displayName: "Meteor armor set", displayNameRu: "\u041c\u0435\u0442\u0435\u043e\u0440\u0438\u0442\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/MoltenHelmet", internalName: "MoltenHelmet", displayName: "Molten armor set", displayNameRu: "\u0420\u0430\u0441\u043f\u043b\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/NecroHelmet", internalName: "NecroHelmet", displayName: "Necro armor set", displayNameRu: "\u041d\u0435\u043a\u0440\u043e-\u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442" },
+  { id: "Terraria/JungleHat", internalName: "JungleHat", displayName: "Jungle armor set", displayNameRu: "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0434\u0436\u0443\u043d\u0433\u043b\u0435\u0439" },
+  { id: "Terraria/BeeHeadgear", internalName: "BeeHeadgear", displayName: "Bee armor set", displayNameRu: "\u041f\u0447\u0435\u043b\u0438\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/ObsidianHelm", internalName: "ObsidianHelm", displayName: "Obsidian armor set", displayNameRu: "\u041e\u0431\u0441\u0438\u0434\u0438\u0430\u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/CobaltHelmet", internalName: "CobaltHelmet", displayName: "Cobalt armor set", displayNameRu: "\u041a\u043e\u0431\u0430\u043b\u044c\u0442\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/PalladiumHelmet", internalName: "PalladiumHelmet", displayName: "Palladium armor set", displayNameRu: "\u041f\u0430\u043b\u043b\u0430\u0434\u0438\u0435\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/MythrilHelmet", internalName: "MythrilHelmet", displayName: "Mythril armor set", displayNameRu: "\u041c\u0438\u0444\u0440\u0438\u043b\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/OrichalcumHelmet", internalName: "OrichalcumHelmet", displayName: "Orichalcum armor set", displayNameRu: "\u041e\u0440\u0438\u0445\u0430\u043b\u043a\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/AdamantiteHelmet", internalName: "AdamantiteHelmet", displayName: "Adamantite armor set", displayNameRu: "\u0410\u0434\u0430\u043c\u0430\u043d\u0442\u0438\u0442\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/TitaniumHelmet", internalName: "TitaniumHelmet", displayName: "Titanium armor set", displayNameRu: "\u0422\u0438\u0442\u0430\u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/HallowedHelmet", internalName: "HallowedHelmet", displayName: "Hallowed armor set", displayNameRu: "\u0421\u0432\u044f\u0449\u0435\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/ChlorophyteHelmet", internalName: "ChlorophyteHelmet", displayName: "Chlorophyte armor set", displayNameRu: "\u0425\u043b\u043e\u0440\u043e\u0444\u0438\u0442\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/TurtleHelmet", internalName: "TurtleHelmet", displayName: "Turtle armor set", displayNameRu: "\u0427\u0435\u0440\u0435\u043f\u0430\u0448\u0438\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/BeetleHelmet", internalName: "BeetleHelmet", displayName: "Beetle armor set", displayNameRu: "\u0416\u0443\u043a\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/SpectreHood", internalName: "SpectreHood", displayName: "Spectre armor set", displayNameRu: "\u0421\u043f\u0435\u043a\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/ShroomiteHeadgear", internalName: "ShroomiteHeadgear", displayName: "Shroomite armor set", displayNameRu: "\u0428\u0440\u0443\u043c\u0438\u0442\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/TikiMask", internalName: "TikiMask", displayName: "Tiki armor set", displayNameRu: "\u0422\u0438\u043a\u0438-\u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442" },
+  { id: "Terraria/SpookyHelmet", internalName: "SpookyHelmet", displayName: "Spooky armor set", displayNameRu: "\u041f\u0443\u0433\u0430\u044e\u0449\u0438\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/SolarFlareHelmet", internalName: "SolarFlareHelmet", displayName: "Solar Flare armor set", displayNameRu: "\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/VortexHelmet", internalName: "VortexHelmet", displayName: "Vortex armor set", displayNameRu: "\u0412\u0438\u0445\u0440\u0435\u0432\u043e\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/NebulaHelmet", internalName: "NebulaHelmet", displayName: "Nebula armor set", displayNameRu: "\u0422\u0443\u043c\u0430\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/StardustHelmet", internalName: "StardustHelmet", displayName: "Stardust armor set", displayNameRu: "\u0417\u0432\u0435\u0437\u0434\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" }
+];
+
+const CATEGORY_PATTERNS = {
+  armor: [/helmet/i, /headgear/i, /mask/i, /hood/i, /hat$/i, /cap$/i, /chainmail/i, /breastplate/i, /greaves/i, /leggings/i, /pants$/i, /robe$/i, /cuirass/i, /tunic/i, /shirt$/i, /mail$/i],
+  accessory: [/boots/i, /balloon/i, /band/i, /shackle/i, /claws/i, /shield/i, /emblem/i, /anklet/i, /quiver/i, /glove/i, /gauntlet/i, /wings/i, /charm/i, /stone/i, /shell/i, /insignia/i, /necklace/i, /cloak/i, /scarf/i, /rose/i, /bezoar/i, /horseshoe/i, /skates/i, /fins/i, /flipper/i, /bundle/i, /mitten/i, /glove/i, /cuffs/i],
+  buff: [/potion/i, /flask/i, /ale$/i, /beer$/i, /cake$/i, /soup$/i, /stew$/i, /food/i, /candle/i, /bowl/i, /buff/i, /fed/i, /sake/i],
+  weapon: [/sword/i, /blade/i, /bow/i, /gun/i, /staff/i, /tome/i, /book/i, /blaster/i, /boomerang/i, /spear/i, /lance/i, /yoyo/i, /whip/i, /knife/i, /dagger/i, /flail/i, /launcher/i, /cannon/i, /rifle/i, /shotgun/i, /pistol/i, /revolver/i, /wand/i, /trident/i, /chakram/i, /javelin/i, /scythe/i]
+};
+
 const ALLOWED_ITEM_CATEGORIES = new Set(GROUPS.flatMap((group) => group.cats));
 
 const STEP_COPY = {
   en: [
     { title: "Guide", desc: "Title, author, language, summary, required mods, and class." },
-    { title: "Stages", desc: "Stages, sub-stages, boss references, and item loadouts." },
+    { title: "Stages", desc: "Pre-Hardmode, Hardmode, and Post-Moon Lord sections with their own sub-stages." },
     { title: "Export", desc: "Preview the guide and export guide.json." }
   ],
   ru: [
     { title: "\u0413\u0430\u0439\u0434", desc: "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435, \u0430\u0432\u0442\u043e\u0440, \u044f\u0437\u044b\u043a, \u043a\u0440\u0430\u0442\u043a\u043e\u0435 \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435, \u043c\u043e\u0434\u044b \u0438 \u043a\u043b\u0430\u0441\u0441." },
-    { title: "\u042d\u0442\u0430\u043f\u044b", desc: "\u042d\u0442\u0430\u043f\u044b, \u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u044b, \u0431\u043e\u0441\u0441\u044b \u0438 \u043f\u0430\u043d\u0435\u043b\u0438 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u043e\u0432." },
+    { title: "\u042d\u0442\u0430\u043f\u044b", desc: "\u0411\u043b\u043e\u043a\u0438 Pre-Hardmode, Hardmode \u0438 Post-Moon Lord \u0441 \u0438\u0445 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c\u0438 \u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u0430\u043c\u0438." },
     { title: "\u042d\u043a\u0441\u043f\u043e\u0440\u0442", desc: "\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u0432\u0438\u0434 \u0433\u0430\u0439\u0434\u0430 \u0438 \u0432\u044b\u0433\u0440\u0443\u0437\u0438\u0442\u0435 guide.json." }
   ]
 };
@@ -48,8 +96,8 @@ const COPY = {
     ready: "Ready",
     pending: "Pending",
     stepCounter: "Step {current} of {total}",
-    stage: "Stage",
-    stageTitle: "Stage title",
+    stage: "Sub-stage",
+    stageTitle: "Sub-stage title",
     era: "Main era",
     description: "Description",
     descriptionPlaceholder: "Explain what this stage covers.",
@@ -107,8 +155,8 @@ const COPY = {
     ready: "\u0413\u043e\u0442\u043e\u0432\u043e",
     pending: "\u041d\u0435 \u0437\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u043e",
     stepCounter: "\u0428\u0430\u0433 {current} \u0438\u0437 {total}",
-    stage: "\u042d\u0442\u0430\u043f",
-    stageTitle: "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u044d\u0442\u0430\u043f\u0430",
+    stage: "\u041f\u043e\u0434-\u044d\u0442\u0430\u043f",
+    stageTitle: "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435 \u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u0430",
     era: "\u041e\u0441\u043d\u043e\u0432\u043d\u043e\u0439 \u044d\u0442\u0430\u043f \u0438\u0433\u0440\u044b",
     description: "\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435",
     descriptionPlaceholder: "\u041a\u0440\u0430\u0442\u043a\u043e \u043e\u043f\u0438\u0448\u0438\u0442\u0435, \u0447\u0442\u043e \u0434\u0430\u0435\u0442 \u044d\u0442\u043e\u0442 \u044d\u0442\u0430\u043f.",
@@ -291,8 +339,91 @@ function groupLabel(key) {
   return entry[lang()];
 }
 
+function eraLabel(eraId) {
+  return progression?.eraLabel?.(eraId, lang()) || eraId;
+}
+
+function eraOrder(eraId) {
+  const index = ERA_IDS.indexOf(eraId);
+  return index === -1 ? ERA_IDS.length : index;
+}
+
+function stagesForEra(eraId) {
+  return state.stages.map((stage, index) => ({ stage, index })).filter((entry) => entry.stage.era === eraId);
+}
+
+function insertStageForEra(eraId) {
+  const nextStage = stageTemplate({
+    title: lang() === "ru" ? "\u041d\u043e\u0432\u044b\u0439 \u043f\u043e\u0434-\u044d\u0442\u0430\u043f" : "New sub-stage",
+    era: eraId
+  });
+  const indices = stagesForEra(eraId).map((entry) => entry.index);
+  const insertAt = indices.length ? Math.max(...indices) + 1 : state.stages.length;
+  state.stages.splice(insertAt, 0, nextStage);
+  openStage = insertAt;
+}
+
+function previousStageIndexInEra(stageIndex) {
+  const stage = state.stages[stageIndex];
+  if (!stage) return -1;
+  const indices = stagesForEra(stage.era).map((entry) => entry.index);
+  const position = indices.indexOf(stageIndex);
+  return position > 0 ? indices[position - 1] : -1;
+}
+
+function nextStageIndexInEra(stageIndex) {
+  const stage = state.stages[stageIndex];
+  if (!stage) return -1;
+  const indices = stagesForEra(stage.era).map((entry) => entry.index);
+  const position = indices.indexOf(stageIndex);
+  return position !== -1 && position < indices.length - 1 ? indices[position + 1] : -1;
+}
+
+function supportSearchIcon(internalName) {
+  return `assets/icons/terraria/search-items/${String(internalName || "").toLowerCase()}.png`;
+}
+
+function inferSearchCategory(entry) {
+  if (!entry) return "weapon";
+  if (entry.category && ALLOWED_ITEM_CATEGORIES.has(entry.category)) return entry.category;
+
+  const haystack = [entry.displayName, entry.displayNameRu, entry.internalName]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  for (const category of ["armor", "accessory", "buff", "weapon"]) {
+    if (CATEGORY_PATTERNS[category].some((pattern) => pattern.test(haystack))) {
+      return category;
+    }
+  }
+
+  return "weapon";
+}
+
+function applySupportEnhancements() {
+  ARMOR_SET_ALIASES.forEach((alias) => {
+    const previous = support.itemMap.get(alias.id) || {};
+    support.itemMap.set(alias.id, {
+      ...previous,
+      ...alias,
+      category: "armor",
+      icon: previous.icon || alias.icon || supportSearchIcon(alias.internalName)
+    });
+  });
+
+  for (const [id, entry] of support.itemMap.entries()) {
+    support.itemMap.set(id, {
+      ...entry,
+      category: inferSearchCategory(entry)
+    });
+  }
+}
+
 function visibleSearchItems() {
-  return [...support.itemMap.values()].filter((entry) => !entry.pickerHidden);
+  return [...support.itemMap.values()]
+    .filter((entry) => !entry.pickerHidden)
+    .sort((left, right) => localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" }));
 }
 
 function inferItemCategory(entry, groupKey) {
@@ -335,14 +466,6 @@ function itemTemplate(seed = {}) {
   return { itemId: seed.itemId || "", category: seed.category || "weapon", subgroupId: seed.subgroupId || "" };
 }
 
-function subStageTemplate(seed = {}) {
-  return {
-    id: seed.id || makeId("substage"),
-    title: seed.title || "",
-    description: seed.description || ""
-  };
-}
-
 function stageTemplate(seed = {}) {
   const accessoryGroups = Array.isArray(seed.accessoryGroups)
     ? seed.accessoryGroups.map((group) => ({ id: group.id || makeId("accessory"), title: group.title || "" }))
@@ -366,26 +489,9 @@ function stageTemplate(seed = {}) {
     items.push(nextItem);
   }
 
-  const subStages = Array.isArray(seed.subStages)
-    ? seed.subStages.map(subStageTemplate)
-    : [];
-
-  if (!subStages.length && Array.isArray(seed.progressionMarkers) && progression?.getMarker) {
-    seed.progressionMarkers.forEach((markerId) => {
-      const marker = progression.getMarker(markerId);
-      if (marker) {
-        subStages.push(subStageTemplate({
-          title: marker.title?.[lang()] || marker.title?.en || markerId,
-          description: marker.description?.[lang()] || marker.description?.en || ""
-        }));
-      }
-    });
-  }
-
   return {
     title: seed.title || s("stage"),
     era: seed.era || "prehardmode",
-    subStages,
     description: seed.description || "",
     bossRefs: [...(seed.bossRefs || [])],
     accessoryGroups,
@@ -409,18 +515,33 @@ function sampleState() {
         era: "prehardmode",
         description: "Collect movement items, prepare a basic arena, and secure a reliable early weapon.",
         bossRefs: ["Terraria/EyeofCthulhu"],
-        subStages: [
-          {
-            title: "Before Eye of Cthulhu",
-            description: "Build a simple arena and collect mobility before the first early boss."
-          }
-        ],
         accessoryGroups: [
           { title: "Mobility" }
         ],
         items: [
           { itemId: "Terraria/EnchantedBoomerang", category: "weapon" },
           { itemId: "Terraria/CloudinaBottle", category: "accessory", subgroup: "Mobility" }
+        ]
+      }),
+      stageTemplate({
+        title: "Early Hardmode",
+        era: "hardmode",
+        description: "Upgrade mobility, collect your first hardmode armor set, and prepare for the mechanical bosses.",
+        bossRefs: ["Terraria/TheDestroyer"],
+        accessoryGroups: [
+          { title: "Damage" }
+        ],
+        items: [
+          { itemId: "Terraria/CobaltHelmet", category: "armor" },
+          { itemId: "Terraria/WarriorEmblem", category: "accessory", subgroup: "Damage" }
+        ]
+      }),
+      stageTemplate({
+        title: "After Moon Lord",
+        era: "postmoonlord",
+        description: "Switch into the final endgame loadout and collect the last upgrades for this class.",
+        items: [
+          { itemId: "Terraria/SolarFlareHelmet", category: "armor" }
         ]
       })
     ]
@@ -489,7 +610,9 @@ function selectOptions(entries, value, placeholder) {
 
 function buildGuide() {
   const used = new Map();
-  const stages = state.stages.map((stage, index) => {
+  const stages = [...state.stages]
+    .sort((left, right) => eraOrder(left.era) - eraOrder(right.era))
+    .map((stage, index) => {
     const title = stage.title.trim() || `${s("stage")} ${index + 1}`;
     const base = slug(plainText(title)).slice(0, 40) || `stage-${index + 1}`;
     const count = used.get(base) || 0;
@@ -505,12 +628,6 @@ function buildGuide() {
       }))
     };
     const bosses = uniq((stage.bossRefs || []).map((entry) => String(entry || "").trim()).filter(Boolean));
-    const subStages = (stage.subStages || [])
-      .map((subStage) => ({
-        title: String(subStage.title || "").trim(),
-        description: String(subStage.description || "").trim()
-      }))
-      .filter((subStage) => subStage.title || subStage.description);
 
     output.items = output.items.map((item, itemIndex) => {
       const source = stage.items[itemIndex];
@@ -525,7 +642,6 @@ function buildGuide() {
     });
 
     if (stage.description.trim()) output.description = stage.description.trim();
-    if (subStages.length) output.subStages = subStages;
     if (bosses.length) output.bossRefs = bosses;
     return output;
   });
@@ -605,11 +721,6 @@ function renderGuideForm() {
   refs.summary.placeholder = lang() === "ru" ? "\u041a\u0440\u0430\u0442\u043a\u043e\u0435 \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u0434\u043b\u044f \u0441\u043f\u0438\u0441\u043a\u0430 \u0433\u0430\u0439\u0434\u043e\u0432." : "Short description shown in the guide list.";
 }
 
-function previewSubStages(stage) {
-  if (!stage.subStages?.length) return "";
-  return `<section class="preview-block"><h4>${esc(lang() === "ru" ? "\u041f\u043e\u0434\u044d\u0442\u0430\u043f\u044b" : "Sub-stages")}</h4><div class="substage-preview-list">${stage.subStages.map((subStage) => `<article class="substage-card"><strong>${renderRichText(subStage.title || "")}</strong>${subStage.description ? `<div class="stage-description">${renderRichText(subStage.description)}</div>` : ""}</article>`).join("")}</div></section>`;
-}
-
 function previewBosses(stage) {
   if (!stage.bossRefs?.length) return "";
   return `<section class="preview-block"><h4>${esc(t("common.labelBosses"))}</h4><div class="chip-row">${stage.bossRefs.map((id) => {
@@ -650,11 +761,24 @@ function previewGroups(items) {
   return blocks.join("") || `<p class="empty-state">${esc(s("noItemsPreview"))}</p>`;
 }
 
+function stagesByEra(stages) {
+  const groups = new Map(ERA_IDS.map((eraId) => [eraId, []]));
+  (stages || []).forEach((stage) => {
+    const eraId = ERA_IDS.includes(stage.era) ? stage.era : "prehardmode";
+    groups.get(eraId).push(stage);
+  });
+  return ERA_IDS.map((eraId) => ({ eraId, stages: groups.get(eraId) || [] })).filter((entry) => entry.stages.length);
+}
+
+function previewSubStage(stage) {
+  return `<article class="stage-preview stage-preview--stacked"><section class="stage-overview"><div class="stage-preview__header"><h3>${renderRichText(stage.title)}</h3><span class="meta-pill">${esc(s("itemCount", { count: (stage.items || []).length }))}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${previewBosses(stage)}</section><section class="stage-loadout">${previewGroups(stage.items)}</section></article>`;
+}
+
 function renderPreview() {
   const guide = buildGuide();
   latestJson = `${JSON.stringify(guide, null, 2)}\n`;
   refs.json.textContent = latestJson;
-  refs.preview.innerHTML = `<header class="guide-preview__header"><h2 class="guide-title">${esc(guide.title)}</h2><p>${esc(guide.summary)}</p><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelClass")}: ${classList(guide.classTags)}`)}</span><span class="meta-pill">${esc(`${t("common.labelLanguage")}: ${guideLanguageLabel(guide.language)}`)}</span><span class="meta-pill">${esc(`${t("common.labelMods")}: ${(guide.requiredMods || []).join(", ")}`)}</span><span class="meta-pill">${esc(`${guide.stages.length} ${t("common.labelStages").toLowerCase()}`)}</span></div></header><div class="guide-preview__stages">${guide.stages.map((stage) => `<article class="stage-preview"><section class="stage-overview"><div class="stage-preview__header"><h3>${renderRichText(stage.title)}</h3><span class="meta-pill">${esc(s("itemCount", { count: (stage.items || []).length }))}</span></div><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelEra")}: ${progression?.eraLabel?.(stage.era || "prehardmode", lang()) || stage.era || ""}`)}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${previewSubStages(stage)}${previewBosses(stage)}</section><section class="stage-loadout">${previewGroups(stage.items)}</section></article>`).join("")}</div>`;
+  refs.preview.innerHTML = `<header class="guide-preview__header"><h2 class="guide-title">${esc(guide.title)}</h2><p>${esc(guide.summary)}</p><div class="chip-row"><span class="meta-pill">${esc(`${t("common.labelClass")}: ${classList(guide.classTags)}`)}</span><span class="meta-pill">${esc(`${t("common.labelLanguage")}: ${guideLanguageLabel(guide.language)}`)}</span><span class="meta-pill">${esc(`${t("common.labelMods")}: ${(guide.requiredMods || []).join(", ")}`)}</span><span class="meta-pill">${esc(`${guide.stages.length} ${t("common.labelStages").toLowerCase()}`)}</span></div></header><div class="guide-preview__stages">${stagesByEra(guide.stages).map((eraGroup) => `<section class="era-preview"><header class="era-preview__header"><h2>${esc(eraLabel(eraGroup.eraId))}</h2><span class="meta-pill">${esc(`${eraGroup.stages.length} ${lang() === "ru" ? "\u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u043e\u0432" : "sub-stages"}`)}</span></header><div class="era-preview__list">${eraGroup.stages.map(previewSubStage).join("")}</div></section>`).join("")}</div>`;
 }
 
 function renderSubmissionGuide() {
@@ -729,21 +853,24 @@ function itemRows(stage, stageIndex, groupEntry) {
 }
 
 function stageBody(stage, stageIndex) {
-  const subStages = stage.subStages || [];
-
-  return `<section class="stage-overview-editor"><div class="field-grid"><label class="field"><span class="field-label-with-action"><span>${esc(s("stageTitle"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-title-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><input data-role="stage-title" data-stage-index="${stageIndex}" value="${esc(stage.title)}"></label><label class="field"><span>${esc(s("era"))}</span><select data-role="stage-era" data-stage-index="${stageIndex}">${(progression?.eras || []).map((era) => `<option value="${esc(era.id)}" ${era.id === stage.era ? "selected" : ""}>${esc(era.label?.[lang()] || era.label?.en || era.id)}</option>`).join("")}</select></label></div><label class="field"><span class="field-label-with-action"><span>${esc(s("description"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-description-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><textarea data-role="stage-description" data-stage-index="${stageIndex}" rows="5" placeholder="${esc(s("descriptionPlaceholder"))}">${esc(stage.description)}</textarea></label><section class="stage-section"><div class="section-heading section-heading--with-action"><h3>${esc(lang() === "ru" ? "\u041f\u043e\u0434\u044d\u0442\u0430\u043f\u044b" : "Sub-stages")}</h3><button class="button button--quiet button--tiny" type="button" data-action="add-substage" data-stage-index="${stageIndex}">${esc(lang() === "ru" ? "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043f\u043e\u0434\u044d\u0442\u0430\u043f" : "Add sub-stage")}</button></div><div class="substage-editor-list">${subStages.length ? subStages.map((subStage, subStageIndex) => `<article class="substage-editor-card"><div class="field-grid"><label class="field"><span>${esc(lang() === "ru" ? "\u041d\u0430\u0437\u0432\u0430\u043d\u0438\u0435" : "Title")}</span><input data-role="substage-title" data-stage-index="${stageIndex}" data-substage-index="${subStageIndex}" value="${esc(subStage.title)}"></label><div class="stage-card__actions stage-card__actions--compact"><button class="button button--quiet button--tiny" type="button" data-action="remove-substage" data-stage-index="${stageIndex}" data-substage-index="${subStageIndex}">${esc(s("remove"))}</button></div></div><label class="field"><span class="field-label-with-action"><span>${esc(lang() === "ru" ? "\u041e\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u043f\u043e\u0434\u044d\u0442\u0430\u043f\u0430" : "Sub-stage description")}</span><button class="button button--quiet button--tiny" type="button" data-action="open-substage-description-picker" data-stage-index="${stageIndex}" data-substage-index="${subStageIndex}">${esc(s("insertIcon"))}</button></span><textarea data-role="substage-description" data-stage-index="${stageIndex}" data-substage-index="${subStageIndex}" rows="3">${esc(subStage.description)}</textarea></label></article>`).join("") : `<p class="empty-state">${esc(lang() === "ru" ? "\u041f\u043e\u0434\u044d\u0442\u0430\u043f\u044b \u043f\u043e\u043a\u0430 \u043d\u0435 \u0434\u043e\u0431\u0430\u0432\u043b\u0435\u043d\u044b." : "No sub-stages added.")}</p>`}</div></section><section class="stage-section"><div class="section-heading section-heading--with-action"><h3>${esc(s("bosses"))}</h3><button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${stageIndex}">${esc(s("addBoss"))}</button></div><div class="stage-stack">${bossRows(stage, stageIndex)}</div></section></section><section class="stage-loadout-editor"><section class="stage-section"><div class="section-heading"><h3>${esc(s("items"))}</h3></div><div class="item-group-list">${GROUPS.map((group) => group.key === "accessory" ? accessoryGroupRows(stage, stageIndex) : itemRows(stage, stageIndex, group)).join("")}</div></section></section>`;
+  return `<section class="stage-overview-editor"><div class="field-grid"><label class="field"><span class="field-label-with-action"><span>${esc(s("stageTitle"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-title-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><input data-role="stage-title" data-stage-index="${stageIndex}" value="${esc(stage.title)}"></label><label class="field"><span>${esc(s("era"))}</span><select data-role="stage-era" data-stage-index="${stageIndex}">${(progression?.eras || []).map((era) => `<option value="${esc(era.id)}" ${era.id === stage.era ? "selected" : ""}>${esc(era.label?.[lang()] || era.label?.en || era.id)}</option>`).join("")}</select></label></div><label class="field"><span class="field-label-with-action"><span>${esc(s("description"))}</span><button class="button button--quiet button--tiny" type="button" data-action="open-description-picker" data-stage-index="${stageIndex}">${esc(s("insertIcon"))}</button></span><textarea data-role="stage-description" data-stage-index="${stageIndex}" rows="6" placeholder="${esc(s("descriptionPlaceholder"))}">${esc(stage.description)}</textarea></label><section class="stage-section"><div class="section-heading section-heading--with-action"><h3>${esc(s("bosses"))}</h3><button class="button button--quiet button--tiny" type="button" data-action="add-boss" data-stage-index="${stageIndex}">${esc(s("addBoss"))}</button></div><div class="stage-stack">${bossRows(stage, stageIndex)}</div></section></section><section class="stage-loadout-editor"><section class="stage-section"><div class="section-heading"><h3>${esc(s("items"))}</h3></div><div class="item-group-list">${GROUPS.map((group) => group.key === "accessory" ? accessoryGroupRows(stage, stageIndex) : itemRows(stage, stageIndex, group)).join("")}</div></section></section>`;
 }
 
 function stageCard(stage, stageIndex) {
   const opened = stageIndex === openStage;
   const eraText = progression?.eraLabel?.(stage.era || "prehardmode", lang()) || stage.era || "";
   const count = (stage.items || []).filter((entry) => entry.itemId).length;
-  return `<article class="stage-card ${opened ? "stage-card--open" : ""}"><div class="stage-card__header"><button class="stage-card__toggle" type="button" data-action="toggle-stage" data-stage-index="${stageIndex}"><span class="stage-card__title"><strong>${renderRichText(stage.title || `${s("stage")} ${stageIndex + 1}`)}</strong><span class="muted">${esc(eraText)}</span></span><span class="meta-pill">${esc(s("itemCount", { count }))}</span></button><div class="stage-card__actions"><button class="button button--quiet button--tiny" type="button" data-action="move-stage-up" data-stage-index="${stageIndex}" ${stageIndex === 0 ? "disabled" : ""}>${esc(s("moveUp"))}</button><button class="button button--quiet button--tiny" type="button" data-action="move-stage-down" data-stage-index="${stageIndex}" ${stageIndex === state.stages.length - 1 ? "disabled" : ""}>${esc(s("moveDown"))}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-stage" data-stage-index="${stageIndex}" ${state.stages.length === 1 ? "disabled" : ""}>${esc(s("delete"))}</button></div></div><div class="stage-card__body" ${opened ? "" : "hidden"}>${stageBody(stage, stageIndex)}</div></article>`;
+  const prevIndex = previousStageIndexInEra(stageIndex);
+  const nextIndex = nextStageIndexInEra(stageIndex);
+  return `<article class="stage-card ${opened ? "stage-card--open" : ""}"><div class="stage-card__header"><button class="stage-card__toggle" type="button" data-action="toggle-stage" data-stage-index="${stageIndex}"><span class="stage-card__title"><strong>${renderRichText(stage.title || `${s("stage")} ${stageIndex + 1}`)}</strong><span class="muted">${esc(eraText)}</span></span><span class="meta-pill">${esc(s("itemCount", { count }))}</span></button><div class="stage-card__actions"><button class="button button--quiet button--tiny" type="button" data-action="move-stage-up" data-stage-index="${stageIndex}" ${prevIndex === -1 ? "disabled" : ""}>${esc(s("moveUp"))}</button><button class="button button--quiet button--tiny" type="button" data-action="move-stage-down" data-stage-index="${stageIndex}" ${nextIndex === -1 ? "disabled" : ""}>${esc(s("moveDown"))}</button><button class="button button--quiet button--tiny" type="button" data-action="remove-stage" data-stage-index="${stageIndex}" ${state.stages.length === 1 ? "disabled" : ""}>${esc(s("delete"))}</button></div></div><div class="stage-card__body" ${opened ? "" : "hidden"}>${stageBody(stage, stageIndex)}</div></article>`;
 }
 
 function renderAccordion() {
-  refs.addStage.textContent = t("editor.addStage");
-  refs.accordion.innerHTML = state.stages.map((stage, index) => stageCard(stage, index)).join("");
+  refs.addStage.hidden = true;
+  refs.accordion.innerHTML = ERA_IDS.map((eraId) => {
+    const stages = stagesForEra(eraId);
+    return `<section class="era-editor-section"><div class="era-editor-section__header"><div class="era-editor-section__copy"><h3>${esc(eraLabel(eraId))}</h3><p class="muted">${esc(lang() === "ru" ? "\u041e\u0434\u0438\u043d \u043a\u0440\u0443\u043f\u043d\u044b\u0439 \u044d\u0442\u0430\u043f \u0438\u0433\u0440\u044b. \u041d\u0438\u0436\u0435 \u0434\u043e\u0431\u0430\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u044b \u0441 \u043e\u043f\u0438\u0441\u0430\u043d\u0438\u044f\u043c\u0438 \u0438 \u043b\u043e\u0430\u0434\u0430\u0443\u0442\u043e\u043c." : "One main game era. Add as many sub-stages below it as you need.")}</p></div><button class="button button--primary button--tiny" type="button" data-action="add-era-stage" data-era="${esc(eraId)}">${esc(lang() === "ru" ? "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043f\u043e\u0434-\u044d\u0442\u0430\u043f" : "Add sub-stage")}</button></div><div class="era-editor-section__body">${stages.length ? stages.map(({ stage, index }) => stageCard(stage, index)).join("") : `<p class="empty-state">${esc(lang() === "ru" ? "\u0417\u0434\u0435\u0441\u044c \u043f\u043e\u043a\u0430 \u043d\u0435\u0442 \u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u043e\u0432." : "No sub-stages in this section yet.")}</p>`}</div></section>`;
+  }).join("");
 }
 
 function renderFooter() {
@@ -947,6 +1074,7 @@ function renderPickerResults() {
   const results = pickerEntries().filter((entry) => {
     if (pickerState?.mode === "item" && pickerState.filter !== "all-items") {
       const group = GROUPS.find((item) => item.key === (pickerState.groupKey || "weapon")) || GROUPS[0];
+      if (query) return true;
       return group.cats.includes(entry.category || "__unknown__");
     }
     if (pickerState?.mode === "description" && pickerState.filter && pickerState.filter !== "all") {
@@ -976,15 +1104,13 @@ function handlePickerSelection(contentId) {
 
   if (pickerState.mode === "description") {
     const fieldRole = pickerState.fieldRole || "stage-description";
-    const field = refs.accordion.querySelector(`[data-role="${fieldRole}"][data-stage-index="${pickerState.stageIndex}"]${Number.isInteger(pickerState.subStageIndex) ? `[data-substage-index="${pickerState.subStageIndex}"]` : ""}`);
+    const field = refs.accordion.querySelector(`[data-role="${fieldRole}"][data-stage-index="${pickerState.stageIndex}"]`);
     if (field) {
       insertAtCursor(field, `{{icon:${contentId}}}`);
       if (fieldRole === "stage-title") {
         state.stages[pickerState.stageIndex].title = field.value;
       } else if (fieldRole === "stage-description") {
         state.stages[pickerState.stageIndex].description = field.value;
-      } else if (fieldRole === "substage-description" && Number.isInteger(pickerState.subStageIndex)) {
-        state.stages[pickerState.stageIndex].subStages[pickerState.subStageIndex].description = field.value;
       }
       saveAndRender();
     }
@@ -1048,6 +1174,7 @@ async function loadSupport() {
     support.searchItems.forEach((entry) => support.itemMap.set(entry.id, entry));
     support.items.forEach((entry) => support.itemMap.set(entry.id, { ...support.itemMap.get(entry.id), ...entry }));
     support.bosses.forEach((entry) => support.bossMap.set(entry.id, entry));
+    applySupportEnhancements();
     supportState = "loaded";
   } catch (error) {
     console.error(error);
@@ -1088,8 +1215,7 @@ refs.classes.addEventListener("change", (event) => {
   saveAndRender();
 });
 refs.addStage.addEventListener("click", () => {
-  state.stages.push(stageTemplate({ title: `${s("stage")} ${state.stages.length + 1}` }));
-  openStage = state.stages.length - 1;
+  insertStageForEra("prehardmode");
   saveAndRender();
 });
 
@@ -1100,12 +1226,17 @@ refs.accordion.addEventListener("click", (event) => {
   const stageIndex = Number(button.dataset.stageIndex);
   const itemIndex = Number(button.dataset.itemIndex);
   const bossIndex = Number(button.dataset.bossIndex);
-  const subStageIndex = Number(button.dataset.substageIndex);
   const groupKey = button.dataset.groupKey;
   const subgroupId = button.dataset.subgroupId || "";
   const groupId = button.dataset.groupId || "";
+  const eraId = button.dataset.era || "";
   const stage = state.stages[stageIndex];
 
+  if (action === "add-era-stage") {
+    insertStageForEra(eraId || "prehardmode");
+    saveAndRender();
+    return;
+  }
   if (action === "toggle-stage") {
     openStage = stageIndex;
     renderAll();
@@ -1113,15 +1244,19 @@ refs.accordion.addEventListener("click", (event) => {
   }
   if (!stage) return;
 
-  if (action === "move-stage-up" && stageIndex > 0) {
-    moveStage(stageIndex, stageIndex - 1);
-    openStage = stageIndex - 1;
+  if (action === "move-stage-up") {
+    const targetIndex = previousStageIndexInEra(stageIndex);
+    if (targetIndex === -1) return;
+    moveStage(stageIndex, targetIndex);
+    openStage = targetIndex;
     saveAndRender();
     return;
   }
-  if (action === "move-stage-down" && stageIndex < state.stages.length - 1) {
-    moveStage(stageIndex, stageIndex + 1);
-    openStage = stageIndex + 1;
+  if (action === "move-stage-down") {
+    const targetIndex = nextStageIndexInEra(stageIndex);
+    if (targetIndex === -1) return;
+    moveStage(stageIndex, targetIndex);
+    openStage = targetIndex;
     saveAndRender();
     return;
   }
@@ -1133,17 +1268,6 @@ refs.accordion.addEventListener("click", (event) => {
   }
   if (action === "open-title-picker") return openPicker("description", { stageIndex, fieldRole: "stage-title" });
   if (action === "open-description-picker") return openPicker("description", { stageIndex, fieldRole: "stage-description" });
-  if (action === "add-substage") {
-    stage.subStages.push(subStageTemplate());
-    saveAndRender();
-    return;
-  }
-  if (action === "remove-substage") {
-    stage.subStages.splice(subStageIndex, 1);
-    saveAndRender();
-    return;
-  }
-  if (action === "open-substage-description-picker") return openPicker("description", { stageIndex, subStageIndex, fieldRole: "substage-description" });
   if (action === "add-boss") {
     return openPicker("boss", { stageIndex });
   }
@@ -1182,8 +1306,6 @@ refs.accordion.addEventListener("input", (event) => {
   if (!stage) return;
   if (role === "stage-title") stage.title = target.value;
   if (role === "stage-description") stage.description = target.value;
-  if (role === "substage-title") stage.subStages[Number(target.dataset.substageIndex)].title = target.value;
-  if (role === "substage-description") stage.subStages[Number(target.dataset.substageIndex)].description = target.value;
   if (role === "accessory-group-title") {
     const group = (stage.accessoryGroups || []).find((entry) => entry.id === target.dataset.groupId);
     if (group) group.title = target.value;

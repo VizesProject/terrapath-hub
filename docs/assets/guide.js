@@ -12,6 +12,47 @@ const GROUPS = [
   { key: "buff", cats: ["buff", "ammo"], en: "Buffs / Consumables", ru: "\u0411\u0430\u0444\u0444\u044b / \u0420\u0430\u0441\u0445\u043e\u0434\u043d\u0438\u043a\u0438" }
 ];
 
+const ERA_IDS = ["prehardmode", "hardmode", "postmoonlord"];
+
+const ARMOR_SET_ALIASES = [
+  { id: "Terraria/WoodHelmet", internalName: "WoodHelmet", displayName: "Wood armor set", displayNameRu: "\u0414\u0435\u0440\u0435\u0432\u044f\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/CopperHelmet", internalName: "CopperHelmet", displayName: "Copper armor set", displayNameRu: "\u041c\u0435\u0434\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/TinHelmet", internalName: "TinHelmet", displayName: "Tin armor set", displayNameRu: "\u041e\u043b\u043e\u0432\u044f\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/IronHelmet", internalName: "IronHelmet", displayName: "Iron armor set", displayNameRu: "\u0416\u0435\u043b\u0435\u0437\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/LeadHelmet", internalName: "LeadHelmet", displayName: "Lead armor set", displayNameRu: "\u0421\u0432\u0438\u043d\u0446\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/SilverHelmet", internalName: "SilverHelmet", displayName: "Silver armor set", displayNameRu: "\u0421\u0435\u0440\u0435\u0431\u0440\u044f\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/TungstenHelmet", internalName: "TungstenHelmet", displayName: "Tungsten armor set", displayNameRu: "\u0412\u043e\u043b\u044c\u0444\u0440\u0430\u043c\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/GoldHelmet", internalName: "GoldHelmet", displayName: "Gold armor set", displayNameRu: "\u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/PlatinumHelmet", internalName: "PlatinumHelmet", displayName: "Platinum armor set", displayNameRu: "\u041f\u043b\u0430\u0442\u0438\u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/CactusHelmet", internalName: "CactusHelmet", displayName: "Cactus armor set", displayNameRu: "\u041a\u0430\u043a\u0442\u0443\u0441\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/ShadowHelmet", internalName: "ShadowHelmet", displayName: "Shadow armor set", displayNameRu: "\u0422\u0435\u043d\u0435\u0432\u043e\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/CrimsonHelmet", internalName: "CrimsonHelmet", displayName: "Crimson armor set", displayNameRu: "\u041a\u0440\u0438\u043c\u0437\u043e\u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/MeteorHelmet", internalName: "MeteorHelmet", displayName: "Meteor armor set", displayNameRu: "\u041c\u0435\u0442\u0435\u043e\u0440\u0438\u0442\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/MoltenHelmet", internalName: "MoltenHelmet", displayName: "Molten armor set", displayNameRu: "\u0420\u0430\u0441\u043f\u043b\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/NecroHelmet", internalName: "NecroHelmet", displayName: "Necro armor set", displayNameRu: "\u041d\u0435\u043a\u0440\u043e-\u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442" },
+  { id: "Terraria/JungleHat", internalName: "JungleHat", displayName: "Jungle armor set", displayNameRu: "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0434\u0436\u0443\u043d\u0433\u043b\u0435\u0439" },
+  { id: "Terraria/BeeHeadgear", internalName: "BeeHeadgear", displayName: "Bee armor set", displayNameRu: "\u041f\u0447\u0435\u043b\u0438\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/ObsidianHelm", internalName: "ObsidianHelm", displayName: "Obsidian armor set", displayNameRu: "\u041e\u0431\u0441\u0438\u0434\u0438\u0430\u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/CobaltHelmet", internalName: "CobaltHelmet", displayName: "Cobalt armor set", displayNameRu: "\u041a\u043e\u0431\u0430\u043b\u044c\u0442\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/PalladiumHelmet", internalName: "PalladiumHelmet", displayName: "Palladium armor set", displayNameRu: "\u041f\u0430\u043b\u043b\u0430\u0434\u0438\u0435\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/MythrilHelmet", internalName: "MythrilHelmet", displayName: "Mythril armor set", displayNameRu: "\u041c\u0438\u0444\u0440\u0438\u043b\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/OrichalcumHelmet", internalName: "OrichalcumHelmet", displayName: "Orichalcum armor set", displayNameRu: "\u041e\u0440\u0438\u0445\u0430\u043b\u043a\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/AdamantiteHelmet", internalName: "AdamantiteHelmet", displayName: "Adamantite armor set", displayNameRu: "\u0410\u0434\u0430\u043c\u0430\u043d\u0442\u0438\u0442\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/TitaniumHelmet", internalName: "TitaniumHelmet", displayName: "Titanium armor set", displayNameRu: "\u0422\u0438\u0442\u0430\u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/HallowedHelmet", internalName: "HallowedHelmet", displayName: "Hallowed armor set", displayNameRu: "\u0421\u0432\u044f\u0449\u0435\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/ChlorophyteHelmet", internalName: "ChlorophyteHelmet", displayName: "Chlorophyte armor set", displayNameRu: "\u0425\u043b\u043e\u0440\u043e\u0444\u0438\u0442\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/TurtleHelmet", internalName: "TurtleHelmet", displayName: "Turtle armor set", displayNameRu: "\u0427\u0435\u0440\u0435\u043f\u0430\u0448\u0438\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/BeetleHelmet", internalName: "BeetleHelmet", displayName: "Beetle armor set", displayNameRu: "\u0416\u0443\u043a\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/SpectreHood", internalName: "SpectreHood", displayName: "Spectre armor set", displayNameRu: "\u0421\u043f\u0435\u043a\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/ShroomiteHeadgear", internalName: "ShroomiteHeadgear", displayName: "Shroomite armor set", displayNameRu: "\u0428\u0440\u0443\u043c\u0438\u0442\u043e\u0432\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/TikiMask", internalName: "TikiMask", displayName: "Tiki armor set", displayNameRu: "\u0422\u0438\u043a\u0438-\u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442" },
+  { id: "Terraria/SpookyHelmet", internalName: "SpookyHelmet", displayName: "Spooky armor set", displayNameRu: "\u041f\u0443\u0433\u0430\u044e\u0449\u0438\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/SolarFlareHelmet", internalName: "SolarFlareHelmet", displayName: "Solar Flare armor set", displayNameRu: "\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/VortexHelmet", internalName: "VortexHelmet", displayName: "Vortex armor set", displayNameRu: "\u0412\u0438\u0445\u0440\u0435\u0432\u043e\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/NebulaHelmet", internalName: "NebulaHelmet", displayName: "Nebula armor set", displayNameRu: "\u0422\u0443\u043c\u0430\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
+  { id: "Terraria/StardustHelmet", internalName: "StardustHelmet", displayName: "Stardust armor set", displayNameRu: "\u0417\u0432\u0435\u0437\u0434\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" }
+];
+
 const supportIndex = { itemMap: new Map(), bossMap: new Map() };
 let currentGuide = null;
 
@@ -65,6 +106,25 @@ function groupLabel(category) {
   return group?.[language()] || group?.en || category;
 }
 
+function eraLabel(eraId) {
+  return progression?.eraLabel?.(eraId, language()) || eraId;
+}
+
+function supportSearchIcon(internalName) {
+  return `assets/icons/terraria/search-items/${String(internalName || "").toLowerCase()}.png`;
+}
+
+function applySupportEnhancements() {
+  ARMOR_SET_ALIASES.forEach((alias) => {
+    const previous = supportIndex.itemMap.get(alias.id) || {};
+    supportIndex.itemMap.set(alias.id, {
+      ...previous,
+      ...alias,
+      icon: previous.icon || alias.icon || supportSearchIcon(alias.internalName)
+    });
+  });
+}
+
 function params() {
   return new URLSearchParams(window.location.search);
 }
@@ -99,6 +159,8 @@ async function tryLoadSupport(modName) {
       }
     } catch {}
   }
+
+  if (modName === "Terraria") applySupportEnhancements();
 }
 
 function resolveName(contentId, map) {
@@ -166,18 +228,13 @@ function renderItemGroups(items) {
   }).join("");
 }
 
-function renderSubStages(stage) {
-  if (Array.isArray(stage.subStages) && stage.subStages.length) {
-    return `<section class="preview-block"><h4>${escapeHtml(language() === "ru" ? "\u041f\u043e\u0434\u044d\u0442\u0430\u043f\u044b" : "Sub-stages")}</h4><div class="substage-preview-list">${stage.subStages.map((subStage) => `<article class="substage-card"><strong>${renderRichText(subStage.title || "")}</strong>${subStage.description ? `<div class="stage-description">${renderRichText(subStage.description)}</div>` : ""}</article>`).join("")}</div></section>`;
-  }
-
-  if (!(stage.progressionMarkers || []).length) return "";
-
-  return `<section class="preview-block"><h4>${escapeHtml(t("common.labelMarkers"))}</h4><div class="marker-preview-grid">${stage.progressionMarkers.map((markerId) => {
-    const marker = progression?.getMarker?.(markerId);
-    if (!marker) return "";
-    return `<article class="marker-preview-card"><img class="content-icon" src="${escapeHtml(marker.icon)}" alt="${escapeHtml(progression.markerTitle(markerId, language()))}" loading="lazy"><div><strong>${escapeHtml(progression.markerTitle(markerId, language()))}</strong><p>${escapeHtml(progression.markerDescription(markerId, language()))}</p></div></article>`;
-  }).join("")}</div></section>`;
+function stagesByEra(stages) {
+  const groups = new Map(ERA_IDS.map((eraId) => [eraId, []]));
+  (stages || []).forEach((stage) => {
+    const eraId = ERA_IDS.includes(stage.era) ? stage.era : "prehardmode";
+    groups.get(eraId).push(stage);
+  });
+  return ERA_IDS.map((eraId) => ({ eraId, stages: groups.get(eraId) || [] })).filter((entry) => entry.stages.length);
 }
 
 function renderBosses(stage) {
@@ -189,6 +246,10 @@ function renderBosses(stage) {
   }).join("")}</div></section>`;
 }
 
+function renderStageEntry(stage) {
+  return `<article class="stage-preview stage-preview--stacked"><section class="stage-overview"><div class="stage-preview__header"><h3>${renderRichText(stage.title)}</h3><span class="meta-pill">${escapeHtml(t("guide.itemPicks", { count: (stage.items || []).length }))}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${renderBosses(stage)}</section><section class="stage-loadout">${renderItemGroups(stage.items)}</section></article>`;
+}
+
 function renderGuide(guide) {
   const metaPills = [
     `${t("common.labelClass")}: ${(guide.classTags || []).map(classLabel).join(", ")}`,
@@ -197,7 +258,7 @@ function renderGuide(guide) {
     `${(guide.stages || []).length} ${t("common.labelStages").toLowerCase()}`
   ];
 
-  guidePage.innerHTML = `<header class="guide-preview__header"><h1 class="guide-title">${escapeHtml(guide.title)}</h1><p>${escapeHtml(guide.summary || "")}</p><div class="chip-row">${metaPills.map((pill) => `<span class="meta-pill">${escapeHtml(pill)}</span>`).join("")}</div></header><div class="guide-preview__stages">${(guide.stages || []).map((stage) => `<article class="stage-preview"><section class="stage-overview"><div class="stage-preview__header"><h3>${renderRichText(stage.title)}</h3><span class="meta-pill">${escapeHtml(t("guide.itemPicks", { count: (stage.items || []).length }))}</span></div><div class="chip-row"><span class="meta-pill">${escapeHtml(t("common.labelEra"))}: ${escapeHtml(progression?.eraLabel?.(stage.era || "prehardmode", language()) || stage.era || "")}</span></div>${stage.description ? `<div class="stage-description">${renderRichText(stage.description)}</div>` : ""}${renderSubStages(stage)}${renderBosses(stage)}</section><section class="stage-loadout">${renderItemGroups(stage.items)}</section></article>`).join("")}</div>`;
+  guidePage.innerHTML = `<header class="guide-preview__header"><h1 class="guide-title">${escapeHtml(guide.title)}</h1><p>${escapeHtml(guide.summary || "")}</p><div class="chip-row">${metaPills.map((pill) => `<span class="meta-pill">${escapeHtml(pill)}</span>`).join("")}</div></header><div class="guide-preview__stages">${stagesByEra(guide.stages).map((eraGroup) => `<section class="era-preview"><header class="era-preview__header"><h2>${escapeHtml(eraLabel(eraGroup.eraId))}</h2><span class="meta-pill">${escapeHtml(`${eraGroup.stages.length} ${language() === "ru" ? "\u043f\u043e\u0434-\u044d\u0442\u0430\u043f\u043e\u0432" : "sub-stages"}`)}</span></header><div class="era-preview__list">${eraGroup.stages.map(renderStageEntry).join("")}</div></section>`).join("")}</div>`;
 }
 
 async function init() {

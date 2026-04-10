@@ -9,20 +9,14 @@
   "classTags": ["melee"],
   "guideTags": ["starter", "example", "vanilla"],
   "createdAt": "2026-04-09",
-  "updatedAt": "2026-04-09",
+  "updatedAt": "2026-04-10",
   "stages": [
     {
-      "id": "first-night",
-      "title": "First Night",
+      "id": "before-eye-of-cthulhu",
+      "title": "Before Eye of Cthulhu",
       "era": "prehardmode",
-      "description": "Collect basic mobility, find surface chests, and prepare a safe arena before fighting early bosses.",
-      "subStages": [
-        {
-          "title": "Before Eye of Cthulhu",
-          "description": "Focus on movement, a simple arena, and one reliable early melee option."
-        }
-      ],
-      "bossRefs": [],
+      "description": "Focus on movement, a simple arena, and one reliable melee option before the first important boss.",
+      "bossRefs": ["Terraria/EyeofCthulhu"],
       "items": [
         {
           "itemId": "Terraria/EnchantedBoomerang",
@@ -37,6 +31,37 @@
           "itemId": "Terraria/HermesBoots",
           "category": "accessory",
           "subgroup": "Mobility"
+        }
+      ]
+    },
+    {
+      "id": "early-hardmode-mechs",
+      "title": "Before Mechanical Bosses",
+      "era": "hardmode",
+      "description": "Replace your pre-hardmode setup with a first hardmode armor set and at least one strong melee weapon.",
+      "bossRefs": ["Terraria/TheDestroyer", "Terraria/TheTwins", "Terraria/SkeletronPrime"],
+      "items": [
+        {
+          "itemId": "Terraria/CobaltHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/WarriorEmblem",
+          "category": "accessory",
+          "subgroup": "Damage"
+        }
+      ]
+    },
+    {
+      "id": "final-post-moon-lord",
+      "title": "Final Endgame Setup",
+      "era": "postmoonlord",
+      "description": "After Moon Lord, switch into a final melee set and polish the build with the last upgrades.",
+      "bossRefs": ["Terraria/MoonLordCore"],
+      "items": [
+        {
+          "itemId": "Terraria/SolarFlareHelmet",
+          "category": "armor"
         }
       ]
     }
