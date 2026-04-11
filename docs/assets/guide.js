@@ -9,7 +9,8 @@ const GROUPS = [
   { key: "weapon", cats: ["weapon"], en: "Weapons", ru: "\u041e\u0440\u0443\u0436\u0438\u0435" },
   { key: "armor", cats: ["armor"], en: "Armor sets", ru: "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u044b \u0431\u0440\u043e\u043d\u0438" },
   { key: "accessory", cats: ["accessory"], en: "Accessories", ru: "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b" },
-  { key: "buff", cats: ["buff", "ammo"], en: "Buffs / Consumables", ru: "\u0411\u0430\u0444\u0444\u044b / \u0420\u0430\u0441\u0445\u043e\u0434\u043d\u0438\u043a\u0438" }
+  { key: "buff", cats: ["buff"], en: "Buffs / Consumables", ru: "\u0411\u0430\u0444\u0444\u044b / \u0420\u0430\u0441\u0445\u043e\u0434\u043d\u0438\u043a\u0438" },
+  { key: "other", cats: ["other"], en: "Other", ru: "\u0414\u0440\u0443\u0433\u043e\u0435" }
 ];
 
 const ERA_IDS = ["prehardmode", "hardmode", "postmoonlord"];
@@ -133,6 +134,13 @@ function isBossLikeEntry(entry) {
 function mergeSupportEntry(map, entry) {
   if (!entry?.id) return;
   map.set(entry.id, { ...(map.get(entry.id) || {}), ...entry });
+}
+
+function normalizeGuideCategory(entry) {
+  const category = String(entry?.category || "").toLowerCase();
+  if (["weapon", "armor", "accessory", "buff", "other"].includes(category)) return category;
+  if (category === "ammo") return "buff";
+  return "other";
 }
 
 function applySupportEnhancements() {
@@ -318,7 +326,7 @@ function renderItemsList(entries) {
 }
 
 function renderGroupColumn(group, items) {
-  const entries = (items || []).filter((entry) => group.cats.includes(entry.category || "other"));
+  const entries = (items || []).filter((entry) => normalizeGuideCategory(entry) === group.key);
   if (!entries.length) {
     return `<section class="wiki-column"><header class="wiki-column__head">${escapeHtml(groupLabel(group.key))}</header><div class="wiki-column__body"></div></section>`;
   }
@@ -340,7 +348,10 @@ function renderGroupColumn(group, items) {
 }
 
 function renderLoadout(items) {
-  return `<section class="wiki-loadout"><div class="wiki-loadout__grid">${GROUPS.map((group) => renderGroupColumn(group, items)).join("")}</div></section>`;
+  const primaryGroups = GROUPS.filter((group) => group.key !== "other");
+  const otherGroup = GROUPS.find((group) => group.key === "other");
+  const otherEntries = (items || []).filter((entry) => normalizeGuideCategory(entry) === "other");
+  return `<section class="wiki-loadout"><div class="wiki-loadout__grid">${primaryGroups.map((group) => renderGroupColumn(group, items)).join("")}</div>${otherGroup && otherEntries.length ? `<div class="wiki-loadout__extra">${renderGroupColumn(otherGroup, items)}</div>` : ""}</section>`;
 }
 
 function stagesByEra(stages) {
@@ -385,7 +396,9 @@ async function init() {
     return;
   }
 
+  await tryLoadSupport("Terraria");
   for (const modName of catalogEntry.requiredMods || []) {
+    if (modName === "Terraria") continue;
     await tryLoadSupport(modName);
   }
 

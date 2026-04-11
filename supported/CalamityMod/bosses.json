@@ -11,7 +11,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/anahita.png"
+      "icon": "assets/icons/calamity/bosses/anahita.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Anahita"
     },
     {
       "id": "CalamityMod/Apollo",
@@ -22,62 +24,22 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/apollo.png"
+      "icon": "assets/icons/calamity/bosses/apollo.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Apollo"
     },
     {
       "id": "CalamityMod/AresBody",
       "kind": "boss",
       "internalName": "AresBody",
-      "displayName": "Ares Body",
+      "displayName": "Ares",
       "displayNameRu": "XF-09 Ares",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/aresbody.png"
-    },
-    {
-      "id": "CalamityMod/AresGaussNuke",
-      "kind": "boss",
-      "internalName": "AresGaussNuke",
-      "displayName": "Ares Gauss Nuke",
-      "displayNameRu": "XF-09 Ares Gauss Nuke",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/aresgaussnuke.png"
-    },
-    {
-      "id": "CalamityMod/AresLaserCannon",
-      "kind": "boss",
-      "internalName": "AresLaserCannon",
-      "displayName": "Ares Laser Cannon",
-      "displayNameRu": "XF-09 Ares Laser Cannon",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/areslasercannon.png"
-    },
-    {
-      "id": "CalamityMod/AresPlasmaFlamethrower",
-      "kind": "boss",
-      "internalName": "AresPlasmaFlamethrower",
-      "displayName": "Ares Plasma Flamethrower",
-      "displayNameRu": "XF-09 Ares Plasma Cannon",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/aresplasmaflamethrower.png"
-    },
-    {
-      "id": "CalamityMod/AresTeslaCannon",
-      "kind": "boss",
-      "internalName": "AresTeslaCannon",
-      "displayName": "Ares Tesla Cannon",
-      "displayNameRu": "XF-09 Ares Tesla Cannon",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/aresteslacannon.png"
+      "icon": "assets/icons/calamity/bosses/aresbody.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/AresBody"
     },
     {
       "id": "CalamityMod/Artemis",
@@ -88,7 +50,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/artemis.png"
+      "icon": "assets/icons/calamity/bosses/artemis.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Artemis"
     },
     {
       "id": "CalamityMod/AstrumAureus",
@@ -99,51 +63,22 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/astrumaureus.png"
-    },
-    {
-      "id": "CalamityMod/AstrumDeusBody",
-      "kind": "boss",
-      "internalName": "AstrumDeusBody",
-      "displayName": "Astrum Deus Body",
-      "displayNameRu": "Astrum Deus",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/astrumdeusbody.png"
+      "icon": "assets/icons/calamity/bosses/astrumaureus.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/AstrumAureus"
     },
     {
       "id": "CalamityMod/AstrumDeusHead",
       "kind": "boss",
       "internalName": "AstrumDeusHead",
-      "displayName": "Astrum Deus Head",
+      "displayName": "Astrum Deus",
       "displayNameRu": "Astrum Deus",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/astrumdeushead.png"
-    },
-    {
-      "id": "CalamityMod/AstrumDeusTail",
-      "kind": "boss",
-      "internalName": "AstrumDeusTail",
-      "displayName": "Astrum Deus Tail",
-      "displayNameRu": "Astrum Deus",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/astrumdeustail.png"
-    },
-    {
-      "id": "CalamityMod/BrainIllusion",
-      "kind": "boss",
-      "internalName": "BrainIllusion",
-      "displayName": "Brain Illusion",
-      "displayNameRu": "Brain Illusion",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/brainillusion.png"
+      "icon": "assets/icons/calamity/bosses/astrumdeushead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/AstrumDeusHead"
     },
     {
       "id": "CalamityMod/BrimstoneElemental",
@@ -154,7 +89,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/brimstoneelemental.png"
+      "icon": "assets/icons/calamity/bosses/brimstoneelemental.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/BrimstoneElemental"
     },
     {
       "id": "CalamityMod/CalamitasClone",
@@ -165,7 +102,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/calamitasclone.png"
+      "icon": "assets/icons/calamity/bosses/calamitasclone.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/CalamitasClone"
     },
     {
       "id": "CalamityMod/CeaselessVoid",
@@ -176,7 +115,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/ceaselessvoid.png"
+      "icon": "assets/icons/calamity/bosses/ceaselessvoid.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/CeaselessVoid"
     },
     {
       "id": "CalamityMod/Crabulon",
@@ -187,7 +128,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/crabulon.png"
+      "icon": "assets/icons/calamity/bosses/crabulon.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Crabulon"
     },
     {
       "id": "CalamityMod/Cryogen",
@@ -198,73 +141,22 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/cryogen.png"
-    },
-    {
-      "id": "CalamityMod/DesertScourgeBody",
-      "kind": "boss",
-      "internalName": "DesertScourgeBody",
-      "displayName": "Desert Scourge Body",
-      "displayNameRu": "Desert Scourge",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/desertscourgebody.png"
+      "icon": "assets/icons/calamity/bosses/cryogen.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Cryogen"
     },
     {
       "id": "CalamityMod/DesertScourgeHead",
       "kind": "boss",
       "internalName": "DesertScourgeHead",
-      "displayName": "Desert Scourge Head",
+      "displayName": "Desert Scourge",
       "displayNameRu": "Desert Scourge",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/desertscourgehead.png"
-    },
-    {
-      "id": "CalamityMod/DesertScourgeTail",
-      "kind": "boss",
-      "internalName": "DesertScourgeTail",
-      "displayName": "Desert Scourge Tail",
-      "displayNameRu": "Desert Scourge",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/desertscourgetail.png"
-    },
-    {
-      "id": "CalamityMod/DevourerofGodsBody",
-      "kind": "boss",
-      "internalName": "DevourerofGodsBody",
-      "displayName": "Devourerof Gods Body",
-      "displayNameRu": "The Devourer of Gods",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/devourerofgodsbody.png"
-    },
-    {
-      "id": "CalamityMod/DevourerofGodsHead",
-      "kind": "boss",
-      "internalName": "DevourerofGodsHead",
-      "displayName": "Devourerof Gods Head",
-      "displayNameRu": "The Devourer of Gods",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/devourerofgodshead.png"
-    },
-    {
-      "id": "CalamityMod/DevourerofGodsTail",
-      "kind": "boss",
-      "internalName": "DevourerofGodsTail",
-      "displayName": "Devourerof Gods Tail",
-      "displayNameRu": "The Devourer of Gods",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/devourerofgodstail.png"
+      "icon": "assets/icons/calamity/bosses/desertscourgehead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/DesertScourgeHead"
     },
     {
       "id": "CalamityMod/Dragonfolly",
@@ -275,18 +167,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/dragonfolly.png"
-    },
-    {
-      "id": "CalamityMod/FalseBrain",
-      "kind": "boss",
-      "internalName": "FalseBrain",
-      "displayName": "False Brain",
-      "displayNameRu": "False Brain",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/falsebrain.png"
+      "icon": "assets/icons/calamity/bosses/dragonfolly.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Dragonfolly"
     },
     {
       "id": "CalamityMod/HiveMind",
@@ -297,7 +180,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/hivemind.png"
+      "icon": "assets/icons/calamity/bosses/hivemind.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/HiveMind"
     },
     {
       "id": "CalamityMod/Leviathan",
@@ -308,7 +193,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/leviathan.png"
+      "icon": "assets/icons/calamity/bosses/leviathan.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Leviathan"
     },
     {
       "id": "CalamityMod/OldDuke",
@@ -319,18 +206,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/oldduke.png"
-    },
-    {
-      "id": "CalamityMod/PerforatorHive",
-      "kind": "boss",
-      "internalName": "PerforatorHive",
-      "displayName": "Perforator Hive",
-      "displayNameRu": "The Perforator Hive",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/perforatorhive.png"
+      "icon": "assets/icons/calamity/bosses/oldduke.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/OldDuke"
     },
     {
       "id": "CalamityMod/PlaguebringerGoliath",
@@ -341,7 +219,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/plaguebringergoliath.png"
+      "icon": "assets/icons/calamity/bosses/plaguebringergoliath.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/PlaguebringerGoliath"
     },
     {
       "id": "CalamityMod/Polterghast",
@@ -352,29 +232,35 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/polterghast.png"
+      "icon": "assets/icons/calamity/bosses/polterghast.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Polterghast"
     },
     {
       "id": "CalamityMod/PrimordialWyrmHead",
       "kind": "boss",
       "internalName": "PrimordialWyrmHead",
-      "displayName": "Primordial Wyrm Head",
+      "displayName": "Primordial Wyrm",
       "displayNameRu": "Primordial Wyrm",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/primordialwyrmhead.png"
+      "icon": "assets/icons/calamity/bosses/primordialwyrmhead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/PrimordialWyrmHead"
     },
     {
       "id": "CalamityMod/ProfanedGuardianCommander",
       "kind": "boss",
       "internalName": "ProfanedGuardianCommander",
-      "displayName": "Profaned Guardian Commander",
+      "displayName": "Profaned Guardians",
       "displayNameRu": "Guardian Commander",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/profanedguardiancommander.png"
+      "icon": "assets/icons/calamity/bosses/profanedguardiancommander.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/ProfanedGuardianCommander"
     },
     {
       "id": "CalamityMod/Providence",
@@ -385,18 +271,22 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/providence.png"
+      "icon": "assets/icons/calamity/bosses/providence.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Providence"
     },
     {
       "id": "CalamityMod/RavagerBody",
       "kind": "boss",
       "internalName": "RavagerBody",
-      "displayName": "Ravager Body",
+      "displayName": "Ravager",
       "displayNameRu": "Ravager",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/ravagerbody.png"
+      "icon": "assets/icons/calamity/bosses/ravagerbody.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/RavagerBody"
     },
     {
       "id": "CalamityMod/Signus",
@@ -407,106 +297,87 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/signus.png"
-    },
-    {
-      "id": "CalamityMod/SlimeGodCore",
-      "kind": "boss",
-      "internalName": "SlimeGodCore",
-      "displayName": "Slime God Core",
-      "displayNameRu": "The Slime God",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/slimegodcore.png"
-    },
-    {
-      "id": "CalamityMod/StormWeaverBody",
-      "kind": "boss",
-      "internalName": "StormWeaverBody",
-      "displayName": "Storm Weaver Body",
-      "displayNameRu": "Storm Weaver",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/stormweaverbody.png"
+      "icon": "assets/icons/calamity/bosses/signus.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Signus"
     },
     {
       "id": "CalamityMod/StormWeaverHead",
       "kind": "boss",
       "internalName": "StormWeaverHead",
-      "displayName": "Storm Weaver Head",
+      "displayName": "Storm Weaver",
       "displayNameRu": "Storm Weaver",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/stormweaverhead.png"
-    },
-    {
-      "id": "CalamityMod/StormWeaverTail",
-      "kind": "boss",
-      "internalName": "StormWeaverTail",
-      "displayName": "Storm Weaver Tail",
-      "displayNameRu": "Storm Weaver",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/stormweavertail.png"
+      "icon": "assets/icons/calamity/bosses/stormweaverhead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/StormWeaverHead"
     },
     {
       "id": "CalamityMod/SupremeCalamitas",
       "kind": "boss",
       "internalName": "SupremeCalamitas",
-      "displayName": "Supreme Calamitas",
+      "displayName": "Supreme Witch, Calamitas",
       "displayNameRu": "Supreme Witch, Calamitas",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/supremecalamitas.png"
-    },
-    {
-      "id": "CalamityMod/ThanatosBody1",
-      "kind": "boss",
-      "internalName": "ThanatosBody1",
-      "displayName": "Thanatos Body1",
-      "displayNameRu": "XM-05 Thanatos",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/thanatosbody1.png"
-    },
-    {
-      "id": "CalamityMod/ThanatosBody2",
-      "kind": "boss",
-      "internalName": "ThanatosBody2",
-      "displayName": "Thanatos Body2",
-      "displayNameRu": "XM-05 Thanatos",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/thanatosbody2.png"
+      "icon": "assets/icons/calamity/bosses/supremecalamitas.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/SupremeCalamitas"
     },
     {
       "id": "CalamityMod/ThanatosHead",
       "kind": "boss",
       "internalName": "ThanatosHead",
-      "displayName": "Thanatos Head",
+      "displayName": "Thanatos",
       "displayNameRu": "XM-05 Thanatos",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/thanatoshead.png"
+      "icon": "assets/icons/calamity/bosses/thanatoshead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/ThanatosHead"
     },
     {
-      "id": "CalamityMod/ThanatosTail",
+      "id": "CalamityMod/DevourerofGodsHead",
       "kind": "boss",
-      "internalName": "ThanatosTail",
-      "displayName": "Thanatos Tail",
-      "displayNameRu": "XM-05 Thanatos",
+      "internalName": "DevourerofGodsHead",
+      "displayName": "The Devourer of Gods",
+      "displayNameRu": "The Devourer of Gods",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/thanatostail.png"
+      "icon": "assets/icons/calamity/bosses/devourerofgodshead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/DevourerofGodsHead"
+    },
+    {
+      "id": "CalamityMod/PerforatorHive",
+      "kind": "boss",
+      "internalName": "PerforatorHive",
+      "displayName": "The Perforators",
+      "displayNameRu": "The Perforator Hive",
+      "tags": [
+        "boss"
+      ],
+      "icon": "assets/icons/calamity/bosses/perforatorhive.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/PerforatorHive"
+    },
+    {
+      "id": "CalamityMod/SlimeGodCore",
+      "kind": "boss",
+      "internalName": "SlimeGodCore",
+      "displayName": "The Slime God",
+      "displayNameRu": "The Slime God",
+      "tags": [
+        "boss"
+      ],
+      "icon": "assets/icons/calamity/bosses/slimegodcore.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/SlimeGodCore"
     },
     {
       "id": "CalamityMod/THELORDE",
@@ -517,7 +388,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/thelorde.png"
+      "icon": "assets/icons/calamity/bosses/thelorde.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/THELORDE"
     },
     {
       "id": "CalamityMod/Yharon",
@@ -528,7 +401,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/yharon.png"
+      "icon": "assets/icons/calamity/bosses/yharon.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Yharon"
     },
     {
       "id": "CalamityMod/CloudElemental",
@@ -539,7 +414,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/cloudelemental.png"
+      "icon": "assets/icons/calamity/bosses/cloudelemental.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/CragmawMire",
@@ -550,7 +426,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/cragmawmire.png"
+      "icon": "assets/icons/calamity/bosses/cragmawmire.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/EarthElemental",
@@ -561,7 +438,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/earthelemental.png"
+      "icon": "assets/icons/calamity/bosses/earthelemental.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/GiantClam",
@@ -572,7 +450,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/giantclam.png"
+      "icon": "assets/icons/calamity/bosses/giantclam.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/GreatSandShark",
@@ -583,7 +462,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/greatsandshark.png"
+      "icon": "assets/icons/calamity/bosses/greatsandshark.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/Mauler",
@@ -594,7 +474,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/mauler.png"
+      "icon": "assets/icons/calamity/bosses/mauler.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/NuclearTerror",
@@ -605,7 +486,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/nuclearterror.png"
+      "icon": "assets/icons/calamity/bosses/nuclearterror.png",
+      "bossPickerEligible": true
     }
   ]
 }

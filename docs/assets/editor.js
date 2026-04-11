@@ -24,7 +24,8 @@ const GROUPS = [
   { key: "weapon", cats: ["weapon"], en: "Weapons", ru: "\u041e\u0440\u0443\u0436\u0438\u0435" },
   { key: "armor", cats: ["armor"], en: "Armor sets", ru: "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u044b \u0431\u0440\u043e\u043d\u0438" },
   { key: "accessory", cats: ["accessory"], en: "Accessories", ru: "\u0410\u043a\u0441\u0435\u0441\u0441\u0443\u0430\u0440\u044b" },
-  { key: "buff", cats: ["buff", "ammo"], en: "Buffs / Consumables", ru: "\u0411\u0430\u0444\u0444\u044b / \u0420\u0430\u0441\u0445\u043e\u0434\u043d\u0438\u043a\u0438" }
+  { key: "buff", cats: ["buff"], en: "Buffs / Consumables", ru: "\u0411\u0430\u0444\u0444\u044b / \u0420\u0430\u0441\u0445\u043e\u0434\u043d\u0438\u043a\u0438" },
+  { key: "other", cats: ["other"], en: "Other", ru: "\u0414\u0440\u0443\u0433\u043e\u0435" }
 ];
 
 const ERA_IDS = ["prehardmode", "hardmode", "postmoonlord"];
@@ -263,6 +264,7 @@ let submissionMessage = "";
 let supportState = "loading";
 let pickerState = null;
 let support = { items: [], bosses: [], content: [], itemMap: new Map(), bossMap: new Map(), contentMap: new Map() };
+let supportRequestToken = 0;
 let state = loadDraft() || sampleState();
 
 function lang() {
@@ -428,9 +430,18 @@ function mergeSupportEntry(map, entry) {
   map.set(entry.id, { ...(map.get(entry.id) || {}), ...entry });
 }
 
+function normalizePickerCategory(entry) {
+  const category = String(entry?.category || "").toLowerCase();
+  if (["weapon", "armor", "accessory", "buff", "other"].includes(category)) return category;
+  if (category === "ammo") return "buff";
+  if (["material", "ore", "tool", "mount", "pet", "furniture"].includes(category)) return "other";
+  return null;
+}
+
 function inferSearchCategory(entry) {
-  if (!entry) return "weapon";
-  if (entry.category && ALLOWED_ITEM_CATEGORIES.has(entry.category)) return entry.category;
+  if (!entry) return "other";
+  const normalized = normalizePickerCategory(entry);
+  if (normalized) return normalized;
 
   const haystack = [entry.displayName, entry.displayNameRu, entry.internalName]
     .filter(Boolean)
@@ -443,7 +454,7 @@ function inferSearchCategory(entry) {
     }
   }
 
-  return "weapon";
+  return "other";
 }
 
 function applySupportEnhancements() {
@@ -480,8 +491,12 @@ function applySupportEnhancements() {
     });
   }
 
-  support.items = [...support.itemMap.values()];
-  support.bosses = [...support.bossMap.values()];
+  support.items = [...support.itemMap.values()]
+    .filter((entry) => entry.icon)
+    .sort((left, right) => localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" }));
+  support.bosses = [...support.bossMap.values()]
+    .filter((entry) => entry.icon && entry.bossPickerEligible)
+    .sort((left, right) => localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" }));
   support.content = [...support.contentMap.values()]
     .filter((entry) => entry.icon)
     .sort((left, right) => localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" }));
@@ -496,8 +511,12 @@ function visibleSearchItems() {
 function inferItemCategory(entry, groupKey) {
   const group = GROUPS.find((item) => item.key === groupKey) || GROUPS[0];
   if (groupKey) return group.cats[0];
-  if (entry?.category && entry.category !== "other") return entry.category;
-  return group.cats[0];
+  return inferSearchCategory(entry);
+}
+
+function requestedSupportMods() {
+  const supportedMods = new Set(MODS.map((entry) => entry.value));
+  return uniq(["Terraria", ...(state.requiredMods || [])]).filter((modName) => supportedMods.has(modName));
 }
 
 function normalizeRichTextSource(value) {
@@ -1153,6 +1172,7 @@ function resetDraft() {
   lastSavedAt = null;
   submissionMessage = s("draftReset");
   renderAll();
+  loadSupport();
 }
 
 function openPicker(mode, options = {}) {
@@ -1202,13 +1222,7 @@ function pickerFilterOptions() {
     ];
   }
   if (pickerState.mode === "boss") return [{ key: "boss", label: s("bosses") }];
-  if (pickerState.groupKey === "armor") {
-    return [{ key: "armor", label: groupLabel("armor") }];
-  }
-  return [
-    { key: pickerState.groupKey || "weapon", label: groupLabel(pickerState.groupKey || "weapon") },
-    { key: "all-items", label: lang() === "ru" ? "\u0412\u0441\u0435 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u044b" : "All items" }
-  ];
+  return [{ key: pickerState.groupKey || "weapon", label: groupLabel(pickerState.groupKey || "weapon") }];
 }
 
 function renderPickerFilters() {
@@ -1224,12 +1238,12 @@ function pickerEntries() {
   if (pickerState.mode === "boss") {
     return support.bosses.map((entry) => ({ ...entry, pickerType: "boss" }));
   }
-  if (pickerState.groupKey === "armor") {
-    return visibleSearchItems()
-      .filter((entry) => ARMOR_SET_IDS.has(entry.id))
-      .map((entry) => ({ ...entry, pickerType: "item" }));
+  if (pickerState.groupKey === "other") {
+    return visibleSearchItems().map((entry) => ({ ...entry, pickerType: "item" }));
   }
-  return visibleSearchItems().map((entry) => ({ ...entry, pickerType: "item" }));
+  return visibleSearchItems()
+    .filter((entry) => inferSearchCategory(entry) === (pickerState.groupKey || "weapon"))
+    .map((entry) => ({ ...entry, pickerType: "item" }));
 }
 
 function pickerSearchText(entry) {
@@ -1239,11 +1253,6 @@ function pickerSearchText(entry) {
 function renderPickerResults() {
   const query = refs.pickerSearchInput.value.trim().toLowerCase();
   const results = pickerEntries().filter((entry) => {
-    if (pickerState?.mode === "item" && pickerState.filter !== "all-items") {
-      const group = GROUPS.find((item) => item.key === (pickerState.groupKey || "weapon")) || GROUPS[0];
-      if (query) return true;
-      return group.cats.includes(entry.category || "__unknown__");
-    }
     if (pickerState?.mode === "description" && pickerState.filter && pickerState.filter !== "all") {
       return entry.pickerType === pickerState.filter;
     }
@@ -1388,19 +1397,19 @@ async function loadModSupport(modName) {
 }
 
 async function loadSupport() {
+  const requestToken = ++supportRequestToken;
   supportState = "loading";
   renderSupportStatus();
 
   try {
     support = { items: [], bosses: [], content: [], itemMap: new Map(), bossMap: new Map(), contentMap: new Map() };
-    await Promise.all([
-      loadModSupport("Terraria"),
-      loadModSupport("CalamityMod")
-    ]);
+    await Promise.all(requestedSupportMods().map((modName) => loadModSupport(modName)));
+    if (requestToken !== supportRequestToken) return;
     applySupportEnhancements();
     supportState = "loaded";
   } catch (error) {
     console.error(error);
+    if (requestToken !== supportRequestToken) return;
     supportState = "failed";
   }
 
@@ -1429,6 +1438,7 @@ refs.mods.addEventListener("change", (event) => {
   state.requiredMods = toggle(state.requiredMods, input.value);
   if (!state.requiredMods.length) state.requiredMods = ["Terraria"];
   saveAndRender();
+  loadSupport();
 });
 refs.classes.addEventListener("change", (event) => {
   const input = event.target;

@@ -1784,6 +1784,10 @@ select:focus,
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.guide-reader .wiki-loadout__extra {
+  border-top: 1px solid var(--border);
+}
+
 .guide-reader .wiki-column {
   border-left: 1px solid var(--border);
   display: grid;

@@ -76,7 +76,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/anahita.png"
+      "icon": "assets/icons/calamity/bosses/anahita.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Anahita"
     },
     {
       "id": "CalamityMod/Apollo",
@@ -87,18 +89,22 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/apollo.png"
+      "icon": "assets/icons/calamity/bosses/apollo.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Apollo"
     },
     {
       "id": "CalamityMod/AresBody",
       "kind": "boss",
       "internalName": "AresBody",
-      "displayName": "Ares Body",
+      "displayName": "Ares",
       "displayNameRu": "XF-09 Ares",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/aresbody.png"
+      "icon": "assets/icons/calamity/bosses/aresbody.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/AresBody"
     },
     {
       "id": "CalamityMod/AresGaussNuke",
@@ -109,7 +115,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/aresgaussnuke.png"
+      "icon": "assets/icons/calamity/bosses/aresgaussnuke.png",
+      "canonicalBossId": "CalamityMod/AresBody",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/AresLaserCannon",
@@ -120,7 +128,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/areslasercannon.png"
+      "icon": "assets/icons/calamity/bosses/areslasercannon.png",
+      "canonicalBossId": "CalamityMod/AresBody",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/AresPlasmaFlamethrower",
@@ -131,7 +141,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/aresplasmaflamethrower.png"
+      "icon": "assets/icons/calamity/bosses/aresplasmaflamethrower.png",
+      "canonicalBossId": "CalamityMod/AresBody",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/AresTeslaCannon",
@@ -142,7 +154,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/aresteslacannon.png"
+      "icon": "assets/icons/calamity/bosses/aresteslacannon.png",
+      "canonicalBossId": "CalamityMod/AresBody",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/Artemis",
@@ -153,7 +167,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/artemis.png"
+      "icon": "assets/icons/calamity/bosses/artemis.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Artemis"
     },
     {
       "id": "CalamityMod/AstrumAureus",
@@ -164,7 +180,22 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/astrumaureus.png"
+      "icon": "assets/icons/calamity/bosses/astrumaureus.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/AstrumAureus"
+    },
+    {
+      "id": "CalamityMod/AstrumDeusHead",
+      "kind": "boss",
+      "internalName": "AstrumDeusHead",
+      "displayName": "Astrum Deus",
+      "displayNameRu": "Astrum Deus",
+      "tags": [
+        "boss"
+      ],
+      "icon": "assets/icons/calamity/bosses/astrumdeushead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/AstrumDeusHead"
     },
     {
       "id": "CalamityMod/AstrumDeusBody",
@@ -175,18 +206,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/astrumdeusbody.png"
-    },
-    {
-      "id": "CalamityMod/AstrumDeusHead",
-      "kind": "boss",
-      "internalName": "AstrumDeusHead",
-      "displayName": "Astrum Deus Head",
-      "displayNameRu": "Astrum Deus",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/astrumdeushead.png"
+      "icon": "assets/icons/calamity/bosses/astrumdeusbody.png",
+      "canonicalBossId": "CalamityMod/AstrumDeusHead",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/AstrumDeusTail",
@@ -197,7 +219,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/astrumdeustail.png"
+      "icon": "assets/icons/calamity/bosses/astrumdeustail.png",
+      "canonicalBossId": "CalamityMod/AstrumDeusHead",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/BrainIllusion",
@@ -208,7 +232,8 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/brainillusion.png"
+      "icon": "assets/icons/calamity/bosses/brainillusion.png",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/BrimstoneElemental",
@@ -219,7 +244,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/brimstoneelemental.png"
+      "icon": "assets/icons/calamity/bosses/brimstoneelemental.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/BrimstoneElemental"
     },
     {
       "id": "CalamityMod/CalamitasClone",
@@ -230,7 +257,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/calamitasclone.png"
+      "icon": "assets/icons/calamity/bosses/calamitasclone.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/CalamitasClone"
     },
     {
       "id": "CalamityMod/CeaselessVoid",
@@ -241,7 +270,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/ceaselessvoid.png"
+      "icon": "assets/icons/calamity/bosses/ceaselessvoid.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/CeaselessVoid"
     },
     {
       "id": "CalamityMod/Crabulon",
@@ -252,7 +283,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/crabulon.png"
+      "icon": "assets/icons/calamity/bosses/crabulon.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Crabulon"
     },
     {
       "id": "CalamityMod/Cryogen",
@@ -263,7 +296,22 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/cryogen.png"
+      "icon": "assets/icons/calamity/bosses/cryogen.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Cryogen"
+    },
+    {
+      "id": "CalamityMod/DesertScourgeHead",
+      "kind": "boss",
+      "internalName": "DesertScourgeHead",
+      "displayName": "Desert Scourge",
+      "displayNameRu": "Desert Scourge",
+      "tags": [
+        "boss"
+      ],
+      "icon": "assets/icons/calamity/bosses/desertscourgehead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/DesertScourgeHead"
     },
     {
       "id": "CalamityMod/DesertScourgeBody",
@@ -274,18 +322,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/desertscourgebody.png"
-    },
-    {
-      "id": "CalamityMod/DesertScourgeHead",
-      "kind": "boss",
-      "internalName": "DesertScourgeHead",
-      "displayName": "Desert Scourge Head",
-      "displayNameRu": "Desert Scourge",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/desertscourgehead.png"
+      "icon": "assets/icons/calamity/bosses/desertscourgebody.png",
+      "canonicalBossId": "CalamityMod/DesertScourgeHead",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/DesertScourgeTail",
@@ -296,7 +335,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/desertscourgetail.png"
+      "icon": "assets/icons/calamity/bosses/desertscourgetail.png",
+      "canonicalBossId": "CalamityMod/DesertScourgeHead",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/DevourerofGodsBody",
@@ -307,18 +348,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/devourerofgodsbody.png"
-    },
-    {
-      "id": "CalamityMod/DevourerofGodsHead",
-      "kind": "boss",
-      "internalName": "DevourerofGodsHead",
-      "displayName": "Devourerof Gods Head",
-      "displayNameRu": "The Devourer of Gods",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/devourerofgodshead.png"
+      "icon": "assets/icons/calamity/bosses/devourerofgodsbody.png",
+      "canonicalBossId": "CalamityMod/DevourerofGodsHead",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/DevourerofGodsTail",
@@ -329,7 +361,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/devourerofgodstail.png"
+      "icon": "assets/icons/calamity/bosses/devourerofgodstail.png",
+      "canonicalBossId": "CalamityMod/DevourerofGodsHead",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/Dragonfolly",
@@ -340,7 +374,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/dragonfolly.png"
+      "icon": "assets/icons/calamity/bosses/dragonfolly.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Dragonfolly"
     },
     {
       "id": "CalamityMod/FalseBrain",
@@ -351,7 +387,8 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/falsebrain.png"
+      "icon": "assets/icons/calamity/bosses/falsebrain.png",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/HiveMind",
@@ -362,7 +399,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/hivemind.png"
+      "icon": "assets/icons/calamity/bosses/hivemind.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/HiveMind"
     },
     {
       "id": "CalamityMod/Leviathan",
@@ -373,7 +412,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/leviathan.png"
+      "icon": "assets/icons/calamity/bosses/leviathan.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Leviathan"
     },
     {
       "id": "CalamityMod/OldDuke",
@@ -384,18 +425,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/oldduke.png"
-    },
-    {
-      "id": "CalamityMod/PerforatorHive",
-      "kind": "boss",
-      "internalName": "PerforatorHive",
-      "displayName": "Perforator Hive",
-      "displayNameRu": "The Perforator Hive",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/perforatorhive.png"
+      "icon": "assets/icons/calamity/bosses/oldduke.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/OldDuke"
     },
     {
       "id": "CalamityMod/PlaguebringerGoliath",
@@ -406,7 +438,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/plaguebringergoliath.png"
+      "icon": "assets/icons/calamity/bosses/plaguebringergoliath.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/PlaguebringerGoliath"
     },
     {
       "id": "CalamityMod/Polterghast",
@@ -417,29 +451,35 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/polterghast.png"
+      "icon": "assets/icons/calamity/bosses/polterghast.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Polterghast"
     },
     {
       "id": "CalamityMod/PrimordialWyrmHead",
       "kind": "boss",
       "internalName": "PrimordialWyrmHead",
-      "displayName": "Primordial Wyrm Head",
+      "displayName": "Primordial Wyrm",
       "displayNameRu": "Primordial Wyrm",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/primordialwyrmhead.png"
+      "icon": "assets/icons/calamity/bosses/primordialwyrmhead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/PrimordialWyrmHead"
     },
     {
       "id": "CalamityMod/ProfanedGuardianCommander",
       "kind": "boss",
       "internalName": "ProfanedGuardianCommander",
-      "displayName": "Profaned Guardian Commander",
+      "displayName": "Profaned Guardians",
       "displayNameRu": "Guardian Commander",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/profanedguardiancommander.png"
+      "icon": "assets/icons/calamity/bosses/profanedguardiancommander.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/ProfanedGuardianCommander"
     },
     {
       "id": "CalamityMod/Providence",
@@ -450,18 +490,22 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/providence.png"
+      "icon": "assets/icons/calamity/bosses/providence.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Providence"
     },
     {
       "id": "CalamityMod/RavagerBody",
       "kind": "boss",
       "internalName": "RavagerBody",
-      "displayName": "Ravager Body",
+      "displayName": "Ravager",
       "displayNameRu": "Ravager",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/ravagerbody.png"
+      "icon": "assets/icons/calamity/bosses/ravagerbody.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/RavagerBody"
     },
     {
       "id": "CalamityMod/Signus",
@@ -472,18 +516,22 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/signus.png"
+      "icon": "assets/icons/calamity/bosses/signus.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Signus"
     },
     {
-      "id": "CalamityMod/SlimeGodCore",
+      "id": "CalamityMod/StormWeaverHead",
       "kind": "boss",
-      "internalName": "SlimeGodCore",
-      "displayName": "Slime God Core",
-      "displayNameRu": "The Slime God",
+      "internalName": "StormWeaverHead",
+      "displayName": "Storm Weaver",
+      "displayNameRu": "Storm Weaver",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/slimegodcore.png"
+      "icon": "assets/icons/calamity/bosses/stormweaverhead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/StormWeaverHead"
     },
     {
       "id": "CalamityMod/StormWeaverBody",
@@ -494,18 +542,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/stormweaverbody.png"
-    },
-    {
-      "id": "CalamityMod/StormWeaverHead",
-      "kind": "boss",
-      "internalName": "StormWeaverHead",
-      "displayName": "Storm Weaver Head",
-      "displayNameRu": "Storm Weaver",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/stormweaverhead.png"
+      "icon": "assets/icons/calamity/bosses/stormweaverbody.png",
+      "canonicalBossId": "CalamityMod/StormWeaverHead",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/StormWeaverTail",
@@ -516,18 +555,35 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/stormweavertail.png"
+      "icon": "assets/icons/calamity/bosses/stormweavertail.png",
+      "canonicalBossId": "CalamityMod/StormWeaverHead",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/SupremeCalamitas",
       "kind": "boss",
       "internalName": "SupremeCalamitas",
-      "displayName": "Supreme Calamitas",
+      "displayName": "Supreme Witch, Calamitas",
       "displayNameRu": "Supreme Witch, Calamitas",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/supremecalamitas.png"
+      "icon": "assets/icons/calamity/bosses/supremecalamitas.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/SupremeCalamitas"
+    },
+    {
+      "id": "CalamityMod/ThanatosHead",
+      "kind": "boss",
+      "internalName": "ThanatosHead",
+      "displayName": "Thanatos",
+      "displayNameRu": "XM-05 Thanatos",
+      "tags": [
+        "boss"
+      ],
+      "icon": "assets/icons/calamity/bosses/thanatoshead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/ThanatosHead"
     },
     {
       "id": "CalamityMod/ThanatosBody1",
@@ -538,7 +594,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/thanatosbody1.png"
+      "icon": "assets/icons/calamity/bosses/thanatosbody1.png",
+      "canonicalBossId": "CalamityMod/ThanatosHead",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/ThanatosBody2",
@@ -549,18 +607,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/thanatosbody2.png"
-    },
-    {
-      "id": "CalamityMod/ThanatosHead",
-      "kind": "boss",
-      "internalName": "ThanatosHead",
-      "displayName": "Thanatos Head",
-      "displayNameRu": "XM-05 Thanatos",
-      "tags": [
-        "boss"
-      ],
-      "icon": "assets/icons/calamity/bosses/thanatoshead.png"
+      "icon": "assets/icons/calamity/bosses/thanatosbody2.png",
+      "canonicalBossId": "CalamityMod/ThanatosHead",
+      "bossPickerEligible": false
     },
     {
       "id": "CalamityMod/ThanatosTail",
@@ -571,7 +620,48 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/thanatostail.png"
+      "icon": "assets/icons/calamity/bosses/thanatostail.png",
+      "canonicalBossId": "CalamityMod/ThanatosHead",
+      "bossPickerEligible": false
+    },
+    {
+      "id": "CalamityMod/DevourerofGodsHead",
+      "kind": "boss",
+      "internalName": "DevourerofGodsHead",
+      "displayName": "The Devourer of Gods",
+      "displayNameRu": "The Devourer of Gods",
+      "tags": [
+        "boss"
+      ],
+      "icon": "assets/icons/calamity/bosses/devourerofgodshead.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/DevourerofGodsHead"
+    },
+    {
+      "id": "CalamityMod/PerforatorHive",
+      "kind": "boss",
+      "internalName": "PerforatorHive",
+      "displayName": "The Perforators",
+      "displayNameRu": "The Perforator Hive",
+      "tags": [
+        "boss"
+      ],
+      "icon": "assets/icons/calamity/bosses/perforatorhive.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/PerforatorHive"
+    },
+    {
+      "id": "CalamityMod/SlimeGodCore",
+      "kind": "boss",
+      "internalName": "SlimeGodCore",
+      "displayName": "The Slime God",
+      "displayNameRu": "The Slime God",
+      "tags": [
+        "boss"
+      ],
+      "icon": "assets/icons/calamity/bosses/slimegodcore.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/SlimeGodCore"
     },
     {
       "id": "CalamityMod/THELORDE",
@@ -582,7 +672,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/thelorde.png"
+      "icon": "assets/icons/calamity/bosses/thelorde.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/THELORDE"
     },
     {
       "id": "CalamityMod/Yharon",
@@ -593,7 +685,9 @@
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/yharon.png"
+      "icon": "assets/icons/calamity/bosses/yharon.png",
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityMod/Yharon"
     },
     {
       "id": "CalamityMod/AcidRain",
@@ -639,7 +733,7 @@
       "internalName": "AbandonedSlimeStaff",
       "displayName": "Abandoned Slime Staff",
       "displayNameRu": "Abandoned Slime Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -707,7 +801,7 @@
       "internalName": "AbyssShellFossil",
       "displayName": "Abyss Shell Fossil",
       "displayNameRu": "Abyss Shell Fossil",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -1325,7 +1419,7 @@
       "internalName": "AncientIceChunk",
       "displayName": "Ancient Ice Chunk",
       "displayNameRu": "Ancient Ice Chunk",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -1351,7 +1445,7 @@
       "internalName": "AnechoicCoating",
       "displayName": "Anechoic Coating",
       "displayNameRu": "Anechoic Coating",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -1947,7 +2041,7 @@
       "internalName": "AstralInjection",
       "displayName": "Astral Injection",
       "displayNameRu": "Astral Injection",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -2011,7 +2105,7 @@
       "internalName": "AstralSand",
       "displayName": "Astral Sand",
       "displayNameRu": "Astral Sand",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -2089,7 +2183,7 @@
       "internalName": "AstrophageItem",
       "displayName": "Astrophage Item",
       "displayNameRu": "Astrophage",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -2221,7 +2315,7 @@
       "internalName": "AureusCell",
       "displayName": "Aureus Cell",
       "displayNameRu": "Aureus Cell",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -2407,7 +2501,7 @@
       "internalName": "Baguette",
       "displayName": "Baguette",
       "displayNameRu": "Baguette",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -2472,7 +2566,7 @@
       "internalName": "Barberry",
       "displayName": "Barberry",
       "displayNameRu": "Barberry",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -2522,7 +2616,7 @@
       "internalName": "BearsEye",
       "displayName": "Bears Eye",
       "displayNameRu": "Bear's Eye",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -2560,7 +2654,7 @@
       "internalName": "BelladonnaSpiritStaff",
       "displayName": "Belladonna Spirit Staff",
       "displayNameRu": "Belladonna Spirit Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -2624,7 +2718,7 @@
       "internalName": "BlackHawkRemote",
       "displayName": "Black Hawk Remote",
       "displayNameRu": "Black Hawk Remote",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -2663,7 +2757,7 @@
       "internalName": "BlasphemousDonut",
       "displayName": "Blasphemous Donut",
       "displayNameRu": "Blasphemous Donut",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -2765,7 +2859,7 @@
       "internalName": "BloodRune",
       "displayName": "Blood Rune",
       "displayNameRu": "Blood Rune",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -2778,7 +2872,7 @@
       "internalName": "Bloodfin",
       "displayName": "Bloodfin",
       "displayNameRu": "Bloodfin",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -2791,7 +2885,7 @@
       "internalName": "BloodfireArrow",
       "displayName": "Bloodfire Arrow",
       "displayNameRu": "Bloodfire Arrow",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -2805,7 +2899,7 @@
       "internalName": "BloodfireBullet",
       "displayName": "Bloodfire Bullet",
       "displayNameRu": "Bloodfire Bullet",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -2940,7 +3034,7 @@
       "internalName": "BloodyMary",
       "displayName": "Bloody Mary",
       "displayNameRu": "Bloody Mary",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -2953,7 +3047,7 @@
       "internalName": "BloodyVein",
       "displayName": "Bloody Vein",
       "displayNameRu": "Bloody Vein",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -3261,7 +3355,7 @@
       "internalName": "BrimstoneJewel",
       "displayName": "Brimstone Jewel",
       "displayNameRu": "Brimstone Jewel",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -3286,7 +3380,7 @@
       "internalName": "BrittleStarStaff",
       "displayName": "Brittle Star Staff",
       "displayNameRu": "Brittle Star Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -3312,7 +3406,7 @@
       "internalName": "BubonicRound",
       "displayName": "Bubonic Round",
       "displayNameRu": "Bubonic Round",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -3406,7 +3500,7 @@
       "internalName": "BurrowerController",
       "displayName": "Burrower Controller",
       "displayNameRu": "Burrower Beacon",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -3444,7 +3538,7 @@
       "internalName": "CalamarisLament",
       "displayName": "Calamaris Lament",
       "displayNameRu": "Calamari's Lament",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -3497,7 +3591,7 @@
       "internalName": "CaribbeanRum",
       "displayName": "Caribbean Rum",
       "displayNameRu": "Caribbean Rum",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -3536,7 +3630,7 @@
       "internalName": "CausticStaff",
       "displayName": "Caustic Staff",
       "displayNameRu": "Caustic Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -3640,7 +3734,7 @@
       "internalName": "CharredRelic",
       "displayName": "Charred Relic",
       "displayNameRu": "Charred Relic",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -3678,7 +3772,7 @@
       "internalName": "ChromaticOrb",
       "displayName": "Chromatic Orb",
       "displayNameRu": "Chromatic Orb",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -3703,7 +3797,7 @@
       "internalName": "CinderArrow",
       "displayName": "Cinder Arrow",
       "displayNameRu": "Cinder Arrow",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -3717,7 +3811,7 @@
       "internalName": "CinderBlossomStaff",
       "displayName": "Cinder Blossom Staff",
       "displayNameRu": "Cinder Blossom Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -3743,7 +3837,7 @@
       "internalName": "CinnamonRoll",
       "displayName": "Cinnamon Roll",
       "displayNameRu": "Cinnamon Roll",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -3909,7 +4003,7 @@
       "internalName": "Cometfruit",
       "displayName": "Cometfruit",
       "displayNameRu": "Cometfruit",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -4064,7 +4158,7 @@
       "internalName": "CorroslimeStaff",
       "displayName": "Corroslime Staff",
       "displayNameRu": "Corroslime Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4077,7 +4171,7 @@
       "internalName": "CorvidHarbringerStaff",
       "displayName": "Corvid Harbringer Staff",
       "displayNameRu": "Corvid Harbinger Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4103,7 +4197,7 @@
       "internalName": "CosmicImmaterializer",
       "displayName": "Cosmic Immaterializer",
       "displayNameRu": "Cosmic Immaterializer",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4129,7 +4223,7 @@
       "internalName": "CosmicPlushie",
       "displayName": "Cosmic Plushie",
       "displayNameRu": "Cosmic Plushie",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -4167,7 +4261,7 @@
       "internalName": "CosmicViperEngine",
       "displayName": "Cosmic Viper Engine",
       "displayNameRu": "Cosmic Viper Engine",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4180,7 +4274,7 @@
       "internalName": "Cosmilamp",
       "displayName": "Cosmilamp",
       "displayNameRu": "Cosmilamp",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4297,7 +4391,7 @@
       "internalName": "CrimslimeStaff",
       "displayName": "Crimslime Staff",
       "displayNameRu": "Crimslime Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4464,7 +4558,7 @@
       "internalName": "DaedalusGolemStaff",
       "displayName": "Daedalus Golem Staff",
       "displayNameRu": "Daedalus Golem Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4562,7 +4656,7 @@
       "internalName": "DankStaff",
       "displayName": "Dank Staff",
       "displayNameRu": "Dank Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4638,7 +4732,7 @@
       "internalName": "DazzlingStabberStaff",
       "displayName": "Dazzling Stabber Staff",
       "displayNameRu": "Dazzling Stabber Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4702,7 +4796,7 @@
       "internalName": "DeathstareRod",
       "displayName": "Deathstare Rod",
       "displayNameRu": "Deathstare Rod",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4766,7 +4860,7 @@
       "internalName": "DeepseaStaff",
       "displayName": "Deepsea Staff",
       "displayNameRu": "Deepsea Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -4817,7 +4911,7 @@
       "internalName": "DeliciousMeat",
       "displayName": "Delicious Meat",
       "displayNameRu": "Delicious Meat",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -5195,7 +5289,7 @@
       "internalName": "DragonbloodDisgorger",
       "displayName": "Dragonblood Disgorger",
       "displayNameRu": "Dragonblood Disgorger",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -5312,7 +5406,7 @@
       "internalName": "DryadsTear",
       "displayName": "Dryads Tear",
       "displayNameRu": "Dryad's Tear",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -5339,7 +5433,7 @@
       "internalName": "Dunesand",
       "displayName": "Dunesand",
       "displayNameRu": "Dunesand",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -5566,7 +5660,7 @@
       "internalName": "ElysianArrow",
       "displayName": "Elysian Arrow",
       "displayNameRu": "Elysian Arrow",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -5657,7 +5751,7 @@
       "internalName": "EnchantedButterfly",
       "displayName": "Enchanted Butterfly",
       "displayNameRu": "Enchanted Butterfly",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -5669,7 +5763,7 @@
       "internalName": "EnchantedConch",
       "displayName": "Enchanted Conch",
       "displayNameRu": "Enchanted Conch",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -5707,7 +5801,7 @@
       "internalName": "EndoHydraStaff",
       "displayName": "Endo Hydra Staff",
       "displayNameRu": "Endo Hydra Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -5720,7 +5814,7 @@
       "internalName": "Endogenesis",
       "displayName": "Endogenesis",
       "displayNameRu": "Endogenesis",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -5733,7 +5827,7 @@
       "internalName": "EntropysVigil",
       "displayName": "Entropys Vigil",
       "displayNameRu": "Entropy's Vigil",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -5810,7 +5904,7 @@
       "internalName": "EtherealSubjugator",
       "displayName": "Ethereal Subjugator",
       "displayNameRu": "Ethereal Subjugator",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -5835,7 +5929,7 @@
       "internalName": "EutrophicSand",
       "displayName": "Eutrophic Sand",
       "displayNameRu": "Eutrophic Sand",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -5873,7 +5967,7 @@
       "internalName": "Everclear",
       "displayName": "Everclear",
       "displayNameRu": "Everclear",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -5899,7 +5993,7 @@
       "internalName": "EvergreenGin",
       "displayName": "Evergreen Gin",
       "displayNameRu": "Evergreen Gin",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -6028,7 +6122,7 @@
       "internalName": "EyeOfNight",
       "displayName": "Eye Of Night",
       "displayNameRu": "Eye of Night",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -6272,7 +6366,7 @@
       "internalName": "Fireball",
       "displayName": "Fireball",
       "displayNameRu": "Fireball",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -6401,7 +6495,7 @@
       "internalName": "FlashRound",
       "displayName": "Flash Round",
       "displayNameRu": "Flash Round",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -6454,7 +6548,7 @@
       "internalName": "FleshOfInfidelity",
       "displayName": "Flesh Of Infidelity",
       "displayNameRu": "Flesh of Infidelity",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -6492,7 +6586,7 @@
       "internalName": "FlowersOfMortality",
       "displayName": "Flowers Of Mortality",
       "displayNameRu": "Flowers of Mortality",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -6556,7 +6650,7 @@
       "internalName": "ForgottenApexWand",
       "displayName": "Forgotten Apex Wand",
       "displayNameRu": "Forgotten Apex Wand",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -6569,7 +6663,7 @@
       "internalName": "ForgottenDragonEgg",
       "displayName": "Forgotten Dragon Egg",
       "displayNameRu": "Forgotten Dragon Egg",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -6607,7 +6701,7 @@
       "internalName": "FoxDrive",
       "displayName": "Fox Drive",
       "displayNameRu": "Fox Drive",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -6683,7 +6777,7 @@
       "internalName": "FrostBlossomStaff",
       "displayName": "Frost Blossom Staff",
       "displayNameRu": "Frost Blossom Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -6747,7 +6841,7 @@
       "internalName": "FrostyBatBottle",
       "displayName": "Frosty Bat Bottle",
       "displayNameRu": "Frosty Bat Bottle",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -6913,7 +7007,7 @@
       "internalName": "GammaHeart",
       "displayName": "Gamma Heart",
       "displayNameRu": "Gamma Heart",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -6926,7 +7020,7 @@
       "internalName": "GastricBelcherStaff",
       "displayName": "Gastric Belcher Staff",
       "displayNameRu": "Gastric Belcher Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -7043,7 +7137,7 @@
       "internalName": "GeyserShell",
       "displayName": "Geyser Shell",
       "displayNameRu": "Geyser Shell",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -7158,7 +7252,7 @@
       "internalName": "GlacialEmbrace",
       "displayName": "Glacial Embrace",
       "displayNameRu": "Glacial Embrace",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -7361,7 +7455,7 @@
       "internalName": "GodSlayerSlug",
       "displayName": "God Slayer Slug",
       "displayNameRu": "God Slayer Slug",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -7645,7 +7739,7 @@
       "internalName": "HailstormBullet",
       "displayName": "Hailstorm Bullet",
       "displayNameRu": "Hailstorm Bullet",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -7685,7 +7779,7 @@
       "internalName": "HallowPointRound",
       "displayName": "Hallow Point Round",
       "displayNameRu": "Hallow-Point Round",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -7774,7 +7868,7 @@
       "internalName": "HauntedScroll",
       "displayName": "Haunted Scroll",
       "displayNameRu": "Haunted Scroll",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -7979,7 +8073,7 @@
       "internalName": "HerringStaff",
       "displayName": "Herring Staff",
       "displayNameRu": "Herring Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -8071,7 +8165,7 @@
       "internalName": "HolyFireBullet",
       "displayName": "Holy Fire Bullet",
       "displayNameRu": "Holy Fire Bullet",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -8244,7 +8338,7 @@
       "internalName": "HyperiusBullet",
       "displayName": "Hyperius Bullet",
       "displayNameRu": "Hyperius Bullet",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -8323,7 +8417,7 @@
       "internalName": "IcicleArrow",
       "displayName": "Icicle Arrow",
       "displayNameRu": "Icicle Arrow",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -8363,7 +8457,7 @@
       "internalName": "IgneousExaltation",
       "displayName": "Igneous Exaltation",
       "displayNameRu": "Igneous Exaltation",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -8413,7 +8507,7 @@
       "internalName": "InfectedRemote",
       "displayName": "Infected Remote",
       "displayNameRu": "Infected Remote",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -8578,7 +8672,7 @@
       "internalName": "Jackfruit",
       "displayName": "Jackfruit",
       "displayNameRu": "Jackfruit",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -8616,7 +8710,7 @@
       "internalName": "JoyfulHeart",
       "displayName": "Joyful Heart",
       "displayNameRu": "Joyful Heart",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -8667,7 +8761,7 @@
       "internalName": "KingofConstellationsTenryu",
       "displayName": "Kingof Constellations Tenryu",
       "displayNameRu": "King of Constellations, Tenry\u016b",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -8770,7 +8864,7 @@
       "internalName": "LegionofCelestia",
       "displayName": "Legionof Celestia",
       "displayNameRu": "Legion of Celestia",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -8796,7 +8890,7 @@
       "internalName": "Levi",
       "displayName": "Levi",
       "displayNameRu": "Levi",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -8912,7 +9006,7 @@
       "internalName": "LiliesOfFinality",
       "displayName": "Lilies Of Finality",
       "displayNameRu": "Lilies of Finality",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -8963,7 +9057,7 @@
       "internalName": "LittleLight",
       "displayName": "Little Light",
       "displayNameRu": "Little Light",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -8987,7 +9081,7 @@
       "internalName": "Lotus",
       "displayName": "Lotus",
       "displayNameRu": "Lotus",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -9279,7 +9373,7 @@
       "internalName": "Mangosteen",
       "displayName": "Mangosteen",
       "displayNameRu": "Mangosteen",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -9305,7 +9399,7 @@
       "internalName": "Manhattan",
       "displayName": "Manhattan",
       "displayNameRu": "Manhattan",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -9331,7 +9425,7 @@
       "internalName": "Margarita",
       "displayName": "Margarita",
       "displayNameRu": "Margarita",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -9357,7 +9451,7 @@
       "internalName": "MarksmanRound",
       "displayName": "Marksman Round",
       "displayNameRu": "Marksman Round",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -9462,7 +9556,7 @@
       "internalName": "McNuggets",
       "displayName": "Mc Nuggets",
       "displayNameRu": "McNuggets",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -9513,7 +9607,7 @@
       "internalName": "Metastasis",
       "displayName": "Metastasis",
       "displayNameRu": "Metastasis",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -9616,7 +9710,7 @@
       "internalName": "MirrorofKalandra",
       "displayName": "Mirrorof Kalandra",
       "displayNameRu": "Mirror of Kalandra",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -9806,7 +9900,7 @@
       "internalName": "Moonshine",
       "displayName": "Moonshine",
       "displayNameRu": "Moonshine",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -9835,7 +9929,7 @@
       "internalName": "MortarRound",
       "displayName": "Mortar Round",
       "displayNameRu": "Mortar Round",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -9849,7 +9943,7 @@
       "internalName": "MoscowMule",
       "displayName": "Moscow Mule",
       "displayNameRu": "Moscow Mule",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -9901,7 +9995,7 @@
       "internalName": "MutatedTruffle",
       "displayName": "Mutated Truffle",
       "displayNameRu": "Mutated Truffle",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -10287,7 +10381,7 @@
       "internalName": "OddMushroom",
       "displayName": "Odd Mushroom",
       "displayNameRu": "Odd Mushroom",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -10339,7 +10433,7 @@
       "internalName": "OldFashioned",
       "displayName": "Old Fashioned",
       "displayNameRu": "Old Fashioned",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -10726,7 +10820,7 @@
       "internalName": "Perdition",
       "displayName": "Perdition",
       "displayNameRu": "Perdition",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -10920,7 +11014,7 @@
       "internalName": "PineapplePet",
       "displayName": "Pineapple Pet",
       "displayNameRu": "Pineapple",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -10932,7 +11026,7 @@
       "internalName": "PlagueCaller",
       "displayName": "Plague Caller",
       "displayNameRu": "Plague Caller",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -11136,7 +11230,7 @@
       "internalName": "PlantationStaff",
       "displayName": "Plantation Staff",
       "displayNameRu": "Plantation Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -11255,7 +11349,7 @@
       "internalName": "PolypSand",
       "displayName": "Polyp Sand",
       "displayNameRu": "Polyp Sand",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -11528,7 +11622,7 @@
       "internalName": "PuffShroom",
       "displayName": "Puff Shroom",
       "displayNameRu": "Puff Shroom",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -11658,7 +11752,7 @@
       "internalName": "PurpleHaze",
       "displayName": "Purple Haze",
       "displayNameRu": "Purple Haze",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -11746,7 +11840,7 @@
       "internalName": "RadiatingCrystal",
       "displayName": "Radiating Crystal",
       "displayNameRu": "Radiating Crystal",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -12113,7 +12207,7 @@
       "internalName": "ResurrectionButterfly",
       "displayName": "Resurrection Butterfly",
       "displayNameRu": "Resurrection Butterfly",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -12189,7 +12283,7 @@
       "internalName": "RomajedaOrchid",
       "displayName": "Romajeda Orchid",
       "displayNameRu": "Romajeda Orchid",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -12250,7 +12344,7 @@
       "internalName": "RottingEyeball",
       "displayName": "Rotting Eyeball",
       "displayNameRu": "Rotting Eyeball",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -12301,7 +12395,7 @@
       "internalName": "RubberMortarRound",
       "displayName": "Rubber Mortar Round",
       "displayNameRu": "Rubber Mortar Round",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -12340,7 +12434,7 @@
       "internalName": "Rum",
       "displayName": "Rum",
       "displayNameRu": "Rum",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -12353,7 +12447,7 @@
       "internalName": "RustedJingleBell",
       "displayName": "Rusted Jingle Bell",
       "displayNameRu": "Rusted Jingle Bell",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -12417,7 +12511,7 @@
       "internalName": "Salak",
       "displayName": "Salak",
       "displayNameRu": "Salak",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -12493,7 +12587,7 @@
       "internalName": "SandSharknadoStaff",
       "displayName": "Sand Sharknado Staff",
       "displayNameRu": "Sand Sharknado Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -12545,7 +12639,7 @@
       "internalName": "SarosPossession",
       "displayName": "Saros Possession",
       "displayNameRu": "Saros Possession",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -12571,7 +12665,7 @@
       "internalName": "ScabRipper",
       "displayName": "Scab Ripper",
       "displayNameRu": "Scab Ripper",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -12737,7 +12831,7 @@
       "internalName": "Screwdriver",
       "displayName": "Screwdriver",
       "displayNameRu": "Screwdriver",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -13070,7 +13164,7 @@
       "internalName": "ShellfishStaff",
       "displayName": "Shellfish Staff",
       "displayNameRu": "Shellfish Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -13199,7 +13293,7 @@
       "internalName": "ShroomBowl",
       "displayName": "Shroom Bowl",
       "displayNameRu": "Shroom Bowl",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "consumable"
@@ -13383,7 +13477,7 @@
       "internalName": "Sirius",
       "displayName": "Sirius",
       "displayNameRu": "Sirius",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -13923,7 +14017,7 @@
       "internalName": "SproutingArrow",
       "displayName": "Sprouting Arrow",
       "displayNameRu": "Sprouting Arrow",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -13963,7 +14057,7 @@
       "internalName": "StaffOfNecrosteocytes",
       "displayName": "Staff Of Necrosteocytes",
       "displayNameRu": "Staff of Necrosteocytes",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -13989,7 +14083,7 @@
       "internalName": "StarBeamRye",
       "displayName": "Star Beam Rye",
       "displayNameRu": "Star Beam Rye",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -14142,7 +14236,7 @@
       "internalName": "StarspawnHelixStaff",
       "displayName": "Starspawn Helix Staff",
       "displayNameRu": "Starspawn Helix Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -14352,7 +14446,7 @@
       "internalName": "StellarTorusStaff",
       "displayName": "Stellar Torus Staff",
       "displayNameRu": "Stellar Torus Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -14432,7 +14526,7 @@
       "internalName": "StormjawStaff",
       "displayName": "Stormjaw Staff",
       "displayNameRu": "Stormjaw Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -14445,7 +14539,7 @@
       "internalName": "StrangeOrb",
       "displayName": "Strange Orb",
       "displayNameRu": "Strange Orb",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -14624,7 +14718,7 @@
       "internalName": "SulphurousSand",
       "displayName": "Sulphurous Sand",
       "displayNameRu": "Sulphurous Sand",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -14650,7 +14744,7 @@
       "internalName": "SunSpiritStaff",
       "displayName": "Sun Spirit Staff",
       "displayNameRu": "Sun Spirit Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -14740,7 +14834,7 @@
       "internalName": "SuspiciousLookingNOU",
       "displayName": "Suspicious Looking NOU",
       "displayNameRu": "Suspicious Looking NO U",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -14804,7 +14898,7 @@
       "internalName": "TacticalPlagueEngine",
       "displayName": "Tactical Plague Engine",
       "displayNameRu": "Tactical Plague Engine",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -15017,7 +15111,7 @@
       "internalName": "TemporalUmbrella",
       "displayName": "Temporal Umbrella",
       "displayNameRu": "Temporal Umbrella",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -15043,7 +15137,7 @@
       "internalName": "Tequila",
       "displayName": "Tequila",
       "displayNameRu": "Tequila",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -15056,7 +15150,7 @@
       "internalName": "TequilaSunrise",
       "displayName": "Tequila Sunrise",
       "displayNameRu": "Tequila Sunrise",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -15339,7 +15433,7 @@
       "internalName": "TheEtomer",
       "displayName": "The Etomer",
       "displayNameRu": "The Etomer",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff"
       ],
@@ -15682,7 +15776,7 @@
       "internalName": "ThiefsDime",
       "displayName": "Thiefs Dime",
       "displayNameRu": "Thief's Dime",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -15825,7 +15919,7 @@
       "internalName": "ToastyBatBottle",
       "displayName": "Toasty Bat Bottle",
       "displayNameRu": "Toasty Bat Bottle",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -15927,7 +16021,7 @@
       "internalName": "TrashmanTrashcan",
       "displayName": "Trashman Trashcan",
       "displayNameRu": "Trash Can",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -16016,7 +16110,7 @@
       "internalName": "TundraFlameBlossomsStaff",
       "displayName": "Tundra Flame Blossoms Staff",
       "displayNameRu": "Tundra Flame Blossoms Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -16337,7 +16431,7 @@
       "internalName": "VanquisherArrow",
       "displayName": "Vanquisher Arrow",
       "displayNameRu": "Vanquisher Arrow",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -16415,7 +16509,7 @@
       "internalName": "VengefulSunStaff",
       "displayName": "Vengeful Sun Staff",
       "displayNameRu": "Vengeful Sun Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -16441,7 +16535,7 @@
       "internalName": "VeriumBolt",
       "displayName": "Verium Bolt",
       "displayNameRu": "Verium Bolt",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "ranged",
@@ -16577,7 +16671,7 @@
       "internalName": "Vigilance",
       "displayName": "Vigilance",
       "displayNameRu": "Vigilance",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -16603,7 +16697,7 @@
       "internalName": "VileFeeder",
       "displayName": "Vile Feeder",
       "displayNameRu": "Vile Feeder",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -16629,7 +16723,7 @@
       "internalName": "ViralSprout",
       "displayName": "Viral Sprout",
       "displayNameRu": "Viral Sprout",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -16642,7 +16736,7 @@
       "internalName": "ViridVanguard",
       "displayName": "Virid Vanguard",
       "displayNameRu": "Virid Vanguard",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -16719,7 +16813,7 @@
       "internalName": "Vodka",
       "displayName": "Vodka",
       "displayNameRu": "Vodka",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -16745,7 +16839,7 @@
       "internalName": "VoidConcentrationStaff",
       "displayName": "Void Concentration Staff",
       "displayNameRu": "Void Concentration Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -16758,7 +16852,7 @@
       "internalName": "VoidEaterMarionette",
       "displayName": "Void Eater Marionette",
       "displayNameRu": "Void Eater Marionette",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -16846,7 +16940,7 @@
       "internalName": "VolcanicSand",
       "displayName": "Volcanic Sand",
       "displayNameRu": "Volcanic Sand",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -16948,7 +17042,7 @@
       "internalName": "WarloksMoonFist",
       "displayName": "Warloks Moon Fist",
       "displayNameRu": "Warloks' Moon Fist",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -17026,7 +17120,7 @@
       "internalName": "Whiskey",
       "displayName": "Whiskey",
       "displayNameRu": "Whiskey",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff",
         "consumable"
@@ -17129,7 +17223,7 @@
       "internalName": "WitherBlossomsStaff",
       "displayName": "Wither Blossoms Staff",
       "displayNameRu": "Wither Blossoms Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -17221,7 +17315,7 @@
       "internalName": "WulfrumController",
       "displayName": "Wulfrum Controller",
       "displayNameRu": "Wulfrum Controller",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -17285,7 +17379,7 @@
       "internalName": "WulfrumMetalScrap",
       "displayName": "Wulfrum Metal Scrap",
       "displayNameRu": "Wulfrum Metal Scrap",
-      "category": "buff",
+      "category": "other",
       "tags": [
         "buff"
       ],
@@ -17425,7 +17519,7 @@
       "internalName": "YharonsKindleStaff",
       "displayName": "Yharons Kindle Staff",
       "displayNameRu": "Yharon's Kindle Staff",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "buff",
         "summoner"
@@ -17477,7 +17571,7 @@
       "internalName": "AerialiteBar",
       "displayName": "Aerialite Bar",
       "displayNameRu": "Aerialite Bar",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17490,7 +17584,7 @@
       "internalName": "AldebaranAlewife",
       "displayName": "Aldebaran Alewife",
       "displayNameRu": "Aldebaran Alewife",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material"
       ],
@@ -17502,7 +17596,7 @@
       "internalName": "AscendantSpiritEssence",
       "displayName": "Ascendant Spirit Essence",
       "displayNameRu": "Ascendant Spirit Essence",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material"
       ],
@@ -17514,7 +17608,7 @@
       "internalName": "AstralBar",
       "displayName": "Astral Bar",
       "displayNameRu": "Astral Bar",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17527,7 +17621,7 @@
       "internalName": "AuricBar",
       "displayName": "Auric Bar",
       "displayNameRu": "Auric Bar",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17540,7 +17634,7 @@
       "internalName": "Barinade",
       "displayName": "Barinade",
       "displayNameRu": "Barinade",
-      "category": "material",
+      "category": "weapon",
       "tags": [
         "material",
         "ranged"
@@ -17553,7 +17647,7 @@
       "internalName": "Barinautical",
       "displayName": "Barinautical",
       "displayNameRu": "Barinautical",
-      "category": "material",
+      "category": "weapon",
       "tags": [
         "material",
         "ranged"
@@ -17566,7 +17660,7 @@
       "internalName": "BarracudaGun",
       "displayName": "Barracuda Gun",
       "displayNameRu": "Barracuda Gun",
-      "category": "material",
+      "category": "weapon",
       "tags": [
         "material",
         "ranged"
@@ -17579,7 +17673,7 @@
       "internalName": "BlastBarrel",
       "displayName": "Blast Barrel",
       "displayNameRu": "Blast Barrel",
-      "category": "material",
+      "category": "weapon",
       "tags": [
         "material",
         "rogue"
@@ -17592,7 +17686,7 @@
       "internalName": "BlissfulBombardier",
       "displayName": "Blissful Bombardier",
       "displayNameRu": "Blissful Bombardier",
-      "category": "material",
+      "category": "weapon",
       "tags": [
         "material",
         "ranged"
@@ -17605,7 +17699,7 @@
       "internalName": "BrinyBaron",
       "displayName": "Briny Baron",
       "displayNameRu": "Briny Baron",
-      "category": "material",
+      "category": "weapon",
       "tags": [
         "material",
         "melee"
@@ -17618,7 +17712,7 @@
       "internalName": "ChargedWulfrumEnergyBarrier",
       "displayName": "Charged Wulfrum Energy Barrier",
       "displayNameRu": "Charged Wulfrum Energy Barrier",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17631,7 +17725,7 @@
       "internalName": "ChargedWulfrumEnergyBarrierWall",
       "displayName": "Charged Wulfrum Energy Barrier Wall",
       "displayNameRu": "Charged Wulfrum Energy Barrier Wall",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17644,7 +17738,7 @@
       "internalName": "CosmiliteBar",
       "displayName": "Cosmilite Bar",
       "displayNameRu": "Cosmilite Bar",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17657,7 +17751,7 @@
       "internalName": "CryonicBar",
       "displayName": "Cryonic Bar",
       "displayNameRu": "Cryonic Bar",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17670,7 +17764,7 @@
       "internalName": "DarksunFragment",
       "displayName": "Darksun Fragment",
       "displayNameRu": "Darksun Fragment",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material"
       ],
@@ -17682,7 +17776,7 @@
       "internalName": "DriftwoodBaroqueCello",
       "displayName": "Driftwood Baroque Cello",
       "displayNameRu": "Driftwood Baroque Cello",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17695,7 +17789,7 @@
       "internalName": "EssenceFlayer",
       "displayName": "Essence Flayer",
       "displayNameRu": "Essence Flayer",
-      "category": "material",
+      "category": "weapon",
       "tags": [
         "material",
         "melee"
@@ -17708,7 +17802,7 @@
       "internalName": "EssenceofEleum",
       "displayName": "Essenceof Eleum",
       "displayNameRu": "Essence of Eleum",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material"
       ],
@@ -17720,7 +17814,7 @@
       "internalName": "EssenceofHavoc",
       "displayName": "Essenceof Havoc",
       "displayNameRu": "Essence of Havoc",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material"
       ],
@@ -17732,7 +17826,7 @@
       "internalName": "EssenceofSunlight",
       "displayName": "Essenceof Sunlight",
       "displayNameRu": "Essence of Sunlight",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material"
       ],
@@ -17744,7 +17838,7 @@
       "internalName": "IceBarrage",
       "displayName": "Ice Barrage",
       "displayNameRu": "Ice Barrage",
-      "category": "material",
+      "category": "weapon",
       "tags": [
         "material",
         "magic"
@@ -17757,7 +17851,7 @@
       "internalName": "PerennialBar",
       "displayName": "Perennial Bar",
       "displayNameRu": "Perennial Bar",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17770,7 +17864,7 @@
       "internalName": "PhoenixFlameBarrage",
       "displayName": "Phoenix Flame Barrage",
       "displayNameRu": "Phoenix Flame Barrage",
-      "category": "material",
+      "category": "weapon",
       "tags": [
         "material",
         "magic"
@@ -17783,7 +17877,7 @@
       "internalName": "ScoriaBar",
       "displayName": "Scoria Bar",
       "displayNameRu": "Scoria Bar",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17796,7 +17890,7 @@
       "internalName": "ShadecrystalBarrage",
       "displayName": "Shadecrystal Barrage",
       "displayNameRu": "Shadecrystal Barrage",
-      "category": "material",
+      "category": "weapon",
       "tags": [
         "material",
         "magic"
@@ -17809,7 +17903,7 @@
       "internalName": "ShadowspecBar",
       "displayName": "Shadowspec Bar",
       "displayNameRu": "Shadowspec Bar",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17822,7 +17916,7 @@
       "internalName": "UelibloomBar",
       "displayName": "Uelibloom Bar",
       "displayNameRu": "Uelibloom Bar",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17835,7 +17929,7 @@
       "internalName": "UnholyEssence",
       "displayName": "Unholy Essence",
       "displayNameRu": "Unholy Essence",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material"
       ],
@@ -17847,7 +17941,7 @@
       "internalName": "WulfrumEnergyBarrier",
       "displayName": "Wulfrum Energy Barrier",
       "displayNameRu": "Wulfrum Energy Barrier",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17860,7 +17954,7 @@
       "internalName": "WulfrumEnergyBarrierWall",
       "displayName": "Wulfrum Energy Barrier Wall",
       "displayNameRu": "Wulfrum Energy Barrier Wall",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material",
         "consumable"
@@ -17873,7 +17967,7 @@
       "internalName": "YharonSoulFragment",
       "displayName": "Yharon Soul Fragment",
       "displayNameRu": "Yharon Soul Fragment",
-      "category": "material",
+      "category": "other",
       "tags": [
         "material"
       ],
@@ -17888,7 +17982,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/cloudelemental.png"
+      "icon": "assets/icons/calamity/bosses/cloudelemental.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/CragmawMire",
@@ -17899,7 +17994,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/cragmawmire.png"
+      "icon": "assets/icons/calamity/bosses/cragmawmire.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/EarthElemental",
@@ -17910,7 +18006,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/earthelemental.png"
+      "icon": "assets/icons/calamity/bosses/earthelemental.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/GiantClam",
@@ -17921,7 +18018,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/giantclam.png"
+      "icon": "assets/icons/calamity/bosses/giantclam.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/GreatSandShark",
@@ -17932,7 +18030,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/greatsandshark.png"
+      "icon": "assets/icons/calamity/bosses/greatsandshark.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/Mauler",
@@ -17943,7 +18042,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/mauler.png"
+      "icon": "assets/icons/calamity/bosses/mauler.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/NuclearTerror",
@@ -17954,7 +18054,8 @@
       "tags": [
         "miniboss"
       ],
-      "icon": "assets/icons/calamity/bosses/nuclearterror.png"
+      "icon": "assets/icons/calamity/bosses/nuclearterror.png",
+      "bossPickerEligible": true
     },
     {
       "id": "CalamityMod/AcidEel",
@@ -20657,7 +20758,7 @@
       "internalName": "AerialiteOre",
       "displayName": "Aerialite Ore",
       "displayNameRu": "Aerialite Ore",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -20670,7 +20771,7 @@
       "internalName": "AerialiteOreDisenchanted",
       "displayName": "Aerialite Ore Disenchanted",
       "displayNameRu": "Disenchanted Aerialite Ore",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -20683,7 +20784,7 @@
       "internalName": "ArmoredShell",
       "displayName": "Armored Shell",
       "displayNameRu": "Armored Shell",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20695,7 +20796,7 @@
       "internalName": "AstralOre",
       "displayName": "Astral Ore",
       "displayNameRu": "Astral Ore",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -20708,7 +20809,7 @@
       "internalName": "AuricOre",
       "displayName": "Auric Ore",
       "displayNameRu": "Auric Ore",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -20721,7 +20822,7 @@
       "internalName": "BloodstoneCore",
       "displayName": "Bloodstone Core",
       "displayNameRu": "Bloodstone Core",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20733,7 +20834,7 @@
       "internalName": "BorealisBomber",
       "displayName": "Borealis Bomber",
       "displayNameRu": "Borealis Bomber",
-      "category": "ore",
+      "category": "weapon",
       "tags": [
         "ore",
         "summoner"
@@ -20746,7 +20847,7 @@
       "internalName": "CelestialClaymore",
       "displayName": "Celestial Claymore",
       "displayNameRu": "Celestial Claymore",
-      "category": "ore",
+      "category": "weapon",
       "tags": [
         "ore",
         "melee"
@@ -20759,7 +20860,7 @@
       "internalName": "CoreofCalamity",
       "displayName": "Coreof Calamity",
       "displayNameRu": "Core of Calamity",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20771,7 +20872,7 @@
       "internalName": "CryonicOre",
       "displayName": "Cryonic Ore",
       "displayNameRu": "Cryonic Ore",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -20784,7 +20885,7 @@
       "internalName": "DeepcoreGK2",
       "displayName": "Deepcore GK2",
       "displayNameRu": "Deepcore GK2",
-      "category": "ore",
+      "category": "weapon",
       "tags": [
         "ore",
         "ranged"
@@ -20797,7 +20898,7 @@
       "internalName": "EnergyCore",
       "displayName": "Energy Core",
       "displayNameRu": "Energy Core",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20809,7 +20910,7 @@
       "internalName": "EntropicClaymore",
       "displayName": "Entropic Claymore",
       "displayNameRu": "Entropic Claymore",
-      "category": "ore",
+      "category": "weapon",
       "tags": [
         "ore",
         "melee"
@@ -20822,7 +20923,7 @@
       "internalName": "EtherealCore",
       "displayName": "Ethereal Core",
       "displayNameRu": "Ethereal Core",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -20835,7 +20936,7 @@
       "internalName": "FeralthornClaymore",
       "displayName": "Feralthorn Claymore",
       "displayNameRu": "Feralthorn Claymore",
-      "category": "ore",
+      "category": "weapon",
       "tags": [
         "ore",
         "melee"
@@ -20848,7 +20949,7 @@
       "internalName": "Gorecodile",
       "displayName": "Gorecodile",
       "displayNameRu": "Gorecodile",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -20861,7 +20962,7 @@
       "internalName": "HallowedOre",
       "displayName": "Hallowed Ore",
       "displayNameRu": "Hallowed Ore",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -20874,7 +20975,7 @@
       "internalName": "LoreAbyss",
       "displayName": "Lore Abyss",
       "displayNameRu": "The Abyss",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20886,7 +20987,7 @@
       "internalName": "LoreAquaticScourge",
       "displayName": "Lore Aquatic Scourge",
       "displayNameRu": "Aquatic Scourge",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20898,7 +20999,7 @@
       "internalName": "LoreArchmage",
       "displayName": "Lore Archmage",
       "displayNameRu": "The Archmage",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20910,7 +21011,7 @@
       "internalName": "LoreAstralInfection",
       "displayName": "Lore Astral Infection",
       "displayNameRu": "Astral Infection",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20922,7 +21023,7 @@
       "internalName": "LoreAstrumAureus",
       "displayName": "Lore Astrum Aureus",
       "displayNameRu": "Astrum Aureus",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20934,7 +21035,7 @@
       "internalName": "LoreAstrumDeus",
       "displayName": "Lore Astrum Deus",
       "displayNameRu": "Astrum Deus",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20946,7 +21047,7 @@
       "internalName": "LoreAwakening",
       "displayName": "Lore Awakening",
       "displayNameRu": "Awakening",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20958,7 +21059,7 @@
       "internalName": "LoreAzafure",
       "displayName": "Lore Azafure",
       "displayNameRu": "Azafure",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20970,7 +21071,7 @@
       "internalName": "LoreBloodMoon",
       "displayName": "Lore Blood Moon",
       "displayNameRu": "Blood Moon",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20982,7 +21083,7 @@
       "internalName": "LoreBrainofCthulhu",
       "displayName": "Lore Brainof Cthulhu",
       "displayNameRu": "The Brain of Cthulhu",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -20994,7 +21095,7 @@
       "internalName": "LoreBrimstoneElemental",
       "displayName": "Lore Brimstone Elemental",
       "displayNameRu": "Brimstone Elemental",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21006,7 +21107,7 @@
       "internalName": "LoreCalamitas",
       "displayName": "Lore Calamitas",
       "displayNameRu": "Calamitas",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21018,7 +21119,7 @@
       "internalName": "LoreCalamitasClone",
       "displayName": "Lore Calamitas Clone",
       "displayNameRu": "Calamitas Clone",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21030,7 +21131,7 @@
       "internalName": "LoreCeaselessVoid",
       "displayName": "Lore Ceaseless Void",
       "displayNameRu": "Ceaseless Void",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21042,7 +21143,7 @@
       "internalName": "LoreCorruption",
       "displayName": "Lore Corruption",
       "displayNameRu": "The Corruption",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21054,7 +21155,7 @@
       "internalName": "LoreCrabulon",
       "displayName": "Lore Crabulon",
       "displayNameRu": "Crabulon",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21066,7 +21167,7 @@
       "internalName": "LoreCrimson",
       "displayName": "Lore Crimson",
       "displayNameRu": "The Crimson",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21078,7 +21179,7 @@
       "internalName": "LoreCynosure",
       "displayName": "Lore Cynosure",
       "displayNameRu": "Cynosure",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21090,7 +21191,7 @@
       "internalName": "LoreDesertScourge",
       "displayName": "Lore Desert Scourge",
       "displayNameRu": "Desert Scourge",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21102,7 +21203,7 @@
       "internalName": "LoreDestroyer",
       "displayName": "Lore Destroyer",
       "displayNameRu": "The Destroyer",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21114,7 +21215,7 @@
       "internalName": "LoreDevourerofGods",
       "displayName": "Lore Devourerof Gods",
       "displayNameRu": "The Devourer of Gods",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21126,7 +21227,7 @@
       "internalName": "LoreDragonfolly",
       "displayName": "Lore Dragonfolly",
       "displayNameRu": "Dragonfolly",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21138,7 +21239,7 @@
       "internalName": "LoreDukeFishron",
       "displayName": "Lore Duke Fishron",
       "displayNameRu": "Duke Fishron",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21150,7 +21251,7 @@
       "internalName": "LoreEaterofWorlds",
       "displayName": "Lore Eaterof Worlds",
       "displayNameRu": "The Eater of Worlds",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21162,7 +21263,7 @@
       "internalName": "LoreEmpressofLight",
       "displayName": "Lore Empressof Light",
       "displayNameRu": "Empress of Light",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21174,7 +21275,7 @@
       "internalName": "LoreExoMechs",
       "displayName": "Lore Exo Mechs",
       "displayNameRu": "The Exo Mechanical Trio",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21186,7 +21287,7 @@
       "internalName": "LoreEyeofCthulhu",
       "displayName": "Lore Eyeof Cthulhu",
       "displayNameRu": "The Eye of Cthulhu",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21198,7 +21299,7 @@
       "internalName": "LoreGolem",
       "displayName": "Lore Golem",
       "displayNameRu": "Golem",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21210,7 +21311,7 @@
       "internalName": "LoreHiveMind",
       "displayName": "Lore Hive Mind",
       "displayNameRu": "The Hive Mind",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21222,7 +21323,7 @@
       "internalName": "LoreKingSlime",
       "displayName": "Lore King Slime",
       "displayNameRu": "King Slime",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21234,7 +21335,7 @@
       "internalName": "LoreLeviathanAnahita",
       "displayName": "Lore Leviathan Anahita",
       "displayNameRu": "Leviathan and Anahita",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21246,7 +21347,7 @@
       "internalName": "LoreMechs",
       "displayName": "Lore Mechs",
       "displayNameRu": "The Mechanical Trio",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21258,7 +21359,7 @@
       "internalName": "LoreOldDuke",
       "displayName": "Lore Old Duke",
       "displayNameRu": "The Old Duke",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21270,7 +21371,7 @@
       "internalName": "LorePerforators",
       "displayName": "Lore Perforators",
       "displayNameRu": "The Perforators and Their Hive",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21282,7 +21383,7 @@
       "internalName": "LorePlaguebringerGoliath",
       "displayName": "Lore Plaguebringer Goliath",
       "displayNameRu": "Plaguebringer Goliath",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21294,7 +21395,7 @@
       "internalName": "LorePlantera",
       "displayName": "Lore Plantera",
       "displayNameRu": "Plantera",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21306,7 +21407,7 @@
       "internalName": "LorePolterghast",
       "displayName": "Lore Polterghast",
       "displayNameRu": "Polterghast",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21318,7 +21419,7 @@
       "internalName": "LorePrelude",
       "displayName": "Lore Prelude",
       "displayNameRu": "Prelude",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21330,7 +21431,7 @@
       "internalName": "LoreProfanedGuardians",
       "displayName": "Lore Profaned Guardians",
       "displayNameRu": "The Profaned Guardians",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21342,7 +21443,7 @@
       "internalName": "LoreProvidence",
       "displayName": "Lore Providence",
       "displayNameRu": "Providence, the Profaned Goddess",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21354,7 +21455,7 @@
       "internalName": "LoreQueenBee",
       "displayName": "Lore Queen Bee",
       "displayNameRu": "Queen Bee",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21366,7 +21467,7 @@
       "internalName": "LoreQueenSlime",
       "displayName": "Lore Queen Slime",
       "displayNameRu": "Queen Slime",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21378,7 +21479,7 @@
       "internalName": "LoreRavager",
       "displayName": "Lore Ravager",
       "displayNameRu": "The Ravager",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21390,7 +21491,7 @@
       "internalName": "LoreRequiem",
       "displayName": "Lore Requiem",
       "displayNameRu": "Requiem",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21402,7 +21503,7 @@
       "internalName": "LoreSignus",
       "displayName": "Lore Signus",
       "displayNameRu": "Signus",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21414,7 +21515,7 @@
       "internalName": "LoreSkeletron",
       "displayName": "Lore Skeletron",
       "displayNameRu": "Skeletron",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21426,7 +21527,7 @@
       "internalName": "LoreSkeletronPrime",
       "displayName": "Lore Skeletron Prime",
       "displayNameRu": "Skeletron Prime",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21438,7 +21539,7 @@
       "internalName": "LoreSlimeGod",
       "displayName": "Lore Slime God",
       "displayNameRu": "The Slime God",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21450,7 +21551,7 @@
       "internalName": "LoreStormWeaver",
       "displayName": "Lore Storm Weaver",
       "displayNameRu": "Storm Weaver",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21462,7 +21563,7 @@
       "internalName": "LoreSulphurSea",
       "displayName": "Lore Sulphur Sea",
       "displayNameRu": "Sulphur Sea",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21474,7 +21575,7 @@
       "internalName": "LoreTwins",
       "displayName": "Lore Twins",
       "displayNameRu": "The Twins",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21486,7 +21587,7 @@
       "internalName": "LoreUnderworld",
       "displayName": "Lore Underworld",
       "displayNameRu": "The Underworld",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21498,7 +21599,7 @@
       "internalName": "LoreWallofFlesh",
       "displayName": "Lore Wallof Flesh",
       "displayNameRu": "The Wall of Flesh",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21510,7 +21611,7 @@
       "internalName": "LoreYharon",
       "displayName": "Lore Yharon",
       "displayNameRu": "Yharon, Resplendent Phoenix",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21522,7 +21623,7 @@
       "internalName": "OldLordClaymore",
       "displayName": "Old Lord Claymore",
       "displayNameRu": "Old Lord Claymore",
-      "category": "ore",
+      "category": "weapon",
       "tags": [
         "ore",
         "melee"
@@ -21535,7 +21636,7 @@
       "internalName": "PerennialOre",
       "displayName": "Perennial Ore",
       "displayNameRu": "Perennial Ore",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -21548,7 +21649,7 @@
       "internalName": "PhosphorescentGauntlet",
       "displayName": "Phosphorescent Gauntlet",
       "displayNameRu": "Phosphorescent Gauntlet",
-      "category": "ore",
+      "category": "weapon",
       "tags": [
         "ore",
         "melee"
@@ -21561,7 +21662,7 @@
       "internalName": "PlasmaDriveCore",
       "displayName": "Plasma Drive Core",
       "displayNameRu": "Prototype Plasma Drive Core",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21573,7 +21674,7 @@
       "internalName": "ProfanedCore",
       "displayName": "Profaned Core",
       "displayNameRu": "Profaned Core",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21585,7 +21686,7 @@
       "internalName": "SandstormsCore",
       "displayName": "Sandstorms Core",
       "displayNameRu": "Sandstorm's Core",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21597,7 +21698,7 @@
       "internalName": "ScoriaOre",
       "displayName": "Scoria Ore",
       "displayNameRu": "Scoria Ore",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -21610,7 +21711,7 @@
       "internalName": "SolsticeClaymore",
       "displayName": "Solstice Claymore",
       "displayNameRu": "Solstice Claymore",
-      "category": "ore",
+      "category": "weapon",
       "tags": [
         "ore",
         "melee"
@@ -21623,7 +21724,7 @@
       "internalName": "SporeKnife",
       "displayName": "Spore Knife",
       "displayNameRu": "Spore Knife",
-      "category": "ore",
+      "category": "weapon",
       "tags": [
         "ore",
         "rogue"
@@ -21636,7 +21737,7 @@
       "internalName": "Starcore",
       "displayName": "Starcore",
       "displayNameRu": "Starcore",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -21648,7 +21749,7 @@
       "internalName": "UelibloomOre",
       "displayName": "Uelibloom Ore",
       "displayNameRu": "Uelibloom Ore",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore",
         "consumable"
@@ -21661,7 +21762,7 @@
       "internalName": "UnholyCore",
       "displayName": "Unholy Core",
       "displayNameRu": "Unholy Core",
-      "category": "ore",
+      "category": "other",
       "tags": [
         "ore"
       ],
@@ -24633,7 +24734,7 @@
       "internalName": "BabyCannonballJellyfishBanner",
       "displayName": "Baby Cannonball Jellyfish Banner",
       "displayNameRu": "Baby Cannonball Jellyfish Banner",
-      "category": "other",
+      "category": "weapon",
       "tags": [
         "other",
         "consumable"
@@ -24646,7 +24747,7 @@
       "internalName": "BabyCannonballJellyfishBowl",
       "displayName": "Baby Cannonball Jellyfish Bowl",
       "displayNameRu": "Baby Cannonball Jellyfish Bowl",
-      "category": "other",
+      "category": "weapon",
       "tags": [
         "other",
         "consumable"
@@ -25670,7 +25771,7 @@
       "internalName": "CannonballJellyfishBanner",
       "displayName": "Cannonball Jellyfish Banner",
       "displayNameRu": "Cannonball Jellyfish Banner",
-      "category": "other",
+      "category": "weapon",
       "tags": [
         "other",
         "consumable"

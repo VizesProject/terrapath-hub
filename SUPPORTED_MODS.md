@@ -11,7 +11,7 @@ website can display, but the public editor stays limited to supported web data.
 | Source | Internal name | Web support | Notes |
 | --- | --- | --- | --- |
 | Terraria | `Terraria` | Official | Search, validation, and curated vanilla icons are available. |
-| Calamity Mod | `CalamityMod` | Official pipeline | Searchable web support is generated from a maintainer export of the installed mod plus supplement entries for non-item progression content. |
+| Calamity Mod | `CalamityMod` | Official | Searchable web support is generated from a maintainer export of the installed mod plus supplement entries for non-item progression content and canonical boss/miniboss normalization. |
 | Thorium Mod | `ThoriumMod` | Metadata-only | Required-mod metadata works; richer web pickers are planned later. |
 
 ## Asset Policy

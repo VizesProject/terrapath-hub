@@ -14,6 +14,7 @@ NPC_ICON_ROOT = DOC_ICON_ROOT / "npcs"
 
 ITEM_LIKE_KINDS = {"item", "material", "ore", "other"}
 BOSS_LIKE_KINDS = {"boss", "miniboss"}
+STRICT_ITEM_CATEGORIES = {"weapon", "armor", "accessory", "buff", "other"}
 ARMOR_SUFFIXES = [
     "Helmet",
     "Helm",
@@ -28,6 +29,16 @@ ARMOR_SUFFIXES = [
     "Hat",
 ]
 ARMOR_REPRESENTATIVE_ORDER = {"Helmet": 0, "Helm": 0, "Headgear": 0, "Headpiece": 0, "Mask": 0, "Hood": 0, "Visage": 0, "Cowl": 0, "Crown": 0, "Cap": 0, "Hat": 0}
+WEAPON_HINTS = (
+    "blade", "blaster", "boomerang", "bow", "cannon", "chakram", "gun", "knife", "lance",
+    "launcher", "pistol", "rifle", "scythe", "shotgun", "spear", "staff", "sword", "tome",
+    "trident", "wand", "whip", "yoyo"
+)
+BUFF_HINTS = (
+    "potion", "elixir", "flask", "candle", "food", "meal", "stew", "soup", "tea", "coffee",
+    "ale", "beer", "wine", "sake", "ammo", "arrow", "bullet", "rocket", "dart", "solution",
+    "bait", "crate", "box", "fed", "feast"
+)
 
 
 def default_export_dirs() -> list[Path]:
@@ -114,12 +125,12 @@ def load_raw_export(export_dir: Path | None) -> tuple[list[dict], list[dict]]:
     return items, npcs
 
 
-def load_supplement() -> list[dict]:
+def load_supplement() -> dict:
     supplement_path = CALAMITY_DIR / "supplement.json"
     if not supplement_path.exists():
-        return []
+        return {}
 
-    return read_json(supplement_path).get("entries", [])
+    return read_json(supplement_path)
 
 
 def copy_icon(source_path: Path, target_root: Path, slug: str) -> str:
@@ -185,6 +196,46 @@ def build_raw_npc_entry(export_dir: Path, raw: dict) -> dict:
     return entry
 
 
+def normalize_item_category(raw: dict, entry: dict) -> str:
+    current = str(entry.get("category") or raw.get("category") or "").strip().lower()
+    tags = {str(tag).strip().lower() for tag in (entry.get("tags") or raw.get("tags") or []) if str(tag).strip()}
+    haystack = " ".join(
+        str(value).strip().lower()
+        for value in (
+            entry.get("displayName"),
+            entry.get("displayNameRu"),
+            entry.get("internalName"),
+            raw.get("displayName"),
+            raw.get("displayNameRu"),
+            raw.get("internalName"),
+        )
+        if str(value or "").strip()
+    )
+
+    if entry.get("armorSetKey") or raw.get("armorSetKey") or current == "armor":
+        return "armor"
+
+    if current == "accessory" or "accessory" in tags:
+        return "accessory"
+
+    if current == "weapon" or {"melee", "ranged", "magic", "summoner", "rogue", "weapon"} & tags:
+        return "weapon"
+
+    if any(hint in haystack for hint in WEAPON_HINTS):
+        return "weapon"
+
+    if current in {"material", "ore"}:
+        return "other"
+
+    if current == "buff":
+        return "buff" if any(hint in haystack for hint in BUFF_HINTS) else "other"
+
+    if current in {"ammo", "mount", "pet", "tool", "furniture", "other"}:
+        return "other"
+
+    return "other"
+
+
 def apply_armor_set_aliases(raw_items: list[dict], entries_by_id: dict[str, dict]) -> None:
     groups: dict[str, list[dict]] = {}
     for raw in raw_items:
@@ -242,7 +293,60 @@ def apply_supplement(entries_by_id: dict[str, dict], supplement_entries: list[di
         entries_by_id[content_id] = merged
 
 
-def validate_coverage(raw_items: list[dict], raw_npcs: list[dict], entries_by_id: dict[str, dict]) -> None:
+def normalize_item_entries(raw_items: list[dict], entries_by_id: dict[str, dict]) -> None:
+    raw_items_by_id = {raw.get("id"): raw for raw in raw_items if raw.get("id")}
+
+    for content_id, entry in list(entries_by_id.items()):
+        if content_id not in raw_items_by_id:
+            continue
+
+        normalized = dict(entry)
+        normalized["category"] = normalize_item_category(raw_items_by_id[content_id], normalized)
+        if normalized["category"] == "armor":
+            normalized["tags"] = merge_tags(normalized.get("tags", []), ["armor"])
+        entries_by_id[content_id] = normalized
+
+
+def apply_boss_normalization(entries_by_id: dict[str, dict], supplement: dict) -> None:
+    rules = supplement.get("bossNormalization", {}) if isinstance(supplement, dict) else {}
+    alias_map = {
+        str(source): str(target)
+        for source, target in (rules.get("aliasMap") or {}).items()
+        if source and target
+    }
+    hidden_bosses = {str(entry) for entry in (rules.get("hiddenBosses") or []) if entry}
+    eligible_minibosses = {str(entry) for entry in (rules.get("eligibleMinibosses") or []) if entry}
+    display_overrides = rules.get("displayOverrides") or {}
+
+    for content_id, entry in list(entries_by_id.items()):
+        if entry.get("kind") not in BOSS_LIKE_KINDS:
+            continue
+
+        normalized = dict(entry)
+        canonical_id = alias_map.get(content_id, content_id)
+        if canonical_id != content_id:
+            normalized["canonicalBossId"] = canonical_id
+            normalized["bossPickerEligible"] = False
+        elif content_id in hidden_bosses:
+            normalized["bossPickerEligible"] = False
+        elif normalized.get("kind") == "miniboss":
+            normalized["bossPickerEligible"] = content_id in eligible_minibosses
+        else:
+            normalized["bossPickerEligible"] = True
+            normalized["canonicalBossId"] = content_id
+
+        override = display_overrides.get(content_id) or {}
+        if override.get("displayName"):
+            normalized["displayName"] = override["displayName"]
+        if override.get("displayNameRu"):
+            normalized["displayNameRu"] = override["displayNameRu"]
+        if override.get("tags"):
+            normalized["tags"] = merge_tags(normalized.get("tags", []), override.get("tags", []))
+
+        entries_by_id[content_id] = normalized
+
+
+def validate_coverage(raw_items: list[dict], raw_npcs: list[dict], entries_by_id: dict[str, dict], bosses: dict, supplement: dict) -> None:
     missing_entries: list[str] = []
     missing_icons: list[str] = []
 
@@ -265,13 +369,35 @@ def validate_coverage(raw_items: list[dict], raw_npcs: list[dict], entries_by_id
     if missing_icons:
         raise SystemExit(f"Missing Calamity icons in final pack: {', '.join(sorted(missing_icons)[:20])}")
 
+    rules = supplement.get("bossNormalization", {}) if isinstance(supplement, dict) else {}
+    alias_map = {
+        str(source): str(target)
+        for source, target in (rules.get("aliasMap") or {}).items()
+        if source and target
+    }
+    hidden_bosses = {str(entry) for entry in (rules.get("hiddenBosses") or []) if entry}
+
+    boss_ids = {entry["id"] for entry in bosses.get("bosses", [])}
+    illegal_picker_entries = sorted(boss_ids & (set(alias_map) | hidden_bosses))
+    if illegal_picker_entries:
+        raise SystemExit(
+            f"Boss picker contains segmented or hidden entries: {', '.join(illegal_picker_entries[:20])}"
+        )
+
+    missing_canonical_targets = sorted(target for target in alias_map.values() if target not in entries_by_id)
+    if missing_canonical_targets:
+        raise SystemExit(
+            f"Boss normalization refers to missing canonical targets: {', '.join(missing_canonical_targets[:20])}"
+        )
+
 
 def build_pack(export_dir: Path) -> tuple[dict, dict, dict]:
     raw_items, raw_npcs = load_raw_export(export_dir)
     if not raw_items and not raw_npcs:
         raise SystemExit(f"No Calamity export found in {export_dir}. Run /terrapath export calamity first.")
 
-    supplement_entries = load_supplement()
+    supplement = load_supplement()
+    supplement_entries = supplement.get("entries", []) if isinstance(supplement, dict) else []
     entries_by_id: dict[str, dict] = {}
 
     for raw in raw_items:
@@ -284,7 +410,8 @@ def build_pack(export_dir: Path) -> tuple[dict, dict, dict]:
 
     apply_armor_set_aliases(raw_items, entries_by_id)
     apply_supplement(entries_by_id, supplement_entries)
-    validate_coverage(raw_items, raw_npcs, entries_by_id)
+    normalize_item_entries(raw_items, entries_by_id)
+    apply_boss_normalization(entries_by_id, supplement)
 
     entries = sorted(
         entries_by_id.values(),
@@ -307,7 +434,18 @@ def build_pack(export_dir: Path) -> tuple[dict, dict, dict]:
             {
                 key: value
                 for key, value in entry.items()
-                if key in {"id", "internalName", "displayName", "displayNameRu", "category", "icon", "kind", "tags", "pickerHidden"}
+                if key in {
+                    "id",
+                    "internalName",
+                    "displayName",
+                    "displayNameRu",
+                    "category",
+                    "icon",
+                    "kind",
+                    "tags",
+                    "pickerHidden",
+                    "canonicalBossId",
+                }
             }
             for entry in entries
             if entry.get("category") or entry.get("kind") in ITEM_LIKE_KINDS
@@ -321,12 +459,24 @@ def build_pack(export_dir: Path) -> tuple[dict, dict, dict]:
             {
                 key: value
                 for key, value in entry.items()
-                if key in {"id", "internalName", "displayName", "displayNameRu", "icon", "kind", "tags"}
+                if key in {
+                    "id",
+                    "internalName",
+                    "displayName",
+                    "displayNameRu",
+                    "icon",
+                    "kind",
+                    "tags",
+                    "bossPickerEligible",
+                    "canonicalBossId",
+                }
             }
             for entry in entries
-            if entry.get("kind") in BOSS_LIKE_KINDS
+            if entry.get("kind") in BOSS_LIKE_KINDS and entry.get("bossPickerEligible")
         ],
     }
+
+    validate_coverage(raw_items, raw_npcs, entries_by_id, bosses, supplement)
 
     return search_content, items, bosses
 
