@@ -315,6 +315,10 @@ function localizedDisplayName(entry) {
     : (entry.displayName || entry.displayNameRu || entry.internalName || "");
 }
 
+function entryModName(entry) {
+  return String(entry?.id || "").split("/")[0] || "Terraria";
+}
+
 function pickLabel(id, map) {
   const entry = map.get(id);
   return localizedDisplayName(entry) || String(id || "").split("/").pop() || "";
@@ -495,7 +499,7 @@ function applySupportEnhancements() {
     .filter((entry) => entry.icon)
     .sort((left, right) => localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" }));
   support.bosses = [...support.bossMap.values()]
-    .filter((entry) => entry.icon && entry.bossPickerEligible)
+    .filter((entry) => entry.icon && (entry.bossPickerEligible ?? true))
     .sort((left, right) => localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" }));
   support.content = [...support.contentMap.values()]
     .filter((entry) => entry.icon)
@@ -517,6 +521,74 @@ function inferItemCategory(entry, groupKey) {
 function requestedSupportMods() {
   const supportedMods = new Set(MODS.map((entry) => entry.value));
   return uniq(["Terraria", ...(state.requiredMods || [])]).filter((modName) => supportedMods.has(modName));
+}
+
+function pickerModOrder() {
+  const requested = requestedSupportMods();
+  const preferred = requested.filter((modName) => modName !== "Terraria");
+  const fallback = requested.includes("Terraria") ? ["Terraria"] : [];
+  const knownMods = uniq([
+    ...support.content.map((entry) => entryModName(entry)),
+    ...support.items.map((entry) => entryModName(entry)),
+    ...support.bosses.map((entry) => entryModName(entry))
+  ]);
+
+  return uniq([...preferred, ...fallback, ...knownMods]);
+}
+
+function comparePickerEntries(left, right) {
+  const modOrder = pickerModOrder();
+  const leftOrder = modOrder.indexOf(entryModName(left));
+  const rightOrder = modOrder.indexOf(entryModName(right));
+  const normalizedLeftOrder = leftOrder === -1 ? modOrder.length : leftOrder;
+  const normalizedRightOrder = rightOrder === -1 ? modOrder.length : rightOrder;
+
+  if (normalizedLeftOrder !== normalizedRightOrder) {
+    return normalizedLeftOrder - normalizedRightOrder;
+  }
+
+  return localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" });
+}
+
+function balancePickerEntries(entries, { perMod = 120, total = 320 } = {}) {
+  const buckets = new Map();
+
+  entries.forEach((entry) => {
+    const modName = entryModName(entry);
+    if (!buckets.has(modName)) buckets.set(modName, []);
+    buckets.get(modName).push(entry);
+  });
+
+  const orderedMods = pickerModOrder().filter((modName) => buckets.has(modName));
+  const cursors = new Map(orderedMods.map((modName) => [modName, 0]));
+  const results = [];
+
+  while (results.length < total) {
+    let addedInRound = false;
+
+    for (const modName of orderedMods) {
+      const bucket = buckets.get(modName) || [];
+      const cursor = cursors.get(modName) || 0;
+      if (cursor >= bucket.length || cursor >= perMod) continue;
+      results.push(bucket[cursor]);
+      cursors.set(modName, cursor + 1);
+      addedInRound = true;
+      if (results.length >= total) break;
+    }
+
+    if (!addedInRound) break;
+  }
+
+  if (results.length >= total) return results.slice(0, total);
+
+  const leftovers = [];
+  orderedMods.forEach((modName) => {
+    const bucket = buckets.get(modName) || [];
+    const cursor = cursors.get(modName) || 0;
+    leftovers.push(...bucket.slice(cursor));
+  });
+
+  return [...results, ...leftovers.slice(0, Math.max(0, total - results.length))];
 }
 
 function normalizeRichTextSource(value) {
@@ -1252,12 +1324,24 @@ function pickerSearchText(entry) {
 
 function renderPickerResults() {
   const query = refs.pickerSearchInput.value.trim().toLowerCase();
-  const results = pickerEntries().filter((entry) => {
+  let results = pickerEntries().filter((entry) => {
     if (pickerState?.mode === "description" && pickerState.filter && pickerState.filter !== "all") {
       return entry.pickerType === pickerState.filter;
     }
     return true;
-  }).filter((entry) => !query || pickerSearchText(entry).includes(query)).slice(0, 200);
+  }).filter((entry) => !query || pickerSearchText(entry).includes(query))
+    .sort(comparePickerEntries);
+
+  if (query) {
+    results = results.slice(0, 320);
+  } else if (pickerState?.mode === "boss") {
+    results = balancePickerEntries(results, { perMod: 80, total: 200 });
+  } else if (pickerState?.mode === "description") {
+    results = balancePickerEntries(results, { perMod: 90, total: 270 });
+  } else {
+    results = balancePickerEntries(results, { perMod: 120, total: 320 });
+  }
+
   refs.pickerResults.innerHTML = results.map((entry) => {
     const label = localizedDisplayName(entry) || String(entry.id || "").split("/").pop() || "";
     const boss = entry.pickerType === "boss";
@@ -1344,6 +1428,9 @@ async function fetchJsonOptional(paths, fallback = null) {
 function ingestLegacySupport(entries, kind) {
   for (const entry of entries || []) {
     const nextEntry = { ...entry, kind: entry.kind || kind };
+    if (kind === "boss" && nextEntry.bossPickerEligible === undefined) {
+      nextEntry.bossPickerEligible = true;
+    }
     mergeSupportEntry(support.contentMap, nextEntry);
     if (kind === "boss") {
       mergeSupportEntry(support.bossMap, nextEntry);
