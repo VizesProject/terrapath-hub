@@ -56,6 +56,19 @@ def read_json(path: Path) -> dict:
         return json.load(file)
 
 
+def load_previous_entries() -> dict[str, dict]:
+    previous_path = CALAMITY_DIR / "search-content.json"
+    if not previous_path.exists():
+        return {}
+
+    previous = read_json(previous_path)
+    return {
+        str(entry.get("id")): entry
+        for entry in previous.get("entries", [])
+        if entry.get("id")
+    }
+
+
 def write_json(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, ensure_ascii=True) + "\n", encoding="utf-8")
@@ -293,6 +306,23 @@ def apply_supplement(entries_by_id: dict[str, dict], supplement_entries: list[di
         entries_by_id[content_id] = merged
 
 
+def preserve_previous_localizations(entries_by_id: dict[str, dict], previous_entries: dict[str, dict]) -> None:
+    for content_id, entry in list(entries_by_id.items()):
+        previous = previous_entries.get(content_id)
+        if not previous:
+            continue
+
+        current_name = str(entry.get("displayName") or "")
+        current_name_ru = str(entry.get("displayNameRu") or "")
+        previous_name = str(previous.get("displayName") or "")
+        previous_name_ru = str(previous.get("displayNameRu") or "")
+
+        if previous_name_ru and previous_name_ru != previous_name and (not current_name_ru or current_name_ru == current_name):
+            normalized = dict(entry)
+            normalized["displayNameRu"] = previous_name_ru
+            entries_by_id[content_id] = normalized
+
+
 def normalize_item_entries(raw_items: list[dict], entries_by_id: dict[str, dict]) -> None:
     raw_items_by_id = {raw.get("id"): raw for raw in raw_items if raw.get("id")}
 
@@ -340,6 +370,8 @@ def apply_boss_normalization(entries_by_id: dict[str, dict], supplement: dict) -
             normalized["displayName"] = override["displayName"]
         if override.get("displayNameRu"):
             normalized["displayNameRu"] = override["displayNameRu"]
+        if override.get("iconOverride"):
+            normalized["icon"] = override["iconOverride"]
         if override.get("tags"):
             normalized["tags"] = merge_tags(normalized.get("tags", []), override.get("tags", []))
 
@@ -397,6 +429,7 @@ def build_pack(export_dir: Path) -> tuple[dict, dict, dict]:
         raise SystemExit(f"No Calamity export found in {export_dir}. Run /terrapath export calamity first.")
 
     supplement = load_supplement()
+    previous_entries = load_previous_entries()
     supplement_entries = supplement.get("entries", []) if isinstance(supplement, dict) else []
     entries_by_id: dict[str, dict] = {}
 
@@ -410,6 +443,7 @@ def build_pack(export_dir: Path) -> tuple[dict, dict, dict]:
 
     apply_armor_set_aliases(raw_items, entries_by_id)
     apply_supplement(entries_by_id, supplement_entries)
+    preserve_previous_localizations(entries_by_id, previous_entries)
     normalize_item_entries(raw_items, entries_by_id)
     apply_boss_normalization(entries_by_id, supplement)
 

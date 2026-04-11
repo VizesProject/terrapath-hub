@@ -33,7 +33,7 @@
       "kind": "biome",
       "internalName": "BrimstoneCrag",
       "displayName": "Brimstone Crag",
-      "displayNameRu": "Brimstone Crag",
+      "displayNameRu": "\u0421\u0435\u0440\u043d\u044b\u0435 \u0441\u043a\u0430\u043b\u044b",
       "iconSourceId": "CalamityMod/BrimstoneSlag",
       "tags": [
         "biome",
@@ -642,11 +642,11 @@
       "kind": "boss",
       "internalName": "PerforatorHive",
       "displayName": "The Perforators",
-      "displayNameRu": "The Perforator Hive",
+      "displayNameRu": "\u041f\u0435\u0440\u0444\u043e\u0440\u0430\u0442\u043e\u0440\u044b",
       "tags": [
         "boss"
       ],
-      "icon": "assets/icons/calamity/bosses/perforatorhive.png",
+      "icon": "assets/icons/calamity/bosses/perforatorhive-wiki.png",
       "bossPickerEligible": true,
       "canonicalBossId": "CalamityMod/PerforatorHive"
     },

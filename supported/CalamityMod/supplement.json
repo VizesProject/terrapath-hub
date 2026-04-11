@@ -67,7 +67,7 @@
       "kind": "biome",
       "internalName": "BrimstoneCrag",
       "displayName": "Brimstone Crag",
-      "displayNameRu": "Brimstone Crag",
+      "displayNameRu": "Серные скалы",
       "iconSourceId": "CalamityMod/BrimstoneSlag",
       "tags": [
         "biome",
@@ -137,7 +137,8 @@
       },
       "CalamityMod/PerforatorHive": {
         "displayName": "The Perforators",
-        "displayNameRu": "The Perforator Hive"
+        "displayNameRu": "Перфораторы",
+        "iconOverride": "assets/icons/calamity/bosses/perforatorhive-wiki.png"
       },
       "CalamityMod/PrimordialWyrmHead": {
         "displayName": "Primordial Wyrm",

@@ -263,7 +263,20 @@ let lastSavedAt = null;
 let submissionMessage = "";
 let supportState = "loading";
 let pickerState = null;
-let support = { items: [], bosses: [], content: [], itemMap: new Map(), bossMap: new Map(), contentMap: new Map() };
+function createEmptySupport() {
+  return {
+    items: [],
+    bosses: [],
+    content: [],
+    visibleItems: [],
+    itemGroups: { weapon: [], armor: [], accessory: [], buff: [], other: [] },
+    itemMap: new Map(),
+    bossMap: new Map(),
+    contentMap: new Map()
+  };
+}
+
+let support = createEmptySupport();
 let supportRequestToken = 0;
 let state = loadDraft() || sampleState();
 
@@ -446,18 +459,6 @@ function inferSearchCategory(entry) {
   if (!entry) return "other";
   const normalized = normalizePickerCategory(entry);
   if (normalized) return normalized;
-
-  const haystack = [entry.displayName, entry.displayNameRu, entry.internalName]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-
-  for (const category of ["armor", "accessory", "buff", "weapon"]) {
-    if (CATEGORY_PATTERNS[category].some((pattern) => pattern.test(haystack))) {
-      return category;
-    }
-  }
-
   return "other";
 }
 
@@ -498,6 +499,13 @@ function applySupportEnhancements() {
   support.items = [...support.itemMap.values()]
     .filter((entry) => entry.icon)
     .sort((left, right) => localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" }));
+  support.visibleItems = support.items.filter((entry) => !entry.pickerHidden);
+  support.itemGroups = { weapon: [], armor: [], accessory: [], buff: [], other: [] };
+  support.visibleItems.forEach((entry) => {
+    const category = inferSearchCategory(entry);
+    const bucket = support.itemGroups[category] || support.itemGroups.other;
+    bucket.push(entry);
+  });
   support.bosses = [...support.bossMap.values()]
     .filter((entry) => entry.icon && (entry.bossPickerEligible ?? true))
     .sort((left, right) => localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" }));
@@ -507,9 +515,7 @@ function applySupportEnhancements() {
 }
 
 function visibleSearchItems() {
-  return [...support.itemMap.values()]
-    .filter((entry) => !entry.pickerHidden && entry.icon)
-    .sort((left, right) => localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" }));
+  return support.visibleItems;
 }
 
 function inferItemCategory(entry, groupKey) {
@@ -1313,8 +1319,7 @@ function pickerEntries() {
   if (pickerState.groupKey === "other") {
     return visibleSearchItems().map((entry) => ({ ...entry, pickerType: "item" }));
   }
-  return visibleSearchItems()
-    .filter((entry) => inferSearchCategory(entry) === (pickerState.groupKey || "weapon"))
+  return (support.itemGroups[pickerState.groupKey || "weapon"] || [])
     .map((entry) => ({ ...entry, pickerType: "item" }));
 }
 
@@ -1333,13 +1338,15 @@ function renderPickerResults() {
     .sort(comparePickerEntries);
 
   if (query) {
-    results = results.slice(0, 320);
+    results = results.slice(0, 220);
   } else if (pickerState?.mode === "boss") {
-    results = balancePickerEntries(results, { perMod: 80, total: 200 });
+    results = balancePickerEntries(results, { perMod: 70, total: 180 });
   } else if (pickerState?.mode === "description") {
-    results = balancePickerEntries(results, { perMod: 90, total: 270 });
+    results = balancePickerEntries(results, { perMod: 80, total: 220 });
+  } else if (pickerState?.groupKey === "other") {
+    results = balancePickerEntries(results, { perMod: 80, total: 200 });
   } else {
-    results = balancePickerEntries(results, { perMod: 120, total: 320 });
+    results = balancePickerEntries(results, { perMod: 50, total: 120 });
   }
 
   refs.pickerResults.innerHTML = results.map((entry) => {
@@ -1489,7 +1496,7 @@ async function loadSupport() {
   renderSupportStatus();
 
   try {
-    support = { items: [], bosses: [], content: [], itemMap: new Map(), bossMap: new Map(), contentMap: new Map() };
+    support = createEmptySupport();
     await Promise.all(requestedSupportMods().map((modName) => loadModSupport(modName)));
     if (requestToken !== supportRequestToken) return;
     applySupportEnhancements();
