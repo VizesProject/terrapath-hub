@@ -123,8 +123,12 @@ static class TerrariaAssetExport
       }
 
       var slug = BuildSlug(bossNode["displayName"]?.GetValue<string>() ?? internalName ?? "boss");
-      var relativePath = $"assets/icons/terraria/bosses/{slug}.png";
-      var outputPath = Path.Combine(outputFolder, $"{slug}.png");
+      var existingRelativePath = bossNode["icon"]?.GetValue<string>();
+      var relativePath = !string.IsNullOrWhiteSpace(existingRelativePath)
+        ? existingRelativePath!
+        : $"assets/icons/terraria/bosses/{slug}.png";
+      var outputFileName = Path.GetFileName(relativePath);
+      var outputPath = Path.Combine(outputFolder, outputFileName);
 
       if (TryExportTexture(content, assetPath, outputPath, cropBossFrame: true))
       {

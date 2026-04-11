@@ -30,6 +30,7 @@ const GROUPS = [
 
 const ERA_IDS = ["prehardmode", "hardmode", "postmoonlord"];
 const ITEM_PICKER_MIN_QUERY = 2;
+const PICKER_PREVIEW_STEP = 24;
 
 const ARMOR_SET_ALIASES = [
   { id: "Terraria/WoodHelmet", internalName: "WoodHelmet", displayName: "Wood armor set", displayNameRu: "\u0414\u0435\u0440\u0435\u0432\u044f\u043d\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438" },
@@ -135,6 +136,7 @@ const COPY = {
     pickerSearchPlaceholder: "Search items, bosses, events, biomes",
     pickerClose: "Close",
     noPickerResults: "No results found.",
+    pickerShowMore: "Show more",
     previewHeading: "Preview",
     noItemsPreview: "No item picks added for this stage.",
     copied: "guide.json copied.",
@@ -194,6 +196,7 @@ const COPY = {
     pickerSearchPlaceholder: "\u0418\u0449\u0438\u0442\u0435 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u044b, \u0431\u043e\u0441\u0441\u043e\u0432, \u0441\u043e\u0431\u044b\u0442\u0438\u044f, \u0431\u0438\u043e\u043c\u044b",
     pickerClose: "\u0417\u0430\u043a\u0440\u044b\u0442\u044c",
     noPickerResults: "\u041d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e.",
+    pickerShowMore: "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0435\u0449\u0435",
     previewHeading: "\u041f\u0440\u0435\u0434\u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440",
     noItemsPreview: "\u0414\u043b\u044f \u044d\u0442\u043e\u0433\u043e \u044d\u0442\u0430\u043f\u0430 \u043f\u043e\u043a\u0430 \u043d\u0435\u0442 \u043f\u0440\u0435\u0434\u043c\u0435\u0442\u043e\u0432.",
     copied: "guide.json \u0441\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d.",
@@ -1321,7 +1324,12 @@ function openPicker(mode, options = {}) {
     : mode === "boss"
       ? "boss"
       : "all";
-  pickerState = { mode, filter, ...nextOptions };
+  pickerState = {
+    mode,
+    filter,
+    visibleCount: mode === "description" ? PICKER_PREVIEW_STEP * 2 : PICKER_PREVIEW_STEP,
+    ...nextOptions
+  };
   refs.picker.hidden = false;
   refs.pickerTitle.textContent = mode === "description"
     ? s("pickerDescriptionTitle")
@@ -1390,18 +1398,27 @@ function pickerSearchText(entry) {
 
 function pickerPreviewEntries() {
   if (!pickerState) return [];
+  let source = [];
   if (pickerState.mode === "description") {
-    return support.previews.descriptionByKind[pickerState.filter || "all"] || [];
+    source = support.previews.descriptionByKind[pickerState.filter || "all"] || [];
+  } else if (pickerState.mode === "boss") {
+    source = support.previews.boss;
+  } else {
+    source = support.previews.itemByGroup[pickerState.groupKey || "weapon"] || [];
   }
-  if (pickerState.mode === "boss") {
-    return support.previews.boss;
-  }
-  return support.previews.itemByGroup[pickerState.groupKey || "weapon"] || [];
+  return source.slice(0, pickerState.visibleCount || source.length);
 }
 
 function renderPickerResults() {
   const query = refs.pickerSearchInput.value.trim().toLowerCase();
   const searchModeNeedsMoreText = pickerState?.mode === "item" && pickerState?.groupKey === "other" && query.length > 0 && query.length < ITEM_PICKER_MIN_QUERY;
+  const fullPreviewEntries = !query && pickerState
+    ? pickerState.mode === "description"
+      ? (support.previews.descriptionByKind[pickerState.filter || "all"] || [])
+      : pickerState.mode === "boss"
+        ? support.previews.boss
+        : (support.previews.itemByGroup[pickerState.groupKey || "weapon"] || [])
+    : [];
   let results = query
     ? pickerSearchEntries(query)
       .filter((entry) => {
@@ -1418,13 +1435,16 @@ function renderPickerResults() {
   const hint = searchModeNeedsMoreText
     ? `<p class="empty-state">${esc(lang() === "ru" ? `Введите минимум ${ITEM_PICKER_MIN_QUERY} символа, чтобы искать по полному списку предметов.` : `Type at least ${ITEM_PICKER_MIN_QUERY} characters to search the full item list.`)}</p>`
     : "";
+  const showMore = !query && fullPreviewEntries.length > results.length
+    ? `<button class="button button--quiet button--tiny" type="button" data-picker-more="1">${esc(s("pickerShowMore"))}</button>`
+    : "";
 
   refs.pickerResults.innerHTML = hint + (results.map((entry) => {
     const label = localizedDisplayName(entry) || String(entry.id || "").split("/").pop() || "";
     const pickerType = pickerState?.mode === "description" ? normalizedContentKind(entry) : pickerState?.mode === "boss" ? "boss" : "item";
     const boss = pickerType === "boss";
     return `<button class="picker-result" type="button" data-picker-id="${esc(entry.id)}"><span class="picker-result__media">${iconMarkup(entry, label, boss)}</span><span class="picker-result__copy"><strong>${esc(label)}</strong><span>${esc(entry.id)}</span></span></button>`;
-  }).join("") || (!hint ? `<p class="empty-state">${esc(s("noPickerResults"))}</p>` : ""));
+  }).join("") || (!hint ? `<p class="empty-state">${esc(s("noPickerResults"))}</p>` : "")) + showMore;
 }
 
 function insertAtCursor(field, value, startOverride, endOverride) {
@@ -1759,7 +1779,14 @@ refs.picker.addEventListener("click", (event) => {
   const filterButton = event.target.closest("[data-picker-filter]");
   if (filterButton && pickerState) {
     pickerState.filter = filterButton.dataset.pickerFilter;
+    pickerState.visibleCount = pickerState.mode === "description" ? PICKER_PREVIEW_STEP * 2 : PICKER_PREVIEW_STEP;
     renderPickerFilters();
+    renderPickerResults();
+    return;
+  }
+  const moreButton = event.target.closest("[data-picker-more]");
+  if (moreButton && pickerState) {
+    pickerState.visibleCount = (pickerState.visibleCount || PICKER_PREVIEW_STEP) + PICKER_PREVIEW_STEP;
     renderPickerResults();
     return;
   }
