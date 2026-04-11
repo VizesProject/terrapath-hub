@@ -1402,9 +1402,11 @@ function pickerPreviewEntries() {
   if (pickerState.mode === "description") {
     source = support.previews.descriptionByKind[pickerState.filter || "all"] || [];
   } else if (pickerState.mode === "boss") {
-    source = support.previews.boss;
+    source = support.bosses;
   } else {
-    source = support.previews.itemByGroup[pickerState.groupKey || "weapon"] || [];
+    source = pickerState.groupKey === "other"
+      ? support.itemGroups.other
+      : support.itemGroups[pickerState.groupKey || "weapon"] || [];
   }
   return source.slice(0, pickerState.visibleCount || source.length);
 }
@@ -1416,8 +1418,10 @@ function renderPickerResults() {
     ? pickerState.mode === "description"
       ? (support.previews.descriptionByKind[pickerState.filter || "all"] || [])
       : pickerState.mode === "boss"
-        ? support.previews.boss
-        : (support.previews.itemByGroup[pickerState.groupKey || "weapon"] || [])
+        ? support.bosses
+        : (pickerState.groupKey === "other"
+          ? support.itemGroups.other
+          : (support.itemGroups[pickerState.groupKey || "weapon"] || []))
     : [];
   let results = query
     ? pickerSearchEntries(query)
