@@ -7,7 +7,7 @@
       "kind": "boss",
       "internalName": "Anahita",
       "displayName": "Anahita",
-      "displayNameRu": "Anahita",
+      "displayNameRu": "\u0410\u043d\u0430\u0445\u0438\u0442\u0430",
       "tags": [
         "boss"
       ],
@@ -20,7 +20,7 @@
       "kind": "boss",
       "internalName": "Apollo",
       "displayName": "Apollo",
-      "displayNameRu": "XS-03 Apollo",
+      "displayNameRu": "\u0412\u041f-03 \u0410\u043f\u043e\u043b\u043b\u043e\u043d",
       "tags": [
         "boss"
       ],
@@ -46,7 +46,7 @@
       "kind": "boss",
       "internalName": "Artemis",
       "displayName": "Artemis",
-      "displayNameRu": "XS-01 Artemis",
+      "displayNameRu": "\u0412\u041f-01 \u0410\u0440\u0442\u0435\u043c\u0438\u0434\u0430",
       "tags": [
         "boss"
       ],
@@ -59,7 +59,7 @@
       "kind": "boss",
       "internalName": "AstrumAureus",
       "displayName": "Astrum Aureus",
-      "displayNameRu": "Astrum Aureus",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0443\u043c \u0410\u0440\u0435\u0443\u0441",
       "tags": [
         "boss"
       ],
@@ -85,7 +85,7 @@
       "kind": "boss",
       "internalName": "BrimstoneElemental",
       "displayName": "Brimstone Elemental",
-      "displayNameRu": "Brimstone Elemental",
+      "displayNameRu": "\u0421\u0435\u0440\u043d\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u043b\u044c",
       "tags": [
         "boss"
       ],
@@ -98,7 +98,7 @@
       "kind": "boss",
       "internalName": "CalamitasClone",
       "displayName": "Calamitas Clone",
-      "displayNameRu": "Calamitas Clone",
+      "displayNameRu": "\u041a\u043b\u043e\u043d \u041a\u0430\u043b\u0430\u043c\u0438\u0442\u0430\u0441",
       "tags": [
         "boss"
       ],
@@ -111,7 +111,7 @@
       "kind": "boss",
       "internalName": "CeaselessVoid",
       "displayName": "Ceaseless Void",
-      "displayNameRu": "Ceaseless Void",
+      "displayNameRu": "\u041d\u0435\u0441\u043a\u043e\u043d\u0447\u0430\u0435\u043c\u0430\u044f \u043f\u0443\u0441\u0442\u043e\u0442\u0430",
       "tags": [
         "boss"
       ],
@@ -124,7 +124,7 @@
       "kind": "boss",
       "internalName": "Crabulon",
       "displayName": "Crabulon",
-      "displayNameRu": "Crabulon",
+      "displayNameRu": "\u041a\u0440\u0430\u0431\u0443\u043b\u043e\u043d",
       "tags": [
         "boss"
       ],
@@ -137,7 +137,7 @@
       "kind": "boss",
       "internalName": "Cryogen",
       "displayName": "Cryogen",
-      "displayNameRu": "Cryogen",
+      "displayNameRu": "\u041a\u0440\u0438\u043e\u0433\u0435\u043d",
       "tags": [
         "boss"
       ],
@@ -163,7 +163,7 @@
       "kind": "boss",
       "internalName": "Dragonfolly",
       "displayName": "Dragonfolly",
-      "displayNameRu": "Dragonfolly",
+      "displayNameRu": "\u041f\u0441\u0435\u0432\u0434\u043e\u0434\u0440\u0430\u043a\u043e\u043d",
       "tags": [
         "boss"
       ],
@@ -176,7 +176,7 @@
       "kind": "boss",
       "internalName": "HiveMind",
       "displayName": "Hive Mind",
-      "displayNameRu": "The Hive Mind",
+      "displayNameRu": "\u0420\u0430\u0437\u0443\u043c \u0443\u043b\u044c\u044f",
       "tags": [
         "boss"
       ],
@@ -189,7 +189,7 @@
       "kind": "boss",
       "internalName": "Leviathan",
       "displayName": "Leviathan",
-      "displayNameRu": "The Leviathan",
+      "displayNameRu": "\u041b\u0435\u0432\u0438\u0430\u0444\u0430\u043d",
       "tags": [
         "boss"
       ],
@@ -202,7 +202,7 @@
       "kind": "boss",
       "internalName": "OldDuke",
       "displayName": "Old Duke",
-      "displayNameRu": "The Old Duke",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u044b\u0439 \u0433\u0435\u0440\u0446\u043e\u0433",
       "tags": [
         "boss"
       ],
@@ -215,7 +215,7 @@
       "kind": "boss",
       "internalName": "PlaguebringerGoliath",
       "displayName": "Plaguebringer Goliath",
-      "displayNameRu": "The Plaguebringer Goliath",
+      "displayNameRu": "\u041f\u0440\u0435\u0434\u0432\u0435\u0441\u0442\u043d\u0438\u0446\u0430 \u0447\u0443\u043c\u044b, \u0413\u043e\u043b\u0438\u0430\u0444",
       "tags": [
         "boss"
       ],
@@ -228,7 +228,7 @@
       "kind": "boss",
       "internalName": "Polterghast",
       "displayName": "Polterghast",
-      "displayNameRu": "Polterghast",
+      "displayNameRu": "\u041f\u043e\u043b\u0442\u0435\u0440\u0433\u0430\u0441\u0442",
       "tags": [
         "boss"
       ],
@@ -267,7 +267,7 @@
       "kind": "boss",
       "internalName": "Providence",
       "displayName": "Providence",
-      "displayNameRu": "Providence, the Profaned Goddess",
+      "displayNameRu": "\u041f\u0440\u043e\u0432\u0438\u0434\u0435\u043d\u0441, \u041e\u0441\u043a\u0432\u0435\u0440\u043d\u0451\u043d\u043d\u0430\u044f \u0431\u043e\u0433\u0438\u043d\u044f",
       "tags": [
         "boss"
       ],
@@ -293,7 +293,7 @@
       "kind": "boss",
       "internalName": "Signus",
       "displayName": "Signus",
-      "displayNameRu": "Signus, Envoy of the Devourer",
+      "displayNameRu": "\u0421\u0438\u0433\u043d\u0443\u0441, \u041f\u043e\u0441\u043b\u0430\u043d\u043d\u0438\u043a \u041f\u043e\u0436\u0438\u0440\u0430\u0442\u0435\u043b\u044f",
       "tags": [
         "boss"
       ],
@@ -384,7 +384,7 @@
       "kind": "boss",
       "internalName": "THELORDE",
       "displayName": "THELORDE",
-      "displayNameRu": "THE LORDE",
+      "displayNameRu": "\u041b\u041e\u0420\u0414",
       "tags": [
         "boss"
       ],
@@ -397,7 +397,7 @@
       "kind": "boss",
       "internalName": "Yharon",
       "displayName": "Yharon",
-      "displayNameRu": "Yharon, Dragon of Rebirth",
+      "displayNameRu": "\u042f\u0440\u043e\u043d, \u0414\u0440\u0430\u043a\u043e\u043d \u0432\u043e\u0437\u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f",
       "tags": [
         "boss"
       ],
@@ -410,7 +410,7 @@
       "kind": "miniboss",
       "internalName": "CloudElemental",
       "displayName": "Cloud Elemental",
-      "displayNameRu": "Cloud Elemental",
+      "displayNameRu": "\u041e\u0431\u043b\u0430\u0447\u043d\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u043b\u044c",
       "tags": [
         "miniboss"
       ],
@@ -422,7 +422,7 @@
       "kind": "miniboss",
       "internalName": "CragmawMire",
       "displayName": "Cragmaw Mire",
-      "displayNameRu": "Cragmaw Mire",
+      "displayNameRu": "\u0411\u043e\u043b\u043e\u0442\u0438\u0441\u0442\u044b\u0439 \u0441\u043a\u0430\u043b\u043e\u0437\u0435\u0432",
       "tags": [
         "miniboss"
       ],
@@ -434,7 +434,7 @@
       "kind": "miniboss",
       "internalName": "EarthElemental",
       "displayName": "Earth Elemental",
-      "displayNameRu": "Earth Elemental",
+      "displayNameRu": "\u0417\u0435\u043c\u043b\u044f\u043d\u043e\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u043b\u044c",
       "tags": [
         "miniboss"
       ],
@@ -446,7 +446,7 @@
       "kind": "miniboss",
       "internalName": "GiantClam",
       "displayName": "Giant Clam",
-      "displayNameRu": "Giant Clam",
+      "displayNameRu": "\u0413\u0438\u0433\u0430\u043d\u0442\u0441\u043a\u0438\u0439 \u043c\u043e\u043b\u043b\u044e\u0441\u043a",
       "tags": [
         "miniboss"
       ],
@@ -458,7 +458,7 @@
       "kind": "miniboss",
       "internalName": "GreatSandShark",
       "displayName": "Great Sand Shark",
-      "displayNameRu": "Great Sand Shark",
+      "displayNameRu": "\u0411\u043e\u043b\u044c\u0448\u0430\u044f \u043f\u0435\u0441\u0447\u0430\u043d\u0430\u044f \u0430\u043a\u0443\u043b\u0430",
       "tags": [
         "miniboss"
       ],
@@ -470,7 +470,7 @@
       "kind": "miniboss",
       "internalName": "Mauler",
       "displayName": "Mauler",
-      "displayNameRu": "Mauler",
+      "displayNameRu": "\u041c\u0443\u0447\u0438\u0442\u0435\u043b\u044c",
       "tags": [
         "miniboss"
       ],
@@ -482,7 +482,7 @@
       "kind": "miniboss",
       "internalName": "NuclearTerror",
       "displayName": "Nuclear Terror",
-      "displayNameRu": "Nuclear Terror",
+      "displayNameRu": "\u042f\u0434\u0435\u0440\u043d\u044b\u0439 \u0442\u0435\u0440\u0440\u043e\u0440",
       "tags": [
         "miniboss"
       ],
