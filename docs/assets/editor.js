@@ -1493,12 +1493,6 @@ function ingestSearchableSupport(entries) {
 }
 
 async function loadModSupport(modName) {
-  const modMeta = MODS.find((entry) => entry.value === modName);
-  if (modMeta && modMeta.status !== "official") {
-    supportDataCache.set(modName, { searchContentData: { entries: [] } });
-    return;
-  }
-
   if (!supportDataCache.has(modName)) {
     const base = `supported/${modName}`;
     const alt = `../supported/${modName}`;
@@ -1557,6 +1551,7 @@ async function loadSupport() {
     await Promise.all(requestedSupportMods().map((modName) => loadModSupport(modName)));
     if (requestToken !== supportRequestToken) return;
     applySupportEnhancements();
+    canonicalizeDraftBossRefs();
     supportState = "loaded";
   } catch (error) {
     console.error(error);
@@ -1565,6 +1560,44 @@ async function loadSupport() {
   }
 
   renderAll();
+}
+
+function canonicalizeDraftBossRefs() {
+  const canonicalById = new Map();
+  for (const entry of support.bossMap.values()) {
+    const id = String(entry?.id || "").trim();
+    const canonical = String(entry?.canonicalBossId || id).trim();
+    if (id && canonical && id !== canonical) {
+      canonicalById.set(id, canonical);
+    }
+  }
+
+  let changed = false;
+  for (const stage of state.stages || []) {
+    if (!Array.isArray(stage?.bossRefs)) continue;
+    const nextRefs = [];
+    const seen = new Set();
+
+    for (const rawId of stage.bossRefs) {
+      const id = String(rawId || "").trim();
+      if (!id) continue;
+      const normalized = canonicalById.get(id) || id;
+      if (!seen.has(normalized)) {
+        seen.add(normalized);
+        nextRefs.push(normalized);
+      }
+      if (normalized !== id) changed = true;
+    }
+
+    if (nextRefs.length !== stage.bossRefs.length || nextRefs.some((value, index) => value !== stage.bossRefs[index])) {
+      stage.bossRefs = nextRefs;
+      changed = true;
+    }
+  }
+
+  if (changed) {
+    saveDraft();
+  }
 }
 
 refs.titleInput.addEventListener("input", () => {

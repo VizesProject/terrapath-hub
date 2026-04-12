@@ -149,6 +149,28 @@ def default_export_dir(mod_name: str) -> Path | None:
     return None
 
 
+def export_roots() -> list[Path]:
+    roots: list[Path] = []
+    for root in (Path.home() / "OneDrive", Path.home()):
+        for documents_dir in ("Documents", "Документы"):
+            roots.append(root / documents_dir / "My Games" / "Terraria" / "tModLoader" / "Mods" / "Cache" / "TerraPath" / "Exports")
+    return roots
+
+
+def case_insensitive_export_dir(mod_name: str) -> Path | None:
+    lowered = mod_name.strip().lower()
+    for root in export_roots():
+        if not root.exists():
+            continue
+        try:
+            for child in root.iterdir():
+                if child.is_dir() and child.name.lower() == lowered:
+                    return child
+        except OSError:
+            continue
+    return None
+
+
 def resolve_export_dir(mod_name: str, explicit: str | None) -> Path:
     if explicit:
         resolved = Path(explicit).expanduser()
@@ -158,7 +180,9 @@ def resolve_export_dir(mod_name: str, explicit: str | None) -> Path:
 
     resolved = default_export_dir(mod_name)
     if resolved is None:
-        raise SystemExit(f"No export directory found for {mod_name}. Run /terrapath export mod {mod_name} first or pass --export-dir.")
+        resolved = case_insensitive_export_dir(mod_name)
+    if resolved is None:
+        raise SystemExit(f"No export directory found for {mod_name}. Run /terrapathexport mod {mod_name} first or pass --export-dir.")
     return resolved
 
 
