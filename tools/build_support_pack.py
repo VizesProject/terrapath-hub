@@ -55,6 +55,14 @@ ARMOR_SUFFIXES = (
     "Pants",
     "Kilt",
 )
+SEGMENT_SUFFIX_PATTERN = re.compile(
+    r"(BodyAlt|Body\d*|Tail\d*|Tail|Segment\d*|Part\d*|Claw\d*|Arm\d*|Hand\d*|Wing\d*|Head\d+)$",
+    re.IGNORECASE,
+)
+TECHNICAL_BOSS_HINTS = re.compile(
+    r"(Projectile|Laser|Cannon|Gauss|Flamethrower|Turret|Missile|Drone|Mine|Spawner|Portal|Hook)$",
+    re.IGNORECASE,
+)
 
 
 def read_json(path: Path) -> dict:
@@ -363,6 +371,41 @@ def apply_taxonomy_overrides(entries_by_id: dict[str, dict], supplement: dict) -
         )
 
 
+def infer_auto_boss_canonical(content_id: str, entry: dict, entries_by_id: dict[str, dict]) -> str:
+    explicit = str(entry.get("canonicalBossId") or "").strip()
+    if explicit:
+        return explicit
+
+    internal_name = str(entry.get("internalName") or content_id.split("/")[-1]).strip()
+    mod_prefix = content_id.split("/", 1)[0]
+
+    if TECHNICAL_BOSS_HINTS.search(internal_name):
+        return content_id
+
+    if SEGMENT_SUFFIX_PATTERN.search(internal_name):
+        base = SEGMENT_SUFFIX_PATTERN.sub("", internal_name)
+        candidates = [
+            f"{mod_prefix}/{base}Head",
+            f"{mod_prefix}/{base}",
+        ]
+        for candidate in candidates:
+            candidate_entry = entries_by_id.get(candidate)
+            if not candidate_entry:
+                continue
+            candidate_kind = normalize_kind(candidate_entry.get("kind"))
+            if candidate_kind in BOSS_LIKE_KINDS:
+                return candidate
+
+    if internal_name.endswith("Body") and len(internal_name) > len("Body"):
+        base = internal_name[:-len("Body")]
+        candidate = f"{mod_prefix}/{base}Head"
+        candidate_entry = entries_by_id.get(candidate)
+        if candidate_entry and normalize_kind(candidate_entry.get("kind")) in BOSS_LIKE_KINDS:
+            return candidate
+
+    return content_id
+
+
 def apply_boss_normalization(entries_by_id: dict[str, dict], supplement: dict) -> None:
     rules = supplement.get("bossNormalization", {}) if isinstance(supplement, dict) else {}
     alias_map = {
@@ -384,7 +427,7 @@ def apply_boss_normalization(entries_by_id: dict[str, dict], supplement: dict) -
         if kind not in BOSS_LIKE_KINDS:
             continue
 
-        canonical = alias_map.get(content_id, content_id)
+        canonical = alias_map.get(content_id, infer_auto_boss_canonical(content_id, entry, entries_by_id))
         entry["canonicalBossId"] = canonical
 
         if content_id in hidden_bosses:
@@ -393,8 +436,13 @@ def apply_boss_normalization(entries_by_id: dict[str, dict], supplement: dict) -
         elif content_id in eligible_minibosses:
             entry["kind"] = "miniboss"
             entry["bossPickerEligible"] = canonical == content_id
+            entry["pickerHidden"] = False
+        elif canonical != content_id:
+            entry["bossPickerEligible"] = False
+            entry["pickerHidden"] = True
         else:
             entry["bossPickerEligible"] = bool(entry.get("bossPickerEligible", canonical == content_id))
+            entry["pickerHidden"] = bool(entry.get("pickerHidden", False))
 
         entry["bossColumn"] = column_map.get(
             content_id,
@@ -502,6 +550,13 @@ def build_generic_pack(mod_name: str, export_dir: Path) -> tuple[dict, dict, dic
 
     raw_items = read_json(items_path).get("items", [])
     raw_npcs = read_json(npcs_path).get("npcs", [])
+    if not isinstance(raw_items, list) or not isinstance(raw_npcs, list):
+        raise SystemExit(f"{mod_name}: export payload is invalid in {export_dir}. Expected JSON arrays for items and npcs.")
+    if len(raw_items) == 0 or len(raw_npcs) == 0:
+        raise SystemExit(
+            f"{mod_name}: preflight failed. Export must contain both items and npcs (>0). Got items={len(raw_items)}, npcs={len(raw_npcs)}."
+        )
+
     previous = load_previous_entries(mod_name)
     supplement = load_supplement(mod_name)
 
@@ -600,7 +655,7 @@ def build_payloads_for_mod(mod_name: str, export_dir: str | None) -> tuple[dict,
     if mod_name == "CalamityMod":
         resolved = calamity.find_export_dir(export_dir)
         if resolved is None:
-            raise SystemExit("No Calamity export directory found. Run /terrapath export mod CalamityMod first or pass --export-dir.")
+            raise SystemExit("No Calamity export directory found. Run /terrapathexport mod CalamityMod first or pass --export-dir.")
         return calamity.build_pack(resolved)
 
     resolved = resolve_export_dir(mod_name, export_dir)

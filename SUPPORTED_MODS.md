@@ -40,12 +40,13 @@ runtime category guessing.
 
 ## Maintainer Rebuild Flow
 
-1. Run `/terrapath export modlist` in tModLoader to confirm exact internal ids.
-2. Run `/terrapath export mod <InternalModName>` for each mod you want to rebuild.
+1. Run `/terrapathexport modlist` in tModLoader to confirm exact internal ids.
+2. Run `/terrapathexport mod <InternalModName>` for each mod you want to rebuild.
 3. (Optional) Refresh curated wiki icon overrides where needed.
 4. Run `python tools/build_support_pack.py --mod <InternalModName>`.
-5. Run `python tools/validate_support_data.py`.
-6. Run `python tools/build_catalog.py --check`.
+5. Run `python tools/generate_critical_ru_list.py --mod <InternalModName>`.
+6. Run `python tools/validate_support_data.py --promotion-mod <InternalModName>`.
+7. Promote per-mod: `python tools/promote_mod_official.py --mod <InternalModName>`.
 
 ## Quality Gates
 
@@ -55,4 +56,4 @@ Validation is blocking for `Official` mods:
 - no segmented or technical NPCs in boss picker
 - selectable bosses must be canonical and icon-backed
 - armor entries must carry deterministic metadata (`armorMode`, `armorGroupKey`)
-- localization fallback is allowed (`displayNameRu` -> EN), but coverage is reported.
+- Wave 2 mods enforce `Critical+Coverage`: 100% critical RU list + at least 85% RU coverage for picker-visible entries.

@@ -12,5 +12,15 @@
   "taxonomyOverrides": {
     "forcedCategories": {},
     "blacklist": []
+  },
+  "localizationPolicy": {
+    "coverageThresholdPickerVisible": 0.85,
+    "criticalPerCategory": {
+      "weapon": 16,
+      "armor": 12,
+      "accessory": 14,
+      "buff": 12
+    },
+    "criticalRuIds": []
   }
 }

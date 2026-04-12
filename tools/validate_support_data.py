@@ -1,3 +1,4 @@
+import argparse
 import json
 import re
 import struct
@@ -64,6 +65,7 @@ CALAMITY_CRITICAL_RU_IDS = {
     "CalamityMod/AuricTeslaHeadRogue",
     "CalamityMod/AuricTeslaHeadSummon",
 }
+WAVE2_MODS = {"Fargowiltas", "FargowiltasSouls", "FargowiltasDLC", "FargowiltasSoulsDLC"}
 
 
 def read_json(path: Path) -> dict:
@@ -159,17 +161,57 @@ def validate_search_content(mod_name: str, entries: list[dict], bosses_subset: l
         require(row.get("bossPickerEligible"), f"{mod_name}: bosses.json entry is not picker-eligible in search-content: {content_id}")
 
 
-def localization_coverage(mod_name: str, entries: list[dict]) -> None:
+def is_picker_visible(row: dict) -> bool:
+    if row.get("pickerHidden"):
+        return False
+    return True
+
+
+def localization_coverage(mod_name: str, entries: list[dict]) -> tuple[int, int, float]:
     if not entries:
-        return
+        return 0, 0, 0.0
+    visible = [row for row in entries if is_picker_visible(row)]
     localized = 0
-    for row in entries:
+    for row in visible:
         en = str(row.get("displayName") or "").strip()
         ru = str(row.get("displayNameRu") or "").strip()
         if ru and ru != en:
             localized += 1
-    percent = (localized / max(1, len(entries))) * 100.0
-    print(f"[coverage] {mod_name}: localized {localized}/{len(entries)} ({percent:.1f}%)")
+    percent = (localized / max(1, len(visible))) * 100.0
+    print(f"[coverage] {mod_name}: localized {localized}/{len(visible)} picker-visible ({percent:.1f}%)")
+    return localized, len(visible), percent
+
+
+def load_mod_localization_policy(mod_name: str) -> dict:
+    supplement_path = support_file(mod_name, "supplement.json")
+    if not supplement_path.exists():
+        return {}
+    supplement = read_json(supplement_path)
+    policy = supplement.get("localizationPolicy", {})
+    return policy if isinstance(policy, dict) else {}
+
+
+def validate_mod_localization_policy(mod_name: str, entries: list[dict], policy: dict) -> None:
+    rows_by_id = {str(row.get("id") or ""): row for row in entries if row.get("id")}
+    threshold = float(policy.get("coverageThresholdPickerVisible", 0.0) or 0.0)
+    _, visible_count, percent = localization_coverage(mod_name, entries)
+
+    if threshold > 0:
+        require(visible_count > 0, f"{mod_name}: no picker-visible entries to evaluate localization coverage")
+        require(percent >= threshold * 100.0, f"{mod_name}: RU coverage {percent:.1f}% is below required {threshold * 100.0:.1f}%")
+
+    critical_ids = [str(value) for value in policy.get("criticalRuIds", []) if str(value).strip()]
+    missing_critical = [content_id for content_id in critical_ids if content_id not in rows_by_id]
+    require(not missing_critical, f"{mod_name}: critical RU ids are missing in search-content: {', '.join(missing_critical[:20])}")
+
+    bad_critical: list[str] = []
+    for content_id in critical_ids:
+        row = rows_by_id[content_id]
+        en = str(row.get("displayName") or "").strip()
+        ru = str(row.get("displayNameRu") or "").strip()
+        if not ru or ru == en:
+            bad_critical.append(content_id)
+    require(not bad_critical, f"{mod_name}: critical entries must have localized displayNameRu: {', '.join(bad_critical[:20])}")
 
 
 def validate_terraria_boss_icons() -> None:
@@ -217,10 +259,10 @@ def validate_calamity_critical_localization() -> None:
     require(not not_localized, f"Calamity critical entries lost RU localization: {', '.join(not_localized)}")
 
 
-def validate_mod(mod_row: dict) -> None:
+def validate_mod(mod_row: dict, promotion_mod: str | None = None) -> None:
     mod_name = str(mod_row.get("id") or "").strip()
     status = str(mod_row.get("status") or "planned").strip().lower()
-    strict_required = status in OFFICIAL_STATUSES
+    strict_required = status in OFFICIAL_STATUSES or (promotion_mod == mod_name)
 
     search_path = support_file(mod_name, "search-content.json")
     items_path = support_file(mod_name, "items.json")
@@ -241,6 +283,14 @@ def validate_mod(mod_row: dict) -> None:
     validate_search_content(mod_name, search_entries, bosses_rows, strict_required)
     localization_coverage(mod_name, search_entries)
 
+    policy = load_mod_localization_policy(mod_name)
+    if strict_required and mod_name in WAVE2_MODS:
+        if "coverageThresholdPickerVisible" not in policy:
+            policy["coverageThresholdPickerVisible"] = 0.85
+        policy.setdefault("criticalRuIds", [])
+    if strict_required and policy:
+        validate_mod_localization_policy(mod_name, search_entries, policy)
+
     if mod_name == "Terraria" and strict_required:
         event_count = sum(1 for row in search_entries if str(row.get("kind") or "").lower() == "event")
         biome_count = sum(1 for row in search_entries if str(row.get("kind") or "").lower() == "biome")
@@ -257,14 +307,22 @@ def validate_mod(mod_row: dict) -> None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--promotion-mod", help="validate a planned mod with official-grade gates before promoting it")
+    args = parser.parse_args()
+
     mods = load_registry()
+    promotion_mod = str(args.promotion_mod or "").strip() or None
+    if promotion_mod and promotion_mod not in {str(row.get("id")) for row in mods}:
+        raise SystemExit(f"{promotion_mod}: unknown mod id in registry")
+
     for row in mods:
-        validate_mod(row)
+        validate_mod(row, promotion_mod=promotion_mod)
 
     status_by_mod = {str(row.get("id")): str(row.get("status") or "").lower() for row in mods}
-    if status_by_mod.get("Terraria") in OFFICIAL_STATUSES:
+    if status_by_mod.get("Terraria") in OFFICIAL_STATUSES or promotion_mod == "Terraria":
         validate_terraria_boss_icons()
-    if status_by_mod.get("CalamityMod") in OFFICIAL_STATUSES:
+    if status_by_mod.get("CalamityMod") in OFFICIAL_STATUSES or promotion_mod == "CalamityMod":
         validate_calamity_boss_picker()
         validate_calamity_critical_localization()
 
