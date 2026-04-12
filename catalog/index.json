@@ -24,6 +24,25 @@
       "popularity": 0
     },
     {
+      "id": "calamity-warrior-hardmode-wiki",
+      "title": "Calamity \u0412\u043e\u0438\u043d: \u0425\u0430\u0440\u0434\u043c\u043e\u0434 (wiki reference)",
+      "author": "TerraPath Team",
+      "language": "ru-RU",
+      "summary": "\u0422\u0435\u0441\u0442\u043e\u0432\u044b\u0439 \u0440\u0435\u0444\u0435\u0440\u0435\u043d\u0441-\u0433\u0430\u0439\u0434 \u0434\u043b\u044f \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 \u0440\u0435\u0434\u0430\u043a\u0442\u043e\u0440\u0430 TerraPath: \u043f\u043e\u043b\u043d\u044b\u0439 \u043f\u0443\u0442\u044c \u0412\u043e\u0438\u043d\u0430 \u0432 \u0445\u0430\u0440\u0434\u043c\u043e\u0434\u0435 \u043f\u043e \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0435 \u043e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u043e\u0433\u043e Calamity class setup.",
+      "requiredMods": [
+        "Terraria",
+        "CalamityMod"
+      ],
+      "classTags": [
+        "melee"
+      ],
+      "guideTags": [],
+      "updatedAt": "2026-04-12",
+      "stageCount": 5,
+      "path": "guides/ru-RU/calamity-warrior-hardmode-wiki/guide.json",
+      "popularity": 0
+    },
+    {
       "id": "terraria-melee",
       "title": "\u041f\u0435\u0440\u0432\u044b\u0439",
       "author": "\u044b\u044b\u044b\u044b\u044b\u044b\u044b\u044b\u044b",
