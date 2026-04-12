@@ -466,6 +466,26 @@ def build_payloads() -> tuple[dict, dict, dict]:
     bosses_by_id = build_bosses()
     combined_by_id = {**items_by_id, **bosses_by_id}
     apply_supplement(combined_by_id, load_supplement_entries())
+
+    for content_id, entry in list(combined_by_id.items()):
+        if not (entry.get("category") or str(entry.get("kind") or "") in ITEM_LIKE_KINDS):
+            continue
+        normalized = dict(entry)
+        if normalized.pop("categoryForced", False):
+            forced_category = str(normalized.get("category") or "").strip().lower()
+            normalized["category"] = forced_category if forced_category in STRICT_ITEM_CATEGORIES else "other"
+        else:
+            normalized["category"] = normalize_item_category(normalized)
+        normalized["tags"] = merge_tags(
+            [
+                tag
+                for tag in normalized.get("tags", [])
+                if str(tag).strip().lower() not in STRICT_ITEM_CATEGORIES
+            ],
+            [normalized["category"]],
+        )
+        combined_by_id[content_id] = normalized
+
     search_entries_by_id = dict(combined_by_id)
 
     items_by_id = {

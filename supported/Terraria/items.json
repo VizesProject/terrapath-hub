@@ -911,9 +911,9 @@
       "icon": "assets/icons/terraria/search-items/coppergreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "copper"
+        "copper",
+        "armor"
       ],
       "armorGroupKey": "Copper",
       "armorMode": "piece",
@@ -928,9 +928,9 @@
       "icon": "assets/icons/terraria/search-items/irongreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "iron"
+        "iron",
+        "armor"
       ],
       "armorGroupKey": "Iron",
       "armorMode": "piece",
@@ -945,9 +945,9 @@
       "icon": "assets/icons/terraria/search-items/silvergreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "silver"
+        "silver",
+        "armor"
       ],
       "armorGroupKey": "Silver",
       "armorMode": "piece",
@@ -962,9 +962,9 @@
       "icon": "assets/icons/terraria/search-items/goldgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "gold"
+        "gold",
+        "armor"
       ],
       "armorGroupKey": "Gold",
       "armorMode": "piece",
@@ -979,9 +979,9 @@
       "icon": "assets/icons/terraria/search-items/copperchainmail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "copper"
+        "copper",
+        "armor"
       ],
       "armorGroupKey": "Copper",
       "armorMode": "piece",
@@ -996,9 +996,9 @@
       "icon": "assets/icons/terraria/search-items/ironchainmail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "iron"
+        "iron",
+        "armor"
       ],
       "armorGroupKey": "Iron",
       "armorMode": "piece",
@@ -1013,9 +1013,9 @@
       "icon": "assets/icons/terraria/search-items/silverchainmail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "silver"
+        "silver",
+        "armor"
       ],
       "armorGroupKey": "Silver",
       "armorMode": "piece",
@@ -1030,9 +1030,9 @@
       "icon": "assets/icons/terraria/search-items/goldchainmail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "gold"
+        "gold",
+        "armor"
       ],
       "armorGroupKey": "Gold",
       "armorMode": "piece",
@@ -1095,9 +1095,9 @@
       "icon": "assets/icons/terraria/search-items/mininghelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "mining"
+        "mining",
+        "armor"
       ],
       "armorGroupKey": "Mining",
       "armorMode": "piece"
@@ -1111,9 +1111,9 @@
       "icon": "assets/icons/terraria/search-items/copperhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "copper"
+        "copper",
+        "armor"
       ],
       "armorGroupKey": "Copper",
       "armorMode": "set"
@@ -1127,9 +1127,9 @@
       "icon": "assets/icons/terraria/search-items/ironhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "iron"
+        "iron",
+        "armor"
       ],
       "armorGroupKey": "Iron",
       "armorMode": "set"
@@ -1143,9 +1143,9 @@
       "icon": "assets/icons/terraria/search-items/silverhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "silver"
+        "silver",
+        "armor"
       ],
       "armorGroupKey": "Silver",
       "armorMode": "set"
@@ -1159,9 +1159,9 @@
       "icon": "assets/icons/terraria/search-items/goldhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "gold"
+        "gold",
+        "armor"
       ],
       "armorGroupKey": "Gold",
       "armorMode": "set"
@@ -1259,9 +1259,9 @@
       "icon": "assets/icons/terraria/search-items/shadowgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "shadow"
+        "shadow",
+        "armor"
       ],
       "armorGroupKey": "Shadow",
       "armorMode": "piece"
@@ -1287,9 +1287,9 @@
       "icon": "assets/icons/terraria/search-items/shadowhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "shadow"
+        "shadow",
+        "armor"
       ],
       "armorGroupKey": "Shadow",
       "armorMode": "piece"
@@ -1543,9 +1543,9 @@
       "icon": "assets/icons/terraria/search-items/meteorhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "meteor"
+        "meteor",
+        "armor"
       ],
       "armorGroupKey": "Meteor",
       "armorMode": "piece"
@@ -1571,9 +1571,9 @@
       "icon": "assets/icons/terraria/search-items/meteorleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "meteor"
+        "meteor",
+        "armor"
       ],
       "armorGroupKey": "Meteor",
       "armorMode": "piece"
@@ -1887,9 +1887,9 @@
       "icon": "assets/icons/terraria/search-items/necrohelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "necro"
+        "necro",
+        "armor"
       ],
       "armorGroupKey": "Necro",
       "armorMode": "set"
@@ -1903,9 +1903,9 @@
       "icon": "assets/icons/terraria/search-items/necrobreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "necro"
+        "necro",
+        "armor"
       ],
       "armorGroupKey": "Necro",
       "armorMode": "piece",
@@ -1920,9 +1920,9 @@
       "icon": "assets/icons/terraria/search-items/necrogreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "necro"
+        "necro",
+        "armor"
       ],
       "armorGroupKey": "Necro",
       "armorMode": "piece",
@@ -2861,9 +2861,9 @@
       "icon": "assets/icons/terraria/search-items/moltenhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "molten"
+        "molten",
+        "armor"
       ],
       "armorGroupKey": "Molten",
       "armorMode": "set"
@@ -2877,9 +2877,9 @@
       "icon": "assets/icons/terraria/search-items/moltenbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "molten"
+        "molten",
+        "armor"
       ],
       "armorGroupKey": "Molten",
       "armorMode": "piece",
@@ -2894,9 +2894,9 @@
       "icon": "assets/icons/terraria/search-items/moltengreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "molten"
+        "molten",
+        "armor"
       ],
       "armorGroupKey": "Molten",
       "armorMode": "piece",
@@ -3019,9 +3019,9 @@
       "icon": "assets/icons/terraria/search-items/bunnyhood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bunny"
+        "bunny",
+        "armor"
       ],
       "armorGroupKey": "Bunny",
       "armorMode": "piece"
@@ -3179,9 +3179,9 @@
       "icon": "assets/icons/terraria/search-items/ninjahood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ninja"
+        "ninja",
+        "armor"
       ],
       "armorGroupKey": "Ninja",
       "armorMode": "piece"
@@ -3255,9 +3255,9 @@
       "icon": "assets/icons/terraria/search-items/robe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "robe"
+        "robe",
+        "armor"
       ],
       "armorGroupKey": "Robe",
       "armorMode": "piece"
@@ -3331,9 +3331,9 @@
       "icon": "assets/icons/terraria/search-items/divinghelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "diving"
+        "diving",
+        "armor"
       ],
       "armorGroupKey": "Diving",
       "armorMode": "piece"
@@ -3983,9 +3983,9 @@
       "icon": "assets/icons/terraria/search-items/mimemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "mime"
+        "mime",
+        "armor"
       ],
       "armorGroupKey": "Mime",
       "armorMode": "piece"
@@ -4587,9 +4587,9 @@
       "icon": "assets/icons/terraria/search-items/cobalthelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "cobalt"
+        "cobalt",
+        "armor"
       ],
       "armorGroupKey": "Cobalt",
       "armorMode": "piece"
@@ -4603,9 +4603,9 @@
       "icon": "assets/icons/terraria/search-items/cobaltmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "cobalt"
+        "cobalt",
+        "armor"
       ],
       "armorGroupKey": "Cobalt",
       "armorMode": "piece"
@@ -4619,9 +4619,9 @@
       "icon": "assets/icons/terraria/search-items/cobaltbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "cobalt"
+        "cobalt",
+        "armor"
       ],
       "armorGroupKey": "Cobalt",
       "armorMode": "piece"
@@ -4635,9 +4635,9 @@
       "icon": "assets/icons/terraria/search-items/cobaltleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "cobalt"
+        "cobalt",
+        "armor"
       ],
       "armorGroupKey": "Cobalt",
       "armorMode": "piece"
@@ -4651,9 +4651,9 @@
       "icon": "assets/icons/terraria/search-items/mythrilhood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "mythril"
+        "mythril",
+        "armor"
       ],
       "armorGroupKey": "Mythril",
       "armorMode": "piece"
@@ -4667,9 +4667,9 @@
       "icon": "assets/icons/terraria/search-items/mythrilhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "mythril"
+        "mythril",
+        "armor"
       ],
       "armorGroupKey": "Mythril",
       "armorMode": "piece"
@@ -4695,9 +4695,9 @@
       "icon": "assets/icons/terraria/search-items/mythrilchainmail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "mythril"
+        "mythril",
+        "armor"
       ],
       "armorGroupKey": "Mythril",
       "armorMode": "piece"
@@ -4711,9 +4711,9 @@
       "icon": "assets/icons/terraria/search-items/mythrilgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "mythril"
+        "mythril",
+        "armor"
       ],
       "armorGroupKey": "Mythril",
       "armorMode": "piece"
@@ -4955,9 +4955,9 @@
       "icon": "assets/icons/terraria/search-items/adamantiteheadgear.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "adamantite"
+        "adamantite",
+        "armor"
       ],
       "armorGroupKey": "Adamantite",
       "armorMode": "piece"
@@ -4971,9 +4971,9 @@
       "icon": "assets/icons/terraria/search-items/adamantitehelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "adamantite"
+        "adamantite",
+        "armor"
       ],
       "armorGroupKey": "Adamantite",
       "armorMode": "piece"
@@ -4987,9 +4987,9 @@
       "icon": "assets/icons/terraria/search-items/adamantitemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "adamantite"
+        "adamantite",
+        "armor"
       ],
       "armorGroupKey": "Adamantite",
       "armorMode": "piece"
@@ -5003,9 +5003,9 @@
       "icon": "assets/icons/terraria/search-items/adamantitebreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "adamantite"
+        "adamantite",
+        "armor"
       ],
       "armorGroupKey": "Adamantite",
       "armorMode": "piece"
@@ -5019,9 +5019,9 @@
       "icon": "assets/icons/terraria/search-items/adamantiteleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "adamantite"
+        "adamantite",
+        "armor"
       ],
       "armorGroupKey": "Adamantite",
       "armorMode": "piece"
@@ -5379,11 +5379,12 @@
       "internalName": "ClockworkAssaultRifle",
       "displayName": "Clockwork Assault Rifle",
       "displayNameRu": "\u0417\u0430\u0432\u043e\u0434\u043d\u0430\u044f \u0448\u0442\u0443\u0440\u043c\u043e\u0432\u0430\u044f \u0432\u0438\u043d\u0442\u043e\u0432\u043a\u0430",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/clockworkassaultrifle.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -6787,9 +6788,9 @@
       "icon": "assets/icons/terraria/search-items/hallowedplatemail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "hallowedplatemail"
+        "hallowedplatemail",
+        "armor"
       ],
       "armorGroupKey": "HallowedPlateMail",
       "armorMode": "piece"
@@ -6803,9 +6804,9 @@
       "icon": "assets/icons/terraria/search-items/hallowedgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "hallowed"
+        "hallowed",
+        "armor"
       ],
       "armorGroupKey": "Hallowed",
       "armorMode": "piece"
@@ -6819,9 +6820,9 @@
       "icon": "assets/icons/terraria/search-items/hallowedhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "hallowed"
+        "hallowed",
+        "armor"
       ],
       "armorGroupKey": "Hallowed",
       "armorMode": "piece"
@@ -6883,9 +6884,9 @@
       "icon": "assets/icons/terraria/search-items/hallowedheadgear.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "hallowed"
+        "hallowed",
+        "armor"
       ],
       "armorGroupKey": "Hallowed",
       "armorMode": "piece"
@@ -6899,9 +6900,9 @@
       "icon": "assets/icons/terraria/search-items/hallowedmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "hallowed"
+        "hallowed",
+        "armor"
       ],
       "armorGroupKey": "Hallowed",
       "armorMode": "piece"
@@ -8187,9 +8188,9 @@
       "icon": "assets/icons/terraria/search-items/redshelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "reds"
+        "reds",
+        "armor"
       ],
       "armorGroupKey": "Reds",
       "armorMode": "set"
@@ -8203,9 +8204,9 @@
       "icon": "assets/icons/terraria/search-items/redsbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "reds"
+        "reds",
+        "armor"
       ],
       "armorGroupKey": "Reds",
       "armorMode": "piece",
@@ -8220,9 +8221,9 @@
       "icon": "assets/icons/terraria/search-items/redsleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "reds"
+        "reds",
+        "armor"
       ],
       "armorGroupKey": "Reds",
       "armorMode": "piece",
@@ -8417,9 +8418,9 @@
       "icon": "assets/icons/terraria/search-items/frosthelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "frost"
+        "frost",
+        "armor"
       ],
       "armorGroupKey": "Frost",
       "armorMode": "set"
@@ -8433,9 +8434,9 @@
       "icon": "assets/icons/terraria/search-items/frostbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "frost"
+        "frost",
+        "armor"
       ],
       "armorGroupKey": "Frost",
       "armorMode": "piece",
@@ -8450,9 +8451,9 @@
       "icon": "assets/icons/terraria/search-items/frostleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "frost"
+        "frost",
+        "armor"
       ],
       "armorGroupKey": "Frost",
       "armorMode": "piece",
@@ -8467,9 +8468,9 @@
       "icon": "assets/icons/terraria/search-items/tinhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "tin"
+        "tin",
+        "armor"
       ],
       "armorGroupKey": "Tin",
       "armorMode": "set"
@@ -8483,9 +8484,9 @@
       "icon": "assets/icons/terraria/search-items/tinchainmail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "tin"
+        "tin",
+        "armor"
       ],
       "armorGroupKey": "Tin",
       "armorMode": "piece",
@@ -8500,9 +8501,9 @@
       "icon": "assets/icons/terraria/search-items/tingreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "tin"
+        "tin",
+        "armor"
       ],
       "armorGroupKey": "Tin",
       "armorMode": "piece",
@@ -8517,9 +8518,9 @@
       "icon": "assets/icons/terraria/search-items/leadhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "lead"
+        "lead",
+        "armor"
       ],
       "armorGroupKey": "Lead",
       "armorMode": "set"
@@ -8533,9 +8534,9 @@
       "icon": "assets/icons/terraria/search-items/leadchainmail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "lead"
+        "lead",
+        "armor"
       ],
       "armorGroupKey": "Lead",
       "armorMode": "piece",
@@ -8550,9 +8551,9 @@
       "icon": "assets/icons/terraria/search-items/leadgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "lead"
+        "lead",
+        "armor"
       ],
       "armorGroupKey": "Lead",
       "armorMode": "piece",
@@ -8567,9 +8568,9 @@
       "icon": "assets/icons/terraria/search-items/tungstenhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "tungsten"
+        "tungsten",
+        "armor"
       ],
       "armorGroupKey": "Tungsten",
       "armorMode": "set"
@@ -8583,9 +8584,9 @@
       "icon": "assets/icons/terraria/search-items/tungstenchainmail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "tungsten"
+        "tungsten",
+        "armor"
       ],
       "armorGroupKey": "Tungsten",
       "armorMode": "piece",
@@ -8600,9 +8601,9 @@
       "icon": "assets/icons/terraria/search-items/tungstengreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "tungsten"
+        "tungsten",
+        "armor"
       ],
       "armorGroupKey": "Tungsten",
       "armorMode": "piece",
@@ -8617,9 +8618,9 @@
       "icon": "assets/icons/terraria/search-items/platinumhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "platinum"
+        "platinum",
+        "armor"
       ],
       "armorGroupKey": "Platinum",
       "armorMode": "set"
@@ -8633,9 +8634,9 @@
       "icon": "assets/icons/terraria/search-items/platinumchainmail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "platinum"
+        "platinum",
+        "armor"
       ],
       "armorGroupKey": "Platinum",
       "armorMode": "piece",
@@ -8650,9 +8651,9 @@
       "icon": "assets/icons/terraria/search-items/platinumgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "platinum"
+        "platinum",
+        "armor"
       ],
       "armorGroupKey": "Platinum",
       "armorMode": "piece",
@@ -9003,9 +9004,9 @@
       "icon": "assets/icons/terraria/search-items/woodhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "wood"
+        "wood",
+        "armor"
       ],
       "armorGroupKey": "Wood",
       "armorMode": "set"
@@ -9019,9 +9020,9 @@
       "icon": "assets/icons/terraria/search-items/woodbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "wood"
+        "wood",
+        "armor"
       ],
       "armorGroupKey": "Wood",
       "armorMode": "piece",
@@ -9036,9 +9037,9 @@
       "icon": "assets/icons/terraria/search-items/woodgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "wood"
+        "wood",
+        "armor"
       ],
       "armorGroupKey": "Wood",
       "armorMode": "piece",
@@ -9053,9 +9054,9 @@
       "icon": "assets/icons/terraria/search-items/ebonwoodhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "ebonwood"
+        "ebonwood",
+        "armor"
       ],
       "armorGroupKey": "Ebonwood",
       "armorMode": "set"
@@ -9069,9 +9070,9 @@
       "icon": "assets/icons/terraria/search-items/ebonwoodbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ebonwood"
+        "ebonwood",
+        "armor"
       ],
       "armorGroupKey": "Ebonwood",
       "armorMode": "piece",
@@ -9086,9 +9087,9 @@
       "icon": "assets/icons/terraria/search-items/ebonwoodgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ebonwood"
+        "ebonwood",
+        "armor"
       ],
       "armorGroupKey": "Ebonwood",
       "armorMode": "piece",
@@ -9103,9 +9104,9 @@
       "icon": "assets/icons/terraria/search-items/richmahoganyhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "richmahogany"
+        "richmahogany",
+        "armor"
       ],
       "armorGroupKey": "RichMahogany",
       "armorMode": "set"
@@ -9119,9 +9120,9 @@
       "icon": "assets/icons/terraria/search-items/richmahoganybreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "richmahogany"
+        "richmahogany",
+        "armor"
       ],
       "armorGroupKey": "RichMahogany",
       "armorMode": "piece",
@@ -9136,9 +9137,9 @@
       "icon": "assets/icons/terraria/search-items/richmahoganygreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "richmahogany"
+        "richmahogany",
+        "armor"
       ],
       "armorGroupKey": "RichMahogany",
       "armorMode": "piece",
@@ -9153,9 +9154,9 @@
       "icon": "assets/icons/terraria/search-items/pearlwoodhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "pearlwood"
+        "pearlwood",
+        "armor"
       ],
       "armorGroupKey": "Pearlwood",
       "armorMode": "set"
@@ -9169,9 +9170,9 @@
       "icon": "assets/icons/terraria/search-items/pearlwoodbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "pearlwood"
+        "pearlwood",
+        "armor"
       ],
       "armorGroupKey": "Pearlwood",
       "armorMode": "piece",
@@ -9186,9 +9187,9 @@
       "icon": "assets/icons/terraria/search-items/pearlwoodgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "pearlwood"
+        "pearlwood",
+        "armor"
       ],
       "armorGroupKey": "Pearlwood",
       "armorMode": "piece",
@@ -9395,9 +9396,9 @@
       "icon": "assets/icons/terraria/search-items/runerobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "rune"
+        "rune",
+        "armor"
       ],
       "armorGroupKey": "Rune",
       "armorMode": "piece"
@@ -9843,9 +9844,9 @@
       "icon": "assets/icons/terraria/search-items/crimsonhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "crimson"
+        "crimson",
+        "armor"
       ],
       "armorGroupKey": "Crimson",
       "armorMode": "piece"
@@ -9871,9 +9872,9 @@
       "icon": "assets/icons/terraria/search-items/crimsongreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "crimson"
+        "crimson",
+        "armor"
       ],
       "armorGroupKey": "Crimson",
       "armorMode": "piece"
@@ -9983,9 +9984,9 @@
       "icon": "assets/icons/terraria/search-items/eskimohood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "eskimo"
+        "eskimo",
+        "armor"
       ],
       "armorGroupKey": "Eskimo",
       "armorMode": "piece"
@@ -10527,9 +10528,9 @@
       "icon": "assets/icons/terraria/search-items/pharaohsmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "pharaohs"
+        "pharaohs",
+        "armor"
       ],
       "armorGroupKey": "Pharaohs",
       "armorMode": "piece"
@@ -10747,9 +10748,9 @@
       "icon": "assets/icons/terraria/search-items/pharaohsrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "pharaohs"
+        "pharaohs",
+        "armor"
       ],
       "armorGroupKey": "Pharaohs",
       "armorMode": "piece"
@@ -10799,9 +10800,9 @@
       "icon": "assets/icons/terraria/search-items/mummymask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "mummy"
+        "mummy",
+        "armor"
       ],
       "armorGroupKey": "Mummy",
       "armorMode": "piece"
@@ -10911,9 +10912,9 @@
       "icon": "assets/icons/terraria/search-items/vikinghelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "viking"
+        "viking",
+        "armor"
       ],
       "armorGroupKey": "Viking",
       "armorMode": "piece"
@@ -11095,9 +11096,9 @@
       "icon": "assets/icons/terraria/search-items/cactushelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "cactus"
+        "cactus",
+        "armor"
       ],
       "armorGroupKey": "Cactus",
       "armorMode": "set"
@@ -11111,9 +11112,9 @@
       "icon": "assets/icons/terraria/search-items/cactusbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "cactus"
+        "cactus",
+        "armor"
       ],
       "armorGroupKey": "Cactus",
       "armorMode": "piece",
@@ -11128,9 +11129,9 @@
       "icon": "assets/icons/terraria/search-items/cactusleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "cactus"
+        "cactus",
+        "armor"
       ],
       "armorGroupKey": "Cactus",
       "armorMode": "piece",
@@ -11469,9 +11470,9 @@
       "icon": "assets/icons/terraria/search-items/shadewoodhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "shadewood"
+        "shadewood",
+        "armor"
       ],
       "armorGroupKey": "Shadewood",
       "armorMode": "set"
@@ -11485,9 +11486,9 @@
       "icon": "assets/icons/terraria/search-items/shadewoodbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "shadewood"
+        "shadewood",
+        "armor"
       ],
       "armorGroupKey": "Shadewood",
       "armorMode": "piece",
@@ -11502,9 +11503,9 @@
       "icon": "assets/icons/terraria/search-items/shadewoodgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "shadewood"
+        "shadewood",
+        "armor"
       ],
       "armorGroupKey": "Shadewood",
       "armorMode": "piece",
@@ -11843,9 +11844,9 @@
       "icon": "assets/icons/terraria/search-items/ancientironhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancientiron"
+        "ancientiron",
+        "armor"
       ],
       "armorGroupKey": "AncientIron",
       "armorMode": "piece"
@@ -11859,9 +11860,9 @@
       "icon": "assets/icons/terraria/search-items/ancientgoldhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancientgold"
+        "ancientgold",
+        "armor"
       ],
       "armorGroupKey": "AncientGold",
       "armorMode": "piece"
@@ -11875,9 +11876,9 @@
       "icon": "assets/icons/terraria/search-items/ancientshadowhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancientshadow"
+        "ancientshadow",
+        "armor"
       ],
       "armorGroupKey": "AncientShadow",
       "armorMode": "piece"
@@ -11903,9 +11904,9 @@
       "icon": "assets/icons/terraria/search-items/ancientshadowgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancientshadow"
+        "ancientshadow",
+        "armor"
       ],
       "armorGroupKey": "AncientShadow",
       "armorMode": "piece"
@@ -11919,9 +11920,9 @@
       "icon": "assets/icons/terraria/search-items/ancientnecrohelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancientnecro"
+        "ancientnecro",
+        "armor"
       ],
       "armorGroupKey": "AncientNecro",
       "armorMode": "piece"
@@ -11935,9 +11936,9 @@
       "icon": "assets/icons/terraria/search-items/ancientcobalthelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "ancientcobalt"
+        "ancientcobalt",
+        "armor"
       ],
       "armorGroupKey": "AncientCobalt",
       "armorMode": "set"
@@ -11951,9 +11952,9 @@
       "icon": "assets/icons/terraria/search-items/ancientcobaltbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancientcobalt"
+        "ancientcobalt",
+        "armor"
       ],
       "armorGroupKey": "AncientCobalt",
       "armorMode": "piece",
@@ -11968,9 +11969,9 @@
       "icon": "assets/icons/terraria/search-items/ancientcobaltleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancientcobalt"
+        "ancientcobalt",
+        "armor"
       ],
       "armorGroupKey": "AncientCobalt",
       "armorMode": "piece",
@@ -12165,9 +12166,9 @@
       "icon": "assets/icons/terraria/search-items/pinkeskimohood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "pinkeskimo"
+        "pinkeskimo",
+        "armor"
       ],
       "armorGroupKey": "PinkEskimo",
       "armorMode": "piece"
@@ -12445,9 +12446,9 @@
       "icon": "assets/icons/terraria/search-items/chlorophytemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "chlorophyte"
+        "chlorophyte",
+        "armor"
       ],
       "armorGroupKey": "Chlorophyte",
       "armorMode": "piece"
@@ -12461,9 +12462,9 @@
       "icon": "assets/icons/terraria/search-items/chlorophytehelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "chlorophyte"
+        "chlorophyte",
+        "armor"
       ],
       "armorGroupKey": "Chlorophyte",
       "armorMode": "piece"
@@ -12477,9 +12478,9 @@
       "icon": "assets/icons/terraria/search-items/chlorophyteheadgear.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "chlorophyte"
+        "chlorophyte",
+        "armor"
       ],
       "armorGroupKey": "Chlorophyte",
       "armorMode": "piece"
@@ -12493,9 +12494,9 @@
       "icon": "assets/icons/terraria/search-items/chlorophyteplatemail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "chlorophyteplatemail"
+        "chlorophyteplatemail",
+        "armor"
       ],
       "armorGroupKey": "ChlorophytePlateMail",
       "armorMode": "piece"
@@ -12509,9 +12510,9 @@
       "icon": "assets/icons/terraria/search-items/chlorophytegreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "chlorophyte"
+        "chlorophyte",
+        "armor"
       ],
       "armorGroupKey": "Chlorophyte",
       "armorMode": "piece"
@@ -14361,9 +14362,9 @@
       "icon": "assets/icons/terraria/search-items/tikimask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "tiki"
+        "tiki",
+        "armor"
       ],
       "armorGroupKey": "Tiki",
       "armorMode": "piece"
@@ -14917,9 +14918,9 @@
       "icon": "assets/icons/terraria/search-items/palladiummask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "palladium"
+        "palladium",
+        "armor"
       ],
       "armorGroupKey": "Palladium",
       "armorMode": "piece"
@@ -14933,9 +14934,9 @@
       "icon": "assets/icons/terraria/search-items/palladiumhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "palladium"
+        "palladium",
+        "armor"
       ],
       "armorGroupKey": "Palladium",
       "armorMode": "piece"
@@ -14949,9 +14950,9 @@
       "icon": "assets/icons/terraria/search-items/palladiumheadgear.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "palladium"
+        "palladium",
+        "armor"
       ],
       "armorGroupKey": "Palladium",
       "armorMode": "piece"
@@ -14965,9 +14966,9 @@
       "icon": "assets/icons/terraria/search-items/palladiumbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "palladium"
+        "palladium",
+        "armor"
       ],
       "armorGroupKey": "Palladium",
       "armorMode": "piece"
@@ -14981,9 +14982,9 @@
       "icon": "assets/icons/terraria/search-items/palladiumleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "palladium"
+        "palladium",
+        "armor"
       ],
       "armorGroupKey": "Palladium",
       "armorMode": "piece"
@@ -14997,9 +14998,9 @@
       "icon": "assets/icons/terraria/search-items/orichalcummask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "orichalcum"
+        "orichalcum",
+        "armor"
       ],
       "armorGroupKey": "Orichalcum",
       "armorMode": "piece"
@@ -15013,9 +15014,9 @@
       "icon": "assets/icons/terraria/search-items/orichalcumhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "orichalcum"
+        "orichalcum",
+        "armor"
       ],
       "armorGroupKey": "Orichalcum",
       "armorMode": "piece"
@@ -15029,9 +15030,9 @@
       "icon": "assets/icons/terraria/search-items/orichalcumheadgear.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "orichalcum"
+        "orichalcum",
+        "armor"
       ],
       "armorGroupKey": "Orichalcum",
       "armorMode": "piece"
@@ -15045,9 +15046,9 @@
       "icon": "assets/icons/terraria/search-items/orichalcumbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "orichalcum"
+        "orichalcum",
+        "armor"
       ],
       "armorGroupKey": "Orichalcum",
       "armorMode": "piece"
@@ -15061,9 +15062,9 @@
       "icon": "assets/icons/terraria/search-items/orichalcumleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "orichalcum"
+        "orichalcum",
+        "armor"
       ],
       "armorGroupKey": "Orichalcum",
       "armorMode": "piece"
@@ -15077,9 +15078,9 @@
       "icon": "assets/icons/terraria/search-items/titaniummask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "titanium"
+        "titanium",
+        "armor"
       ],
       "armorGroupKey": "Titanium",
       "armorMode": "piece"
@@ -15093,9 +15094,9 @@
       "icon": "assets/icons/terraria/search-items/titaniumhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "titanium"
+        "titanium",
+        "armor"
       ],
       "armorGroupKey": "Titanium",
       "armorMode": "piece"
@@ -15109,9 +15110,9 @@
       "icon": "assets/icons/terraria/search-items/titaniumheadgear.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "titanium"
+        "titanium",
+        "armor"
       ],
       "armorGroupKey": "Titanium",
       "armorMode": "piece"
@@ -15125,9 +15126,9 @@
       "icon": "assets/icons/terraria/search-items/titaniumbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "titanium"
+        "titanium",
+        "armor"
       ],
       "armorGroupKey": "Titanium",
       "armorMode": "piece"
@@ -15141,9 +15142,9 @@
       "icon": "assets/icons/terraria/search-items/titaniumleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "titanium"
+        "titanium",
+        "armor"
       ],
       "armorGroupKey": "Titanium",
       "armorMode": "piece"
@@ -15889,9 +15890,9 @@
       "icon": "assets/icons/terraria/search-items/skeletronmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "skeletron"
+        "skeletron",
+        "armor"
       ],
       "armorGroupKey": "Skeletron",
       "armorMode": "piece"
@@ -15905,9 +15906,9 @@
       "icon": "assets/icons/terraria/search-items/amethystrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "amethyst"
+        "amethyst",
+        "armor"
       ],
       "armorGroupKey": "Amethyst",
       "armorMode": "piece"
@@ -15921,9 +15922,9 @@
       "icon": "assets/icons/terraria/search-items/topazrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "topaz"
+        "topaz",
+        "armor"
       ],
       "armorGroupKey": "Topaz",
       "armorMode": "piece"
@@ -15937,9 +15938,9 @@
       "icon": "assets/icons/terraria/search-items/sapphirerobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "sapphire"
+        "sapphire",
+        "armor"
       ],
       "armorGroupKey": "Sapphire",
       "armorMode": "piece"
@@ -15953,9 +15954,9 @@
       "icon": "assets/icons/terraria/search-items/emeraldrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "emerald"
+        "emerald",
+        "armor"
       ],
       "armorGroupKey": "Emerald",
       "armorMode": "piece"
@@ -15969,9 +15970,9 @@
       "icon": "assets/icons/terraria/search-items/rubyrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ruby"
+        "ruby",
+        "armor"
       ],
       "armorGroupKey": "Ruby",
       "armorMode": "piece"
@@ -15985,9 +15986,9 @@
       "icon": "assets/icons/terraria/search-items/diamondrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "diamond"
+        "diamond",
+        "armor"
       ],
       "armorGroupKey": "Diamond",
       "armorMode": "piece"
@@ -16337,9 +16338,9 @@
       "icon": "assets/icons/terraria/search-items/turtlehelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "turtle"
+        "turtle",
+        "armor"
       ],
       "armorGroupKey": "Turtle",
       "armorMode": "piece"
@@ -16365,9 +16366,9 @@
       "icon": "assets/icons/terraria/search-items/turtleleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "turtle"
+        "turtle",
+        "armor"
       ],
       "armorGroupKey": "Turtle",
       "armorMode": "piece"
@@ -17989,9 +17990,9 @@
       "icon": "assets/icons/terraria/search-items/raggedbrotherhoodsigil.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "raggedbrotherhoodsigil"
+        "raggedbrotherhoodsigil",
+        "armor"
       ],
       "armorGroupKey": "RaggedBrotherhoodSigil",
       "armorMode": "piece"
@@ -18581,9 +18582,9 @@
       "icon": "assets/icons/terraria/search-items/spectrehood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "spectre"
+        "spectre",
+        "armor"
       ],
       "armorGroupKey": "Spectre",
       "armorMode": "piece"
@@ -18597,9 +18598,9 @@
       "icon": "assets/icons/terraria/search-items/spectrerobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "spectre"
+        "spectre",
+        "armor"
       ],
       "armorGroupKey": "Spectre",
       "armorMode": "piece"
@@ -18721,9 +18722,9 @@
       "icon": "assets/icons/terraria/search-items/swathelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "swat"
+        "swat",
+        "armor"
       ],
       "armorGroupKey": "SWAT",
       "armorMode": "piece"
@@ -19109,9 +19110,9 @@
       "icon": "assets/icons/terraria/search-items/shroomiteheadgear.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "shroomite"
+        "shroomite",
+        "armor"
       ],
       "armorGroupKey": "Shroomite",
       "armorMode": "piece"
@@ -19125,9 +19126,9 @@
       "icon": "assets/icons/terraria/search-items/shroomitemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "shroomite"
+        "shroomite",
+        "armor"
       ],
       "armorGroupKey": "Shroomite",
       "armorMode": "piece"
@@ -19141,9 +19142,9 @@
       "icon": "assets/icons/terraria/search-items/shroomitehelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "shroomite"
+        "shroomite",
+        "armor"
       ],
       "armorGroupKey": "Shroomite",
       "armorMode": "piece"
@@ -19157,9 +19158,9 @@
       "icon": "assets/icons/terraria/search-items/shroomitebreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "shroomite"
+        "shroomite",
+        "armor"
       ],
       "armorGroupKey": "Shroomite",
       "armorMode": "piece"
@@ -19173,9 +19174,9 @@
       "icon": "assets/icons/terraria/search-items/shroomiteleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "shroomite"
+        "shroomite",
+        "armor"
       ],
       "armorGroupKey": "Shroomite",
       "armorMode": "piece"
@@ -19237,9 +19238,9 @@
       "icon": "assets/icons/terraria/search-items/cenxsbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "cenxs"
+        "cenxs",
+        "armor"
       ],
       "armorGroupKey": "Cenxs",
       "armorMode": "piece"
@@ -19253,9 +19254,9 @@
       "icon": "assets/icons/terraria/search-items/cenxsleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "cenxs"
+        "cenxs",
+        "armor"
       ],
       "armorGroupKey": "Cenxs",
       "armorMode": "piece"
@@ -19269,9 +19270,9 @@
       "icon": "assets/icons/terraria/search-items/crownosmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "crownos"
+        "crownos",
+        "armor"
       ],
       "armorGroupKey": "Crownos",
       "armorMode": "set"
@@ -19285,9 +19286,9 @@
       "icon": "assets/icons/terraria/search-items/crownosbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "crownos"
+        "crownos",
+        "armor"
       ],
       "armorGroupKey": "Crownos",
       "armorMode": "piece",
@@ -19302,9 +19303,9 @@
       "icon": "assets/icons/terraria/search-items/crownosleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "crownos"
+        "crownos",
+        "armor"
       ],
       "armorGroupKey": "Crownos",
       "armorMode": "piece",
@@ -19319,9 +19320,9 @@
       "icon": "assets/icons/terraria/search-items/willshelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "wills"
+        "wills",
+        "armor"
       ],
       "armorGroupKey": "Wills",
       "armorMode": "set"
@@ -19335,9 +19336,9 @@
       "icon": "assets/icons/terraria/search-items/willsbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "wills"
+        "wills",
+        "armor"
       ],
       "armorGroupKey": "Wills",
       "armorMode": "piece",
@@ -19352,9 +19353,9 @@
       "icon": "assets/icons/terraria/search-items/willsleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "wills"
+        "wills",
+        "armor"
       ],
       "armorGroupKey": "Wills",
       "armorMode": "piece",
@@ -19369,9 +19370,9 @@
       "icon": "assets/icons/terraria/search-items/jimshelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "jims"
+        "jims",
+        "armor"
       ],
       "armorGroupKey": "Jims",
       "armorMode": "set"
@@ -19385,9 +19386,9 @@
       "icon": "assets/icons/terraria/search-items/jimsbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "jims"
+        "jims",
+        "armor"
       ],
       "armorGroupKey": "Jims",
       "armorMode": "piece",
@@ -19402,9 +19403,9 @@
       "icon": "assets/icons/terraria/search-items/jimsleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "jims"
+        "jims",
+        "armor"
       ],
       "armorGroupKey": "Jims",
       "armorMode": "piece",
@@ -19419,9 +19420,9 @@
       "icon": "assets/icons/terraria/search-items/aaronshelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "aarons"
+        "aarons",
+        "armor"
       ],
       "armorGroupKey": "Aarons",
       "armorMode": "set"
@@ -19435,9 +19436,9 @@
       "icon": "assets/icons/terraria/search-items/aaronsbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "aarons"
+        "aarons",
+        "armor"
       ],
       "armorGroupKey": "Aarons",
       "armorMode": "piece",
@@ -19452,9 +19453,9 @@
       "icon": "assets/icons/terraria/search-items/aaronsleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "aarons"
+        "aarons",
+        "armor"
       ],
       "armorGroupKey": "Aarons",
       "armorMode": "piece",
@@ -19601,9 +19602,9 @@
       "icon": "assets/icons/terraria/search-items/dtownshelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "dtowns"
+        "dtowns",
+        "armor"
       ],
       "armorGroupKey": "DTowns",
       "armorMode": "set"
@@ -19617,9 +19618,9 @@
       "icon": "assets/icons/terraria/search-items/dtownsbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "dtowns"
+        "dtowns",
+        "armor"
       ],
       "armorGroupKey": "DTowns",
       "armorMode": "piece",
@@ -19634,9 +19635,9 @@
       "icon": "assets/icons/terraria/search-items/dtownsleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "dtowns"
+        "dtowns",
+        "armor"
       ],
       "armorGroupKey": "DTowns",
       "armorMode": "piece",
@@ -21427,9 +21428,9 @@
       "icon": "assets/icons/terraria/search-items/pumpkinhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "pumpkin"
+        "pumpkin",
+        "armor"
       ],
       "armorGroupKey": "Pumpkin",
       "armorMode": "piece"
@@ -21443,9 +21444,9 @@
       "icon": "assets/icons/terraria/search-items/pumpkinbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "pumpkin"
+        "pumpkin",
+        "armor"
       ],
       "armorGroupKey": "Pumpkin",
       "armorMode": "piece"
@@ -21459,9 +21460,9 @@
       "icon": "assets/icons/terraria/search-items/pumpkinleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "pumpkin"
+        "pumpkin",
+        "armor"
       ],
       "armorGroupKey": "Pumpkin",
       "armorMode": "piece"
@@ -21547,9 +21548,9 @@
       "icon": "assets/icons/terraria/search-items/guyfawkesmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "guyfawkes"
+        "guyfawkes",
+        "armor"
       ],
       "armorGroupKey": "GuyFawkes",
       "armorMode": "piece"
@@ -21563,9 +21564,9 @@
       "icon": "assets/icons/terraria/search-items/dyetraderrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "dyetrader"
+        "dyetrader",
+        "armor"
       ],
       "armorGroupKey": "DyeTrader",
       "armorMode": "piece"
@@ -21591,9 +21592,9 @@
       "icon": "assets/icons/terraria/search-items/cyborghelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "cyborg"
+        "cyborg",
+        "armor"
       ],
       "armorGroupKey": "Cyborg",
       "armorMode": "piece"
@@ -21631,9 +21632,9 @@
       "icon": "assets/icons/terraria/search-items/creepermask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "creeper"
+        "creeper",
+        "armor"
       ],
       "armorGroupKey": "Creeper",
       "armorMode": "piece"
@@ -21671,9 +21672,9 @@
       "icon": "assets/icons/terraria/search-items/catmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "cat"
+        "cat",
+        "armor"
       ],
       "armorGroupKey": "Cat",
       "armorMode": "piece"
@@ -21711,9 +21712,9 @@
       "icon": "assets/icons/terraria/search-items/ghostmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ghost"
+        "ghost",
+        "armor"
       ],
       "armorGroupKey": "Ghost",
       "armorMode": "piece"
@@ -21739,9 +21740,9 @@
       "icon": "assets/icons/terraria/search-items/pumpkinmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "pumpkin"
+        "pumpkin",
+        "armor"
       ],
       "armorGroupKey": "Pumpkin",
       "armorMode": "piece"
@@ -21779,9 +21780,9 @@
       "icon": "assets/icons/terraria/search-items/robotmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "robot"
+        "robot",
+        "armor"
       ],
       "armorGroupKey": "Robot",
       "armorMode": "piece"
@@ -21819,9 +21820,9 @@
       "icon": "assets/icons/terraria/search-items/unicornmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "unicorn"
+        "unicorn",
+        "armor"
       ],
       "armorGroupKey": "Unicorn",
       "armorMode": "piece"
@@ -21859,9 +21860,9 @@
       "icon": "assets/icons/terraria/search-items/vampiremask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "vampire"
+        "vampire",
+        "armor"
       ],
       "armorGroupKey": "Vampire",
       "armorMode": "piece"
@@ -22031,9 +22032,9 @@
       "icon": "assets/icons/terraria/search-items/brideoffrankensteinmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "brideoffrankenstein"
+        "brideoffrankenstein",
+        "armor"
       ],
       "armorGroupKey": "BrideofFrankenstein",
       "armorMode": "piece"
@@ -22059,9 +22060,9 @@
       "icon": "assets/icons/terraria/search-items/karatetortoisemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "karatetortoise"
+        "karatetortoise",
+        "armor"
       ],
       "armorGroupKey": "KarateTortoise",
       "armorMode": "piece"
@@ -22119,11 +22120,12 @@
       "internalName": "JackOLanternLauncher",
       "displayName": "Jack 'O Lantern Launcher",
       "displayNameRu": "\u0421\u0432\u0435\u0442\u0438\u043b\u044c\u043d\u0438\u043a\u043e\u043c\u0435\u0442 \u0414\u0436\u0435\u043a\u0430",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/jackolanternlauncher.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -22543,9 +22545,9 @@
       "icon": "assets/icons/terraria/search-items/reaperhood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "reaper"
+        "reaper",
+        "armor"
       ],
       "armorGroupKey": "Reaper",
       "armorMode": "piece"
@@ -22559,9 +22561,9 @@
       "icon": "assets/icons/terraria/search-items/reaperrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "reaper"
+        "reaper",
+        "armor"
       ],
       "armorGroupKey": "Reaper",
       "armorMode": "piece"
@@ -22575,9 +22577,9 @@
       "icon": "assets/icons/terraria/search-items/foxmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "fox"
+        "fox",
+        "armor"
       ],
       "armorGroupKey": "Fox",
       "armorMode": "piece"
@@ -22711,9 +22713,9 @@
       "icon": "assets/icons/terraria/search-items/spookyhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "spooky"
+        "spooky",
+        "armor"
       ],
       "armorGroupKey": "Spooky",
       "armorMode": "set"
@@ -22727,9 +22729,9 @@
       "icon": "assets/icons/terraria/search-items/spookybreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "spooky"
+        "spooky",
+        "armor"
       ],
       "armorGroupKey": "Spooky",
       "armorMode": "piece",
@@ -22744,9 +22746,9 @@
       "icon": "assets/icons/terraria/search-items/spookyleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "spooky"
+        "spooky",
+        "armor"
       ],
       "armorGroupKey": "Spooky",
       "armorMode": "piece",
@@ -22797,9 +22799,9 @@
       "icon": "assets/icons/terraria/search-items/spacecreaturemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "spacecreature"
+        "spacecreature",
+        "armor"
       ],
       "armorGroupKey": "SpaceCreature",
       "armorMode": "piece"
@@ -22837,9 +22839,9 @@
       "icon": "assets/icons/terraria/search-items/wolfmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "wolf"
+        "wolf",
+        "armor"
       ],
       "armorGroupKey": "Wolf",
       "armorMode": "piece"
@@ -23033,9 +23035,9 @@
       "icon": "assets/icons/terraria/search-items/jackolanternmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "jackolantern"
+        "jackolantern",
+        "armor"
       ],
       "armorGroupKey": "JackOLantern",
       "armorMode": "piece"
@@ -23973,9 +23975,9 @@
       "icon": "assets/icons/terraria/search-items/parkahood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "parka"
+        "parka",
+        "armor"
       ],
       "armorGroupKey": "Parka",
       "armorMode": "piece"
@@ -24037,9 +24039,9 @@
       "icon": "assets/icons/terraria/search-items/treemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "tree"
+        "tree",
+        "armor"
       ],
       "armorGroupKey": "Tree",
       "armorMode": "piece"
@@ -26009,9 +26011,9 @@
       "icon": "assets/icons/terraria/search-items/brainmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "brain"
+        "brain",
+        "armor"
       ],
       "armorGroupKey": "Brain",
       "armorMode": "piece"
@@ -26025,9 +26027,9 @@
       "icon": "assets/icons/terraria/search-items/fleshmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "flesh"
+        "flesh",
+        "armor"
       ],
       "armorGroupKey": "Flesh",
       "armorMode": "piece"
@@ -26041,9 +26043,9 @@
       "icon": "assets/icons/terraria/search-items/twinmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "twin"
+        "twin",
+        "armor"
       ],
       "armorGroupKey": "Twin",
       "armorMode": "piece"
@@ -26057,9 +26059,9 @@
       "icon": "assets/icons/terraria/search-items/skeletronprimemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "skeletronprime"
+        "skeletronprime",
+        "armor"
       ],
       "armorGroupKey": "SkeletronPrime",
       "armorMode": "piece"
@@ -26073,9 +26075,9 @@
       "icon": "assets/icons/terraria/search-items/beemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bee"
+        "bee",
+        "armor"
       ],
       "armorGroupKey": "Bee",
       "armorMode": "piece"
@@ -26089,9 +26091,9 @@
       "icon": "assets/icons/terraria/search-items/planteramask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "plantera"
+        "plantera",
+        "armor"
       ],
       "armorGroupKey": "Plantera",
       "armorMode": "piece"
@@ -26105,9 +26107,9 @@
       "icon": "assets/icons/terraria/search-items/golemmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "golem"
+        "golem",
+        "armor"
       ],
       "armorGroupKey": "Golem",
       "armorMode": "piece"
@@ -26121,9 +26123,9 @@
       "icon": "assets/icons/terraria/search-items/eatermask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "eater"
+        "eater",
+        "armor"
       ],
       "armorGroupKey": "Eater",
       "armorMode": "piece"
@@ -26137,9 +26139,9 @@
       "icon": "assets/icons/terraria/search-items/eyemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "eye"
+        "eye",
+        "armor"
       ],
       "armorGroupKey": "Eye",
       "armorMode": "piece"
@@ -26153,9 +26155,9 @@
       "icon": "assets/icons/terraria/search-items/destroyermask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "destroyer"
+        "destroyer",
+        "armor"
       ],
       "armorGroupKey": "Destroyer",
       "armorMode": "piece"
@@ -26193,9 +26195,9 @@
       "icon": "assets/icons/terraria/search-items/helmetrack.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "helmetrack"
+        "helmetrack",
+        "armor"
       ],
       "armorGroupKey": "HelmetRack",
       "armorMode": "piece"
@@ -27073,9 +27075,9 @@
       "icon": "assets/icons/terraria/search-items/spectremask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "spectre"
+        "spectre",
+        "armor"
       ],
       "armorGroupKey": "Spectre",
       "armorMode": "piece"
@@ -27197,9 +27199,9 @@
       "icon": "assets/icons/terraria/search-items/beetlehelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "beetle"
+        "beetle",
+        "armor"
       ],
       "armorGroupKey": "Beetle",
       "armorMode": "piece"
@@ -27237,9 +27239,9 @@
       "icon": "assets/icons/terraria/search-items/beetleleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "beetle"
+        "beetle",
+        "armor"
       ],
       "armorGroupKey": "Beetle",
       "armorMode": "piece"
@@ -28089,11 +28091,12 @@
       "internalName": "Katana",
       "displayName": "Katana",
       "displayNameRu": "\u041a\u0430\u0442\u0430\u043d\u0430",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/katana.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -28165,9 +28168,9 @@
       "icon": "assets/icons/terraria/search-items/gypsyrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "gypsy"
+        "gypsy",
+        "armor"
       ],
       "armorGroupKey": "Gypsy",
       "armorMode": "piece"
@@ -29153,9 +29156,9 @@
       "icon": "assets/icons/terraria/search-items/beeheadgear.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bee"
+        "bee",
+        "armor"
       ],
       "armorGroupKey": "Bee",
       "armorMode": "piece"
@@ -29169,9 +29172,9 @@
       "icon": "assets/icons/terraria/search-items/beebreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bee"
+        "bee",
+        "armor"
       ],
       "armorGroupKey": "Bee",
       "armorMode": "piece"
@@ -29185,9 +29188,9 @@
       "icon": "assets/icons/terraria/search-items/beegreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bee"
+        "bee",
+        "armor"
       ],
       "armorGroupKey": "Bee",
       "armorMode": "piece"
@@ -29273,9 +29276,9 @@
       "icon": "assets/icons/terraria/search-items/spidermask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "spider"
+        "spider",
+        "armor"
       ],
       "armorGroupKey": "Spider",
       "armorMode": "set"
@@ -29289,9 +29292,9 @@
       "icon": "assets/icons/terraria/search-items/spiderbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "spider"
+        "spider",
+        "armor"
       ],
       "armorGroupKey": "Spider",
       "armorMode": "piece",
@@ -29306,9 +29309,9 @@
       "icon": "assets/icons/terraria/search-items/spidergreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "spider"
+        "spider",
+        "armor"
       ],
       "armorGroupKey": "Spider",
       "armorMode": "piece",
@@ -30763,9 +30766,9 @@
       "icon": "assets/icons/terraria/search-items/kingslimemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "kingslime"
+        "kingslime",
+        "armor"
       ],
       "armorGroupKey": "KingSlime",
       "armorMode": "piece"
@@ -30827,9 +30830,9 @@
       "icon": "assets/icons/terraria/search-items/fishcostumemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "fishcostume"
+        "fishcostume",
+        "armor"
       ],
       "armorGroupKey": "FishCostume",
       "armorMode": "piece"
@@ -30999,9 +31002,9 @@
       "icon": "assets/icons/terraria/search-items/palmwoodhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "palmwood"
+        "palmwood",
+        "armor"
       ],
       "armorGroupKey": "PalmWood",
       "armorMode": "set"
@@ -31015,9 +31018,9 @@
       "icon": "assets/icons/terraria/search-items/palmwoodbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "palmwood"
+        "palmwood",
+        "armor"
       ],
       "armorGroupKey": "PalmWood",
       "armorMode": "piece",
@@ -31032,9 +31035,9 @@
       "icon": "assets/icons/terraria/search-items/palmwoodgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "palmwood"
+        "palmwood",
+        "armor"
       ],
       "armorGroupKey": "PalmWood",
       "armorMode": "piece",
@@ -31925,9 +31928,9 @@
       "icon": "assets/icons/terraria/search-items/dukefishronmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "dukefishron"
+        "dukefishron",
+        "armor"
       ],
       "armorGroupKey": "DukeFishron",
       "armorMode": "piece"
@@ -33809,11 +33812,12 @@
       "internalName": "BorealWoodSword",
       "displayName": "Boreal Wood Sword",
       "displayNameRu": "\u041c\u0435\u0447 \u0438\u0437 \u0437\u0430\u0441\u043d\u0435\u0436\u0435\u043d\u043d\u043e\u0439 \u0434\u0440\u0435\u0432\u0435\u0441\u0438\u043d\u044b",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/borealwoodsword.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -33833,11 +33837,12 @@
       "internalName": "BorealWoodBow",
       "displayName": "Boreal Wood Bow",
       "displayNameRu": "\u041b\u0443\u043a \u0438\u0437 \u0437\u0430\u0441\u043d\u0435\u0436\u0435\u043d\u043d\u043e\u0439 \u0434\u0440\u0435\u0432\u0435\u0441\u0438\u043d\u044b",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/borealwoodbow.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -33957,9 +33962,9 @@
       "icon": "assets/icons/terraria/search-items/vortexhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "vortex"
+        "vortex",
+        "armor"
       ],
       "armorGroupKey": "Vortex",
       "armorMode": "set"
@@ -33973,9 +33978,9 @@
       "icon": "assets/icons/terraria/search-items/vortexbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "vortex"
+        "vortex",
+        "armor"
       ],
       "armorGroupKey": "Vortex",
       "armorMode": "piece",
@@ -33990,9 +33995,9 @@
       "icon": "assets/icons/terraria/search-items/vortexleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "vortex"
+        "vortex",
+        "armor"
       ],
       "armorGroupKey": "Vortex",
       "armorMode": "piece",
@@ -34007,9 +34012,9 @@
       "icon": "assets/icons/terraria/search-items/nebulahelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "nebula"
+        "nebula",
+        "armor"
       ],
       "armorGroupKey": "Nebula",
       "armorMode": "set"
@@ -34023,9 +34028,9 @@
       "icon": "assets/icons/terraria/search-items/nebulabreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "nebula"
+        "nebula",
+        "armor"
       ],
       "armorGroupKey": "Nebula",
       "armorMode": "piece",
@@ -34040,9 +34045,9 @@
       "icon": "assets/icons/terraria/search-items/nebulaleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "nebula"
+        "nebula",
+        "armor"
       ],
       "armorGroupKey": "Nebula",
       "armorMode": "piece",
@@ -34057,9 +34062,9 @@
       "icon": "assets/icons/terraria/search-items/solarflarehelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "solarflare"
+        "solarflare",
+        "armor"
       ],
       "armorGroupKey": "SolarFlare",
       "armorMode": "set"
@@ -34073,9 +34078,9 @@
       "icon": "assets/icons/terraria/search-items/solarflarebreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "solarflare"
+        "solarflare",
+        "armor"
       ],
       "armorGroupKey": "SolarFlare",
       "armorMode": "piece",
@@ -34090,9 +34095,9 @@
       "icon": "assets/icons/terraria/search-items/solarflareleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "solarflare"
+        "solarflare",
+        "armor"
       ],
       "armorGroupKey": "SolarFlare",
       "armorMode": "piece",
@@ -34527,9 +34532,9 @@
       "icon": "assets/icons/terraria/search-items/moonmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "moon"
+        "moon",
+        "armor"
       ],
       "armorGroupKey": "Moon",
       "armorMode": "piece"
@@ -34543,9 +34548,9 @@
       "icon": "assets/icons/terraria/search-items/sunmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "sun"
+        "sun",
+        "armor"
       ],
       "armorGroupKey": "Sun",
       "armorMode": "piece"
@@ -34559,9 +34564,9 @@
       "icon": "assets/icons/terraria/search-items/martiancostumemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "martiancostume"
+        "martiancostume",
+        "armor"
       ],
       "armorGroupKey": "MartianCostume",
       "armorMode": "piece"
@@ -34599,9 +34604,9 @@
       "icon": "assets/icons/terraria/search-items/martianuniformhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "martianuniform"
+        "martianuniform",
+        "armor"
       ],
       "armorGroupKey": "MartianUniform",
       "armorMode": "piece"
@@ -35203,9 +35208,9 @@
       "icon": "assets/icons/terraria/search-items/whitelunatichood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "whitelunatic"
+        "whitelunatic",
+        "armor"
       ],
       "armorGroupKey": "WhiteLunatic",
       "armorMode": "piece"
@@ -35219,9 +35224,9 @@
       "icon": "assets/icons/terraria/search-items/bluelunatichood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bluelunatic"
+        "bluelunatic",
+        "armor"
       ],
       "armorGroupKey": "BlueLunatic",
       "armorMode": "piece"
@@ -35235,9 +35240,9 @@
       "icon": "assets/icons/terraria/search-items/whitelunaticrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "whitelunatic"
+        "whitelunatic",
+        "armor"
       ],
       "armorGroupKey": "WhiteLunatic",
       "armorMode": "piece"
@@ -35251,9 +35256,9 @@
       "icon": "assets/icons/terraria/search-items/bluelunaticrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bluelunatic"
+        "bluelunatic",
+        "armor"
       ],
       "armorGroupKey": "BlueLunatic",
       "armorMode": "piece"
@@ -38255,9 +38260,9 @@
       "icon": "assets/icons/terraria/search-items/nightvisionhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "nightvision"
+        "nightvision",
+        "armor"
       ],
       "armorGroupKey": "NightVision",
       "armorMode": "piece"
@@ -39195,9 +39200,9 @@
       "icon": "assets/icons/terraria/search-items/gladiatorhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "gladiator"
+        "gladiator",
+        "armor"
       ],
       "armorGroupKey": "Gladiator",
       "armorMode": "set"
@@ -39211,9 +39216,9 @@
       "icon": "assets/icons/terraria/search-items/gladiatorbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "gladiator"
+        "gladiator",
+        "armor"
       ],
       "armorGroupKey": "Gladiator",
       "armorMode": "piece",
@@ -39228,9 +39233,9 @@
       "icon": "assets/icons/terraria/search-items/gladiatorleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "gladiator"
+        "gladiator",
+        "armor"
       ],
       "armorGroupKey": "Gladiator",
       "armorMode": "piece",
@@ -40157,9 +40162,9 @@
       "icon": "assets/icons/terraria/search-items/obsidianhelm.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "obsidian"
+        "obsidian",
+        "armor"
       ],
       "armorGroupKey": "Obsidian",
       "armorMode": "piece"
@@ -41433,9 +41438,9 @@
       "icon": "assets/icons/terraria/search-items/bossmaskcultist.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bossmaskcultist"
+        "bossmaskcultist",
+        "armor"
       ],
       "armorGroupKey": "BossMaskCultist",
       "armorMode": "piece"
@@ -41449,9 +41454,9 @@
       "icon": "assets/icons/terraria/search-items/bossmaskmoonlord.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bossmaskmoonlord"
+        "bossmaskmoonlord",
+        "armor"
       ],
       "armorGroupKey": "BossMaskMoonlord",
       "armorMode": "piece"
@@ -41465,9 +41470,9 @@
       "icon": "assets/icons/terraria/search-items/fossilhelm.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "fossil"
+        "fossil",
+        "armor"
       ],
       "armorGroupKey": "Fossil",
       "armorMode": "piece"
@@ -41553,9 +41558,9 @@
       "icon": "assets/icons/terraria/search-items/stardusthelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "stardust"
+        "stardust",
+        "armor"
       ],
       "armorGroupKey": "Stardust",
       "armorMode": "set"
@@ -41569,9 +41574,9 @@
       "icon": "assets/icons/terraria/search-items/stardustbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "stardust"
+        "stardust",
+        "armor"
       ],
       "armorGroupKey": "Stardust",
       "armorMode": "piece",
@@ -41586,9 +41591,9 @@
       "icon": "assets/icons/terraria/search-items/stardustleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "stardust"
+        "stardust",
+        "armor"
       ],
       "armorGroupKey": "Stardust",
       "armorMode": "piece",
@@ -43831,11 +43836,12 @@
       "internalName": "LunarFlareBook",
       "displayName": "Lunar Flare",
       "displayNameRu": "\u041b\u0443\u043d\u043d\u0430\u044f \u0432\u0441\u043f\u044b\u0448\u043a\u0430",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/lunarflarebook.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -44015,9 +44021,9 @@
       "icon": "assets/icons/terraria/search-items/skiphshelm.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "skiphs"
+        "skiphs",
+        "armor"
       ],
       "armorGroupKey": "Skiphs",
       "armorMode": "piece"
@@ -44067,9 +44073,9 @@
       "icon": "assets/icons/terraria/search-items/lokishelm.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "lokis"
+        "lokis",
+        "armor"
       ],
       "armorGroupKey": "Lokis",
       "armorMode": "piece"
@@ -44527,9 +44533,9 @@
       "icon": "assets/icons/terraria/search-items/engineeringhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "engineering"
+        "engineering",
+        "armor"
       ],
       "armorGroupKey": "Engineering",
       "armorMode": "piece"
@@ -46267,11 +46273,12 @@
       "internalName": "AntlionClaw",
       "displayName": "Mandible Blade",
       "displayNameRu": "\u0427\u0435\u043b\u044e\u0441\u0442\u043d\u043e\u0435 \u043b\u0435\u0437\u0432\u0438\u0435",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/antlionclaw.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -46583,9 +46590,9 @@
       "icon": "assets/icons/terraria/search-items/apprenticerobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "apprentice"
+        "apprentice",
+        "armor"
       ],
       "armorGroupKey": "Apprentice",
       "armorMode": "piece"
@@ -46611,9 +46618,9 @@
       "icon": "assets/icons/terraria/search-items/squiregreathelm.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "squiregreat"
+        "squiregreat",
+        "armor"
       ],
       "armorGroupKey": "SquireGreat",
       "armorMode": "piece"
@@ -46639,9 +46646,9 @@
       "icon": "assets/icons/terraria/search-items/squiregreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "squire"
+        "squire",
+        "armor"
       ],
       "armorGroupKey": "Squire",
       "armorMode": "piece"
@@ -46855,11 +46862,12 @@
       "internalName": "DD2FlameburstTowerT3Popper",
       "displayName": "Flameburst Staff",
       "displayNameRu": "\u041e\u0433\u043d\u0435\u043c\u0435\u0442\u043d\u044b\u0439 \u043f\u043e\u0441\u043e\u0445",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/dd2flamebursttowert3popper.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -46927,11 +46935,12 @@
       "internalName": "DD2BallistraTowerT3Popper",
       "displayName": "Ballista Staff",
       "displayNameRu": "\u041f\u043e\u0441\u043e\u0445 \u0431\u0430\u043b\u043b\u0438\u0441\u0442\u044b",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/dd2ballistratowert3popper.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -46987,11 +46996,12 @@
       "internalName": "DD2LightningAuraT3Popper",
       "displayName": "Lightning Aura Staff",
       "displayNameRu": "\u041f\u043e\u0441\u043e\u0445 \u0410\u0443\u0440\u044b \u0441\u0432\u0435\u0442\u0430",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/dd2lightningaurat3popper.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -47023,11 +47033,12 @@
       "internalName": "DD2ExplosiveTrapT3Popper",
       "displayName": "Explosive Trap Staff",
       "displayNameRu": "\u041f\u043e\u0441\u043e\u0445 \u043b\u043e\u0432\u0443\u0448\u043a\u0438 \u0441\u043e \u0432\u0437\u0440\u044b\u0432\u0447\u0430\u0442\u043a\u043e\u0439",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/dd2explosivetrapt3popper.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -47183,9 +47194,9 @@
       "icon": "assets/icons/terraria/search-items/ogremask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ogre"
+        "ogre",
+        "armor"
       ],
       "armorGroupKey": "Ogre",
       "armorMode": "piece"
@@ -47199,9 +47210,9 @@
       "icon": "assets/icons/terraria/search-items/goblinmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "goblin"
+        "goblin",
+        "armor"
       ],
       "armorGroupKey": "Goblin",
       "armorMode": "piece"
@@ -47383,9 +47394,9 @@
       "icon": "assets/icons/terraria/search-items/bossmaskbetsy.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bossmaskbetsy"
+        "bossmaskbetsy",
+        "armor"
       ],
       "armorGroupKey": "BossMaskBetsy",
       "armorMode": "piece"
@@ -47399,9 +47410,9 @@
       "icon": "assets/icons/terraria/search-items/bossmaskdarkmage.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bossmaskdarkmage"
+        "bossmaskdarkmage",
+        "armor"
       ],
       "armorGroupKey": "BossMaskDarkMage",
       "armorMode": "piece"
@@ -47415,9 +47426,9 @@
       "icon": "assets/icons/terraria/search-items/bossmaskogre.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bossmaskogre"
+        "bossmaskogre",
+        "armor"
       ],
       "armorGroupKey": "BossMaskOgre",
       "armorMode": "piece"
@@ -49135,9 +49146,9 @@
       "icon": "assets/icons/terraria/search-items/ultrabrighthelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ultrabright"
+        "ultrabright",
+        "armor"
       ],
       "armorGroupKey": "Ultrabright",
       "armorMode": "piece"
@@ -52115,9 +52126,9 @@
       "icon": "assets/icons/terraria/search-items/amberrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "amber"
+        "amber",
+        "armor"
       ],
       "armorGroupKey": "Amber",
       "armorMode": "piece"
@@ -56871,9 +56882,9 @@
       "icon": "assets/icons/terraria/search-items/superheromask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "superhero"
+        "superhero",
+        "armor"
       ],
       "armorGroupKey": "SuperHero",
       "armorMode": "piece"
@@ -57483,11 +57494,12 @@
       "internalName": "QuadBarrelShotgun",
       "displayName": "Quad-Barrel Shotgun",
       "displayNameRu": "\u0414\u0440\u043e\u0431\u043e\u0432\u0438\u043a \u0441 \u0447\u0435\u0442\u044b\u0440\u044c\u043c\u044f \u0441\u0442\u0432\u043e\u043b\u0430\u043c\u0438",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/quadbarrelshotgun.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -57907,9 +57919,9 @@
       "icon": "assets/icons/terraria/search-items/drmanflymask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "drmanfly"
+        "drmanfly",
+        "armor"
       ],
       "armorGroupKey": "DrManFly",
       "armorMode": "piece"
@@ -57935,9 +57947,9 @@
       "icon": "assets/icons/terraria/search-items/butchermask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "butcher"
+        "butcher",
+        "armor"
       ],
       "armorGroupKey": "Butcher",
       "armorMode": "piece"
@@ -58047,9 +58059,9 @@
       "icon": "assets/icons/terraria/search-items/safemandressleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "safemandress"
+        "safemandress",
+        "armor"
       ],
       "armorGroupKey": "SafemanDress",
       "armorMode": "piece"
@@ -58123,9 +58135,9 @@
       "icon": "assets/icons/terraria/search-items/groxthegreathelm.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "groxthegreat"
+        "groxthegreat",
+        "armor"
       ],
       "armorGroupKey": "GroxTheGreat",
       "armorMode": "piece"
@@ -58151,9 +58163,9 @@
       "icon": "assets/icons/terraria/search-items/groxthegreatgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "groxthegreat"
+        "groxthegreat",
+        "armor"
       ],
       "armorGroupKey": "GroxTheGreat",
       "armorMode": "piece"
@@ -58163,11 +58175,12 @@
       "internalName": "Smolstar",
       "displayName": "Blade Staff",
       "displayNameRu": "\u041f\u043e\u0441\u043e\u0445 \u043b\u0435\u0437\u0432\u0438\u044f",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/smolstar.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -58479,9 +58492,9 @@
       "icon": "assets/icons/terraria/search-items/fairyqueenmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "fairyqueen"
+        "fairyqueen",
+        "armor"
       ],
       "armorGroupKey": "FairyQueen",
       "armorMode": "piece"
@@ -58623,11 +58636,12 @@
       "internalName": "DarkMageBookMountItem",
       "displayName": "Dark Mage's Tome",
       "displayNameRu": "\u0424\u043e\u043b\u0438\u0430\u043d\u0442 \u0442\u0435\u043c\u043d\u043e\u0433\u043e \u043c\u0430\u0433\u0430",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/darkmagebookmountitem.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -59551,9 +59565,9 @@
       "icon": "assets/icons/terraria/search-items/hallowedhood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "hallowed"
+        "hallowed",
+        "armor"
       ],
       "armorGroupKey": "Hallowed",
       "armorMode": "piece"
@@ -59831,9 +59845,9 @@
       "icon": "assets/icons/terraria/search-items/ancienthallowedmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancienthallowed"
+        "ancienthallowed",
+        "armor"
       ],
       "armorGroupKey": "AncientHallowed",
       "armorMode": "piece"
@@ -59847,9 +59861,9 @@
       "icon": "assets/icons/terraria/search-items/ancienthallowedhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancienthallowed"
+        "ancienthallowed",
+        "armor"
       ],
       "armorGroupKey": "AncientHallowed",
       "armorMode": "piece"
@@ -59863,9 +59877,9 @@
       "icon": "assets/icons/terraria/search-items/ancienthallowedheadgear.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancienthallowed"
+        "ancienthallowed",
+        "armor"
       ],
       "armorGroupKey": "AncientHallowed",
       "armorMode": "piece"
@@ -59879,9 +59893,9 @@
       "icon": "assets/icons/terraria/search-items/ancienthallowedhood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancienthallowed"
+        "ancienthallowed",
+        "armor"
       ],
       "armorGroupKey": "AncientHallowed",
       "armorMode": "piece"
@@ -59895,9 +59909,9 @@
       "icon": "assets/icons/terraria/search-items/ancienthallowedplatemail.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancienthallowedplatemail"
+        "ancienthallowedplatemail",
+        "armor"
       ],
       "armorGroupKey": "AncientHallowedPlateMail",
       "armorMode": "piece"
@@ -59911,9 +59925,9 @@
       "icon": "assets/icons/terraria/search-items/ancienthallowedgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ancienthallowed"
+        "ancienthallowed",
+        "armor"
       ],
       "armorGroupKey": "AncientHallowed",
       "armorMode": "piece"
@@ -60571,11 +60585,12 @@
       "internalName": "Zenith",
       "displayName": "Zenith",
       "displayNameRu": "\u0417\u0435\u043d\u0438\u0442",
-      "category": "other",
+      "category": "weapon",
       "icon": "assets/icons/terraria/search-items/zenith.png",
       "kind": "item",
       "tags": [
-        "other"
+        "override",
+        "weapon"
       ]
     },
     {
@@ -60611,9 +60626,9 @@
       "icon": "assets/icons/terraria/search-items/queenslimemask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "queenslime"
+        "queenslime",
+        "armor"
       ],
       "armorGroupKey": "QueenSlime",
       "armorMode": "piece"
@@ -60891,9 +60906,9 @@
       "icon": "assets/icons/terraria/search-items/crystalninjahelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "crystalninja"
+        "crystalninja",
+        "armor"
       ],
       "armorGroupKey": "CrystalNinja",
       "armorMode": "piece"
@@ -60919,9 +60934,9 @@
       "icon": "assets/icons/terraria/search-items/crystalninjaleggings.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "crystalninja"
+        "crystalninja",
+        "armor"
       ],
       "armorGroupKey": "CrystalNinja",
       "armorMode": "piece"
@@ -61655,9 +61670,9 @@
       "icon": "assets/icons/terraria/search-items/plaguebringerhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "plaguebringer"
+        "plaguebringer",
+        "armor"
       ],
       "armorGroupKey": "Plaguebringer",
       "armorMode": "piece"
@@ -61683,9 +61698,9 @@
       "icon": "assets/icons/terraria/search-items/plaguebringergreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "plaguebringer"
+        "plaguebringer",
+        "armor"
       ],
       "armorGroupKey": "Plaguebringer",
       "armorMode": "piece"
@@ -61735,9 +61750,9 @@
       "icon": "assets/icons/terraria/search-items/timelesstravelerhood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "timelesstraveler"
+        "timelesstraveler",
+        "armor"
       ],
       "armorGroupKey": "TimelessTraveler",
       "armorMode": "piece"
@@ -61751,9 +61766,9 @@
       "icon": "assets/icons/terraria/search-items/timelesstravelerrobe.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "timelesstraveler"
+        "timelesstraveler",
+        "armor"
       ],
       "armorGroupKey": "TimelessTraveler",
       "armorMode": "piece"
@@ -61815,9 +61830,9 @@
       "icon": "assets/icons/terraria/search-items/capricornmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "capricorn"
+        "capricorn",
+        "armor"
       ],
       "armorGroupKey": "Capricorn",
       "armorMode": "piece"
@@ -61867,9 +61882,9 @@
       "icon": "assets/icons/terraria/search-items/tvheadmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "tvhead"
+        "tvhead",
+        "armor"
       ],
       "armorGroupKey": "TVHead",
       "armorMode": "piece"
@@ -62339,9 +62354,9 @@
       "icon": "assets/icons/terraria/search-items/bonehelm.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "bone"
+        "bone",
+        "armor"
       ],
       "armorGroupKey": "Bone",
       "armorMode": "piece"
@@ -62451,9 +62466,9 @@
       "icon": "assets/icons/terraria/search-items/deerclopsmask.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "deerclops"
+        "deerclops",
+        "armor"
       ],
       "armorGroupKey": "Deerclops",
       "armorMode": "piece"
@@ -64495,9 +64510,9 @@
       "icon": "assets/icons/terraria/search-items/ashwoodhelmet.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-set",
-        "ashwood"
+        "ashwood",
+        "armor"
       ],
       "armorGroupKey": "AshWood",
       "armorMode": "set"
@@ -64511,9 +64526,9 @@
       "icon": "assets/icons/terraria/search-items/ashwoodbreastplate.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ashwood"
+        "ashwood",
+        "armor"
       ],
       "armorGroupKey": "AshWood",
       "armorMode": "piece",
@@ -64528,9 +64543,9 @@
       "icon": "assets/icons/terraria/search-items/ashwoodgreaves.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "ashwood"
+        "ashwood",
+        "armor"
       ],
       "armorGroupKey": "AshWood",
       "armorMode": "piece",
@@ -65793,9 +65808,9 @@
       "icon": "assets/icons/terraria/search-items/lincolnshoodie.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "lincolnshoodie"
+        "lincolnshoodie",
+        "armor"
       ],
       "armorGroupKey": "LincolnsHoodie",
       "armorMode": "piece"
@@ -65845,9 +65860,9 @@
       "icon": "assets/icons/terraria/search-items/lincolnshood.png",
       "kind": "item",
       "tags": [
-        "armor",
         "armor-piece",
-        "lincolns"
+        "lincolns",
+        "armor"
       ],
       "armorGroupKey": "Lincolns",
       "armorMode": "piece"
