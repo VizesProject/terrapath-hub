@@ -1253,8 +1253,13 @@ function renderPickerFilters() {
 function pickerEntries() {
   if (!pickerState) return [];
   if (pickerState.mode === "description") {
+    const contentForKind = (kind) => {
+      const matches = support.content.filter((entry) => normalizedContentKind(entry) === kind);
+      if (kind !== "npc") return matches;
+      return matches.filter((entry) => entry.npcPickerEligible !== false);
+    };
     if (pickerState.filter && pickerState.filter !== "all") {
-      return support.content.filter((entry) => normalizedContentKind(entry) === pickerState.filter);
+      return contentForKind(pickerState.filter);
     }
     return support.content;
   }

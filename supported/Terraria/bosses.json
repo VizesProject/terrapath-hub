@@ -3,6 +3,21 @@
   "contentType": "bosses",
   "bosses": [
     {
+      "id": "Terraria/TheDestroyer",
+      "internalName": "TheDestroyer",
+      "displayName": "The Destroyer",
+      "displayNameRu": "\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/terraria/bosses/the-destroyer.png",
+      "kind": "boss",
+      "bossPickerEligible": true,
+      "canonicalBossId": "Terraria/TheDestroyer",
+      "bossColumn": "hardmode",
+      "tags": [
+        "boss",
+        "hardmode"
+      ]
+    },
+    {
       "id": "Terraria/KingSlime",
       "internalName": "KingSlime",
       "displayName": "King Slime",
@@ -131,21 +146,6 @@
       "kind": "boss",
       "bossPickerEligible": true,
       "canonicalBossId": "Terraria/QueenSlimeBoss",
-      "bossColumn": "hardmode",
-      "tags": [
-        "boss",
-        "hardmode"
-      ]
-    },
-    {
-      "id": "Terraria/TheDestroyer",
-      "internalName": "TheDestroyer",
-      "displayName": "The Destroyer",
-      "displayNameRu": "\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0438\u0442\u0435\u043b\u044c",
-      "icon": "assets/icons/terraria/bosses/the-destroyer.png",
-      "kind": "boss",
-      "bossPickerEligible": true,
-      "canonicalBossId": "Terraria/TheDestroyer",
       "bossColumn": "hardmode",
       "tags": [
         "boss",

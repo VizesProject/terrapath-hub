@@ -100,12 +100,13 @@
       "kind": "boss",
       "internalName": "AquaticScourgeHead",
       "displayName": "Aquatic Scourge",
-      "displayNameRu": "Aquatic Scourge",
+      "displayNameRu": "\u0410\u043a\u0432\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0431\u0438\u0447",
       "tags": [
         "npc",
         "boss",
         "aquatic-scourge"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/bosses/aquatic-scourge-wiki.png",
       "bossPickerEligible": true,
       "canonicalBossId": "CalamityMod/AquaticScourgeHead",
@@ -123,6 +124,7 @@
         "boss-segment",
         "aquatic-scourge"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/aquaticscourgebody.png",
       "canonicalBossId": "CalamityMod/AquaticScourgeHead",
       "bossPickerEligible": false,
@@ -140,6 +142,7 @@
         "boss-segment",
         "aquatic-scourge"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/aquaticscourgebodyalt.png",
       "canonicalBossId": "CalamityMod/AquaticScourgeHead",
       "bossPickerEligible": false,
@@ -157,6 +160,7 @@
         "boss-segment",
         "aquatic-scourge"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/aquaticscourgetail.png",
       "canonicalBossId": "CalamityMod/AquaticScourgeHead",
       "bossPickerEligible": false,
@@ -460,7 +464,7 @@
       "kind": "boss",
       "internalName": "AresBody",
       "displayName": "Exo Mechs",
-      "displayNameRu": "Exo Mechs",
+      "displayNameRu": "\u042d\u043a\u0437\u043e-\u043c\u0435\u0445\u0430\u043d\u0438\u0437\u043c\u044b",
       "tags": [
         "boss"
       ],
@@ -571,7 +575,7 @@
       "kind": "boss",
       "internalName": "ProfanedGuardianCommander",
       "displayName": "Profaned Guardians",
-      "displayNameRu": "Guardian Commander",
+      "displayNameRu": "\u041e\u0441\u043a\u0432\u0435\u0440\u043d\u0451\u043d\u043d\u044b\u0435 \u0441\u0442\u0440\u0430\u0436\u0438",
       "tags": [
         "boss"
       ],
@@ -683,7 +687,7 @@
       "kind": "boss",
       "internalName": "ThanatosHead",
       "displayName": "Thanatos",
-      "displayNameRu": "XM-05 Thanatos",
+      "displayNameRu": "XM-05 \u0422\u0430\u043d\u0430\u0442\u043e\u0441",
       "tags": [
         "boss"
       ],
@@ -767,7 +771,7 @@
       "kind": "boss",
       "internalName": "SlimeGodCore",
       "displayName": "The Slime God",
-      "displayNameRu": "\u0421\u043b\u0438\u0437\u043d\u0435\u0432\u044b\u0439 \u0431\u043e\u0433",
+      "displayNameRu": "\u0411\u043e\u0433 \u0441\u043b\u0438\u0437\u043d\u0435\u0439",
       "tags": [
         "boss"
       ],
@@ -18832,6 +18836,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/acideel.png"
     },
     {
@@ -18843,6 +18848,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/aeroslime.png"
     },
     {
@@ -18854,6 +18860,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/anahitasiceshield.png"
     },
     {
@@ -18865,6 +18872,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/androomba.png"
     },
     {
@@ -18876,6 +18884,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/androombafriendly.png"
     },
     {
@@ -18887,6 +18896,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/anthozoancrab.png"
     },
     {
@@ -18898,6 +18908,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/aquaticaberration.png"
     },
     {
@@ -18909,6 +18920,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/aquaticurchin.png"
     },
     {
@@ -18920,6 +18932,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/archmage.png"
     },
     {
@@ -18931,6 +18944,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/aries.png"
     },
     {
@@ -18942,6 +18956,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/astraglomerate.png"
     },
     {
@@ -18953,6 +18968,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/astralprobe.png"
     },
     {
@@ -18964,6 +18980,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/astralseekerspit.png"
     },
     {
@@ -18975,6 +18992,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/astralslime.png"
     },
     {
@@ -18986,6 +19004,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/astralachneaground.png"
     },
     {
@@ -18997,6 +19016,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/astralachneawall.png"
     },
     {
@@ -19008,6 +19028,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/atlas.png"
     },
     {
@@ -19019,6 +19040,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/aureusspawn.png"
     },
     {
@@ -19030,6 +19052,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/auroraspirit.png"
     },
     {
@@ -19041,6 +19064,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/babycannonballjellyfish.png"
     },
     {
@@ -19052,6 +19076,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/babyflakcrab.png"
     },
     {
@@ -19063,6 +19088,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/babyghostbell.png"
     },
     {
@@ -19074,6 +19100,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/bandit.png"
     },
     {
@@ -19085,6 +19112,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/belchingcoral.png"
     },
     {
@@ -19096,6 +19124,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/blindedangler.png"
     },
     {
@@ -19107,6 +19136,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/bloatfish.png"
     },
     {
@@ -19118,6 +19148,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/bloodbomb.png"
     },
     {
@@ -19129,6 +19160,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/bloodwormfleeing.png"
     },
     {
@@ -19140,6 +19172,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/bloodwormnormal.png"
     },
     {
@@ -19151,6 +19184,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/bloomslime.png"
     },
     {
@@ -19162,6 +19196,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/bobbitwormhead.png"
     },
     {
@@ -19173,6 +19208,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/bobbitwormsegment.png"
     },
     {
@@ -19184,6 +19220,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/bohldohr.png"
     },
     {
@@ -19195,6 +19232,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/boxjellyfish.png"
     },
     {
@@ -19206,6 +19244,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/brimling.png"
     },
     {
@@ -19217,6 +19256,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/brimstoneheart.png"
     },
     {
@@ -19228,6 +19268,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/brimstonewitch.png"
     },
     {
@@ -19239,6 +19280,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/bucketzombie.png"
     },
     {
@@ -19250,6 +19292,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/burrower.png"
     },
     {
@@ -19261,6 +19304,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/burrowerhitbox.png"
     },
     {
@@ -19272,6 +19316,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/calamitasenchantdemon.png"
     },
     {
@@ -19283,6 +19328,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/calamityeye.png"
     },
     {
@@ -19294,6 +19340,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/cannonballjellyfish.png"
     },
     {
@@ -19305,6 +19352,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/cataclysm.png"
     },
     {
@@ -19316,6 +19364,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/catastrophe.png"
     },
     {
@@ -19327,6 +19376,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/chaoticpuffer.png"
     },
     {
@@ -19338,6 +19388,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/cladcrab.png"
     },
     {
@@ -19349,6 +19400,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/clam.png"
     },
     {
@@ -19360,6 +19412,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/cnidrion.png"
     },
     {
@@ -19371,6 +19424,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/colossalsquid.png"
     },
     {
@@ -19382,6 +19436,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/corruptslimespawn.png"
     },
     {
@@ -19393,6 +19448,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/corruptslimespawn2.png"
     },
     {
@@ -19404,6 +19460,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/cosmiclantern.png"
     },
     {
@@ -19415,6 +19472,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/cosmicmine.png"
     },
     {
@@ -19426,6 +19484,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crabshroom.png"
     },
     {
@@ -19437,6 +19496,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crawleramber.png"
     },
     {
@@ -19448,6 +19508,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crawleramethyst.png"
     },
     {
@@ -19459,6 +19520,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crawlercrystal.png"
     },
     {
@@ -19470,6 +19532,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crawlerdiamond.png"
     },
     {
@@ -19481,6 +19544,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crawleremerald.png"
     },
     {
@@ -19492,6 +19556,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crawlerruby.png"
     },
     {
@@ -19503,6 +19568,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crawlersapphire.png"
     },
     {
@@ -19514,6 +19580,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crawlertopaz.png"
     },
     {
@@ -19525,6 +19592,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crimsonslimespawn.png"
     },
     {
@@ -19536,6 +19604,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crimsonslimespawn2.png"
     },
     {
@@ -19547,6 +19616,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crimulanblightslime.png"
     },
     {
@@ -19558,6 +19628,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/crimulanpaladin.png"
     },
     {
@@ -19569,6 +19640,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/cryoslime.png"
     },
     {
@@ -19580,6 +19652,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/cryogenshield.png"
     },
     {
@@ -19591,6 +19664,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/cryon.png"
     },
     {
@@ -19602,6 +19676,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/cuttlefish.png"
     },
     {
@@ -19613,6 +19688,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/dankcreeper.png"
     },
     {
@@ -19624,6 +19700,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/darkenergy.png"
     },
     {
@@ -19635,6 +19712,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/darkheart.png"
     },
     {
@@ -19646,6 +19724,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/demonportal.png"
     },
     {
@@ -19657,6 +19736,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/desertnuisancebody.png"
     },
     {
@@ -19668,6 +19748,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/desertnuisancebodyyoung.png"
     },
     {
@@ -19679,6 +19760,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/desertnuisancehead.png"
     },
     {
@@ -19690,6 +19772,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/desertnuisanceheadyoung.png"
     },
     {
@@ -19701,6 +19784,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/desertnuisancetail.png"
     },
     {
@@ -19712,6 +19796,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/desertnuisancetailyoung.png"
     },
     {
@@ -19723,6 +19808,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/despairstone.png"
     },
     {
@@ -19734,6 +19820,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/devilfish.png"
     },
     {
@@ -19745,6 +19832,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/devilfishalt.png"
     },
     {
@@ -19756,6 +19844,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/draconicswarmer.png"
     },
     {
@@ -19767,6 +19856,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/draedon.png"
     },
     {
@@ -19778,6 +19868,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/ebonianblightslime.png"
     },
     {
@@ -19789,6 +19880,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/ebonianpaladin.png"
     },
     {
@@ -19800,6 +19892,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/eidolist.png"
     },
     {
@@ -19811,6 +19904,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/eidolonwyrmbody.png"
     },
     {
@@ -19822,6 +19916,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/eidolonwyrmbodyalt.png"
     },
     {
@@ -19833,6 +19928,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/eidolonwyrmhead.png"
     },
     {
@@ -19844,6 +19940,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/eidolonwyrmtail.png"
     },
     {
@@ -19855,6 +19952,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/eutrophicray.png"
     },
     {
@@ -19866,6 +19964,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/exhumedheart.png"
     },
     {
@@ -19877,6 +19976,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/fearlessgoldfishwarrior.png"
     },
     {
@@ -19888,6 +19988,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/flakcrab.png"
     },
     {
@@ -19899,6 +20000,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/flamepillar.png"
     },
     {
@@ -19910,6 +20012,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/frogfish.png"
     },
     {
@@ -19921,6 +20024,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/fusionfeeder.png"
     },
     {
@@ -19932,6 +20036,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/gammaslime.png"
     },
     {
@@ -19943,6 +20048,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/ghostbell.png"
     },
     {
@@ -19954,6 +20060,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/giantsquid.png"
     },
     {
@@ -19965,6 +20072,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/glomerling.png"
     },
     {
@@ -19976,6 +20084,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/gnasher.png"
     },
     {
@@ -19987,6 +20096,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/gulpereelbody.png"
     },
     {
@@ -19998,6 +20108,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/gulpereelbodyalt.png"
     },
     {
@@ -20009,6 +20120,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/gulpereelhead.png"
     },
     {
@@ -20020,6 +20132,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/gulpereeltail.png"
     },
     {
@@ -20031,6 +20144,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/hadarian.png"
     },
     {
@@ -20042,6 +20156,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/heatspirit.png"
     },
     {
@@ -20053,6 +20168,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/hiveblob.png"
     },
     {
@@ -20064,6 +20180,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/hivetumor.png"
     },
     {
@@ -20075,6 +20192,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/iceclasper.png"
     },
     {
@@ -20086,6 +20204,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/impiousimmolator.png"
     },
     {
@@ -20097,6 +20216,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/infernalcongealment.png"
     },
     {
@@ -20108,6 +20228,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/irradiatedslime.png"
     },
     {
@@ -20119,6 +20240,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/kingslimejewelruby.png"
     },
     {
@@ -20130,6 +20252,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/laserfish.png"
     },
     {
@@ -20141,6 +20264,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/lecherousorb.png"
     },
     {
@@ -20152,6 +20276,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/leviathanstart.png"
     },
     {
@@ -20163,6 +20288,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/luminouscorvina.png"
     },
     {
@@ -20174,6 +20300,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/mantis.png"
     },
     {
@@ -20185,6 +20312,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/mantisshrimp.png"
     },
     {
@@ -20196,6 +20324,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/melter.png"
     },
     {
@@ -20207,6 +20336,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/microbialcluster.png"
     },
     {
@@ -20218,6 +20348,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/miragejelly.png"
     },
     {
@@ -20229,6 +20360,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/morayeel.png"
     },
     {
@@ -20240,6 +20372,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/nanodroid.png"
     },
     {
@@ -20251,6 +20384,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/nanodroiddysfunctional.png"
     },
     {
@@ -20262,6 +20396,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/nanodroidplaguegreen.png"
     },
     {
@@ -20273,6 +20408,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/nanodroidplaguered.png"
     },
     {
@@ -20284,6 +20420,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/nova.png"
     },
     {
@@ -20295,6 +20432,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/nucleartoad.png"
     },
     {
@@ -20306,6 +20444,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/oarfishbody.png"
     },
     {
@@ -20317,6 +20456,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/oarfishhead.png"
     },
     {
@@ -20328,6 +20468,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/oarfishtail.png"
     },
     {
@@ -20339,6 +20480,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/oldduketoothball.png"
     },
     {
@@ -20350,6 +20492,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/orthocera.png"
     },
     {
@@ -20361,6 +20504,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/overloadedsoldier.png"
     },
     {
@@ -20372,6 +20516,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perennialslime.png"
     },
     {
@@ -20383,6 +20528,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perforatorbodylarge.png"
     },
     {
@@ -20394,6 +20540,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perforatorbodymedium.png"
     },
     {
@@ -20405,6 +20552,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perforatorbodysmall.png"
     },
     {
@@ -20416,6 +20564,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perforatorcyst.png"
     },
     {
@@ -20427,6 +20576,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perforatorheadlarge.png"
     },
     {
@@ -20438,6 +20588,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perforatorheadmedium.png"
     },
     {
@@ -20449,6 +20600,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perforatorheadsmall.png"
     },
     {
@@ -20460,6 +20612,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perforatortaillarge.png"
     },
     {
@@ -20471,6 +20624,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perforatortailmedium.png"
     },
     {
@@ -20482,6 +20636,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/perforatortailsmall.png"
     },
     {
@@ -20493,6 +20648,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/pestilentslime.png"
     },
     {
@@ -20504,6 +20660,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/phantomfuckyou.png"
     },
     {
@@ -20515,6 +20672,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/phantomspirit.png"
     },
     {
@@ -20526,6 +20684,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/phantomspiritl.png"
     },
     {
@@ -20537,6 +20696,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/phantomspiritm.png"
     },
     {
@@ -20548,6 +20708,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/phantomspirits.png"
     },
     {
@@ -20559,6 +20720,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/piggy.png"
     },
     {
@@ -20570,6 +20732,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/plaguecharger.png"
     },
     {
@@ -20581,6 +20744,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/plaguechargerlarge.png"
     },
     {
@@ -20592,6 +20756,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/plaguehomingmissile.png"
     },
     {
@@ -20603,6 +20768,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/plaguemine.png"
     },
     {
@@ -20614,6 +20780,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/plaguebringerminiboss.png"
     },
     {
@@ -20625,6 +20792,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/plagueshell.png"
     },
     {
@@ -20636,6 +20804,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/planterasfreetentacle.png"
     },
     {
@@ -20647,6 +20816,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/polterphantom.png"
     },
     {
@@ -20658,6 +20828,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/polterghasthook.png"
     },
     {
@@ -20669,6 +20840,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/primordialwyrmbody.png"
     },
     {
@@ -20680,6 +20852,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/primordialwyrmbodyalt.png"
     },
     {
@@ -20691,6 +20864,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/primordialwyrmtail.png"
     },
     {
@@ -20702,6 +20876,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/prismback.png"
     },
     {
@@ -20713,6 +20888,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/profanedenergybody.png"
     },
     {
@@ -20724,6 +20900,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/profanedenergylantern.png"
     },
     {
@@ -20735,6 +20912,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/profanedguardiandefender.png"
     },
     {
@@ -20746,6 +20924,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/profanedguardianhealer.png"
     },
     {
@@ -20757,6 +20936,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/profanedrocks.png"
     },
     {
@@ -20768,6 +20948,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/provspawndefense.png"
     },
     {
@@ -20779,6 +20960,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/provspawnhealer.png"
     },
     {
@@ -20790,6 +20972,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/provspawnoffense.png"
     },
     {
@@ -20801,6 +20984,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/radiator.png"
     },
     {
@@ -20812,6 +20996,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/ravagerclawleft.png"
     },
     {
@@ -20823,6 +21008,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/ravagerclawright.png"
     },
     {
@@ -20834,6 +21020,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/ravagerhead.png"
     },
     {
@@ -20845,6 +21032,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/ravagerhead2.png"
     },
     {
@@ -20856,6 +21044,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/ravagerlegleft.png"
     },
     {
@@ -20867,6 +21056,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/ravagerlegright.png"
     },
     {
@@ -20878,6 +21068,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/reapershark.png"
     },
     {
@@ -20889,6 +21080,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/renegadewarlock.png"
     },
     {
@@ -20900,6 +21092,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/repairunitcritter.png"
     },
     {
@@ -20911,6 +21104,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/rimehound.png"
     },
     {
@@ -20922,6 +21116,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/rockpillar.png"
     },
     {
@@ -20933,6 +21128,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/rotdog.png"
     },
     {
@@ -20944,6 +21140,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/scorneater.png"
     },
     {
@@ -20955,6 +21152,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/scryllar.png"
     },
     {
@@ -20966,6 +21164,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/scryllarrage.png"
     },
     {
@@ -20977,6 +21176,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/seafloaty.png"
     },
     {
@@ -20988,6 +21188,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/seaking.png"
     },
     {
@@ -20999,6 +21200,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/seaminnow.png"
     },
     {
@@ -21010,6 +21212,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/seaserpent1.png"
     },
     {
@@ -21021,6 +21224,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/seaserpent2.png"
     },
     {
@@ -21032,6 +21236,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/seaserpent3.png"
     },
     {
@@ -21043,6 +21248,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/seaserpent4.png"
     },
     {
@@ -21054,6 +21260,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/seaserpent5.png"
     },
     {
@@ -21065,6 +21272,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sepulcherarm.png"
     },
     {
@@ -21076,6 +21284,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sepulcherbody.png"
     },
     {
@@ -21087,6 +21296,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sepulcherbodyenergyball.png"
     },
     {
@@ -21098,6 +21308,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sepulcherhead.png"
     },
     {
@@ -21109,6 +21320,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sepulchertail.png"
     },
     {
@@ -21120,6 +21332,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/shockstormshuttle.png"
     },
     {
@@ -21131,6 +21344,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/shroomble.png"
     },
     {
@@ -21142,6 +21356,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sightseercollider.png"
     },
     {
@@ -21153,6 +21368,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sightseerspitter.png"
     },
     {
@@ -21164,6 +21380,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/skyfin.png"
     },
     {
@@ -21175,6 +21392,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/slabcrab.png"
     },
     {
@@ -21186,6 +21404,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/soulseeker.png"
     },
     {
@@ -21197,6 +21416,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/soulseekersupreme.png"
     },
     {
@@ -21208,6 +21428,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/soulslurper.png"
     },
     {
@@ -21219,6 +21440,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/splitcrimulanpaladin.png"
     },
     {
@@ -21230,6 +21452,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/splitebonianpaladin.png"
     },
     {
@@ -21241,6 +21464,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/stellarculex.png"
     },
     {
@@ -21252,6 +21476,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/stormlion.png"
     },
     {
@@ -21263,6 +21488,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sulflounder.png"
     },
     {
@@ -21274,6 +21500,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sulphuroussharkron.png"
     },
     {
@@ -21285,6 +21512,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sulphurousskater.png"
     },
     {
@@ -21296,6 +21524,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/sunskater.png"
     },
     {
@@ -21307,6 +21536,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/superdummynpc.png"
     },
     {
@@ -21318,6 +21548,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/supremecataclysm.png"
     },
     {
@@ -21329,6 +21560,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/supremecatastrophe.png"
     },
     {
@@ -21340,6 +21572,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/toxicminnow.png"
     },
     {
@@ -21351,6 +21584,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/toxicatfish.png"
     },
     {
@@ -21362,6 +21596,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/trasher.png"
     },
     {
@@ -21373,6 +21608,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/trilobite.png"
     },
     {
@@ -21384,6 +21620,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/twinkler.png"
     },
     {
@@ -21395,6 +21632,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/viperfish.png"
     },
     {
@@ -21406,6 +21644,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/viruling.png"
     },
     {
@@ -21417,6 +21656,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/wildbumblebirb.png"
     },
     {
@@ -21428,6 +21668,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/wulfrumamplifier.png"
     },
     {
@@ -21439,6 +21680,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/wulfrumdrone.png"
     },
     {
@@ -21450,6 +21692,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/wulfrumgyrator.png"
     },
     {
@@ -21461,6 +21704,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/wulfrumhovercraft.png"
     },
     {
@@ -21472,6 +21716,7 @@
       "tags": [
         "npc"
       ],
+      "npcPickerEligible": false,
       "icon": "assets/icons/calamity/npcs/wulfrumrover.png"
     },
     {

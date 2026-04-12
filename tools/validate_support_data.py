@@ -1,5 +1,6 @@
 import json
 import re
+import struct
 import sys
 from pathlib import Path
 
@@ -23,7 +24,10 @@ def require(condition: bool, message: str) -> None:
 
 def validate_item_categories(relative_path: str) -> None:
     rows = read_json(relative_path)["items"]
-    weapon_tool_pattern = re.compile(r"pickaxe|drill|hammer|hamaxe|chainsaw|fishingpole|axe", re.IGNORECASE)
+    weapon_tool_pattern = re.compile(
+        r"pickaxe|drill|hammer|hamaxe|chainsaw|fishingpole|axe|aquarium|bowl|bookcase|statue|wall",
+        re.IGNORECASE,
+    )
     accessory_contamination_pattern = re.compile(
         r"bookcase|banner|statue|brick$|wall$|bar$|pickaxe|drill|hammer|hamaxe|axe|helmet|"
         r"breastplate|chestplate|greaves|leggings|robe|hood|mask",
@@ -100,7 +104,14 @@ def validate_terraria_boss_icons() -> None:
         row = rows.get(content_id)
         require(row is not None, f"Missing Terraria boss entry: {content_id}")
         require(row.get("icon") == icon, f"{content_id} must use {icon}, got {row.get('icon')}")
-        require((ROOT / "docs" / icon).exists(), f"Missing boss icon file: {icon}")
+        icon_path = ROOT / "docs" / icon
+        require(icon_path.exists(), f"Missing boss icon file: {icon}")
+        raw = icon_path.read_bytes()
+        width, height = struct.unpack(">II", raw[16:24])
+        require(
+            max(width, height) <= 128,
+            f"{content_id} uses a spritesheet-like icon ({width}x{height}): {icon}",
+        )
 
 
 def validate_calamity_boss_picker() -> None:
@@ -210,6 +221,12 @@ def validate_search_content(relative_path: str, mod_name: str) -> None:
             row.get("bossPickerEligible"),
             f"{relative_path} boss subset row is not picker-eligible: {content_id}",
         )
+
+    if mod_name == "Terraria":
+        event_count = sum(1 for row in entries if str(row.get("kind") or "").lower() == "event")
+        biome_count = sum(1 for row in entries if str(row.get("kind") or "").lower() == "biome")
+        require(event_count >= 8, f"{relative_path} should include more Terraria events, got {event_count}")
+        require(biome_count >= 8, f"{relative_path} should include more Terraria biomes, got {biome_count}")
 
 
 def main() -> int:

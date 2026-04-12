@@ -7,11 +7,34 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TERRARIA_DIR = ROOT / "supported" / "Terraria"
+TERRARIA_SUPPLEMENT_PATH = TERRARIA_DIR / "supplement.json"
 STRICT_ITEM_CATEGORIES = {"weapon", "armor", "accessory", "buff", "other"}
 ITEM_LIKE_KINDS = {"item", "material", "ore", "other"}
 BOSS_LIKE_KINDS = {"boss", "miniboss"}
 VALID_BOSS_COLUMNS = {"miniboss", "prehardmode", "hardmode", "postmoonlord"}
 TOOL_HINTS = ("pickaxe", "drill", "hammer", "hamaxe", "axe", "fishingpole")
+WEAPON_CONTAMINATION_HINTS = (
+    "aquarium",
+    "bowl",
+    "bookcase",
+    "statue",
+    "wall",
+    "platform",
+    "chest",
+    "dresser",
+    "table",
+    "chair",
+    "piano",
+    "clock",
+    "lamp",
+    "lantern",
+    "bathtub",
+    "toilet",
+    "sofa",
+    "sink",
+    "workbench",
+    "work bench",
+)
 ACCESSORY_CONTAMINATION_HINTS = (
     "helmet",
     "breastplate",
@@ -86,6 +109,24 @@ RUSSIAN_HEAD_SUFFIXES = (
     "головной убор",
     "вуаль",
 )
+RUSSIAN_HEAD_SUFFIXES_SAFE = (
+    "\u0448\u043b\u0435\u043c",
+    "\u043c\u0430\u0441\u043a\u0430",
+    "\u043a\u0430\u043f\u044e\u0448\u043e\u043d",
+    "\u043a\u043e\u0440\u043e\u043d\u0430",
+    "\u0448\u043b\u044f\u043f\u0430",
+    "\u0448\u0430\u043f\u043a\u0430",
+    "\u0433\u043e\u043b\u043e\u0432\u043d\u043e\u0439 \u0443\u0431\u043e\u0440",
+    "\u0432\u0443\u0430\u043b\u044c",
+)
+RUSSIAN_HEAD_PREFIXES_SAFE = (
+    "\u0448\u043b\u0435\u043c ",
+    "\u043c\u0430\u0441\u043a\u0430 ",
+    "\u043a\u0430\u043f\u044e\u0448\u043e\u043d ",
+    "\u043a\u043e\u0440\u043e\u043d\u0430 ",
+    "\u0448\u043b\u044f\u043f\u0430 ",
+    "\u0448\u0430\u043f\u043a\u0430 ",
+)
 TERRARIA_BOSS_WIKI_ICON_OVERRIDES = {
     "Terraria/KingSlime": "assets/icons/terraria/bosses/king-slime-wiki.png",
     "Terraria/QueenSlimeBoss": "assets/icons/terraria/bosses/queen-slime-wiki.png",
@@ -150,6 +191,12 @@ def assert_same(path: Path, expected: dict) -> None:
         raise SystemExit(f"{path.relative_to(ROOT)} is out of date. Run python tools/build_terraria_support.py")
 
 
+def load_supplement_entries() -> list[dict]:
+    if not TERRARIA_SUPPLEMENT_PATH.exists():
+        return []
+    return read_json(TERRARIA_SUPPLEMENT_PATH).get("entries", [])
+
+
 def merge_tags(*tag_sets: list[str]) -> list[str]:
     merged: list[str] = []
     for tags in tag_sets:
@@ -204,6 +251,15 @@ def strip_ending(source: str, endings: tuple[str, ...]) -> str:
     return source.strip()
 
 
+def strip_ru_head_prefix(source: str) -> str:
+    value = source.strip()
+    lowered = value.lower()
+    for prefix in RUSSIAN_HEAD_PREFIXES_SAFE:
+        if lowered.startswith(prefix):
+            return value[len(prefix) :].strip()
+    return value
+
+
 def normalize_item_category(entry: dict) -> str:
     category = str(entry.get("category") or "").strip().lower()
     if category == "ammo":
@@ -224,6 +280,8 @@ def normalize_item_category(entry: dict) -> str:
     )
 
     if category == "weapon" and any(hint in haystack for hint in TOOL_HINTS):
+        return "other"
+    if category == "weapon" and any(hint in haystack for hint in WEAPON_CONTAMINATION_HINTS):
         return "other"
     if category == "accessory" and any(hint in haystack for hint in ACCESSORY_CONTAMINATION_HINTS):
         return "other"
@@ -270,13 +328,17 @@ def apply_armor_selection_metadata(items_by_id: dict[str, dict]) -> None:
                 if not base_name:
                     base_name = humanize_identifier(set_key)
                 source_name_ru = str(normalized.get("displayNameRu") or source_name)
-                base_name_ru = strip_ending(source_name_ru, RUSSIAN_HEAD_SUFFIXES)
+                base_name_ru = strip_ending(source_name_ru, RUSSIAN_HEAD_SUFFIXES_SAFE)
+                base_name_ru = strip_ru_head_prefix(base_name_ru)
                 if not base_name_ru:
                     base_name_ru = source_name_ru
+                elif base_name_ru:
+                    base_name_ru = f"{base_name_ru[0].upper()}{base_name_ru[1:]}"
 
                 normalized["displayName"] = f"{base_name} armor set"
                 normalized["displayNameRu"] = f"{base_name_ru} комплект брони"
                 normalized["armorMode"] = "set"
+                normalized["displayNameRu"] = f"{base_name_ru} \u043a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0431\u0440\u043e\u043d\u0438"
                 normalized.pop("pickerHidden", None)
                 normalized["tags"] = merge_tags(normalized.get("tags", []), ["armor", "armor-set", group_slug])
             elif set_mode:
@@ -349,6 +411,26 @@ def build_bosses() -> dict[str, dict]:
     return bosses_by_id
 
 
+def apply_supplement(entries_by_id: dict[str, dict], supplement_entries: list[dict]) -> None:
+    for supplement in supplement_entries:
+        content_id = supplement.get("id")
+        if not content_id:
+            continue
+
+        current = entries_by_id.get(content_id, {})
+        merged = {
+            **current,
+            **{key: value for key, value in supplement.items() if key not in {"tags"}},
+        }
+        merged["tags"] = merge_tags(current.get("tags", []), supplement.get("tags", []))
+
+        icon_source_id = supplement.get("iconSourceId")
+        if not merged.get("icon") and icon_source_id and icon_source_id in entries_by_id:
+            merged["icon"] = entries_by_id[icon_source_id].get("icon")
+
+        entries_by_id[content_id] = merged
+
+
 def validate_entries(items_by_id: dict[str, dict], bosses_by_id: dict[str, dict]) -> None:
     missing_icons = [content_id for content_id, entry in bosses_by_id.items() if not entry.get("icon")]
     if missing_icons:
@@ -382,9 +464,24 @@ def validate_entries(items_by_id: dict[str, dict], bosses_by_id: dict[str, dict]
 def build_payloads() -> tuple[dict, dict, dict]:
     items_by_id = build_items()
     bosses_by_id = build_bosses()
+    combined_by_id = {**items_by_id, **bosses_by_id}
+    apply_supplement(combined_by_id, load_supplement_entries())
+    search_entries_by_id = dict(combined_by_id)
+
+    items_by_id = {
+        content_id: entry
+        for content_id, entry in combined_by_id.items()
+        if entry.get("category") or str(entry.get("kind") or "") in ITEM_LIKE_KINDS
+    }
+    bosses_by_id = {
+        content_id: entry
+        for content_id, entry in combined_by_id.items()
+        if str(entry.get("kind") or "") in BOSS_LIKE_KINDS and entry.get("bossPickerEligible")
+    }
+
     validate_entries(items_by_id, bosses_by_id)
 
-    combined_entries = [*items_by_id.values(), *bosses_by_id.values()]
+    combined_entries = list(search_entries_by_id.values())
     combined_entries.sort(
         key=lambda entry: (
             str(entry.get("kind") or ""),

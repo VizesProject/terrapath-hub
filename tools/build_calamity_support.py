@@ -308,6 +308,8 @@ def build_raw_npc_entry(export_dir: Path, raw: dict) -> dict:
         "displayNameRu": raw.get("displayNameRu") or raw.get("displayName") or raw.get("internalName") or raw["id"],
         "tags": merge_tags(raw.get("tags", []), [kind]),
     }
+    if kind == "npc":
+        entry["npcPickerEligible"] = False
 
     if icon:
         entry["icon"] = icon

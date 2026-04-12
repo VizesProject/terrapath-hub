@@ -1,0 +1,288 @@
+{
+  "mod": "Terraria",
+  "contentType": "supplement",
+  "entries": [
+    {
+      "id": "Terraria/BloodMoon",
+      "kind": "event",
+      "internalName": "BloodMoon",
+      "displayName": "Blood Moon",
+      "displayNameRu": "\u041a\u0440\u043e\u0432\u0430\u0432\u0430\u044f \u043b\u0443\u043d\u0430",
+      "iconSourceId": "Terraria/BloodMoonStarter",
+      "tags": [
+        "event",
+        "blood-moon"
+      ]
+    },
+    {
+      "id": "Terraria/SolarEclipse",
+      "kind": "event",
+      "internalName": "SolarEclipse",
+      "displayName": "Solar Eclipse",
+      "displayNameRu": "\u0421\u043e\u043b\u043d\u0435\u0447\u043d\u043e\u0435 \u0437\u0430\u0442\u043c\u0435\u043d\u0438\u0435",
+      "iconSourceId": "Terraria/SolarTablet",
+      "tags": [
+        "event",
+        "solar-eclipse"
+      ]
+    },
+    {
+      "id": "Terraria/PumpkinMoon",
+      "kind": "event",
+      "internalName": "PumpkinMoon",
+      "displayName": "Pumpkin Moon",
+      "displayNameRu": "\u0422\u044b\u043a\u0432\u0435\u043d\u043d\u0430\u044f \u043b\u0443\u043d\u0430",
+      "iconSourceId": "Terraria/PumpkinMoonMedallion",
+      "tags": [
+        "event",
+        "pumpkin-moon"
+      ]
+    },
+    {
+      "id": "Terraria/FrostMoon",
+      "kind": "event",
+      "internalName": "FrostMoon",
+      "displayName": "Frost Moon",
+      "displayNameRu": "\u041c\u043e\u0440\u043e\u0437\u043d\u0430\u044f \u043b\u0443\u043d\u0430",
+      "iconSourceId": "Terraria/NaughtyPresent",
+      "tags": [
+        "event",
+        "frost-moon"
+      ]
+    },
+    {
+      "id": "Terraria/GoblinArmy",
+      "kind": "event",
+      "internalName": "GoblinArmy",
+      "displayName": "Goblin Army",
+      "displayNameRu": "\u0410\u0440\u043c\u0438\u044f \u0433\u043e\u0431\u043b\u0438\u043d\u043e\u0432",
+      "iconSourceId": "Terraria/GoblinBattleStandard",
+      "tags": [
+        "event",
+        "goblin-army"
+      ]
+    },
+    {
+      "id": "Terraria/PirateInvasion",
+      "kind": "event",
+      "internalName": "PirateInvasion",
+      "displayName": "Pirate Invasion",
+      "displayNameRu": "\u041d\u0430\u0448\u0435\u0441\u0442\u0432\u0438\u0435 \u043f\u0438\u0440\u0430\u0442\u043e\u0432",
+      "iconSourceId": "Terraria/PirateMap",
+      "tags": [
+        "event",
+        "pirate-invasion"
+      ]
+    },
+    {
+      "id": "Terraria/OldOnesArmy",
+      "kind": "event",
+      "internalName": "OldOnesArmy",
+      "displayName": "Old One's Army",
+      "displayNameRu": "\u0410\u0440\u043c\u0438\u044f \u0414\u0440\u0435\u0432\u043d\u0438\u0445",
+      "iconSourceId": "Terraria/DD2ElderCrystal",
+      "tags": [
+        "event",
+        "old-ones-army"
+      ]
+    },
+    {
+      "id": "Terraria/MartianMadness",
+      "kind": "event",
+      "internalName": "MartianMadness",
+      "displayName": "Martian Madness",
+      "displayNameRu": "\u0411\u0435\u0437\u0443\u043c\u0438\u0435 \u043c\u0430\u0440\u0441\u0438\u0430\u043d",
+      "iconSourceId": "Terraria/MartianConduitPlating",
+      "tags": [
+        "event",
+        "martian-madness"
+      ]
+    },
+    {
+      "id": "Terraria/SlimeRain",
+      "kind": "event",
+      "internalName": "SlimeRain",
+      "displayName": "Slime Rain",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u043d\u0435\u0432\u044b\u0439 \u0434\u043e\u0436\u0434\u044c",
+      "iconSourceId": "Terraria/SlimeCrown",
+      "tags": [
+        "event",
+        "slime-rain"
+      ]
+    },
+    {
+      "id": "Terraria/ForestBiome",
+      "kind": "biome",
+      "internalName": "ForestBiome",
+      "displayName": "Forest",
+      "displayNameRu": "\u041b\u0435\u0441",
+      "iconSourceId": "Terraria/Acorn",
+      "tags": [
+        "biome",
+        "forest"
+      ]
+    },
+    {
+      "id": "Terraria/DesertBiome",
+      "kind": "biome",
+      "internalName": "DesertBiome",
+      "displayName": "Desert",
+      "displayNameRu": "\u041f\u0443\u0441\u0442\u044b\u043d\u044f",
+      "iconSourceId": "Terraria/SandBlock",
+      "tags": [
+        "biome",
+        "desert"
+      ]
+    },
+    {
+      "id": "Terraria/SnowBiome",
+      "kind": "biome",
+      "internalName": "SnowBiome",
+      "displayName": "Snow",
+      "displayNameRu": "\u0421\u043d\u0435\u0436\u043d\u044b\u0439 \u0431\u0438\u043e\u043c",
+      "iconSourceId": "Terraria/SnowBlock",
+      "tags": [
+        "biome",
+        "snow"
+      ]
+    },
+    {
+      "id": "Terraria/JungleBiome",
+      "kind": "biome",
+      "internalName": "JungleBiome",
+      "displayName": "Jungle",
+      "displayNameRu": "\u0414\u0436\u0443\u043d\u0433\u043b\u0438",
+      "iconSourceId": "Terraria/JungleGrassSeeds",
+      "tags": [
+        "biome",
+        "jungle"
+      ]
+    },
+    {
+      "id": "Terraria/CorruptionBiome",
+      "kind": "biome",
+      "internalName": "CorruptionBiome",
+      "displayName": "Corruption",
+      "displayNameRu": "\u0418\u0441\u043a\u0430\u0436\u0435\u043d\u0438\u0435",
+      "iconSourceId": "Terraria/EbonstoneBlock",
+      "tags": [
+        "biome",
+        "corruption"
+      ]
+    },
+    {
+      "id": "Terraria/CrimsonBiome",
+      "kind": "biome",
+      "internalName": "CrimsonBiome",
+      "displayName": "Crimson",
+      "displayNameRu": "\u041a\u0440\u0438\u043c\u0437\u043e\u043d",
+      "iconSourceId": "Terraria/CrimstoneBlock",
+      "tags": [
+        "biome",
+        "crimson"
+      ]
+    },
+    {
+      "id": "Terraria/HallowBiome",
+      "kind": "biome",
+      "internalName": "HallowBiome",
+      "displayName": "Hallow",
+      "displayNameRu": "\u0421\u0432\u044f\u0442\u044b\u043d\u044f",
+      "iconSourceId": "Terraria/PearlstoneBlock",
+      "tags": [
+        "biome",
+        "hallow"
+      ]
+    },
+    {
+      "id": "Terraria/GlowingMushroomBiome",
+      "kind": "biome",
+      "internalName": "GlowingMushroomBiome",
+      "displayName": "Glowing Mushroom",
+      "displayNameRu": "\u0421\u0432\u0435\u0442\u044f\u0449\u0438\u0435\u0441\u044f \u0433\u0440\u0438\u0431\u044b",
+      "iconSourceId": "Terraria/MushroomGrassSeeds",
+      "tags": [
+        "biome",
+        "glowing-mushroom"
+      ]
+    },
+    {
+      "id": "Terraria/UnderworldBiome",
+      "kind": "biome",
+      "internalName": "UnderworldBiome",
+      "displayName": "Underworld",
+      "displayNameRu": "\u041f\u0440\u0435\u0438\u0441\u043f\u043e\u0434\u043d\u044f\u044f",
+      "iconSourceId": "Terraria/Hellstone",
+      "tags": [
+        "biome",
+        "underworld"
+      ]
+    },
+    {
+      "id": "Terraria/SkyBiome",
+      "kind": "biome",
+      "internalName": "SkyBiome",
+      "displayName": "Sky",
+      "displayNameRu": "\u041d\u0435\u0431\u0435\u0441\u0430",
+      "iconSourceId": "Terraria/Cloud",
+      "tags": [
+        "biome",
+        "sky"
+      ]
+    },
+    {
+      "id": "Terraria/DungeonBiome",
+      "kind": "biome",
+      "internalName": "DungeonBiome",
+      "displayName": "Dungeon",
+      "displayNameRu": "\u041f\u043e\u0434\u0437\u0435\u043c\u0435\u043b\u044c\u0435",
+      "iconSourceId": "Terraria/AncientBlueDungeonBrick",
+      "tags": [
+        "biome",
+        "dungeon"
+      ]
+    },
+    {
+      "id": "Terraria/GuideNPC",
+      "kind": "npc",
+      "internalName": "GuideNPC",
+      "displayName": "Guide",
+      "displayNameRu": "\u041f\u0440\u043e\u0432\u043e\u0434\u043d\u0438\u043a",
+      "npcPickerEligible": true,
+      "iconSourceId": "Terraria/GuideVoodooDoll",
+      "tags": [
+        "npc",
+        "town-npc",
+        "guide"
+      ]
+    },
+    {
+      "id": "Terraria/MerchantNPC",
+      "kind": "npc",
+      "internalName": "MerchantNPC",
+      "displayName": "Merchant",
+      "displayNameRu": "\u0422\u043e\u0440\u0433\u043e\u0432\u0435\u0446",
+      "npcPickerEligible": true,
+      "iconSourceId": "Terraria/PiggyBank",
+      "tags": [
+        "npc",
+        "town-npc",
+        "merchant"
+      ]
+    },
+    {
+      "id": "Terraria/NurseNPC",
+      "kind": "npc",
+      "internalName": "NurseNPC",
+      "displayName": "Nurse",
+      "displayNameRu": "\u041c\u0435\u0434\u0441\u0435\u0441\u0442\u0440\u0430",
+      "npcPickerEligible": true,
+      "iconSourceId": "Terraria/NurseHat",
+      "tags": [
+        "npc",
+        "town-npc",
+        "nurse"
+      ]
+    }
+  ]
+}
