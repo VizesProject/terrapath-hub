@@ -12,10 +12,10 @@
       "tags": [
         "boss"
       ],
-      "bossPickerEligible": true,
+      "bossPickerEligible": false,
       "canonicalBossId": "FargowiltasCrossmod/AresHand",
       "bossColumn": "hardmode",
-      "pickerHidden": false
+      "pickerHidden": true
     },
     {
       "id": "FargowiltasCrossmod/PermafrostBoss",

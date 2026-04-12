@@ -4,7 +4,9 @@
   "entries": [],
   "bossNormalization": {
     "aliasMap": {},
-    "hiddenBosses": [],
+    "hiddenBosses": [
+      "FargowiltasCrossmod/AresHand"
+    ],
     "eligibleMinibosses": [],
     "columnMap": {},
     "displayOverrides": {}
@@ -22,7 +24,6 @@
       "buff": 12
     },
     "criticalRuIds": [
-      "FargowiltasCrossmod/AresHand",
       "FargowiltasCrossmod/PermafrostBoss",
       "FargowiltasCrossmod/AerospecEnchant",
       "FargowiltasCrossmod/BrandoftheBrimstoneWitch",

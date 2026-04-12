@@ -199,20 +199,6 @@
       "bossColumn": "hardmode"
     },
     {
-      "id": "FargowiltasSouls/TimberChampionHead",
-      "kind": "boss",
-      "internalName": "TimberChampionHead",
-      "displayName": "Timber Champion Head",
-      "displayNameRu": "\u0427\u0435\u043c\u043f\u0438\u043e\u043d \u043b\u0435\u0441\u0430",
-      "icon": "assets/icons/fargowiltassouls/bosses/timberchampionhead.png",
-      "tags": [
-        "boss"
-      ],
-      "bossPickerEligible": true,
-      "canonicalBossId": "FargowiltasSouls/TimberChampionHead",
-      "bossColumn": "hardmode"
-    },
-    {
       "id": "FargowiltasSouls/TrojanSquirrel",
       "kind": "boss",
       "internalName": "TrojanSquirrel",

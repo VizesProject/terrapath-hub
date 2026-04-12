@@ -1,10 +1,71 @@
 {
   "mod": "FargowiltasSouls",
   "contentType": "supplement",
-  "entries": [],
+  "entries": [
+    {
+      "id": "FargowiltasSouls/AbominableWand",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/abominablewand.png"
+    },
+    {
+      "id": "FargowiltasSouls/DimensionSoul",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/dimensionsoul.png"
+    },
+    {
+      "id": "FargowiltasSouls/EternitySoul",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/eternitysoul.png"
+    },
+    {
+      "id": "FargowiltasSouls/HeartoftheMasochist",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/heartofthemasochist.png"
+    },
+    {
+      "id": "FargowiltasSouls/MutantEye",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/mutanteye.png"
+    },
+    {
+      "id": "FargowiltasSouls/MysticSkull",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/mysticskull.png"
+    },
+    {
+      "id": "FargowiltasSouls/SparklingAdoration",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/sparklingadoration.png"
+    },
+    {
+      "id": "FargowiltasSouls/TerrariaSoul",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/terrariasoul.png"
+    },
+    {
+      "id": "FargowiltasSouls/UniverseCore",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/universecore.png"
+    },
+    {
+      "id": "FargowiltasSouls/UniverseSoul",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/universesoul.png"
+    },
+    {
+      "id": "FargowiltasSouls/MutantMask",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/mutantmask.png",
+      "displayName": "Mutant Armor Set",
+      "displayNameRu": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0432\u0435\u0447\u043d\u043e\u0433\u043e \u043f\u043b\u0430\u043c\u0435\u043d\u0438",
+      "armorMode": "set",
+      "armorGroupKey": "mutant"
+    },
+    {
+      "id": "FargowiltasSouls/MutantBody",
+      "pickerHidden": true,
+      "armorGroupKey": "mutant"
+    },
+    {
+      "id": "FargowiltasSouls/MutantPants",
+      "pickerHidden": true,
+      "armorGroupKey": "mutant"
+    }
+  ],
   "bossNormalization": {
     "aliasMap": {},
-    "hiddenBosses": [],
+    "hiddenBosses": [
+      "FargowiltasSouls/TimberChampionHead"
+    ],
     "eligibleMinibosses": [],
     "columnMap": {},
     "displayOverrides": {}
