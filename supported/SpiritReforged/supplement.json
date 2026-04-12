@@ -10,7 +10,11 @@
     "displayOverrides": {}
   },
   "taxonomyOverrides": {
-    "forcedCategories": {},
+    "forcedCategories": {
+      "SpiritReforged/Bowlder": "other",
+      "SpiritReforged/BreakawayChair": "other",
+      "SpiritReforged/Shockhammer": "other"
+    },
     "blacklist": []
   }
 }

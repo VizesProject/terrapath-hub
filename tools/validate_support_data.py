@@ -14,17 +14,17 @@ BOSS_LIKE_KINDS = {"boss", "miniboss"}
 OFFICIAL_STATUSES = {"official"}
 
 WEAPON_CONTAMINATION_HINTS = re.compile(
-    r"pickaxe|drill|hammer|hamaxe|chainsaw|fishingpole|axe|aquarium|bowl|bookcase|statue|wall",
+    r"pickaxe|drill|hamaxe|chainsaw|fishingpole|aquarium|bowl|bookcase|statue|wall",
     re.IGNORECASE,
 )
 ACCESSORY_CONTAMINATION_HINTS = re.compile(
-    r"bookcase|banner|statue|brick$|wall$|bar$|pickaxe|drill|hammer|hamaxe|axe|helmet|"
-    r"breastplate|chestplate|greaves|leggings|robe|hood|mask",
+    r"bookcase|banner$|statue$|brick$|wall$|bar$|pickaxe|drill|hamaxe|helmet$|"
+    r"breastplate$|chestplate$|greaves$|leggings$|robe$|hood$|mask$",
     re.IGNORECASE,
 )
 BUFF_CONTAMINATION_HINTS = re.compile(
-    r"bookcase|banner|brick$|wall$|bar$|pickaxe|drill|hammer|hamaxe|axe|helmet|"
-    r"breastplate|chestplate|greaves|leggings|robe|hood|mask",
+    r"bookcase|banner$|statue$|brick$|wall$|bar$|pickaxe|drill|hamaxe|helmet$|"
+    r"breastplate$|chestplate$|greaves$|leggings$|robe$|hood$|mask$",
     re.IGNORECASE,
 )
 

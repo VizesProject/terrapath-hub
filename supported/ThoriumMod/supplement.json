@@ -10,7 +10,30 @@
     "displayOverrides": {}
   },
   "taxonomyOverrides": {
-    "forcedCategories": {},
+    "forcedCategories": {
+      "ThoriumMod/AxeBlade": "other",
+      "ThoriumMod/BronzeThrowingAxe": "other",
+      "ThoriumMod/ClimbersIceAxe": "other",
+      "ThoriumMod/ClockWorkBomb": "other",
+      "ThoriumMod/CursedHammer": "other",
+      "ThoriumMod/DoomFireAxe": "other",
+      "ThoriumMod/DrillDart": "other",
+      "ThoriumMod/EbonHammer": "other",
+      "ThoriumMod/FireAxe": "other",
+      "ThoriumMod/GrandPiano": "other",
+      "ThoriumMod/GraniteThrowingAxe": "other",
+      "ThoriumMod/HolyHammer": "other",
+      "ThoriumMod/LightBringerWarhammer": "other",
+      "ThoriumMod/MagicThorHammer": "other",
+      "ThoriumMod/MeleeThorHammer": "other",
+      "ThoriumMod/PortableWintergatan": "other",
+      "ThoriumMod/PotionShelfWall": "other",
+      "ThoriumMod/RangedThorHammer": "other",
+      "ThoriumMod/SmitingHammer": "other",
+      "ThoriumMod/SteelThrowingAxe": "other",
+      "ThoriumMod/Turntable": "other",
+      "ThoriumMod/ValadiumBattleAxe": "other"
+    },
     "blacklist": []
   }
 }

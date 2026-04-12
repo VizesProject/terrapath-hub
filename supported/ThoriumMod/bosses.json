@@ -1,0 +1,286 @@
+{
+  "mod": "ThoriumMod",
+  "contentType": "bosses",
+  "bosses": [
+    {
+      "id": "ThoriumMod/Aquaius",
+      "kind": "boss",
+      "internalName": "Aquaius",
+      "displayName": "Aquaius",
+      "displayNameRu": "Aquaius, the Endless Tide",
+      "icon": "assets/icons/thoriummod/bosses/aquaius.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/Aquaius",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/BoreanStrider",
+      "kind": "boss",
+      "internalName": "BoreanStrider",
+      "displayName": "Borean Strider",
+      "displayNameRu": "Borean Strider",
+      "icon": "assets/icons/thoriummod/bosses/boreanstrider.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/BoreanStrider",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/BoreanStriderPopped",
+      "kind": "boss",
+      "internalName": "BoreanStriderPopped",
+      "displayName": "Borean Strider Popped",
+      "displayNameRu": "Borean Strider",
+      "icon": "assets/icons/thoriummod/bosses/boreanstriderpopped.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/BoreanStriderPopped",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/BossDummy",
+      "kind": "boss",
+      "internalName": "BossDummy",
+      "displayName": "Boss Dummy",
+      "displayNameRu": "Boss Dummy",
+      "icon": "assets/icons/thoriummod/bosses/bossdummy.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/BossDummy",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/BuriedChampion",
+      "kind": "boss",
+      "internalName": "BuriedChampion",
+      "displayName": "Buried Champion",
+      "displayNameRu": "Buried Champion",
+      "icon": "assets/icons/thoriummod/bosses/buriedchampion.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/BuriedChampion",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/DreamEater",
+      "kind": "boss",
+      "internalName": "DreamEater",
+      "displayName": "Dream Eater",
+      "displayNameRu": "Dream Eater",
+      "icon": "assets/icons/thoriummod/bosses/dreameater.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/DreamEater",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/FallenBeholder",
+      "kind": "boss",
+      "internalName": "FallenBeholder",
+      "displayName": "Fallen Beholder",
+      "displayNameRu": "Fallen Beholder",
+      "icon": "assets/icons/thoriummod/bosses/fallenbeholder.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/FallenBeholder",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/FallenBeholder2",
+      "kind": "boss",
+      "internalName": "FallenBeholder2",
+      "displayName": "Fallen Beholder2",
+      "displayNameRu": "Fallen Beholder",
+      "icon": "assets/icons/thoriummod/bosses/fallenbeholder2.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/FallenBeholder2",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/ForgottenOne",
+      "kind": "boss",
+      "internalName": "ForgottenOne",
+      "displayName": "Forgotten One",
+      "displayNameRu": "Forgotten One",
+      "icon": "assets/icons/thoriummod/bosses/forgottenone.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/ForgottenOne",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/ForgottenOneCracked",
+      "kind": "boss",
+      "internalName": "ForgottenOneCracked",
+      "displayName": "Forgotten One Cracked",
+      "displayNameRu": "Forgotten One",
+      "icon": "assets/icons/thoriummod/bosses/forgottenonecracked.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/ForgottenOneCracked",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/ForgottenOneReleased",
+      "kind": "boss",
+      "internalName": "ForgottenOneReleased",
+      "displayName": "Forgotten One Released",
+      "displayNameRu": "Forgotten One",
+      "icon": "assets/icons/thoriummod/bosses/forgottenonereleased.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/ForgottenOneReleased",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/GraniteEnergyStorm",
+      "kind": "boss",
+      "internalName": "GraniteEnergyStorm",
+      "displayName": "Granite Energy Storm",
+      "displayNameRu": "Granite Energy Storm",
+      "icon": "assets/icons/thoriummod/bosses/graniteenergystorm.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/GraniteEnergyStorm",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/Lich",
+      "kind": "boss",
+      "internalName": "Lich",
+      "displayName": "Lich",
+      "displayNameRu": "Lich",
+      "icon": "assets/icons/thoriummod/bosses/lich.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/Lich",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/LichHeadless",
+      "kind": "boss",
+      "internalName": "LichHeadless",
+      "displayName": "Lich Headless",
+      "displayNameRu": "Lich",
+      "icon": "assets/icons/thoriummod/bosses/lichheadless.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/LichHeadless",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/Omnicide",
+      "kind": "boss",
+      "internalName": "Omnicide",
+      "displayName": "Omnicide",
+      "displayNameRu": "Omnicide, the Life Defiler",
+      "icon": "assets/icons/thoriummod/bosses/omnicide.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/Omnicide",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/QueenJellyfish",
+      "kind": "boss",
+      "internalName": "QueenJellyfish",
+      "displayName": "Queen Jellyfish",
+      "displayNameRu": "Queen Jellyfish",
+      "icon": "assets/icons/thoriummod/bosses/queenjellyfish.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/QueenJellyfish",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/SlagFury",
+      "kind": "boss",
+      "internalName": "SlagFury",
+      "displayName": "Slag Fury",
+      "displayNameRu": "Slag Fury, the First Flame",
+      "icon": "assets/icons/thoriummod/bosses/slagfury.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/SlagFury",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/StarScouter",
+      "kind": "boss",
+      "internalName": "StarScouter",
+      "displayName": "Star Scouter",
+      "displayNameRu": "Star Scouter",
+      "icon": "assets/icons/thoriummod/bosses/starscouter.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/StarScouter",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/TheGrandThunderBird",
+      "kind": "boss",
+      "internalName": "TheGrandThunderBird",
+      "displayName": "The Grand Thunder Bird",
+      "displayNameRu": "The Grand Thunder Bird",
+      "icon": "assets/icons/thoriummod/bosses/thegrandthunderbird.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/TheGrandThunderBird",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "ThoriumMod/Viscount",
+      "kind": "boss",
+      "internalName": "Viscount",
+      "displayName": "Viscount",
+      "displayNameRu": "Viscount",
+      "icon": "assets/icons/thoriummod/bosses/viscount.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "ThoriumMod/Viscount",
+      "bossColumn": "hardmode"
+    }
+  ]
+}

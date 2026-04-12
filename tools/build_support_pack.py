@@ -17,15 +17,15 @@ BOSS_LIKE_KINDS = {"boss", "miniboss"}
 ITEM_LIKE_KINDS = {"item", "material", "ore", "other"}
 VALID_BOSS_COLUMNS = {"miniboss", "prehardmode", "hardmode", "postmoonlord"}
 WEAPON_CONTAMINATION_HINTS = re.compile(
-    r"pickaxe|drill|hammer|hamaxe|axe|aquarium|bowl|bookcase|statue|wall|platform|chest|dresser|table|chair|piano|clock|lamp",
+    r"pickaxe|drill|hamaxe|fishingpole|aquarium|bowl|bookcase|statue|wall|platform|chest|dresser|table|chair|piano|clock|lamp",
     re.IGNORECASE,
 )
 ACCESSORY_CONTAMINATION_HINTS = re.compile(
-    r"helmet|breastplate|chestplate|greaves|leggings|robe|hood|mask|ore|bar|brick|banner|bookcase|statue|wall|pickaxe|drill|hammer|hamaxe|axe",
+    r"helmet$|breastplate$|chestplate$|greaves$|leggings$|robe$|hood$|mask$|brick$|banner$|bookcase|statue$|wall$|pickaxe|drill|hamaxe|bar$",
     re.IGNORECASE,
 )
 BUFF_CONTAMINATION_HINTS = re.compile(
-    r"helmet|breastplate|chestplate|greaves|leggings|robe|hood|mask|ore|bar|brick|banner|bookcase|statue|wall|pickaxe|drill|hammer|hamaxe|axe",
+    r"helmet$|breastplate$|chestplate$|greaves$|leggings$|robe$|hood$|mask$|brick$|banner$|bookcase|statue$|wall$|pickaxe|drill|hamaxe|bar$",
     re.IGNORECASE,
 )
 

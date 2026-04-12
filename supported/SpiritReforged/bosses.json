@@ -1,0 +1,20 @@
+{
+  "mod": "SpiritReforged",
+  "contentType": "bosses",
+  "bosses": [
+    {
+      "id": "SpiritReforged/Scarabeus",
+      "kind": "boss",
+      "internalName": "Scarabeus",
+      "displayName": "Scarabeus",
+      "displayNameRu": "\u0421\u043a\u0430\u0440\u0430\u0431\u0435\u0443\u0441",
+      "icon": "assets/icons/spiritreforged/bosses/scarabeus.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "SpiritReforged/Scarabeus",
+      "bossColumn": "hardmode"
+    }
+  ]
+}
