@@ -162,7 +162,7 @@
       "kind": "item",
       "internalName": "AcesApronOfAffection",
       "displayName": "Aces Apron Of Affection",
-      "displayNameRu": "Ace's Apron of Affection",
+      "displayNameRu": "\u0424\u0430\u0440\u0442\u0443\u043a \u043f\u0440\u0438\u0432\u044f\u0437\u0430\u043d\u043d\u043e\u0441\u0442\u0438 \u042d\u0439\u0441\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -178,7 +178,7 @@
       "kind": "item",
       "internalName": "AcesHigh",
       "displayName": "Aces High",
-      "displayNameRu": "Ace's High",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u0448\u0438\u043d\u0441\u0442\u0432\u043e \u0442\u0443\u0437\u043e\u0432",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -282,7 +282,7 @@
       "kind": "item",
       "internalName": "AerialTracker",
       "displayName": "Aerial Tracker",
-      "displayNameRu": "P-LSR: Aerial Tracker",
+      "displayNameRu": "\u041f-\u041b\u0417\u0420: \u0412\u043e\u0437\u0434\u0443\u0448\u043d\u044b\u0439 \u043d\u0430\u0432\u043e\u0434\u0447\u0438\u043a",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -323,7 +323,7 @@
       "kind": "item",
       "internalName": "AerospecHeadMagic",
       "displayName": "Aerospec Head Magic",
-      "displayNameRu": "Aerospec Hat",
+      "displayNameRu": "\u0410\u044d\u0440\u043e\u0444\u0430\u0437\u043e\u0432\u0430\u044f \u0448\u043b\u044f\u043f\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -339,7 +339,7 @@
       "kind": "item",
       "internalName": "AerospecHeadMelee",
       "displayName": "Aerospec Head Melee",
-      "displayNameRu": "Aerospec Helm",
+      "displayNameRu": "\u0410\u044d\u0440\u043e\u0444\u0430\u0437\u043e\u0432\u044b\u0439 \u0448\u043b\u0435\u043c",
       "category": "armor",
       "tags": [
         "armor",
@@ -355,7 +355,7 @@
       "kind": "item",
       "internalName": "AerospecHeadRanged",
       "displayName": "Aerospec Head Ranged",
-      "displayNameRu": "Aerospec Hood",
+      "displayNameRu": "\u0410\u044d\u0440\u043e\u0444\u0430\u0437\u043e\u0432\u044b\u0439 \u043a\u0430\u043f\u044e\u0448\u043e\u043d",
       "category": "armor",
       "tags": [
         "armor",
@@ -371,7 +371,7 @@
       "kind": "item",
       "internalName": "AerospecHeadRogue",
       "displayName": "Aerospec Head Rogue",
-      "displayNameRu": "Aerospec Headgear",
+      "displayNameRu": "\u0410\u044d\u0440\u043e\u0444\u0430\u0437\u043e\u0432\u044b\u0439 \u0433\u043e\u043b\u043e\u0432\u043d\u043e\u0439 \u0443\u0431\u043e\u0440",
       "category": "armor",
       "tags": [
         "armor",
@@ -387,7 +387,7 @@
       "kind": "item",
       "internalName": "AerospecHeadSummon",
       "displayName": "Aerospec Head Summon",
-      "displayNameRu": "Aerospec Helmet",
+      "displayNameRu": "\u0410\u044d\u0440\u043e\u0444\u0430\u0437\u043e\u0432\u0430\u044f \u043a\u0430\u0441\u043a\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -444,7 +444,7 @@
       "kind": "item",
       "internalName": "AethersWhisper",
       "displayName": "Aethers Whisper",
-      "displayNameRu": "Aether's Whisper",
+      "displayNameRu": "\u0428\u0451\u043f\u043e\u0442 \u044d\u0444\u0438\u0440\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -569,7 +569,7 @@
       "kind": "item",
       "internalName": "AmidiasPendant",
       "displayName": "Amidias Pendant",
-      "displayNameRu": "Amidias' Pendant",
+      "displayNameRu": "\u041a\u0443\u043b\u043e\u043d \u0410\u043c\u0438\u0434\u0438\u0430\u0441\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -581,7 +581,7 @@
       "kind": "item",
       "internalName": "AmidiasTrident",
       "displayName": "Amidias Trident",
-      "displayNameRu": "Amidias' Trident",
+      "displayNameRu": "\u0422\u0440\u0435\u0437\u0443\u0431\u0435\u0446 \u0410\u043c\u0438\u0434\u0438\u0430\u0441\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -594,7 +594,7 @@
       "kind": "item",
       "internalName": "AmphibiansGuitar",
       "displayName": "Amphibians Guitar",
-      "displayNameRu": "Amphibian's Guitar",
+      "displayNameRu": "\u0413\u0438\u0442\u0430\u0440\u0430 \u0430\u043c\u0444\u0438\u0431\u0438\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -623,7 +623,7 @@
       "kind": "item",
       "internalName": "AnahitasArpeggio",
       "displayName": "Anahitas Arpeggio",
-      "displayNameRu": "Anahita's Arpeggio",
+      "displayNameRu": "\u0410\u0440\u043f\u0435\u0434\u0436\u0438\u043e \u0410\u043d\u0430\u0445\u0438\u0442\u044b",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -810,7 +810,7 @@
       "kind": "item",
       "internalName": "AntiMaterielRifle",
       "displayName": "Anti Materiel Rifle",
-      "displayNameRu": "Anti-materiel Rifle",
+      "displayNameRu": "\u0410\u043d\u0442\u0438\u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044c\u043d\u0430\u044f \u0432\u0438\u043d\u0442\u043e\u0432\u043a\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -930,7 +930,7 @@
       "kind": "item",
       "internalName": "AquasScepter",
       "displayName": "Aquas Scepter",
-      "displayNameRu": "Aqua's Scepter",
+      "displayNameRu": "\u0421\u043a\u0438\u043f\u0435\u0442\u0440 \u0410\u043a\u0432\u044b",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -996,7 +996,7 @@
       "kind": "item",
       "internalName": "AqueousHunterDrone",
       "displayName": "Aqueous Hunter Drone",
-      "displayNameRu": "P-PMA: Aqueous Hunter Drone",
+      "displayNameRu": "\u041f-\u041f\u041b\u0417: \u0412\u043e\u0434\u043d\u044b\u0439 \u043e\u0445\u043e\u0442\u043d\u0438\u0447\u0438\u0439 \u0434\u0440\u043e\u043d",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -1098,7 +1098,7 @@
       "kind": "item",
       "internalName": "AresExoskeleton",
       "displayName": "Ares Exoskeleton",
-      "displayNameRu": "Ares' Exoskeleton",
+      "displayNameRu": "\u042d\u043a\u0437\u043e\u0441\u043a\u0435\u043b\u0435\u0442 \u0410\u0440\u0435\u0441\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -1127,7 +1127,7 @@
       "kind": "item",
       "internalName": "Arietes41",
       "displayName": "Arietes41",
-      "displayNameRu": "Arietes 41",
+      "displayNameRu": "\u041e\u0432\u0435\u0447\u0438\u0439 41",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -1140,7 +1140,7 @@
       "kind": "item",
       "internalName": "ArkoftheCosmos",
       "displayName": "Arkofthe Cosmos",
-      "displayNameRu": "Ark of the Cosmos",
+      "displayNameRu": "\u041a\u043e\u0432\u0447\u0435\u0433 \u043a\u043e\u0441\u043c\u043e\u0441\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -1153,7 +1153,7 @@
       "kind": "item",
       "internalName": "ArkoftheElements",
       "displayName": "Arkofthe Elements",
-      "displayNameRu": "Ark of the Elements",
+      "displayNameRu": "\u041a\u043e\u0432\u0447\u0435\u0433 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u0432",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -1232,7 +1232,7 @@
       "kind": "item",
       "internalName": "AsgardsValor",
       "displayName": "Asgards Valor",
-      "displayNameRu": "Asgard's Valor",
+      "displayNameRu": "\u0414\u043e\u0431\u043b\u0435\u0441\u0442\u044c \u0410\u0441\u0433\u0430\u0440\u0434\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -1464,7 +1464,7 @@
       "kind": "item",
       "internalName": "AstrophageItem",
       "displayName": "Astrophage Item",
-      "displayNameRu": "Astrophage",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u043e\u0444\u0430\u0433",
       "category": "buff",
       "tags": [
         "buff"
@@ -1547,7 +1547,7 @@
       "kind": "item",
       "internalName": "Auger",
       "displayName": "Auger",
-      "displayNameRu": "P-GSS: Auger",
+      "displayNameRu": "\u041f-\u0413\u0421\u0421: \u0428\u043d\u0435\u043a",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -1560,7 +1560,7 @@
       "kind": "item",
       "internalName": "AuguroftheVoid",
       "displayName": "Augurofthe Void",
-      "displayNameRu": "Augur of the Void",
+      "displayNameRu": "\u041f\u0440\u0435\u0434\u0432\u0435\u0441\u0442\u043d\u0438\u043a \u043f\u0443\u0441\u0442\u043e\u0442\u044b",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -1774,7 +1774,7 @@
       "kind": "item",
       "internalName": "BabyCannonballJellyfishItem",
       "displayName": "Baby Cannonball Jellyfish Item",
-      "displayNameRu": "Baby Cannonball Jellyfish",
+      "displayNameRu": "\u041c\u0430\u043b\u0435\u043d\u044c\u043a\u0430\u044f \u043c\u0435\u0434\u0443\u0437\u0430-\u043f\u0443\u0448\u0435\u0447\u043d\u043e\u0435 \u044f\u0434\u0440\u043e",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -1787,7 +1787,7 @@
       "kind": "item",
       "internalName": "BadgeofBravery",
       "displayName": "Badgeof Bravery",
-      "displayNameRu": "Badge of Bravery",
+      "displayNameRu": "\u0417\u043d\u0430\u043a \u0445\u0440\u0430\u0431\u0440\u043e\u0441\u0442\u0438",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -1825,7 +1825,7 @@
       "kind": "item",
       "internalName": "BallOFugu",
       "displayName": "Ball OFugu",
-      "displayNameRu": "Ball O' Fugu",
+      "displayNameRu": "\u0428\u0430\u0440 \u0444\u0443\u0433\u0443",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -1914,7 +1914,7 @@
       "kind": "item",
       "internalName": "BearsEye",
       "displayName": "Bears Eye",
-      "displayNameRu": "Bear's Eye",
+      "displayNameRu": "\u0413\u043b\u0430\u0437 \u041c\u0438\u0448\u0438",
       "category": "buff",
       "tags": [
         "buff"
@@ -2229,7 +2229,7 @@
       "kind": "item",
       "internalName": "BloodflareHeadMagic",
       "displayName": "Bloodflare Head Magic",
-      "displayNameRu": "Bloodflare Hydra Hood",
+      "displayNameRu": "\u041a\u0430\u043f\u044e\u0448\u043e\u043d \u0433\u0438\u0434\u0440\u044b \u043a\u0440\u043e\u0432\u0430\u0432\u043e\u0439 \u0432\u0441\u043f\u044b\u0448\u043a\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -2245,7 +2245,7 @@
       "kind": "item",
       "internalName": "BloodflareHeadMelee",
       "displayName": "Bloodflare Head Melee",
-      "displayNameRu": "Bloodflare Ram Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u0431\u0430\u0440\u0430\u043d\u0430 \u043a\u0440\u043e\u0432\u0430\u0432\u043e\u0439 \u0432\u0441\u043f\u044b\u0448\u043a\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -2261,7 +2261,7 @@
       "kind": "item",
       "internalName": "BloodflareHeadRanged",
       "displayName": "Bloodflare Head Ranged",
-      "displayNameRu": "Bloodflare Horned Helm",
+      "displayNameRu": "\u0420\u043e\u0433\u0430\u0442\u044b\u0439 \u0448\u043b\u0435\u043c \u043a\u0440\u043e\u0432\u0430\u0432\u043e\u0439 \u0432\u0441\u043f\u044b\u0448\u043a\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -2277,7 +2277,7 @@
       "kind": "item",
       "internalName": "BloodflareHeadRogue",
       "displayName": "Bloodflare Head Rogue",
-      "displayNameRu": "Bloodflare Imp Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u0431\u0435\u0441\u0430 \u043a\u0440\u043e\u0432\u0430\u0432\u043e\u0439 \u0432\u0441\u043f\u044b\u0448\u043a\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -2293,7 +2293,7 @@
       "kind": "item",
       "internalName": "BloodflareHeadSummon",
       "displayName": "Bloodflare Head Summon",
-      "displayNameRu": "Bloodflare Wyvern Helm",
+      "displayNameRu": "\u0428\u043b\u0435\u043c \u0432\u0438\u0432\u0435\u0440\u043d\u044b \u043a\u0440\u043e\u0432\u0430\u0432\u043e\u0439 \u0432\u0441\u043f\u044b\u0448\u043a\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -2717,7 +2717,7 @@
       "kind": "item",
       "internalName": "BulletFilledShotgun",
       "displayName": "Bullet Filled Shotgun",
-      "displayNameRu": "Bullet-Filled Shotgun",
+      "displayNameRu": "\u041f\u043e\u043b\u043d\u043e\u043f\u0430\u0442\u0440\u043e\u043d\u043d\u044b\u0439 \u0434\u0440\u043e\u0431\u043e\u0432\u0438\u043a",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -2730,7 +2730,7 @@
       "kind": "item",
       "internalName": "BumblefuckMask",
       "displayName": "Bumblefuck Mask",
-      "displayNameRu": "Dragonfolly Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u041f\u0441\u0435\u0432\u0434\u043e\u0434\u0440\u0430\u043a\u043e\u043d\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -2798,7 +2798,7 @@
       "kind": "item",
       "internalName": "BurrowerController",
       "displayName": "Burrower Controller",
-      "displayNameRu": "Burrower Beacon",
+      "displayNameRu": "\u041c\u0430\u044f\u0447\u043e\u043a \u0437\u0435\u043c\u043b\u0435\u0440\u043e\u044f",
       "category": "buff",
       "tags": [
         "buff"
@@ -2836,7 +2836,7 @@
       "kind": "item",
       "internalName": "CalamarisLament",
       "displayName": "Calamaris Lament",
-      "displayNameRu": "Calamari's Lament",
+      "displayNameRu": "\u041f\u043b\u0430\u0447 \u043a\u0430\u043b\u044c\u043c\u0430\u0440\u0430",
       "category": "weapon",
       "tags": [
         "buff",
@@ -2997,7 +2997,7 @@
       "kind": "item",
       "internalName": "ChaliceOfTheBloodGod",
       "displayName": "Chalice Of The Blood God",
-      "displayNameRu": "Chalice of the Blood God",
+      "displayNameRu": "\u041a\u0443\u0431\u043e\u043a \u043a\u0440\u043e\u0432\u0430\u0432\u043e\u0433\u043e \u0431\u043e\u0436\u0435\u0441\u0442\u0432\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -3084,7 +3084,7 @@
       "kind": "item",
       "internalName": "ChronomancersScythe",
       "displayName": "Chronomancers Scythe",
-      "displayNameRu": "Chronomancer's Scythe",
+      "displayNameRu": "\u041a\u043e\u0441\u0430 \u0445\u0440\u043e\u043d\u043e\u043c\u0430\u043d\u0442\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -3124,7 +3124,7 @@
       "kind": "item",
       "internalName": "CindersOfLament",
       "displayName": "Cinders Of Lament",
-      "displayNameRu": "Cinders of Lament",
+      "displayNameRu": "\u041f\u0435\u043f\u0435\u043b \u0441\u043a\u043e\u0440\u0431\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -3239,7 +3239,7 @@
       "kind": "item",
       "internalName": "ClothiersWrath",
       "displayName": "Clothiers Wrath",
-      "displayNameRu": "Clothier's Wrath",
+      "displayNameRu": "\u0413\u043d\u0435\u0432 \u043f\u043e\u0440\u0442\u043d\u043e\u0433\u043e",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -3278,7 +3278,7 @@
       "kind": "item",
       "internalName": "CoinofDeceit",
       "displayName": "Coinof Deceit",
-      "displayNameRu": "Coin of Deceit",
+      "displayNameRu": "\u041c\u043e\u043d\u0435\u0442\u0430 \u043e\u0431\u043c\u0430\u043d\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -3471,7 +3471,7 @@
       "kind": "item",
       "internalName": "CorvidHarbringerStaff",
       "displayName": "Corvid Harbringer Staff",
-      "displayNameRu": "Corvid Harbinger Staff",
+      "displayNameRu": "\u041f\u043e\u0441\u043e\u0445 \u0432\u043e\u0440\u043e\u043d\u044c\u0435\u0433\u043e \u043f\u0440\u0435\u0434\u0432\u0435\u0441\u0442\u043d\u0438\u043a\u0430",
       "category": "weapon",
       "tags": [
         "buff",
@@ -3612,7 +3612,7 @@
       "kind": "item",
       "internalName": "CountermeasureMitt",
       "displayName": "Countermeasure Mitt",
-      "displayNameRu": "B-LSR: Countermeasure Mitt",
+      "displayNameRu": "\u0427-\u041b\u0417\u0420: \u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0430 \u043a\u043e\u043d\u0442\u0440\u043c\u0435\u0440",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -3864,7 +3864,7 @@
       "kind": "item",
       "internalName": "DaedalusHeadMagic",
       "displayName": "Daedalus Head Magic",
-      "displayNameRu": "Daedalus Hood",
+      "displayNameRu": "\u041a\u0430\u043f\u044e\u0448\u043e\u043d \u0414\u0435\u0434\u0430\u043b\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -3880,7 +3880,7 @@
       "kind": "item",
       "internalName": "DaedalusHeadMelee",
       "displayName": "Daedalus Head Melee",
-      "displayNameRu": "Daedalus Helm",
+      "displayNameRu": "\u0428\u043b\u0435\u043c \u0414\u0435\u0434\u0430\u043b\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -3896,7 +3896,7 @@
       "kind": "item",
       "internalName": "DaedalusHeadRanged",
       "displayName": "Daedalus Head Ranged",
-      "displayNameRu": "Daedalus Headgear",
+      "displayNameRu": "\u0413\u043e\u043b\u043e\u0432\u043d\u043e\u0439 \u0443\u0431\u043e\u0440 \u0414\u0435\u0434\u0430\u043b\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -3912,7 +3912,7 @@
       "kind": "item",
       "internalName": "DaedalusHeadRogue",
       "displayName": "Daedalus Head Rogue",
-      "displayNameRu": "Daedalus Facemask",
+      "displayNameRu": "\u0417\u0430\u0449\u0438\u0442\u043d\u0430\u044f \u043c\u0430\u0441\u043a\u0430 \u0414\u0435\u0434\u0430\u043b\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -3928,7 +3928,7 @@
       "kind": "item",
       "internalName": "DaedalusHeadSummon",
       "displayName": "Daedalus Head Summon",
-      "displayNameRu": "Daedalus Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u0414\u0435\u0434\u0430\u043b\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -3960,7 +3960,7 @@
       "kind": "item",
       "internalName": "DaemonsFlame",
       "displayName": "Daemons Flame",
-      "displayNameRu": "Daemon's Flame",
+      "displayNameRu": "\u041f\u043b\u0430\u043c\u044f \u0434\u0435\u043c\u043e\u043d\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -4062,7 +4062,7 @@
       "kind": "item",
       "internalName": "DeadSunsWind",
       "displayName": "Dead Suns Wind",
-      "displayNameRu": "Dead Sun's Wind",
+      "displayNameRu": "\u0412\u0435\u0442\u0435\u0440 \u043f\u043e\u0433\u0430\u0441\u0448\u0435\u0433\u043e \u0441\u043e\u043b\u043d\u0446\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -4100,7 +4100,7 @@
       "kind": "item",
       "internalName": "DeathsAscension",
       "displayName": "Deaths Ascension",
-      "displayNameRu": "Death's Ascension",
+      "displayNameRu": "\u0412\u043e\u0437\u043d\u0435\u0441\u0435\u043d\u0438\u0435 \u0441\u043c\u0435\u0440\u0442\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -4289,7 +4289,7 @@
       "kind": "item",
       "internalName": "DepthCharm",
       "displayName": "Depth Charm",
-      "displayNameRu": "Depths Charm",
+      "displayNameRu": "\u041e\u0431\u0435\u0440\u0435\u0433 \u0433\u043b\u0443\u0431\u0438\u043d",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -4391,7 +4391,7 @@
       "kind": "item",
       "internalName": "DevilsDevastation",
       "displayName": "Devils Devastation",
-      "displayNameRu": "Devil's Devastation",
+      "displayNameRu": "\u0414\u044c\u044f\u0432\u043e\u043b\u044c\u0441\u043a\u043e\u0435 \u043e\u043f\u0443\u0441\u0442\u043e\u0448\u0435\u043d\u0438\u0435",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -4404,7 +4404,7 @@
       "kind": "item",
       "internalName": "DevilsSunrise",
       "displayName": "Devils Sunrise",
-      "displayNameRu": "Devil's Sunrise",
+      "displayNameRu": "\u0414\u044c\u044f\u0432\u043e\u043b\u044c\u0441\u043a\u0438\u0439 \u0440\u0430\u0441\u0441\u0432\u0435\u0442",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -4417,7 +4417,7 @@
       "kind": "item",
       "internalName": "DevourerofGodsMask",
       "displayName": "Devourerof Gods Mask",
-      "displayNameRu": "Devourer of Gods Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u041f\u043e\u0436\u0438\u0440\u0430\u0442\u0435\u043b\u044f \u0431\u043e\u0433\u043e\u0432",
       "category": "armor",
       "tags": [
         "armor",
@@ -4433,7 +4433,7 @@
       "kind": "item",
       "internalName": "DiamondOfTheDeep",
       "displayName": "Diamond Of The Deep",
-      "displayNameRu": "Diamond of the Deep",
+      "displayNameRu": "\u0410\u043b\u043c\u0430\u0437 \u0433\u043b\u0443\u0431\u0438\u043d",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -4445,7 +4445,7 @@
       "kind": "item",
       "internalName": "DimensionTearingDisk",
       "displayName": "Dimension Tearing Disk",
-      "displayNameRu": "Dimension-Tearing Disk",
+      "displayNameRu": "\u0420\u0430\u0437\u0440\u044b\u0432\u0430\u044e\u0449\u0438\u0439 \u0438\u0437\u043c\u0435\u0440\u0435\u043d\u0438\u044f \u0434\u0438\u0441\u043a",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -4535,7 +4535,7 @@
       "kind": "item",
       "internalName": "DraedonExoSelectMusicBox",
       "displayName": "Draedon Exo Select Music Box",
-      "displayNameRu": "Music Box (Exo Mech Selection)",
+      "displayNameRu": "\u041c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0448\u043a\u0430\u0442\u0443\u043b\u043a\u0430 (\u041c\u0435\u043d\u044e \u0432\u044b\u0431\u043e\u0440\u0430 \u042d\u043a\u0437\u043e-\u043c\u0435\u0445\u0430\u043d\u0438\u0437\u043c\u043e\u0432)",
       "category": "accessory",
       "tags": [
         "accessory",
@@ -4564,7 +4564,7 @@
       "kind": "item",
       "internalName": "DraedonTalkMusicBox",
       "displayName": "Draedon Talk Music Box",
-      "displayNameRu": "Music Box (Codebreaker)",
+      "displayNameRu": "\u041c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0448\u043a\u0430\u0442\u0443\u043b\u043a\u0430 (\u0414\u0435\u0448\u0438\u0444\u0440\u0430\u0442\u043e\u0440)",
       "category": "accessory",
       "tags": [
         "accessory",
@@ -4577,7 +4577,7 @@
       "kind": "item",
       "internalName": "DraedonsHeart",
       "displayName": "Draedons Heart",
-      "displayNameRu": "Draedon's Heart",
+      "displayNameRu": "\u0421\u0435\u0440\u0434\u0446\u0435 \u0414\u0440\u044d\u0439\u0434\u043e\u043d\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -4640,7 +4640,7 @@
       "kind": "item",
       "internalName": "DragonsBreath",
       "displayName": "Dragons Breath",
-      "displayNameRu": "Dragon's Breath",
+      "displayNameRu": "\u0414\u044b\u0445\u0430\u043d\u0438\u0435 \u0434\u0440\u0430\u043a\u043e\u043d\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -4731,7 +4731,7 @@
       "kind": "item",
       "internalName": "DryadsTear",
       "displayName": "Dryads Tear",
-      "displayNameRu": "Dryad's Tear",
+      "displayNameRu": "\u0421\u043b\u0435\u0437\u0430 \u0434\u0440\u0438\u0430\u0434\u044b",
       "category": "weapon",
       "tags": [
         "buff",
@@ -4745,7 +4745,7 @@
       "kind": "item",
       "internalName": "DukesDecapitator",
       "displayName": "Dukes Decapitator",
-      "displayNameRu": "Duke's Decapitator",
+      "displayNameRu": "\u0413\u0435\u0440\u0446\u043e\u0433\u0441\u043a\u0438\u0439 \u043e\u0431\u0435\u0437\u0433\u043b\u0430\u0432\u043b\u0438\u0432\u0430\u0442\u0435\u043b\u044c",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -4771,7 +4771,7 @@
       "kind": "item",
       "internalName": "DuststormInABottle",
       "displayName": "Duststorm In ABottle",
-      "displayNameRu": "Duststorm in a Bottle",
+      "displayNameRu": "\u041f\u044b\u043b\u0435\u0432\u0430\u044f \u0431\u0443\u0440\u044f \u0432 \u0431\u0430\u043d\u043a\u0435",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -4847,7 +4847,7 @@
       "kind": "item",
       "internalName": "EclipsesFall",
       "displayName": "Eclipses Fall",
-      "displayNameRu": "Eclipse's Fall",
+      "displayNameRu": "\u041f\u0430\u0434\u0435\u043d\u0438\u0435 \u0437\u0430\u0442\u043c\u0435\u043d\u0438\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -4937,7 +4937,7 @@
       "kind": "item",
       "internalName": "ElectriciansGlove",
       "displayName": "Electricians Glove",
-      "displayNameRu": "Electrician's Glove",
+      "displayNameRu": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0430 \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u043a\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -4961,7 +4961,7 @@
       "kind": "item",
       "internalName": "ElementalinaBottle",
       "displayName": "Elementalina Bottle",
-      "displayNameRu": "Elemental in a Bottle",
+      "displayNameRu": "\u042d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u043b\u044c \u0432 \u0431\u0430\u043d\u043a\u0435",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -5161,7 +5161,7 @@
       "kind": "item",
       "internalName": "EntropysVigil",
       "displayName": "Entropys Vigil",
-      "displayNameRu": "Entropy's Vigil",
+      "displayNameRu": "\u0411\u043b\u044e\u0441\u0442\u0438\u0442\u0435\u043b\u044c \u044d\u043d\u0442\u0440\u043e\u043f\u0438\u0438",
       "category": "weapon",
       "tags": [
         "buff",
@@ -5379,7 +5379,7 @@
       "kind": "item",
       "internalName": "ExecutionersBlade",
       "displayName": "Executioners Blade",
-      "displayNameRu": "Executioner's Blade",
+      "displayNameRu": "\u041b\u0435\u0437\u0432\u0438\u0435 \u043f\u0430\u043b\u0430\u0447\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -5456,7 +5456,7 @@
       "kind": "item",
       "internalName": "EyeOfNight",
       "displayName": "Eye Of Night",
-      "displayNameRu": "Eye of Night",
+      "displayNameRu": "\u0413\u043b\u0430\u0437 \u043d\u043e\u0447\u0438",
       "category": "weapon",
       "tags": [
         "buff",
@@ -5469,7 +5469,7 @@
       "kind": "item",
       "internalName": "EyeofMagnus",
       "displayName": "Eyeof Magnus",
-      "displayNameRu": "Eye of Magnus",
+      "displayNameRu": "\u041e\u043a\u043e \u041c\u0430\u0433\u043d\u0443\u0441\u0430",
       "category": "weapon",
       "tags": [
         "weapon"
@@ -5481,7 +5481,7 @@
       "kind": "item",
       "internalName": "EyeoftheStorm",
       "displayName": "Eyeofthe Storm",
-      "displayNameRu": "Eye of the Storm",
+      "displayNameRu": "\u041e\u043a\u043e \u0431\u0443\u0440\u0438",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -5506,7 +5506,7 @@
       "kind": "item",
       "internalName": "FallenPaladinsHammer",
       "displayName": "Fallen Paladins Hammer",
-      "displayNameRu": "Fallen Paladin's Hammer",
+      "displayNameRu": "\u041c\u043e\u043b\u043e\u0442 \u043f\u0430\u0434\u0448\u0435\u0433\u043e \u043f\u0430\u043b\u0430\u0434\u0438\u043d\u0430",
       "category": "other",
       "tags": [
         "weapon",
@@ -5532,7 +5532,7 @@
       "kind": "item",
       "internalName": "FatesReveal",
       "displayName": "Fates Reveal",
-      "displayNameRu": "Fate's Reveal",
+      "displayNameRu": "\u0420\u0430\u0441\u043a\u0440\u044b\u0442\u0438\u0435 \u0441\u0443\u0434\u044c\u0431\u044b",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -5545,7 +5545,7 @@
       "kind": "item",
       "internalName": "FathomSwarmerBoots",
       "displayName": "Fathom Swarmer Boots",
-      "displayNameRu": "Fathom Swarmer Greaves",
+      "displayNameRu": "\u041f\u043e\u043d\u043e\u0436\u0438 \u0433\u043b\u0443\u0431\u043e\u043a\u043e\u0432\u043e\u0434\u043d\u043e\u0439 \u0441\u0442\u0430\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -5774,7 +5774,7 @@
       "kind": "item",
       "internalName": "FlameLickedShell",
       "displayName": "Flame Licked Shell",
-      "displayNameRu": "Flame-Licked Shell",
+      "displayNameRu": "\u041e\u0445\u0432\u0430\u0447\u0435\u043d\u043d\u044b\u0439 \u043f\u043b\u0430\u043c\u0435\u043d\u0435\u043c \u043f\u0430\u043d\u0446\u0438\u0440\u044c",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -5852,7 +5852,7 @@
       "kind": "item",
       "internalName": "FlaskOfBrimstone",
       "displayName": "Flask Of Brimstone",
-      "displayNameRu": "Flask of Brimstone",
+      "displayNameRu": "\u0424\u043b\u0430\u043a\u043e\u043d \u0441\u0435\u0440\u044b",
       "category": "buff",
       "tags": [
         "buff",
@@ -5865,7 +5865,7 @@
       "kind": "item",
       "internalName": "FlaskOfCrumbling",
       "displayName": "Flask Of Crumbling",
-      "displayNameRu": "Flask of Crumbling",
+      "displayNameRu": "\u0424\u043b\u0430\u043a\u043e\u043d \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043d\u0438\u044f",
       "category": "buff",
       "tags": [
         "buff",
@@ -5878,7 +5878,7 @@
       "kind": "item",
       "internalName": "FlaskOfHolyFlames",
       "displayName": "Flask Of Holy Flames",
-      "displayNameRu": "Flask of Holy Flames",
+      "displayNameRu": "\u0424\u043b\u0430\u043a\u043e\u043d \u0441\u0432\u044f\u0442\u044b\u0445 \u043e\u0433\u043d\u0435\u0439",
       "category": "buff",
       "tags": [
         "buff",
@@ -5891,7 +5891,7 @@
       "kind": "item",
       "internalName": "FleshOfInfidelity",
       "displayName": "Flesh Of Infidelity",
-      "displayNameRu": "Flesh of Infidelity",
+      "displayNameRu": "\u041f\u043b\u043e\u0442\u044c \u043d\u0435\u0432\u0435\u0440\u043d\u043e\u0441\u0442\u0438",
       "category": "weapon",
       "tags": [
         "buff",
@@ -5929,7 +5929,7 @@
       "kind": "item",
       "internalName": "FlowersOfMortality",
       "displayName": "Flowers Of Mortality",
-      "displayNameRu": "Flowers of Mortality",
+      "displayNameRu": "\u0426\u0432\u0435\u0442\u044b \u0441\u043c\u0435\u0440\u0442\u043d\u043e\u0441\u0442\u0438",
       "category": "weapon",
       "tags": [
         "buff",
@@ -6035,7 +6035,7 @@
       "kind": "item",
       "internalName": "FourSeasonsGalaxia",
       "displayName": "Four Seasons Galaxia",
-      "displayNameRu": "Galaxia",
+      "displayNameRu": "\u0413\u0430\u043b\u0430\u043a\u0441\u0438\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -6276,7 +6276,7 @@
       "kind": "item",
       "internalName": "GaelsGreatsword",
       "displayName": "Gaels Greatsword",
-      "displayNameRu": "Gael's Greatsword",
+      "displayNameRu": "\u0414\u0432\u0443\u0440\u0443\u0447\u043d\u044b\u0439 \u043c\u0435\u0447 \u0413\u0430\u044d\u043b\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -6596,7 +6596,7 @@
       "kind": "item",
       "internalName": "GladiatorsLocket",
       "displayName": "Gladiators Locket",
-      "displayNameRu": "Gladiator's Locket",
+      "displayNameRu": "\u041c\u0435\u0434\u0430\u043b\u044c\u043e\u043d \u0433\u043b\u0430\u0434\u0438\u0430\u0442\u043e\u0440\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -6672,7 +6672,7 @@
       "kind": "item",
       "internalName": "GloveOfPrecision",
       "displayName": "Glove Of Precision",
-      "displayNameRu": "Glove of Precision",
+      "displayNameRu": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0430 \u0442\u043e\u0447\u043d\u043e\u0441\u0442\u0438",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -6684,7 +6684,7 @@
       "kind": "item",
       "internalName": "GloveOfRecklessness",
       "displayName": "Glove Of Recklessness",
-      "displayNameRu": "Glove of Recklessness",
+      "displayNameRu": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0430 \u0431\u0435\u0437\u0440\u0430\u0441\u0441\u0443\u0434\u0441\u0442\u0432\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -6712,7 +6712,7 @@
       "kind": "item",
       "internalName": "GodSlayerHeadMelee",
       "displayName": "God Slayer Head Melee",
-      "displayNameRu": "God Slayer Horned Greathelm",
+      "displayNameRu": "\u0422\u044f\u0436\u0451\u043b\u044b\u0439 \u0440\u043e\u0433\u0430\u0442\u044b\u0439 \u0448\u043b\u0435\u043c \u0431\u043e\u0433\u043e\u0443\u0431\u0438\u0439\u0446\u044b",
       "category": "armor",
       "tags": [
         "armor",
@@ -6728,7 +6728,7 @@
       "kind": "item",
       "internalName": "GodSlayerHeadRanged",
       "displayName": "God Slayer Head Ranged",
-      "displayNameRu": "God Slayer Helmet",
+      "displayNameRu": "\u041a\u0430\u0441\u043a\u0430 \u0431\u043e\u0433\u043e\u0443\u0431\u0438\u0439\u0446\u044b",
       "category": "armor",
       "tags": [
         "armor",
@@ -6744,7 +6744,7 @@
       "kind": "item",
       "internalName": "GodSlayerHeadRogue",
       "displayName": "God Slayer Head Rogue",
-      "displayNameRu": "God Slayer Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u0431\u043e\u0433\u043e\u0443\u0431\u0438\u0439\u0446\u044b",
       "category": "armor",
       "tags": [
         "armor",
@@ -6822,7 +6822,7 @@
       "kind": "item",
       "internalName": "GodsParanoia",
       "displayName": "Gods Paranoia",
-      "displayNameRu": "Gods' Paranoia",
+      "displayNameRu": "\u0411\u043e\u0436\u044c\u044f \u043f\u0430\u0440\u0430\u043d\u043e\u0439\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -6951,7 +6951,7 @@
       "kind": "item",
       "internalName": "GreatswordofJudgement",
       "displayName": "Greatswordof Judgement",
-      "displayNameRu": "Greatsword of Judgement",
+      "displayNameRu": "\u0414\u0432\u0443\u0440\u0443\u0447\u043d\u044b\u0439 \u043c\u0435\u0447 \u043f\u0440\u0430\u0432\u043e\u0441\u0443\u0434\u0438\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -6990,7 +6990,7 @@
       "kind": "item",
       "internalName": "GuidelightofOblivion",
       "displayName": "Guidelightof Oblivion",
-      "displayNameRu": "Guidelight of Oblivion",
+      "displayNameRu": "\u041f\u0443\u0442\u0435\u0432\u043e\u0434\u043d\u044b\u0439 \u0441\u0432\u0435\u0442 \u0437\u0430\u0431\u0432\u0435\u043d\u0438\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -7093,7 +7093,7 @@
       "kind": "item",
       "internalName": "HalleysInferno",
       "displayName": "Halleys Inferno",
-      "displayNameRu": "Halley's Inferno",
+      "displayNameRu": "\u041f\u0435\u043a\u043b\u043e \u0413\u0430\u043b\u043b\u0435\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -7106,7 +7106,7 @@
       "kind": "item",
       "internalName": "HallowPointRound",
       "displayName": "Hallow Point Round",
-      "displayNameRu": "Hallow-Point Round",
+      "displayNameRu": "\u041f\u0430\u0442\u0440\u043e\u043d \u0441\u043e \u0441\u0432\u044f\u0442\u044b\u043c \u043d\u0430\u043a\u043e\u043d\u0435\u0447\u043d\u0438\u043a\u043e\u043c",
       "category": "weapon",
       "tags": [
         "buff",
@@ -7145,7 +7145,7 @@
       "kind": "item",
       "internalName": "HapuFruit",
       "displayName": "Hapu Fruit",
-      "displayNameRu": "Ha-pu Fruit",
+      "displayNameRu": "\u0424\u0440\u0443\u043a\u0442 \u0425\u0430-\u043f\u044c\u044e",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -7208,7 +7208,7 @@
       "kind": "item",
       "internalName": "HavocsBreath",
       "displayName": "Havocs Breath",
-      "displayNameRu": "Havoc's Breath",
+      "displayNameRu": "\u0414\u044b\u0445\u0430\u043d\u0438\u0435 \u043e\u043f\u0443\u0441\u0442\u043e\u0448\u0435\u043d\u0438\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -7221,7 +7221,7 @@
       "kind": "item",
       "internalName": "HeartofDarkness",
       "displayName": "Heartof Darkness",
-      "displayNameRu": "Heart of Darkness",
+      "displayNameRu": "\u0421\u0435\u0440\u0434\u0446\u0435 \u0442\u044c\u043c\u044b",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -7233,7 +7233,7 @@
       "kind": "item",
       "internalName": "HeartoftheElements",
       "displayName": "Heartofthe Elements",
-      "displayNameRu": "Heart of the Elements",
+      "displayNameRu": "\u0421\u0435\u0440\u0434\u0446\u0435 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u0432",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -7388,7 +7388,7 @@
       "kind": "item",
       "internalName": "HermitsBoxofOneHundredMedicines",
       "displayName": "Hermits Boxof One Hundred Medicines",
-      "displayNameRu": "Hermit's Box of One Hundred Medicines",
+      "displayNameRu": "\u041b\u0430\u0440\u0435\u0446 \u0441 \u0441\u043e\u0442\u043d\u0435\u0439 \u043b\u0435\u043a\u0430\u0440\u0441\u0442\u0432 \u043e\u0442\u0448\u0435\u043b\u044c\u043d\u0438\u043a\u0430",
       "category": "buff",
       "tags": [
         "buff"
@@ -7413,7 +7413,7 @@
       "kind": "item",
       "internalName": "HideofAstrumDeus",
       "displayName": "Hideof Astrum Deus",
-      "displayNameRu": "Hide of Astrum Deus",
+      "displayNameRu": "\u0428\u043a\u0443\u0440\u0430 \u0410\u0441\u0442\u0440\u0443\u043c \u0414\u0435\u0443\u0441\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -7467,7 +7467,7 @@
       "kind": "item",
       "internalName": "HolofibreImmolator",
       "displayName": "Holofibre Immolator",
-      "displayNameRu": "R-PMA: Holofibre Immolator",
+      "displayNameRu": "\u0420-\u041f\u041b\u0417: \u0413\u043e\u043b\u043e\u0432\u043e\u043b\u043e\u043a\u043e\u043d\u043d\u044b\u0439 \u0441\u0436\u0438\u0433\u0430\u0442\u0435\u043b\u044c",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -7519,7 +7519,7 @@
       "kind": "item",
       "internalName": "HoodOfCalamity",
       "displayName": "Hood Of Calamity",
-      "displayNameRu": "Hood of Calamity",
+      "displayNameRu": "\u041a\u0430\u043f\u044e\u0448\u043e\u043d \u0431\u0435\u0434\u0441\u0442\u0432\u0438\u044f",
       "category": "armor",
       "tags": [
         "armor",
@@ -7535,7 +7535,7 @@
       "kind": "item",
       "internalName": "HowlsHeart",
       "displayName": "Howls Heart",
-      "displayNameRu": "Howl's Heart",
+      "displayNameRu": "\u0421\u0435\u0440\u0434\u0446\u0435 \u0425\u0430\u0443\u043b\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -7576,7 +7576,7 @@
       "kind": "item",
       "internalName": "HydrothermicHeadMagic",
       "displayName": "Hydrothermic Head Magic",
-      "displayNameRu": "Hydrothermic Mask",
+      "displayNameRu": "\u0413\u0438\u0434\u0440\u043e\u0442\u0435\u0440\u043c\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043c\u0430\u0441\u043a\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -7592,7 +7592,7 @@
       "kind": "item",
       "internalName": "HydrothermicHeadMelee",
       "displayName": "Hydrothermic Head Melee",
-      "displayNameRu": "Hydrothermic Helm",
+      "displayNameRu": "\u0413\u0438\u0434\u0440\u043e\u0442\u0435\u0440\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0448\u043b\u0435\u043c",
       "category": "armor",
       "tags": [
         "armor",
@@ -7608,7 +7608,7 @@
       "kind": "item",
       "internalName": "HydrothermicHeadRanged",
       "displayName": "Hydrothermic Head Ranged",
-      "displayNameRu": "Hydrothermic Headgear",
+      "displayNameRu": "\u0413\u0438\u0434\u0440\u043e\u0442\u0435\u0440\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0433\u043e\u043b\u043e\u0432\u043d\u043e\u0439 \u0443\u0431\u043e\u0440",
       "category": "armor",
       "tags": [
         "armor",
@@ -7624,7 +7624,7 @@
       "kind": "item",
       "internalName": "HydrothermicHeadRogue",
       "displayName": "Hydrothermic Head Rogue",
-      "displayNameRu": "Hydrothermic Hood",
+      "displayNameRu": "\u0413\u0438\u0434\u0440\u043e\u0442\u0435\u0440\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043a\u0430\u043f\u044e\u0448\u043e\u043d",
       "category": "armor",
       "tags": [
         "armor",
@@ -7640,7 +7640,7 @@
       "kind": "item",
       "internalName": "HydrothermicHeadSummon",
       "displayName": "Hydrothermic Head Summon",
-      "displayNameRu": "Hydrothermic Helmet",
+      "displayNameRu": "\u0413\u0438\u0434\u0440\u043e\u0442\u0435\u0440\u043c\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043a\u0430\u0441\u043a\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -7830,7 +7830,7 @@
       "kind": "item",
       "internalName": "IlmerisSpark",
       "displayName": "Ilmeris Spark",
-      "displayNameRu": "Ilmeris' Spark",
+      "displayNameRu": "\u0418\u0441\u043a\u0440\u0430 \u0418\u043b\u044c\u043c\u0435\u0440\u0438\u0441\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -7994,7 +7994,7 @@
       "kind": "item",
       "internalName": "IVDripOnTheRocks",
       "displayName": "IVDrip On The Rocks",
-      "displayNameRu": "IV Drip on the Rocks",
+      "displayNameRu": "\u041a\u0430\u043f\u0435\u043b\u044c\u043d\u0438\u0446\u0430 \u0441\u043e \u043b\u044c\u0434\u043e\u043c",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -8019,7 +8019,7 @@
       "kind": "item",
       "internalName": "JawsOfOblivion",
       "displayName": "Jaws Of Oblivion",
-      "displayNameRu": "Jaws of Oblivion",
+      "displayNameRu": "\u0427\u0435\u043b\u044e\u0441\u0442\u0438 \u0437\u0430\u0431\u0432\u0435\u043d\u0438\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -8032,7 +8032,7 @@
       "kind": "item",
       "internalName": "JellyChargedBattery",
       "displayName": "Jelly Charged Battery",
-      "displayNameRu": "Jelly-Charged Battery",
+      "displayNameRu": "\u0417\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0439 \u0436\u0435\u043b\u0435\u0439\u043d\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -8095,7 +8095,7 @@
       "kind": "item",
       "internalName": "KingofConstellationsTenryu",
       "displayName": "Kingof Constellations Tenryu",
-      "displayNameRu": "King of Constellations, Tenry\u016b",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u043b\u044c \u0441\u043e\u0437\u0432\u0435\u0437\u0434\u0438\u0439, \u0422\u0435\u043d\u0440\u044e",
       "category": "weapon",
       "tags": [
         "buff",
@@ -8160,7 +8160,7 @@
       "kind": "item",
       "internalName": "LashesofChaos",
       "displayName": "Lashesof Chaos",
-      "displayNameRu": "Lashes of Chaos",
+      "displayNameRu": "\u041f\u043b\u0435\u0442\u0438 \u0445\u0430\u043e\u0441\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -8198,7 +8198,7 @@
       "kind": "item",
       "internalName": "LegionofCelestia",
       "displayName": "Legionof Celestia",
-      "displayNameRu": "Legion of Celestia",
+      "displayNameRu": "\u041b\u0435\u0433\u0438\u043e\u043d \u0421\u0435\u043b\u0435\u0441\u0442\u0438\u0438",
       "category": "weapon",
       "tags": [
         "buff",
@@ -8315,7 +8315,7 @@
       "kind": "item",
       "internalName": "LightGodsBrilliance",
       "displayName": "Light Gods Brilliance",
-      "displayNameRu": "Light God's Brilliance",
+      "displayNameRu": "\u0412\u0435\u043b\u0438\u043a\u043e\u043b\u0435\u043f\u0438\u0435 \u0431\u043e\u0433\u0430 \u0441\u0432\u0435\u0442\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -8341,7 +8341,7 @@
       "kind": "item",
       "internalName": "LiliesOfFinality",
       "displayName": "Lilies Of Finality",
-      "displayNameRu": "Lilies of Finality",
+      "displayNameRu": "\u041b\u0438\u043b\u0438\u0438 \u0437\u0430\u0432\u0435\u0440\u0448\u0451\u043d\u043d\u043e\u0441\u0442\u0438",
       "category": "weapon",
       "tags": [
         "buff",
@@ -8429,7 +8429,7 @@
       "kind": "item",
       "internalName": "LucisBoots",
       "displayName": "Lucis Boots",
-      "displayNameRu": "Luci's Boots",
+      "displayNameRu": "\u0411\u043e\u0442\u0438\u043d\u043a\u0438 \u041b\u044e\u0441\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -8445,7 +8445,7 @@
       "kind": "item",
       "internalName": "LucisHairstyle",
       "displayName": "Lucis Hairstyle",
-      "displayNameRu": "Luci's Hairstyle",
+      "displayNameRu": "\u041f\u0440\u0438\u0447\u0451\u0441\u043a\u0430 \u041b\u044e\u0441\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -8461,7 +8461,7 @@
       "kind": "item",
       "internalName": "LucisMilitaryUniform",
       "displayName": "Lucis Military Uniform",
-      "displayNameRu": "Luci's Military Uniform",
+      "displayNameRu": "\u0412\u043e\u0435\u043d\u043d\u0430\u044f \u0444\u043e\u0440\u043c\u0430 \u041b\u044e\u0441\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -8477,7 +8477,7 @@
       "kind": "item",
       "internalName": "LucisSight",
       "displayName": "Lucis Sight",
-      "displayNameRu": "Luci's Sight",
+      "displayNameRu": "\u041e\u0447\u043a\u0438 \u041b\u044e\u0441\u0438",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -8588,7 +8588,7 @@
       "kind": "item",
       "internalName": "LuxorsGift",
       "displayName": "Luxors Gift",
-      "displayNameRu": "Luxor's Gift",
+      "displayNameRu": "\u041f\u043e\u0434\u0430\u0440\u043e\u043a \u041b\u0443\u043a\u0441\u043e\u0440\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -8613,7 +8613,7 @@
       "kind": "item",
       "internalName": "MadAlchemistsCocktailGlove",
       "displayName": "Mad Alchemists Cocktail Glove",
-      "displayNameRu": "Mad Alchemist's Cocktail Glove",
+      "displayNameRu": "\u041a\u043e\u043a\u0442\u0435\u0439\u043b\u044c\u043d\u0430\u044f \u043f\u0435\u0440\u0447\u0430\u0442\u043a\u0430 \u0431\u0435\u0437\u0443\u043c\u043d\u043e\u0433\u043e \u0430\u043b\u0445\u0438\u043c\u0438\u043a\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -8878,7 +8878,7 @@
       "kind": "item",
       "internalName": "MawOfInfinity",
       "displayName": "Maw Of Infinity",
-      "displayNameRu": "Maw of Infinity",
+      "displayNameRu": "\u041f\u0430\u0441\u0442\u044c \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u043e\u0441\u0442\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -8891,7 +8891,7 @@
       "kind": "item",
       "internalName": "McNuggets",
       "displayName": "Mc Nuggets",
-      "displayNameRu": "McNuggets",
+      "displayNameRu": "\u041c\u0430\u043a\u041d\u0430\u0433\u0433\u0435\u0442\u0441",
       "category": "buff",
       "tags": [
         "buff"
@@ -9045,7 +9045,7 @@
       "kind": "item",
       "internalName": "MirrorofKalandra",
       "displayName": "Mirrorof Kalandra",
-      "displayNameRu": "Mirror of Kalandra",
+      "displayNameRu": "\u0417\u0435\u0440\u043a\u0430\u043b\u043e \u041a\u0430\u043b\u0430\u043d\u0434\u0440\u044b",
       "category": "weapon",
       "tags": [
         "buff",
@@ -9170,7 +9170,7 @@
       "kind": "item",
       "internalName": "MonolithOfTheAccursed",
       "displayName": "Monolith Of The Accursed",
-      "displayNameRu": "Monolith of the Accursed",
+      "displayNameRu": "\u041c\u043e\u043d\u043e\u043b\u0438\u0442 \u043f\u0440\u043e\u043a\u043b\u044f\u0442\u043e\u0433\u043e",
       "category": "accessory",
       "tags": [
         "accessory",
@@ -9446,8 +9446,8 @@
       "kind": "item",
       "internalName": "NavystoneBobber",
       "displayName": "Navystone Bobber",
-      "displayNameRu": "Sunken Sinker",
-      "category": "other",
+      "displayNameRu": "\u0417\u0430\u0442\u0435\u0440\u044f\u043d\u043d\u044b\u0439 \u0433\u0440\u0443\u0437\u0438\u043a",
+      "category": "accessory",
       "tags": [
         "accessory"
       ],
@@ -9509,7 +9509,7 @@
       "kind": "item",
       "internalName": "NecklaceofVexation",
       "displayName": "Necklaceof Vexation",
-      "displayNameRu": "Necklace of Vexation",
+      "displayNameRu": "\u041e\u0436\u0435\u0440\u0435\u043b\u044c\u0435 \u0434\u043e\u0441\u0430\u0434\u044b",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -9534,7 +9534,7 @@
       "kind": "item",
       "internalName": "NeptunesBounty",
       "displayName": "Neptunes Bounty",
-      "displayNameRu": "Neptune's Bounty",
+      "displayNameRu": "\u0414\u0430\u0440 \u041d\u0435\u043f\u0442\u0443\u043d\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -9560,7 +9560,7 @@
       "kind": "item",
       "internalName": "Nidhogg",
       "displayName": "Nidhogg",
-      "displayNameRu": "B-GSS: Nidhogg",
+      "displayNameRu": "\u0427-\u0413\u0421\u0421: \u041d\u0438\u0434\u0445\u0451\u0433\u0433",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -9573,7 +9573,7 @@
       "kind": "item",
       "internalName": "NightsRay",
       "displayName": "Nights Ray",
-      "displayNameRu": "Night's Ray",
+      "displayNameRu": "\u041b\u0443\u0447 \u043d\u043e\u0447\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -9758,7 +9758,7 @@
       "kind": "item",
       "internalName": "OldDukeScales",
       "displayName": "Old Duke Scales",
-      "displayNameRu": "Old Duke's Scales",
+      "displayNameRu": "\u0427\u0435\u0448\u0443\u044f \u0421\u0442\u0430\u0440\u043e\u0433\u043e \u0433\u0435\u0440\u0446\u043e\u0433\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -9831,7 +9831,7 @@
       "kind": "item",
       "internalName": "OmegaBiomeBlade",
       "displayName": "Omega Biome Blade",
-      "displayNameRu": "True Biome Blade",
+      "displayNameRu": "\u0418\u0441\u0442\u0438\u043d\u043d\u044b\u0439 \u043a\u043b\u0438\u043d\u043e\u043a \u0431\u0438\u043e\u043c\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -10124,7 +10124,7 @@
       "kind": "item",
       "internalName": "ParasiticSceptor",
       "displayName": "Parasitic Sceptor",
-      "displayNameRu": "Parasitic Scepter",
+      "displayNameRu": "\u041f\u0430\u0440\u0430\u0437\u0438\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0441\u043a\u0438\u043f\u0435\u0442\u0440",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -10150,7 +10150,7 @@
       "kind": "item",
       "internalName": "PearlofEnthrallment",
       "displayName": "Pearlof Enthrallment",
-      "displayNameRu": "Pearl of Enthrallment",
+      "displayNameRu": "\u0416\u0435\u043c\u0447\u0443\u0433 \u043e\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u044f",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -10188,7 +10188,7 @@
       "kind": "item",
       "internalName": "PerennialBobber",
       "displayName": "Perennial Bobber",
-      "displayNameRu": "Feral Bobber",
+      "displayNameRu": "\u041e\u0434\u0438\u0447\u0430\u043b\u044b\u0439 \u043f\u043e\u043f\u043b\u0430\u0432\u043e\u043a",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -10229,7 +10229,7 @@
       "kind": "item",
       "internalName": "PermafrostsConcoction",
       "displayName": "Permafrosts Concoction",
-      "displayNameRu": "Permafrost's Concoction",
+      "displayNameRu": "\u0421\u043c\u0435\u0441\u044c \u041f\u0435\u0440\u043c\u0430\u0444\u0440\u043e\u0441\u0442\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -10254,7 +10254,7 @@
       "kind": "item",
       "internalName": "PhalanxSurge",
       "displayName": "Phalanx Surge",
-      "displayNameRu": "W-LSR: Phalanx Surge",
+      "displayNameRu": "\u0411-\u041b\u0417\u0420: \u041d\u0430\u0442\u0438\u0441\u043a \u0444\u0430\u043b\u0430\u043d\u0433\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -10357,7 +10357,7 @@
       "kind": "item",
       "internalName": "PineapplePet",
       "displayName": "Pineapple Pet",
-      "displayNameRu": "Pineapple",
+      "displayNameRu": "\u0410\u043d\u0430\u043d\u0430\u0441",
       "category": "buff",
       "tags": [
         "buff"
@@ -10544,7 +10544,7 @@
       "kind": "item",
       "internalName": "PlaguedPlateCandle",
       "displayName": "Plagued Plate Candle",
-      "displayNameRu": "Plagued Candle",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u0430\u044f \u0441\u0432\u0435\u0447\u0430",
       "category": "buff",
       "tags": [
         "buff",
@@ -10570,7 +10570,7 @@
       "kind": "item",
       "internalName": "PlanebreakersPouch",
       "displayName": "Planebreakers Pouch",
-      "displayNameRu": "Planebreaker's Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441\u043e\u043a\u0440\u0443\u0448\u0438\u0442\u0435\u043b\u044f \u0438\u0437\u043c\u0435\u0440\u0435\u043d\u0438\u0439",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -10728,8 +10728,8 @@
       "kind": "item",
       "internalName": "Popo",
       "displayName": "Popo",
-      "displayNameRu": "Magic Scarf and Hat",
-      "category": "other",
+      "displayNameRu": "\u041c\u0430\u0433\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u0448\u0430\u0440\u0444 \u0438 \u0448\u043b\u044f\u043f\u0430",
+      "category": "accessory",
       "tags": [
         "accessory"
       ],
@@ -10753,7 +10753,7 @@
       "kind": "item",
       "internalName": "PotionofOmniscience",
       "displayName": "Potionof Omniscience",
-      "displayNameRu": "Potion of Omniscience",
+      "displayNameRu": "\u0417\u0435\u043b\u044c\u0435 \u0432\u0441\u0435\u0432\u0435\u0434\u0435\u043d\u0438\u044f",
       "category": "buff",
       "tags": [
         "buff",
@@ -10766,7 +10766,7 @@
       "kind": "item",
       "internalName": "PridefulHuntersPlanarRipper",
       "displayName": "Prideful Hunters Planar Ripper",
-      "displayNameRu": "Prideful Hunter's Planar Ripper",
+      "displayNameRu": "\u041f\u043b\u0430\u043d\u0430\u0440\u043d\u044b\u0439 \u043f\u043e\u0442\u0440\u043e\u0448\u0438\u0442\u0435\u043b\u044c \u0433\u043e\u0440\u0434\u043e\u0433\u043e \u043e\u0445\u043e\u0442\u043d\u0438\u043a\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -11025,7 +11025,7 @@
       "kind": "item",
       "internalName": "PulseGrenade",
       "displayName": "Pulse Grenade",
-      "displayNameRu": "R-PLS: Pulse Grenade",
+      "displayNameRu": "\u0420-\u0418\u041c\u041f: \u0418\u043c\u043f\u0443\u043b\u044c\u0441\u043d\u0430\u044f \u0433\u0440\u0430\u043d\u0430\u0442\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -11038,7 +11038,7 @@
       "kind": "item",
       "internalName": "PulsePistol",
       "displayName": "Pulse Pistol",
-      "displayNameRu": "P-PLS: Pulse Pistol",
+      "displayNameRu": "\u041f-\u0418\u041c\u041f: \u0418\u043c\u043f\u0443\u043b\u044c\u0441\u043d\u044b\u0439 \u043f\u0438\u0441\u0442\u043e\u043b\u0435\u0442",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -11051,7 +11051,7 @@
       "kind": "item",
       "internalName": "PulseRifle",
       "displayName": "Pulse Rifle",
-      "displayNameRu": "A-PLS: Pulse Rifle",
+      "displayNameRu": "\u0410-\u0418\u041c\u041f: \u0418\u043c\u043f\u0443\u043b\u044c\u0441\u043d\u0430\u044f \u0432\u0438\u043d\u0442\u043e\u0432\u043a\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -11168,7 +11168,7 @@
       "kind": "item",
       "internalName": "QuiverofNihility",
       "displayName": "Quiverof Nihility",
-      "displayNameRu": "Quiver of Nihility",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u043d\u0435\u0431\u044b\u0442\u0438\u044f",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -11229,7 +11229,7 @@
       "kind": "item",
       "internalName": "RaidersTalisman",
       "displayName": "Raiders Talisman",
-      "displayNameRu": "Raider's Talisman",
+      "displayNameRu": "\u0422\u0430\u043b\u0438\u0441\u043c\u0430\u043d \u043d\u0430\u043b\u0451\u0442\u0447\u0438\u043a\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -11254,7 +11254,7 @@
       "kind": "item",
       "internalName": "RampartofDeities",
       "displayName": "Rampartof Deities",
-      "displayNameRu": "Rampart of Deities",
+      "displayNameRu": "\u041e\u043f\u043b\u043e\u0442 \u0431\u043e\u0436\u0435\u0441\u0442\u0432",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -11279,7 +11279,7 @@
       "kind": "item",
       "internalName": "RareElementalinaBottle",
       "displayName": "Rare Elementalina Bottle",
-      "displayNameRu": "Rare Elemental in a Bottle",
+      "displayNameRu": "\u0420\u0435\u0434\u043a\u0438\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u043b\u044c \u0432 \u0431\u0430\u043d\u043a\u0435",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -11361,7 +11361,7 @@
       "kind": "item",
       "internalName": "ReaverHeadExplore",
       "displayName": "Reaver Head Explore",
-      "displayNameRu": "Reaver Headgear",
+      "displayNameRu": "\u0413\u043e\u043b\u043e\u0432\u043d\u043e\u0439 \u0443\u0431\u043e\u0440 \u0440\u0430\u0437\u043e\u0440\u0438\u0442\u0435\u043b\u044f",
       "category": "armor",
       "tags": [
         "armor",
@@ -11377,7 +11377,7 @@
       "kind": "item",
       "internalName": "ReaverHeadMobility",
       "displayName": "Reaver Head Mobility",
-      "displayNameRu": "Reaver Visage",
+      "displayNameRu": "\u041b\u0438\u043a \u0440\u0430\u0437\u043e\u0440\u0438\u0442\u0435\u043b\u044f",
       "category": "armor",
       "tags": [
         "armor",
@@ -11393,7 +11393,7 @@
       "kind": "item",
       "internalName": "ReaverHeadTank",
       "displayName": "Reaver Head Tank",
-      "displayNameRu": "Reaver Helm",
+      "displayNameRu": "\u0428\u043b\u0435\u043c \u0440\u0430\u0437\u043e\u0440\u0438\u0442\u0435\u043b\u044f",
       "category": "armor",
       "tags": [
         "armor",
@@ -11438,7 +11438,7 @@
       "kind": "item",
       "internalName": "RecitationoftheBeast",
       "displayName": "Recitationofthe Beast",
-      "displayNameRu": "Recitation of the Beast",
+      "displayNameRu": "\u0414\u0435\u043a\u043b\u0430\u043c\u0430\u0446\u0438\u044f \u0437\u0432\u0435\u0440\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -11528,7 +11528,7 @@
       "kind": "item",
       "internalName": "RelicOfDeliverance",
       "displayName": "Relic Of Deliverance",
-      "displayNameRu": "Relic of Deliverance",
+      "displayNameRu": "\u0420\u0435\u043b\u0438\u043a\u0432\u0438\u044f \u043e\u0441\u0432\u043e\u0431\u043e\u0436\u0434\u0435\u043d\u0438\u044f",
       "category": "weapon",
       "tags": [
         "weapon"
@@ -11540,7 +11540,7 @@
       "kind": "item",
       "internalName": "RelicofRuin",
       "displayName": "Relicof Ruin",
-      "displayNameRu": "Relic of Ruin",
+      "displayNameRu": "\u0420\u0435\u043b\u0438\u043a\u0432\u0438\u044f \u0440\u0443\u0438\u043d",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -11553,7 +11553,7 @@
       "kind": "item",
       "internalName": "RemsRevenge",
       "displayName": "Rems Revenge",
-      "displayNameRu": "Rem's Revenge",
+      "displayNameRu": "\u0412\u043e\u0437\u043c\u0435\u0437\u0434\u0438\u0435 \u0420\u0435\u043c",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -11631,7 +11631,7 @@
       "kind": "item",
       "internalName": "RobesOfCalamity",
       "displayName": "Robes Of Calamity",
-      "displayNameRu": "Robes of Calamity",
+      "displayNameRu": "\u041c\u0430\u043d\u0442\u0438\u044f \u0431\u0435\u0434\u0441\u0442\u0432\u0438\u044f",
       "category": "armor",
       "tags": [
         "armor",
@@ -12054,7 +12054,7 @@
       "kind": "item",
       "internalName": "SCalBoots",
       "displayName": "SCal Boots",
-      "displayNameRu": "Calamitous Boots",
+      "displayNameRu": "\u0411\u0435\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0435 \u0431\u043e\u0442\u0438\u043d\u043a\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -12070,7 +12070,7 @@
       "kind": "item",
       "internalName": "SCalMask",
       "displayName": "SCal Mask",
-      "displayNameRu": "Calamitous Hood",
+      "displayNameRu": "\u0411\u0435\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u043a\u0430\u043f\u044e\u0448\u043e\u043d",
       "category": "armor",
       "tags": [
         "armor",
@@ -12086,7 +12086,7 @@
       "kind": "item",
       "internalName": "SCalRobes",
       "displayName": "SCal Robes",
-      "displayNameRu": "Calamitous Robes",
+      "displayNameRu": "\u0411\u0435\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f \u043c\u0430\u043d\u0442\u0438\u044f",
       "category": "armor",
       "tags": [
         "armor",
@@ -12140,8 +12140,8 @@
       "kind": "item",
       "internalName": "ScoriaBobber",
       "displayName": "Scoria Bobber",
-      "displayNameRu": "Volcanic Sinker",
-      "category": "other",
+      "displayNameRu": "\u0412\u0443\u043b\u043a\u0430\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0433\u0440\u0443\u0437\u0438\u043a",
+      "category": "accessory",
       "tags": [
         "accessory"
       ],
@@ -12165,7 +12165,7 @@
       "kind": "item",
       "internalName": "ScourgeoftheCosmos",
       "displayName": "Scourgeofthe Cosmos",
-      "displayNameRu": "Scourge of the Cosmos",
+      "displayNameRu": "\u0411\u0438\u0447 \u043a\u043e\u0441\u043c\u043e\u0441\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -12178,7 +12178,7 @@
       "kind": "item",
       "internalName": "ScourgeoftheDesert",
       "displayName": "Scourgeofthe Desert",
-      "displayNameRu": "Scourge of the Desert",
+      "displayNameRu": "\u0411\u0438\u0447 \u043f\u0443\u0441\u0442\u044b\u043d\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -12191,7 +12191,7 @@
       "kind": "item",
       "internalName": "ScourgeoftheSeas",
       "displayName": "Scourgeofthe Seas",
-      "displayNameRu": "Scourge of the Seas",
+      "displayNameRu": "\u0411\u0438\u0447 \u043c\u043e\u0440\u0435\u0439",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -12204,7 +12204,7 @@
       "kind": "item",
       "internalName": "ScrapBobber",
       "displayName": "Scrap Bobber",
-      "displayNameRu": "Wulfrum Bobber",
+      "displayNameRu": "\u0412\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u044b\u0439 \u043f\u043e\u043f\u043b\u0430\u0432\u043e\u043a",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -12229,7 +12229,7 @@
       "kind": "item",
       "internalName": "ScuttlersJewel",
       "displayName": "Scuttlers Jewel",
-      "displayNameRu": "Scuttler's Jewel",
+      "displayNameRu": "\u0414\u0440\u0430\u0433\u043e\u0446\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0431\u0435\u0433\u043b\u0435\u0446\u0430",
       "category": "accessory",
       "tags": [
         "accessory",
@@ -12318,7 +12318,7 @@
       "kind": "item",
       "internalName": "SeasSearing",
       "displayName": "Seas Searing",
-      "displayNameRu": "Sea's Searing",
+      "displayNameRu": "\u0416\u0433\u0443\u0447\u0435\u0435 \u043c\u043e\u0440\u0435",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -12473,7 +12473,7 @@
       "kind": "item",
       "internalName": "ShardofAntumbra",
       "displayName": "Shardof Antumbra",
-      "displayNameRu": "Shard of Antumbra",
+      "displayNameRu": "\u041e\u0441\u043a\u043e\u043b\u043e\u043a \u043f\u043e\u043b\u0443\u0442\u0435\u043d\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -12549,7 +12549,7 @@
       "kind": "item",
       "internalName": "ShieldoftheHighRuler",
       "displayName": "Shieldofthe High Ruler",
-      "displayNameRu": "Shield of the High Ruler",
+      "displayNameRu": "\u0429\u0438\u0442 \u0432\u0435\u0440\u0445\u043e\u0432\u043d\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u0438\u0442\u0435\u043b\u044f",
       "category": "accessory",
       "tags": [
         "accessory",
@@ -12562,7 +12562,7 @@
       "kind": "item",
       "internalName": "ShieldoftheOcean",
       "displayName": "Shieldofthe Ocean",
-      "displayNameRu": "Shield of the Ocean",
+      "displayNameRu": "\u0429\u0438\u0442 \u043e\u043a\u0435\u0430\u043d\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -12613,7 +12613,7 @@
       "kind": "item",
       "internalName": "ShortCircuit",
       "displayName": "Short Circuit",
-      "displayNameRu": "P-TSL: Short Circuit",
+      "displayNameRu": "\u041f-\u0422\u0421\u041b: \u041a\u043e\u0440\u043e\u0442\u043a\u043e\u0435 \u0437\u0430\u043c\u044b\u043a\u0430\u043d\u0438\u0435",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -12678,7 +12678,7 @@
       "kind": "item",
       "internalName": "SigilofCalamitas",
       "displayName": "Sigilof Calamitas",
-      "displayNameRu": "Sigil of Calamitas",
+      "displayNameRu": "\u041f\u0435\u0447\u0430\u0442\u044c \u041a\u0430\u043b\u0430\u043c\u0438\u0442\u0430\u0441",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -12747,7 +12747,7 @@
       "kind": "item",
       "internalName": "SilvaHeadMagic",
       "displayName": "Silva Head Magic",
-      "displayNameRu": "Silva Masked Cap",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0438\u0440\u043e\u0432\u043e\u0447\u043d\u0430\u044f \u0448\u043b\u044f\u043f\u0430 \u0421\u0438\u043b\u044c\u0432\u044b",
       "category": "armor",
       "tags": [
         "armor",
@@ -12763,7 +12763,7 @@
       "kind": "item",
       "internalName": "SilvaHeadSummon",
       "displayName": "Silva Head Summon",
-      "displayNameRu": "Silva Horned Hood",
+      "displayNameRu": "\u0420\u043e\u0433\u0430\u0442\u044b\u0439 \u043a\u0430\u043f\u044e\u0448\u043e\u043d \u0421\u0438\u043b\u044c\u0432\u044b",
       "category": "armor",
       "tags": [
         "armor",
@@ -12894,7 +12894,7 @@
       "kind": "item",
       "internalName": "SkylineBobber",
       "displayName": "Skyline Bobber",
-      "displayNameRu": "Acrobatic Bobber",
+      "displayNameRu": "\u0410\u043a\u0440\u043e\u0431\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043f\u043e\u043f\u043b\u0430\u0432\u043e\u043a",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -12998,7 +12998,7 @@
       "kind": "item",
       "internalName": "SlimeGodMask2",
       "displayName": "Slime God Mask2",
-      "displayNameRu": "Slime God Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u0411\u043e\u0433\u0430 \u0441\u043b\u0438\u0437\u043d\u0435\u0439",
       "category": "armor",
       "tags": [
         "armor",
@@ -13205,7 +13205,7 @@
       "kind": "item",
       "internalName": "SoulofCryogen",
       "displayName": "Soulof Cryogen",
-      "displayNameRu": "Soul of Cryogen",
+      "displayNameRu": "\u0414\u0443\u0448\u0430 \u041a\u0440\u0438\u043e\u0433\u0435\u043d\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -13243,7 +13243,7 @@
       "kind": "item",
       "internalName": "SpearofDestiny",
       "displayName": "Spearof Destiny",
-      "displayNameRu": "Spear of Destiny",
+      "displayNameRu": "\u041a\u043e\u043f\u044c\u0451 \u0441\u0443\u0434\u044c\u0431\u044b",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -13256,7 +13256,7 @@
       "kind": "item",
       "internalName": "SpearofPaleolith",
       "displayName": "Spearof Paleolith",
-      "displayNameRu": "Spear of Paleolith",
+      "displayNameRu": "\u041a\u043e\u043f\u044c\u0451 \u043f\u0430\u043b\u0435\u043e\u043b\u0438\u0442\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -13307,7 +13307,7 @@
       "kind": "item",
       "internalName": "SpelunkersAmulet",
       "displayName": "Spelunkers Amulet",
-      "displayNameRu": "Spelunker's Amulet",
+      "displayNameRu": "\u0410\u043c\u0443\u043b\u0435\u0442 \u0441\u043f\u0435\u043b\u0435\u043e\u043b\u043e\u0433\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -13345,7 +13345,7 @@
       "kind": "item",
       "internalName": "SpineOfThanatos",
       "displayName": "Spine Of Thanatos",
-      "displayNameRu": "Spine of Thanatos",
+      "displayNameRu": "\u0425\u0440\u0435\u0431\u0435\u0442 \u0422\u0430\u043d\u0430\u0442\u043e\u0441\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -13423,7 +13423,7 @@
       "kind": "item",
       "internalName": "StaffOfNecrosteocytes",
       "displayName": "Staff Of Necrosteocytes",
-      "displayNameRu": "Staff of Necrosteocytes",
+      "displayNameRu": "\u041f\u043e\u0441\u043e\u0445 \u043d\u0435\u043a\u0440\u043e\u0441\u0442\u0435\u043e\u0446\u0438\u0442\u0430",
       "category": "weapon",
       "tags": [
         "buff",
@@ -13436,7 +13436,7 @@
       "kind": "item",
       "internalName": "StaffofBlushie",
       "displayName": "Staffof Blushie",
-      "displayNameRu": "Staff of Blushie",
+      "displayNameRu": "\u041f\u043e\u0441\u043e\u0445 \u0411\u043b\u0430\u0448\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -13501,7 +13501,7 @@
       "kind": "item",
       "internalName": "StarTaintedGenerator",
       "displayName": "Star Tainted Generator",
-      "displayNameRu": "Star-Tainted Generator",
+      "displayNameRu": "\u0417\u0432\u0451\u0437\u0434\u043d\u043e-\u0437\u0430\u0440\u0430\u0436\u0451\u043d\u043d\u044b\u0439 \u0433\u0435\u043d\u0435\u0440\u0430\u0442\u043e\u0440",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -13589,7 +13589,7 @@
       "kind": "item",
       "internalName": "StarofDestruction",
       "displayName": "Starof Destruction",
-      "displayNameRu": "Star of Destruction",
+      "displayNameRu": "\u0417\u0432\u0435\u0437\u0434\u0430 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043d\u0438\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -13660,7 +13660,7 @@
       "kind": "item",
       "internalName": "StatigelHeadMagic",
       "displayName": "Statigel Head Magic",
-      "displayNameRu": "Statigel Cap",
+      "displayNameRu": "\u0421\u0442\u0430\u0442\u0438\u0433\u0435\u043b\u0435\u0432\u044b\u0439 \u043a\u043e\u043b\u043f\u0430\u043a",
       "category": "armor",
       "tags": [
         "armor",
@@ -13676,7 +13676,7 @@
       "kind": "item",
       "internalName": "StatigelHeadMelee",
       "displayName": "Statigel Head Melee",
-      "displayNameRu": "Statigel Helm",
+      "displayNameRu": "\u0421\u0442\u0430\u0442\u0438\u0433\u0435\u043b\u0435\u0432\u044b\u0439 \u0448\u043b\u0435\u043c",
       "category": "armor",
       "tags": [
         "armor",
@@ -13692,7 +13692,7 @@
       "kind": "item",
       "internalName": "StatigelHeadRanged",
       "displayName": "Statigel Head Ranged",
-      "displayNameRu": "Statigel Headgear",
+      "displayNameRu": "\u0421\u0442\u0430\u0442\u0438\u0433\u0435\u043b\u0435\u0432\u044b\u0439 \u0433\u043e\u043b\u043e\u0432\u043d\u043e\u0439 \u0443\u0431\u043e\u0440",
       "category": "armor",
       "tags": [
         "armor",
@@ -13708,7 +13708,7 @@
       "kind": "item",
       "internalName": "StatigelHeadRogue",
       "displayName": "Statigel Head Rogue",
-      "displayNameRu": "Statigel Mask",
+      "displayNameRu": "\u0421\u0442\u0430\u0442\u0438\u0433\u0435\u043b\u0435\u0432\u0430\u044f \u043c\u0430\u0441\u043a\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -13724,7 +13724,7 @@
       "kind": "item",
       "internalName": "StatigelHeadSummon",
       "displayName": "Statigel Head Summon",
-      "displayNameRu": "Statigel Hood",
+      "displayNameRu": "\u0421\u0442\u0430\u0442\u0438\u0433\u0435\u043b\u0435\u0432\u044b\u0439 \u043a\u0430\u043f\u044e\u0448\u043e\u043d",
       "category": "armor",
       "tags": [
         "armor",
@@ -13740,7 +13740,7 @@
       "kind": "item",
       "internalName": "StatisBlessing",
       "displayName": "Statis Blessing",
-      "displayNameRu": "Statis' Blessing",
+      "displayNameRu": "\u0411\u043b\u0430\u0433\u043e\u0441\u043b\u043e\u0432\u0435\u043d\u0438\u0435 \u0421\u0442\u0430\u0442\u0438\u0441\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -13752,7 +13752,7 @@
       "kind": "item",
       "internalName": "StatisCurse",
       "displayName": "Statis Curse",
-      "displayNameRu": "Statis' Curse",
+      "displayNameRu": "\u041f\u0440\u043e\u043a\u043b\u044f\u0442\u0438\u0435 \u0421\u0442\u0430\u0442\u0438\u0441\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -13764,7 +13764,7 @@
       "kind": "item",
       "internalName": "StatisNinjaBelt",
       "displayName": "Statis Ninja Belt",
-      "displayNameRu": "Statis' Ninja Belt",
+      "displayNameRu": "\u041f\u043e\u044f\u0441 \u043d\u0438\u043d\u0434\u0437\u044f \u0421\u0442\u0430\u0442\u0438\u0441\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -13776,7 +13776,7 @@
       "kind": "item",
       "internalName": "StatisVoidSash",
       "displayName": "Statis Void Sash",
-      "displayNameRu": "Statis' Void Sash",
+      "displayNameRu": "\u041f\u0443\u0441\u0442\u043e\u0442\u043d\u044b\u0439 \u043a\u0443\u0448\u0430\u043a \u0421\u0442\u0430\u0442\u0438\u0441\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -14238,7 +14238,7 @@
       "kind": "item",
       "internalName": "SuspiciousLookingNOU",
       "displayName": "Suspicious Looking NOU",
-      "displayNameRu": "Suspicious Looking NO U",
+      "displayNameRu": "\u041f\u043e\u0434\u043e\u0437\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0432\u044b\u0433\u043b\u044f\u0434\u044f\u0449\u0438\u0439 \u041d\u0415\u0422 \u0422\u042b",
       "category": "buff",
       "tags": [
         "buff"
@@ -14315,7 +14315,7 @@
       "kind": "item",
       "internalName": "TacticiansTrumpCard",
       "displayName": "Tacticians Trump Card",
-      "displayNameRu": "Tactician's Trump Card",
+      "displayNameRu": "\u041a\u043e\u0437\u044b\u0440\u044c \u0441\u0442\u0440\u0430\u0442\u0435\u0433\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -14357,7 +14357,7 @@
       "kind": "item",
       "internalName": "TarragonHeadMagic",
       "displayName": "Tarragon Head Magic",
-      "displayNameRu": "Tarragon Mask",
+      "displayNameRu": "\u042d\u0441\u0442\u0440\u0430\u0433\u043e\u043d\u043e\u0432\u0430\u044f \u043c\u0430\u0441\u043a\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -14373,7 +14373,7 @@
       "kind": "item",
       "internalName": "TarragonHeadMelee",
       "displayName": "Tarragon Head Melee",
-      "displayNameRu": "Tarragon Helm",
+      "displayNameRu": "\u042d\u0441\u0442\u0440\u0430\u0433\u043e\u043d\u043e\u0432\u044b\u0439 \u0448\u043b\u0435\u043c",
       "category": "armor",
       "tags": [
         "armor",
@@ -14389,7 +14389,7 @@
       "kind": "item",
       "internalName": "TarragonHeadRanged",
       "displayName": "Tarragon Head Ranged",
-      "displayNameRu": "Tarragon Visage",
+      "displayNameRu": "\u042d\u0441\u0442\u0440\u0430\u0433\u043e\u043d\u043e\u0432\u044b\u0439 \u043b\u0438\u043a",
       "category": "armor",
       "tags": [
         "armor",
@@ -14405,7 +14405,7 @@
       "kind": "item",
       "internalName": "TarragonHeadRogue",
       "displayName": "Tarragon Head Rogue",
-      "displayNameRu": "Tarragon Helmet",
+      "displayNameRu": "\u042d\u0441\u0442\u0440\u0430\u0433\u043e\u043d\u043e\u0432\u0430\u044f \u043a\u0430\u0441\u043a\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -14421,7 +14421,7 @@
       "kind": "item",
       "internalName": "TarragonHeadSummon",
       "displayName": "Tarragon Head Summon",
-      "displayNameRu": "Tarragon Horned Helm",
+      "displayNameRu": "\u042d\u0441\u0442\u0440\u0430\u0433\u043e\u043d\u043e\u0432\u044b\u0439 \u0440\u043e\u0433\u0430\u0442\u044b\u0439 \u0448\u043b\u0435\u043c",
       "category": "armor",
       "tags": [
         "armor",
@@ -14504,7 +14504,7 @@
       "kind": "item",
       "internalName": "TearsofHeaven",
       "displayName": "Tearsof Heaven",
-      "displayNameRu": "Tears of Heaven",
+      "displayNameRu": "\u0421\u043b\u0451\u0437\u044b \u043d\u0435\u0431\u0435\u0441",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -14634,7 +14634,7 @@
       "kind": "item",
       "internalName": "TeslasAmulet",
       "displayName": "Teslas Amulet",
-      "displayNameRu": "Tesla's Amulet",
+      "displayNameRu": "\u0410\u043c\u0443\u043b\u0435\u0442 \u0422\u0435\u0441\u043b\u044b",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -14699,7 +14699,7 @@
       "kind": "item",
       "internalName": "TheAnomalysNanogun",
       "displayName": "The Anomalys Nanogun",
-      "displayNameRu": "The Anomaly's Nanogun",
+      "displayNameRu": "\u041d\u0430\u043d\u043e\u043f\u0443\u0448\u043a\u0430 \u0410\u043d\u043e\u043c\u0430\u043b\u0438\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -14800,7 +14800,7 @@
       "kind": "item",
       "internalName": "TheCommandersCap",
       "displayName": "The Commanders Cap",
-      "displayNameRu": "The Commander's Cap",
+      "displayNameRu": "\u0424\u0443\u0440\u0430\u0436\u043a\u0430 \u043a\u043e\u043c\u0430\u043d\u0434\u0438\u0440\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -14828,7 +14828,7 @@
       "kind": "item",
       "internalName": "TheDanceofLight",
       "displayName": "The Danceof Light",
-      "displayNameRu": "The Dance of Light",
+      "displayNameRu": "\u0422\u0430\u043d\u0435\u0446 \u0441\u0432\u0435\u0442\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -14919,7 +14919,7 @@
       "kind": "item",
       "internalName": "TheGodsGambit",
       "displayName": "The Gods Gambit",
-      "displayNameRu": "The God's Gambit",
+      "displayNameRu": "\u0413\u0430\u043c\u0431\u0438\u0442 \u0411\u043e\u0433\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -15205,7 +15205,7 @@
       "kind": "item",
       "internalName": "ThiefsDime",
       "displayName": "Thiefs Dime",
-      "displayNameRu": "Thief's Dime",
+      "displayNameRu": "\u0414\u0430\u0439\u043c \u0432\u043e\u0440\u0430",
       "category": "buff",
       "tags": [
         "buff"
@@ -15230,7 +15230,7 @@
       "kind": "item",
       "internalName": "ThreadOfEradication",
       "displayName": "Thread Of Eradication",
-      "displayNameRu": "Thread of Eradication",
+      "displayNameRu": "\u041d\u0438\u0442\u044c \u0438\u0441\u043a\u043e\u0440\u0435\u043d\u0435\u043d\u0438\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -15459,7 +15459,7 @@
       "kind": "item",
       "internalName": "TrashmanTrashcan",
       "displayName": "Trashman Trashcan",
-      "displayNameRu": "Trash Can",
+      "displayNameRu": "\u0423\u0440\u043d\u0430",
       "category": "buff",
       "tags": [
         "buff"
@@ -15471,7 +15471,7 @@
       "kind": "item",
       "internalName": "TriactisTruePaladinianMageHammerofMight",
       "displayName": "Triactis True Paladinian Mage Hammerof Might",
-      "displayNameRu": "Triactis' True Paladinian Mage-Hammer of Might",
+      "displayNameRu": "\u0418\u0441\u0442\u0438\u043d\u043d\u044b\u0439 \u043f\u0430\u043b\u0430\u0434\u0438\u043d\u0441\u043a\u0438\u0439 \u043c\u0430\u0433-\u043c\u043e\u043b\u043e\u0442 \u043c\u043e\u0433\u0443\u0449\u0435\u0441\u0442\u0432\u0430 \u0422\u0440\u0438\u0430\u043a\u0442\u0438\u0441\u0430",
       "category": "other",
       "tags": [
         "weapon",
@@ -15484,7 +15484,7 @@
       "kind": "item",
       "internalName": "TrinketofChi",
       "displayName": "Trinketof Chi",
-      "displayNameRu": "Trinket of Chi",
+      "displayNameRu": "\u0411\u0440\u0435\u043b\u043e\u043a \u0446\u0438",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -15496,7 +15496,7 @@
       "kind": "item",
       "internalName": "TrueArkoftheAncients",
       "displayName": "True Arkofthe Ancients",
-      "displayNameRu": "Ark of the Ancients",
+      "displayNameRu": "\u041a\u043e\u0432\u0447\u0435\u0433 \u0434\u0440\u0435\u0432\u043d\u0438\u0445",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -15509,7 +15509,7 @@
       "kind": "item",
       "internalName": "TrueBiomeBlade",
       "displayName": "True Biome Blade",
-      "displayNameRu": "Biome Blade",
+      "displayNameRu": "\u041a\u043b\u0438\u043d\u043e\u043a \u0431\u0438\u043e\u043c\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -15522,7 +15522,7 @@
       "kind": "item",
       "internalName": "TrueCausticEdge",
       "displayName": "True Caustic Edge",
-      "displayNameRu": "Caustic Edge",
+      "displayNameRu": "\u0415\u0434\u043a\u0430\u044f \u0433\u0440\u0430\u043d\u044c",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -15587,7 +15587,7 @@
       "kind": "item",
       "internalName": "TyphonsGreed",
       "displayName": "Typhons Greed",
-      "displayNameRu": "Typhon's Greed",
+      "displayNameRu": "\u0416\u0430\u0434\u043d\u043e\u0441\u0442\u044c \u0422\u0438\u0444\u043e\u043d\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -15600,7 +15600,7 @@
       "kind": "item",
       "internalName": "TyrannysEnd",
       "displayName": "Tyrannys End",
-      "displayNameRu": "Tyranny's End",
+      "displayNameRu": "\u041a\u043e\u043d\u0435\u0446 \u0442\u0438\u0440\u0430\u043d\u0438\u0438",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -15700,7 +15700,7 @@
       "kind": "item",
       "internalName": "UndinesRetribution",
       "displayName": "Undines Retribution",
-      "displayNameRu": "Undine's Retribution",
+      "displayNameRu": "\u0412\u043e\u0437\u043c\u0435\u0437\u0434\u0438\u0435 \u0423\u043d\u0434\u0438\u043d\u044b",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -15751,7 +15751,7 @@
       "kind": "item",
       "internalName": "UnstableCastersGauntlet",
       "displayName": "Unstable Casters Gauntlet",
-      "displayNameRu": "Unstable Caster's Gauntlet",
+      "displayNameRu": "\u041f\u0435\u0440\u0447\u0430\u0442\u043a\u0430 \u043d\u0435\u0441\u0442\u0430\u0431\u0438\u043b\u044c\u043d\u043e\u0433\u043e \u0447\u0430\u0440\u043e\u0434\u0435\u044f",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -16066,7 +16066,7 @@
       "kind": "item",
       "internalName": "VictideHeadMagic",
       "displayName": "Victide Head Magic",
-      "displayNameRu": "Victide Hermit Helmet",
+      "displayNameRu": "\u0428\u043b\u0435\u043c \u043e\u0442\u0448\u0435\u043b\u044c\u043d\u0438\u043a\u0430 \u043f\u0440\u0438\u043b\u0438\u0432\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -16082,7 +16082,7 @@
       "kind": "item",
       "internalName": "VictideHeadMelee",
       "displayName": "Victide Head Melee",
-      "displayNameRu": "Victide Shellmet",
+      "displayNameRu": "\u0428\u043b\u0435\u043c\u0430\u043a\u0443\u0448\u043a\u0430 \u043f\u0440\u0438\u043b\u0438\u0432\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -16098,7 +16098,7 @@
       "kind": "item",
       "internalName": "VictideHeadRanged",
       "displayName": "Victide Head Ranged",
-      "displayNameRu": "Victide Coral Turban",
+      "displayNameRu": "\u041a\u043e\u0440\u0430\u043b\u043b\u043e\u0432\u044b\u0439 \u0442\u044e\u0440\u0431\u0430\u043d \u043f\u0440\u0438\u043b\u0438\u0432\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -16114,7 +16114,7 @@
       "kind": "item",
       "internalName": "VictideHeadRogue",
       "displayName": "Victide Head Rogue",
-      "displayNameRu": "Victide Headcrab",
+      "displayNameRu": "\u041d\u0430\u043a\u0440\u0430\u0431\u043e\u0432\u043d\u0438\u043a \u043f\u0440\u0438\u043b\u0438\u0432\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -16130,7 +16130,7 @@
       "kind": "item",
       "internalName": "VictideHeadSummon",
       "displayName": "Victide Head Summon",
-      "displayNameRu": "Victide Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u043f\u0440\u0438\u043b\u0438\u0432\u0430",
       "category": "armor",
       "tags": [
         "armor",
@@ -16378,7 +16378,7 @@
       "kind": "item",
       "internalName": "VoidofCalamity",
       "displayName": "Voidof Calamity",
-      "displayNameRu": "Void of Calamity",
+      "displayNameRu": "\u041f\u0443\u0441\u0442\u043e\u0442\u0430 \u0431\u0435\u0434\u0441\u0442\u0432\u0438\u044f",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -16390,7 +16390,7 @@
       "kind": "item",
       "internalName": "VoidofExtinction",
       "displayName": "Voidof Extinction",
-      "displayNameRu": "Void of Extinction",
+      "displayNameRu": "\u041f\u0443\u0441\u0442\u043e\u0442\u0430 \u0432\u044b\u043c\u0438\u0440\u0430\u043d\u0438\u044f",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -16479,7 +16479,7 @@
       "kind": "item",
       "internalName": "Vulcan",
       "displayName": "Vulcan",
-      "displayNameRu": "R-GSS: Vulcan",
+      "displayNameRu": "\u0420-\u0413\u0421\u0421: \u0412\u0443\u043b\u043a\u0430\u043d",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -16505,7 +16505,7 @@
       "kind": "item",
       "internalName": "WarbanneroftheRighteous",
       "displayName": "Warbannerofthe Righteous",
-      "displayNameRu": "Warbanner of the Righteous",
+      "displayNameRu": "\u0411\u043e\u0435\u0432\u043e\u0435 \u0437\u043d\u0430\u043c\u044f \u043f\u0440\u0430\u0432\u0435\u0434\u043d\u044b\u0445",
       "category": "other",
       "tags": [
         "accessory"
@@ -16517,7 +16517,7 @@
       "kind": "item",
       "internalName": "WarloksMoonFist",
       "displayName": "Warloks Moon Fist",
-      "displayNameRu": "Warloks' Moon Fist",
+      "displayNameRu": "\u041b\u0443\u043d\u043d\u044b\u0439 \u043a\u0443\u043b\u0430\u043a \u0447\u0435\u0440\u043d\u043e\u043a\u043d\u0438\u0436\u043d\u0438\u043a\u0430",
       "category": "weapon",
       "tags": [
         "buff",
@@ -16673,7 +16673,7 @@
       "kind": "item",
       "internalName": "WingsofRebirth",
       "displayName": "Wingsof Rebirth",
-      "displayNameRu": "Wings of Rebirth",
+      "displayNameRu": "\u041a\u0440\u044b\u043b\u044c\u044f \u0432\u043e\u0437\u0440\u043e\u0436\u0434\u0435\u043d\u0438\u044f",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -16685,7 +16685,7 @@
       "kind": "item",
       "internalName": "WintersFury",
       "displayName": "Winters Fury",
-      "displayNameRu": "Winter's Fury",
+      "displayNameRu": "\u042f\u0440\u043e\u0441\u0442\u044c \u0437\u0438\u043c\u044b",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -16788,7 +16788,7 @@
       "kind": "item",
       "internalName": "WulfrumFusionCannon",
       "displayName": "Wulfrum Fusion Cannon",
-      "displayNameRu": "Experimental Wulfrum Fusion Array",
+      "displayNameRu": "\u041f\u0440\u043e\u0442\u043e\u0442\u0438\u043f \u0432\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u043e\u0433\u043e \u043c\u043d\u043e\u0433\u043e\u043f\u043e\u0442\u043e\u0447\u043d\u043e\u0433\u043e \u0443\u0441\u043a\u043e\u0440\u0438\u0442\u0435\u043b\u044f \u043c\u0430\u0441\u0441",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -16801,7 +16801,7 @@
       "kind": "item",
       "internalName": "WulfrumHat",
       "displayName": "Wulfrum Hat",
-      "displayNameRu": "Wulfrum Hat & Goggles",
+      "displayNameRu": "\u0412\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u0430\u044f \u0448\u043b\u044f\u043f\u0430 \u0441 \u043e\u0447\u043a\u0430\u043c\u0438",
       "category": "armor",
       "tags": [
         "armor",
@@ -16900,7 +16900,7 @@
       "kind": "item",
       "internalName": "WyvernsCall",
       "displayName": "Wyverns Call",
-      "displayNameRu": "Wyvern's Call",
+      "displayNameRu": "\u0417\u043e\u0432 \u0432\u0438\u0432\u0435\u0440\u043d\u044b",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -16913,7 +16913,7 @@
       "kind": "item",
       "internalName": "XyksBlessingBlue",
       "displayName": "Xyks Blessing Blue",
-      "displayNameRu": "Xyk's Blessing (Blue)",
+      "displayNameRu": "\u0411\u043b\u0430\u0433\u043e\u0441\u043b\u043e\u0432\u0435\u043d\u0438\u0435 Xyk (\u0421\u0438\u043d\u0438\u0439)",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -16925,7 +16925,7 @@
       "kind": "item",
       "internalName": "XyksBlessingOrange",
       "displayName": "Xyks Blessing Orange",
-      "displayNameRu": "Xyk's Blessing (Orange)",
+      "displayNameRu": "\u0411\u043b\u0430\u0433\u043e\u0441\u043b\u043e\u0432\u0435\u043d\u0438\u0435 Xyk (\u041e\u0440\u0430\u043d\u0436\u0435\u0432\u044b\u0439)",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -16950,7 +16950,7 @@
       "kind": "item",
       "internalName": "YharimsCrystal",
       "displayName": "Yharims Crystal",
-      "displayNameRu": "Yharim's Crystal",
+      "displayNameRu": "\u041a\u0440\u0438\u0441\u0442\u0430\u043b\u043b \u042f\u0440\u0438\u043c\u0430",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -16963,7 +16963,7 @@
       "kind": "item",
       "internalName": "YharimsGift",
       "displayName": "Yharims Gift",
-      "displayNameRu": "Yharim's Gift",
+      "displayNameRu": "\u0414\u0430\u0440 \u042f\u0440\u0438\u043c\u0430",
       "category": "accessory",
       "tags": [
         "accessory"
@@ -16991,7 +16991,7 @@
       "kind": "item",
       "internalName": "YharonsKindleStaff",
       "displayName": "Yharons Kindle Staff",
-      "displayNameRu": "Yharon's Kindle Staff",
+      "displayNameRu": "\u0412\u043e\u0441\u043f\u043b\u0430\u043c\u0435\u043d\u044f\u044e\u0449\u0438\u0439 \u043f\u043e\u0441\u043e\u0445 \u042f\u0440\u043e\u043d\u0430",
       "category": "weapon",
       "tags": [
         "buff",
@@ -17004,7 +17004,7 @@
       "kind": "item",
       "internalName": "YinYo",
       "displayName": "Yin Yo",
-      "displayNameRu": "Yin-Yo",
+      "displayNameRu": "\u0418\u043d\u044c-\u0419\u043e",
       "category": "weapon",
       "tags": [
         "weapon",
@@ -17274,7 +17274,7 @@
       "kind": "material",
       "internalName": "EssenceofEleum",
       "displayName": "Essenceof Eleum",
-      "displayNameRu": "Essence of Eleum",
+      "displayNameRu": "\u042d\u0441\u0441\u0435\u043d\u0446\u0438\u044f \u042d\u043b\u0435\u0443\u043c\u0430",
       "category": "other",
       "tags": [
         "material"
@@ -17286,7 +17286,7 @@
       "kind": "material",
       "internalName": "EssenceofHavoc",
       "displayName": "Essenceof Havoc",
-      "displayNameRu": "Essence of Havoc",
+      "displayNameRu": "\u042d\u0441\u0441\u0435\u043d\u0446\u0438\u044f \u0445\u0430\u043e\u0441\u0430",
       "category": "other",
       "tags": [
         "material"
@@ -17298,7 +17298,7 @@
       "kind": "material",
       "internalName": "EssenceofSunlight",
       "displayName": "Essenceof Sunlight",
-      "displayNameRu": "Essence of Sunlight",
+      "displayNameRu": "\u042d\u0441\u0441\u0435\u043d\u0446\u0438\u044f \u0441\u043e\u043b\u043d\u0435\u0447\u043d\u043e\u0433\u043e \u0441\u0432\u0435\u0442\u0430",
       "category": "other",
       "tags": [
         "material"
@@ -17464,7 +17464,7 @@
       "kind": "ore",
       "internalName": "AerialiteOreDisenchanted",
       "displayName": "Aerialite Ore Disenchanted",
-      "displayNameRu": "Disenchanted Aerialite Ore",
+      "displayNameRu": "\u041e\u043f\u0443\u0441\u0442\u043e\u0448\u0451\u043d\u043d\u0430\u044f \u0430\u044d\u0440\u0438\u0430\u043b\u0438\u0442\u043e\u0432\u0430\u044f \u0440\u0443\u0434\u0430",
       "category": "other",
       "tags": [
         "ore",
@@ -17553,7 +17553,7 @@
       "kind": "ore",
       "internalName": "CoreofCalamity",
       "displayName": "Coreof Calamity",
-      "displayNameRu": "Core of Calamity",
+      "displayNameRu": "\u042f\u0434\u0440\u043e \u0431\u0435\u0434\u0441\u0442\u0432\u0438\u044f",
       "category": "other",
       "tags": [
         "ore"
@@ -17668,7 +17668,7 @@
       "kind": "ore",
       "internalName": "LoreAbyss",
       "displayName": "Lore Abyss",
-      "displayNameRu": "The Abyss",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0411\u0435\u0437\u0434\u043d\u0430)",
       "category": "other",
       "tags": [
         "ore"
@@ -17680,7 +17680,7 @@
       "kind": "ore",
       "internalName": "LoreAquaticScourge",
       "displayName": "Lore Aquatic Scourge",
-      "displayNameRu": "Aquatic Scourge",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0410\u043a\u0432\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0431\u0438\u0447)",
       "category": "other",
       "tags": [
         "ore"
@@ -17692,7 +17692,7 @@
       "kind": "ore",
       "internalName": "LoreArchmage",
       "displayName": "Lore Archmage",
-      "displayNameRu": "The Archmage",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0410\u0440\u0445\u0438\u043c\u0430\u0433)",
       "category": "other",
       "tags": [
         "ore"
@@ -17704,7 +17704,7 @@
       "kind": "ore",
       "internalName": "LoreAstralInfection",
       "displayName": "Lore Astral Infection",
-      "displayNameRu": "Astral Infection",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0410\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u0438\u043d\u0444\u0435\u043a\u0446\u0438\u044f)",
       "category": "other",
       "tags": [
         "ore"
@@ -17716,7 +17716,7 @@
       "kind": "ore",
       "internalName": "LoreAstrumAureus",
       "displayName": "Lore Astrum Aureus",
-      "displayNameRu": "Astrum Aureus",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0410\u0441\u0442\u0440\u0443\u043c \u0410\u0440\u0435\u0443\u0441)",
       "category": "other",
       "tags": [
         "ore"
@@ -17728,7 +17728,7 @@
       "kind": "ore",
       "internalName": "LoreAstrumDeus",
       "displayName": "Lore Astrum Deus",
-      "displayNameRu": "Astrum Deus",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0410\u0441\u0442\u0440\u0443\u043c \u0414\u0435\u0443\u0441)",
       "category": "other",
       "tags": [
         "ore"
@@ -17740,7 +17740,7 @@
       "kind": "ore",
       "internalName": "LoreAwakening",
       "displayName": "Lore Awakening",
-      "displayNameRu": "Awakening",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u0440\u043e\u0431\u0443\u0436\u0434\u0435\u043d\u0438\u0435)",
       "category": "other",
       "tags": [
         "ore"
@@ -17752,7 +17752,7 @@
       "kind": "ore",
       "internalName": "LoreAzafure",
       "displayName": "Lore Azafure",
-      "displayNameRu": "Azafure",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0410\u0437\u0430\u0444\u0443\u0440)",
       "category": "other",
       "tags": [
         "ore"
@@ -17764,7 +17764,7 @@
       "kind": "ore",
       "internalName": "LoreBloodMoon",
       "displayName": "Lore Blood Moon",
-      "displayNameRu": "Blood Moon",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041a\u0440\u043e\u0432\u0430\u0432\u0430\u044f \u043b\u0443\u043d\u0430)",
       "category": "other",
       "tags": [
         "ore"
@@ -17776,7 +17776,7 @@
       "kind": "ore",
       "internalName": "LoreBrainofCthulhu",
       "displayName": "Lore Brainof Cthulhu",
-      "displayNameRu": "The Brain of Cthulhu",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041c\u043e\u0437\u0433 \u041a\u0442\u0443\u043b\u0445\u0443)",
       "category": "other",
       "tags": [
         "ore"
@@ -17788,7 +17788,7 @@
       "kind": "ore",
       "internalName": "LoreBrimstoneElemental",
       "displayName": "Lore Brimstone Elemental",
-      "displayNameRu": "Brimstone Elemental",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0421\u0435\u0440\u043d\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u043b\u044c)",
       "category": "other",
       "tags": [
         "ore"
@@ -17800,7 +17800,7 @@
       "kind": "ore",
       "internalName": "LoreCalamitas",
       "displayName": "Lore Calamitas",
-      "displayNameRu": "Calamitas",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041a\u0430\u043b\u0430\u043c\u0438\u0442\u0430\u0441)",
       "category": "other",
       "tags": [
         "ore"
@@ -17812,7 +17812,7 @@
       "kind": "ore",
       "internalName": "LoreCalamitasClone",
       "displayName": "Lore Calamitas Clone",
-      "displayNameRu": "Calamitas Clone",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041a\u043b\u043e\u043d \u041a\u0430\u043b\u0430\u043c\u0438\u0442\u0430\u0441)",
       "category": "other",
       "tags": [
         "ore"
@@ -17824,7 +17824,7 @@
       "kind": "ore",
       "internalName": "LoreCeaselessVoid",
       "displayName": "Lore Ceaseless Void",
-      "displayNameRu": "Ceaseless Void",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041d\u0435\u0441\u043a\u043e\u043d\u0447\u0430\u0435\u043c\u0430\u044f \u043f\u0443\u0441\u0442\u043e\u0442\u0430)",
       "category": "other",
       "tags": [
         "ore"
@@ -17836,7 +17836,7 @@
       "kind": "ore",
       "internalName": "LoreCorruption",
       "displayName": "Lore Corruption",
-      "displayNameRu": "The Corruption",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0418\u0441\u043a\u0430\u0436\u0435\u043d\u0438\u0435)",
       "category": "other",
       "tags": [
         "ore"
@@ -17848,7 +17848,7 @@
       "kind": "ore",
       "internalName": "LoreCrabulon",
       "displayName": "Lore Crabulon",
-      "displayNameRu": "Crabulon",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041a\u0440\u0430\u0431\u0443\u043b\u043e\u043d)",
       "category": "other",
       "tags": [
         "ore"
@@ -17860,7 +17860,7 @@
       "kind": "ore",
       "internalName": "LoreCrimson",
       "displayName": "Lore Crimson",
-      "displayNameRu": "The Crimson",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0411\u0430\u0433\u0440\u044f\u043d\u0435\u0446)",
       "category": "other",
       "tags": [
         "ore"
@@ -17872,7 +17872,7 @@
       "kind": "ore",
       "internalName": "LoreCynosure",
       "displayName": "Lore Cynosure",
-      "displayNameRu": "Cynosure",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0412\u0441\u0435\u043e\u0431\u0449\u0435\u0435 \u0432\u043d\u0438\u043c\u0430\u043d\u0438\u0435)",
       "category": "other",
       "tags": [
         "ore"
@@ -17884,7 +17884,7 @@
       "kind": "ore",
       "internalName": "LoreDesertScourge",
       "displayName": "Lore Desert Scourge",
-      "displayNameRu": "Desert Scourge",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u0443\u0441\u0442\u044b\u043d\u043d\u044b\u0439 \u0431\u0438\u0447)",
       "category": "other",
       "tags": [
         "ore"
@@ -17896,7 +17896,7 @@
       "kind": "ore",
       "internalName": "LoreDestroyer",
       "displayName": "Lore Destroyer",
-      "displayNameRu": "The Destroyer",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0423\u043d\u0438\u0447\u0442\u043e\u0436\u0438\u0442\u0435\u043b\u044c)",
       "category": "other",
       "tags": [
         "ore"
@@ -17908,7 +17908,7 @@
       "kind": "ore",
       "internalName": "LoreDevourerofGods",
       "displayName": "Lore Devourerof Gods",
-      "displayNameRu": "The Devourer of Gods",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u043e\u0436\u0438\u0440\u0430\u0442\u0435\u043b\u044c \u0431\u043e\u0433\u043e\u0432)",
       "category": "other",
       "tags": [
         "ore"
@@ -17920,7 +17920,7 @@
       "kind": "ore",
       "internalName": "LoreDragonfolly",
       "displayName": "Lore Dragonfolly",
-      "displayNameRu": "Dragonfolly",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u0441\u0435\u0432\u0434\u043e\u0434\u0440\u0430\u043a\u043e\u043d)",
       "category": "other",
       "tags": [
         "ore"
@@ -17932,7 +17932,7 @@
       "kind": "ore",
       "internalName": "LoreDukeFishron",
       "displayName": "Lore Duke Fishron",
-      "displayNameRu": "Duke Fishron",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0413\u0435\u0440\u0446\u043e\u0433 \u0420\u044b\u0431\u0440\u043e\u043d)",
       "category": "other",
       "tags": [
         "ore"
@@ -17944,7 +17944,7 @@
       "kind": "ore",
       "internalName": "LoreEaterofWorlds",
       "displayName": "Lore Eaterof Worlds",
-      "displayNameRu": "The Eater of Worlds",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u043e\u0436\u0438\u0440\u0430\u0442\u0435\u043b\u044c \u043c\u0438\u0440\u043e\u0432)",
       "category": "other",
       "tags": [
         "ore"
@@ -17956,7 +17956,7 @@
       "kind": "ore",
       "internalName": "LoreEmpressofLight",
       "displayName": "Lore Empressof Light",
-      "displayNameRu": "Empress of Light",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0418\u043c\u043f\u0435\u0440\u0430\u0442\u0440\u0438\u0446\u0430 \u0441\u0432\u0435\u0442\u0430)",
       "category": "other",
       "tags": [
         "ore"
@@ -17968,7 +17968,7 @@
       "kind": "ore",
       "internalName": "LoreExoMechs",
       "displayName": "Lore Exo Mechs",
-      "displayNameRu": "The Exo Mechanical Trio",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u042d\u043a\u0437\u043e-\u043c\u0435\u0445\u0430\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u0442\u0440\u0438\u043e)",
       "category": "other",
       "tags": [
         "ore"
@@ -17980,7 +17980,7 @@
       "kind": "ore",
       "internalName": "LoreEyeofCthulhu",
       "displayName": "Lore Eyeof Cthulhu",
-      "displayNameRu": "The Eye of Cthulhu",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0413\u043b\u0430\u0437 \u041a\u0442\u0443\u043b\u0445\u0443)",
       "category": "other",
       "tags": [
         "ore"
@@ -17992,7 +17992,7 @@
       "kind": "ore",
       "internalName": "LoreGolem",
       "displayName": "Lore Golem",
-      "displayNameRu": "Golem",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0413\u043e\u043b\u0435\u043c)",
       "category": "other",
       "tags": [
         "ore"
@@ -18004,7 +18004,7 @@
       "kind": "ore",
       "internalName": "LoreHiveMind",
       "displayName": "Lore Hive Mind",
-      "displayNameRu": "The Hive Mind",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0420\u0430\u0437\u0443\u043c \u0443\u043b\u044c\u044f)",
       "category": "other",
       "tags": [
         "ore"
@@ -18016,7 +18016,7 @@
       "kind": "ore",
       "internalName": "LoreKingSlime",
       "displayName": "Lore King Slime",
-      "displayNameRu": "King Slime",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041a\u043e\u0440\u043e\u043b\u044c \u0441\u043b\u0438\u0437\u043d\u0435\u0439)",
       "category": "other",
       "tags": [
         "ore"
@@ -18028,7 +18028,7 @@
       "kind": "ore",
       "internalName": "LoreLeviathanAnahita",
       "displayName": "Lore Leviathan Anahita",
-      "displayNameRu": "Leviathan and Anahita",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041b\u0435\u0432\u0438\u0430\u0444\u0430\u043d \u0438 \u0410\u043d\u0430\u0445\u0438\u0442\u0430)",
       "category": "other",
       "tags": [
         "ore"
@@ -18040,7 +18040,7 @@
       "kind": "ore",
       "internalName": "LoreMechs",
       "displayName": "Lore Mechs",
-      "displayNameRu": "The Mechanical Trio",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041c\u0435\u0445\u0430\u043d\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u0442\u0440\u0438\u043e)",
       "category": "other",
       "tags": [
         "ore"
@@ -18052,7 +18052,7 @@
       "kind": "ore",
       "internalName": "LoreOldDuke",
       "displayName": "Lore Old Duke",
-      "displayNameRu": "The Old Duke",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0421\u0442\u0430\u0440\u044b\u0439 \u0433\u0435\u0440\u0446\u043e\u0433)",
       "category": "other",
       "tags": [
         "ore"
@@ -18064,7 +18064,7 @@
       "kind": "ore",
       "internalName": "LorePerforators",
       "displayName": "Lore Perforators",
-      "displayNameRu": "The Perforators and Their Hive",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u0435\u0440\u0444\u043e\u0440\u0430\u0442\u043e\u0440\u044b \u0438 \u0438\u0445 \u0423\u043b\u0435\u0439)",
       "category": "other",
       "tags": [
         "ore"
@@ -18076,7 +18076,7 @@
       "kind": "ore",
       "internalName": "LorePlaguebringerGoliath",
       "displayName": "Lore Plaguebringer Goliath",
-      "displayNameRu": "Plaguebringer Goliath",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u0440\u0435\u0434\u0432\u0435\u0441\u0442\u043d\u0438\u0446\u0430 \u0447\u0443\u043c\u044b, \u0413\u043e\u043b\u0438\u0430\u0444)",
       "category": "other",
       "tags": [
         "ore"
@@ -18088,7 +18088,7 @@
       "kind": "ore",
       "internalName": "LorePlantera",
       "displayName": "Lore Plantera",
-      "displayNameRu": "Plantera",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u043b\u0430\u043d\u0442\u0435\u0440\u0430)",
       "category": "other",
       "tags": [
         "ore"
@@ -18100,7 +18100,7 @@
       "kind": "ore",
       "internalName": "LorePolterghast",
       "displayName": "Lore Polterghast",
-      "displayNameRu": "Polterghast",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u043e\u043b\u0442\u0435\u0440\u0433\u0430\u0441\u0442)",
       "category": "other",
       "tags": [
         "ore"
@@ -18112,7 +18112,7 @@
       "kind": "ore",
       "internalName": "LorePrelude",
       "displayName": "Lore Prelude",
-      "displayNameRu": "Prelude",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u0440\u043e\u043b\u043e\u0433)",
       "category": "other",
       "tags": [
         "ore"
@@ -18124,7 +18124,7 @@
       "kind": "ore",
       "internalName": "LoreProfanedGuardians",
       "displayName": "Lore Profaned Guardians",
-      "displayNameRu": "The Profaned Guardians",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041e\u0441\u043a\u0432\u0435\u0440\u043d\u0451\u043d\u043d\u044b\u0435 \u0441\u0442\u0440\u0430\u0436\u0438)",
       "category": "other",
       "tags": [
         "ore"
@@ -18136,7 +18136,7 @@
       "kind": "ore",
       "internalName": "LoreProvidence",
       "displayName": "Lore Providence",
-      "displayNameRu": "Providence, the Profaned Goddess",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u0440\u043e\u0432\u0438\u0434\u0435\u043d\u0441, \u041e\u0441\u043a\u0432\u0435\u0440\u043d\u0451\u043d\u043d\u0430\u044f \u0431\u043e\u0433\u0438\u043d\u044f)",
       "category": "other",
       "tags": [
         "ore"
@@ -18148,7 +18148,7 @@
       "kind": "ore",
       "internalName": "LoreQueenBee",
       "displayName": "Lore Queen Bee",
-      "displayNameRu": "Queen Bee",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0430 \u043f\u0447\u0451\u043b)",
       "category": "other",
       "tags": [
         "ore"
@@ -18160,7 +18160,7 @@
       "kind": "ore",
       "internalName": "LoreQueenSlime",
       "displayName": "Lore Queen Slime",
-      "displayNameRu": "Queen Slime",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0430 \u0441\u043b\u0438\u0437\u043d\u0435\u0439)",
       "category": "other",
       "tags": [
         "ore"
@@ -18172,7 +18172,7 @@
       "kind": "ore",
       "internalName": "LoreRavager",
       "displayName": "Lore Ravager",
-      "displayNameRu": "The Ravager",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0420\u0430\u0437\u0440\u0443\u0448\u0438\u0442\u0435\u043b\u044c)",
       "category": "other",
       "tags": [
         "ore"
@@ -18184,7 +18184,7 @@
       "kind": "ore",
       "internalName": "LoreRequiem",
       "displayName": "Lore Requiem",
-      "displayNameRu": "Requiem",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0420\u0435\u043a\u0432\u0438\u0435\u043c)",
       "category": "other",
       "tags": [
         "ore"
@@ -18196,7 +18196,7 @@
       "kind": "ore",
       "internalName": "LoreSignus",
       "displayName": "Lore Signus",
-      "displayNameRu": "Signus",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0421\u0438\u0433\u043d\u0443\u0441)",
       "category": "other",
       "tags": [
         "ore"
@@ -18208,7 +18208,7 @@
       "kind": "ore",
       "internalName": "LoreSkeletron",
       "displayName": "Lore Skeletron",
-      "displayNameRu": "Skeletron",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0421\u043a\u0435\u043b\u0435\u0442\u0440\u043e\u043d)",
       "category": "other",
       "tags": [
         "ore"
@@ -18220,7 +18220,7 @@
       "kind": "ore",
       "internalName": "LoreSkeletronPrime",
       "displayName": "Lore Skeletron Prime",
-      "displayNameRu": "Skeletron Prime",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0421\u043a\u0435\u043b\u0435\u0442\u0440\u043e\u043d \u041f\u0440\u0430\u0439\u043c)",
       "category": "other",
       "tags": [
         "ore"
@@ -18232,7 +18232,7 @@
       "kind": "ore",
       "internalName": "LoreSlimeGod",
       "displayName": "Lore Slime God",
-      "displayNameRu": "The Slime God",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0411\u043e\u0433 \u0441\u043b\u0438\u0437\u043d\u0435\u0439)",
       "category": "other",
       "tags": [
         "ore"
@@ -18244,7 +18244,7 @@
       "kind": "ore",
       "internalName": "LoreStormWeaver",
       "displayName": "Lore Storm Weaver",
-      "displayNameRu": "Storm Weaver",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0428\u0442\u043e\u0440\u043c\u043e\u0432\u043e\u0439 \u0442\u043a\u0430\u0447)",
       "category": "other",
       "tags": [
         "ore"
@@ -18256,7 +18256,7 @@
       "kind": "ore",
       "internalName": "LoreSulphurSea",
       "displayName": "Lore Sulphur Sea",
-      "displayNameRu": "Sulphur Sea",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0421\u0435\u0440\u043d\u0438\u0441\u0442\u043e\u0435 \u043c\u043e\u0440\u0435)",
       "category": "other",
       "tags": [
         "ore"
@@ -18268,7 +18268,7 @@
       "kind": "ore",
       "internalName": "LoreTwins",
       "displayName": "Lore Twins",
-      "displayNameRu": "The Twins",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0411\u043b\u0438\u0437\u043d\u0435\u0446\u044b)",
       "category": "other",
       "tags": [
         "ore"
@@ -18280,7 +18280,7 @@
       "kind": "ore",
       "internalName": "LoreUnderworld",
       "displayName": "Lore Underworld",
-      "displayNameRu": "The Underworld",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u041f\u0440\u0435\u0438\u0441\u043f\u043e\u0434\u043d\u044f\u044f)",
       "category": "other",
       "tags": [
         "ore"
@@ -18292,7 +18292,7 @@
       "kind": "ore",
       "internalName": "LoreWallofFlesh",
       "displayName": "Lore Wallof Flesh",
-      "displayNameRu": "The Wall of Flesh",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0421\u0442\u0435\u043d\u0430 \u043f\u043b\u043e\u0442\u0438)",
       "category": "other",
       "tags": [
         "ore"
@@ -18304,7 +18304,7 @@
       "kind": "ore",
       "internalName": "LoreYharon",
       "displayName": "Lore Yharon",
-      "displayNameRu": "Yharon, Resplendent Phoenix",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u042f\u0440\u043e\u043d, \u0412\u043e\u0441\u0445\u043e\u0434\u044f\u0449\u0438\u0439 \u0444\u0435\u043d\u0438\u043a\u0441)",
       "category": "other",
       "tags": [
         "ore"
@@ -18355,7 +18355,7 @@
       "kind": "ore",
       "internalName": "PlasmaDriveCore",
       "displayName": "Plasma Drive Core",
-      "displayNameRu": "Prototype Plasma Drive Core",
+      "displayNameRu": "\u041f\u0440\u043e\u0442\u043e\u0442\u0438\u043f \u044f\u0434\u0440\u0430 \u043f\u043b\u0430\u0437\u043c\u0435\u043d\u043d\u043e\u0433\u043e \u043f\u0440\u0438\u0432\u043e\u0434\u0430",
       "category": "other",
       "tags": [
         "ore"
@@ -18379,7 +18379,7 @@
       "kind": "ore",
       "internalName": "SandstormsCore",
       "displayName": "Sandstorms Core",
-      "displayNameRu": "Sandstorm's Core",
+      "displayNameRu": "\u042f\u0434\u0440\u043e \u043f\u0435\u0441\u0447\u0430\u043d\u043e\u0439 \u0431\u0443\u0440\u0438",
       "category": "other",
       "tags": [
         "ore"
@@ -18609,7 +18609,7 @@
       "kind": "other",
       "internalName": "AbyssFountainItem",
       "displayName": "Abyss Fountain Item",
-      "displayNameRu": "Abyss Water Fountain",
+      "displayNameRu": "\u0424\u043e\u043d\u0442\u0430\u043d \u0432\u043e\u0434\u044b \u0431\u0435\u0437\u0434\u043d\u044b",
       "category": "other",
       "tags": [
         "other",
@@ -18635,7 +18635,7 @@
       "kind": "other",
       "internalName": "AbyssGravelWallItem",
       "displayName": "Abyss Gravel Wall Item",
-      "displayNameRu": "Abyss Gravel Wall",
+      "displayNameRu": "\u0421\u0442\u0435\u043d\u0430 \u0438\u0437 \u0433\u0440\u0430\u0432\u0438\u044f \u0431\u0435\u0437\u0434\u043d\u044b",
       "category": "other",
       "tags": [
         "other",
@@ -18726,7 +18726,7 @@
       "kind": "other",
       "internalName": "AbyssTreasureChest",
       "displayName": "Abyss Treasure Chest",
-      "displayNameRu": "Ancient Treasure Chest",
+      "displayNameRu": "\u0414\u0440\u0435\u0432\u043d\u0438\u0439 \u0441\u0443\u043d\u0434\u0443\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438",
       "category": "other",
       "tags": [
         "other",
@@ -19050,7 +19050,7 @@
       "kind": "other",
       "internalName": "AcidwoodWallItem",
       "displayName": "Acidwood Wall Item",
-      "displayNameRu": "Acidwood Wall",
+      "displayNameRu": "\u0421\u0442\u0435\u043d\u0430 \u0438\u0437 \u043a\u0438\u0441\u043b\u043e\u0442\u043d\u043e\u0433\u043e \u0434\u0435\u0440\u0435\u0432\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -19179,7 +19179,7 @@
       "kind": "other",
       "internalName": "AgedBiolightItem",
       "displayName": "Aged Biolight Item",
-      "displayNameRu": "Aged Biolight",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u0430\u044f \u0431\u0438\u043e\u043b\u044e\u043c\u0438\u043d\u0435\u0441\u0446\u0435\u043d\u0442\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -19192,7 +19192,7 @@
       "kind": "other",
       "internalName": "AgedBlacklightItem",
       "displayName": "Aged Blacklight Item",
-      "displayNameRu": "Aged Blacklight",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u0430\u044f \u043b\u0430\u043c\u043f\u0430 \u0447\u0451\u0440\u043d\u043e\u0433\u043e \u0441\u0432\u0435\u0442\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -19205,7 +19205,7 @@
       "kind": "other",
       "internalName": "AgedCinderlightItem",
       "displayName": "Aged Cinderlight Item",
-      "displayNameRu": "Aged Cinderlight",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u0430\u044f \u043f\u0435\u043f\u0435\u043b\u044c\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -19218,7 +19218,7 @@
       "kind": "other",
       "internalName": "AgedFlamelightItem",
       "displayName": "Aged Flamelight Item",
-      "displayNameRu": "Aged Flamelight",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u0430\u044f \u043f\u043b\u0430\u043c\u0435\u043d\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -19231,7 +19231,7 @@
       "kind": "other",
       "internalName": "AgedFloodlightItem",
       "displayName": "Aged Floodlight Item",
-      "displayNameRu": "Aged Floodlight",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u0430\u044f \u043f\u0440\u043e\u0436\u0435\u043a\u0442\u043e\u0440\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -19244,7 +19244,7 @@
       "kind": "other",
       "internalName": "AgedFrostlightItem",
       "displayName": "Aged Frostlight Item",
-      "displayNameRu": "Aged Frostlight",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u0430\u044f \u043c\u043e\u0440\u043e\u0437\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -19257,7 +19257,7 @@
       "kind": "other",
       "internalName": "AgedLablightItem",
       "displayName": "Aged Lablight Item",
-      "displayNameRu": "Aged Lablight",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u0430\u044f \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -19270,7 +19270,7 @@
       "kind": "other",
       "internalName": "AgedLaboratoryConsoleItem",
       "displayName": "Aged Laboratory Console Item",
-      "displayNameRu": "Aged Laboratory Console",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u0430\u044f \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u043a\u043e\u043d\u0441\u043e\u043b\u044c",
       "category": "other",
       "tags": [
         "other",
@@ -19283,7 +19283,7 @@
       "kind": "other",
       "internalName": "AgedLaboratoryContainmentBoxItem",
       "displayName": "Aged Laboratory Containment Box Item",
-      "displayNameRu": "Aged Laboratory Containment Box",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u044b\u0439 \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440 \u0434\u043b\u044f \u0445\u0440\u0430\u043d\u0435\u043d\u0438\u044f",
       "category": "other",
       "tags": [
         "other",
@@ -19296,7 +19296,7 @@
       "kind": "other",
       "internalName": "AgedLaboratoryDisplayItem",
       "displayName": "Aged Laboratory Display Item",
-      "displayNameRu": "Aged Laboratory Display",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u044b\u0439 \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u0434\u0438\u0441\u043f\u043b\u0435\u0439",
       "category": "other",
       "tags": [
         "other",
@@ -19309,7 +19309,7 @@
       "kind": "other",
       "internalName": "AgedLaboratoryDoorItem",
       "displayName": "Aged Laboratory Door Item",
-      "displayNameRu": "Aged Laboratory Door",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u0430\u044f \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u0434\u0432\u0435\u0440\u044c",
       "category": "other",
       "tags": [
         "other",
@@ -19322,7 +19322,7 @@
       "kind": "other",
       "internalName": "AgedLaboratoryElectricPanelItem",
       "displayName": "Aged Laboratory Electric Panel Item",
-      "displayNameRu": "Aged Laboratory Electric Panel",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u044b\u0439 \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0449\u0438\u0442\u043e\u043a",
       "category": "other",
       "tags": [
         "other",
@@ -19335,7 +19335,7 @@
       "kind": "other",
       "internalName": "AgedLaboratoryScreenItem",
       "displayName": "Aged Laboratory Screen Item",
-      "displayNameRu": "Aged Laboratory Screen",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u044b\u0439 \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u044d\u043a\u0440\u0430\u043d",
       "category": "other",
       "tags": [
         "other",
@@ -19348,7 +19348,7 @@
       "kind": "other",
       "internalName": "AgedLaboratoryServerItem",
       "displayName": "Aged Laboratory Server Item",
-      "displayNameRu": "Aged Laboratory Server",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u044b\u0439 \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u0441\u0435\u0440\u0432\u0435\u0440",
       "category": "other",
       "tags": [
         "other",
@@ -19361,7 +19361,7 @@
       "kind": "other",
       "internalName": "AgedLaboratoryTerminalItem",
       "displayName": "Aged Laboratory Terminal Item",
-      "displayNameRu": "Aged Laboratory Terminal",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u044b\u0439 \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b",
       "category": "other",
       "tags": [
         "other",
@@ -19374,7 +19374,7 @@
       "kind": "other",
       "internalName": "AgedReinforcedCrateItem",
       "displayName": "Aged Reinforced Crate Item",
-      "displayNameRu": "Aged Reinforced Crate",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u044b\u0439 \u0443\u043a\u0440\u0435\u043f\u043b\u0451\u043d\u043d\u044b\u0439 \u044f\u0449\u0438\u043a",
       "category": "other",
       "tags": [
         "other",
@@ -19413,7 +19413,7 @@
       "kind": "other",
       "internalName": "AltarOfTheAccursedItem",
       "displayName": "Altar Of The Accursed Item",
-      "displayNameRu": "Altar of the Accursed",
+      "displayNameRu": "\u0410\u043b\u0442\u0430\u0440\u044c \u043f\u0440\u043e\u043a\u043b\u044f\u0442\u043e\u0433\u043e",
       "category": "other",
       "tags": [
         "other",
@@ -19971,7 +19971,7 @@
       "kind": "other",
       "internalName": "AndroombaItem",
       "displayName": "Androomba Item",
-      "displayNameRu": "Androomba",
+      "displayNameRu": "\u0410\u043d\u0434\u0440\u043e\u0431\u043e\u0442-\u043f\u044b\u043b\u0435\u0441\u043e\u0441",
       "category": "other",
       "tags": [
         "other",
@@ -20282,7 +20282,7 @@
       "kind": "other",
       "internalName": "AntiCystOintment",
       "displayName": "Anti Cyst Ointment",
-      "displayNameRu": "Anti-Cyst Ointment",
+      "displayNameRu": "\u041f\u0440\u043e\u0442\u0438\u0432\u043e\u043a\u0438\u0441\u0442\u043e\u0437\u043d\u0430\u044f \u043c\u0430\u0437\u044c",
       "category": "other",
       "tags": [
         "other"
@@ -20294,7 +20294,7 @@
       "kind": "other",
       "internalName": "AntiTumorOintment",
       "displayName": "Anti Tumor Ointment",
-      "displayNameRu": "Anti-Tumor Ointment",
+      "displayNameRu": "\u041f\u0440\u043e\u0442\u0438\u0432\u043e\u043e\u043f\u0443\u0445\u043e\u043b\u0435\u0432\u0430\u044f \u043c\u0430\u0437\u044c",
       "category": "other",
       "tags": [
         "other"
@@ -20319,7 +20319,7 @@
       "kind": "other",
       "internalName": "AquaticScourgeBag",
       "displayName": "Aquatic Scourge Bag",
-      "displayNameRu": "Treasure Bag (Aquatic Scourge)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0410\u043a\u0432\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0431\u0438\u0447)",
       "category": "other",
       "tags": [
         "other",
@@ -20746,7 +20746,7 @@
       "kind": "other",
       "internalName": "AshesofAnnihilation",
       "displayName": "Ashesof Annihilation",
-      "displayNameRu": "Ashes of Annihilation",
+      "displayNameRu": "\u041f\u0435\u043f\u0435\u043b \u0430\u043d\u043d\u0438\u0433\u0438\u043b\u044f\u0446\u0438\u0438",
       "category": "other",
       "tags": [
         "other"
@@ -20758,7 +20758,7 @@
       "kind": "other",
       "internalName": "AshesofCalamity",
       "displayName": "Ashesof Calamity",
-      "displayNameRu": "Ashes of Calamity",
+      "displayNameRu": "\u041f\u0435\u043f\u0435\u043b \u0431\u0435\u0434\u0441\u0442\u0432\u0438\u044f",
       "category": "other",
       "tags": [
         "other"
@@ -20783,7 +20783,7 @@
       "kind": "other",
       "internalName": "AstralBeaconItem",
       "displayName": "Astral Beacon Item",
-      "displayNameRu": "Astral Beacon",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043c\u0430\u044f\u043a",
       "category": "other",
       "tags": [
         "other",
@@ -20911,7 +20911,7 @@
       "kind": "other",
       "internalName": "AstralDye",
       "displayName": "Astral Dye",
-      "displayNameRu": "Astral Flesh Dye",
+      "displayNameRu": "\u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c \u0430\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u043f\u043b\u043e\u0442\u0438",
       "category": "other",
       "tags": [
         "other"
@@ -20923,7 +20923,7 @@
       "kind": "other",
       "internalName": "AstralFountainItem",
       "displayName": "Astral Fountain Item",
-      "displayNameRu": "Astral Water Fountain",
+      "displayNameRu": "\u0424\u043e\u043d\u0442\u0430\u043d \u0430\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0439 \u0432\u043e\u0434\u044b",
       "category": "other",
       "tags": [
         "other",
@@ -21207,7 +21207,7 @@
       "kind": "other",
       "internalName": "AstrumAureusBag",
       "displayName": "Astrum Aureus Bag",
-      "displayNameRu": "Treasure Bag (Astrum Aureus)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0410\u0441\u0442\u0440\u0443\u043c \u0410\u0440\u0435\u0443\u0441)",
       "category": "other",
       "tags": [
         "other",
@@ -21246,7 +21246,7 @@
       "kind": "other",
       "internalName": "AstrumDeusBag",
       "displayName": "Astrum Deus Bag",
-      "displayNameRu": "Treasure Bag (Astrum Deus)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0410\u0441\u0442\u0440\u0443\u043c \u0414\u0435\u0443\u0441)",
       "category": "other",
       "tags": [
         "other",
@@ -21492,7 +21492,7 @@
       "kind": "other",
       "internalName": "AxeofPurity",
       "displayName": "Axeof Purity",
-      "displayNameRu": "Axe of Purity",
+      "displayNameRu": "\u0422\u043e\u043f\u043e\u0440 \u0447\u0438\u0441\u0442\u043e\u0442\u044b",
       "category": "other",
       "tags": [
         "other",
@@ -21557,7 +21557,7 @@
       "kind": "other",
       "internalName": "BabyFlakCrabItem",
       "displayName": "Baby Flak Crab Item",
-      "displayNameRu": "Baby Flak Crab",
+      "displayNameRu": "\u041c\u0430\u043b\u0435\u043d\u044c\u043a\u0438\u0439 \u0437\u0435\u043d\u0438\u0442\u043d\u044b\u0439 \u043a\u0440\u0430\u0431",
       "category": "other",
       "tags": [
         "other",
@@ -21583,7 +21583,7 @@
       "kind": "other",
       "internalName": "BabyGhostBellItem",
       "displayName": "Baby Ghost Bell Item",
-      "displayNameRu": "Blue Baby Ghost Bell",
+      "displayNameRu": "\u0421\u0438\u043d\u0438\u0439 \u043c\u0430\u043b\u0435\u043d\u044c\u043a\u0438\u0439 \u043f\u0440\u0438\u0437\u0440\u0430\u0447\u043d\u044b\u0439 \u043a\u043e\u043b\u043e\u043a\u043e\u043b\u044c\u0447\u0438\u043a",
       "category": "other",
       "tags": [
         "other",
@@ -21621,7 +21621,7 @@
       "kind": "other",
       "internalName": "BallAndChain",
       "displayName": "Ball And Chain",
-      "displayNameRu": "Ball and Chain",
+      "displayNameRu": "\u0428\u0430\u0440 \u043d\u0430 \u0446\u0435\u043f\u0438",
       "category": "other",
       "tags": [
         "other"
@@ -21797,7 +21797,7 @@
       "kind": "other",
       "internalName": "BloodwormItem",
       "displayName": "Bloodworm Item",
-      "displayNameRu": "Bloodworm",
+      "displayNameRu": "\u041a\u0440\u043e\u0432\u0430\u0432\u044b\u0439 \u0447\u0435\u0440\u0432\u044c",
       "category": "other",
       "tags": [
         "other",
@@ -22220,7 +22220,7 @@
       "kind": "other",
       "internalName": "BrimstoneElementalBag",
       "displayName": "Brimstone Elemental Bag",
-      "displayNameRu": "Treasure Bag (Brimstone Elemental)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0421\u0435\u0440\u043d\u044b\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u043b\u044c)",
       "category": "other",
       "tags": [
         "other",
@@ -22259,7 +22259,7 @@
       "kind": "other",
       "internalName": "BrimstoneLavaFountainItem",
       "displayName": "Brimstone Lava Fountain Item",
-      "displayNameRu": "Brimstone Lava Fountain",
+      "displayNameRu": "\u0424\u043e\u043d\u0442\u0430\u043d \u0441\u0435\u0440\u043d\u043e\u0439 \u043b\u0430\u0432\u044b",
       "category": "other",
       "tags": [
         "other",
@@ -22336,7 +22336,7 @@
       "kind": "other",
       "internalName": "BrokenPlaguedBed",
       "displayName": "Broken Plagued Bed",
-      "displayNameRu": "Broken Plagued 'Bed'",
+      "displayNameRu": "\u0421\u043b\u043e\u043c\u0430\u043d\u043d\u0430\u044f \u0447\u0443\u043c\u043d\u0430\u044f \u00ab\u043a\u0440\u043e\u0432\u0430\u0442\u044c\u00bb",
       "category": "other",
       "tags": [
         "other",
@@ -22374,7 +22374,7 @@
       "kind": "other",
       "internalName": "CagedBiolightItem",
       "displayName": "Caged Biolight Item",
-      "displayNameRu": "Caged Biolight",
+      "displayNameRu": "\u0420\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u0431\u0438\u043e\u043b\u044e\u043c\u0438\u043d\u0435\u0441\u0446\u0435\u043d\u0442\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -22387,7 +22387,7 @@
       "kind": "other",
       "internalName": "CagedBlacklightItem",
       "displayName": "Caged Blacklight Item",
-      "displayNameRu": "Caged Blacklight",
+      "displayNameRu": "\u0420\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043b\u0430\u043c\u043f\u0430 \u0447\u0451\u0440\u043d\u043e\u0433\u043e \u0441\u0432\u0435\u0442\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -22400,7 +22400,7 @@
       "kind": "other",
       "internalName": "CagedCinderlightItem",
       "displayName": "Caged Cinderlight Item",
-      "displayNameRu": "Caged Cinderlight",
+      "displayNameRu": "\u0420\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043f\u0435\u043f\u0435\u043b\u044c\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -22413,7 +22413,7 @@
       "kind": "other",
       "internalName": "CagedFlamelightItem",
       "displayName": "Caged Flamelight Item",
-      "displayNameRu": "Caged Flamelight",
+      "displayNameRu": "\u0420\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043f\u043b\u0430\u043c\u0435\u043d\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -22426,7 +22426,7 @@
       "kind": "other",
       "internalName": "CagedFloodlightItem",
       "displayName": "Caged Floodlight Item",
-      "displayNameRu": "Caged Floodlight",
+      "displayNameRu": "\u0420\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043f\u0440\u043e\u0436\u0435\u043a\u0442\u043e\u0440\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -22439,7 +22439,7 @@
       "kind": "other",
       "internalName": "CagedFrostlightItem",
       "displayName": "Caged Frostlight Item",
-      "displayNameRu": "Caged Frostlight",
+      "displayNameRu": "\u0420\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043c\u043e\u0440\u043e\u0437\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -22452,7 +22452,7 @@
       "kind": "other",
       "internalName": "CagedLablightItem",
       "displayName": "Caged Lablight Item",
-      "displayNameRu": "Caged Lablight",
+      "displayNameRu": "\u0420\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -22465,7 +22465,7 @@
       "kind": "other",
       "internalName": "CalamitasCloneBag",
       "displayName": "Calamitas Clone Bag",
-      "displayNameRu": "Treasure Bag (Calamitas Clone)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041a\u043b\u043e\u043d \u041a\u0430\u043b\u0430\u043c\u0438\u0442\u0430\u0441)",
       "category": "other",
       "tags": [
         "other",
@@ -22504,7 +22504,7 @@
       "kind": "other",
       "internalName": "CalamitasCoffer",
       "displayName": "Calamitas Coffer",
-      "displayNameRu": "Treasure Coffer (Calamitas)",
+      "displayNameRu": "\u0421\u0443\u043d\u0434\u0443\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041a\u0430\u043b\u0430\u043c\u0438\u0442\u0430\u0441)",
       "category": "other",
       "tags": [
         "other",
@@ -22542,7 +22542,7 @@
       "kind": "other",
       "internalName": "CalamityCanvas2023",
       "displayName": "Calamity Canvas2023",
-      "displayNameRu": "Calamity Canvas 2023",
+      "displayNameRu": "\u041f\u043e\u043b\u043e\u0442\u043d\u043e Calamity 2023",
       "category": "other",
       "tags": [
         "other",
@@ -22555,7 +22555,7 @@
       "kind": "other",
       "internalName": "CalamityCanvas2024",
       "displayName": "Calamity Canvas2024",
-      "displayNameRu": "Calamity Canvas 2024",
+      "displayNameRu": "\u041f\u043e\u043b\u043e\u0442\u043d\u043e Calamity 2024",
       "category": "other",
       "tags": [
         "other",
@@ -22594,7 +22594,7 @@
       "kind": "other",
       "internalName": "CataclysmTrophy",
       "displayName": "Cataclysm Trophy",
-      "displayNameRu": "Cataclysmic Construct Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u041a\u0430\u0442\u0430\u043a\u043b\u0438\u0437\u043c\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -22607,7 +22607,7 @@
       "kind": "other",
       "internalName": "CatastropheTrophy",
       "displayName": "Catastrophe Trophy",
-      "displayNameRu": "Catastrophic Construct Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u041a\u0430\u0442\u0430\u0441\u0442\u0440\u043e\u0444\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -22658,7 +22658,7 @@
       "kind": "other",
       "internalName": "CeaselessVoidBag",
       "displayName": "Ceaseless Void Bag",
-      "displayNameRu": "Treasure Bag (Ceaseless Void)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041d\u0435\u0441\u043a\u043e\u043d\u0447\u0430\u0435\u043c\u0430\u044f \u043f\u0443\u0441\u0442\u043e\u0442\u0430)",
       "category": "other",
       "tags": [
         "other",
@@ -22774,7 +22774,7 @@
       "kind": "other",
       "internalName": "ChargingStationItem",
       "displayName": "Charging Station Item",
-      "displayNameRu": "Charging Station",
+      "displayNameRu": "\u0417\u0430\u0440\u044f\u0434\u043d\u0430\u044f \u0441\u0442\u0430\u043d\u0446\u0438\u044f",
       "category": "other",
       "tags": [
         "other",
@@ -23002,7 +23002,7 @@
       "kind": "other",
       "internalName": "CosmicAnvilItem",
       "displayName": "Cosmic Anvil Item",
-      "displayNameRu": "Cosmic Anvil",
+      "displayNameRu": "\u041a\u043e\u0441\u043c\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043d\u0430\u043a\u043e\u0432\u0430\u043b\u044c\u043d\u044f",
       "category": "other",
       "tags": [
         "other",
@@ -23337,7 +23337,7 @@
       "kind": "other",
       "internalName": "CrabulonBag",
       "displayName": "Crabulon Bag",
-      "displayNameRu": "Treasure Bag (Crabulon)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041a\u0440\u0430\u0431\u0443\u043b\u043e\u043d)",
       "category": "other",
       "tags": [
         "other",
@@ -23478,7 +23478,7 @@
       "kind": "other",
       "internalName": "CryogenBag",
       "displayName": "Cryogen Bag",
-      "displayNameRu": "Treasure Bag (Cryogen)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041a\u0440\u0438\u043e\u0433\u0435\u043d)",
       "category": "other",
       "tags": [
         "other",
@@ -23729,7 +23729,7 @@
       "kind": "other",
       "internalName": "DesertScourgeBag",
       "displayName": "Desert Scourge Bag",
-      "displayNameRu": "Treasure Bag (Desert Scourge)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041f\u0443\u0441\u0442\u044b\u043d\u043d\u044b\u0439 \u0431\u0438\u0447)",
       "category": "other",
       "tags": [
         "other",
@@ -23794,7 +23794,7 @@
       "kind": "other",
       "internalName": "DevourerOfGodsRelic",
       "displayName": "Devourer Of Gods Relic",
-      "displayNameRu": "Devourer of Gods Relic",
+      "displayNameRu": "\u0420\u0435\u043b\u0438\u043a\u0432\u0438\u044f \u041f\u043e\u0436\u0438\u0440\u0430\u0442\u0435\u043b\u044f \u0431\u043e\u0433\u043e\u0432",
       "category": "other",
       "tags": [
         "other",
@@ -23807,7 +23807,7 @@
       "kind": "other",
       "internalName": "DevourerofGodsBag",
       "displayName": "Devourerof Gods Bag",
-      "displayNameRu": "Treasure Bag (The Devourer of Gods)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041f\u043e\u0436\u0438\u0440\u0430\u0442\u0435\u043b\u044c \u0431\u043e\u0433\u043e\u0432)",
       "category": "other",
       "tags": [
         "other",
@@ -23820,7 +23820,7 @@
       "kind": "other",
       "internalName": "DevourerofGodsTrophy",
       "displayName": "Devourerof Gods Trophy",
-      "displayNameRu": "Devourer of Gods Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u041f\u043e\u0436\u0438\u0440\u0430\u0442\u0435\u043b\u044f \u0431\u043e\u0433\u043e\u0432",
       "category": "other",
       "tags": [
         "other",
@@ -23882,7 +23882,7 @@
       "kind": "other",
       "internalName": "DraconicSwarmerBanner",
       "displayName": "Draconic Swarmer Banner",
-      "displayNameRu": "Wild Bumblebirb Banner",
+      "displayNameRu": "\u0417\u043d\u0430\u043c\u044f \u0434\u0440\u0430\u043a\u043e\u043d\u044c\u0435\u0433\u043e \u0440\u043e\u0438\u0442\u0435\u043b\u044f",
       "category": "other",
       "tags": [
         "other",
@@ -23895,7 +23895,7 @@
       "kind": "other",
       "internalName": "DraedonBag",
       "displayName": "Draedon Bag",
-      "displayNameRu": "Treasure Box (Exo Mechs)",
+      "displayNameRu": "\u042f\u0449\u0438\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u042d\u043a\u0437\u043e-\u043c\u0435\u0445\u0430\u043d\u0438\u0437\u043c\u044b)",
       "category": "other",
       "tags": [
         "other",
@@ -23934,7 +23934,7 @@
       "kind": "other",
       "internalName": "DraedonsForge",
       "displayName": "Draedons Forge",
-      "displayNameRu": "Draedon's Forge",
+      "displayNameRu": "\u041a\u0443\u0437\u043d\u044f \u0414\u0440\u044d\u0439\u0434\u043e\u043d\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -23947,7 +23947,7 @@
       "kind": "other",
       "internalName": "DraedonsLogHell",
       "displayName": "Draedons Log Hell",
-      "displayNameRu": "Environmental Pollution Log",
+      "displayNameRu": "\u0416\u0443\u0440\u043d\u0430\u043b (\u0417\u0430\u0433\u0440\u044f\u0437\u043d\u0435\u043d\u0438\u0435 \u043e\u043a\u0440\u0443\u0436\u0430\u044e\u0449\u0435\u0439 \u0441\u0440\u0435\u0434\u044b)",
       "category": "other",
       "tags": [
         "other"
@@ -23959,7 +23959,7 @@
       "kind": "other",
       "internalName": "DraedonsLogJungle",
       "displayName": "Draedons Log Jungle",
-      "displayNameRu": "Plague Nanomachine Log",
+      "displayNameRu": "\u0416\u0443\u0440\u043d\u0430\u043b (\u0427\u0443\u043c\u043d\u044b\u0435 \u043d\u0430\u043d\u043e\u043c\u0430\u0448\u0438\u043d\u044b)",
       "category": "other",
       "tags": [
         "other"
@@ -23971,7 +23971,7 @@
       "kind": "other",
       "internalName": "DraedonsLogPlanetoid",
       "displayName": "Draedons Log Planetoid",
-      "displayNameRu": "Low Orbit Study Log",
+      "displayNameRu": "\u0416\u0443\u0440\u043d\u0430\u043b (\u041e\u0440\u0431\u0438\u0442\u0430\u043b\u044c\u043d\u044b\u0435 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u044f)",
       "category": "other",
       "tags": [
         "other"
@@ -23983,7 +23983,7 @@
       "kind": "other",
       "internalName": "DraedonsLogSnowBiome",
       "displayName": "Draedons Log Snow Biome",
-      "displayNameRu": "Cryonic Material Log",
+      "displayNameRu": "\u0416\u0443\u0440\u043d\u0430\u043b (\u041a\u0440\u0438\u043e\u043d\u0438\u0442\u043e\u0432\u044b\u0435 \u043c\u0430\u0442\u0435\u0440\u0438\u0430\u043b\u044b)",
       "category": "other",
       "tags": [
         "other"
@@ -23995,7 +23995,7 @@
       "kind": "other",
       "internalName": "DraedonsLogSunkenSea",
       "displayName": "Draedons Log Sunken Sea",
-      "displayNameRu": "Marine Biology Log",
+      "displayNameRu": "\u0416\u0443\u0440\u043d\u0430\u043b (\u041c\u043e\u0440\u0441\u043a\u0430\u044f \u0431\u0438\u043e\u043b\u043e\u0433\u0438\u044f)",
       "category": "other",
       "tags": [
         "other"
@@ -24019,7 +24019,7 @@
       "kind": "other",
       "internalName": "DragonfollyBag",
       "displayName": "Dragonfolly Bag",
-      "displayNameRu": "Treasure Bag (The Dragonfolly)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041f\u0441\u0435\u0432\u0434\u043e\u0434\u0440\u0430\u043a\u043e\u043d)",
       "category": "other",
       "tags": [
         "other",
@@ -24394,7 +24394,7 @@
       "kind": "other",
       "internalName": "EffigyOfDecay",
       "displayName": "Effigy Of Decay",
-      "displayNameRu": "Effigy of Decay",
+      "displayNameRu": "\u0427\u0443\u0447\u0435\u043b\u043e \u0440\u0430\u0437\u043b\u043e\u0436\u0435\u043d\u0438\u044f",
       "category": "other",
       "tags": [
         "other",
@@ -24444,7 +24444,7 @@
       "kind": "other",
       "internalName": "EidolonWyrmJuvenileBanner",
       "displayName": "Eidolon Wyrm Juvenile Banner",
-      "displayNameRu": "Eidolon Wyrm Banner",
+      "displayNameRu": "\u0417\u043d\u0430\u043c\u044f \u044d\u0439\u0434\u043e\u043b\u043e\u043d\u0441\u043a\u043e\u0433\u043e \u0437\u043c\u0438\u044f",
       "category": "other",
       "tags": [
         "other",
@@ -24534,7 +24534,7 @@
       "kind": "other",
       "internalName": "EncryptedSchematicHell",
       "displayName": "Encrypted Schematic Hell",
-      "displayNameRu": "Encrypted Schematic (Underworld)",
+      "displayNameRu": "\u0417\u0430\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f \u0441\u0445\u0435\u043c\u0430 (\u041f\u0440\u0435\u0438\u0441\u043f\u043e\u0434\u043d\u044f\u044f)",
       "category": "other",
       "tags": [
         "other"
@@ -24546,7 +24546,7 @@
       "kind": "other",
       "internalName": "EncryptedSchematicIce",
       "displayName": "Encrypted Schematic Ice",
-      "displayNameRu": "Encrypted Schematic (Ice)",
+      "displayNameRu": "\u0417\u0430\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f \u0441\u0445\u0435\u043c\u0430 (\u041b\u044c\u0434\u044b)",
       "category": "other",
       "tags": [
         "other"
@@ -24558,7 +24558,7 @@
       "kind": "other",
       "internalName": "EncryptedSchematicJungle",
       "displayName": "Encrypted Schematic Jungle",
-      "displayNameRu": "Encrypted Schematic (Jungle)",
+      "displayNameRu": "\u0417\u0430\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f \u0441\u0445\u0435\u043c\u0430 (\u0414\u0436\u0443\u043d\u0433\u043b\u0438)",
       "category": "other",
       "tags": [
         "other"
@@ -24570,7 +24570,7 @@
       "kind": "other",
       "internalName": "EncryptedSchematicPlanetoid",
       "displayName": "Encrypted Schematic Planetoid",
-      "displayNameRu": "Encrypted Schematic (Planetoid)",
+      "displayNameRu": "\u0417\u0430\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f \u0441\u0445\u0435\u043c\u0430 (\u041f\u043b\u0430\u043d\u0435\u0442\u043e\u0438\u0434)",
       "category": "other",
       "tags": [
         "other"
@@ -24582,7 +24582,7 @@
       "kind": "other",
       "internalName": "EncryptedSchematicSunkenSea",
       "displayName": "Encrypted Schematic Sunken Sea",
-      "displayNameRu": "Schematic (Sunken Sea)",
+      "displayNameRu": "\u0421\u0445\u0435\u043c\u0430 (\u0417\u0430\u0442\u0435\u0440\u044f\u043d\u043d\u043e\u0435 \u043c\u043e\u0440\u0435)",
       "category": "other",
       "tags": [
         "other"
@@ -24670,7 +24670,7 @@
       "kind": "other",
       "internalName": "EutrophicSandWall",
       "displayName": "Eutrophic Sand Wall",
-      "displayNameRu": "Unsafe Eutrophic Sand Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430 \u0438\u0437 \u044d\u0432\u0442\u0440\u043e\u0444\u043d\u043e\u0433\u043e \u043f\u0435\u0441\u043a\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -24683,7 +24683,7 @@
       "kind": "other",
       "internalName": "EutrophicSandWallSafe",
       "displayName": "Eutrophic Sand Wall Safe",
-      "displayNameRu": "Eutrophic Sand Wall",
+      "displayNameRu": "\u0421\u0442\u0435\u043d\u0430 \u0438\u0437 \u044d\u0432\u0442\u0440\u043e\u0444\u043d\u043e\u0433\u043e \u043f\u0435\u0441\u043a\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -24733,7 +24733,7 @@
       "kind": "other",
       "internalName": "ExoAuricPanel",
       "displayName": "Exo Auric Panel",
-      "displayNameRu": "Exo-Auric Panel",
+      "displayNameRu": "\u042d\u043a\u0437\u043e-\u0430\u0443\u0440\u0438\u0442\u043e\u0432\u0430\u044f \u043f\u0430\u043d\u0435\u043b\u044c",
       "category": "other",
       "tags": [
         "other",
@@ -24979,7 +24979,7 @@
       "kind": "other",
       "internalName": "ExoPlatingWallItem",
       "displayName": "Exo Plating Wall Item",
-      "displayNameRu": "Exo Plating Wall",
+      "displayNameRu": "\u0421\u0442\u0435\u043d\u0430 \u0441 \u044d\u043a\u0437\u043e-\u043e\u0431\u0448\u0438\u0432\u043a\u043e\u0439",
       "category": "other",
       "tags": [
         "other",
@@ -25017,7 +25017,7 @@
       "kind": "other",
       "internalName": "ExoPrismPanelWallItem",
       "displayName": "Exo Prism Panel Wall Item",
-      "displayNameRu": "Exo Prism Panel Wall",
+      "displayNameRu": "\u0421\u0442\u0435\u043d\u0430 \u0438\u0437 \u044d\u043a\u0437\u043e-\u043f\u0440\u0438\u0437\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0439 \u043f\u0430\u043d\u0435\u043b\u0438",
       "category": "other",
       "tags": [
         "other",
@@ -25121,7 +25121,7 @@
       "kind": "other",
       "internalName": "ExoThrone",
       "displayName": "Exo Throne",
-      "displayNameRu": "Exo Box",
+      "displayNameRu": "\u042d\u043a\u0437\u043e-\u0431\u043e\u043a\u0441",
       "category": "other",
       "tags": [
         "other"
@@ -25184,7 +25184,7 @@
       "kind": "other",
       "internalName": "EyeOfTheAccursedBanner",
       "displayName": "Eye Of The Accursed Banner",
-      "displayNameRu": "Eye of the Accursed Banner",
+      "displayNameRu": "\u0417\u043d\u0430\u043c\u044f \u0433\u043b\u0430\u0437\u0430 \u043f\u0440\u043e\u043a\u043b\u044f\u0442\u043e\u0433\u043e",
       "category": "other",
       "tags": [
         "other",
@@ -25197,7 +25197,7 @@
       "kind": "other",
       "internalName": "EyeofDesolation",
       "displayName": "Eyeof Desolation",
-      "displayNameRu": "Eye of Desolation",
+      "displayNameRu": "\u0413\u043b\u0430\u0437 \u043e\u043f\u0443\u0441\u0442\u043e\u0448\u0435\u043d\u0438\u044f",
       "category": "other",
       "tags": [
         "other"
@@ -25222,7 +25222,7 @@
       "kind": "other",
       "internalName": "FellerofEvergreens",
       "displayName": "Fellerof Evergreens",
-      "displayNameRu": "Feller of Evergreens",
+      "displayNameRu": "\u0425\u0432\u043e\u0439\u043d\u044b\u0439 \u043b\u0435\u0441\u043e\u0440\u0443\u0431",
       "category": "weapon",
       "tags": [
         "other",
@@ -25260,7 +25260,7 @@
       "kind": "other",
       "internalName": "FishofEleum",
       "displayName": "Fishof Eleum",
-      "displayNameRu": "Fish of Eleum",
+      "displayNameRu": "\u0420\u044b\u0431\u0430 \u042d\u043b\u0435\u0443\u043c\u0430",
       "category": "other",
       "tags": [
         "other"
@@ -25272,7 +25272,7 @@
       "kind": "other",
       "internalName": "FishofFlight",
       "displayName": "Fishof Flight",
-      "displayNameRu": "Fish of Flight",
+      "displayNameRu": "\u0420\u044b\u0431\u0430 \u043f\u043e\u043b\u0451\u0442\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -25336,7 +25336,7 @@
       "kind": "other",
       "internalName": "ForgivenessPainting",
       "displayName": "Forgiveness Painting",
-      "displayNameRu": "Forgiveness",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u041f\u0440\u043e\u0449\u0435\u043d\u0438\u0435",
       "category": "other",
       "tags": [
         "other",
@@ -25400,7 +25400,7 @@
       "kind": "other",
       "internalName": "GazeOfCrysthamyr",
       "displayName": "Gaze Of Crysthamyr",
-      "displayNameRu": "Gaze of Crysthamyr",
+      "displayNameRu": "\u0412\u0437\u0433\u043b\u044f\u0434 \u041a\u0440\u0438\u0441\u0442\u0430\u043c\u0438\u0440\u0430",
       "category": "other",
       "tags": [
         "other"
@@ -25894,7 +25894,7 @@
       "kind": "other",
       "internalName": "HiveMindBag",
       "displayName": "Hive Mind Bag",
-      "displayNameRu": "Treasure Bag (The Hive Mind)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0420\u0430\u0437\u0443\u043c \u0443\u043b\u044c\u044f)",
       "category": "other",
       "tags": [
         "other",
@@ -26191,7 +26191,7 @@
       "kind": "other",
       "internalName": "LabHologramProjectorItem",
       "displayName": "Lab Hologram Projector Item",
-      "displayNameRu": "Lab Hologram Projector",
+      "displayNameRu": "\u0413\u043e\u043b\u043e\u0433\u0440\u0430\u043c\u043c\u043d\u044b\u0439 \u043f\u0440\u043e\u0435\u043a\u0442\u043e\u0440 \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u0438\u0438",
       "category": "other",
       "tags": [
         "other",
@@ -26229,7 +26229,7 @@
       "kind": "other",
       "internalName": "LaboratoryConsoleItem",
       "displayName": "Laboratory Console Item",
-      "displayNameRu": "Laboratory Console",
+      "displayNameRu": "\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u043a\u043e\u043d\u0441\u043e\u043b\u044c",
       "category": "other",
       "tags": [
         "other",
@@ -26242,7 +26242,7 @@
       "kind": "other",
       "internalName": "LaboratoryContainmentBoxItem",
       "displayName": "Laboratory Containment Box Item",
-      "displayNameRu": "Laboratory Containment Box",
+      "displayNameRu": "\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440 \u0434\u043b\u044f \u0445\u0440\u0430\u043d\u0435\u043d\u0438\u044f",
       "category": "other",
       "tags": [
         "other",
@@ -26255,7 +26255,7 @@
       "kind": "other",
       "internalName": "LaboratoryDisplayItem",
       "displayName": "Laboratory Display Item",
-      "displayNameRu": "Laboratory Display",
+      "displayNameRu": "\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u0434\u0438\u0441\u043f\u043b\u0435\u0439",
       "category": "other",
       "tags": [
         "other",
@@ -26268,7 +26268,7 @@
       "kind": "other",
       "internalName": "LaboratoryDoorItem",
       "displayName": "Laboratory Door Item",
-      "displayNameRu": "Laboratory Door",
+      "displayNameRu": "\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u0434\u0432\u0435\u0440\u044c",
       "category": "other",
       "tags": [
         "other",
@@ -26281,7 +26281,7 @@
       "kind": "other",
       "internalName": "LaboratoryElectricPanelItem",
       "displayName": "Laboratory Electric Panel Item",
-      "displayNameRu": "Laboratory Electric Panel",
+      "displayNameRu": "\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u044d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0449\u0438\u0442\u043e\u043a",
       "category": "other",
       "tags": [
         "other",
@@ -26385,7 +26385,7 @@
       "kind": "other",
       "internalName": "LaboratoryScreenItem",
       "displayName": "Laboratory Screen Item",
-      "displayNameRu": "Laboratory Screen",
+      "displayNameRu": "\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u044d\u043a\u0440\u0430\u043d",
       "category": "other",
       "tags": [
         "other",
@@ -26398,7 +26398,7 @@
       "kind": "other",
       "internalName": "LaboratoryServerItem",
       "displayName": "Laboratory Server Item",
-      "displayNameRu": "Laboratory Server",
+      "displayNameRu": "\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u0441\u0435\u0440\u0432\u0435\u0440",
       "category": "other",
       "tags": [
         "other",
@@ -26424,7 +26424,7 @@
       "kind": "other",
       "internalName": "LaboratoryTerminalItem",
       "displayName": "Laboratory Terminal Item",
-      "displayNameRu": "Laboratory Terminal",
+      "displayNameRu": "\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u044b\u0439 \u0442\u0435\u0440\u043c\u0438\u043d\u0430\u043b",
       "category": "other",
       "tags": [
         "other",
@@ -26488,7 +26488,7 @@
       "kind": "other",
       "internalName": "LeviathanAnahitaRelic",
       "displayName": "Leviathan Anahita Relic",
-      "displayNameRu": "Leviathan and Anahita Relic",
+      "displayNameRu": "\u0420\u0435\u043b\u0438\u043a\u0432\u0438\u044f \u041b\u0435\u0432\u0438\u0430\u0444\u0430\u043d \u0438 \u0410\u043d\u0430\u0445\u0438\u0442\u044b",
       "category": "other",
       "tags": [
         "other",
@@ -26501,7 +26501,7 @@
       "kind": "other",
       "internalName": "LeviathanBag",
       "displayName": "Leviathan Bag",
-      "displayNameRu": "Treasure Bag (Leviathan and Anahita)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041b\u0435\u0432\u0438\u0430\u0444\u0430\u043d \u0438 \u0410\u043d\u0430\u0445\u0438\u0442\u0430)",
       "category": "other",
       "tags": [
         "other",
@@ -26732,7 +26732,7 @@
       "kind": "other",
       "internalName": "MarkofProvidence",
       "displayName": "Markof Providence",
-      "displayNameRu": "Mark of Providence",
+      "displayNameRu": "\u0417\u043d\u0430\u043a \u041f\u0440\u043e\u0432\u0438\u0434\u0435\u043d\u0441",
       "category": "other",
       "tags": [
         "other"
@@ -27105,7 +27105,7 @@
       "kind": "other",
       "internalName": "MiniAgedBiolightItem",
       "displayName": "Mini Aged Biolight Item",
-      "displayNameRu": "Mini Aged Biolight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0441\u0442\u0430\u0440\u0430\u044f \u0431\u0438\u043e\u043b\u044e\u043c\u0438\u043d\u0435\u0441\u0446\u0435\u043d\u0442\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27118,7 +27118,7 @@
       "kind": "other",
       "internalName": "MiniAgedBlacklightItem",
       "displayName": "Mini Aged Blacklight Item",
-      "displayNameRu": "Mini Aged Blacklight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0441\u0442\u0430\u0440\u0430\u044f \u043b\u0430\u043c\u043f\u0430 \u0447\u0451\u0440\u043d\u043e\u0433\u043e \u0441\u0432\u0435\u0442\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27131,7 +27131,7 @@
       "kind": "other",
       "internalName": "MiniAgedCinderlightItem",
       "displayName": "Mini Aged Cinderlight Item",
-      "displayNameRu": "Mini Aged Cinderlight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0441\u0442\u0430\u0440\u0430\u044f \u043f\u0435\u043f\u0435\u043b\u044c\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27144,7 +27144,7 @@
       "kind": "other",
       "internalName": "MiniAgedFlamelightItem",
       "displayName": "Mini Aged Flamelight Item",
-      "displayNameRu": "Mini Aged Flamelight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0441\u0442\u0430\u0440\u0430\u044f \u043f\u043b\u0430\u043c\u0435\u043d\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27157,7 +27157,7 @@
       "kind": "other",
       "internalName": "MiniAgedFloodlightItem",
       "displayName": "Mini Aged Floodlight Item",
-      "displayNameRu": "Mini Aged Floodlight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0441\u0442\u0430\u0440\u0430\u044f \u043f\u0440\u043e\u0436\u0435\u043a\u0442\u043e\u0440\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27170,7 +27170,7 @@
       "kind": "other",
       "internalName": "MiniAgedFrostlightItem",
       "displayName": "Mini Aged Frostlight Item",
-      "displayNameRu": "Mini Aged Frostlight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0441\u0442\u0430\u0440\u0430\u044f \u043c\u043e\u0440\u043e\u0437\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27183,7 +27183,7 @@
       "kind": "other",
       "internalName": "MiniAgedLablightItem",
       "displayName": "Mini Aged Lablight Item",
-      "displayNameRu": "Mini Aged Lablight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0441\u0442\u0430\u0440\u0430\u044f \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27196,7 +27196,7 @@
       "kind": "other",
       "internalName": "MiniCagedBiolightItem",
       "displayName": "Mini Caged Biolight Item",
-      "displayNameRu": "Mini Caged Biolight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0440\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u0431\u0438\u043e\u043b\u044e\u043c\u0438\u043d\u0435\u0441\u0446\u0435\u043d\u0442\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27209,7 +27209,7 @@
       "kind": "other",
       "internalName": "MiniCagedBlacklightItem",
       "displayName": "Mini Caged Blacklight Item",
-      "displayNameRu": "Mini Caged Blacklight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0440\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043b\u0430\u043c\u043f\u0430 \u0447\u0451\u0440\u043d\u043e\u0433\u043e \u0441\u0432\u0435\u0442\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27222,7 +27222,7 @@
       "kind": "other",
       "internalName": "MiniCagedCinderlightItem",
       "displayName": "Mini Caged Cinderlight Item",
-      "displayNameRu": "Mini Caged Cinderlight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0440\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043f\u0435\u043f\u0435\u043b\u044c\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27235,7 +27235,7 @@
       "kind": "other",
       "internalName": "MiniCagedFlamelightItem",
       "displayName": "Mini Caged Flamelight Item",
-      "displayNameRu": "Mini Caged Flamelight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0440\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043f\u043b\u0430\u043c\u0435\u043d\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27248,7 +27248,7 @@
       "kind": "other",
       "internalName": "MiniCagedFloodlightItem",
       "displayName": "Mini Caged Floodlight Item",
-      "displayNameRu": "Mini Caged Floodlight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0440\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043f\u0440\u043e\u0436\u0435\u043a\u0442\u043e\u0440\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27261,7 +27261,7 @@
       "kind": "other",
       "internalName": "MiniCagedFrostlightItem",
       "displayName": "Mini Caged Frostlight Item",
-      "displayNameRu": "Mini Caged Frostlight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0440\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043c\u043e\u0440\u043e\u0437\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27274,7 +27274,7 @@
       "kind": "other",
       "internalName": "MiniCagedLablightItem",
       "displayName": "Mini Caged Lablight Item",
-      "displayNameRu": "Mini Caged Lablight",
+      "displayNameRu": "\u041c\u0438\u043d\u0438\u0430\u0442\u044e\u0440\u043d\u0430\u044f \u0440\u0435\u0448\u0451\u0442\u0447\u0430\u0442\u0430\u044f \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -27685,7 +27685,7 @@
       "kind": "other",
       "internalName": "NaiadsWarhorn",
       "displayName": "Naiads Warhorn",
-      "displayNameRu": "Naiad's Warhorn",
+      "displayNameRu": "\u0411\u043e\u0435\u0432\u043e\u0439 \u0440\u043e\u0433 \u043d\u0430\u044f\u0434\u044b",
       "category": "other",
       "tags": [
         "other"
@@ -27697,7 +27697,7 @@
       "kind": "other",
       "internalName": "NanodroidDysfunctionalItem",
       "displayName": "Nanodroid Dysfunctional Item",
-      "displayNameRu": "Dysfunctional Nanodroid",
+      "displayNameRu": "\u041d\u0435\u0438\u0441\u043f\u0440\u0430\u0432\u043d\u044b\u0439 \u043d\u0430\u043d\u043e\u0434\u0440\u043e\u043d",
       "category": "other",
       "tags": [
         "other",
@@ -27710,7 +27710,7 @@
       "kind": "other",
       "internalName": "NanodroidItem",
       "displayName": "Nanodroid Item",
-      "displayNameRu": "Nanodroid",
+      "displayNameRu": "\u041d\u0430\u043d\u043e\u0434\u0440\u043e\u043d",
       "category": "other",
       "tags": [
         "other",
@@ -27723,7 +27723,7 @@
       "kind": "other",
       "internalName": "NanodroidPlagueGreenItem",
       "displayName": "Nanodroid Plague Green Item",
-      "displayNameRu": "Green Plague Nanodroid",
+      "displayNameRu": "\u0417\u0435\u043b\u0451\u043d\u044b\u0439 \u0447\u0443\u043c\u043d\u043e\u0439 \u043d\u0430\u043d\u043e\u0434\u0440\u043e\u043d",
       "category": "other",
       "tags": [
         "other",
@@ -27736,7 +27736,7 @@
       "kind": "other",
       "internalName": "NanodroidPlagueRedItem",
       "displayName": "Nanodroid Plague Red Item",
-      "displayNameRu": "Red Plague Nanodroid",
+      "displayNameRu": "\u041a\u0440\u0430\u0441\u043d\u044b\u0439 \u0447\u0443\u043c\u043d\u043e\u0439 \u043d\u0430\u043d\u043e\u0434\u0440\u043e\u043d",
       "category": "other",
       "tags": [
         "other",
@@ -28260,7 +28260,7 @@
       "kind": "other",
       "internalName": "OccultBrickItem",
       "displayName": "Occult Brick Item",
-      "displayNameRu": "Occult Brick",
+      "displayNameRu": "\u041e\u043a\u043a\u0443\u043b\u044c\u0442\u043d\u044b\u0439 \u043a\u0438\u0440\u043f\u0438\u0447",
       "category": "other",
       "tags": [
         "other",
@@ -28273,7 +28273,7 @@
       "kind": "other",
       "internalName": "OccultBrickWallItem",
       "displayName": "Occult Brick Wall Item",
-      "displayNameRu": "Occult Brick Wall",
+      "displayNameRu": "\u041e\u043a\u043a\u0443\u043b\u044c\u0442\u043d\u0430\u044f \u043a\u0438\u0440\u043f\u0438\u0447\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -28299,7 +28299,7 @@
       "kind": "other",
       "internalName": "OccultPlatformItem",
       "displayName": "Occult Platform Item",
-      "displayNameRu": "Occult Platform",
+      "displayNameRu": "\u041e\u043a\u043a\u0443\u043b\u044c\u0442\u043d\u0430\u044f \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -28312,7 +28312,7 @@
       "kind": "other",
       "internalName": "OldDukeBag",
       "displayName": "Old Duke Bag",
-      "displayNameRu": "Treasure Bag (The Old Duke)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0421\u0442\u0430\u0440\u044b\u0439 \u0433\u0435\u0440\u0446\u043e\u0433)",
       "category": "other",
       "tags": [
         "other",
@@ -28776,7 +28776,7 @@
       "kind": "other",
       "internalName": "PerforatorBag",
       "displayName": "Perforator Bag",
-      "displayNameRu": "Treasure Bag (The Perforators)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041f\u0435\u0440\u0444\u043e\u0440\u0430\u0442\u043e\u0440\u044b)",
       "category": "other",
       "tags": [
         "other",
@@ -28893,7 +28893,7 @@
       "kind": "other",
       "internalName": "PiggyItem",
       "displayName": "Piggy Item",
-      "displayNameRu": "Piggy",
+      "displayNameRu": "\u041f\u043e\u0440\u043e\u0441\u0451\u043d\u043e\u043a",
       "category": "other",
       "tags": [
         "other",
@@ -28968,7 +28968,7 @@
       "kind": "other",
       "internalName": "PlagueContainmentCellsWall",
       "displayName": "Plague Containment Cells Wall",
-      "displayNameRu": "Plagueplate Wall",
+      "displayNameRu": "\u0421\u0442\u0435\u043d\u0430 \u0438\u0437 \u0447\u0443\u043c\u043d\u044b\u0445 \u043f\u043b\u0430\u0441\u0442\u0438\u043d",
       "category": "other",
       "tags": [
         "other",
@@ -29044,7 +29044,7 @@
       "kind": "other",
       "internalName": "PlaguebringerGoliathBag",
       "displayName": "Plaguebringer Goliath Bag",
-      "displayNameRu": "Treasure Bag (The Plaguebringer Goliath)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041f\u0440\u0435\u0434\u0432\u0435\u0441\u0442\u043d\u0438\u0446\u0430 \u0447\u0443\u043c\u044b, \u0413\u043e\u043b\u0438\u0430\u0444)",
       "category": "other",
       "tags": [
         "other",
@@ -29096,7 +29096,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateBathtub",
       "displayName": "Plagued Plate Bathtub",
-      "displayNameRu": "Plagued Bathtub",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u0430\u044f \u0432\u0430\u043d\u043d\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -29109,7 +29109,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateBed",
       "displayName": "Plagued Plate Bed",
-      "displayNameRu": "Plagued 'Bed'",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u0430\u044f \u00ab\u043a\u0440\u043e\u0432\u0430\u0442\u044c\u00bb",
       "category": "other",
       "tags": [
         "other",
@@ -29122,7 +29122,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateBookcase",
       "displayName": "Plagued Plate Bookcase",
-      "displayNameRu": "Plagued Bookcase",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u043e\u0439 \u043a\u043d\u0438\u0436\u043d\u044b\u0439 \u0448\u043a\u0430\u0444",
       "category": "other",
       "tags": [
         "other",
@@ -29135,7 +29135,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateCandelabra",
       "displayName": "Plagued Plate Candelabra",
-      "displayNameRu": "Plagued Candelabra",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u043e\u0439 \u043f\u043e\u0434\u0441\u0432\u0435\u0447\u043d\u0438\u043a",
       "category": "other",
       "tags": [
         "other",
@@ -29148,7 +29148,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateChair",
       "displayName": "Plagued Plate Chair",
-      "displayNameRu": "Plagued Chair",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u043e\u0439 \u0441\u0442\u0443\u043b",
       "category": "other",
       "tags": [
         "other",
@@ -29161,7 +29161,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateChandelier",
       "displayName": "Plagued Plate Chandelier",
-      "displayNameRu": "Plagued Chandelier",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u0430\u044f \u043b\u044e\u0441\u0442\u0440\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -29174,7 +29174,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateChest",
       "displayName": "Plagued Plate Chest",
-      "displayNameRu": "Plagued Chest",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u043e\u0439 \u0441\u0443\u043d\u0434\u0443\u043a",
       "category": "other",
       "tags": [
         "other",
@@ -29187,7 +29187,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateClock",
       "displayName": "Plagued Plate Clock",
-      "displayNameRu": "Plagued Clock",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u044b\u0435 \u043d\u0430\u043f\u043e\u043b\u044c\u043d\u044b\u0435 \u0447\u0430\u0441\u044b",
       "category": "other",
       "tags": [
         "other",
@@ -29200,7 +29200,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateDoor",
       "displayName": "Plagued Plate Door",
-      "displayNameRu": "Plagued Door",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u0430\u044f \u0434\u0432\u0435\u0440\u044c",
       "category": "other",
       "tags": [
         "other",
@@ -29213,7 +29213,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateDresser",
       "displayName": "Plagued Plate Dresser",
-      "displayNameRu": "Plagued Dresser",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u043e\u0439 \u043a\u043e\u043c\u043e\u0434",
       "category": "other",
       "tags": [
         "other",
@@ -29226,7 +29226,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateLamp",
       "displayName": "Plagued Plate Lamp",
-      "displayNameRu": "Plagued Lamp",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u0430\u044f \u043d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -29239,7 +29239,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateLantern",
       "displayName": "Plagued Plate Lantern",
-      "displayNameRu": "Plagued Lantern",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u043e\u0439 \u0444\u043e\u043d\u0430\u0440\u044c",
       "category": "other",
       "tags": [
         "other",
@@ -29252,7 +29252,7 @@
       "kind": "other",
       "internalName": "PlaguedPlatePiano",
       "displayName": "Plagued Plate Piano",
-      "displayNameRu": "Plagued Piano",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u043e\u0435 \u043f\u0438\u0430\u043d\u0438\u043d\u043e",
       "category": "other",
       "tags": [
         "other",
@@ -29265,7 +29265,7 @@
       "kind": "other",
       "internalName": "PlaguedPlatePlatform",
       "displayName": "Plagued Plate Platform",
-      "displayNameRu": "Plagued Shelf",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u0430\u044f \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -29278,7 +29278,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateSink",
       "displayName": "Plagued Plate Sink",
-      "displayNameRu": "Plagued Sink",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u0430\u044f \u0440\u0430\u043a\u043e\u0432\u0438\u043d\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -29291,7 +29291,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateSofa",
       "displayName": "Plagued Plate Sofa",
-      "displayNameRu": "Plagued Sofa",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u043e\u0439 \u0434\u0438\u0432\u0430\u043d",
       "category": "other",
       "tags": [
         "other",
@@ -29304,7 +29304,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateTable",
       "displayName": "Plagued Plate Table",
-      "displayNameRu": "Plagued Table",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u043e\u0439 \u0441\u0442\u043e\u043b",
       "category": "other",
       "tags": [
         "other",
@@ -29317,7 +29317,7 @@
       "kind": "other",
       "internalName": "PlaguedPlateWall",
       "displayName": "Plagued Plate Wall",
-      "displayNameRu": "Plagued Containment Wall",
+      "displayNameRu": "\u0421\u0442\u0435\u043d\u0430 \u0438\u0437 \u043a\u0438\u0440\u043f\u0438\u0447\u0430 \u0434\u043b\u044f \u0441\u043e\u0434\u0435\u0440\u0436\u0430\u043d\u0438\u044f \u0447\u0443\u043c\u044b",
       "category": "other",
       "tags": [
         "other",
@@ -29434,7 +29434,7 @@
       "kind": "other",
       "internalName": "PolterghastBag",
       "displayName": "Polterghast Bag",
-      "displayNameRu": "Treasure Bag (Polterghast)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041f\u043e\u043b\u0442\u0435\u0440\u0433\u0430\u0441\u0442)",
       "category": "other",
       "tags": [
         "other",
@@ -29485,7 +29485,7 @@
       "kind": "other",
       "internalName": "PowerCellFactoryItem",
       "displayName": "Power Cell Factory Item",
-      "displayNameRu": "Power Cell Factory",
+      "displayNameRu": "\u0424\u0430\u0431\u0440\u0438\u043a\u0430 \u0431\u0430\u0442\u0430\u0440\u0435\u0435\u043a",
       "category": "other",
       "tags": [
         "other",
@@ -29498,7 +29498,7 @@
       "kind": "other",
       "internalName": "PrismBackBanner",
       "displayName": "Prism Back Banner",
-      "displayNameRu": "Prism-Back Banner",
+      "displayNameRu": "\u0417\u043d\u0430\u043c\u044f \u043f\u0440\u0438\u0437\u043c\u043e\u0441\u043f\u0438\u043d\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -29985,7 +29985,7 @@
       "kind": "other",
       "internalName": "ProvidenceBag",
       "displayName": "Providence Bag",
-      "displayNameRu": "Treasure Bag (Providence, the Profaned Goddess)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u041f\u0440\u043e\u0432\u0438\u0434\u0435\u043d\u0441, \u041e\u0441\u043a\u0432\u0435\u0440\u043d\u0451\u043d\u043d\u0430\u044f \u0431\u043e\u0433\u0438\u043d\u044f)",
       "category": "other",
       "tags": [
         "other",
@@ -30049,7 +30049,7 @@
       "kind": "other",
       "internalName": "PyreMantleMolten",
       "displayName": "Pyre Mantle Molten",
-      "displayNameRu": "Molten Pyre Mantle",
+      "displayNameRu": "\u0420\u0430\u0441\u043a\u0430\u043b\u0451\u043d\u043d\u0430\u044f \u043c\u0430\u0433\u043c\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -30101,7 +30101,7 @@
       "kind": "other",
       "internalName": "RavagerBag",
       "displayName": "Ravager Bag",
-      "displayNameRu": "Treasure Bag (Ravager)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0420\u0430\u0437\u0440\u0443\u0448\u0438\u0442\u0435\u043b\u044c)",
       "category": "other",
       "tags": [
         "other",
@@ -30228,7 +30228,7 @@
       "kind": "other",
       "internalName": "ReinforcedCrateItem",
       "displayName": "Reinforced Crate Item",
-      "displayNameRu": "Reinforced Crate",
+      "displayNameRu": "\u0423\u043a\u0440\u0435\u043f\u043b\u0451\u043d\u043d\u044b\u0439 \u044f\u0449\u0438\u043a",
       "category": "other",
       "tags": [
         "other",
@@ -30241,7 +30241,7 @@
       "kind": "other",
       "internalName": "RelicOfConvergence",
       "displayName": "Relic Of Convergence",
-      "displayNameRu": "Relic of Convergence",
+      "displayNameRu": "\u0420\u0435\u043b\u0438\u043a\u0432\u0438\u044f \u0441\u0431\u043b\u0438\u0436\u0435\u043d\u0438\u044f",
       "category": "other",
       "tags": [
         "other"
@@ -30253,7 +30253,7 @@
       "kind": "other",
       "internalName": "RelicOfResilience",
       "displayName": "Relic Of Resilience",
-      "displayNameRu": "Relic of Resilience",
+      "displayNameRu": "\u0420\u0435\u043b\u0438\u043a\u0432\u0438\u044f \u0443\u0441\u0442\u043e\u0439\u0447\u0438\u0432\u043e\u0441\u0442\u0438",
       "category": "other",
       "tags": [
         "other"
@@ -30304,7 +30304,7 @@
       "kind": "other",
       "internalName": "RepairUnitItem",
       "displayName": "Repair Unit Item",
-      "displayNameRu": "Repair Unit",
+      "displayNameRu": "\u0420\u0435\u043c\u043e\u043d\u0442\u043d\u044b\u0439 \u0431\u043e\u0442",
       "category": "other",
       "tags": [
         "other",
@@ -30977,7 +30977,7 @@
       "kind": "other",
       "internalName": "SeaMinnowItem",
       "displayName": "Sea Minnow Item",
-      "displayNameRu": "Sea Minnow",
+      "displayNameRu": "\u041c\u043e\u0440\u0441\u043a\u043e\u0439 \u0433\u043e\u043b\u044c\u044f\u043d",
       "category": "other",
       "tags": [
         "other",
@@ -31080,7 +31080,7 @@
       "kind": "other",
       "internalName": "SerpentsBite",
       "displayName": "Serpents Bite",
-      "displayNameRu": "Serpent's Bite",
+      "displayNameRu": "\u0423\u043a\u0443\u0441 \u0437\u043c\u0435\u0438",
       "category": "other",
       "tags": [
         "other"
@@ -31245,7 +31245,7 @@
       "kind": "other",
       "internalName": "ShroombleItem",
       "displayName": "Shroomble Item",
-      "displayNameRu": "Shroomble",
+      "displayNameRu": "\u0413\u0440\u0438\u0431\u0435\u043d\u044c",
       "category": "other",
       "tags": [
         "other",
@@ -31284,7 +31284,7 @@
       "kind": "other",
       "internalName": "SignusBag",
       "displayName": "Signus Bag",
-      "displayNameRu": "Treasure Bag (Signus, Envoy of the Devourer)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0421\u0438\u0433\u043d\u0443\u0441, \u041f\u043e\u0441\u043b\u0430\u043d\u043d\u0438\u043a \u041f\u043e\u0436\u0438\u0440\u0430\u0442\u0435\u043b\u044f)",
       "category": "other",
       "tags": [
         "other",
@@ -31608,7 +31608,7 @@
       "kind": "other",
       "internalName": "SirenproofEarMuffs",
       "displayName": "Sirenproof Ear Muffs",
-      "displayNameRu": "Sirenproof Earmuffs",
+      "displayNameRu": "\u041f\u0440\u043e\u0442\u0438\u0432\u043e\u0441\u0438\u0440\u0435\u043d\u043d\u044b\u0435 \u043d\u0430\u0443\u0448\u043d\u0438\u043a\u0438",
       "category": "other",
       "tags": [
         "other"
@@ -31685,7 +31685,7 @@
       "kind": "other",
       "internalName": "SlimeGodBag",
       "displayName": "Slime God Bag",
-      "displayNameRu": "Treasure Bag (The Slime God)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0411\u043e\u0433 \u0441\u043b\u0438\u0437\u043d\u0435\u0439)",
       "category": "other",
       "tags": [
         "other",
@@ -31940,7 +31940,7 @@
       "kind": "other",
       "internalName": "SpineSapling",
       "displayName": "Spine Sapling",
-      "displayNameRu": "Small Spine",
+      "displayNameRu": "\u041c\u0430\u043b\u0435\u043d\u044c\u043a\u0438\u0439 \u0445\u0440\u0435\u0431\u0435\u0442",
       "category": "other",
       "tags": [
         "other",
@@ -32327,7 +32327,7 @@
       "kind": "other",
       "internalName": "StormWeaverBag",
       "displayName": "Storm Weaver Bag",
-      "displayNameRu": "Treasure Bag (Storm Weaver)",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0428\u0442\u043e\u0440\u043c\u043e\u0432\u043e\u0439 \u0442\u043a\u0430\u0447)",
       "category": "other",
       "tags": [
         "other",
@@ -32417,7 +32417,7 @@
       "kind": "other",
       "internalName": "StratusBricks",
       "displayName": "Stratus Bricks",
-      "displayNameRu": "Stratus Brick",
+      "displayNameRu": "\u041d\u0435\u0431\u043e\u0441\u0432\u043e\u0434\u043d\u044b\u0439 \u043a\u0438\u0440\u043f\u0438\u0447",
       "category": "other",
       "tags": [
         "other",
@@ -32611,7 +32611,7 @@
       "kind": "other",
       "internalName": "StratusStarPlatformItem",
       "displayName": "Stratus Star Platform Item",
-      "displayNameRu": "Stratus Star Platform",
+      "displayNameRu": "\u041d\u0435\u0431\u043e\u0441\u0432\u043e\u0434\u043d\u0430\u044f \u0437\u0432\u0451\u0437\u0434\u043d\u0430\u044f \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -32740,7 +32740,7 @@
       "kind": "other",
       "internalName": "SulphurousFountainItem",
       "displayName": "Sulphurous Fountain Item",
-      "displayNameRu": "Sulphuric Water Fountain",
+      "displayNameRu": "\u0424\u043e\u043d\u0442\u0430\u043d \u0441\u0435\u0440\u043d\u0438\u0441\u0442\u043e\u0439 \u0432\u043e\u0434\u044b",
       "category": "other",
       "tags": [
         "other",
@@ -32893,7 +32893,7 @@
       "kind": "other",
       "internalName": "SunkenSeaFountain",
       "displayName": "Sunken Sea Fountain",
-      "displayNameRu": "Sunken Water Fountain",
+      "displayNameRu": "\u0424\u043e\u043d\u0442\u0430\u043d \u0432\u043e\u0434\u044b \u0437\u0430\u0442\u0435\u0440\u044f\u043d\u043d\u043e\u0433\u043e \u043c\u043e\u0440\u044f",
       "category": "other",
       "tags": [
         "other",
@@ -32931,7 +32931,7 @@
       "kind": "other",
       "internalName": "SupremeCalamitasTrophy",
       "displayName": "Supreme Calamitas Trophy",
-      "displayNameRu": "Calamitas Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u041a\u0430\u043b\u0430\u043c\u0438\u0442\u0430\u0441",
       "category": "other",
       "tags": [
         "other",
@@ -33093,7 +33093,7 @@
       "kind": "other",
       "internalName": "ThankYouPainting",
       "displayName": "Thank You Painting",
-      "displayNameRu": "Thank You",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u00ab\u0411\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u043d\u043e\u0441\u0442\u044c\u00bb",
       "category": "other",
       "tags": [
         "other",
@@ -33119,7 +33119,7 @@
       "kind": "other",
       "internalName": "TheCartofGods",
       "displayName": "The Cartof Gods",
-      "displayNameRu": "The Cart of Gods",
+      "displayNameRu": "\u0412\u0430\u0433\u043e\u043d\u0435\u0442\u043a\u0430 \u0431\u043e\u0433\u043e\u0432",
       "category": "other",
       "tags": [
         "other"
@@ -33131,7 +33131,7 @@
       "kind": "other",
       "internalName": "TheDevourerofCods",
       "displayName": "The Devourerof Cods",
-      "displayNameRu": "The Devourer of Cods",
+      "displayNameRu": "\u041f\u043e\u0436\u0438\u0440\u0430\u0442\u0435\u043b\u044c \u0442\u0440\u0435\u0441\u043a\u0438",
       "category": "other",
       "tags": [
         "other"
@@ -33257,7 +33257,7 @@
       "kind": "other",
       "internalName": "TwinklerInABottle",
       "displayName": "Twinkler In ABottle",
-      "displayNameRu": "Twinkler in a Bottle",
+      "displayNameRu": "\u041c\u0435\u0440\u0446\u0430\u0442\u0435\u043b\u044c \u0432 \u0431\u0430\u043d\u043a\u0435",
       "category": "other",
       "tags": [
         "other",
@@ -33270,7 +33270,7 @@
       "kind": "other",
       "internalName": "TwinklerItem",
       "displayName": "Twinkler Item",
-      "displayNameRu": "Twinkler",
+      "displayNameRu": "\u041c\u0435\u0440\u0446\u0430\u0442\u0435\u043b\u044c",
       "category": "other",
       "tags": [
         "other",
@@ -33734,7 +33734,7 @@
       "kind": "other",
       "internalName": "WeaverTrophy",
       "displayName": "Weaver Trophy",
-      "displayNameRu": "Storm Weaver Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u0428\u0442\u043e\u0440\u043c\u043e\u0432\u043e\u0433\u043e \u0442\u043a\u0430\u0447\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -33772,7 +33772,7 @@
       "kind": "other",
       "internalName": "WillOWisp",
       "displayName": "Will OWisp",
-      "displayNameRu": "Will O Wisp",
+      "displayNameRu": "\u0411\u043b\u0443\u0436\u0434\u0430\u044e\u0449\u0438\u0439 \u043e\u0433\u043e\u043d\u0451\u043a",
       "category": "other",
       "tags": [
         "other"
@@ -34004,7 +34004,7 @@
       "kind": "other",
       "internalName": "WulfrumLabstationItem",
       "displayName": "Wulfrum Labstation Item",
-      "displayNameRu": "Wulfrum Labstation",
+      "displayNameRu": "\u0412\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u0430\u044f \u043b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u0441\u0442\u0430\u043d\u0446\u0438\u044f",
       "category": "other",
       "tags": [
         "other",
@@ -34043,7 +34043,7 @@
       "kind": "other",
       "internalName": "WulfrumLureItem",
       "displayName": "Wulfrum Lure Item",
-      "displayNameRu": "Wulfrum Lure",
+      "displayNameRu": "\u0412\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u0430\u044f \u043f\u0440\u0438\u043c\u0430\u043d\u043a\u0430",
       "category": "other",
       "tags": [
         "other",
@@ -34147,7 +34147,7 @@
       "kind": "other",
       "internalName": "WulfrumRod",
       "displayName": "Wulfrum Rod",
-      "displayNameRu": "Wulfrum Fishing Pole",
+      "displayNameRu": "\u0412\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u0430\u044f \u0443\u0434\u043e\u0447\u043a\u0430",
       "category": "other",
       "tags": [
         "other"
@@ -34351,7 +34351,7 @@
       "kind": "other",
       "internalName": "YharonBag",
       "displayName": "Yharon Bag",
-      "displayNameRu": "Treasure Cache (Yharon)",
+      "displayNameRu": "\u0421\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u043d\u0438\u0446\u0430 (\u042f\u0440\u043e\u043d)",
       "category": "other",
       "tags": [
         "other",
@@ -34364,7 +34364,7 @@
       "kind": "other",
       "internalName": "YharonEgg",
       "displayName": "Yharon Egg",
-      "displayNameRu": "Blessed Phoenix Egg",
+      "displayNameRu": "\u0411\u043b\u0430\u0433\u043e\u0441\u043b\u043e\u0432\u043b\u0451\u043d\u043d\u043e\u0435 \u044f\u0439\u0446\u043e \u0444\u0435\u043d\u0438\u043a\u0441\u0430",
       "category": "other",
       "tags": [
         "other"
