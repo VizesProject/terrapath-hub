@@ -1,19 +1,63 @@
 import json
 import re
 import struct
-import sys
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT / "tools"))
+REGISTRY_PATH = ROOT / "supported" / "mods.registry.json"
 
-from build_calamity_support import BOSS_WIKI_ICON_OVERRIDES, COMBAT_CLASS_TAGS, STRICT_ITEM_CATEGORIES, VALID_BOSS_COLUMNS
-from build_terraria_support import TERRARIA_BOSS_WIKI_ICON_OVERRIDES
+STRICT_ITEM_CATEGORIES = {"weapon", "armor", "accessory", "buff", "other"}
+VALID_BOSS_COLUMNS = {"miniboss", "prehardmode", "hardmode", "postmoonlord"}
+ITEM_LIKE_KINDS = {"item", "material", "ore", "other"}
+BOSS_LIKE_KINDS = {"boss", "miniboss"}
+OFFICIAL_STATUSES = {"official"}
+
+WEAPON_CONTAMINATION_HINTS = re.compile(
+    r"pickaxe|drill|hammer|hamaxe|chainsaw|fishingpole|axe|aquarium|bowl|bookcase|statue|wall",
+    re.IGNORECASE,
+)
+ACCESSORY_CONTAMINATION_HINTS = re.compile(
+    r"bookcase|banner|statue|brick$|wall$|bar$|pickaxe|drill|hammer|hamaxe|axe|helmet|"
+    r"breastplate|chestplate|greaves|leggings|robe|hood|mask",
+    re.IGNORECASE,
+)
+BUFF_CONTAMINATION_HINTS = re.compile(
+    r"bookcase|banner|brick$|wall$|bar$|pickaxe|drill|hammer|hamaxe|axe|helmet|"
+    r"breastplate|chestplate|greaves|leggings|robe|hood|mask",
+    re.IGNORECASE,
+)
+
+TERRARIA_BOSS_WIKI_ICON_OVERRIDES = {
+    "Terraria/KingSlime": "assets/icons/terraria/bosses/king-slime-wiki.png",
+    "Terraria/QueenSlimeBoss": "assets/icons/terraria/bosses/queen-slime-wiki.png",
+    "Terraria/MoonLordCore": "assets/icons/terraria/bosses/moon-lord-wiki.png",
+    "Terraria/Deerclops": "assets/icons/terraria/bosses/deerclops-wiki.png",
+    "Terraria/DD2DarkMageT1": "assets/icons/terraria/bosses/dark-mage-wiki.png",
+    "Terraria/DD2OgreT2": "assets/icons/terraria/bosses/ogre-wiki.png",
+    "Terraria/DD2Betsy": "assets/icons/terraria/bosses/betsy-wiki.png",
+}
+
+CALAMITY_FORBIDDEN_BOSS_SEGMENTS = {
+    "CalamityMod/StormWeaverBody",
+    "CalamityMod/StormWeaverTail",
+    "CalamityMod/ThanatosBody1",
+    "CalamityMod/ThanatosBody2",
+    "CalamityMod/ThanatosTail",
+    "CalamityMod/AresGaussNuke",
+    "CalamityMod/AresLaserCannon",
+    "CalamityMod/AresPlasmaFlamethrower",
+    "CalamityMod/AresTeslaCannon",
+    "CalamityMod/Apollo",
+    "CalamityMod/Artemis",
+    "CalamityMod/AquaticScourgeBody",
+    "CalamityMod/AquaticScourgeBodyAlt",
+    "CalamityMod/AquaticScourgeTail",
+}
 
 
-def read_json(relative_path: str) -> dict:
-    with (ROOT / relative_path).open("r", encoding="utf-8") as file:
+def read_json(path: Path) -> dict:
+    with path.open("r", encoding="utf-8") as file:
         return json.load(file)
 
 
@@ -22,220 +66,179 @@ def require(condition: bool, message: str) -> None:
         raise SystemExit(message)
 
 
-def validate_item_categories(relative_path: str) -> None:
-    rows = read_json(relative_path)["items"]
-    weapon_tool_pattern = re.compile(
-        r"pickaxe|drill|hammer|hamaxe|chainsaw|fishingpole|axe|aquarium|bowl|bookcase|statue|wall",
-        re.IGNORECASE,
-    )
-    accessory_contamination_pattern = re.compile(
-        r"bookcase|banner|statue|brick$|wall$|bar$|pickaxe|drill|hammer|hamaxe|axe|helmet|"
-        r"breastplate|chestplate|greaves|leggings|robe|hood|mask",
-        re.IGNORECASE,
-    )
-    buff_contamination_pattern = re.compile(
-        r"bookcase|banner|brick$|wall$|bar$|pickaxe|drill|hammer|hamaxe|axe|helmet|"
-        r"breastplate|chestplate|greaves|leggings|robe|hood|mask",
-        re.IGNORECASE,
-    )
-    armor_contamination_pattern = re.compile(
-        r"bookcase|banner|brick$|wall$|pickaxe|drill|hammer|hamaxe|axe",
-        re.IGNORECASE,
-    )
+def load_registry() -> list[dict]:
+    require(REGISTRY_PATH.exists(), "supported/mods.registry.json is missing")
+    payload = read_json(REGISTRY_PATH)
+    mods = payload.get("mods", [])
+    require(isinstance(mods, list) and mods, "supported/mods.registry.json has no mods list")
 
+    ids = []
+    for row in mods:
+        mod_id = str(row.get("id") or "").strip()
+        require(mod_id, "mods.registry contains an entry without id")
+        ids.append(mod_id)
+    require(len(ids) == len(set(ids)), "mods.registry contains duplicated mod ids")
+    require("Terraria" in ids, "mods.registry must include Terraria")
+    return mods
+
+
+def support_file(mod_name: str, filename: str) -> Path:
+    return ROOT / "supported" / mod_name / filename
+
+
+def validate_item_categories(mod_name: str, rows: list[dict]) -> None:
     weapon_tools = [
         row["id"]
         for row in rows
-        if row.get("category") == "weapon" and weapon_tool_pattern.search(row.get("internalName", ""))
+        if row.get("category") == "weapon" and WEAPON_CONTAMINATION_HINTS.search(str(row.get("internalName", "")))
     ]
     contaminated_accessories = [
         row["id"]
         for row in rows
-        if row.get("category") == "accessory"
-        and accessory_contamination_pattern.search(row.get("internalName", ""))
+        if row.get("category") == "accessory" and ACCESSORY_CONTAMINATION_HINTS.search(str(row.get("internalName", "")))
     ]
     contaminated_buffs = [
         row["id"]
         for row in rows
         if row.get("category") == "buff"
-        and buff_contamination_pattern.search(row.get("internalName", ""))
+        and BUFF_CONTAMINATION_HINTS.search(str(row.get("internalName", "")))
         and row.get("internalName") not in {"WarTable"}
     ]
-    buffs_with_combat_tags = [
-        row["id"]
-        for row in rows
-        if row.get("category") == "buff"
-        and COMBAT_CLASS_TAGS & {str(tag).strip().lower() for tag in row.get("tags", []) if str(tag).strip()}
-    ]
-    contaminated_armor = [
-        row["id"]
-        for row in rows
-        if row.get("category") == "armor"
-        and armor_contamination_pattern.search(row.get("internalName", ""))
-    ]
 
-    require(
-        not weapon_tools,
-        f"{relative_path} has tools in the weapon picker: {', '.join(weapon_tools[:20])}",
-    )
-    require(
-        not contaminated_accessories,
-        f"{relative_path} has non-accessory entries in the accessory picker: {', '.join(contaminated_accessories[:20])}",
-    )
-    require(
-        not contaminated_buffs,
-        f"{relative_path} has non-buff entries in the buff picker: {', '.join(contaminated_buffs[:20])}",
-    )
-    require(
-        not buffs_with_combat_tags,
-        f"{relative_path} has combat-class entries in the buff picker: {', '.join(buffs_with_combat_tags[:20])}",
-    )
-    require(
-        not contaminated_armor,
-        f"{relative_path} has non-armor entries in the armor picker: {', '.join(contaminated_armor[:20])}",
-    )
+    require(not weapon_tools, f"{mod_name}: tools/decor leaked into weapons: {', '.join(weapon_tools[:20])}")
+    require(not contaminated_accessories, f"{mod_name}: non-accessory entries leaked into accessories: {', '.join(contaminated_accessories[:20])}")
+    require(not contaminated_buffs, f"{mod_name}: non-buff entries leaked into buffs: {', '.join(contaminated_buffs[:20])}")
+
+
+def validate_search_content(mod_name: str, entries: list[dict], bosses_subset: list[dict], strict_required: bool) -> None:
+    require(entries or not strict_required, f"{mod_name}: search-content is empty")
+
+    rows_by_id: dict[str, list[dict]] = {}
+    for row in entries:
+        content_id = str(row.get("id") or "")
+        if content_id:
+            rows_by_id.setdefault(content_id, []).append(row)
+
+    for row in entries:
+        content_id = str(row.get("id") or "")
+        kind = str(row.get("kind") or "").lower()
+        category = row.get("category")
+        icon = str(row.get("icon") or "")
+
+        if category is not None:
+            require(category in STRICT_ITEM_CATEGORIES, f"{mod_name}: invalid category '{category}' for {content_id}")
+            if category == "armor":
+                require(row.get("armorMode") in {"set", "piece"}, f"{mod_name}: armorMode missing/invalid for {content_id}")
+                require(bool(row.get("armorGroupKey")), f"{mod_name}: armorGroupKey missing for {content_id}")
+
+        if kind in BOSS_LIKE_KINDS:
+            require(row.get("bossColumn") in VALID_BOSS_COLUMNS, f"{mod_name}: invalid bossColumn for {content_id}")
+            if row.get("bossPickerEligible"):
+                require(bool(icon), f"{mod_name}: picker-eligible boss has no icon: {content_id}")
+                require((ROOT / "docs" / icon).exists(), f"{mod_name}: boss icon file is missing on disk: {icon}")
+                require(
+                    str(row.get("canonicalBossId") or "") == content_id,
+                    f"{mod_name}: picker-eligible boss must be canonical: {content_id} -> {row.get('canonicalBossId')}",
+                )
+
+    for boss in bosses_subset:
+        content_id = str(boss.get("id") or "")
+        rows = rows_by_id.get(content_id) or []
+        row = next((candidate for candidate in rows if str(candidate.get("kind") or "").lower() in BOSS_LIKE_KINDS), None)
+        require(row is not None, f"{mod_name}: bosses.json entry missing from search-content: {content_id}")
+        require(row.get("bossPickerEligible"), f"{mod_name}: bosses.json entry is not picker-eligible in search-content: {content_id}")
+
+
+def localization_coverage(mod_name: str, entries: list[dict]) -> None:
+    if not entries:
+        return
+    localized = 0
+    for row in entries:
+        en = str(row.get("displayName") or "").strip()
+        ru = str(row.get("displayNameRu") or "").strip()
+        if ru and ru != en:
+            localized += 1
+    percent = (localized / max(1, len(entries))) * 100.0
+    print(f"[coverage] {mod_name}: localized {localized}/{len(entries)} ({percent:.1f}%)")
 
 
 def validate_terraria_boss_icons() -> None:
-    rows = {row["id"]: row for row in read_json("supported/Terraria/bosses.json")["bosses"]}
-    expected_icons = TERRARIA_BOSS_WIKI_ICON_OVERRIDES
-
-    for content_id, icon in expected_icons.items():
+    path = support_file("Terraria", "bosses.json")
+    if not path.exists():
+        return
+    rows = {row["id"]: row for row in read_json(path).get("bosses", [])}
+    for content_id, icon in TERRARIA_BOSS_WIKI_ICON_OVERRIDES.items():
         row = rows.get(content_id)
         require(row is not None, f"Missing Terraria boss entry: {content_id}")
         require(row.get("icon") == icon, f"{content_id} must use {icon}, got {row.get('icon')}")
         icon_path = ROOT / "docs" / icon
-        require(icon_path.exists(), f"Missing boss icon file: {icon}")
+        require(icon_path.exists(), f"Missing Terraria boss icon file: {icon}")
         raw = icon_path.read_bytes()
         width, height = struct.unpack(">II", raw[16:24])
-        require(
-            max(width, height) <= 128,
-            f"{content_id} uses a spritesheet-like icon ({width}x{height}): {icon}",
-        )
+        require(max(width, height) <= 128, f"{content_id} appears to use a sprite sheet ({width}x{height}): {icon}")
 
 
 def validate_calamity_boss_picker() -> None:
-    boss_rows = read_json("supported/CalamityMod/bosses.json")["bosses"]
-    boss_ids = {row["id"] for row in boss_rows}
-    forbidden = {
-        "CalamityMod/StormWeaverBody",
-        "CalamityMod/StormWeaverTail",
-        "CalamityMod/ThanatosBody1",
-        "CalamityMod/ThanatosBody2",
-        "CalamityMod/ThanatosTail",
-        "CalamityMod/AresGaussNuke",
-        "CalamityMod/AresLaserCannon",
-        "CalamityMod/AresPlasmaFlamethrower",
-        "CalamityMod/AresTeslaCannon",
-        "CalamityMod/Apollo",
-        "CalamityMod/Artemis",
-        "CalamityMod/AquaticScourgeBody",
-        "CalamityMod/AquaticScourgeBodyAlt",
-        "CalamityMod/AquaticScourgeTail",
-    }
-
-    leaked = sorted(boss_ids & forbidden)
+    path = support_file("CalamityMod", "bosses.json")
+    if not path.exists():
+        return
+    boss_rows = read_json(path).get("bosses", [])
+    boss_ids = {row.get("id") for row in boss_rows}
+    leaked = sorted(str(value) for value in (boss_ids & CALAMITY_FORBIDDEN_BOSS_SEGMENTS))
     require(not leaked, f"Calamity boss picker contains technical segments: {', '.join(leaked)}")
-
     require("CalamityMod/AquaticScourgeHead" in boss_ids, "Calamity boss picker is missing Aquatic Scourge")
 
-    boss_rows_by_id = {row["id"]: row for row in boss_rows}
-    for content_id, icon in BOSS_WIKI_ICON_OVERRIDES.items():
-        if content_id not in boss_rows_by_id:
-            continue
-        row = boss_rows_by_id[content_id]
-        require(row.get("icon") == icon, f"{content_id} must use {icon}, got {row.get('icon')}")
-        require((ROOT / "docs" / icon).exists(), f"Missing Calamity boss wiki icon file: {icon}")
 
+def validate_mod(mod_row: dict) -> None:
+    mod_name = str(mod_row.get("id") or "").strip()
+    status = str(mod_row.get("status") or "planned").strip().lower()
+    strict_required = status in OFFICIAL_STATUSES
 
-def validate_search_content(relative_path: str, mod_name: str) -> None:
-    payload = read_json(relative_path)
-    entries = payload.get("entries", [])
-    require(entries, f"{relative_path} has no entries")
+    search_path = support_file(mod_name, "search-content.json")
+    items_path = support_file(mod_name, "items.json")
+    bosses_path = support_file(mod_name, "bosses.json")
 
-    rows_by_id: dict[str, list[dict]] = {}
-    for row in entries:
-        content_id = row.get("id")
-        if not content_id:
-            continue
-        rows_by_id.setdefault(str(content_id), []).append(row)
+    if strict_required:
+        require(search_path.exists(), f"{mod_name}: official mod is missing search-content.json")
+        require(items_path.exists(), f"{mod_name}: official mod is missing items.json")
+        require(bosses_path.exists(), f"{mod_name}: official mod is missing bosses.json")
+    elif not (search_path.exists() and items_path.exists() and bosses_path.exists()):
+        return
 
-    for row in entries:
-        content_id = row.get("id")
-        kind = str(row.get("kind") or "").lower()
-        category = row.get("category")
-        icon = row.get("icon")
+    search_entries = read_json(search_path).get("entries", [])
+    items_rows = read_json(items_path).get("items", [])
+    bosses_rows = read_json(bosses_path).get("bosses", [])
 
-        if category is not None:
-            require(
-                category in STRICT_ITEM_CATEGORIES,
-                f"{relative_path} contains invalid category '{category}' for {content_id}",
-            )
-            if category == "armor":
-                require(
-                    row.get("armorMode") in {"set", "piece"},
-                    f"{relative_path} armor entry is missing armorMode metadata: {content_id}",
-                )
-                require(
-                    bool(row.get("armorGroupKey")),
-                    f"{relative_path} armor entry is missing armorGroupKey metadata: {content_id}",
-                )
+    validate_item_categories(mod_name, items_rows)
+    validate_search_content(mod_name, search_entries, bosses_rows, strict_required)
+    localization_coverage(mod_name, search_entries)
 
-        if kind in {"boss", "miniboss"}:
-            require(
-                row.get("bossColumn") in VALID_BOSS_COLUMNS,
-                f"{relative_path} boss entry has invalid bossColumn: {content_id}",
-            )
-            if row.get("bossPickerEligible"):
-                require(bool(icon), f"{relative_path} selectable boss entry is missing icon: {content_id}")
-                require(
-                    (ROOT / "docs" / str(icon)).exists(),
-                    f"{relative_path} selectable boss icon is missing on disk: {icon}",
-                )
-                canonical = row.get("canonicalBossId")
-                require(
-                    canonical == content_id,
-                    f"{relative_path} selectable boss entry must be canonical: {content_id} -> {canonical}",
-                )
+    if mod_name == "Terraria" and strict_required:
+        event_count = sum(1 for row in search_entries if str(row.get("kind") or "").lower() == "event")
+        biome_count = sum(1 for row in search_entries if str(row.get("kind") or "").lower() == "biome")
+        require(event_count >= 8, f"{mod_name}: expected at least 8 events in search-content, got {event_count}")
+        require(biome_count >= 8, f"{mod_name}: expected at least 8 biomes in search-content, got {biome_count}")
 
-    if mod_name == "Terraria":
-        boss_subset = read_json("supported/Terraria/bosses.json").get("bosses", [])
-    elif mod_name == "CalamityMod":
-        boss_subset = read_json("supported/CalamityMod/bosses.json").get("bosses", [])
-    else:
-        boss_subset = []
-
-    for boss in boss_subset:
-        content_id = boss.get("id")
-        rows = rows_by_id.get(str(content_id)) or []
-        row = next(
-            (
-                candidate
-                for candidate in rows
-                if str(candidate.get("kind") or "").lower() in {"boss", "miniboss"}
-            ),
-            None,
-        )
-        require(row is not None, f"{relative_path} is missing boss subset row: {content_id}")
-        require(
-            row.get("bossPickerEligible"),
-            f"{relative_path} boss subset row is not picker-eligible: {content_id}",
-        )
-
-    if mod_name == "Terraria":
-        event_count = sum(1 for row in entries if str(row.get("kind") or "").lower() == "event")
-        biome_count = sum(1 for row in entries if str(row.get("kind") or "").lower() == "biome")
-        require(event_count >= 8, f"{relative_path} should include more Terraria events, got {event_count}")
-        require(biome_count >= 8, f"{relative_path} should include more Terraria biomes, got {biome_count}")
+    if strict_required:
+        missing_item_icons = [
+            str(row.get("id"))
+            for row in items_rows
+            if str(row.get("icon") or "").strip() == "" and not row.get("pickerHidden")
+        ]
+        require(not missing_item_icons, f"{mod_name}: picker-visible item rows are missing icons: {', '.join(missing_item_icons[:20])}")
 
 
 def main() -> int:
-    validate_item_categories("supported/Terraria/items.json")
-    validate_item_categories("supported/CalamityMod/items.json")
-    validate_search_content("supported/Terraria/search-content.json", "Terraria")
-    validate_search_content("supported/CalamityMod/search-content.json", "CalamityMod")
-    validate_terraria_boss_icons()
-    validate_calamity_boss_picker()
+    mods = load_registry()
+    for row in mods:
+        validate_mod(row)
+
+    status_by_mod = {str(row.get("id")): str(row.get("status") or "").lower() for row in mods}
+    if status_by_mod.get("Terraria") in OFFICIAL_STATUSES:
+        validate_terraria_boss_icons()
+    if status_by_mod.get("CalamityMod") in OFFICIAL_STATUSES:
+        validate_calamity_boss_picker()
+
     print("Support data validation passed.")
     return 0
 

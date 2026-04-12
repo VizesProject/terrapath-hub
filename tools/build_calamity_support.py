@@ -589,7 +589,7 @@ def validate_coverage(raw_items: list[dict], raw_npcs: list[dict], entries_by_id
 def build_pack(export_dir: Path) -> tuple[dict, dict, dict]:
     raw_items, raw_npcs = load_raw_export(export_dir)
     if not raw_items and not raw_npcs:
-        raise SystemExit(f"No Calamity export found in {export_dir}. Run /terrapath export calamity first.")
+        raise SystemExit(f"No Calamity export found in {export_dir}. Run /terrapath export mod CalamityMod first.")
 
     supplement = load_supplement()
     previous_entries = load_previous_entries()
@@ -698,7 +698,7 @@ def main() -> int:
 
     export_dir = find_export_dir(args.export_dir)
     if export_dir is None:
-        raise SystemExit("No Calamity export directory found. Run /terrapath export calamity first or pass --export-dir.")
+        raise SystemExit("No Calamity export directory found. Run /terrapath export mod CalamityMod first or pass --export-dir.")
 
     search_content, items, bosses = build_pack(export_dir)
 

@@ -4,10 +4,10 @@ const progression = window.terraPathProgression;
 const SAVE_KEY = "terrapath-editor-draft-v7";
 const LOAD_KEYS = [SAVE_KEY, "terrapath-editor-draft-v6", "terrapath-editor-draft-v5"];
 
-const MODS = [
-  { value: "Terraria", label: "Terraria" },
-  { value: "CalamityMod", label: "Calamity Mod" },
-  { value: "ThoriumMod", label: "Thorium Mod" }
+const DEFAULT_MODS = [
+  { value: "Terraria", label: "Terraria", status: "official", rolloutWave: 0, sourcePolicy: "curated-export-plus-supplement", iconStrategy: "wiki-first-fallback-local", supportedKinds: ["item", "boss", "npc", "event", "biome", "system", "other"] },
+  { value: "CalamityMod", label: "Calamity Mod", status: "official", rolloutWave: 0, sourcePolicy: "local-export-plus-supplement", iconStrategy: "wiki-first-fallback-local", supportedKinds: ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"] },
+  { value: "ThoriumMod", label: "Thorium Mod", status: "metadata-only", rolloutWave: 1, sourcePolicy: "local-export-plus-supplement", iconStrategy: "wiki-first-fallback-local", supportedKinds: ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"] }
 ];
 
 const CLASSES = [
@@ -29,7 +29,6 @@ const GROUPS = [
 ];
 
 const ERA_IDS = ["prehardmode", "hardmode", "postmoonlord"];
-const ITEM_PICKER_MIN_QUERY = 2;
 const PICKER_VIRTUAL_ROW_HEIGHT = 94;
 const PICKER_VIRTUAL_OVERSCAN = 6;
 
@@ -270,6 +269,7 @@ function createEmptySupport() {
     content: [],
     visibleItems: [],
     itemGroups: { weapon: [], armor: [], accessory: [], buff: [], other: [] },
+    contentByKind: new Map(),
     previews: { boss: [], descriptionByKind: {}, itemByGroup: { weapon: [], armor: [], accessory: [], buff: [], other: [] } },
     itemMap: new Map(),
     bossMap: new Map(),
@@ -280,6 +280,7 @@ function createEmptySupport() {
 let support = createEmptySupport();
 let supportRequestToken = 0;
 let supportDataCache = new Map();
+let MODS = [...DEFAULT_MODS];
 let state = loadDraft() || sampleState();
 
 function lang() {
@@ -305,6 +306,45 @@ function esc(value) {
 
 function uniq(values) {
   return [...new Set((values || []).filter(Boolean))];
+}
+
+function normalizeRegistryModEntry(raw) {
+  const value = String(raw?.id || raw?.value || "").trim();
+  if (!value) return null;
+  return {
+    value,
+    label: String(raw?.displayName || raw?.label || value).trim() || value,
+    status: String(raw?.status || "planned").trim().toLowerCase(),
+    rolloutWave: Number.isFinite(Number(raw?.rolloutWave)) ? Number(raw.rolloutWave) : 99,
+    sourcePolicy: String(raw?.sourcePolicy || "local-export-plus-supplement"),
+    iconStrategy: String(raw?.iconStrategy || "wiki-first-fallback-local"),
+    supportedKinds: Array.isArray(raw?.supportedKinds)
+      ? uniq(raw.supportedKinds.map((kind) => String(kind || "").trim().toLowerCase()))
+      : ["item", "boss", "npc", "event", "biome", "system", "other"]
+  };
+}
+
+function normalizeModsRegistry(payload) {
+  const source = Array.isArray(payload?.mods) ? payload.mods : [];
+  const parsed = source.map(normalizeRegistryModEntry).filter(Boolean);
+  if (!parsed.length) {
+    return [...DEFAULT_MODS];
+  }
+
+  const seen = new Set();
+  const ordered = parsed
+    .filter((entry) => {
+      if (seen.has(entry.value)) return false;
+      seen.add(entry.value);
+      return true;
+    })
+    .sort((left, right) => (left.rolloutWave - right.rolloutWave) || left.label.localeCompare(right.label, undefined, { sensitivity: "base" }));
+
+  if (!ordered.some((entry) => entry.value === "Terraria")) {
+    ordered.unshift({ ...DEFAULT_MODS[0] });
+  }
+
+  return ordered;
 }
 
 function slug(value) {
@@ -460,14 +500,9 @@ function normalizePickerCategory(entry) {
   return null;
 }
 
-function inferSearchCategory(entry) {
-  const normalized = normalizePickerCategory(entry);
-  return normalized || "other";
-}
-
 function applySupportEnhancements() {
   for (const [id, entry] of support.itemMap.entries()) {
-    const normalized = inferSearchCategory(entry);
+    const normalized = normalizePickerCategory(entry) || "other";
     support.itemMap.set(id, {
       ...entry,
       category: normalized
@@ -496,7 +531,7 @@ function applySupportEnhancements() {
   support.visibleItems = support.items.filter((entry) => !entry.pickerHidden);
   support.itemGroups = { weapon: [], armor: [], accessory: [], buff: [], other: [] };
   support.visibleItems.forEach((entry) => {
-    const category = inferSearchCategory(entry);
+    const category = normalizePickerCategory(entry) || "other";
     const bucket = support.itemGroups[category] || support.itemGroups.other;
     bucket.push(entry);
   });
@@ -506,6 +541,14 @@ function applySupportEnhancements() {
   support.content = [...support.contentMap.values()]
     .filter((entry) => entry.icon)
     .sort((left, right) => localizedDisplayName(left).localeCompare(localizedDisplayName(right), undefined, { sensitivity: "base" }));
+  support.contentByKind = new Map();
+  for (const entry of support.content) {
+    const kind = normalizedContentKind(entry);
+    if (!support.contentByKind.has(kind)) {
+      support.contentByKind.set(kind, []);
+    }
+    support.contentByKind.get(kind).push(entry);
+  }
   support.previews = { boss: [], descriptionByKind: {}, itemByGroup: { weapon: [], armor: [], accessory: [], buff: [], other: [] } };
 }
 
@@ -734,9 +777,17 @@ function saveAndRender(full = true) {
 }
 
 function choiceCard(option, selected, groupName) {
-  const description = option.value === "Terraria"
-    ? (lang() === "ru" ? "Vanilla-\u043f\u043e\u0434\u0431\u043e\u0440\u043a\u0438 \u0438 \u043f\u043e\u0438\u0441\u043a \u0443\u0436\u0435 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b." : "Vanilla pickers and search are available.")
-    : (lang() === "ru" ? "\u041f\u043e\u043a\u0430 \u0442\u043e\u043b\u044c\u043a\u043e \u043c\u0435\u0442\u0430\u0434\u0430\u043d\u043d\u044b\u0435." : "Metadata only for now.");
+  if (groupName !== "mods") {
+    const title = option.label || option[lang()] || option.value;
+    return `<label class="choice-card"><input type="checkbox" value="${esc(option.value)}" data-choice-group="${esc(groupName)}" ${selected.includes(option.value) ? "checked" : ""}><span class="choice-card__copy"><strong class="choice-card__title">${esc(title)}</strong></span></label>`;
+  }
+
+  const status = String(option.status || "planned");
+  const description = status === "official"
+    ? (lang() === "ru" ? "Полный deterministic-пак: поиск, фильтры и иконки готовы." : "Full deterministic pack: search, filters, and icons are ready.")
+    : status === "metadata-only"
+      ? (lang() === "ru" ? "Пока только метаданные required mods. Полные picker-данные готовятся." : "Required-mod metadata only for now. Full picker data is in progress.")
+      : (lang() === "ru" ? "Запланировано в волне онбординга. Поддержка подключается через общий pipeline." : "Planned for an onboarding wave. Support is added through the shared pipeline.");
   const title = option.label || option[lang()];
   return `<label class="choice-card"><input type="checkbox" value="${esc(option.value)}" data-choice-group="${esc(groupName)}" ${selected.includes(option.value) ? "checked" : ""}><span class="choice-card__copy"><strong class="choice-card__title">${esc(title)}</strong><span class="choice-card__description">${esc(description)}</span></span></label>`;
 }
@@ -1253,11 +1304,7 @@ function renderPickerFilters() {
 function pickerEntries() {
   if (!pickerState) return [];
   if (pickerState.mode === "description") {
-    const contentForKind = (kind) => {
-      const matches = support.content.filter((entry) => normalizedContentKind(entry) === kind);
-      if (kind !== "npc") return matches;
-      return matches.filter((entry) => entry.npcPickerEligible !== false);
-    };
+    const contentForKind = (kind) => (support.contentByKind.get(kind) || []).filter((entry) => (kind === "npc" ? entry.npcPickerEligible !== false : true));
     if (pickerState.filter && pickerState.filter !== "all") {
       return contentForKind(pickerState.filter);
     }
@@ -1316,14 +1363,6 @@ function renderPickerViewport() {
 function renderPickerResults({ resetScroll = false } = {}) {
   if (!pickerState) return;
   const query = refs.pickerSearchInput.value.trim().toLowerCase();
-  const needsLongerQuery = pickerState.mode === "item" && pickerState.groupKey === "other" && query.length > 0 && query.length < ITEM_PICKER_MIN_QUERY;
-
-  if (needsLongerQuery) {
-    refs.pickerResults.innerHTML = `<p class="empty-state">${esc(lang() === "ru" ? `Введите минимум ${ITEM_PICKER_MIN_QUERY} символа, чтобы искать по полному списку предметов.` : `Type at least ${ITEM_PICKER_MIN_QUERY} characters to search the full item list.`)}</p>`;
-    pickerState.entries = [];
-    return;
-  }
-
   const results = filteredPickerEntries(query);
   pickerState.entries = results;
 
@@ -1413,6 +1452,14 @@ async function fetchJsonOptional(paths, fallback = null) {
   }
 }
 
+async function loadModsRegistry() {
+  const payload = await fetchJsonOptional(["supported/mods.registry.json", "../supported/mods.registry.json"], null);
+  MODS = normalizeModsRegistry(payload);
+
+  state.requiredMods = uniq(["Terraria", ...(state.requiredMods || [])]);
+  if (!state.requiredMods.length) state.requiredMods = ["Terraria"];
+}
+
 function ingestLegacySupport(entries, kind) {
   for (const entry of entries || []) {
     const nextEntry = { ...entry, kind: entry.kind || kind };
@@ -1446,6 +1493,12 @@ function ingestSearchableSupport(entries) {
 }
 
 async function loadModSupport(modName) {
+  const modMeta = MODS.find((entry) => entry.value === modName);
+  if (modMeta && modMeta.status !== "official") {
+    supportDataCache.set(modName, { searchContentData: { entries: [] } });
+    return;
+  }
+
   if (!supportDataCache.has(modName)) {
     const base = `supported/${modName}`;
     const alt = `../supported/${modName}`;
@@ -1711,5 +1764,15 @@ refs.pickerResults.addEventListener("scroll", () => {
 });
 site?.onChange?.(() => renderAll());
 
-renderAll();
-loadSupport();
+async function bootstrap() {
+  try {
+    await loadModsRegistry();
+  } catch (error) {
+    console.error(error);
+    MODS = [...DEFAULT_MODS];
+  }
+  renderAll();
+  loadSupport();
+}
+
+bootstrap();

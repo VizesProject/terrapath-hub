@@ -1,32 +1,58 @@
 # Supported Content
 
-TerraPath Hub uses curated content indexes for web search, validation, and icon
-display. The website only guarantees the entries listed here.
+TerraPath Hub uses deterministic generated packs from `supported/<Mod>/`.
+The editor and guide renderer consume those packs directly and do not rely on
+runtime category guessing.
 
-The in-game mod can eventually resolve more content from installed mods than the
-website can display, but the public editor stays limited to supported web data.
+## Support Matrix (Wave-Based)
 
-## Support Matrix
+| Wave | Source | Internal name | Web support | Notes |
+| --- | --- | --- | --- | --- |
+| 0 | Terraria | `Terraria` | Official | Canonical deterministic pack with curated wiki-first boss icons and full picker metadata. |
+| 0 | Calamity Mod | `CalamityMod` | Official | Generated from local export + supplement normalization and canonical boss rules. |
+| 1 | Thorium Mod | `ThoriumMod` | Metadata-only | Included in registry and onboarding pipeline, full deterministic pack is next. |
+| 1 | Spirit Reforged | `SpiritReforged` | Planned | Onboarding uses the same deterministic pipeline and CI gates. |
+| 2 | Fargo's Mutant Mod | `Fargowiltas` | Planned | Will be promoted only after passing category/icon/boss validation gates. |
+| 2 | Fargo's Souls Mod | `FargowiltasSouls` | Planned | Deterministic onboarding with canonical boss/miniboss rules. |
+| 2 | Fargo DLC | `FargowiltasDLC` | Planned | Internal name is validated via `/terrapath export modlist`. |
+| 2 | Fargo Souls DLC | `FargowiltasSoulsDLC` | Planned | Internal name is validated via `/terrapath export modlist`. |
+| 3 | Calamity Entropy | `CalamityEntropy` | Planned | Calamity addon wave with shared normalization contracts. |
+| 3 | Calamity Fables | `CalamityFables` | Planned | Calamity addon wave with shared normalization contracts. |
+| 3 | Calamity: Wrath of the Gods | `CalamityWrathOfTheGods` | Planned | Calamity addon wave with shared normalization contracts. |
+| 3 | Calamity Catalyst | `CalamityCatalyst` | Planned | Calamity addon wave with shared normalization contracts. |
+| 3 | Calamity Infernum | `InfernumMode` | Planned | Calamity addon wave with shared normalization contracts. |
+| 3 | Calamity: Hunt of the Old God | `CalamityHuntOfTheOldGod` | Planned | Calamity addon wave with shared normalization contracts. |
+| 4 | The Stars Above | `TheStarsAbove` | Planned | Standalone wave after shared pipeline hardening. |
+| 4 | Starlight River | `StarlightRiver` | Planned | Standalone wave after shared pipeline hardening. |
 
-| Source | Internal name | Web support | Notes |
-| --- | --- | --- | --- |
-| Terraria | `Terraria` | Official | Search, validation, and curated vanilla icons are available. |
-| Calamity Mod | `CalamityMod` | Official | Searchable web support is generated from a maintainer export of the installed mod plus supplement entries for non-item progression content and canonical boss/miniboss normalization. |
-| Thorium Mod | `ThoriumMod` | Metadata-only | Required-mod metadata works; richer web pickers are planned later. |
+## Registry and Data Contracts
 
-## Asset Policy
-
-- Third-party icons should only be published here when redistribution is allowed.
-- Until then, unsupported or partially supported web content may use placeholders.
-- TerraPath should prefer local installed mod assets in-game over republishing
-  third-party web assets when permission is unclear.
+- `supported/mods.registry.json` is the canonical list of known mod ids, status,
+  rollout wave, source policy, and icon strategy.
+- Every deterministic support pack is generated into:
+  - `supported/<Mod>/search-content.json`
+  - `supported/<Mod>/items.json`
+  - `supported/<Mod>/bosses.json`
+- Every mod folder should include `supplement.json` with:
+  - `entries`
+  - `bossNormalization`
+  - `taxonomyOverrides`
 
 ## Maintainer Rebuild Flow
 
-1. Load TerraPath and Calamity Mod together in `tModLoader`.
-2. Run `/terrapath export calamity` in-game.
-3. Run `python tools/import_calamity_wiki_boss_icons.py` to refresh curated boss icons from the official wiki.
-4. Run `python tools/import_terraria_wiki_boss_icons.py` to refresh canonical Terraria map icons for boss picker entries.
-5. Run `python tools/build_terraria_support.py` to regenerate deterministic Terraria search-content.
-6. Run `python tools/build_calamity_support.py` to rebuild Calamity search-content/items/bosses.
-7. Run `python tools/validate_support_data.py` and `python tools/build_catalog.py --check` before committing.
+1. Run `/terrapath export modlist` in tModLoader to confirm exact internal ids.
+2. Run `/terrapath export mod <InternalModName>` for each mod you want to rebuild.
+3. (Optional) Refresh curated wiki icon overrides where needed.
+4. Run `python tools/build_support_pack.py --mod <InternalModName>`.
+5. Run `python tools/validate_support_data.py`.
+6. Run `python tools/build_catalog.py --check`.
+
+## Quality Gates
+
+Validation is blocking for `Official` mods:
+
+- no contamination in item categories (`weapon/accessory/buff`)
+- no segmented or technical NPCs in boss picker
+- selectable bosses must be canonical and icon-backed
+- armor entries must carry deterministic metadata (`armorMode`, `armorGroupKey`)
+- localization fallback is allowed (`displayNameRu` -> EN), but coverage is reported.

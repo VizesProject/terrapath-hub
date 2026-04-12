@@ -1,0 +1,16 @@
+{
+  "mod": "ThoriumMod",
+  "contentType": "supplement",
+  "entries": [],
+  "bossNormalization": {
+    "aliasMap": {},
+    "hiddenBosses": [],
+    "eligibleMinibosses": [],
+    "columnMap": {},
+    "displayOverrides": {}
+  },
+  "taxonomyOverrides": {
+    "forcedCategories": {},
+    "blacklist": []
+  }
+}

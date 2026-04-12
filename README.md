@@ -29,6 +29,7 @@ new guides and report project feedback.
 - The guide schema in `schema/`.
 - Curated support data and extracted web icons in `supported/`.
 - Submission and publication automation in `.github/` and `tools/`.
+- Deterministic multi-mod registry in `supported/mods.registry.json`.
 
 Guides are stored as structured JSON on purpose, not as free-form wiki pages.
 That keeps them searchable, valid, sortable, and ready for future in-game use.
@@ -40,7 +41,7 @@ docs/       GitHub Pages site: home page, guide browser, editor, guide reader
 guides/     Published guide JSON files grouped by locale and guide id
 catalog/    Built indexes used by the site and future in-game loading
 schema/     JSON schema for guide validation
-supported/  Curated Terraria content data and web-ready icon assets
+supported/  Deterministic multi-mod support packs, supplements, and web-ready icon assets
 tools/      Validation, catalog build, export, and publication helper scripts
 ```
 
@@ -73,8 +74,9 @@ tools/      Validation, catalog build, export, and publication helper scripts
 
 - The public editor, guide browser, and issue-based submission flow are live.
 - The web editor ships with curated Terraria data and can also load generated Calamity support packs.
-- Calamity Mod support is rebuilt from an installed copy of the mod plus supplement data in this repo.
-- Thorium Mod is still metadata-only on the web side.
+- Support packs are deterministic: the editor reads canonical generated metadata instead of runtime category inference.
+- Calamity Mod support is rebuilt from local export + supplement rules in this repo.
+- Additional mods are tracked in wave-based onboarding via `supported/mods.registry.json`.
 - Published guides are reviewed before they are added to the public catalog.
 - The TerraPath tModLoader mod source lives separately from this public hub.
 

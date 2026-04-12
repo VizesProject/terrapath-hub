@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "contentType": "mods-registry",
+  "mods": [
+    {
+      "id": "Terraria",
+      "displayName": "Terraria",
+      "status": "official",
+      "rolloutWave": 0,
+      "sourcePolicy": "curated-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "CalamityMod",
+      "displayName": "Calamity Mod",
+      "status": "official",
+      "rolloutWave": 0,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "ThoriumMod",
+      "displayName": "Thorium Mod",
+      "status": "metadata-only",
+      "rolloutWave": 1,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "SpiritReforged",
+      "displayName": "Spirit Reforged",
+      "status": "planned",
+      "rolloutWave": 1,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "Fargowiltas",
+      "displayName": "Fargo's Mutant Mod",
+      "status": "planned",
+      "rolloutWave": 2,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "FargowiltasSouls",
+      "displayName": "Fargo's Souls Mod",
+      "status": "planned",
+      "rolloutWave": 2,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "FargowiltasDLC",
+      "displayName": "Fargo DLC",
+      "status": "planned",
+      "rolloutWave": 2,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "FargowiltasSoulsDLC",
+      "displayName": "Fargo Souls DLC",
+      "status": "planned",
+      "rolloutWave": 2,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "CalamityEntropy",
+      "displayName": "Calamity Entropy",
+      "status": "planned",
+      "rolloutWave": 3,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "CalamityFables",
+      "displayName": "Calamity Fables",
+      "status": "planned",
+      "rolloutWave": 3,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "CalamityWrathOfTheGods",
+      "displayName": "Calamity: Wrath of the Gods",
+      "status": "planned",
+      "rolloutWave": 3,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "CalamityCatalyst",
+      "displayName": "Calamity Catalyst",
+      "status": "planned",
+      "rolloutWave": 3,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "InfernumMode",
+      "displayName": "Calamity Infernum",
+      "status": "planned",
+      "rolloutWave": 3,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "CalamityHuntOfTheOldGod",
+      "displayName": "Calamity: Hunt of the Old God",
+      "status": "planned",
+      "rolloutWave": 3,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "TheStarsAbove",
+      "displayName": "The Stars Above",
+      "status": "planned",
+      "rolloutWave": 4,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    },
+    {
+      "id": "StarlightRiver",
+      "displayName": "Starlight River",
+      "status": "planned",
+      "rolloutWave": 4,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+    }
+  ]
+}
