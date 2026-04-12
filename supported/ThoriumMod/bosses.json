@@ -7,7 +7,7 @@
       "kind": "boss",
       "internalName": "Aquaius",
       "displayName": "Aquaius",
-      "displayNameRu": "Aquaius, the Endless Tide",
+      "displayNameRu": "\u0410\u043a\u0432\u0430\u0443\u0441, \u0411\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043f\u0440\u0438\u043b\u0438\u0432",
       "icon": "assets/icons/thoriummod/bosses/aquaius.png",
       "tags": [
         "boss"
@@ -21,7 +21,7 @@
       "kind": "boss",
       "internalName": "BoreanStrider",
       "displayName": "Borean Strider",
-      "displayNameRu": "Borean Strider",
+      "displayNameRu": "\u0411\u043e\u0440\u0435\u0439\u0441\u043a\u0438\u0439 \u0448\u0430\u0433\u0430\u0442\u0435\u043b\u044c",
       "icon": "assets/icons/thoriummod/bosses/boreanstrider.png",
       "tags": [
         "boss"
@@ -35,7 +35,7 @@
       "kind": "boss",
       "internalName": "BoreanStriderPopped",
       "displayName": "Borean Strider Popped",
-      "displayNameRu": "Borean Strider",
+      "displayNameRu": "\u0411\u043e\u0440\u0435\u0439\u0441\u043a\u0438\u0439 \u0448\u0430\u0433\u0430\u0442\u0435\u043b\u044c",
       "icon": "assets/icons/thoriummod/bosses/boreanstriderpopped.png",
       "tags": [
         "boss"
@@ -49,7 +49,7 @@
       "kind": "boss",
       "internalName": "BossDummy",
       "displayName": "Boss Dummy",
-      "displayNameRu": "Boss Dummy",
+      "displayNameRu": "\u0411\u043e\u0441\u0441-\u043c\u0430\u043d\u0435\u043a\u0435\u043d",
       "icon": "assets/icons/thoriummod/bosses/bossdummy.png",
       "tags": [
         "boss"
@@ -63,7 +63,7 @@
       "kind": "boss",
       "internalName": "BuriedChampion",
       "displayName": "Buried Champion",
-      "displayNameRu": "Buried Champion",
+      "displayNameRu": "\u041f\u043e\u0433\u0440\u0435\u0431\u0451\u043d\u043d\u044b\u0439 \u0447\u0435\u043c\u043f\u0438\u043e\u043d",
       "icon": "assets/icons/thoriummod/bosses/buriedchampion.png",
       "tags": [
         "boss"
@@ -77,7 +77,7 @@
       "kind": "boss",
       "internalName": "DreamEater",
       "displayName": "Dream Eater",
-      "displayNameRu": "Dream Eater",
+      "displayNameRu": "\u041f\u043e\u0436\u0438\u0440\u0430\u0442\u0435\u043b\u044c \u0441\u043d\u043e\u0432",
       "icon": "assets/icons/thoriummod/bosses/dreameater.png",
       "tags": [
         "boss"
@@ -91,7 +91,7 @@
       "kind": "boss",
       "internalName": "FallenBeholder",
       "displayName": "Fallen Beholder",
-      "displayNameRu": "Fallen Beholder",
+      "displayNameRu": "\u041f\u0430\u0434\u0448\u0438\u0439 \u0421\u043e\u0437\u0435\u0440\u0446\u0430\u0442\u0435\u043b\u044c",
       "icon": "assets/icons/thoriummod/bosses/fallenbeholder.png",
       "tags": [
         "boss"
@@ -105,7 +105,7 @@
       "kind": "boss",
       "internalName": "FallenBeholder2",
       "displayName": "Fallen Beholder2",
-      "displayNameRu": "Fallen Beholder",
+      "displayNameRu": "\u041f\u0430\u0434\u0448\u0438\u0439 \u0421\u043e\u0437\u0435\u0440\u0446\u0430\u0442\u0435\u043b\u044c",
       "icon": "assets/icons/thoriummod/bosses/fallenbeholder2.png",
       "tags": [
         "boss"
@@ -119,7 +119,7 @@
       "kind": "boss",
       "internalName": "ForgottenOne",
       "displayName": "Forgotten One",
-      "displayNameRu": "Forgotten One",
+      "displayNameRu": "\u0417\u0430\u0431\u044b\u0442\u044b\u0439",
       "icon": "assets/icons/thoriummod/bosses/forgottenone.png",
       "tags": [
         "boss"
@@ -133,7 +133,7 @@
       "kind": "boss",
       "internalName": "ForgottenOneCracked",
       "displayName": "Forgotten One Cracked",
-      "displayNameRu": "Forgotten One",
+      "displayNameRu": "\u0417\u0430\u0431\u044b\u0442\u044b\u0439",
       "icon": "assets/icons/thoriummod/bosses/forgottenonecracked.png",
       "tags": [
         "boss"
@@ -147,7 +147,7 @@
       "kind": "boss",
       "internalName": "ForgottenOneReleased",
       "displayName": "Forgotten One Released",
-      "displayNameRu": "Forgotten One",
+      "displayNameRu": "\u0417\u0430\u0431\u044b\u0442\u044b\u0439",
       "icon": "assets/icons/thoriummod/bosses/forgottenonereleased.png",
       "tags": [
         "boss"
@@ -161,7 +161,7 @@
       "kind": "boss",
       "internalName": "GraniteEnergyStorm",
       "displayName": "Granite Energy Storm",
-      "displayNameRu": "Granite Energy Storm",
+      "displayNameRu": "\u0413\u0440\u0430\u043d\u0438\u0442\u043d\u044b\u0439 \u044d\u043d\u0435\u0440\u0433\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0448\u0442\u043e\u0440\u043c",
       "icon": "assets/icons/thoriummod/bosses/graniteenergystorm.png",
       "tags": [
         "boss"
@@ -175,7 +175,7 @@
       "kind": "boss",
       "internalName": "Lich",
       "displayName": "Lich",
-      "displayNameRu": "Lich",
+      "displayNameRu": "\u041b\u0438\u0447",
       "icon": "assets/icons/thoriummod/bosses/lich.png",
       "tags": [
         "boss"
@@ -189,7 +189,7 @@
       "kind": "boss",
       "internalName": "LichHeadless",
       "displayName": "Lich Headless",
-      "displayNameRu": "Lich",
+      "displayNameRu": "\u041b\u0438\u0447",
       "icon": "assets/icons/thoriummod/bosses/lichheadless.png",
       "tags": [
         "boss"
@@ -203,7 +203,7 @@
       "kind": "boss",
       "internalName": "Omnicide",
       "displayName": "Omnicide",
-      "displayNameRu": "Omnicide, the Life Defiler",
+      "displayNameRu": "\u041e\u043c\u043d\u0438\u0446\u0438\u0434, \u041e\u0441\u043a\u0432\u0435\u0440\u043d\u0438\u0442\u0435\u043b\u044c \u0436\u0438\u0437\u043d\u0438",
       "icon": "assets/icons/thoriummod/bosses/omnicide.png",
       "tags": [
         "boss"
@@ -217,7 +217,7 @@
       "kind": "boss",
       "internalName": "QueenJellyfish",
       "displayName": "Queen Jellyfish",
-      "displayNameRu": "Queen Jellyfish",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0430 \u043c\u0435\u0434\u0443\u0437",
       "icon": "assets/icons/thoriummod/bosses/queenjellyfish.png",
       "tags": [
         "boss"
@@ -231,7 +231,7 @@
       "kind": "boss",
       "internalName": "SlagFury",
       "displayName": "Slag Fury",
-      "displayNameRu": "Slag Fury, the First Flame",
+      "displayNameRu": "\u0428\u043b\u0430\u043a\u043e\u0432\u044b\u0439 \u044f\u0440\u043e\u0441\u0442\u0435\u043d\u044c, \u0418\u0437\u043d\u0430\u0447\u0430\u043b\u044c\u043d\u043e\u0435 \u043f\u043b\u0430\u043c\u044f",
       "icon": "assets/icons/thoriummod/bosses/slagfury.png",
       "tags": [
         "boss"
@@ -245,7 +245,7 @@
       "kind": "boss",
       "internalName": "StarScouter",
       "displayName": "Star Scouter",
-      "displayNameRu": "Star Scouter",
+      "displayNameRu": "\u0417\u0432\u0451\u0437\u0434\u043d\u044b\u0439 \u0440\u0430\u0437\u0432\u0435\u0434\u0447\u0438\u043a",
       "icon": "assets/icons/thoriummod/bosses/starscouter.png",
       "tags": [
         "boss"
@@ -259,7 +259,7 @@
       "kind": "boss",
       "internalName": "TheGrandThunderBird",
       "displayName": "The Grand Thunder Bird",
-      "displayNameRu": "The Grand Thunder Bird",
+      "displayNameRu": "\u0412\u0435\u043b\u0438\u043a\u0430\u044f \u0433\u0440\u043e\u043c\u043e\u0432\u0430\u044f \u043f\u0442\u0438\u0446\u0430",
       "icon": "assets/icons/thoriummod/bosses/thegrandthunderbird.png",
       "tags": [
         "boss"
@@ -273,7 +273,7 @@
       "kind": "boss",
       "internalName": "Viscount",
       "displayName": "Viscount",
-      "displayNameRu": "Viscount",
+      "displayNameRu": "\u0412\u0438\u043a\u043e\u043d\u0442",
       "icon": "assets/icons/thoriummod/bosses/viscount.png",
       "tags": [
         "boss"
