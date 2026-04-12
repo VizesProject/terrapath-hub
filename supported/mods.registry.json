@@ -9,7 +9,15 @@
       "rolloutWave": 0,
       "sourcePolicy": "curated-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "CalamityMod",
@@ -18,7 +26,16 @@
       "rolloutWave": 0,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "ThoriumMod",
@@ -27,7 +44,16 @@
       "rolloutWave": 1,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "SpiritReforged",
@@ -36,16 +62,34 @@
       "rolloutWave": 1,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "Fargowiltas",
       "displayName": "Fargo's Mutant Mod",
-      "status": "planned",
+      "status": "official",
       "rolloutWave": 2,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "FargowiltasSouls",
@@ -54,7 +98,16 @@
       "rolloutWave": 2,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "FargowiltasDLC",
@@ -63,7 +116,16 @@
       "rolloutWave": 2,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "FargowiltasSoulsDLC",
@@ -72,7 +134,16 @@
       "rolloutWave": 2,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "CalamityEntropy",
@@ -81,7 +152,16 @@
       "rolloutWave": 3,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "CalamityFables",
@@ -90,7 +170,16 @@
       "rolloutWave": 3,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "CalamityWrathOfTheGods",
@@ -99,7 +188,16 @@
       "rolloutWave": 3,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "CalamityCatalyst",
@@ -108,7 +206,16 @@
       "rolloutWave": 3,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "InfernumMode",
@@ -117,7 +224,16 @@
       "rolloutWave": 3,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "CalamityHuntOfTheOldGod",
@@ -126,7 +242,16 @@
       "rolloutWave": 3,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "TheStarsAbove",
@@ -135,7 +260,16 @@
       "rolloutWave": 4,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     },
     {
       "id": "StarlightRiver",
@@ -144,7 +278,16 @@
       "rolloutWave": 4,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": ["item", "boss", "miniboss", "npc", "event", "biome", "system", "other"]
+      "supportedKinds": [
+        "item",
+        "boss",
+        "miniboss",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
     }
   ]
 }

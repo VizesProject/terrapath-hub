@@ -1,0 +1,4055 @@
+{
+  "mod": "Fargowiltas",
+  "contentType": "search-content",
+  "entries": [
+    {
+      "id": "Fargowiltas/AbominationnBody",
+      "kind": "item",
+      "internalName": "AbominationnBody",
+      "displayName": "Abominationn Body",
+      "displayNameRu": "\u0422\u0435\u043b\u043e \u041c\u0435\u0440\u0437\u043e\u0441\u0442\u0442\u0438",
+      "icon": "assets/icons/fargowiltas/items/abominationnbody.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "abominationnbody"
+    },
+    {
+      "id": "Fargowiltas/AbominationnMask",
+      "kind": "item",
+      "internalName": "AbominationnMask",
+      "displayName": "Abominationn Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u041c\u0435\u0440\u0437\u043e\u0441\u0442\u0442\u0438",
+      "icon": "assets/icons/fargowiltas/items/abominationnmask.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "abominationn"
+    },
+    {
+      "id": "Fargowiltas/AbominationnPants",
+      "kind": "item",
+      "internalName": "AbominationnPants",
+      "displayName": "Abominationn Pants",
+      "displayNameRu": "\u0428\u0442\u0430\u043d\u044b \u041c\u0435\u0440\u0437\u043e\u0441\u0442\u0442\u0438",
+      "icon": "assets/icons/fargowiltas/items/abominationnpants.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "abominationn"
+    },
+    {
+      "id": "Fargowiltas/AbominationnScythe",
+      "kind": "item",
+      "internalName": "AbominationnScythe",
+      "displayName": "Abominationn Scythe",
+      "displayNameRu": "\u041a\u043e\u0441\u0430 \u041c\u0435\u0440\u0437\u043e\u0441\u0442\u0442\u0438",
+      "icon": "assets/icons/fargowiltas/items/abominationnscythe.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "Fargowiltas/BigSuckPotion",
+      "kind": "item",
+      "internalName": "BigSuckPotion",
+      "displayName": "Big Suck Potion",
+      "displayNameRu": "\u0417\u0435\u043b\u044c\u0435 \u0430\u0431\u0441\u043e\u043b\u044e\u0442\u043d\u043e\u0433\u043e \u0432\u0441\u0430\u0441\u044b\u0432\u0430\u043d\u0438\u044f",
+      "icon": "assets/icons/fargowiltas/items/bigsuckpotion.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/BoneQuiver",
+      "kind": "item",
+      "internalName": "BoneQuiver",
+      "displayName": "Bone Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043a\u043e\u0441\u0442\u044f\u043d\u044b\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/bonequiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/BoomShuriken",
+      "kind": "item",
+      "internalName": "BoomShuriken",
+      "displayName": "Boom Shuriken",
+      "displayNameRu": "\u0412\u0437\u0440\u044b\u0432\u043d\u043e\u0439 \u0441\u044e\u0440\u0438\u043a\u0435\u043d",
+      "icon": "assets/icons/fargowiltas/items/boomshuriken.png",
+      "category": "weapon",
+      "tags": [
+        "consumable",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "Fargowiltas/BrittleBone",
+      "kind": "item",
+      "internalName": "BrittleBone",
+      "displayName": "Brittle Bone",
+      "displayNameRu": "\u0425\u0440\u0443\u043f\u043a\u0430\u044f \u043a\u043e\u0441\u0442\u044c",
+      "icon": "assets/icons/fargowiltas/items/brittlebone.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ChlorophytePouch",
+      "kind": "item",
+      "internalName": "ChlorophytePouch",
+      "displayName": "Chlorophyte Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0445\u043b\u043e\u0440\u043e\u0444\u0438\u0442\u043e\u0432\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/chlorophytepouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ChlorophyteQuiver",
+      "kind": "item",
+      "internalName": "ChlorophyteQuiver",
+      "displayName": "Chlorophyte Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0445\u043b\u043e\u0440\u043e\u0444\u0438\u0442\u043e\u0432\u044b\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/chlorophytequiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ClusterRocket1Box",
+      "kind": "item",
+      "internalName": "ClusterRocket1Box",
+      "displayName": "Cluster Rocket1 Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043a\u043b\u0430\u0441\u0442\u0435\u0440\u043d\u044b\u043c\u0438 \u0440\u0430\u043a\u0435\u0442\u0430\u043c\u0438 I",
+      "icon": "assets/icons/fargowiltas/items/clusterrocket1box.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ClusterRocket2Box",
+      "kind": "item",
+      "internalName": "ClusterRocket2Box",
+      "displayName": "Cluster Rocket2 Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043a\u043b\u0430\u0441\u0442\u0435\u0440\u043d\u044b\u043c\u0438 \u0440\u0430\u043a\u0435\u0442\u0430\u043c\u0438 II",
+      "icon": "assets/icons/fargowiltas/items/clusterrocket2box.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CopperCoinBag",
+      "kind": "item",
+      "internalName": "CopperCoinBag",
+      "displayName": "Copper Coin Bag",
+      "displayNameRu": "\u0421\u0435\u0439\u0444 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043c\u0435\u0434\u043d\u044b\u043c\u0438 \u043c\u043e\u043d\u0435\u0442\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/coppercoinbag.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CrabSizedGlasses",
+      "kind": "item",
+      "internalName": "CrabSizedGlasses",
+      "displayName": "Crab Sized Glasses",
+      "displayNameRu": "\u041e\u0447\u043a\u0438 \u0434\u043b\u044f \u043a\u0440\u0430\u0431\u0430",
+      "icon": "assets/icons/fargowiltas/items/crabsizedglasses.png",
+      "category": "buff",
+      "tags": [
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CrystalDartBox",
+      "kind": "item",
+      "internalName": "CrystalDartBox",
+      "displayName": "Crystal Dart Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043a\u0440\u0438\u0441\u0442\u0430\u043b\u044c\u043d\u044b\u043c\u0438 \u0434\u0440\u043e\u0442\u0438\u043a\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/crystaldartbox.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CrystalPouch",
+      "kind": "item",
+      "internalName": "CrystalPouch",
+      "displayName": "Crystal Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043a\u0440\u0438\u0441\u0442\u0430\u043b\u044c\u043d\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/crystalpouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CursedDartBox",
+      "kind": "item",
+      "internalName": "CursedDartBox",
+      "displayName": "Cursed Dart Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043f\u0440\u043e\u043a\u043b\u044f\u0442\u044b\u043c\u0438 \u0434\u0440\u043e\u0442\u0438\u043a\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/curseddartbox.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CursedPouch",
+      "kind": "item",
+      "internalName": "CursedPouch",
+      "displayName": "Cursed Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043f\u0440\u043e\u043a\u043b\u044f\u0442\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/cursedpouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CursedQuiver",
+      "kind": "item",
+      "internalName": "CursedQuiver",
+      "displayName": "Cursed Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043f\u0440\u043e\u043a\u043b\u044f\u0442\u044b\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/cursedquiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DevianttBody",
+      "kind": "item",
+      "internalName": "DevianttBody",
+      "displayName": "Deviantt Body",
+      "displayNameRu": "\u0422\u0435\u043b\u043e \u0414\u0435\u0432\u0438\u0430\u043d\u0442\u0442",
+      "icon": "assets/icons/fargowiltas/items/devianttbody.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "devianttbody"
+    },
+    {
+      "id": "Fargowiltas/DevianttMask",
+      "kind": "item",
+      "internalName": "DevianttMask",
+      "displayName": "Deviantt Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u0414\u0435\u0432\u0438\u0430\u043d\u0442\u0442",
+      "icon": "assets/icons/fargowiltas/items/devianttmask.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "deviantt"
+    },
+    {
+      "id": "Fargowiltas/DevianttPants",
+      "kind": "item",
+      "internalName": "DevianttPants",
+      "displayName": "Deviantt Pants",
+      "displayNameRu": "\u0428\u0442\u0430\u043d\u044b \u0414\u0435\u0432\u0438\u0430\u043d\u0442\u0442",
+      "icon": "assets/icons/fargowiltas/items/devianttpants.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "deviantt"
+    },
+    {
+      "id": "Fargowiltas/DryRocketBox",
+      "kind": "item",
+      "internalName": "DryRocketBox",
+      "displayName": "Dry Rocket Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0432\u044b\u0441\u0443\u0448\u0438\u0432\u0430\u044e\u0449\u0438\u043c\u0438 \u0440\u0430\u043a\u0435\u0442\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/dryrocketbox.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ExplosivePouch",
+      "kind": "item",
+      "internalName": "ExplosivePouch",
+      "displayName": "Explosive Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0432\u0437\u0440\u044b\u0432\u043d\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/explosivepouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/FlameQuiver",
+      "kind": "item",
+      "internalName": "FlameQuiver",
+      "displayName": "Flame Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043f\u043e\u0434\u0436\u0438\u0433\u0430\u044e\u0449\u0438\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/flamequiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/FrostburnQuiver",
+      "kind": "item",
+      "internalName": "FrostburnQuiver",
+      "displayName": "Frostburn Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438 \u043e\u0431\u0436\u0438\u0433\u0430\u044e\u0449\u0435\u0433\u043e \u0445\u043e\u043b\u043e\u0434\u0430",
+      "icon": "assets/icons/fargowiltas/items/frostburnquiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/GelPack",
+      "kind": "item",
+      "internalName": "GelPack",
+      "displayName": "Gel Pack",
+      "displayNameRu": "\u0423\u043f\u0430\u043a\u043e\u0432\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c \u0433\u0435\u043b\u0435\u043c",
+      "icon": "assets/icons/fargowiltas/items/gelpack.png",
+      "category": "buff",
+      "tags": [
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/GnomeHat",
+      "kind": "item",
+      "internalName": "GnomeHat",
+      "displayName": "Gnome Hat",
+      "displayNameRu": "\u0413\u043d\u043e\u043c\u0441\u043a\u0438\u0439 \u043a\u043e\u043b\u043f\u0430\u043a",
+      "icon": "assets/icons/fargowiltas/items/gnomehat.png",
+      "category": "armor",
+      "tags": [
+        "consumable",
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "gnome"
+    },
+    {
+      "id": "Fargowiltas/GoldCoinBag",
+      "kind": "item",
+      "internalName": "GoldCoinBag",
+      "displayName": "Gold Coin Bag",
+      "displayNameRu": "\u0421\u0435\u0439\u0444 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0437\u043e\u043b\u043e\u0442\u044b\u043c\u0438 \u043c\u043e\u043d\u0435\u0442\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/goldcoinbag.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/GoldenPouch",
+      "kind": "item",
+      "internalName": "GoldenPouch",
+      "displayName": "Golden Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0437\u043e\u043b\u043e\u0442\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/goldenpouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/GoldenSlimeCrown",
+      "kind": "item",
+      "internalName": "GoldenSlimeCrown",
+      "displayName": "Golden Slime Crown",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u043d\u0430 \u0437\u043e\u043b\u043e\u0442\u043e\u0433\u043e \u0441\u043b\u0438\u0437\u043d\u044f",
+      "icon": "assets/icons/fargowiltas/items/goldenslimecrown.png",
+      "category": "armor",
+      "tags": [
+        "consumable",
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "goldenslime"
+    },
+    {
+      "id": "Fargowiltas/HellfireQuiver",
+      "kind": "item",
+      "internalName": "HellfireQuiver",
+      "displayName": "Hellfire Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438 \u0430\u0434\u0441\u043a\u043e\u0433\u043e \u043e\u0433\u043d\u044f",
+      "icon": "assets/icons/fargowiltas/items/hellfirequiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/HolyQuiver",
+      "kind": "item",
+      "internalName": "HolyQuiver",
+      "displayName": "Holy Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0441\u0432\u044f\u0442\u044b\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/holyquiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/HoneyRocketBox",
+      "kind": "item",
+      "internalName": "HoneyRocketBox",
+      "displayName": "Honey Rocket Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043c\u0435\u0434\u043e\u0432\u044b\u043c\u0438 \u0440\u0430\u043a\u0435\u0442\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/honeyrocketbox.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/IchorDartBox",
+      "kind": "item",
+      "internalName": "IchorDartBox",
+      "displayName": "Ichor Dart Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0438\u0445\u043e\u0440\u043d\u044b\u043c\u0438 \u0434\u0440\u043e\u0442\u0438\u043a\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/ichordartbox.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/IchorPouch",
+      "kind": "item",
+      "internalName": "IchorPouch",
+      "displayName": "Ichor Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0438\u0445\u043e\u0440\u043d\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/ichorpouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/IchorQuiver",
+      "kind": "item",
+      "internalName": "IchorQuiver",
+      "displayName": "Ichor Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0438\u0445\u043e\u0440\u043d\u044b\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/ichorquiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/JesterQuiver",
+      "kind": "item",
+      "internalName": "JesterQuiver",
+      "displayName": "Jester Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0448\u0443\u0442\u043e\u0432\u0441\u043a\u0438\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/jesterquiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/LavaRocketBox",
+      "kind": "item",
+      "internalName": "LavaRocketBox",
+      "displayName": "Lava Rocket Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043b\u0430\u0432\u043e\u0432\u044b\u043c\u0438 \u0440\u0430\u043a\u0435\u0442\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/lavarocketbox.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/LumberHat",
+      "kind": "item",
+      "internalName": "LumberHat",
+      "displayName": "Lumber Hat",
+      "displayNameRu": "\u0428\u0430\u043f\u043a\u0430 \u043b\u0435\u0441\u043e\u0440\u0443\u0431\u0430",
+      "icon": "assets/icons/fargowiltas/items/lumberhat.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "lumber"
+    },
+    {
+      "id": "Fargowiltas/LumberjackBody",
+      "kind": "item",
+      "internalName": "LumberjackBody",
+      "displayName": "Lumberjack Body",
+      "displayNameRu": "\u0422\u0435\u043b\u043e \u043b\u0435\u0441\u043e\u0440\u0443\u0431\u0430",
+      "icon": "assets/icons/fargowiltas/items/lumberjackbody.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "lumberjackbody"
+    },
+    {
+      "id": "Fargowiltas/LumberjackMask",
+      "kind": "item",
+      "internalName": "LumberjackMask",
+      "displayName": "Lumberjack Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u043b\u0435\u0441\u043e\u0440\u0443\u0431\u0430",
+      "icon": "assets/icons/fargowiltas/items/lumberjackmask.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "lumberjack"
+    },
+    {
+      "id": "Fargowiltas/LumberjackPants",
+      "kind": "item",
+      "internalName": "LumberjackPants",
+      "displayName": "Lumberjack Pants",
+      "displayNameRu": "\u0428\u0442\u0430\u043d\u044b \u043b\u0435\u0441\u043e\u0440\u0443\u0431\u0430",
+      "icon": "assets/icons/fargowiltas/items/lumberjackpants.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "lumberjack"
+    },
+    {
+      "id": "Fargowiltas/LuminitePouch",
+      "kind": "item",
+      "internalName": "LuminitePouch",
+      "displayName": "Luminite Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043b\u044e\u043c\u0438\u043d\u0438\u0442\u043e\u0432\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/luminitepouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/LuminiteQuiver",
+      "kind": "item",
+      "internalName": "LuminiteQuiver",
+      "displayName": "Luminite Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043b\u044e\u043c\u0438\u043d\u0438\u0442\u043e\u0432\u044b\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/luminitequiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MeteorPouch",
+      "kind": "item",
+      "internalName": "MeteorPouch",
+      "displayName": "Meteor Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043c\u0435\u0442\u0435\u043e\u0440\u0438\u0442\u043d\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/meteorpouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MiniNuke1Box",
+      "kind": "item",
+      "internalName": "MiniNuke1Box",
+      "displayName": "Mini Nuke1 Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043c\u0438\u043d\u0438-\u044f\u0434\u0435\u0440\u043d\u044b\u043c\u0438 \u0437\u0430\u0440\u044f\u0434\u0430\u043c\u0438 I",
+      "icon": "assets/icons/fargowiltas/items/mininuke1box.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MiniNuke2Box",
+      "kind": "item",
+      "internalName": "MiniNuke2Box",
+      "displayName": "Mini Nuke2 Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043c\u0438\u043d\u0438-\u044f\u0434\u0435\u0440\u043d\u044b\u043c\u0438 \u0437\u0430\u0440\u044f\u0434\u0430\u043c\u0438 II",
+      "icon": "assets/icons/fargowiltas/items/mininuke2box.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MutantBody",
+      "kind": "item",
+      "internalName": "MutantBody",
+      "displayName": "Mutant Body",
+      "displayNameRu": "\u0422\u0435\u043b\u043e \u041c\u0443\u0442\u0430\u043d\u0442\u0430",
+      "icon": "assets/icons/fargowiltas/items/mutantbody.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "mutantbody"
+    },
+    {
+      "id": "Fargowiltas/MutantMask",
+      "kind": "item",
+      "internalName": "MutantMask",
+      "displayName": "Mutant Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u041c\u0443\u0442\u0430\u043d\u0442\u0430",
+      "icon": "assets/icons/fargowiltas/items/mutantmask.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "mutant"
+    },
+    {
+      "id": "Fargowiltas/MutantPants",
+      "kind": "item",
+      "internalName": "MutantPants",
+      "displayName": "Mutant Pants",
+      "displayNameRu": "\u0428\u0442\u0430\u043d\u044b \u041c\u0443\u0442\u0430\u043d\u0442\u0430",
+      "icon": "assets/icons/fargowiltas/items/mutantpants.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "mutant"
+    },
+    {
+      "id": "Fargowiltas/NanoPouch",
+      "kind": "item",
+      "internalName": "NanoPouch",
+      "displayName": "Nano Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043d\u0430\u043d\u043e\u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/nanopouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadSlimeCrown",
+      "kind": "item",
+      "internalName": "OverloadSlimeCrown",
+      "displayName": "Overload Slime Crown",
+      "displayNameRu": "\u041b\u0438\u0447\u043d\u044b\u0439 \u043a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u043a\u0438\u0439 \u0443\u043a\u0430\u0437",
+      "icon": "assets/icons/fargowiltas/items/overloadslimecrown.png",
+      "category": "armor",
+      "tags": [
+        "consumable",
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "overloadslime"
+    },
+    {
+      "id": "Fargowiltas/PartyPouch",
+      "kind": "item",
+      "internalName": "PartyPouch",
+      "displayName": "Party Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043f\u0440\u0430\u0437\u0434\u043d\u0438\u0447\u043d\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/partypouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PinkSlimeCrown",
+      "kind": "item",
+      "internalName": "PinkSlimeCrown",
+      "displayName": "Pink Slime Crown",
+      "displayNameRu": "\u0422\u0438\u0430\u0440\u0430 \u0440\u043e\u0437\u043e\u0432\u043e\u0433\u043e \u0441\u043b\u0438\u0437\u043d\u044f",
+      "icon": "assets/icons/fargowiltas/items/pinkslimecrown.png",
+      "category": "armor",
+      "tags": [
+        "consumable",
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "pinkslime"
+    },
+    {
+      "id": "Fargowiltas/PlatinumCoinBag",
+      "kind": "item",
+      "internalName": "PlatinumCoinBag",
+      "displayName": "Platinum Coin Bag",
+      "displayNameRu": "\u0421\u0435\u0439\u0444 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043f\u043b\u0430\u0442\u0438\u043d\u043e\u0432\u044b\u043c\u0438 \u043c\u043e\u043d\u0435\u0442\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/platinumcoinbag.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PoisonDartBox",
+      "kind": "item",
+      "internalName": "PoisonDartBox",
+      "displayName": "Poison Dart Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043e\u0442\u0440\u0430\u0432\u043b\u0435\u043d\u043d\u044b\u043c\u0438 \u0434\u0440\u043e\u0442\u0438\u043a\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/poisondartbox.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Rocket1Box",
+      "kind": "item",
+      "internalName": "Rocket1Box",
+      "displayName": "Rocket1 Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0440\u0430\u043a\u0435\u0442\u0430\u043c\u0438 I",
+      "icon": "assets/icons/fargowiltas/items/rocket1box.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Rocket2Box",
+      "kind": "item",
+      "internalName": "Rocket2Box",
+      "displayName": "Rocket2 Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0440\u0430\u043a\u0435\u0442\u0430\u043c\u0438 II",
+      "icon": "assets/icons/fargowiltas/items/rocket2box.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Rocket3Box",
+      "kind": "item",
+      "internalName": "Rocket3Box",
+      "displayName": "Rocket3 Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0440\u0430\u043a\u0435\u0442\u0430\u043c\u0438 III",
+      "icon": "assets/icons/fargowiltas/items/rocket3box.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Rocket4Box",
+      "kind": "item",
+      "internalName": "Rocket4Box",
+      "displayName": "Rocket4 Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0440\u0430\u043a\u0435\u0442\u0430\u043c\u0438 IV",
+      "icon": "assets/icons/fargowiltas/items/rocket4box.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SilverCoinBag",
+      "kind": "item",
+      "internalName": "SilverCoinBag",
+      "displayName": "Silver Coin Bag",
+      "displayNameRu": "\u0421\u0435\u0439\u0444 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0441\u0435\u0440\u0435\u0431\u0440\u044f\u043d\u044b\u043c\u0438 \u043c\u043e\u043d\u0435\u0442\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/silvercoinbag.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SilverPouch",
+      "kind": "item",
+      "internalName": "SilverPouch",
+      "displayName": "Silver Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0441\u0435\u0440\u0435\u0431\u0440\u044f\u043d\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/silverpouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SlimyCrown",
+      "kind": "item",
+      "internalName": "SlimyCrown",
+      "displayName": "Slimy Crown",
+      "displayNameRu": "\u0421\u043a\u043b\u0438\u0437\u043a\u0438\u0439 \u0443\u043a\u0430\u0437",
+      "icon": "assets/icons/fargowiltas/items/slimycrown.png",
+      "category": "armor",
+      "tags": [
+        "consumable",
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "slimy"
+    },
+    {
+      "id": "Fargowiltas/StarPouch",
+      "kind": "item",
+      "internalName": "StarPouch",
+      "displayName": "Star Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0443\u043f\u0430\u0432\u0448\u0438\u043c\u0438 \u0437\u0432\u0451\u0437\u0434\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/starpouch.png",
+      "category": "buff",
+      "tags": [
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/TungstenPouch",
+      "kind": "item",
+      "internalName": "TungstenPouch",
+      "displayName": "Tungsten Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0432\u043e\u043b\u044c\u0444\u0440\u0430\u043c\u043e\u0432\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/tungstenpouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnholyQuiver",
+      "kind": "item",
+      "internalName": "UnholyQuiver",
+      "displayName": "Unholy Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u043d\u0435\u0447\u0435\u0441\u0442\u0438\u0432\u044b\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/unholyquiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/VelocityPouch",
+      "kind": "item",
+      "internalName": "VelocityPouch",
+      "displayName": "Velocity Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0432\u044b\u0441\u043e\u043a\u043e\u0441\u043a\u043e\u0440\u043e\u0441\u0442\u043d\u044b\u043c\u0438 \u043f\u0430\u0442\u0440\u043e\u043d\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/velocitypouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/VenomPouch",
+      "kind": "item",
+      "internalName": "VenomPouch",
+      "displayName": "Venom Pouch",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0443\u043c\u043e\u043a \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u044f\u0434\u043e\u0432\u0438\u0442\u044b\u043c\u0438 \u043f\u0443\u043b\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/venompouch.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/VenomQuiver",
+      "kind": "item",
+      "internalName": "VenomQuiver",
+      "displayName": "Venom Quiver",
+      "displayNameRu": "\u041a\u043e\u043b\u0447\u0430\u043d \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u044f\u0434\u043e\u0432\u0438\u0442\u044b\u043c\u0438 \u0441\u0442\u0440\u0435\u043b\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/venomquiver.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/WetRocketBox",
+      "kind": "item",
+      "internalName": "WetRocketBox",
+      "displayName": "Wet Rocket Box",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0441 \u0431\u0435\u0441\u043a\u043e\u043d\u0435\u0447\u043d\u044b\u043c\u0438 \u0432\u043e\u0434\u043d\u044b\u043c\u0438 \u0440\u0430\u043a\u0435\u0442\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/wetrocketbox.png",
+      "category": "buff",
+      "tags": [
+        "ranged",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/WormyFood",
+      "kind": "item",
+      "internalName": "WormyFood",
+      "displayName": "Wormy Food",
+      "displayNameRu": "\u0422\u0443\u0445\u043b\u0430\u044f \u043f\u0440\u0438\u043c\u0430\u043d\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/wormyfood.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ForbiddenForbiddenFragment",
+      "kind": "material",
+      "internalName": "ForbiddenForbiddenFragment",
+      "displayName": "Forbidden Forbidden Fragment",
+      "displayNameRu": "\u0417\u0430\u043f\u0440\u0435\u0449\u0451\u043d\u043d\u044b\u0439 \u0437\u0430\u043f\u0440\u0435\u0442\u043d\u044b\u0439 \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442",
+      "icon": "assets/icons/fargowiltas/items/forbiddenforbiddenfragment.png",
+      "category": "other",
+      "tags": [
+        "material",
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SlimyBarometer",
+      "kind": "material",
+      "internalName": "SlimyBarometer",
+      "displayName": "Slimy Barometer",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0438\u0441\u0442\u044b\u0439 \u0431\u0430\u0440\u043e\u043c\u0435\u0442\u0440",
+      "icon": "assets/icons/fargowiltas/items/slimybarometer.png",
+      "category": "other",
+      "tags": [
+        "material",
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Abominationn",
+      "kind": "npc",
+      "internalName": "Abominationn",
+      "displayName": "Abominationn",
+      "displayNameRu": "\u041c\u0435\u0440\u0437\u043e\u0441\u0442\u0442\u044c",
+      "icon": "assets/icons/fargowiltas/npcs/abominationn.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Deviantt",
+      "kind": "npc",
+      "internalName": "Deviantt",
+      "displayName": "Deviantt",
+      "displayNameRu": "\u0414\u0435\u0432\u0438\u0430\u043d\u0442\u0442",
+      "icon": "assets/icons/fargowiltas/npcs/deviantt.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "Fargowiltas/LumberJack",
+      "kind": "npc",
+      "internalName": "LumberJack",
+      "displayName": "Lumber Jack",
+      "displayNameRu": "\u0414\u0440\u043e\u0432\u043e\u0441\u0435\u043a",
+      "icon": "assets/icons/fargowiltas/npcs/lumberjack.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Mutant",
+      "kind": "npc",
+      "internalName": "Mutant",
+      "displayName": "Mutant",
+      "displayNameRu": "\u041c\u0443\u0442\u0430\u043d\u0442",
+      "icon": "assets/icons/fargowiltas/npcs/mutant.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Squirrel",
+      "kind": "npc",
+      "internalName": "Squirrel",
+      "displayName": "Squirrel",
+      "displayNameRu": "\u0411\u0435\u043b\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/npcs/squirrel.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SuperDummy",
+      "kind": "npc",
+      "internalName": "SuperDummy",
+      "displayName": "Super Dummy",
+      "displayNameRu": "\u0421\u0432\u0435\u0440\u0445\u043c\u0430\u043d\u0435\u043a\u0435\u043d",
+      "icon": "assets/icons/fargowiltas/npcs/superdummy.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "Fargowiltas/AttractiveOre",
+      "kind": "ore",
+      "internalName": "AttractiveOre",
+      "displayName": "Attractive Ore",
+      "displayNameRu": "\u041f\u0440\u0438\u0432\u043b\u0435\u043a\u0430\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u0440\u0443\u0434\u0430",
+      "icon": "assets/icons/fargowiltas/items/attractiveore.png",
+      "category": "other",
+      "tags": [
+        "ore",
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CoreoftheFrostCore",
+      "kind": "ore",
+      "internalName": "CoreoftheFrostCore",
+      "displayName": "Coreofthe Frost Core",
+      "displayNameRu": "\u042f\u0434\u0440\u043e \u043c\u043e\u0440\u043e\u0437\u043d\u043e\u0433\u043e \u044f\u0434\u0440\u0430",
+      "icon": "assets/icons/fargowiltas/items/coreofthefrostcore.png",
+      "category": "other",
+      "tags": [
+        "ore",
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/GoreySpine",
+      "kind": "ore",
+      "internalName": "GoreySpine",
+      "displayName": "Gorey Spine",
+      "displayNameRu": "\u0421\u0435\u0440\u043e\u0435 \u0432\u0435\u0449\u0435\u0441\u0442\u0432\u043e",
+      "icon": "assets/icons/fargowiltas/items/goreyspine.png",
+      "category": "other",
+      "tags": [
+        "ore",
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Abeemination2",
+      "kind": "other",
+      "internalName": "Abeemination2",
+      "displayName": "Abeemination2",
+      "displayNameRu": "\u041c\u0435\u0440\u0437\u043e\u043f\u0447\u0451\u043b\u0430\u043d\u0438\u0437\u0430\u0446\u0438\u044f",
+      "icon": "assets/icons/fargowiltas/items/abeemination2.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/AltarExterminator",
+      "kind": "other",
+      "internalName": "AltarExterminator",
+      "displayName": "Altar Exterminator",
+      "displayNameRu": "\u0418\u0441\u043a\u043e\u0440\u0435\u043d\u0438\u0442\u0435\u043b\u044c \u0430\u043b\u0442\u0430\u0440\u0435\u0439",
+      "icon": "assets/icons/fargowiltas/items/altarexterminator.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/AmalgamatedSkull",
+      "kind": "other",
+      "internalName": "AmalgamatedSkull",
+      "displayName": "Amalgamated Skull",
+      "displayNameRu": "\u0421\u0440\u043e\u0441\u0448\u0438\u0439\u0441\u044f \u0447\u0435\u0440\u0435\u043f",
+      "icon": "assets/icons/fargowiltas/items/amalgamatedskull.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/AmalgamatedSpirit",
+      "kind": "other",
+      "internalName": "AmalgamatedSpirit",
+      "displayName": "Amalgamated Spirit",
+      "displayNameRu": "\u0421\u0440\u043e\u0441\u0448\u0438\u0439\u0441\u044f \u0434\u0443\u0445",
+      "icon": "assets/icons/fargowiltas/items/amalgamatedspirit.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/AncientSeal",
+      "kind": "other",
+      "internalName": "AncientSeal",
+      "displayName": "Ancient Seal",
+      "displayNameRu": "\u0414\u0440\u0435\u0432\u043d\u044f\u044f \u043f\u0435\u0447\u0430\u0442\u044c",
+      "icon": "assets/icons/fargowiltas/items/ancientseal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Anemometer",
+      "kind": "other",
+      "internalName": "Anemometer",
+      "displayName": "Anemometer",
+      "displayNameRu": "\u0410\u043d\u0435\u043c\u043e\u043c\u0435\u0442\u0440",
+      "icon": "assets/icons/fargowiltas/items/anemometer.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Angler",
+      "kind": "other",
+      "internalName": "Angler",
+      "displayName": "Angler",
+      "displayNameRu": "\u0420\u044b\u0431\u0430\u043a",
+      "icon": "assets/icons/fargowiltas/items/angler.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ArmsDealer",
+      "kind": "other",
+      "internalName": "ArmsDealer",
+      "displayName": "Arms Dealer",
+      "displayNameRu": "\u041e\u0440\u0443\u0436\u0435\u0439\u043d\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/armsdealer.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/AthenianIdol",
+      "kind": "other",
+      "internalName": "AthenianIdol",
+      "displayName": "Athenian Idol",
+      "displayNameRu": "\u0410\u0444\u0438\u043d\u0441\u043a\u0438\u0439 \u0438\u0434\u043e\u043b",
+      "icon": "assets/icons/fargowiltas/items/athenianidol.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/AutoHouse",
+      "kind": "other",
+      "internalName": "AutoHouse",
+      "displayName": "Auto House",
+      "displayNameRu": "\u0410\u0432\u0442\u043e\u0434\u043e\u043c",
+      "icon": "assets/icons/fargowiltas/items/autohouse.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/BatteredClub",
+      "kind": "other",
+      "internalName": "BatteredClub",
+      "displayName": "Battered Club",
+      "displayNameRu": "\u0418\u0437\u043d\u043e\u0448\u0435\u043d\u043d\u0430\u044f \u0434\u0443\u0431\u0438\u043d\u0430",
+      "icon": "assets/icons/fargowiltas/items/batteredclub.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/BattleCry",
+      "kind": "other",
+      "internalName": "BattleCry",
+      "displayName": "Battle Cry",
+      "displayNameRu": "\u0411\u043e\u0435\u0432\u043e\u0439 \u043a\u043b\u0438\u0447",
+      "icon": "assets/icons/fargowiltas/items/battlecry.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/BetsyEgg",
+      "kind": "other",
+      "internalName": "BetsyEgg",
+      "displayName": "Betsy Egg",
+      "displayNameRu": "\u0421\u0442\u0430\u0440\u043e\u0435 \u0434\u0440\u0430\u043a\u043e\u043d\u044c\u0435 \u044f\u0439\u0446\u043e",
+      "icon": "assets/icons/fargowiltas/items/betsyegg.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/BloodSushiPlatter",
+      "kind": "other",
+      "internalName": "BloodSushiPlatter",
+      "displayName": "Blood Sushi Platter",
+      "displayNameRu": "\u041f\u043e\u0434\u043d\u043e\u0441 \u0441 \u043a\u0440\u043e\u0432\u0430\u0432\u044b\u043c \u0441\u0443\u0448\u0438",
+      "icon": "assets/icons/fargowiltas/items/bloodsushiplatter.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/BloodUrchin",
+      "kind": "other",
+      "internalName": "BloodUrchin",
+      "displayName": "Blood Urchin",
+      "displayNameRu": "\u041a\u0440\u043e\u0432\u0430\u0432\u044b\u0439 \u0451\u0436",
+      "icon": "assets/icons/fargowiltas/items/bloodurchin.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CelestialSigil2",
+      "kind": "other",
+      "internalName": "CelestialSigil2",
+      "displayName": "Celestial Sigil2",
+      "displayNameRu": "\u041f\u0435\u0447\u0430\u0442\u044c \u043d\u0435\u0431\u0435\u0441",
+      "icon": "assets/icons/fargowiltas/items/celestialsigil2.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CityBuster",
+      "kind": "other",
+      "internalName": "CityBuster",
+      "displayName": "City Buster",
+      "displayNameRu": "\u041a\u0440\u0443\u0448\u0438\u0442\u0435\u043b\u044c \u0433\u043e\u0440\u043e\u0434\u043e\u0432",
+      "icon": "assets/icons/fargowiltas/items/citybuster.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Clothier",
+      "kind": "other",
+      "internalName": "Clothier",
+      "displayName": "Clothier",
+      "displayNameRu": "\u041f\u043e\u0440\u0442\u043d\u043e\u0439",
+      "icon": "assets/icons/fargowiltas/items/clothier.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CloudSnack",
+      "kind": "other",
+      "internalName": "CloudSnack",
+      "displayName": "Cloud Snack",
+      "displayNameRu": "\u041e\u0431\u043b\u0430\u0447\u043d\u0430\u044f \u0437\u0430\u043a\u0443\u0441\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/cloudsnack.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ClownLicense",
+      "kind": "other",
+      "internalName": "ClownLicense",
+      "displayName": "Clown License",
+      "displayNameRu": "\u0423\u0434\u043e\u0441\u0442\u043e\u0432\u0435\u0440\u0435\u043d\u0438\u0435 \u043a\u043b\u043e\u0443\u043d\u0430",
+      "icon": "assets/icons/fargowiltas/items/clownlicense.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ClumsySlime",
+      "kind": "other",
+      "internalName": "ClumsySlime",
+      "displayName": "Clumsy Slime",
+      "displayNameRu": "\u041d\u0435\u0443\u043a\u043b\u044e\u0436\u0438\u0439 \u0441\u043b\u0438\u0437\u0435\u043d\u044c",
+      "icon": "assets/icons/fargowiltas/items/clumsyslime.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CoolSlime",
+      "kind": "other",
+      "internalName": "CoolSlime",
+      "displayName": "Cool Slime",
+      "displayNameRu": "\u041a\u0440\u0443\u0442\u043e\u0439 \u0441\u043b\u0438\u0437\u0435\u043d\u044c",
+      "icon": "assets/icons/fargowiltas/items/coolslime.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CorruptChest",
+      "kind": "other",
+      "internalName": "CorruptChest",
+      "displayName": "Corrupt Chest",
+      "displayNameRu": "\u0418\u0441\u043a\u0430\u0436\u0451\u043d\u043d\u044b\u0439 \u0441\u0443\u043d\u0434\u0443\u043a",
+      "icon": "assets/icons/fargowiltas/items/corruptchest.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CorruptRenewal",
+      "kind": "other",
+      "internalName": "CorruptRenewal",
+      "displayName": "Corrupt Renewal",
+      "displayNameRu": "\u0418\u0441\u043a\u0430\u0436\u0451\u043d\u043d\u044b\u0439 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/corruptrenewal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CorruptRenewalSupreme",
+      "kind": "other",
+      "internalName": "CorruptRenewalSupreme",
+      "displayName": "Corrupt Renewal Supreme",
+      "displayNameRu": "\u0418\u0441\u043a\u0430\u0436\u0451\u043d\u043d\u044b\u0439 \u043c\u0435\u0433\u0430\u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/corruptrenewalsupreme.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CrimsonAltar",
+      "kind": "other",
+      "internalName": "CrimsonAltar",
+      "displayName": "Crimson Altar",
+      "displayNameRu": "\u0411\u0430\u0433\u0440\u044f\u043d\u044b\u0439 \u0430\u043b\u0442\u0430\u0440\u044c",
+      "icon": "assets/icons/fargowiltas/items/crimsonaltar.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CrimsonChest",
+      "kind": "other",
+      "internalName": "CrimsonChest",
+      "displayName": "Crimson Chest",
+      "displayNameRu": "\u0411\u0430\u0433\u0440\u044f\u043d\u044b\u0439 \u0441\u0443\u043d\u0434\u0443\u043a",
+      "icon": "assets/icons/fargowiltas/items/crimsonchest.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CrimsonRenewal",
+      "kind": "other",
+      "internalName": "CrimsonRenewal",
+      "displayName": "Crimson Renewal",
+      "displayNameRu": "\u0411\u0430\u0433\u0440\u044f\u043d\u044b\u0439 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/crimsonrenewal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CrimsonRenewalSupreme",
+      "kind": "other",
+      "internalName": "CrimsonRenewalSupreme",
+      "displayName": "Crimson Renewal Supreme",
+      "displayNameRu": "\u0411\u0430\u0433\u0440\u044f\u043d\u044b\u0439 \u043c\u0435\u0433\u0430\u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/crimsonrenewalsupreme.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CrucibleCosmos",
+      "kind": "other",
+      "internalName": "CrucibleCosmos",
+      "displayName": "Crucible Cosmos",
+      "displayNameRu": "\u0413\u043e\u0440\u043d\u0438\u043b\u043e \u0432\u0441\u0435\u043b\u0435\u043d\u043d\u043e\u0439",
+      "icon": "assets/icons/fargowiltas/items/cruciblecosmos.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/CultistSummon",
+      "kind": "other",
+      "internalName": "CultistSummon",
+      "displayName": "Cultist Summon",
+      "displayNameRu": "\u0418\u043c\u0443\u0449\u0435\u0441\u0442\u0432\u043e \u0444\u0430\u043d\u0430\u0442\u0438\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/cultistsummon.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Cyborg",
+      "kind": "other",
+      "internalName": "Cyborg",
+      "displayName": "Cyborg",
+      "displayNameRu": "\u041a\u0438\u0431\u043e\u0440\u0433",
+      "icon": "assets/icons/fargowiltas/items/cyborg.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DeathBringerFairy",
+      "kind": "other",
+      "internalName": "DeathBringerFairy",
+      "displayName": "Death Bringer Fairy",
+      "displayNameRu": "\u0424\u0435\u044f \u043f\u043e\u0433\u0438\u0431\u0435\u043b\u0438",
+      "icon": "assets/icons/fargowiltas/items/deathbringerfairy.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DeathFruit",
+      "kind": "other",
+      "internalName": "DeathFruit",
+      "displayName": "Death Fruit",
+      "displayNameRu": "\u0424\u0440\u0443\u043a\u0442 \u0441\u043c\u0435\u0440\u0442\u0438",
+      "icon": "assets/icons/fargowiltas/items/deathfruit.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DeerThing2",
+      "kind": "other",
+      "internalName": "DeerThing2",
+      "displayName": "Deer Thing2",
+      "displayNameRu": "\u041d\u0435\u043e\u0431\u044b\u0447\u043d\u044b\u0439 \u0447\u0435\u0440\u0435\u043f \u043e\u043b\u0435\u043d\u044f",
+      "icon": "assets/icons/fargowiltas/items/deerthing2.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Demolitionist",
+      "kind": "other",
+      "internalName": "Demolitionist",
+      "displayName": "Demolitionist",
+      "displayNameRu": "\u041f\u043e\u0434\u0440\u044b\u0432\u043d\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/demolitionist.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DemonAltar",
+      "kind": "other",
+      "internalName": "DemonAltar",
+      "displayName": "Demon Altar",
+      "displayNameRu": "\u0414\u0435\u043c\u043e\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0430\u043b\u0442\u0430\u0440\u044c",
+      "icon": "assets/icons/fargowiltas/items/demonaltar.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DemonicPlushie",
+      "kind": "other",
+      "internalName": "DemonicPlushie",
+      "displayName": "Demonic Plushie",
+      "displayNameRu": "\u0414\u0435\u043c\u043e\u043d\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043f\u043b\u044e\u0448\u0435\u0432\u0430\u044f \u0438\u0433\u0440\u0443\u0448\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/demonicplushie.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DilutedRainbowMatter",
+      "kind": "other",
+      "internalName": "DilutedRainbowMatter",
+      "displayName": "Diluted Rainbow Matter",
+      "displayNameRu": "\u0420\u0430\u0437\u0431\u0430\u0432\u043b\u0435\u043d\u043d\u0430\u044f \u0440\u0430\u0434\u0443\u0436\u043d\u0430\u044f \u043c\u0430\u0442\u0435\u0440\u0438\u044f",
+      "icon": "assets/icons/fargowiltas/items/dilutedrainbowmatter.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DirtRenewal",
+      "kind": "other",
+      "internalName": "DirtRenewal",
+      "displayName": "Dirt Renewal",
+      "displayNameRu": "\u041b\u0435\u0441\u043d\u043e\u0439 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/dirtrenewal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DirtRenewalSupreme",
+      "kind": "other",
+      "internalName": "DirtRenewalSupreme",
+      "displayName": "Dirt Renewal Supreme",
+      "displayNameRu": "\u041b\u0435\u0441\u043d\u043e\u0439 \u043c\u0435\u0433\u0430\u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/dirtrenewalsupreme.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DivaSlime",
+      "kind": "other",
+      "internalName": "DivaSlime",
+      "displayName": "Diva Slime",
+      "displayNameRu": "\u0414\u0438\u0432\u043d\u044b\u0439 \u0441\u043b\u0438\u0437\u0435\u043d\u044c",
+      "icon": "assets/icons/fargowiltas/items/divaslime.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DoubleObsidianInstabridge",
+      "kind": "other",
+      "internalName": "DoubleObsidianInstabridge",
+      "displayName": "Double Obsidian Instabridge",
+      "displayNameRu": "\u0414\u0432\u043e\u0439\u043d\u043e\u0439 \u043e\u0431\u0441\u0438\u0434\u0438\u0430\u043d\u043e\u0432\u044b\u0439 \u0430\u0432\u0442\u043e\u043c\u043e\u0441\u0442",
+      "icon": "assets/icons/fargowiltas/items/doubleobsidianinstabridge.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Dryad",
+      "kind": "other",
+      "internalName": "Dryad",
+      "displayName": "Dryad",
+      "displayNameRu": "\u0414\u0440\u0438\u0430\u0434\u0430",
+      "icon": "assets/icons/fargowiltas/items/dryad.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/DyeTrader",
+      "kind": "other",
+      "internalName": "DyeTrader",
+      "displayName": "Dye Trader",
+      "displayNameRu": "\u041a\u0440\u0430\u0441\u0438\u043b\u044c\u0449\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/dyetrader.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EchPainting",
+      "kind": "other",
+      "internalName": "EchPainting",
+      "displayName": "Ech Painting",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u00ab\u042a\u00bb",
+      "icon": "assets/icons/fargowiltas/items/echpainting.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Eggplant",
+      "kind": "other",
+      "internalName": "Eggplant",
+      "displayName": "Eggplant",
+      "displayNameRu": "\u0411\u0430\u043a\u043b\u0430\u0436\u0430\u043d",
+      "icon": "assets/icons/fargowiltas/items/eggplant.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ElderSlime",
+      "kind": "other",
+      "internalName": "ElderSlime",
+      "displayName": "Elder Slime",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0435\u043d\u044c-\u0441\u0442\u0430\u0440\u0435\u0439\u0448\u0438\u043d\u0430",
+      "icon": "assets/icons/fargowiltas/items/elderslime.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ElementalAssembler",
+      "kind": "other",
+      "internalName": "ElementalAssembler",
+      "displayName": "Elemental Assembler",
+      "displayNameRu": "\u042d\u043b\u0435\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u0431\u043e\u0440\u0449\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/elementalassembler.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerBee",
+      "kind": "other",
+      "internalName": "EnergizerBee",
+      "displayName": "Energizer Bee",
+      "displayNameRu": "\u0416\u0443\u0436\u0436\u0430\u0449\u0438\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerbee.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerBetsy",
+      "kind": "other",
+      "internalName": "EnergizerBetsy",
+      "displayName": "Energizer Betsy",
+      "displayNameRu": "\u0414\u0440\u0430\u043a\u043e\u043d\u0438\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerbetsy.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerBrain",
+      "kind": "other",
+      "internalName": "EnergizerBrain",
+      "displayName": "Energizer Brain",
+      "displayNameRu": "\u041c\u043e\u0437\u0433\u043e\u0432\u0438\u0442\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerbrain.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerCultist",
+      "kind": "other",
+      "internalName": "EnergizerCultist",
+      "displayName": "Energizer Cultist",
+      "displayNameRu": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440 \u0431\u0435\u0437\u0443\u043c\u0438\u044f",
+      "icon": "assets/icons/fargowiltas/items/energizercultist.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerDarkMage",
+      "kind": "other",
+      "internalName": "EnergizerDarkMage",
+      "displayName": "Energizer Dark Mage",
+      "displayNameRu": "\u0417\u0430\u0433\u0430\u0434\u043e\u0447\u043d\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerdarkmage.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerDeer",
+      "kind": "other",
+      "internalName": "EnergizerDeer",
+      "displayName": "Energizer Deer",
+      "displayNameRu": "\u041e\u043b\u0435\u043d\u0438\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerdeer.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerDestroy",
+      "kind": "other",
+      "internalName": "EnergizerDestroy",
+      "displayName": "Energizer Destroy",
+      "displayNameRu": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440 \u0443\u043d\u0438\u0447\u0442\u043e\u0436\u0435\u043d\u0438\u044f",
+      "icon": "assets/icons/fargowiltas/items/energizerdestroy.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerDG",
+      "kind": "other",
+      "internalName": "EnergizerDG",
+      "displayName": "Energizer DG",
+      "displayNameRu": "\u0421\u0432\u0435\u0440\u0445\u043a\u043e\u0441\u0442\u044f\u043d\u043e\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerdg.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerEmpress",
+      "kind": "other",
+      "internalName": "EnergizerEmpress",
+      "displayName": "Energizer Empress",
+      "displayNameRu": "\u0421\u043a\u0430\u0437\u043e\u0447\u043d\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerempress.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerEye",
+      "kind": "other",
+      "internalName": "EnergizerEye",
+      "displayName": "Energizer Eye",
+      "displayNameRu": "\u041e\u043f\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizereye.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerFish",
+      "kind": "other",
+      "internalName": "EnergizerFish",
+      "displayName": "Energizer Fish",
+      "displayNameRu": "\u0420\u044b\u0431\u043d\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerfish.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerGolem",
+      "kind": "other",
+      "internalName": "EnergizerGolem",
+      "displayName": "Energizer Golem",
+      "displayNameRu": "\u042f\u0445\u0449\u0435\u0440\u043e\u0432\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizergolem.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerMoon",
+      "kind": "other",
+      "internalName": "EnergizerMoon",
+      "displayName": "Energizer Moon",
+      "displayNameRu": "\u041b\u0443\u043d\u043d\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizermoon.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerPlant",
+      "kind": "other",
+      "internalName": "EnergizerPlant",
+      "displayName": "Energizer Plant",
+      "displayNameRu": "\u041b\u0438\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerplant.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerPrime",
+      "kind": "other",
+      "internalName": "EnergizerPrime",
+      "displayName": "Energizer Prime",
+      "displayNameRu": "\u041f\u0440\u0430\u0439\u043c-\u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerprime.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerQueenSlime",
+      "kind": "other",
+      "internalName": "EnergizerQueenSlime",
+      "displayName": "Energizer Queen Slime",
+      "displayNameRu": "\u041a\u0440\u0438\u0441\u0442\u0430\u043b\u043b\u0438\u043d\u043e\u0432\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerqueenslime.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerSkele",
+      "kind": "other",
+      "internalName": "EnergizerSkele",
+      "displayName": "Energizer Skele",
+      "displayNameRu": "\u041a\u043e\u0441\u0442\u044f\u043d\u043e\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerskele.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerSlime",
+      "kind": "other",
+      "internalName": "EnergizerSlime",
+      "displayName": "Energizer Slime",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0438\u0441\u0442\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerslime.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerTwins",
+      "kind": "other",
+      "internalName": "EnergizerTwins",
+      "displayName": "Energizer Twins",
+      "displayNameRu": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440 \u0440\u043e\u0434\u043d\u0438",
+      "icon": "assets/icons/fargowiltas/items/energizertwins.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerWall",
+      "kind": "other",
+      "internalName": "EnergizerWall",
+      "displayName": "Energizer Wall",
+      "displayNameRu": "\u041d\u0430\u0441\u0442\u0435\u043d\u043d\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerwall.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/EnergizerWorm",
+      "kind": "other",
+      "internalName": "EnergizerWorm",
+      "displayName": "Energizer Worm",
+      "displayNameRu": "\u0427\u0435\u0440\u0432\u0438\u0432\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/energizerworm.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/FestiveOrnament",
+      "kind": "other",
+      "internalName": "FestiveOrnament",
+      "displayName": "Festive Ornament",
+      "displayNameRu": "\u041f\u0440\u0430\u0437\u0434\u043d\u0438\u0447\u043d\u043e\u0435 \u0443\u043a\u0440\u0430\u0448\u0435\u043d\u0438\u0435",
+      "icon": "assets/icons/fargowiltas/items/festiveornament.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/FleshyDoll",
+      "kind": "other",
+      "internalName": "FleshyDoll",
+      "displayName": "Fleshy Doll",
+      "displayNameRu": "\u041a\u0443\u043a\u043b\u0430 \u0433\u0438\u0434\u0430 \u0438 \u0441\u043f\u0438\u0447\u043a\u0438",
+      "icon": "assets/icons/fargowiltas/items/fleshydoll.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ForbiddenScarab",
+      "kind": "other",
+      "internalName": "ForbiddenScarab",
+      "displayName": "Forbidden Scarab",
+      "displayNameRu": "\u0417\u0430\u043f\u0440\u0435\u0442\u043d\u044b\u0439 \u0441\u043a\u0430\u0440\u0430\u0431\u0435\u0439",
+      "icon": "assets/icons/fargowiltas/items/forbiddenscarab.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ForbiddenTome",
+      "kind": "other",
+      "internalName": "ForbiddenTome",
+      "displayName": "Forbidden Tome",
+      "displayNameRu": "\u0417\u0430\u043f\u0440\u0435\u0442\u043d\u044b\u0439 \u0442\u043e\u043c",
+      "icon": "assets/icons/fargowiltas/items/forbiddentome.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/GoblinScrap",
+      "kind": "other",
+      "internalName": "GoblinScrap",
+      "displayName": "Goblin Scrap",
+      "displayNameRu": "\u0413\u043e\u0431\u043b\u0438\u043d\u0441\u043a\u0438\u0439 \u043c\u0443\u0441\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/goblinscrap.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/GoblinTinkerer",
+      "kind": "other",
+      "internalName": "GoblinTinkerer",
+      "displayName": "Goblin Tinkerer",
+      "displayNameRu": "\u0413\u043e\u0431\u043b\u0438\u043d-\u0438\u0437\u043e\u0431\u0440\u0435\u0442\u0430\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/goblintinkerer.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/GoldenDippingVat",
+      "kind": "other",
+      "internalName": "GoldenDippingVat",
+      "displayName": "Golden Dipping Vat",
+      "displayNameRu": "\u0427\u0430\u043d \u0441 \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u043a\u0440\u0430\u0441\u043a\u043e\u0439",
+      "icon": "assets/icons/fargowiltas/items/goldendippingvat.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Golfer",
+      "kind": "other",
+      "internalName": "Golfer",
+      "displayName": "Golfer",
+      "displayNameRu": "\u0413\u043e\u043b\u044c\u0444\u0438\u0441\u0442",
+      "icon": "assets/icons/fargowiltas/items/golfer.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/GrandCross",
+      "kind": "other",
+      "internalName": "GrandCross",
+      "displayName": "Grand Cross",
+      "displayNameRu": "\u0411\u043e\u043b\u044c\u0448\u043e\u0439 \u043a\u0440\u0435\u0441\u0442",
+      "icon": "assets/icons/fargowiltas/items/grandcross.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/GraveBuster",
+      "kind": "other",
+      "internalName": "GraveBuster",
+      "displayName": "Grave Buster",
+      "displayNameRu": "\u041a\u0440\u0443\u0448\u0438\u0442\u0435\u043b\u044c \u043c\u043e\u0433\u0438\u043b",
+      "icon": "assets/icons/fargowiltas/items/gravebuster.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Guide",
+      "kind": "other",
+      "internalName": "Guide",
+      "displayName": "Guide",
+      "displayNameRu": "\u0413\u0438\u0434",
+      "icon": "assets/icons/fargowiltas/items/guide.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/HalfInstavator",
+      "kind": "other",
+      "internalName": "HalfInstavator",
+      "displayName": "Half Instavator",
+      "displayNameRu": "\u041f\u043e\u043b\u043e\u0432\u0438\u043d\u0447\u0430\u0442\u044b\u0439 \u0430\u0432\u0442\u043e\u043b\u0438\u0444\u0442",
+      "icon": "assets/icons/fargowiltas/items/halfinstavator.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/HallowChest",
+      "kind": "other",
+      "internalName": "HallowChest",
+      "displayName": "Hallow Chest",
+      "displayNameRu": "\u041e\u0441\u0432\u044f\u0449\u0451\u043d\u043d\u044b\u0439 \u0441\u0443\u043d\u0434\u0443\u043a",
+      "icon": "assets/icons/fargowiltas/items/hallowchest.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/HallowRenewal",
+      "kind": "other",
+      "internalName": "HallowRenewal",
+      "displayName": "Hallow Renewal",
+      "displayNameRu": "\u041e\u0441\u0432\u044f\u0449\u0451\u043d\u043d\u044b\u0439 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/hallowrenewal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/HallowRenewalSupreme",
+      "kind": "other",
+      "internalName": "HallowRenewalSupreme",
+      "displayName": "Hallow Renewal Supreme",
+      "displayNameRu": "\u041e\u0441\u0432\u044f\u0449\u0451\u043d\u043d\u044b\u0439 \u043c\u0435\u0433\u0430\u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/hallowrenewalsupreme.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/HeadofMan",
+      "kind": "other",
+      "internalName": "HeadofMan",
+      "displayName": "Headof Man",
+      "displayNameRu": "\u0413\u043e\u043b\u043e\u0432\u0430 \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/headofman.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/HeartChocolate",
+      "kind": "other",
+      "internalName": "HeartChocolate",
+      "displayName": "Heart Chocolate",
+      "displayNameRu": "\u0428\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u043e\u0435 \u0441\u0435\u0440\u0434\u0446\u0435",
+      "icon": "assets/icons/fargowiltas/items/heartchocolate.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/HemoclawCrab",
+      "kind": "other",
+      "internalName": "HemoclawCrab",
+      "displayName": "Hemoclaw Crab",
+      "displayNameRu": "\u041a\u0440\u0430\u0431-\u0433\u0435\u043c\u043e\u043a\u043b\u0435\u0448\u0435\u043d\u044c",
+      "icon": "assets/icons/fargowiltas/items/hemoclawcrab.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/HolyGrail",
+      "kind": "other",
+      "internalName": "HolyGrail",
+      "displayName": "Holy Grail",
+      "displayNameRu": "\u0421\u0432\u044f\u0442\u043e\u0439 \u0413\u0440\u0430\u0430\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/holygrail.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/IceKingsRemains",
+      "kind": "other",
+      "internalName": "IceKingsRemains",
+      "displayName": "Ice Kings Remains",
+      "displayNameRu": "\u041e\u0441\u0442\u0430\u043d\u043a\u0438 \u043b\u0435\u0434\u044f\u043d\u043e\u0433\u043e \u043a\u043e\u0440\u043e\u043b\u044f",
+      "icon": "assets/icons/fargowiltas/items/icekingsremains.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/InstaBridge",
+      "kind": "other",
+      "internalName": "InstaBridge",
+      "displayName": "Insta Bridge",
+      "displayNameRu": "\u0410\u0432\u0442\u043e\u043c\u043e\u0441\u0442",
+      "icon": "assets/icons/fargowiltas/items/instabridge.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/InstaPond",
+      "kind": "other",
+      "internalName": "InstaPond",
+      "displayName": "Insta Pond",
+      "displayNameRu": "\u0410\u0432\u0442\u043e\u043e\u0437\u0435\u0440\u043e",
+      "icon": "assets/icons/fargowiltas/items/instapond.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/InstaTrack",
+      "kind": "other",
+      "internalName": "InstaTrack",
+      "displayName": "Insta Track",
+      "displayNameRu": "\u0410\u0432\u0442\u043e\u0440\u0435\u043b\u044c\u0441\u044b",
+      "icon": "assets/icons/fargowiltas/items/instatrack.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/InstantResearch",
+      "kind": "other",
+      "internalName": "InstantResearch",
+      "displayName": "Instant Research",
+      "displayNameRu": "\u041c\u0433\u043d\u043e\u0432\u0435\u043d\u043d\u044b\u0439 \u0438\u0441\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/instantresearch.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Instavator",
+      "kind": "other",
+      "internalName": "Instavator",
+      "displayName": "Instavator",
+      "displayNameRu": "\u0410\u0432\u0442\u043e\u043b\u0438\u0444\u0442",
+      "icon": "assets/icons/fargowiltas/items/instavator.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/JellyCrystal",
+      "kind": "other",
+      "internalName": "JellyCrystal",
+      "displayName": "Jelly Crystal",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u043d\u0430 \u043a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u043a\u043e\u0433\u043e \u0441\u043b\u0438\u0437\u043d\u044f",
+      "icon": "assets/icons/fargowiltas/items/jellycrystal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/JungleChest",
+      "kind": "other",
+      "internalName": "JungleChest",
+      "displayName": "Jungle Chest",
+      "displayNameRu": "\u0421\u0443\u043d\u0434\u0443\u043a \u0434\u0436\u0443\u043d\u0433\u043b\u0435\u0439",
+      "icon": "assets/icons/fargowiltas/items/junglechest.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/KohaCrystal",
+      "kind": "other",
+      "internalName": "KohaCrystal",
+      "displayName": "Koha Crystal",
+      "displayNameRu": "\u041a\u0440\u0438\u0441\u0442\u0430\u043b\u043b \u041a\u043e\u0445\u0430",
+      "icon": "assets/icons/fargowiltas/items/kohacrystal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/LeesHeadband",
+      "kind": "other",
+      "internalName": "LeesHeadband",
+      "displayName": "Lees Headband",
+      "displayNameRu": "\u041f\u043e\u0432\u044f\u0437\u043a\u0430 \u041b\u0438",
+      "icon": "assets/icons/fargowiltas/items/leesheadband.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/LihzahrdInstactuationBomb",
+      "kind": "other",
+      "internalName": "LihzahrdInstactuationBomb",
+      "displayName": "Lihzahrd Instactuation Bomb",
+      "displayNameRu": "\u0411\u043e\u043c\u0431\u0430 \u0430\u0432\u0442\u043e\u0430\u043a\u0442\u0438\u0432\u0430\u0446\u0438\u0438 \u044f\u0445\u0449\u0435\u0440\u043e\u0432",
+      "icon": "assets/icons/fargowiltas/items/lihzahrdinstactuationbomb.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/LihzahrdPowerCell2",
+      "kind": "other",
+      "internalName": "LihzahrdPowerCell2",
+      "displayName": "Lihzahrd Power Cell2",
+      "displayNameRu": "\u042f\u0445\u0449\u0435\u0440\u043e\u0432\u044b\u0439 \u0430\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/lihzahrdpowercell2.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/LumberJaxe",
+      "kind": "other",
+      "internalName": "LumberJaxe",
+      "displayName": "Lumber Jaxe",
+      "displayNameRu": "\u0414\u0440\u043e\u0432\u043e\u0442\u043e\u043f\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/lumberjaxe.png",
+      "category": "other",
+      "tags": [
+        "melee",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MapViewer",
+      "kind": "other",
+      "internalName": "MapViewer",
+      "displayName": "Map Viewer",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0430 \u0434\u0440\u0435\u0432\u043d\u0435\u0433\u043e \u043c\u0430\u0441\u0442\u0435\u0440\u0430 \u0438\u0437 \u0440\u043e\u0434\u0430 \u0437\u0430\u0431\u044b\u0442\u043e\u0433\u043e \u043a\u043e\u0440\u043e\u043b\u044f",
+      "icon": "assets/icons/fargowiltas/items/mapviewer.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MartianMemoryStick",
+      "kind": "other",
+      "internalName": "MartianMemoryStick",
+      "displayName": "Martian Memory Stick",
+      "displayNameRu": "\u041c\u0430\u0440\u0441\u0438\u0430\u043d\u0441\u043a\u0430\u044f \u043a\u0430\u0440\u0442\u0430 \u043f\u0430\u043c\u044f\u0442\u0438",
+      "icon": "assets/icons/fargowiltas/items/martianmemorystick.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MatsuriLantern",
+      "kind": "other",
+      "internalName": "MatsuriLantern",
+      "displayName": "Matsuri Lantern",
+      "displayNameRu": "\u0424\u043e\u043d\u0430\u0440\u044c \u043c\u0430\u0446\u0443\u0440\u0438",
+      "icon": "assets/icons/fargowiltas/items/matsurilantern.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MechEye",
+      "kind": "other",
+      "internalName": "MechEye",
+      "displayName": "Mech Eye",
+      "displayNameRu": "\u041a\u0430\u043a\u043e\u0439-\u0442\u043e \u0436\u0435\u043b\u0435\u0437\u043d\u044b\u0439 \u0433\u043b\u0430\u0437",
+      "icon": "assets/icons/fargowiltas/items/mecheye.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MechSkull",
+      "kind": "other",
+      "internalName": "MechSkull",
+      "displayName": "Mech Skull",
+      "displayNameRu": "\u041a\u0430\u043a\u043e\u0439-\u0442\u043e \u0436\u0435\u043b\u0435\u0437\u043d\u044b\u0439 \u0447\u0435\u0440\u0435\u043f",
+      "icon": "assets/icons/fargowiltas/items/mechskull.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MechWorm",
+      "kind": "other",
+      "internalName": "MechWorm",
+      "displayName": "Mech Worm",
+      "displayNameRu": "\u041a\u0430\u043a\u043e\u0439-\u0442\u043e \u0436\u0435\u043b\u0435\u0437\u043d\u044b\u0439 \u0447\u0435\u0440\u0432\u044c",
+      "icon": "assets/icons/fargowiltas/items/mechworm.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Mechanic",
+      "kind": "other",
+      "internalName": "Mechanic",
+      "displayName": "Mechanic",
+      "displayNameRu": "\u041c\u0435\u0445\u0430\u043d\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/mechanic.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MechanicalAmalgam",
+      "kind": "other",
+      "internalName": "MechanicalAmalgam",
+      "displayName": "Mechanical Amalgam",
+      "displayNameRu": "\u041c\u0435\u0445\u0430\u043d\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0430\u043c\u0430\u043b\u044c\u0433\u0430\u043c\u0430",
+      "icon": "assets/icons/fargowiltas/items/mechanicalamalgam.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Merchant",
+      "kind": "other",
+      "internalName": "Merchant",
+      "displayName": "Merchant",
+      "displayNameRu": "\u0422\u043e\u0440\u0433\u043e\u0432\u0435\u0446",
+      "icon": "assets/icons/fargowiltas/items/merchant.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MiniDirtInstaBridge",
+      "kind": "other",
+      "internalName": "MiniDirtInstaBridge",
+      "displayName": "Mini Dirt Insta Bridge",
+      "displayNameRu": "\u0417\u0435\u043c\u043b\u044f\u043d\u043e\u0439 \u043c\u0438\u043d\u0438-\u0430\u0432\u0442\u043e\u043c\u043e\u0441\u0442",
+      "icon": "assets/icons/fargowiltas/items/minidirtinstabridge.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MiniInstaBridge",
+      "kind": "other",
+      "internalName": "MiniInstaBridge",
+      "displayName": "Mini Insta Bridge",
+      "displayNameRu": "\u041c\u0438\u043d\u0438-\u0430\u0432\u0442\u043e\u043c\u043e\u0441\u0442",
+      "icon": "assets/icons/fargowiltas/items/miniinstabridge.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ModeToggle",
+      "kind": "other",
+      "internalName": "ModeToggle",
+      "displayName": "Mode Toggle",
+      "displayNameRu": "\u041c\u0438\u0440\u043e\u0432\u043e\u0439 \u0437\u043d\u0430\u043a",
+      "icon": "assets/icons/fargowiltas/items/modetoggle.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MothLamp",
+      "kind": "other",
+      "internalName": "MothLamp",
+      "displayName": "Moth Lamp",
+      "displayNameRu": "\u041c\u043e\u0442\u044b\u043b\u044c\u043a\u043e\u0432\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
+      "icon": "assets/icons/fargowiltas/items/mothlamp.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MothronEgg",
+      "kind": "other",
+      "internalName": "MothronEgg",
+      "displayName": "Mothron Egg",
+      "displayNameRu": "\u042f\u0439\u0446\u043e \u041c\u043e\u0442\u0440\u043e\u043d",
+      "icon": "assets/icons/fargowiltas/items/mothronegg.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MultitaskCenter",
+      "kind": "other",
+      "internalName": "MultitaskCenter",
+      "displayName": "Multitask Center",
+      "displayNameRu": "\u041c\u0443\u043b\u044c\u0442\u0438\u0444\u0443\u043d\u043a\u0446\u0438\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u0446\u0435\u043d\u0442\u0440",
+      "icon": "assets/icons/fargowiltas/items/multitaskcenter.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MushroomRenewal",
+      "kind": "other",
+      "internalName": "MushroomRenewal",
+      "displayName": "Mushroom Renewal",
+      "displayNameRu": "\u0413\u0440\u0438\u0431\u043d\u043e\u0439 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/mushroomrenewal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MushroomRenewalSupreme",
+      "kind": "other",
+      "internalName": "MushroomRenewalSupreme",
+      "displayName": "Mushroom Renewal Supreme",
+      "displayNameRu": "\u0413\u0440\u0438\u0431\u043d\u043e\u0439 \u043c\u0435\u0433\u0430\u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/mushroomrenewalsupreme.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MutantToilet",
+      "kind": "other",
+      "internalName": "MutantToilet",
+      "displayName": "Mutant Toilet",
+      "displayNameRu": "\u0423\u043d\u0438\u0442\u0430\u0437 \u041c\u0443\u0442\u0430\u043d\u0442\u0430",
+      "icon": "assets/icons/fargowiltas/items/mutanttoilet.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MutantVoodoo",
+      "kind": "other",
+      "internalName": "MutantVoodoo",
+      "displayName": "Mutant Voodoo",
+      "displayNameRu": "\u041f\u043b\u044e\u0448\u0435\u0432\u044b\u0439 \u043c\u0443\u0442\u0430\u043d\u0442",
+      "icon": "assets/icons/fargowiltas/items/mutantvoodoo.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/MysticSlime",
+      "kind": "other",
+      "internalName": "MysticSlime",
+      "displayName": "Mystic Slime",
+      "displayNameRu": "\u0417\u0430\u0433\u0430\u0434\u043e\u0447\u043d\u044b\u0439 \u0441\u043b\u0438\u0437\u0435\u043d\u044c",
+      "icon": "assets/icons/fargowiltas/items/mysticslime.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/NaughtyList",
+      "kind": "other",
+      "internalName": "NaughtyList",
+      "displayName": "Naughty List",
+      "displayNameRu": "\u0421\u043f\u0438\u0441\u043e\u043a \u043d\u0435\u043f\u043e\u0441\u043b\u0443\u0448\u043d\u044b\u0445",
+      "icon": "assets/icons/fargowiltas/items/naughtylist.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/NerdySlime",
+      "kind": "other",
+      "internalName": "NerdySlime",
+      "displayName": "Nerdy Slime",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0435\u043d\u044c-\u0437\u0443\u0431\u0440\u0438\u043b\u0430",
+      "icon": "assets/icons/fargowiltas/items/nerdyslime.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Nurse",
+      "kind": "other",
+      "internalName": "Nurse",
+      "displayName": "Nurse",
+      "displayNameRu": "\u041c\u0435\u0434\u0441\u0435\u0441\u0442\u0440\u0430",
+      "icon": "assets/icons/fargowiltas/items/nurse.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ObsidianInstaBridge",
+      "kind": "other",
+      "internalName": "ObsidianInstaBridge",
+      "displayName": "Obsidian Insta Bridge",
+      "displayNameRu": "\u041e\u0431\u0441\u0438\u0434\u0438\u0430\u043d\u043e\u0432\u044b\u0439 \u0430\u0432\u0442\u043e\u043c\u043e\u0441\u0442",
+      "icon": "assets/icons/fargowiltas/items/obsidianinstabridge.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OmniBridgifier",
+      "kind": "other",
+      "internalName": "OmniBridgifier",
+      "displayName": "Omni Bridgifier",
+      "displayNameRu": "\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u044b\u0439 \u043c\u043e\u0441\u0442\u043e\u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/omnibridgifier.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Omnistation",
+      "kind": "other",
+      "internalName": "Omnistation",
+      "displayName": "Omnistation",
+      "displayNameRu": "\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u0430\u044f \u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+      "icon": "assets/icons/fargowiltas/items/omnistation.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Omnistation2",
+      "kind": "other",
+      "internalName": "Omnistation2",
+      "displayName": "Omnistation2",
+      "displayNameRu": "\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u0430\u044f \u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+      "icon": "assets/icons/fargowiltas/items/omnistation2.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadBee",
+      "kind": "other",
+      "internalName": "OverloadBee",
+      "displayName": "Overload Bee",
+      "displayNameRu": "\u041f\u0435\u0440\u0435\u043f\u043e\u043b\u043d\u0435\u043d\u043d\u044b\u0439 \u043a\u043e\u043a\u043e\u043d",
+      "icon": "assets/icons/fargowiltas/items/overloadbee.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadBetsy",
+      "kind": "other",
+      "internalName": "OverloadBetsy",
+      "displayName": "Overload Betsy",
+      "displayNameRu": "\u041b\u043e\u0442\u043e\u043a \u0434\u0440\u0430\u043a\u043e\u043d\u044c\u0438\u0445 \u044f\u0438\u0446",
+      "icon": "assets/icons/fargowiltas/items/overloadbetsy.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadBrain",
+      "kind": "other",
+      "internalName": "OverloadBrain",
+      "displayName": "Overload Brain",
+      "displayNameRu": "\u041c\u043e\u0437\u0433\u043e\u0432\u043e\u0439 \u0448\u0442\u0443\u0440\u043c",
+      "icon": "assets/icons/fargowiltas/items/overloadbrain.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadCultist",
+      "kind": "other",
+      "internalName": "OverloadCultist",
+      "displayName": "Overload Cultist",
+      "displayNameRu": "\u0411\u0435\u0437\u0443\u043c\u0438\u0435 \u0444\u0430\u043d\u0430\u0442\u0438\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/overloadcultist.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadDarkMage",
+      "kind": "other",
+      "internalName": "OverloadDarkMage",
+      "displayName": "Overload Dark Mage",
+      "displayNameRu": "\u0414\u0435\u0439\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0437\u0430\u043f\u0440\u0435\u0442\u043d\u044b\u0439 \u0442\u043e\u043c",
+      "icon": "assets/icons/fargowiltas/items/overloaddarkmage.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadDeer",
+      "kind": "other",
+      "internalName": "OverloadDeer",
+      "displayName": "Overload Deer",
+      "displayNameRu": "\u041e\u043b\u0435\u043d\u044c\u0435 \u0441\u043b\u0438\u044f\u043d\u0438\u0435",
+      "icon": "assets/icons/fargowiltas/items/overloaddeer.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadDestroyer",
+      "kind": "other",
+      "internalName": "OverloadDestroyer",
+      "displayName": "Overload Destroyer",
+      "displayNameRu": "\u0421\u0435\u0439\u0441\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0430\u043a\u0442\u0438\u0432\u0430\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltas/items/overloaddestroyer.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadEmpress",
+      "kind": "other",
+      "internalName": "OverloadEmpress",
+      "displayName": "Overload Empress",
+      "displayNameRu": "\u0411\u0430\u043d\u043a\u0430 \u0441\u043e \u0437\u043b\u0430\u0442\u043e\u0433\u043b\u0430\u0437\u043a\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/overloadempress.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadEye",
+      "kind": "other",
+      "internalName": "OverloadEye",
+      "displayName": "Overload Eye",
+      "displayNameRu": "\u0413\u043b\u0430\u0437\u043e\u0441\u043b\u0438\u044f\u043d\u0438\u0435",
+      "icon": "assets/icons/fargowiltas/items/overloadeye.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadFish",
+      "kind": "other",
+      "internalName": "OverloadFish",
+      "displayName": "Overload Fish",
+      "displayNameRu": "\u0411\u0430\u043d\u043a\u0430 \u0441 \u0442\u0440\u044e\u0444\u0435\u043b\u044c\u043d\u044b\u043c\u0438 \u0447\u0435\u0440\u0432\u044f\u043c\u0438",
+      "icon": "assets/icons/fargowiltas/items/overloadfish.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadFrostMoon",
+      "kind": "other",
+      "internalName": "OverloadFrostMoon",
+      "displayName": "Overload Frost Moon",
+      "displayNameRu": "\u041c\u0435\u0448\u043e\u043a \u043f\u043e\u0434\u0430\u0440\u043a\u043e\u0432 \u0434\u043b\u044f \u043d\u0435\u043f\u043e\u0441\u043b\u0443\u0448\u043d\u044b\u0445",
+      "icon": "assets/icons/fargowiltas/items/overloadfrostmoon.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadGoblins",
+      "kind": "other",
+      "internalName": "OverloadGoblins",
+      "displayName": "Overload Goblins",
+      "displayNameRu": "\u0412\u043e\u0435\u043d\u043d\u043e\u0435 \u0437\u043d\u0430\u043c\u044f \u0433\u043e\u0431\u043b\u0438\u043d\u043e\u0432",
+      "icon": "assets/icons/fargowiltas/items/overloadgoblins.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadGolem",
+      "kind": "other",
+      "internalName": "OverloadGolem",
+      "displayName": "Overload Golem",
+      "displayNameRu": "\u0420\u0443\u043d\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u044d\u043b\u0435\u043c\u0435\u043d\u0442 \u043f\u0438\u0442\u0430\u043d\u0438\u044f",
+      "icon": "assets/icons/fargowiltas/items/overloadgolem.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadMartians",
+      "kind": "other",
+      "internalName": "OverloadMartians",
+      "displayName": "Overload Martians",
+      "displayNameRu": "\u041c\u0430\u0440\u0441\u0438\u0430\u043d\u0441\u043a\u0438\u0439 \u0441\u043f\u0443\u0442\u043d\u0438\u043a \u0441\u0432\u044f\u0437\u0438",
+      "icon": "assets/icons/fargowiltas/items/overloadmartians.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadMoon",
+      "kind": "other",
+      "internalName": "OverloadMoon",
+      "displayName": "Overload Moon",
+      "displayNameRu": "\u0420\u0443\u043d\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0441\u043a\u0440\u0438\u0436\u0430\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/overloadmoon.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadPirates",
+      "kind": "other",
+      "internalName": "OverloadPirates",
+      "displayName": "Overload Pirates",
+      "displayNameRu": "\u041f\u0438\u0440\u0430\u0442\u0441\u043a\u0430\u044f \u043d\u0430\u0433\u0440\u0430\u0434\u0430",
+      "icon": "assets/icons/fargowiltas/items/overloadpirates.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadPlant",
+      "kind": "other",
+      "internalName": "OverloadPlant",
+      "displayName": "Overload Plant",
+      "displayNameRu": "\u0421\u0435\u0440\u0434\u0446\u0435 \u0434\u0436\u0443\u043d\u0433\u043b\u0435\u0439",
+      "icon": "assets/icons/fargowiltas/items/overloadplant.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadPrime",
+      "kind": "other",
+      "internalName": "OverloadPrime",
+      "displayName": "Overload Prime",
+      "displayNameRu": "\u0427\u0438\u043f \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u041f\u0440\u0430\u0439\u043c\u043e\u043c",
+      "icon": "assets/icons/fargowiltas/items/overloadprime.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadPumpkinMoon",
+      "kind": "other",
+      "internalName": "OverloadPumpkinMoon",
+      "displayName": "Overload Pumpkin Moon",
+      "displayNameRu": "\u041f\u0435\u0440\u0435\u0433\u0440\u0443\u0436\u0435\u043d\u043d\u044b\u0439 \u043c\u0435\u0434\u0430\u043b\u044c\u043e\u043d \u0442\u044b\u043a\u0432\u0435\u043d\u043d\u043e\u0439 \u043b\u0443\u043d\u044b",
+      "icon": "assets/icons/fargowiltas/items/overloadpumpkinmoon.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadQueenSlime",
+      "kind": "other",
+      "internalName": "OverloadQueenSlime",
+      "displayName": "Overload Queen Slime",
+      "displayNameRu": "\u041f\u0435\u0440\u0435\u0433\u0440\u0443\u0436\u0435\u043d\u043d\u044b\u0439 \u043a\u0440\u0438\u0441\u0442\u0430\u043b\u043b",
+      "icon": "assets/icons/fargowiltas/items/overloadqueenslime.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadSkele",
+      "kind": "other",
+      "internalName": "OverloadSkele",
+      "displayName": "Overload Skele",
+      "displayNameRu": "\u041e\u0436\u0435\u0440\u0435\u043b\u044c\u044f \u0441 \u0446\u0435\u043f\u043e\u0447\u043a\u043e\u0439 \u0438\u0437 \u0447\u0435\u0440\u0435\u043f\u043e\u0432",
+      "icon": "assets/icons/fargowiltas/items/overloadskele.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadTwins",
+      "kind": "other",
+      "internalName": "OverloadTwins",
+      "displayName": "Overload Twins",
+      "displayNameRu": "\u041c\u0443\u043b\u044c\u0442\u0438\u0444\u043e\u043a\u0430\u043b\u044c\u043d\u044b\u0435 \u043b\u0438\u043d\u0437\u044b",
+      "icon": "assets/icons/fargowiltas/items/overloadtwins.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadWall",
+      "kind": "other",
+      "internalName": "OverloadWall",
+      "displayName": "Overload Wall",
+      "displayNameRu": "\u0421\u0432\u044f\u0437\u043a\u0430 \u043a\u0443\u043a\u043e\u043b",
+      "icon": "assets/icons/fargowiltas/items/overloadwall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadWorm",
+      "kind": "other",
+      "internalName": "OverloadWorm",
+      "displayName": "Overload Worm",
+      "displayNameRu": "\u0427\u0435\u0440\u0432\u0438\u0432\u0430\u044f \u043a\u0443\u0440\u0438\u0446\u0430",
+      "icon": "assets/icons/fargowiltas/items/overloadworm.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/OverloadedSlimeRain",
+      "kind": "other",
+      "internalName": "OverloadedSlimeRain",
+      "displayName": "Overloaded Slime Rain",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0438\u0441\u0442\u044b\u0439 \u0431\u0443\u0440\u0435\u0432\u0435\u0441\u0442\u043d\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/overloadedslimerain.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Overloader",
+      "kind": "other",
+      "internalName": "Overloader",
+      "displayName": "Overloader",
+      "displayNameRu": "\u041f\u0435\u0440\u0435\u0433\u0440\u0443\u0437\u0447\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/overloader.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Painter",
+      "kind": "other",
+      "internalName": "Painter",
+      "displayName": "Painter",
+      "displayNameRu": "\u041c\u0430\u043b\u044f\u0440",
+      "icon": "assets/icons/fargowiltas/items/painter.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PartyGirl",
+      "kind": "other",
+      "internalName": "PartyGirl",
+      "displayName": "Party Girl",
+      "displayNameRu": "\u0422\u0443\u0441\u043e\u0432\u0449\u0438\u0446\u0430",
+      "icon": "assets/icons/fargowiltas/items/partygirl.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PartyInvite",
+      "kind": "other",
+      "internalName": "PartyInvite",
+      "displayName": "Party Invite",
+      "displayNameRu": "\u041f\u0440\u0438\u0433\u043b\u0430\u0448\u0435\u043d\u0438\u0435 \u043d\u0430 \u0432\u0435\u0447\u0435\u0440\u0438\u043d\u043a\u0443",
+      "icon": "assets/icons/fargowiltas/items/partyinvite.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PillarSummon",
+      "kind": "other",
+      "internalName": "PillarSummon",
+      "displayName": "Pillar Summon",
+      "displayNameRu": "\u041f\u043e\u0440\u0442\u0430\u043b \u0432\u043d\u0435\u0448\u043d\u0438\u0445 \u0441\u0438\u043b",
+      "icon": "assets/icons/fargowiltas/items/pillarsummon.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Pincushion",
+      "kind": "other",
+      "internalName": "Pincushion",
+      "displayName": "Pincushion",
+      "displayNameRu": "\u0418\u0433\u043e\u043b\u044c\u043d\u0438\u0446\u0430",
+      "icon": "assets/icons/fargowiltas/items/pincushion.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Pirate",
+      "kind": "other",
+      "internalName": "Pirate",
+      "displayName": "Pirate",
+      "displayNameRu": "\u041f\u0438\u0440\u0430\u0442",
+      "icon": "assets/icons/fargowiltas/items/pirate.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PirateFlag",
+      "kind": "other",
+      "internalName": "PirateFlag",
+      "displayName": "Pirate Flag",
+      "displayNameRu": "\u041f\u0438\u0440\u0430\u0442\u0441\u043a\u0438\u0439 \u0444\u043b\u0430\u0433",
+      "icon": "assets/icons/fargowiltas/items/pirateflag.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PlanterasFruit",
+      "kind": "other",
+      "internalName": "PlanterasFruit",
+      "displayName": "Planteras Fruit",
+      "displayNameRu": "\u041f\u043b\u043e\u0434 \u041f\u043b\u0430\u043d\u0442\u0435\u0440\u044b",
+      "icon": "assets/icons/fargowiltas/items/planterasfruit.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PlunderedBooty",
+      "kind": "other",
+      "internalName": "PlunderedBooty",
+      "displayName": "Plundered Booty",
+      "displayNameRu": "\u041d\u0430\u0433\u0440\u0430\u0431\u043b\u0435\u043d\u043d\u0430\u044f \u0434\u043e\u0431\u044b\u0447\u0430",
+      "icon": "assets/icons/fargowiltas/items/plunderedbooty.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PortableSundial",
+      "kind": "other",
+      "internalName": "PortableSundial",
+      "displayName": "Portable Sundial",
+      "displayNameRu": "\u041a\u0430\u0440\u043c\u0430\u043d\u043d\u044b\u0435 \u0441\u043e\u043b\u043d\u0435\u0447\u043d\u044b\u0435 \u0447\u0430\u0441\u044b",
+      "icon": "assets/icons/fargowiltas/items/portablesundial.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Princess",
+      "kind": "other",
+      "internalName": "Princess",
+      "displayName": "Princess",
+      "displayNameRu": "\u041f\u0440\u0438\u043d\u0446\u0435\u0441\u0441\u0430",
+      "icon": "assets/icons/fargowiltas/items/princess.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PrismaticPrimrose",
+      "kind": "other",
+      "internalName": "PrismaticPrimrose",
+      "displayName": "Prismatic Primrose",
+      "displayNameRu": "\u041f\u0440\u0438\u0437\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043f\u0435\u0440\u0432\u043e\u0446\u0432\u0435\u0442",
+      "icon": "assets/icons/fargowiltas/items/prismaticprimrose.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PurityRenewal",
+      "kind": "other",
+      "internalName": "PurityRenewal",
+      "displayName": "Purity Renewal",
+      "displayNameRu": "\u0412\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c \u0447\u0438\u0441\u0442\u043e\u0442\u044b",
+      "icon": "assets/icons/fargowiltas/items/purityrenewal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PurityRenewalSupreme",
+      "kind": "other",
+      "internalName": "PurityRenewalSupreme",
+      "displayName": "Purity Renewal Supreme",
+      "displayNameRu": "\u041c\u0435\u0433\u0430\u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c \u0447\u0438\u0441\u0442\u043e\u0442\u044b",
+      "icon": "assets/icons/fargowiltas/items/purityrenewalsupreme.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PurityTotem",
+      "kind": "other",
+      "internalName": "PurityTotem",
+      "displayName": "Purity Totem",
+      "displayNameRu": "\u0422\u043e\u0442\u0435\u043c \u0447\u0438\u0441\u0442\u043e\u0442\u044b",
+      "icon": "assets/icons/fargowiltas/items/puritytotem.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/PylonCleaner",
+      "kind": "other",
+      "internalName": "PylonCleaner",
+      "displayName": "Pylon Cleaner",
+      "displayNameRu": "\u041e\u0447\u0438\u0441\u0442\u0438\u0442\u0435\u043b\u044c \u043f\u0438\u043b\u043e\u043d\u043e\u0432",
+      "icon": "assets/icons/fargowiltas/items/pyloncleaner.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/RegalStatue",
+      "kind": "other",
+      "internalName": "RegalStatue",
+      "displayName": "Regal Statue",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u043a\u0430\u044f \u0441\u0442\u0430\u0442\u0443\u044f",
+      "icon": "assets/icons/fargowiltas/items/regalstatue.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/RunawayProbe",
+      "kind": "other",
+      "internalName": "RunawayProbe",
+      "displayName": "Runaway Probe",
+      "displayNameRu": "\u0423\u0431\u0435\u0433\u0430\u044e\u0449\u0438\u0439 \u0437\u043e\u043d\u0434",
+      "icon": "assets/icons/fargowiltas/items/runawayprobe.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/RuneOrb",
+      "kind": "other",
+      "internalName": "RuneOrb",
+      "displayName": "Rune Orb",
+      "displayNameRu": "\u0420\u0443\u043d\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0441\u0444\u0435\u0440\u0430",
+      "icon": "assets/icons/fargowiltas/items/runeorb.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SandRenewal",
+      "kind": "other",
+      "internalName": "SandRenewal",
+      "displayName": "Sand Renewal",
+      "displayNameRu": "\u041f\u0443\u0441\u0442\u044b\u043d\u043d\u044b\u0439 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/sandrenewal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SandRenewalSupreme",
+      "kind": "other",
+      "internalName": "SandRenewalSupreme",
+      "displayName": "Sand Renewal Supreme",
+      "displayNameRu": "\u041f\u0443\u0441\u0442\u044b\u043d\u043d\u044b\u0439 \u043c\u0435\u0433\u0430\u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/sandrenewalsupreme.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SantaClaus",
+      "kind": "other",
+      "internalName": "SantaClaus",
+      "displayName": "Santa Claus",
+      "displayNameRu": "\u0421\u0430\u043d\u0442\u0430-\u041a\u043b\u0430\u0443\u0441",
+      "icon": "assets/icons/fargowiltas/items/santaclaus.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SemiBridgifier",
+      "kind": "other",
+      "internalName": "SemiBridgifier",
+      "displayName": "Semi Bridgifier",
+      "displayNameRu": "\u041f\u043e\u043b\u0443\u043c\u043e\u0441\u0442\u043e\u0441\u0442\u0440\u043e\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/semibridgifier.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Semistation",
+      "kind": "other",
+      "internalName": "Semistation",
+      "displayName": "Semistation",
+      "displayNameRu": "\u041f\u043e\u043b\u0443\u0441\u0442\u0430\u043d\u0446\u0438\u044f",
+      "icon": "assets/icons/fargowiltas/items/semistation.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/ShadowflameIcon",
+      "kind": "other",
+      "internalName": "ShadowflameIcon",
+      "displayName": "Shadowflame Icon",
+      "displayNameRu": "\u0417\u043d\u0430\u043a \u0442\u0435\u043d\u0435\u0432\u043e\u0433\u043e \u043f\u043b\u0430\u043c\u0435\u043d\u0438",
+      "icon": "assets/icons/fargowiltas/items/shadowflameicon.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SiblingPylon",
+      "kind": "other",
+      "internalName": "SiblingPylon",
+      "displayName": "Sibling Pylon",
+      "displayNameRu": "\u041f\u0438\u043b\u043e\u043d \u0440\u043e\u0434\u043d\u0438",
+      "icon": "assets/icons/fargowiltas/items/siblingpylon.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SkeletonMerchant",
+      "kind": "other",
+      "internalName": "SkeletonMerchant",
+      "displayName": "Skeleton Merchant",
+      "displayNameRu": "\u0421\u043a\u0435\u043b\u0435\u0442-\u0442\u043e\u0440\u0433\u043e\u0432\u0435\u0446",
+      "icon": "assets/icons/fargowiltas/items/skeletonmerchant.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SlimyLockBox",
+      "kind": "other",
+      "internalName": "SlimyLockBox",
+      "displayName": "Slimy Lock Box",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0438\u0441\u0442\u044b\u0439 \u0437\u0430\u043c\u043e\u043a",
+      "icon": "assets/icons/fargowiltas/items/slimylockbox.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SnowRenewal",
+      "kind": "other",
+      "internalName": "SnowRenewal",
+      "displayName": "Snow Renewal",
+      "displayNameRu": "\u0421\u043d\u0435\u0436\u043d\u044b\u0439 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/snowrenewal.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SnowRenewalSupreme",
+      "kind": "other",
+      "internalName": "SnowRenewalSupreme",
+      "displayName": "Snow Renewal Supreme",
+      "displayNameRu": "\u0421\u043d\u0435\u0436\u043d\u044b\u0439 \u043c\u0435\u0433\u0430\u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/snowrenewalsupreme.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SpentLantern",
+      "kind": "other",
+      "internalName": "SpentLantern",
+      "displayName": "Spent Lantern",
+      "displayNameRu": "\u0418\u0437\u043d\u043e\u0448\u0435\u043d\u043d\u044b\u0439 \u0444\u043e\u043d\u0430\u0440\u044c",
+      "icon": "assets/icons/fargowiltas/items/spentlantern.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SpookyBranch",
+      "kind": "other",
+      "internalName": "SpookyBranch",
+      "displayName": "Spooky Branch",
+      "displayNameRu": "\u0416\u0443\u0442\u043a\u0430\u044f \u0432\u0435\u0442\u0432\u044c",
+      "icon": "assets/icons/fargowiltas/items/spookybranch.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SquireSlime",
+      "kind": "other",
+      "internalName": "SquireSlime",
+      "displayName": "Squire Slime",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0435\u043d\u044c-\u043e\u0440\u0443\u0436\u0435\u043d\u043e\u0441\u0435\u0446",
+      "icon": "assets/icons/fargowiltas/items/squireslime.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Steampunker",
+      "kind": "other",
+      "internalName": "Steampunker",
+      "displayName": "Steampunker",
+      "displayNameRu": "\u041f\u0430\u0440\u043e\u043c\u0435\u0445\u0430\u043d\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/steampunker.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Stylist",
+      "kind": "other",
+      "internalName": "Stylist",
+      "displayName": "Stylist",
+      "displayNameRu": "\u0421\u0442\u0438\u043b\u0438\u0441\u0442",
+      "icon": "assets/icons/fargowiltas/items/stylist.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SurlySlime",
+      "kind": "other",
+      "internalName": "SurlySlime",
+      "displayName": "Surly Slime",
+      "displayNameRu": "\u0423\u0433\u0440\u044e\u043c\u044b\u0439 \u0441\u043b\u0438\u0437\u0435\u043d\u044c",
+      "icon": "assets/icons/fargowiltas/items/surlyslime.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SuspiciousEye",
+      "kind": "other",
+      "internalName": "SuspiciousEye",
+      "displayName": "Suspicious Eye",
+      "displayNameRu": "\u041f\u043e\u0434\u043e\u0437\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0432\u044b\u0433\u043b\u044f\u0434\u044f\u0449\u0438\u0435 \u043a\u0430\u043f\u043b\u0438 \u0434\u043b\u044f \u0433\u043b\u0430\u0437",
+      "icon": "assets/icons/fargowiltas/items/suspiciouseye.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SuspiciousLookingChest",
+      "kind": "other",
+      "internalName": "SuspiciousLookingChest",
+      "displayName": "Suspicious Looking Chest",
+      "displayNameRu": "\u041f\u043e\u0434\u043e\u0437\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0432\u044b\u0433\u043b\u044f\u0434\u044f\u0449\u0438\u0439 \u0441\u0443\u043d\u0434\u0443\u043a",
+      "icon": "assets/icons/fargowiltas/items/suspiciouslookingchest.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SuspiciousLookingLure",
+      "kind": "other",
+      "internalName": "SuspiciousLookingLure",
+      "displayName": "Suspicious Looking Lure",
+      "displayNameRu": "\u041f\u043e\u0434\u043e\u0437\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0432\u044b\u0433\u043b\u044f\u0434\u044f\u0449\u0430\u044f \u0431\u043b\u0435\u0441\u043d\u0430",
+      "icon": "assets/icons/fargowiltas/items/suspiciouslookinglure.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SuspiciousLookingScythe",
+      "kind": "other",
+      "internalName": "SuspiciousLookingScythe",
+      "displayName": "Suspicious Looking Scythe",
+      "displayNameRu": "\u041f\u043e\u0434\u043e\u0437\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0432\u044b\u0433\u043b\u044f\u0434\u044f\u0449\u0430\u044f \u043a\u043e\u0441\u0430",
+      "icon": "assets/icons/fargowiltas/items/suspiciouslookingscythe.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/SuspiciousSkull",
+      "kind": "other",
+      "internalName": "SuspiciousSkull",
+      "displayName": "Suspicious Skull",
+      "displayNameRu": "\u041f\u043e\u0434\u043e\u0437\u0440\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0447\u0435\u0440\u0435\u043f",
+      "icon": "assets/icons/fargowiltas/items/suspiciousskull.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Tavernkeep",
+      "kind": "other",
+      "internalName": "Tavernkeep",
+      "displayName": "Tavernkeep",
+      "displayNameRu": "\u0422\u0440\u0430\u043a\u0442\u0438\u0440\u0449\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/tavernkeep.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/TaxCollector",
+      "kind": "other",
+      "internalName": "TaxCollector",
+      "displayName": "Tax Collector",
+      "displayNameRu": "\u041d\u0430\u043b\u043e\u0433\u043e\u0441\u0431\u043e\u0440\u0449\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/taxcollector.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/TownBunny",
+      "kind": "other",
+      "internalName": "TownBunny",
+      "displayName": "Town Bunny",
+      "displayNameRu": "\u041a\u0440\u043e\u043b\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/townbunny.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/TownCat",
+      "kind": "other",
+      "internalName": "TownCat",
+      "displayName": "Town Cat",
+      "displayNameRu": "\u041a\u043e\u0448\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/towncat.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/TownDog",
+      "kind": "other",
+      "internalName": "TownDog",
+      "displayName": "Town Dog",
+      "displayNameRu": "\u0421\u043e\u0431\u0430\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/towndog.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/TravellingMerchant",
+      "kind": "other",
+      "internalName": "TravellingMerchant",
+      "displayName": "Travelling Merchant",
+      "displayNameRu": "\u0421\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0443\u044e\u0449\u0438\u0439 \u0442\u043e\u0440\u0433\u043e\u0432\u0435\u0446",
+      "icon": "assets/icons/fargowiltas/items/travellingmerchant.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Truffle",
+      "kind": "other",
+      "internalName": "Truffle",
+      "displayName": "Truffle",
+      "displayNameRu": "\u0422\u0440\u044e\u0444\u0435\u043b\u044c",
+      "icon": "assets/icons/fargowiltas/items/truffle.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/TruffleWorm2",
+      "kind": "other",
+      "internalName": "TruffleWorm2",
+      "displayName": "Truffle Worm2",
+      "displayNameRu": "\u041a\u043e\u043d\u0446\u0435\u043d\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u0435 \u043c\u0430\u0441\u043b\u043e \u0438\u0437 \u0442\u0440\u044e\u0444\u0435\u043b\u044c\u043d\u044b\u0445 \u0447\u0435\u0440\u0432\u0435\u0439",
+      "icon": "assets/icons/fargowiltas/items/truffleworm2.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafeBlueBrickWall",
+      "kind": "other",
+      "internalName": "UnsafeBlueBrickWall",
+      "displayName": "Unsafe Blue Brick Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0441\u0438\u043d\u044f\u044f \u043a\u0438\u0440\u043f\u0438\u0447\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430",
+      "icon": "assets/icons/fargowiltas/items/unsafebluebrickwall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafeBlueSlabWall",
+      "kind": "other",
+      "internalName": "UnsafeBlueSlabWall",
+      "displayName": "Unsafe Blue Slab Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430 \u0438\u0437 \u0441\u0438\u043d\u0435\u0439 \u043f\u043b\u0438\u0442\u043a\u0438",
+      "icon": "assets/icons/fargowiltas/items/unsafeblueslabwall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafeBlueTileWall",
+      "kind": "other",
+      "internalName": "UnsafeBlueTileWall",
+      "displayName": "Unsafe Blue Tile Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0441\u0438\u043d\u044f\u044f \u043e\u0431\u043b\u0438\u0446\u043e\u0432\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/unsafebluetilewall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafeGraniteWall",
+      "kind": "other",
+      "internalName": "UnsafeGraniteWall",
+      "displayName": "Unsafe Granite Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0433\u0440\u0430\u043d\u0438\u0442\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430",
+      "icon": "assets/icons/fargowiltas/items/unsafegranitewall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafeGreenBrickWall",
+      "kind": "other",
+      "internalName": "UnsafeGreenBrickWall",
+      "displayName": "Unsafe Green Brick Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0437\u0435\u043b\u0451\u043d\u0430\u044f \u043a\u0438\u0440\u043f\u0438\u0447\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430",
+      "icon": "assets/icons/fargowiltas/items/unsafegreenbrickwall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafeGreenSlabWall",
+      "kind": "other",
+      "internalName": "UnsafeGreenSlabWall",
+      "displayName": "Unsafe Green Slab Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430 \u0438\u0437 \u0437\u0435\u043b\u0451\u043d\u043e\u0439 \u043f\u043b\u0438\u0442\u043a\u0438",
+      "icon": "assets/icons/fargowiltas/items/unsafegreenslabwall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafeGreenTileWall",
+      "kind": "other",
+      "internalName": "UnsafeGreenTileWall",
+      "displayName": "Unsafe Green Tile Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0437\u0435\u043b\u0451\u043d\u0430\u044f \u043e\u0431\u043b\u0438\u0446\u043e\u0432\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/unsafegreentilewall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafeLihzahrdBrickWall",
+      "kind": "other",
+      "internalName": "UnsafeLihzahrdBrickWall",
+      "displayName": "Unsafe Lihzahrd Brick Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u044f\u0445\u0449\u0435\u0440\u043e\u0432\u0430\u044f \u043a\u0438\u0440\u043f\u0438\u0447\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430",
+      "icon": "assets/icons/fargowiltas/items/unsafelihzahrdbrickwall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafeMarbleWall",
+      "kind": "other",
+      "internalName": "UnsafeMarbleWall",
+      "displayName": "Unsafe Marble Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u043c\u0440\u0430\u043c\u043e\u0440\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430",
+      "icon": "assets/icons/fargowiltas/items/unsafemarblewall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafePinkBrickWall",
+      "kind": "other",
+      "internalName": "UnsafePinkBrickWall",
+      "displayName": "Unsafe Pink Brick Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0440\u043e\u0437\u043e\u0432\u0430\u044f \u043a\u0438\u0440\u043f\u0438\u0447\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430",
+      "icon": "assets/icons/fargowiltas/items/unsafepinkbrickwall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafePinkSlabWall",
+      "kind": "other",
+      "internalName": "UnsafePinkSlabWall",
+      "displayName": "Unsafe Pink Slab Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430 \u0438\u0437 \u0440\u043e\u0437\u043e\u0432\u043e\u0439 \u043f\u043b\u0438\u0442\u043a\u0438",
+      "icon": "assets/icons/fargowiltas/items/unsafepinkslabwall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafePinkTileWall",
+      "kind": "other",
+      "internalName": "UnsafePinkTileWall",
+      "displayName": "Unsafe Pink Tile Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0440\u043e\u0437\u043e\u0432\u0430\u044f \u043e\u0431\u043b\u0438\u0446\u043e\u0432\u043a\u0430",
+      "icon": "assets/icons/fargowiltas/items/unsafepinktilewall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/UnsafeSpiderWall",
+      "kind": "other",
+      "internalName": "UnsafeSpiderWall",
+      "displayName": "Unsafe Spider Wall",
+      "displayNameRu": "\u041e\u043f\u0430\u0441\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430 \u043f\u0430\u0443\u0447\u044c\u0435\u0433\u043e \u0433\u043d\u0435\u0437\u0434\u0430",
+      "icon": "assets/icons/fargowiltas/items/unsafespiderwall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/WalkingRick",
+      "kind": "other",
+      "internalName": "WalkingRick",
+      "displayName": "Walking Rick",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u00ab\u0418\u0434\u0443\u0449\u0438\u0439 \u0420\u0438\u043a\u00bb",
+      "icon": "assets/icons/fargowiltas/items/walkingrick.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/WeatherBalloon",
+      "kind": "other",
+      "internalName": "WeatherBalloon",
+      "displayName": "Weather Balloon",
+      "displayNameRu": "\u041c\u0435\u0442\u0435\u043e\u0437\u043e\u043d\u0434",
+      "icon": "assets/icons/fargowiltas/items/weatherballoon.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/WiresPainting",
+      "kind": "other",
+      "internalName": "WiresPainting",
+      "displayName": "Wires Painting",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u00abWires\u00bb",
+      "icon": "assets/icons/fargowiltas/items/wirespainting.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/WitchDoctor",
+      "kind": "other",
+      "internalName": "WitchDoctor",
+      "displayName": "Witch Doctor",
+      "displayNameRu": "\u0417\u043d\u0430\u0445\u0430\u0440\u044c",
+      "icon": "assets/icons/fargowiltas/items/witchdoctor.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Wizard",
+      "kind": "other",
+      "internalName": "Wizard",
+      "displayName": "Wizard",
+      "displayNameRu": "\u0412\u043e\u043b\u0448\u0435\u0431\u043d\u0438\u043a",
+      "icon": "assets/icons/fargowiltas/items/wizard.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/WoodenToken",
+      "kind": "other",
+      "internalName": "WoodenToken",
+      "displayName": "Wooden Token",
+      "displayNameRu": "\u0414\u0440\u0435\u0432\u0435\u0441\u043d\u044b\u0439 \u0437\u043d\u0430\u043a",
+      "icon": "assets/icons/fargowiltas/items/woodentoken.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/WormSnack",
+      "kind": "other",
+      "internalName": "WormSnack",
+      "displayName": "Worm Snack",
+      "displayNameRu": "\u0417\u0430\u043a\u0443\u0441\u043a\u0430 \u0434\u043b\u044f \u0447\u0435\u0440\u0432\u0435\u0439",
+      "icon": "assets/icons/fargowiltas/items/wormsnack.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "Fargowiltas/Zoologist",
+      "kind": "other",
+      "internalName": "Zoologist",
+      "displayName": "Zoologist",
+      "displayNameRu": "\u0417\u043e\u043e\u043b\u043e\u0433",
+      "icon": "assets/icons/fargowiltas/items/zoologist.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    }
+  ]
+}

@@ -21,6 +21,33 @@
       "accessory": 14,
       "buff": 12
     },
-    "criticalRuIds": []
+    "criticalRuIds": [
+      "Fargowiltas/BoomShuriken",
+      "Fargowiltas/AbominationnBody",
+      "Fargowiltas/AbominationnMask",
+      "Fargowiltas/AbominationnPants",
+      "Fargowiltas/DevianttBody",
+      "Fargowiltas/DevianttMask",
+      "Fargowiltas/DevianttPants",
+      "Fargowiltas/GnomeHat",
+      "Fargowiltas/GoldenSlimeCrown",
+      "Fargowiltas/LumberHat",
+      "Fargowiltas/LumberjackBody",
+      "Fargowiltas/LumberjackMask",
+      "Fargowiltas/LumberjackPants",
+      "Fargowiltas/AbominationnScythe",
+      "Fargowiltas/BigSuckPotion",
+      "Fargowiltas/BoneQuiver",
+      "Fargowiltas/BrittleBone",
+      "Fargowiltas/ChlorophytePouch",
+      "Fargowiltas/ChlorophyteQuiver",
+      "Fargowiltas/ClusterRocket1Box",
+      "Fargowiltas/ClusterRocket2Box",
+      "Fargowiltas/CopperCoinBag",
+      "Fargowiltas/CrabSizedGlasses",
+      "Fargowiltas/CrystalDartBox",
+      "Fargowiltas/CrystalPouch",
+      "Fargowiltas/CursedDartBox"
+    ]
   }
 }

@@ -12,7 +12,7 @@ runtime category guessing.
 | 0 | Calamity Mod | `CalamityMod` | Official | Generated from local export + supplement normalization and canonical boss rules. |
 | 1 | Thorium Mod | `ThoriumMod` | Metadata-only | Included in registry and onboarding pipeline, full deterministic pack is next. |
 | 1 | Spirit Reforged | `SpiritReforged` | Planned | Onboarding uses the same deterministic pipeline and CI gates. |
-| 2 | Fargo's Mutant Mod | `Fargowiltas` | Planned | Will be promoted only after passing category/icon/boss validation gates. |
+|2|Fargo's Mutant Mod|`Fargowiltas`| Official | Promoted after deterministic validation gates. |
 | 2 | Fargo's Souls Mod | `FargowiltasSouls` | Planned | Deterministic onboarding with canonical boss/miniboss rules. |
 | 2 | Fargo DLC | `FargowiltasDLC` | Planned | Internal name is validated via `/terrapath export modlist`. |
 | 2 | Fargo Souls DLC | `FargowiltasSoulsDLC` | Planned | Internal name is validated via `/terrapath export modlist`. |
