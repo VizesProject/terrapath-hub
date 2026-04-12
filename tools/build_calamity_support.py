@@ -1,5 +1,6 @@
 import argparse
 import json
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -446,6 +447,8 @@ def apply_supplement(entries_by_id: dict[str, dict], supplement_entries: list[di
 
 
 def preserve_previous_localizations(entries_by_id: dict[str, dict], previous_entries: dict[str, dict]) -> None:
+    cyrillic_pattern = re.compile(r"[\u0400-\u04FF]")
+
     for content_id, entry in list(entries_by_id.items()):
         previous = previous_entries.get(content_id)
         if not previous:
@@ -456,7 +459,19 @@ def preserve_previous_localizations(entries_by_id: dict[str, dict], previous_ent
         previous_name = str(previous.get("displayName") or "")
         previous_name_ru = str(previous.get("displayNameRu") or "")
 
-        if previous_name_ru and previous_name_ru != previous_name and (not current_name_ru or current_name_ru == current_name):
+        current_has_cyrillic = bool(cyrillic_pattern.search(current_name_ru))
+        previous_has_cyrillic = bool(cyrillic_pattern.search(previous_name_ru))
+        should_restore_previous = (
+            previous_name_ru
+            and previous_name_ru != previous_name
+            and (
+                not current_name_ru
+                or current_name_ru == current_name
+                or (not current_has_cyrillic and previous_has_cyrillic)
+            )
+        )
+
+        if should_restore_previous:
             normalized = dict(entry)
             normalized["displayNameRu"] = previous_name_ru
             entries_by_id[content_id] = normalized

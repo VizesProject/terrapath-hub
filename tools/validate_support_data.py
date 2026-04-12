@@ -27,6 +27,7 @@ BUFF_CONTAMINATION_HINTS = re.compile(
     r"breastplate$|chestplate$|greaves$|leggings$|robe$|hood$|mask$",
     re.IGNORECASE,
 )
+CYRILLIC_PATTERN = re.compile(r"[\u0400-\u04FF]")
 
 TERRARIA_BOSS_WIKI_ICON_OVERRIDES = {
     "Terraria/KingSlime": "assets/icons/terraria/bosses/king-slime-wiki.png",
@@ -53,6 +54,15 @@ CALAMITY_FORBIDDEN_BOSS_SEGMENTS = {
     "CalamityMod/AquaticScourgeBody",
     "CalamityMod/AquaticScourgeBodyAlt",
     "CalamityMod/AquaticScourgeTail",
+}
+CALAMITY_CRITICAL_RU_IDS = {
+    "CalamityMod/AuricTeslaBodyArmor",
+    "CalamityMod/AuricTeslaCuisses",
+    "CalamityMod/AuricTeslaHeadMagic",
+    "CalamityMod/AuricTeslaHeadMelee",
+    "CalamityMod/AuricTeslaHeadRanged",
+    "CalamityMod/AuricTeslaHeadRogue",
+    "CalamityMod/AuricTeslaHeadSummon",
 }
 
 
@@ -189,6 +199,24 @@ def validate_calamity_boss_picker() -> None:
     require("CalamityMod/AquaticScourgeHead" in boss_ids, "Calamity boss picker is missing Aquatic Scourge")
 
 
+def validate_calamity_critical_localization() -> None:
+    path = support_file("CalamityMod", "search-content.json")
+    if not path.exists():
+        return
+
+    rows = {str(row.get("id") or ""): row for row in read_json(path).get("entries", []) if row.get("id")}
+    missing = sorted(content_id for content_id in CALAMITY_CRITICAL_RU_IDS if content_id not in rows)
+    require(not missing, f"Calamity critical localization entries are missing: {', '.join(missing)}")
+
+    not_localized: list[str] = []
+    for content_id in sorted(CALAMITY_CRITICAL_RU_IDS):
+        row = rows[content_id]
+        display_name_ru = str(row.get("displayNameRu") or "").strip()
+        if not CYRILLIC_PATTERN.search(display_name_ru):
+            not_localized.append(content_id)
+    require(not not_localized, f"Calamity critical entries lost RU localization: {', '.join(not_localized)}")
+
+
 def validate_mod(mod_row: dict) -> None:
     mod_name = str(mod_row.get("id") or "").strip()
     status = str(mod_row.get("status") or "planned").strip().lower()
@@ -238,6 +266,7 @@ def main() -> int:
         validate_terraria_boss_icons()
     if status_by_mod.get("CalamityMod") in OFFICIAL_STATUSES:
         validate_calamity_boss_picker()
+        validate_calamity_critical_localization()
 
     print("Support data validation passed.")
     return 0
