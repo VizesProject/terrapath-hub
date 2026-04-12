@@ -14,8 +14,7 @@ runtime category guessing.
 | 1 | Spirit Reforged | `SpiritReforged` | Planned | Onboarding uses the same deterministic pipeline and CI gates. |
 |2|Fargo's Mutant Mod|`Fargowiltas`| Official | Promoted after deterministic validation gates. |
 | 2 | Fargo's Souls Mod | `FargowiltasSouls` | Planned | Deterministic onboarding with canonical boss/miniboss rules. |
-| 2 | Fargo DLC | `FargowiltasDLC` | Planned | Internal name is validated via `/terrapath export modlist`. |
-| 2 | Fargo Souls DLC | `FargowiltasSoulsDLC` | Planned | Internal name is validated via `/terrapath export modlist`. |
+| 2 | Calamity - Fargo's Souls DLC | `FargowiltasCrossmod` | Planned | Internal name is validated via `/terrapath export modlist`. |
 | 3 | Calamity Entropy | `CalamityEntropy` | Planned | Calamity addon wave with shared normalization contracts. |
 | 3 | Calamity Fables | `CalamityFables` | Planned | Calamity addon wave with shared normalization contracts. |
 | 3 | Calamity: Wrath of the Gods | `CalamityWrathOfTheGods` | Planned | Calamity addon wave with shared normalization contracts. |

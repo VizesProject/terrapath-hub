@@ -1,0 +1,244 @@
+{
+  "mod": "FargowiltasSouls",
+  "contentType": "bosses",
+  "bosses": [
+    {
+      "id": "FargowiltasSouls/AbomBoss",
+      "kind": "boss",
+      "internalName": "AbomBoss",
+      "displayName": "Abom Boss",
+      "displayNameRu": "\u041c\u0435\u0440\u0437\u043e\u0441\u0442\u0442\u044c",
+      "icon": "assets/icons/fargowiltassouls/bosses/abomboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/AbomBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/BanishedBaron",
+      "kind": "boss",
+      "internalName": "BanishedBaron",
+      "displayName": "Banished Baron",
+      "displayNameRu": "\u0418\u0437\u0433\u043d\u0430\u043d\u043d\u044b\u0439 \u0431\u0430\u0440\u043e\u043d",
+      "icon": "assets/icons/fargowiltassouls/bosses/banishedbaron.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/BanishedBaron",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/CosmosChampion",
+      "kind": "boss",
+      "internalName": "CosmosChampion",
+      "displayName": "Cosmos Champion",
+      "displayNameRu": "\u042d\u0440\u0438\u0434\u0430\u043d, \u0427\u0435\u043c\u043f\u0438\u043e\u043d \u043a\u043e\u0441\u043c\u043e\u0441\u0430",
+      "icon": "assets/icons/fargowiltassouls/bosses/cosmoschampion.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/CosmosChampion",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/CursedCoffin",
+      "kind": "boss",
+      "internalName": "CursedCoffin",
+      "displayName": "Cursed Coffin",
+      "displayNameRu": "\u041f\u0440\u043e\u043a\u043b\u044f\u0442\u044b\u0439 \u0441\u0430\u0440\u043a\u043e\u0444\u0430\u0433",
+      "icon": "assets/icons/fargowiltassouls/bosses/cursedcoffin.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/CursedCoffin",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/DeviBoss",
+      "kind": "boss",
+      "internalName": "DeviBoss",
+      "displayName": "Devi Boss",
+      "displayNameRu": "\u0414\u0435\u0432\u0438\u0430\u043d\u0442\u0442",
+      "icon": "assets/icons/fargowiltassouls/bosses/deviboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/DeviBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/EarthChampion",
+      "kind": "boss",
+      "internalName": "EarthChampion",
+      "displayName": "Earth Champion",
+      "displayNameRu": "\u0427\u0435\u043c\u043f\u0438\u043e\u043d \u043f\u043b\u0430\u043d\u0435\u0442\u044b",
+      "icon": "assets/icons/fargowiltassouls/bosses/earthchampion.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/EarthChampion",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/LifeChallenger",
+      "kind": "boss",
+      "internalName": "LifeChallenger",
+      "displayName": "Life Challenger",
+      "displayNameRu": "\u0421\u0432\u0435\u0442 \u0436\u0438\u0437\u043d\u0438",
+      "icon": "assets/icons/fargowiltassouls/bosses/lifechallenger.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/LifeChallenger",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/LifeChampion",
+      "kind": "boss",
+      "internalName": "LifeChampion",
+      "displayName": "Life Champion",
+      "displayNameRu": "\u0427\u0435\u043c\u043f\u0438\u043e\u043d \u0436\u0438\u0437\u043d\u0438",
+      "icon": "assets/icons/fargowiltassouls/bosses/lifechampion.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/LifeChampion",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/MutantBoss",
+      "kind": "boss",
+      "internalName": "MutantBoss",
+      "displayName": "Mutant Boss",
+      "displayNameRu": "\u041c\u0443\u0442\u0430\u043d\u0442",
+      "icon": "assets/icons/fargowiltassouls/bosses/mutantboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/MutantBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/NatureChampion",
+      "kind": "boss",
+      "internalName": "NatureChampion",
+      "displayName": "Nature Champion",
+      "displayNameRu": "\u0427\u0435\u043c\u043f\u0438\u043e\u043d \u043f\u0440\u0438\u0440\u043e\u0434\u044b",
+      "icon": "assets/icons/fargowiltassouls/bosses/naturechampion.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/NatureChampion",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/ShadowChampion",
+      "kind": "boss",
+      "internalName": "ShadowChampion",
+      "displayName": "Shadow Champion",
+      "displayNameRu": "\u0427\u0435\u043c\u043f\u0438\u043e\u043d \u0441\u043c\u0435\u0440\u0442\u0438",
+      "icon": "assets/icons/fargowiltassouls/bosses/shadowchampion.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/ShadowChampion",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/SpiritChampion",
+      "kind": "boss",
+      "internalName": "SpiritChampion",
+      "displayName": "Spirit Champion",
+      "displayNameRu": "\u0427\u0435\u043c\u043f\u0438\u043e\u043d \u0434\u0443\u0445\u0430",
+      "icon": "assets/icons/fargowiltassouls/bosses/spiritchampion.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/SpiritChampion",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/TerraChampion",
+      "kind": "boss",
+      "internalName": "TerraChampion",
+      "displayName": "Terra Champion",
+      "displayNameRu": "\u0427\u0435\u043c\u043f\u0438\u043e\u043d \u0437\u0435\u043c\u043b\u0438",
+      "icon": "assets/icons/fargowiltassouls/bosses/terrachampion.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/TerraChampion",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/TimberChampion",
+      "kind": "boss",
+      "internalName": "TimberChampion",
+      "displayName": "Timber Champion",
+      "displayNameRu": "\u0427\u0435\u043c\u043f\u0438\u043e\u043d \u043b\u0435\u0441\u0430",
+      "icon": "assets/icons/fargowiltassouls/bosses/timberchampion.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/TimberChampion",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/TimberChampionHead",
+      "kind": "boss",
+      "internalName": "TimberChampionHead",
+      "displayName": "Timber Champion Head",
+      "displayNameRu": "\u0427\u0435\u043c\u043f\u0438\u043e\u043d \u043b\u0435\u0441\u0430",
+      "icon": "assets/icons/fargowiltassouls/bosses/timberchampionhead.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/TimberChampionHead",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/TrojanSquirrel",
+      "kind": "boss",
+      "internalName": "TrojanSquirrel",
+      "displayName": "Trojan Squirrel",
+      "displayNameRu": "\u0422\u0440\u043e\u044f\u043d\u0441\u043a\u0430\u044f \u0431\u0435\u043b\u043a\u0430",
+      "icon": "assets/icons/fargowiltassouls/bosses/trojansquirrel.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/TrojanSquirrel",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "FargowiltasSouls/WillChampion",
+      "kind": "boss",
+      "internalName": "WillChampion",
+      "displayName": "Will Champion",
+      "displayNameRu": "\u0427\u0435\u043c\u043f\u0438\u043e\u043d \u0432\u043e\u043b\u0438",
+      "icon": "assets/icons/fargowiltassouls/bosses/willchampion.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "FargowiltasSouls/WillChampion",
+      "bossColumn": "hardmode"
+    }
+  ]
+}

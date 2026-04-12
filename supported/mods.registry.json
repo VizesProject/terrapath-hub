@@ -110,26 +110,8 @@
       ]
     },
     {
-      "id": "FargowiltasDLC",
-      "displayName": "Fargo DLC",
-      "status": "planned",
-      "rolloutWave": 2,
-      "sourcePolicy": "local-export-plus-supplement",
-      "iconStrategy": "wiki-first-fallback-local",
-      "supportedKinds": [
-        "item",
-        "boss",
-        "miniboss",
-        "npc",
-        "event",
-        "biome",
-        "system",
-        "other"
-      ]
-    },
-    {
-      "id": "FargowiltasSoulsDLC",
-      "displayName": "Fargo Souls DLC",
+      "id": "FargowiltasCrossmod",
+      "displayName": "Calamity - Fargo's Souls DLC",
       "status": "planned",
       "rolloutWave": 2,
       "sourcePolicy": "local-export-plus-supplement",

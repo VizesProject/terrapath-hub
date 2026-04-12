@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-WAVE2_MODS = ("Fargowiltas", "FargowiltasSouls", "FargowiltasDLC", "FargowiltasSoulsDLC")
+WAVE2_MODS = ("Fargowiltas", "FargowiltasSouls", "FargowiltasCrossmod")
 
 
 def run(args: list[str]) -> None:
@@ -46,4 +46,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

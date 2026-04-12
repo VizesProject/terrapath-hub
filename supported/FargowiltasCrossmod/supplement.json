@@ -1,0 +1,46 @@
+{
+  "mod": "FargowiltasCrossmod",
+  "contentType": "supplement",
+  "entries": [],
+  "bossNormalization": {
+    "aliasMap": {},
+    "hiddenBosses": [],
+    "eligibleMinibosses": [],
+    "columnMap": {},
+    "displayOverrides": {}
+  },
+  "taxonomyOverrides": {
+    "forcedCategories": {},
+    "blacklist": []
+  },
+  "localizationPolicy": {
+    "coverageThresholdPickerVisible": 0.85,
+    "criticalPerCategory": {
+      "weapon": 16,
+      "armor": 12,
+      "accessory": 14,
+      "buff": 12
+    },
+    "criticalRuIds": [
+      "FargowiltasCrossmod/AresHand",
+      "FargowiltasCrossmod/PermafrostBoss",
+      "FargowiltasCrossmod/AerospecEnchant",
+      "FargowiltasCrossmod/BrandoftheBrimstoneWitch",
+      "FargowiltasCrossmod/DaedalusEnchant",
+      "FargowiltasCrossmod/DesertProwlerEnchant",
+      "FargowiltasCrossmod/ElementsForce",
+      "FargowiltasCrossmod/GaleForce",
+      "FargowiltasCrossmod/HydrothermicEnchant",
+      "FargowiltasCrossmod/MarniteEnchant",
+      "FargowiltasCrossmod/OutlawsEssence",
+      "FargowiltasCrossmod/ReaverEnchant",
+      "FargowiltasCrossmod/SnowRuffianEnchant",
+      "FargowiltasCrossmod/StatigelEnchant",
+      "FargowiltasCrossmod/SulphurEnchant",
+      "FargowiltasCrossmod/TitanHeartEnchant",
+      "FargowiltasCrossmod/RedStainedWormFood",
+      "FargowiltasCrossmod/SeeFood",
+      "FargowiltasCrossmod/WormFoodofKos"
+    ]
+  }
+}

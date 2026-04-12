@@ -1,0 +1,764 @@
+{
+  "mod": "FargowiltasCrossmod",
+  "contentType": "items",
+  "items": [
+    {
+      "id": "FargowiltasCrossmod/AerospecEnchant",
+      "kind": "item",
+      "internalName": "AerospecEnchant",
+      "displayName": "Aerospec Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0430\u044d\u0440\u043e\u043f\u0440\u0438\u0437\u0440\u0430\u043a\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/aerospecenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/BrandoftheBrimstoneWitch",
+      "kind": "item",
+      "internalName": "BrandoftheBrimstoneWitch",
+      "displayName": "Brandofthe Brimstone Witch",
+      "displayNameRu": "\u041a\u043b\u0435\u0439\u043c\u043e \u0441\u0435\u0440\u043d\u043e\u0439 \u0432\u0435\u0434\u044c\u043c\u044b",
+      "icon": "assets/icons/fargowiltascrossmod/items/brandofthebrimstonewitch.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/DaedalusEnchant",
+      "kind": "item",
+      "internalName": "DaedalusEnchant",
+      "displayName": "Daedalus Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0414\u0435\u0434\u0430\u043b\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/daedalusenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/DesertProwlerEnchant",
+      "kind": "item",
+      "internalName": "DesertProwlerEnchant",
+      "displayName": "Desert Prowler Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0443\u0441\u0442\u044b\u043d\u043d\u043e\u0433\u043e \u0431\u0440\u043e\u0434\u044f\u0433\u0438",
+      "icon": "assets/icons/fargowiltascrossmod/items/desertprowlerenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/ElementsForce",
+      "kind": "item",
+      "internalName": "ElementsForce",
+      "displayName": "Elements Force",
+      "displayNameRu": "\u0410\u0440\u0442\u0435\u0444\u0430\u043a\u0442 \u042d\u043b\u0435\u043c\u0435\u043d\u0442\u043e\u0432",
+      "icon": "assets/icons/fargowiltascrossmod/items/elementsforce.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/GaleForce",
+      "kind": "item",
+      "internalName": "GaleForce",
+      "displayName": "Gale Force",
+      "displayNameRu": "\u0410\u0440\u0442\u0435\u0444\u0430\u043a\u0442 \u0411\u0443\u0440\u0438",
+      "icon": "assets/icons/fargowiltascrossmod/items/galeforce.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/HydrothermicEnchant",
+      "kind": "item",
+      "internalName": "HydrothermicEnchant",
+      "displayName": "Hydrothermic Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0433\u0438\u0434\u0440\u043e\u0442\u0435\u0440\u043c\u043e\u0432",
+      "icon": "assets/icons/fargowiltascrossmod/items/hydrothermicenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/MarniteEnchant",
+      "kind": "item",
+      "internalName": "MarniteEnchant",
+      "displayName": "Marnite Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043c\u0440\u0430\u043d\u0438\u0442\u043e\u0432\u043e\u0433\u043e \u0430\u0440\u0445\u0438\u0442\u0435\u043a\u0442\u043e\u0440\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/marniteenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/OutlawsEssence",
+      "kind": "item",
+      "internalName": "OutlawsEssence",
+      "displayName": "Outlaws Essence",
+      "displayNameRu": "\u042d\u0441\u0441\u0435\u043d\u0446\u0438\u044f \u0431\u0430\u043d\u0434\u0438\u0442\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/outlawsessence.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/ReaverEnchant",
+      "kind": "item",
+      "internalName": "ReaverEnchant",
+      "displayName": "Reaver Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0440\u0430\u0441\u0445\u0438\u0442\u0438\u0442\u0435\u043b\u044f",
+      "icon": "assets/icons/fargowiltascrossmod/items/reaverenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/RedStainedWormFood",
+      "kind": "item",
+      "internalName": "RedStainedWormFood",
+      "displayName": "Red Stained Worm Food",
+      "displayNameRu": "\u0417\u0430\u043f\u044f\u0442\u043d\u0430\u043d\u043d\u044b\u0439 \u043a\u0440\u043e\u0432\u044c\u044e \u043a\u043e\u0440\u043c \u0434\u043b\u044f \u0447\u0435\u0440\u0432\u044f",
+      "icon": "assets/icons/fargowiltascrossmod/items/redstainedwormfood.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/SeeFood",
+      "kind": "item",
+      "internalName": "SeeFood",
+      "displayName": "See Food",
+      "displayNameRu": "\u0413\u043e\u0440\u0435\u043f\u0440\u043e\u0434\u0443\u043a\u0442",
+      "icon": "assets/icons/fargowiltascrossmod/items/seefood.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/SnowRuffianEnchant",
+      "kind": "item",
+      "internalName": "SnowRuffianEnchant",
+      "displayName": "Snow Ruffian Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0441\u043d\u0435\u0436\u043d\u043e\u0433\u043e \u0445\u0443\u043b\u0438\u0433\u0430\u043d\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/snowruffianenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/StatigelEnchant",
+      "kind": "item",
+      "internalName": "StatigelEnchant",
+      "displayName": "Statigel Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0433\u0435\u043b\u044f \u0421\u0442\u0430\u0442\u0438\u0441\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/statigelenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/SulphurEnchant",
+      "kind": "item",
+      "internalName": "SulphurEnchant",
+      "displayName": "Sulphur Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0441\u0435\u0440\u043d\u0438\u0441\u0442\u043e\u0441\u0442\u0438",
+      "icon": "assets/icons/fargowiltascrossmod/items/sulphurenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/TitanHeartEnchant",
+      "kind": "item",
+      "internalName": "TitanHeartEnchant",
+      "displayName": "Titan Heart Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0441\u0435\u0440\u0434\u0446\u0430 \u0442\u0438\u0442\u0430\u043d\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/titanheartenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/VagabondsSoul",
+      "kind": "item",
+      "internalName": "VagabondsSoul",
+      "displayName": "Vagabonds Soul",
+      "displayNameRu": "\u0414\u0443\u0448\u0430 \u0411\u0435\u0433\u043b\u0435\u0446\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/vagabondssoul.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/VictideEnchant",
+      "kind": "item",
+      "internalName": "VictideEnchant",
+      "displayName": "Victide Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u043f\u0440\u0438\u043b\u0438\u0432\u0430 \u043f\u043e\u0431\u0435\u0434\u044b",
+      "icon": "assets/icons/fargowiltascrossmod/items/victideenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/WormFoodofKos",
+      "kind": "item",
+      "internalName": "WormFoodofKos",
+      "displayName": "Worm Foodof Kos",
+      "displayNameRu": "\u041a\u043e\u0440\u043c \u0434\u043b\u044f \u0447\u0435\u0440\u0432\u044f \u041a\u043e\u0441",
+      "icon": "assets/icons/fargowiltascrossmod/items/wormfoodofkos.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/WulfrumEnchant",
+      "kind": "item",
+      "internalName": "WulfrumEnchant",
+      "displayName": "Wulfrum Enchant",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0432\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/wulfrumenchant.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/DefiledCore",
+      "kind": "ore",
+      "internalName": "DefiledCore",
+      "displayName": "Defiled Core",
+      "displayNameRu": "\u041d\u0435\u0447\u0438\u0441\u0442\u043e\u0435 \u044f\u0434\u0440\u043e",
+      "icon": "assets/icons/fargowiltascrossmod/items/defiledcore.png",
+      "category": "other",
+      "tags": [
+        "ore",
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/LoreDraedon",
+      "kind": "ore",
+      "internalName": "LoreDraedon",
+      "displayName": "Lore Draedon",
+      "displayNameRu": "\u0414\u0440\u044d\u0439\u0434\u043e\u043d",
+      "icon": "assets/icons/fargowiltascrossmod/items/loredraedon.png",
+      "category": "other",
+      "tags": [
+        "ore",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/ABombInMyNation",
+      "kind": "other",
+      "internalName": "ABombInMyNation",
+      "displayName": "ABomb In My Nation",
+      "displayNameRu": "\u0412\u0437\u0440\u044b\u0432 \u043d\u0430 \u043c\u0435\u0440\u0437\u043e\u0441\u0442\u0438",
+      "icon": "assets/icons/fargowiltascrossmod/items/abombinmynation.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/Archmage",
+      "kind": "other",
+      "internalName": "Archmage",
+      "displayName": "Archmage",
+      "displayNameRu": "\u0410\u0440\u0445\u0438\u043c\u0430\u0433",
+      "icon": "assets/icons/fargowiltascrossmod/items/archmage.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/AstrumCor",
+      "kind": "other",
+      "internalName": "AstrumCor",
+      "displayName": "Astrum Cor",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0443\u043c-\u044f\u0434\u0440\u043e",
+      "icon": "assets/icons/fargowiltascrossmod/items/astrumcor.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/Bandit",
+      "kind": "other",
+      "internalName": "Bandit",
+      "displayName": "Bandit",
+      "displayNameRu": "\u0411\u0430\u043d\u0434\u0438\u0442",
+      "icon": "assets/icons/fargowiltascrossmod/items/bandit.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/BirbPheromones",
+      "kind": "other",
+      "internalName": "BirbPheromones",
+      "displayName": "Birb Pheromones",
+      "displayNameRu": "\u0424\u0435\u0440\u043e\u043c\u043e\u043d\u044b \u043f\u0442\u0438\u0447\u0431\u043a\u0438",
+      "icon": "assets/icons/fargowiltascrossmod/items/birbpheromones.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/BlightedEye",
+      "kind": "other",
+      "internalName": "BlightedEye",
+      "displayName": "Blighted Eye",
+      "displayNameRu": "\u0413\u0438\u0431\u0435\u043b\u044c\u043d\u044b\u0439 \u0433\u043b\u0430\u0437",
+      "icon": "assets/icons/fargowiltascrossmod/items/blightedeye.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/BloodyWorm",
+      "kind": "other",
+      "internalName": "BloodyWorm",
+      "displayName": "Bloody Worm",
+      "displayNameRu": "\u041a\u0440\u043e\u0432\u044f\u043d\u043e\u0439 \u0447\u0435\u0440\u0432\u044c",
+      "icon": "assets/icons/fargowiltascrossmod/items/bloodyworm.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/BrimstoneWitch",
+      "kind": "other",
+      "internalName": "BrimstoneWitch",
+      "displayName": "Brimstone Witch",
+      "displayNameRu": "\u0421\u0435\u0440\u043d\u0430\u044f \u0432\u0435\u0434\u044c\u043c\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/brimstonewitch.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/ChunkyStardust",
+      "kind": "other",
+      "internalName": "ChunkyStardust",
+      "displayName": "Chunky Stardust",
+      "displayNameRu": "\u0417\u0432\u0451\u0437\u0434\u043d\u0430\u044f \u043f\u044b\u043b\u044c \u0441 \u043a\u043e\u043c\u043e\u0447\u043a\u0430\u043c\u0438",
+      "icon": "assets/icons/fargowiltascrossmod/items/chunkystardust.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/ClamPearl",
+      "kind": "other",
+      "internalName": "ClamPearl",
+      "displayName": "Clam Pearl",
+      "displayNameRu": "\u0416\u0435\u043c\u0447\u0443\u0433 \u043c\u043e\u043b\u043b\u044e\u0441\u043a\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/clampearl.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/ColossalTentacle",
+      "kind": "other",
+      "internalName": "ColossalTentacle",
+      "displayName": "Colossal Tentacle",
+      "displayNameRu": "\u0413\u0440\u043e\u043c\u0430\u0434\u043d\u043e\u0435 \u0449\u0443\u043f\u0430\u043b\u044c\u0446\u0435",
+      "icon": "assets/icons/fargowiltascrossmod/items/colossaltentacle.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/CryingKey",
+      "kind": "other",
+      "internalName": "CryingKey",
+      "displayName": "Crying Key",
+      "displayNameRu": "\u041a\u0440\u0438\u0432\u043e\u043a\u043b\u044e\u0447",
+      "icon": "assets/icons/fargowiltascrossmod/items/cryingkey.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/DeepseaProteinShake",
+      "kind": "other",
+      "internalName": "DeepseaProteinShake",
+      "displayName": "Deepsea Protein Shake",
+      "displayNameRu": "\u0413\u043b\u0443\u0431\u043e\u043a\u043e\u0432\u043e\u0434\u043d\u044b\u0439 \u043f\u0440\u043e\u0442\u0435\u0438\u043d\u043e\u0432\u044b\u0439 \u043a\u043e\u043a\u0442\u0435\u0439\u043b\u044c",
+      "icon": "assets/icons/fargowiltascrossmod/items/deepseaproteinshake.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/DefiledShard",
+      "kind": "other",
+      "internalName": "DefiledShard",
+      "displayName": "Defiled Shard",
+      "displayNameRu": "\u041d\u0435\u0447\u0438\u0441\u0442\u044b\u0439 \u043e\u0441\u043a\u043e\u043b\u043e\u043a",
+      "icon": "assets/icons/fargowiltascrossmod/items/defiledshard.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/DragonEgg",
+      "kind": "other",
+      "internalName": "DragonEgg",
+      "displayName": "Dragon Egg",
+      "displayNameRu": "\u042f\u0439\u0446\u043e \u043f\u043b\u0430\u043c\u0435\u043d\u043d\u043e\u0433\u043e \u0434\u0440\u0430\u043a\u043e\u043d\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/dragonegg.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/EyeofExtinction",
+      "kind": "other",
+      "internalName": "EyeofExtinction",
+      "displayName": "Eyeof Extinction",
+      "displayNameRu": "\u0413\u043b\u0430\u0437 \u0432\u044b\u043c\u0438\u0440\u0430\u043d\u0438\u044f",
+      "icon": "assets/icons/fargowiltascrossmod/items/eyeofextinction.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/FriedDoll",
+      "kind": "other",
+      "internalName": "FriedDoll",
+      "displayName": "Fried Doll",
+      "displayNameRu": "\u0416\u0430\u0440\u0435\u043d\u0430\u044f \u043a\u0443\u043a\u043b\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/frieddoll.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/HiveTumor",
+      "kind": "other",
+      "internalName": "HiveTumor",
+      "displayName": "Hive Tumor",
+      "displayNameRu": "\u041e\u043f\u0443\u0445\u043e\u043b\u044c \u0443\u043b\u044c\u044f",
+      "icon": "assets/icons/fargowiltascrossmod/items/hivetumor.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/LetterofKos",
+      "kind": "other",
+      "internalName": "LetterofKos",
+      "displayName": "Letterof Kos",
+      "displayNameRu": "\u041f\u0438\u0441\u044c\u043c\u043e \u041a\u043e\u0441",
+      "icon": "assets/icons/fargowiltascrossmod/items/letterofkos.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/MaulerSkull",
+      "kind": "other",
+      "internalName": "MaulerSkull",
+      "displayName": "Mauler Skull",
+      "displayNameRu": "\u0427\u0435\u0440\u0435\u043f \u0442\u0435\u0440\u0437\u0430\u0442\u0435\u043b\u044f",
+      "icon": "assets/icons/fargowiltascrossmod/items/maulerskull.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/MedallionoftheDesert",
+      "kind": "other",
+      "internalName": "MedallionoftheDesert",
+      "displayName": "Medallionofthe Desert",
+      "displayNameRu": "\u041c\u0435\u0434\u0430\u043b\u044c\u043e\u043d \u043f\u0443\u0441\u0442\u044b\u043d\u0438",
+      "icon": "assets/icons/fargowiltascrossmod/items/medallionofthedesert.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/MurkySludge",
+      "kind": "other",
+      "internalName": "MurkySludge",
+      "displayName": "Murky Sludge",
+      "displayNameRu": "\u041c\u0443\u0442\u043d\u0430\u044f \u0441\u043b\u044f\u043a\u043e\u0442\u044c",
+      "icon": "assets/icons/fargowiltascrossmod/items/murkysludge.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/NoisyWhistle",
+      "kind": "other",
+      "internalName": "NoisyWhistle",
+      "displayName": "Noisy Whistle",
+      "displayNameRu": "\u0428\u0443\u043c\u043d\u044b\u0439 \u0441\u0432\u0438\u0441\u0442\u043e\u043a",
+      "icon": "assets/icons/fargowiltascrossmod/items/noisywhistle.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/NuclearChunk",
+      "kind": "other",
+      "internalName": "NuclearChunk",
+      "displayName": "Nuclear Chunk",
+      "displayNameRu": "\u042f\u0434\u0435\u0440\u043d\u044b\u0439 \u043a\u043e\u043c\u043e\u043a",
+      "icon": "assets/icons/fargowiltascrossmod/items/nuclearchunk.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/OphiocordycipitaceaeSprout",
+      "kind": "other",
+      "internalName": "OphiocordycipitaceaeSprout",
+      "displayName": "Ophiocordycipitaceae Sprout",
+      "displayNameRu": "\u041a\u043e\u0440\u0434\u0438\u0446\u0435\u043f\u0441\u043e\u0432\u0438\u0434\u043d\u044b\u0439 \u0440\u043e\u0441\u0442\u043e\u043a",
+      "icon": "assets/icons/fargowiltascrossmod/items/ophiocordycipitaceaesprout.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/PlaguedWalkieTalkie",
+      "kind": "other",
+      "internalName": "PlaguedWalkieTalkie",
+      "displayName": "Plagued Walkie Talkie",
+      "displayNameRu": "\u0427\u0443\u043c\u043d\u0430\u044f \u0440\u0430\u0446\u0438\u044f",
+      "icon": "assets/icons/fargowiltascrossmod/items/plaguedwalkietalkie.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/PolterplasmicBeacon",
+      "kind": "other",
+      "internalName": "PolterplasmicBeacon",
+      "displayName": "Polterplasmic Beacon",
+      "displayNameRu": "\u041f\u043e\u043b\u0442\u0435\u0440\u043f\u043b\u0430\u0437\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043c\u0430\u044f\u043a",
+      "icon": "assets/icons/fargowiltascrossmod/items/polterplasmicbeacon.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/PortableCodebreaker",
+      "kind": "other",
+      "internalName": "PortableCodebreaker",
+      "displayName": "Portable Codebreaker",
+      "displayNameRu": "\u041a\u0430\u0440\u043c\u0430\u043d\u043d\u044b\u0439 \u0434\u0435\u0448\u0438\u0444\u0440\u0430\u0442\u043e\u0440",
+      "icon": "assets/icons/fargowiltascrossmod/items/portablecodebreaker.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/QuakeIdol",
+      "kind": "other",
+      "internalName": "QuakeIdol",
+      "displayName": "Quake Idol",
+      "displayNameRu": "\u0418\u0434\u043e\u043b \u0437\u0435\u043c\u043b\u0435\u0442\u0440\u044f\u0441\u0435\u043d\u0438\u044f",
+      "icon": "assets/icons/fargowiltascrossmod/items/quakeidol.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/RiftofKos",
+      "kind": "other",
+      "internalName": "RiftofKos",
+      "displayName": "Riftof Kos",
+      "displayNameRu": "\u0420\u0430\u0441\u043a\u043e\u043b \u041a\u043e\u0441",
+      "icon": "assets/icons/fargowiltascrossmod/items/riftofkos.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/SeaKing",
+      "kind": "other",
+      "internalName": "SeaKing",
+      "displayName": "Sea King",
+      "displayNameRu": "\u041c\u043e\u0440\u0441\u043a\u043e\u0439 \u043a\u043e\u0440\u043e\u043b\u044c",
+      "icon": "assets/icons/fargowiltascrossmod/items/seaking.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/SirensPearl",
+      "kind": "other",
+      "internalName": "SirensPearl",
+      "displayName": "Sirens Pearl",
+      "displayNameRu": "\u0416\u0435\u043c\u0447\u0443\u0433 \u0441\u0438\u0440\u0435\u043d\u044b",
+      "icon": "assets/icons/fargowiltascrossmod/items/sirenspearl.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/SomeKindofSpaceWorm",
+      "kind": "other",
+      "internalName": "SomeKindofSpaceWorm",
+      "displayName": "Some Kindof Space Worm",
+      "displayNameRu": "\u041a\u0430\u043a\u043e\u0439-\u0442\u043e \u043a\u043e\u0441\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0447\u0435\u0440\u0432\u044c",
+      "icon": "assets/icons/fargowiltascrossmod/items/somekindofspaceworm.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/StormIdol",
+      "kind": "other",
+      "internalName": "StormIdol",
+      "displayName": "Storm Idol",
+      "displayNameRu": "\u0418\u0434\u043e\u043b \u0448\u0442\u043e\u0440\u043c\u0430",
+      "icon": "assets/icons/fargowiltascrossmod/items/stormidol.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/SulphurBearTrap",
+      "kind": "other",
+      "internalName": "SulphurBearTrap",
+      "displayName": "Sulphur Bear Trap",
+      "displayNameRu": "\u0421\u0435\u0440\u043d\u0438\u0441\u0442\u044b\u0439 \u043a\u0430\u043f\u043a\u0430\u043d",
+      "icon": "assets/icons/fargowiltascrossmod/items/sulphurbeartrap.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "FargowiltasCrossmod/WyrmTablet",
+      "kind": "other",
+      "internalName": "WyrmTablet",
+      "displayName": "Wyrm Tablet",
+      "displayNameRu": "\u0421\u043a\u0440\u0438\u0436\u0430\u043b\u044c \u0437\u043c\u0435\u044f",
+      "icon": "assets/icons/fargowiltascrossmod/items/wyrmtablet.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    }
+  ]
+}

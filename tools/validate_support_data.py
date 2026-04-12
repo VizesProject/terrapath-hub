@@ -65,7 +65,7 @@ CALAMITY_CRITICAL_RU_IDS = {
     "CalamityMod/AuricTeslaHeadRogue",
     "CalamityMod/AuricTeslaHeadSummon",
 }
-WAVE2_MODS = {"Fargowiltas", "FargowiltasSouls", "FargowiltasDLC", "FargowiltasSoulsDLC"}
+WAVE2_MODS = {"Fargowiltas", "FargowiltasSouls", "FargowiltasCrossmod"}
 
 
 def read_json(path: Path) -> dict:
