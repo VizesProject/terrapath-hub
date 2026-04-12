@@ -12,6 +12,12 @@ sys.path.insert(0, str(ROOT / "tools"))
 import build_calamity_support as calamity
 import build_terraria_support as terraria
 
+try:
+    from PIL import Image, ImageSequence
+except ImportError:  # pragma: no cover - Pillow is expected in maintainer env
+    Image = None
+    ImageSequence = None
+
 STRICT_ITEM_CATEGORIES = {"weapon", "armor", "accessory", "buff", "other"}
 BOSS_LIKE_KINDS = {"boss", "miniboss"}
 ITEM_LIKE_KINDS = {"item", "material", "ore", "other"}
@@ -63,6 +69,7 @@ TECHNICAL_BOSS_HINTS = re.compile(
     r"(Projectile|Laser|Cannon|Gauss|Flamethrower|Turret|Missile|Drone|Mine|Spawner|Portal|Hook)$",
     re.IGNORECASE,
 )
+SUPPLEMENT_ICON_META_KEYS = {"iconSourceFile", "iconSourceMode"}
 
 
 def read_json(path: Path) -> dict:
@@ -333,18 +340,100 @@ def load_supplement(mod_name: str) -> dict:
     return read_json(path)
 
 
+def _trim_transparent_bounds(image) -> "Image.Image":
+    rgba = image.convert("RGBA")
+    alpha_channel = rgba.getchannel("A")
+    bounds = alpha_channel.getbbox()
+    if bounds is None:
+        return rgba
+    return rgba.crop(bounds)
+
+
+def _best_visible_frame(source_path: Path, mode: str):
+    if Image is None or ImageSequence is None:
+        raise SystemExit("Pillow is required for iconSourceFile processing. Install it with: python -m pip install pillow")
+
+    with Image.open(source_path) as source_image:
+        normalized_mode = mode.strip().lower()
+        if normalized_mode in {"first-frame", "first"}:
+            source_image.seek(0)
+            return _trim_transparent_bounds(source_image.copy())
+        if normalized_mode in {"last-frame", "last"}:
+            last_frame = None
+            for frame in ImageSequence.Iterator(source_image):
+                last_frame = frame.copy()
+            if last_frame is None:
+                return _trim_transparent_bounds(source_image.copy())
+            return _trim_transparent_bounds(last_frame)
+
+        best_score = None
+        best_frame = None
+        for frame in ImageSequence.Iterator(source_image):
+            candidate = _trim_transparent_bounds(frame.copy())
+            alpha_histogram = candidate.getchannel("A").histogram()
+            visible_alpha = sum(value * index for index, value in enumerate(alpha_histogram))
+            visible_pixels = sum(alpha_histogram[1:])
+            area = max(1, candidate.width * candidate.height)
+            squareness_penalty = abs(candidate.width - candidate.height)
+            score = (visible_alpha, visible_pixels, -area, -squareness_penalty)
+            if best_score is None or score > best_score:
+                best_score = score
+                best_frame = candidate
+
+        if best_frame is None:
+            return _trim_transparent_bounds(source_image.copy())
+        return best_frame
+
+
+def _resolve_icon_source_path(raw_source_path: str) -> Path:
+    source_path = Path(raw_source_path).expanduser()
+    if not source_path.is_absolute():
+        source_path = ROOT / source_path
+    return source_path
+
+
+def process_supplement_icon_sources(supplement_entries: list[dict]) -> None:
+    for incoming in supplement_entries:
+        if not isinstance(incoming, dict):
+            continue
+        source_value = str(incoming.get("iconSourceFile") or "").strip()
+        if not source_value:
+            continue
+
+        icon_path = str(incoming.get("icon") or "").strip()
+        if not icon_path:
+            content_id = str(incoming.get("id") or "").strip() or "<unknown>"
+            raise SystemExit(f"{content_id}: supplement entry with iconSourceFile must include icon output path")
+
+        source_path = _resolve_icon_source_path(source_value)
+        if not source_path.exists():
+            content_id = str(incoming.get("id") or "").strip() or "<unknown>"
+            raise SystemExit(f"{content_id}: iconSourceFile does not exist: {source_path}")
+
+        output_path = ROOT / "docs" / icon_path
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        mode = str(incoming.get("iconSourceMode") or "best-visible-auto")
+        frame = _best_visible_frame(source_path, mode)
+        frame.save(output_path, format="PNG")
+
+
 def apply_supplement_entries(entries_by_id: dict[str, dict], supplement_entries: list[dict]) -> None:
+    process_supplement_icon_sources(supplement_entries)
     for incoming in supplement_entries:
         content_id = str(incoming.get("id") or "").strip()
         if not content_id:
             continue
         existing = entries_by_id.get(content_id, {})
-        merged = {**existing, **incoming}
+        cleaned_incoming = {
+            key: value for key, value in incoming.items()
+            if key not in SUPPLEMENT_ICON_META_KEYS
+        }
+        merged = {**existing, **cleaned_incoming}
 
-        if "tags" in incoming:
+        if "tags" in cleaned_incoming:
             merged["tags"] = merge_tags(
                 [str(tag) for tag in existing.get("tags", [])],
-                [str(tag) for tag in incoming.get("tags", [])],
+                [str(tag) for tag in cleaned_incoming.get("tags", [])],
             )
         entries_by_id[content_id] = merged
 

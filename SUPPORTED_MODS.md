@@ -17,10 +17,10 @@ runtime category guessing.
 | 2 | Calamity - Fargo's Souls DLC | `FargowiltasCrossmod` | Planned | Internal name is validated via `/terrapath export modlist`. |
 | 3 | Calamity Entropy | `CalamityEntropy` | Planned | Calamity addon wave with shared normalization contracts. |
 | 3 | Calamity Fables | `CalamityFables` | Planned | Calamity addon wave with shared normalization contracts. |
-| 3 | Calamity: Wrath of the Gods | `CalamityWrathOfTheGods` | Planned | Calamity addon wave with shared normalization contracts. |
-| 3 | Calamity Catalyst | `CalamityCatalyst` | Planned | Calamity addon wave with shared normalization contracts. |
+| 3 | Calamity: Wrath of the Gods | `NoxusBoss` | Planned | Calamity addon wave with shared normalization contracts. |
+| 3 | Calamity Catalyst | `CatalystMod` | Planned | Calamity addon wave with shared normalization contracts. |
 | 3 | Calamity Infernum | `InfernumMode` | Planned | Calamity addon wave with shared normalization contracts. |
-| 3 | Calamity: Hunt of the Old God | `CalamityHuntOfTheOldGod` | Planned | Calamity addon wave with shared normalization contracts. |
+| 3 | Calamity: Hunt of the Old God | `CalamityHunt` | Planned | Calamity addon wave with shared normalization contracts. |
 | 4 | The Stars Above | `TheStarsAbove` | Planned | Standalone wave after shared pipeline hardening. |
 | 4 | Starlight River | `StarlightRiver` | Planned | Standalone wave after shared pipeline hardening. |
 
@@ -46,6 +46,8 @@ runtime category guessing.
 5. Run `python tools/generate_critical_ru_list.py --mod <InternalModName>`.
 6. Run `python tools/validate_support_data.py --promotion-mod <InternalModName>`.
 7. Promote per-mod: `python tools/promote_mod_official.py --mod <InternalModName>`.
+8. Wave 3 batch mode: `python tools/run_wave3.py` (or `python tools/run_wave3.py --promote`).
+9. Wave 3 missing-mod policy: modules without export folders or absent in `modlist.json` are skipped and remain `planned`.
 
 ## Quality Gates
 

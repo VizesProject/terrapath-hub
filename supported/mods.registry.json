@@ -164,7 +164,7 @@
       ]
     },
     {
-      "id": "CalamityWrathOfTheGods",
+      "id": "NoxusBoss",
       "displayName": "Calamity: Wrath of the Gods",
       "status": "planned",
       "rolloutWave": 3,
@@ -182,8 +182,8 @@
       ]
     },
     {
-      "id": "CalamityCatalyst",
-      "displayName": "Calamity Catalyst",
+      "id": "CatalystMod",
+      "displayName": "Catalyst Mod",
       "status": "planned",
       "rolloutWave": 3,
       "sourcePolicy": "local-export-plus-supplement",
@@ -218,7 +218,7 @@
       ]
     },
     {
-      "id": "CalamityHuntOfTheOldGod",
+      "id": "CalamityHunt",
       "displayName": "Calamity: Hunt of the Old God",
       "status": "planned",
       "rolloutWave": 3,

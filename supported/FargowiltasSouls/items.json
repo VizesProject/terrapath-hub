@@ -1972,7 +1972,7 @@
       "internalName": "MutantMask",
       "displayName": "Mutant Armor Set",
       "displayNameRu": "\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442 \u0432\u0435\u0447\u043d\u043e\u0433\u043e \u043f\u043b\u0430\u043c\u0435\u043d\u0438",
-      "icon": "assets/icons/fargowiltassouls/items-canonical/mutantmask.png",
+      "icon": "assets/icons/fargowiltassouls/items-canonical/mutant-armor-set.png",
       "category": "armor",
       "tags": [
         "item",
