@@ -100,7 +100,10 @@ function classLabel(tag) {
     bard: { en: "Bard", ru: "\u0411\u0430\u0440\u0434" },
     other: { en: "Other", ru: "\u0414\u0440\u0443\u0433\u043e\u0435" }
   };
-  return labels[tag]?.[language()] || tag;
+  const extraLabels = {
+    healer: { en: "Healer", ru: "Лекарь" }
+  };
+  return labels[tag]?.[language()] || extraLabels[tag]?.[language()] || tag;
 }
 
 function groupLabel(category) {

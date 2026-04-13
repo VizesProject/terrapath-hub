@@ -41,8 +41,11 @@ function classLabel(tag) {
     bard: { en: "Bard", ru: "Бард" },
     other: { en: "Other", ru: "Другое" }
   };
+  const extraLabels = {
+    healer: { en: "Healer", ru: "Лекарь" }
+  };
   const language = site?.getLanguage?.() === "ru" ? "ru" : "en";
-  return labels[tag]?.[language] || tag;
+  return labels[tag]?.[language] || extraLabels[tag]?.[language] || tag;
 }
 
 function guideToSearchText(guide) {
