@@ -28,10 +28,13 @@ jobs:
         run: |
           mkdir -p _site
           cp -r docs/* _site/
-          cp -r catalog _site/catalog
-          cp -r guides _site/guides
-          cp -r supported _site/supported
-          cp -r schema _site/schema
+          for dir in catalog guides supported schema; do
+            if [ -d "$dir" ]; then
+              cp -r "$dir" "_site/$dir"
+            else
+              mkdir -p "_site/$dir"
+            fi
+          done
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
