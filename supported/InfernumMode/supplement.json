@@ -12,5 +12,41 @@
   "taxonomyOverrides": {
     "forcedCategories": {},
     "blacklist": []
+  },
+  "localizationPolicy": {
+    "coverageThresholdPickerVisible": 0.85,
+    "criticalRuIds": [
+      "InfernumMode/AresEnergyKatana",
+      "InfernumMode/BereftVassal",
+      "InfernumMode/AridBattlecry",
+      "InfernumMode/CallUponTheEggs",
+      "InfernumMode/Dreamtastic",
+      "InfernumMode/EyeOfMadness",
+      "InfernumMode/IllusionersReverie",
+      "InfernumMode/Kevin",
+      "InfernumMode/Myrindael",
+      "InfernumMode/Perditus",
+      "InfernumMode/Punctus",
+      "InfernumMode/StormMaidensRetribution",
+      "InfernumMode/TheGlassmaker",
+      "InfernumMode/WanderersShell",
+      "InfernumMode/CherishedSealocket",
+      "InfernumMode/CosmicMonolithItem",
+      "InfernumMode/DeusMonolithItem",
+      "InfernumMode/FlowerOfTheOcean",
+      "InfernumMode/Purity",
+      "InfernumMode/SakuraBloom",
+      "InfernumMode/Blahaj",
+      "InfernumMode/BlastedTophat",
+      "InfernumMode/NightmareCatcher",
+      "InfernumMode/RisingWarriorsSoulstone",
+      "InfernumMode/SuspiciouslyRoundFeather"
+    ],
+    "criticalPerCategory": {
+      "weapon": 16,
+      "armor": 12,
+      "accessory": 14,
+      "buff": 12
+    }
   }
 }

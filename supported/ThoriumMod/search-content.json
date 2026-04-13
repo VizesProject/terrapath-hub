@@ -1,5 +1,5 @@
 {
-  "mod": "ThoriumMod",
+  "mod": "thoriummod",
   "contentType": "search-content",
   "entries": [
     {
@@ -14,7 +14,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/Aquaius",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/BoreanStrider",
@@ -28,7 +29,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/BoreanStrider",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/BoreanStriderPopped",
@@ -42,7 +44,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/BoreanStriderPopped",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/BossDummy",
@@ -56,7 +59,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/BossDummy",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/BuriedChampion",
@@ -70,7 +74,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/BuriedChampion",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/DreamEater",
@@ -84,7 +89,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/DreamEater",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/FallenBeholder",
@@ -98,7 +104,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/FallenBeholder",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/FallenBeholder2",
@@ -112,7 +119,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/FallenBeholder2",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/ForgottenOne",
@@ -126,7 +134,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/ForgottenOne",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/ForgottenOneCracked",
@@ -140,7 +149,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/ForgottenOneCracked",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/ForgottenOneReleased",
@@ -154,7 +164,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/ForgottenOneReleased",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/GraniteEnergyStorm",
@@ -168,7 +179,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/GraniteEnergyStorm",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/Lich",
@@ -182,7 +194,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/Lich",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/LichHeadless",
@@ -196,7 +209,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/LichHeadless",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/Omnicide",
@@ -210,7 +224,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/Omnicide",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/QueenJellyfish",
@@ -224,7 +239,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/QueenJellyfish",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/SlagFury",
@@ -238,7 +254,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/SlagFury",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/StarScouter",
@@ -252,7 +269,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/StarScouter",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/TheGrandThunderBird",
@@ -266,7 +284,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/TheGrandThunderBird",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/Viscount",
@@ -280,7 +299,8 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "ThoriumMod/Viscount",
-      "bossColumn": "hardmode"
+      "bossColumn": "hardmode",
+      "pickerHidden": false
     },
     {
       "id": "ThoriumMod/AbyssWalkerBoots",

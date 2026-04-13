@@ -12,5 +12,50 @@
   "taxonomyOverrides": {
     "forcedCategories": {},
     "blacklist": []
+  },
+  "localizationPolicy": {
+    "coverageThresholdPickerVisible": 0.85,
+    "criticalRuIds": [
+      "CalamityHunt/Goozma",
+      "CalamityHunt/AntiMassAccumulator",
+      "CalamityHunt/CometKunai",
+      "CalamityHunt/CrystalGauntlets",
+      "CalamityHunt/FissionFlyer",
+      "CalamityHunt/Gobflogger",
+      "CalamityHunt/Goomoire",
+      "CalamityHunt/Goozmaga",
+      "CalamityHunt/Parasanguine",
+      "CalamityHunt/ScytheOfTheOldGod",
+      "CalamityHunt/SludgeShaker",
+      "CalamityHunt/Trailblazer",
+      "CalamityHunt/CrimulanMask",
+      "CalamityHunt/DivineMask",
+      "CalamityHunt/EbonianMask",
+      "CalamityHunt/ShogunChestplate",
+      "CalamityHunt/ShogunHelm",
+      "CalamityHunt/ShogunPants",
+      "CalamityHunt/StellarMask",
+      "CalamityHunt/GoozmaMusicBoxP1",
+      "CalamityHunt/GoozmaMusicBoxP2",
+      "CalamityHunt/GoozmaSoulMusicBox",
+      "CalamityHunt/ShogunWings",
+      "CalamityHunt/SlimeMonsoonMonolith",
+      "CalamityHunt/SplendorJam",
+      "CalamityHunt/TendrilCursorAttachment",
+      "CalamityHunt/TrailblazerBackpack",
+      "CalamityHunt/TrailblazerGoggles",
+      "CalamityHunt/YharonSoulMusicBox",
+      "CalamityHunt/ChromaticCampfire",
+      "CalamityHunt/ImperialGelato",
+      "CalamityHunt/NuclearLemonade",
+      "CalamityHunt/SlimeCane",
+      "CalamityHunt/SupremeRestorationPotion"
+    ],
+    "criticalPerCategory": {
+      "weapon": 16,
+      "armor": 12,
+      "accessory": 14,
+      "buff": 12
+    }
   }
 }

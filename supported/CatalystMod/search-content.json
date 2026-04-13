@@ -1,0 +1,1266 @@
+{
+  "mod": "CatalystMod",
+  "contentType": "search-content",
+  "entries": [
+    {
+      "id": "CatalystMod/Astrageldon",
+      "kind": "boss",
+      "internalName": "Astrageldon",
+      "displayName": "Astrageldon",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0430\u0433\u0435\u043b\u044c\u0434\u043e\u043d",
+      "icon": "assets/icons/catalystmod/bosses/astrageldon.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CatalystMod/Astrageldon",
+      "bossColumn": "hardmode",
+      "pickerHidden": false
+    },
+    {
+      "id": "CatalystMod/AstraJelly",
+      "kind": "item",
+      "internalName": "AstraJelly",
+      "displayName": "Astra Jelly",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0435 \u0436\u0435\u043b\u0435",
+      "icon": "assets/icons/catalystmod/items/astrajelly.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstrageldonMask",
+      "kind": "item",
+      "internalName": "AstrageldonMask",
+      "displayName": "Astrageldon Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u0410\u0441\u0442\u0440\u0430\u0433\u0435\u043b\u044c\u0434\u043e\u043d\u0430",
+      "icon": "assets/icons/catalystmod/items/astrageldonmask.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "astrageldon"
+    },
+    {
+      "id": "CatalystMod/AstrageldonPhase1MusicBox",
+      "kind": "item",
+      "internalName": "AstrageldonPhase1MusicBox",
+      "displayName": "Astrageldon Phase1 Music Box",
+      "displayNameRu": "\u041c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0448\u043a\u0430\u0442\u0443\u043b\u043a\u0430 (\u0410\u0441\u0442\u0440\u0430\u0433\u0435\u043b\u044c\u0434\u043e\u043d - 1 \u0444\u0430\u0437\u0430)",
+      "icon": "assets/icons/catalystmod/items/astrageldonphase1musicbox.png",
+      "category": "accessory",
+      "tags": [
+        "consumable",
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstrageldonPhase2MusicBox",
+      "kind": "item",
+      "internalName": "AstrageldonPhase2MusicBox",
+      "displayName": "Astrageldon Phase2 Music Box",
+      "displayNameRu": "\u041c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0448\u043a\u0430\u0442\u0443\u043b\u043a\u0430 (\u0410\u0441\u0442\u0440\u0430\u0433\u0435\u043b\u044c\u0434\u043e\u043d - 2 \u0444\u0430\u0437\u0430)",
+      "icon": "assets/icons/catalystmod/items/astrageldonphase2musicbox.png",
+      "category": "accessory",
+      "tags": [
+        "consumable",
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstrageldonTitleMusicBox",
+      "kind": "item",
+      "internalName": "AstrageldonTitleMusicBox",
+      "displayName": "Astrageldon Title Music Box",
+      "displayNameRu": "\u041c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0448\u043a\u0430\u0442\u0443\u043b\u043a\u0430 (\u0417\u0430\u0433\u043b\u0430\u0432\u043d\u0430\u044f \u0442\u0435\u043c\u0430 Catalyst Mod)",
+      "icon": "assets/icons/catalystmod/items/astrageldontitlemusicbox.png",
+      "category": "accessory",
+      "tags": [
+        "consumable",
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CatalystMod/Astragelgun",
+      "kind": "item",
+      "internalName": "Astragelgun",
+      "displayName": "Astragelgun",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0430\u0433\u0435\u043b\u044c\u043c\u0451\u0442",
+      "icon": "assets/icons/catalystmod/items/astragelgun.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstralpodStaff",
+      "kind": "item",
+      "internalName": "AstralpodStaff",
+      "displayName": "Astralpod Staff",
+      "displayNameRu": "\u041f\u043e\u0441\u043e\u0445 \u0430\u0441\u0442\u0440\u043e\u043d\u043e\u0433\u0430",
+      "icon": "assets/icons/catalystmod/items/astralpodstaff.png",
+      "category": "buff",
+      "tags": [
+        "summoner",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstralsEnd",
+      "kind": "item",
+      "internalName": "AstralsEnd",
+      "displayName": "Astrals End",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u043e\u0433\u0438\u0431\u0435\u043b\u044c",
+      "icon": "assets/icons/catalystmod/items/astralsend.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/BlossomsBlessing",
+      "kind": "item",
+      "internalName": "BlossomsBlessing",
+      "displayName": "Blossoms Blessing",
+      "displayNameRu": "\u0411\u043b\u0430\u0433\u043e\u0441\u043b\u043e\u0432\u0435\u043d\u0438\u0435 \u0446\u0432\u0435\u0442\u0435\u043d\u0438\u044f",
+      "icon": "assets/icons/catalystmod/items/blossomsblessing.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "summoner",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/BreathofGlacies",
+      "kind": "item",
+      "internalName": "BreathofGlacies",
+      "displayName": "Breathof Glacies",
+      "displayNameRu": "\u041b\u0435\u0434\u044f\u043d\u043e\u0435 \u0434\u044b\u0445\u0430\u043d\u0438\u0435",
+      "icon": "assets/icons/catalystmod/items/breathofglacies.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/Catharsis",
+      "kind": "item",
+      "internalName": "Catharsis",
+      "displayName": "Catharsis",
+      "displayNameRu": "\u041a\u0430\u0442\u0430\u0440\u0441\u0438\u0441",
+      "icon": "assets/icons/catalystmod/items/catharsis.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "summoner",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/CongeledDuoWhip",
+      "kind": "item",
+      "internalName": "CongeledDuoWhip",
+      "displayName": "Congeled Duo Whip",
+      "displayNameRu": "\u0417\u0430\u0433\u0443\u0441\u0442\u0435\u0432\u0448\u0438\u0439 \u0434\u0432\u043e\u0439\u043d\u043e\u0439 \u0445\u043b\u044b\u0441\u0442",
+      "icon": "assets/icons/catalystmod/items/congeledduowhip.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "summoner",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/CoralCrusher",
+      "kind": "item",
+      "internalName": "CoralCrusher",
+      "displayName": "Coral Crusher",
+      "displayNameRu": "\u041a\u043e\u0440\u0430\u043b\u043b\u043e\u0432\u044b\u0439 \u043a\u0440\u0443\u0448\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/catalystmod/items/coralcrusher.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "summoner",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/DesertScorcher",
+      "kind": "item",
+      "internalName": "DesertScorcher",
+      "displayName": "Desert Scorcher",
+      "displayNameRu": "\u041f\u0443\u0441\u0442\u044b\u043d\u043d\u044b\u0439 \u0438\u0441\u043f\u0435\u043f\u0435\u043b\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/catalystmod/items/desertscorcher.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/DivineJello",
+      "kind": "item",
+      "internalName": "DivineJello",
+      "displayName": "Divine Jello",
+      "displayNameRu": "\u0411\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435 \u0436\u0435\u043b\u0435",
+      "icon": "assets/icons/catalystmod/items/divinejello.png",
+      "category": "buff",
+      "tags": [
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "CatalystMod/ExaltedHorizon",
+      "kind": "item",
+      "internalName": "ExaltedHorizon",
+      "displayName": "Exalted Horizon",
+      "displayNameRu": "\u0412\u043e\u0437\u0432\u044b\u0448\u0435\u043d\u043d\u044b\u0439 \u0433\u043e\u0440\u0438\u0437\u043e\u043d\u0442",
+      "icon": "assets/icons/catalystmod/items/exaltedhorizon.png",
+      "category": "weapon",
+      "tags": [
+        "magic",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/Ichorthrower",
+      "kind": "item",
+      "internalName": "Ichorthrower",
+      "displayName": "Ichorthrower",
+      "displayNameRu": "\u0418\u0445\u043e\u0440\u043e\u043c\u0451\u0442",
+      "icon": "assets/icons/catalystmod/items/ichorthrower.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/InfluxCluster",
+      "kind": "item",
+      "internalName": "InfluxCluster",
+      "displayName": "Influx Cluster",
+      "displayNameRu": "\u041f\u043e\u0442\u043e\u043a\u043e\u0432\u044b\u0439 \u043a\u043b\u0430\u0441\u0442\u0435\u0440",
+      "icon": "assets/icons/catalystmod/items/influxcluster.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticBreastplate",
+      "kind": "item",
+      "internalName": "IntergelacticBreastplate",
+      "displayName": "Intergelactic Breastplate",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043d\u0430\u0433\u0440\u0443\u0434\u043d\u0438\u043a",
+      "icon": "assets/icons/catalystmod/items/intergelacticbreastplate.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "intergelactic"
+    },
+    {
+      "id": "CatalystMod/IntergelacticCandle",
+      "kind": "item",
+      "internalName": "IntergelacticCandle",
+      "displayName": "Intergelactic Candle",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0441\u0432\u0435\u0447\u0430",
+      "icon": "assets/icons/catalystmod/items/intergelacticcandle.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticGreaves",
+      "kind": "item",
+      "internalName": "IntergelacticGreaves",
+      "displayName": "Intergelactic Greaves",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043f\u043e\u043d\u043e\u0436\u0438",
+      "icon": "assets/icons/catalystmod/items/intergelacticgreaves.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "intergelactic"
+    },
+    {
+      "id": "CatalystMod/IntergelacticHeadMagic",
+      "kind": "item",
+      "internalName": "IntergelacticHeadMagic",
+      "displayName": "Intergelactic Head Magic",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043c\u0430\u0441\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/intergelacticheadmagic.png",
+      "category": "armor",
+      "tags": [
+        "magic",
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "intergelacticheadmagic"
+    },
+    {
+      "id": "CatalystMod/IntergelacticHeadMelee",
+      "kind": "item",
+      "internalName": "IntergelacticHeadMelee",
+      "displayName": "Intergelactic Head Melee",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043a\u0430\u0441\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/intergelacticheadmelee.png",
+      "category": "armor",
+      "tags": [
+        "melee",
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "intergelacticheadmelee"
+    },
+    {
+      "id": "CatalystMod/IntergelacticHeadRanged",
+      "kind": "item",
+      "internalName": "IntergelacticHeadRanged",
+      "displayName": "Intergelactic Head Ranged",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0432\u0438\u0437\u043e\u0440",
+      "icon": "assets/icons/catalystmod/items/intergelacticheadranged.png",
+      "category": "armor",
+      "tags": [
+        "ranged",
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "intergelacticheadranged"
+    },
+    {
+      "id": "CatalystMod/IntergelacticHeadRogue",
+      "kind": "item",
+      "internalName": "IntergelacticHeadRogue",
+      "displayName": "Intergelactic Head Rogue",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0433\u043e\u043b\u043e\u0432\u043d\u043e\u0439 \u0443\u0431\u043e\u0440",
+      "icon": "assets/icons/catalystmod/items/intergelacticheadrogue.png",
+      "category": "armor",
+      "tags": [
+        "rogue",
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "intergelacticheadrogue"
+    },
+    {
+      "id": "CatalystMod/IntergelacticHeadSummon",
+      "kind": "item",
+      "internalName": "IntergelacticHeadSummon",
+      "displayName": "Intergelactic Head Summon",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0440\u043e\u0433\u0430\u0442\u044b\u0439 \u0448\u043b\u0435\u043c",
+      "icon": "assets/icons/catalystmod/items/intergelacticheadsummon.png",
+      "category": "armor",
+      "tags": [
+        "summoner",
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "intergelacticheadsummon"
+    },
+    {
+      "id": "CatalystMod/InterstellarVolution",
+      "kind": "item",
+      "internalName": "InterstellarVolution",
+      "displayName": "Interstellar Volution",
+      "displayNameRu": "\u041c\u0435\u0436\u0437\u0432\u0451\u0437\u0434\u043d\u044b\u0439 \u0432\u0438\u0442\u043e\u043a",
+      "icon": "assets/icons/catalystmod/items/interstellarvolution.png",
+      "category": "weapon",
+      "tags": [
+        "rogue",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/Lean",
+      "kind": "item",
+      "internalName": "Lean",
+      "displayName": "Lean",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0430\u043a\u043e\u043b\u0430",
+      "icon": "assets/icons/catalystmod/items/lean.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "CatalystMod/NovaMonolith",
+      "kind": "item",
+      "internalName": "NovaMonolith",
+      "displayName": "Nova Monolith",
+      "displayNameRu": "\u041c\u043e\u043d\u043e\u043b\u0438\u0442 \u043d\u043e\u0432\u043e\u0439 \u0437\u0432\u0435\u0437\u0434\u044b",
+      "icon": "assets/icons/catalystmod/items/novamonolith.png",
+      "category": "accessory",
+      "tags": [
+        "consumable",
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CatalystMod/Plasmilegion",
+      "kind": "item",
+      "internalName": "Plasmilegion",
+      "displayName": "Plasmilegion",
+      "displayNameRu": "\u041f\u043b\u0430\u0437\u043c\u043e\u043b\u0435\u0433\u0438\u043e\u043d",
+      "icon": "assets/icons/catalystmod/items/plasmilegion.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/PrismBreak",
+      "kind": "item",
+      "internalName": "PrismBreak",
+      "displayName": "Prism Break",
+      "displayNameRu": "\u041f\u0440\u0438\u0437\u043c\u043e\u043b\u043e\u043c",
+      "icon": "assets/icons/catalystmod/items/prismbreak.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "summoner",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/Repentance",
+      "kind": "item",
+      "internalName": "Repentance",
+      "displayName": "Repentance",
+      "displayNameRu": "\u041f\u043e\u043a\u0430\u044f\u043d\u0438\u0435",
+      "icon": "assets/icons/catalystmod/items/repentance.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/ResonantStriker",
+      "kind": "item",
+      "internalName": "ResonantStriker",
+      "displayName": "Resonant Striker",
+      "displayNameRu": "\u0420\u0435\u0437\u043e\u043d\u0430\u043d\u0441\u043d\u044b\u0439 \u0443\u0434\u0430\u0440\u043d\u0438\u043a",
+      "icon": "assets/icons/catalystmod/items/resonantstriker.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "summoner",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/RookOfVengeance",
+      "kind": "item",
+      "internalName": "RookOfVengeance",
+      "displayName": "Rook Of Vengeance",
+      "displayNameRu": "\u041b\u0430\u0434\u044c\u044f \u0430\u043d\u0430\u0440\u0445\u0438\u0438",
+      "icon": "assets/icons/catalystmod/items/rookofvengeance.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/SandstoneReigns",
+      "kind": "item",
+      "internalName": "SandstoneReigns",
+      "displayName": "Sandstone Reigns",
+      "displayNameRu": "\u041f\u0435\u0441\u0447\u0430\u043d\u0438\u043a\u043e\u0432\u0430\u044f \u0443\u0437\u0434\u0430",
+      "icon": "assets/icons/catalystmod/items/sandstonereigns.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "summoner",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/ScytheoftheAbandonedGod",
+      "kind": "item",
+      "internalName": "ScytheoftheAbandonedGod",
+      "displayName": "Scytheofthe Abandoned God",
+      "displayNameRu": "\u041a\u043e\u0441\u0430 \u0437\u0430\u0431\u044b\u0442\u043e\u0433\u043e \u0431\u043e\u0433\u0430",
+      "icon": "assets/icons/catalystmod/items/scytheoftheabandonedgod.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/StaticInferno",
+      "kind": "item",
+      "internalName": "StaticInferno",
+      "displayName": "Static Inferno",
+      "displayNameRu": "\u041d\u0430\u044d\u043b\u0435\u043a\u0442\u0440\u0438\u0437\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u043e\u0433\u043d\u0435\u043d\u043d\u044b\u0439 \u0448\u0442\u043e\u0440\u043c",
+      "icon": "assets/icons/catalystmod/items/staticinferno.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/UnderBite",
+      "kind": "item",
+      "internalName": "UnderBite",
+      "displayName": "Under Bite",
+      "displayNameRu": "\u041f\u043e\u0434\u043a\u0443\u0441",
+      "icon": "assets/icons/catalystmod/items/underbite.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "summoner",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/UnrelentingTorment",
+      "kind": "item",
+      "internalName": "UnrelentingTorment",
+      "displayName": "Unrelenting Torment",
+      "displayNameRu": "\u041d\u0435\u0443\u043c\u043e\u043b\u0438\u043c\u0430\u044f \u0442\u043e\u0441\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/unrelentingtorment.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "summoner",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/WulfrumSatchelCharge",
+      "kind": "item",
+      "internalName": "WulfrumSatchelCharge",
+      "displayName": "Wulfrum Satchel Charge",
+      "displayNameRu": "\u0412\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u044b\u0439 \u043f\u043e\u0434\u0440\u044b\u0432\u043d\u043e\u0439 \u0437\u0430\u0440\u044f\u0434",
+      "icon": "assets/icons/catalystmod/items/wulfrumsatchelcharge.png",
+      "category": "weapon",
+      "tags": [
+        "rogue",
+        "consumable",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CatalystMod/MetanovaBar",
+      "kind": "material",
+      "internalName": "MetanovaBar",
+      "displayName": "Metanova Bar",
+      "displayNameRu": "\u0421\u043b\u0438\u0442\u043e\u043a \u043c\u0435\u0442\u0430\u043d\u043e\u0432\u044b",
+      "icon": "assets/icons/catalystmod/items/metanovabar.png",
+      "category": "other",
+      "tags": [
+        "material",
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AscendedAstralSlime",
+      "kind": "npc",
+      "internalName": "AscendedAstralSlime",
+      "displayName": "Ascended Astral Slime",
+      "displayNameRu": "\u0412\u043e\u0437\u043d\u0435\u0441\u0451\u043d\u043d\u044b\u0439 \u0430\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0441\u043b\u0438\u0437\u0435\u043d\u044c",
+      "icon": "assets/icons/catalystmod/npcs/ascendedastralslime.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "CatalystMod/MetanovaSlime",
+      "kind": "npc",
+      "internalName": "MetanovaSlime",
+      "displayName": "Metanova Slime",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0435\u043d\u044c \u043c\u0435\u0442\u0430\u043d\u043e\u0432\u044b",
+      "icon": "assets/icons/catalystmod/npcs/metanovaslime.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "CatalystMod/MetanovaSlimeRocks",
+      "kind": "npc",
+      "internalName": "MetanovaSlimeRocks",
+      "displayName": "Metanova Slime Rocks",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0435\u043d\u044c \u043c\u0435\u0442\u0430\u043d\u043e\u0432\u044b",
+      "icon": "assets/icons/catalystmod/npcs/metanovaslimerocks.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "CatalystMod/NovaSlime",
+      "kind": "npc",
+      "internalName": "NovaSlime",
+      "displayName": "Nova Slime",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0435\u043d\u044c \u043d\u043e\u0432\u043e\u0439 \u0437\u0432\u0435\u0437\u0434\u044b",
+      "icon": "assets/icons/catalystmod/npcs/novaslime.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "CatalystMod/NovaSlimer",
+      "kind": "npc",
+      "internalName": "NovaSlimer",
+      "displayName": "Nova Slimer",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u0435\u043d\u044c \u043d\u043e\u0432\u043e\u0439 \u0437\u0432\u0435\u0437\u0434\u044b",
+      "icon": "assets/icons/catalystmod/npcs/novaslimer.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "CatalystMod/WulfrumMine",
+      "kind": "npc",
+      "internalName": "WulfrumMine",
+      "displayName": "Wulfrum Mine",
+      "displayNameRu": "\u0412\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u0430\u044f \u043c\u0438\u043d\u0430",
+      "icon": "assets/icons/catalystmod/npcs/wulfrummine.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "CatalystMod/WulfrumSlime",
+      "kind": "npc",
+      "internalName": "WulfrumSlime",
+      "displayName": "Wulfrum Slime",
+      "displayNameRu": "\u0412\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u044b\u0439 \u0441\u043b\u0438\u0437\u0435\u043d\u044c",
+      "icon": "assets/icons/catalystmod/npcs/wulfrumslime.png",
+      "tags": [
+        "npc"
+      ]
+    },
+    {
+      "id": "CatalystMod/LoreAstrageldon",
+      "kind": "ore",
+      "internalName": "LoreAstrageldon",
+      "displayName": "Lore Astrageldon",
+      "displayNameRu": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f (\u0410\u0441\u0442\u0440\u0430\u0433\u0435\u043b\u044c\u0434\u043e\u043d)",
+      "icon": "assets/icons/catalystmod/items/loreastrageldon.png",
+      "category": "other",
+      "tags": [
+        "ore",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/MetanovaOre",
+      "kind": "ore",
+      "internalName": "MetanovaOre",
+      "displayName": "Metanova Ore",
+      "displayNameRu": "\u0420\u0443\u0434\u0430 \u043c\u0435\u0442\u0430\u043d\u043e\u0432\u044b",
+      "icon": "assets/icons/catalystmod/items/metanovaore.png",
+      "category": "other",
+      "tags": [
+        "ore",
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AmberFlashlightLens",
+      "kind": "other",
+      "internalName": "AmberFlashlightLens",
+      "displayName": "Amber Flashlight Lens",
+      "displayNameRu": "\u042f\u043d\u0442\u0430\u0440\u043d\u0430\u044f \u043b\u0438\u043d\u0437\u0430 \u0444\u043e\u043d\u0430\u0440\u0438\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/amberflashlightlens.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AmethystFlashlightLens",
+      "kind": "other",
+      "internalName": "AmethystFlashlightLens",
+      "displayName": "Amethyst Flashlight Lens",
+      "displayNameRu": "\u0410\u043c\u0435\u0442\u0438\u0441\u0442\u043e\u0432\u0430\u044f \u043b\u0438\u043d\u0437\u0430 \u0444\u043e\u043d\u0430\u0440\u0438\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/amethystflashlightlens.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AscendedAstralSlimeBanner",
+      "kind": "other",
+      "internalName": "AscendedAstralSlimeBanner",
+      "displayName": "Ascended Astral Slime Banner",
+      "displayNameRu": "\u0417\u043d\u0430\u043c\u044f \u0432\u043e\u0437\u043d\u0435\u0441\u0451\u043d\u043d\u043e\u0433\u043e \u0430\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u043b\u0438\u0437\u043d\u044f",
+      "icon": "assets/icons/catalystmod/items/ascendedastralslimebanner.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstrageldonBag",
+      "kind": "other",
+      "internalName": "AstrageldonBag",
+      "displayName": "Astrageldon Bag",
+      "displayNameRu": "\u041a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440 \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438 (\u0410\u0441\u0442\u0440\u0430\u0433\u0435\u043b\u044c\u0434\u043e\u043d)",
+      "icon": "assets/icons/catalystmod/items/astrageldonbag.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstrageldonRelic",
+      "kind": "other",
+      "internalName": "AstrageldonRelic",
+      "displayName": "Astrageldon Relic",
+      "displayNameRu": "\u0420\u0435\u043b\u0438\u043a\u0432\u0438\u044f \u0410\u0441\u0442\u0440\u0430\u0433\u0435\u043b\u044c\u0434\u043e\u043d\u0430",
+      "icon": "assets/icons/catalystmod/items/astrageldonrelic.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstrageldonTrophy",
+      "kind": "other",
+      "internalName": "AstrageldonTrophy",
+      "displayName": "Astrageldon Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u0410\u0441\u0442\u0440\u0430\u0433\u0435\u043b\u044c\u0434\u043e\u043d\u0430",
+      "icon": "assets/icons/catalystmod/items/astrageldontrophy.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstralCommunicator",
+      "kind": "other",
+      "internalName": "AstralCommunicator",
+      "displayName": "Astral Communicator",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043c\u043c\u0443\u043d\u0438\u043a\u0430\u0442\u043e\u0440",
+      "icon": "assets/icons/catalystmod/items/astralcommunicator.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstralLash",
+      "kind": "other",
+      "internalName": "AstralLash",
+      "displayName": "Astral Lash",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u0430\u044f \u043f\u043b\u0435\u0442\u044c",
+      "icon": "assets/icons/catalystmod/items/astrallash.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstralNeutron",
+      "kind": "other",
+      "internalName": "AstralNeutron",
+      "displayName": "Astral Neutron",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u00ab\u0410\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0432\u0430\u0437\u0430\u0440\u00bb",
+      "icon": "assets/icons/catalystmod/items/astralneutron.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/AstralTransmogrifier",
+      "kind": "other",
+      "internalName": "AstralTransmogrifier",
+      "displayName": "Astral Transmogrifier",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u0442\u0440\u0430\u043d\u0441\u043c\u043e\u0433\u0440\u0438\u0444\u0438\u043a\u0430\u0442\u043e\u0440",
+      "icon": "assets/icons/catalystmod/items/astraltransmogrifier.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/Astrogel",
+      "kind": "other",
+      "internalName": "Astrogel",
+      "displayName": "Astrogel",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u043e\u0433\u0435\u043b\u044c",
+      "icon": "assets/icons/catalystmod/items/astrogel.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/DiamondFlashlightLens",
+      "kind": "other",
+      "internalName": "DiamondFlashlightLens",
+      "displayName": "Diamond Flashlight Lens",
+      "displayNameRu": "\u0410\u043b\u043c\u0430\u0437\u043d\u0430\u044f \u043b\u0438\u043d\u0437\u0430 \u0444\u043e\u043d\u0430\u0440\u0438\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/diamondflashlightlens.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/EmeraldFlashlightLens",
+      "kind": "other",
+      "internalName": "EmeraldFlashlightLens",
+      "displayName": "Emerald Flashlight Lens",
+      "displayNameRu": "\u0418\u0437\u0443\u043c\u0440\u0443\u0434\u043d\u0430\u044f \u043b\u0438\u043d\u0437\u0430 \u0444\u043e\u043d\u0430\u0440\u0438\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/emeraldflashlightlens.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticBathtub",
+      "kind": "other",
+      "internalName": "IntergelacticBathtub",
+      "displayName": "Intergelactic Bathtub",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0432\u0430\u043d\u043d\u0430",
+      "icon": "assets/icons/catalystmod/items/intergelacticbathtub.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticBed",
+      "kind": "other",
+      "internalName": "IntergelacticBed",
+      "displayName": "Intergelactic Bed",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043a\u0440\u043e\u0432\u0430\u0442\u044c",
+      "icon": "assets/icons/catalystmod/items/intergelacticbed.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticBookshelf",
+      "kind": "other",
+      "internalName": "IntergelacticBookshelf",
+      "displayName": "Intergelactic Bookshelf",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043a\u043d\u0438\u0436\u043d\u044b\u0439 \u0448\u043a\u0430\u0444",
+      "icon": "assets/icons/catalystmod/items/intergelacticbookshelf.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticCandelabra",
+      "kind": "other",
+      "internalName": "IntergelacticCandelabra",
+      "displayName": "Intergelactic Candelabra",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043f\u043e\u0434\u0441\u0432\u0435\u0447\u043d\u0438\u043a",
+      "icon": "assets/icons/catalystmod/items/intergelacticcandelabra.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticChair",
+      "kind": "other",
+      "internalName": "IntergelacticChair",
+      "displayName": "Intergelactic Chair",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0441\u0442\u0443\u043b",
+      "icon": "assets/icons/catalystmod/items/intergelacticchair.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticChandelier",
+      "kind": "other",
+      "internalName": "IntergelacticChandelier",
+      "displayName": "Intergelactic Chandelier",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043b\u044e\u0441\u0442\u0440\u0430",
+      "icon": "assets/icons/catalystmod/items/intergelacticchandelier.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticChest",
+      "kind": "other",
+      "internalName": "IntergelacticChest",
+      "displayName": "Intergelactic Chest",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0441\u0443\u043d\u0434\u0443\u043a",
+      "icon": "assets/icons/catalystmod/items/intergelacticchest.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticClock",
+      "kind": "other",
+      "internalName": "IntergelacticClock",
+      "displayName": "Intergelactic Clock",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043d\u0430\u043f\u043e\u043b\u044c\u043d\u044b\u0435 \u0447\u0430\u0441\u044b",
+      "icon": "assets/icons/catalystmod/items/intergelacticclock.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticDoor",
+      "kind": "other",
+      "internalName": "IntergelacticDoor",
+      "displayName": "Intergelactic Door",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0434\u0432\u0435\u0440\u044c",
+      "icon": "assets/icons/catalystmod/items/intergelacticdoor.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticDresser",
+      "kind": "other",
+      "internalName": "IntergelacticDresser",
+      "displayName": "Intergelactic Dresser",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043a\u043e\u043c\u043e\u0434",
+      "icon": "assets/icons/catalystmod/items/intergelacticdresser.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticLamp",
+      "kind": "other",
+      "internalName": "IntergelacticLamp",
+      "displayName": "Intergelactic Lamp",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043d\u0430\u043f\u043e\u043b\u044c\u043d\u0430\u044f \u043b\u0430\u043c\u043f\u0430",
+      "icon": "assets/icons/catalystmod/items/intergelacticlamp.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticLantern",
+      "kind": "other",
+      "internalName": "IntergelacticLantern",
+      "displayName": "Intergelactic Lantern",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0444\u043e\u043d\u0430\u0440\u044c",
+      "icon": "assets/icons/catalystmod/items/intergelacticlantern.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticPiano",
+      "kind": "other",
+      "internalName": "IntergelacticPiano",
+      "displayName": "Intergelactic Piano",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043f\u0438\u0430\u043d\u0438\u043d\u043e",
+      "icon": "assets/icons/catalystmod/items/intergelacticpiano.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticPlatform",
+      "kind": "other",
+      "internalName": "IntergelacticPlatform",
+      "displayName": "Intergelactic Platform",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430",
+      "icon": "assets/icons/catalystmod/items/intergelacticplatform.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticSink",
+      "kind": "other",
+      "internalName": "IntergelacticSink",
+      "displayName": "Intergelactic Sink",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0440\u0430\u043a\u043e\u0432\u0438\u043d\u0430",
+      "icon": "assets/icons/catalystmod/items/intergelacticsink.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticSofa",
+      "kind": "other",
+      "internalName": "IntergelacticSofa",
+      "displayName": "Intergelactic Sofa",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0434\u0438\u0432\u0430\u043d",
+      "icon": "assets/icons/catalystmod/items/intergelacticsofa.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticTable",
+      "kind": "other",
+      "internalName": "IntergelacticTable",
+      "displayName": "Intergelactic Table",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0441\u0442\u043e\u043b",
+      "icon": "assets/icons/catalystmod/items/intergelactictable.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticToilet",
+      "kind": "other",
+      "internalName": "IntergelacticToilet",
+      "displayName": "Intergelactic Toilet",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0443\u043d\u0438\u0442\u0430\u0437",
+      "icon": "assets/icons/catalystmod/items/intergelactictoilet.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/IntergelacticWorkbench",
+      "kind": "other",
+      "internalName": "IntergelacticWorkbench",
+      "displayName": "Intergelactic Workbench",
+      "displayNameRu": "\u041c\u0435\u0436\u0433\u0435\u043b\u0435\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0432\u0435\u0440\u0441\u0442\u0430\u043a",
+      "icon": "assets/icons/catalystmod/items/intergelacticworkbench.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/InterstellarCorruptionDye",
+      "kind": "other",
+      "internalName": "InterstellarCorruptionDye",
+      "displayName": "Interstellar Corruption Dye",
+      "displayNameRu": "\u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c \u043c\u0435\u0436\u0437\u0432\u0451\u0437\u0434\u043d\u043e\u0433\u043e \u0438\u0441\u043a\u0430\u0436\u0435\u043d\u0438\u044f",
+      "icon": "assets/icons/catalystmod/items/interstellarcorruptiondye.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/MetanovaBrick",
+      "kind": "other",
+      "internalName": "MetanovaBrick",
+      "displayName": "Metanova Brick",
+      "displayNameRu": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043c\u0435\u0442\u0430\u043d\u043e\u0432\u044b",
+      "icon": "assets/icons/catalystmod/items/metanovabrick.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/MetanovaRealBrick",
+      "kind": "other",
+      "internalName": "MetanovaRealBrick",
+      "displayName": "Metanova Real Brick",
+      "displayNameRu": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043c\u0435\u0442\u0430\u043d\u043e\u0432\u044b",
+      "icon": "assets/icons/catalystmod/items/metanovarealbrick.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/MetanovaSlimeBanner",
+      "kind": "other",
+      "internalName": "MetanovaSlimeBanner",
+      "displayName": "Metanova Slime Banner",
+      "displayNameRu": "\u0417\u043d\u0430\u043c\u044f \u0441\u043b\u0438\u0437\u043d\u044f \u043c\u0435\u0442\u0430\u043d\u043e\u0432\u044b",
+      "icon": "assets/icons/catalystmod/items/metanovaslimebanner.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/RubyFlashlightLens",
+      "kind": "other",
+      "internalName": "RubyFlashlightLens",
+      "displayName": "Ruby Flashlight Lens",
+      "displayNameRu": "\u0420\u0443\u0431\u0438\u043d\u043e\u0432\u0430\u044f \u043b\u0438\u043d\u0437\u0430 \u0444\u043e\u043d\u0430\u0440\u0438\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/rubyflashlightlens.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/SapphireFlashlightLens",
+      "kind": "other",
+      "internalName": "SapphireFlashlightLens",
+      "displayName": "Sapphire Flashlight Lens",
+      "displayNameRu": "\u0421\u0430\u043f\u0444\u0438\u0440\u043e\u0432\u0430\u044f \u043b\u0438\u043d\u0437\u0430 \u0444\u043e\u043d\u0430\u0440\u0438\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/sapphireflashlightlens.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/TeamFlashlightLens",
+      "kind": "other",
+      "internalName": "TeamFlashlightLens",
+      "displayName": "Team Flashlight Lens",
+      "displayNameRu": "\u041a\u043e\u043c\u0430\u043d\u0434\u043d\u0430\u044f \u043b\u0438\u043d\u0437\u0430 \u0444\u043e\u043d\u0430\u0440\u0438\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/teamflashlightlens.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/TopazFlashlightLens",
+      "kind": "other",
+      "internalName": "TopazFlashlightLens",
+      "displayName": "Topaz Flashlight Lens",
+      "displayNameRu": "\u0422\u043e\u043f\u0430\u0437\u043e\u0432\u0430\u044f \u043b\u0438\u043d\u0437\u0430 \u0444\u043e\u043d\u0430\u0440\u0438\u043a\u0430",
+      "icon": "assets/icons/catalystmod/items/topazflashlightlens.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/WulfrumFlashlight",
+      "kind": "other",
+      "internalName": "WulfrumFlashlight",
+      "displayName": "Wulfrum Flashlight",
+      "displayNameRu": "\u0412\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u044b\u0439 \u0444\u043e\u043d\u0430\u0440\u0438\u043a",
+      "icon": "assets/icons/catalystmod/items/wulfrumflashlight.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/WulfrumMineBanner",
+      "kind": "other",
+      "internalName": "WulfrumMineBanner",
+      "displayName": "Wulfrum Mine Banner",
+      "displayNameRu": "\u0417\u043d\u0430\u043c\u044f \u0432\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u043e\u0439 \u043c\u0438\u043d\u044b",
+      "icon": "assets/icons/catalystmod/items/wulfrumminebanner.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CatalystMod/WulfrumSlimeBanner",
+      "kind": "other",
+      "internalName": "WulfrumSlimeBanner",
+      "displayName": "Wulfrum Slime Banner",
+      "displayNameRu": "\u0417\u043d\u0430\u043c\u044f \u0432\u0443\u043b\u044c\u0444\u0440\u0443\u043c\u043e\u0432\u043e\u0433\u043e \u0441\u043b\u0438\u0437\u043d\u044f",
+      "icon": "assets/icons/catalystmod/items/wulfrumslimebanner.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    }
+  ]
+}

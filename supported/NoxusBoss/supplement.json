@@ -1,7 +1,12 @@
 {
   "mod": "NoxusBoss",
   "contentType": "supplement",
-  "entries": [],
+  "entries": [
+    {
+      "id": "NoxusBoss/Erilucyxwyn",
+      "displayNameRu": "\u042d\u0440\u0438\u043b\u0443\u043a\u0441\u0438\u0432\u0438\u043d"
+    }
+  ],
   "bossNormalization": {
     "aliasMap": {},
     "hiddenBosses": [],
@@ -12,5 +17,44 @@
   "taxonomyOverrides": {
     "forcedCategories": {},
     "blacklist": []
+  },
+  "localizationPolicy": {
+    "coverageThresholdPickerVisible": 0.85,
+    "criticalRuIds": [
+      "NoxusBoss/AvatarOfEmptiness",
+      "NoxusBoss/AvatarRift",
+      "NoxusBoss/MarsBody",
+      "NoxusBoss/NamelessDeityBoss",
+      "NoxusBoss/StaffOfRejuvenation",
+      "NoxusBoss/NamelessDeityMask",
+      "NoxusBoss/NoxusMask",
+      "NoxusBoss/AscentMusicBox",
+      "NoxusBoss/AvatarOfEmptinessP2MusicBox",
+      "NoxusBoss/AvatarOfEmptinessP3MusicBox",
+      "NoxusBoss/AvatarRiftMusicBox",
+      "NoxusBoss/DeificTouch",
+      "NoxusBoss/DivineWings",
+      "NoxusBoss/EndCreditsMusicBox",
+      "NoxusBoss/EternalGardenMusicBox",
+      "NoxusBoss/HemolacriaMusicBox",
+      "NoxusBoss/MarsMusicBox",
+      "NoxusBoss/NamelessDeityMusicBox",
+      "NoxusBoss/NamelessDeityMusicBoxP3",
+      "NoxusBoss/NilkSongMusicBox",
+      "NoxusBoss/PortalSkirt",
+      "NoxusBoss/BlackHole",
+      "NoxusBoss/CinnamonRollyn",
+      "NoxusBoss/Erilucyxwyn",
+      "NoxusBoss/NilkCarton",
+      "NoxusBoss/OblivionChime",
+      "NoxusBoss/StarlitCampfire",
+      "NoxusBoss/Starseed"
+    ],
+    "criticalPerCategory": {
+      "weapon": 16,
+      "armor": 12,
+      "accessory": 14,
+      "buff": 12
+    }
   }
 }

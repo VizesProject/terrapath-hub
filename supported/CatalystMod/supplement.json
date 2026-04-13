@@ -12,5 +12,51 @@
   "taxonomyOverrides": {
     "forcedCategories": {},
     "blacklist": []
+  },
+  "localizationPolicy": {
+    "coverageThresholdPickerVisible": 0.85,
+    "criticalRuIds": [
+      "CatalystMod/Astrageldon",
+      "CatalystMod/Astragelgun",
+      "CatalystMod/AstralsEnd",
+      "CatalystMod/BlossomsBlessing",
+      "CatalystMod/BreathofGlacies",
+      "CatalystMod/Catharsis",
+      "CatalystMod/CongeledDuoWhip",
+      "CatalystMod/CoralCrusher",
+      "CatalystMod/DesertScorcher",
+      "CatalystMod/ExaltedHorizon",
+      "CatalystMod/Ichorthrower",
+      "CatalystMod/InterstellarVolution",
+      "CatalystMod/Plasmilegion",
+      "CatalystMod/PrismBreak",
+      "CatalystMod/Repentance",
+      "CatalystMod/ResonantStriker",
+      "CatalystMod/RookOfVengeance",
+      "CatalystMod/AstrageldonMask",
+      "CatalystMod/IntergelacticBreastplate",
+      "CatalystMod/IntergelacticGreaves",
+      "CatalystMod/IntergelacticHeadMagic",
+      "CatalystMod/IntergelacticHeadMelee",
+      "CatalystMod/IntergelacticHeadRanged",
+      "CatalystMod/IntergelacticHeadRogue",
+      "CatalystMod/IntergelacticHeadSummon",
+      "CatalystMod/AstrageldonPhase1MusicBox",
+      "CatalystMod/AstrageldonPhase2MusicBox",
+      "CatalystMod/AstrageldonTitleMusicBox",
+      "CatalystMod/InfluxCluster",
+      "CatalystMod/NovaMonolith",
+      "CatalystMod/AstraJelly",
+      "CatalystMod/AstralpodStaff",
+      "CatalystMod/DivineJello",
+      "CatalystMod/IntergelacticCandle",
+      "CatalystMod/Lean"
+    ],
+    "criticalPerCategory": {
+      "weapon": 16,
+      "armor": 12,
+      "accessory": 14,
+      "buff": 12
+    }
   }
 }

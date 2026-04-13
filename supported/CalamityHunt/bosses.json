@@ -1,0 +1,20 @@
+{
+  "mod": "CalamityHunt",
+  "contentType": "bosses",
+  "bosses": [
+    {
+      "id": "CalamityHunt/Goozma",
+      "kind": "boss",
+      "internalName": "Goozma",
+      "displayName": "Goozma",
+      "displayNameRu": "\u0413\u0443\u0437\u043c\u0430",
+      "icon": "assets/icons/calamityhunt/bosses/goozma.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityHunt/Goozma",
+      "bossColumn": "hardmode"
+    }
+  ]
+}

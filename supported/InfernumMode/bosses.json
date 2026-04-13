@@ -1,0 +1,34 @@
+{
+  "mod": "InfernumMode",
+  "contentType": "bosses",
+  "bosses": [
+    {
+      "id": "InfernumMode/AresEnergyKatana",
+      "kind": "boss",
+      "internalName": "AresEnergyKatana",
+      "displayName": "Ares Energy Katana",
+      "displayNameRu": "\u042d\u043d\u0435\u0440\u0433\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043a\u0430\u0442\u0430\u043d\u0430 \u0412\u0423-09 \u0410\u0440\u0435\u0441\u0430",
+      "icon": "assets/icons/infernummode/bosses/aresenergykatana.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "InfernumMode/AresEnergyKatana",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "InfernumMode/BereftVassal",
+      "kind": "boss",
+      "internalName": "BereftVassal",
+      "displayName": "Bereft Vassal",
+      "displayNameRu": "\u0410\u0440\u0433\u0443\u0441, \u041e\u0431\u0435\u0437\u0434\u043e\u043b\u0435\u043d\u043d\u044b\u0439 \u0432\u0430\u0441\u0441\u0430\u043b",
+      "icon": "assets/icons/infernummode/bosses/bereftvassal.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "InfernumMode/BereftVassal",
+      "bossColumn": "hardmode"
+    }
+  ]
+}

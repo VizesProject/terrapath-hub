@@ -70,6 +70,9 @@ TECHNICAL_BOSS_HINTS = re.compile(
     re.IGNORECASE,
 )
 SUPPLEMENT_ICON_META_KEYS = {"iconSourceFile", "iconSourceMode"}
+RUS_DOCS_LOWER = "\u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b"
+RUS_DOCS_TITLE = "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b"
+DOCUMENTS_DIR_NAMES = {"documents", RUS_DOCS_LOWER}
 
 
 def read_json(path: Path) -> dict:
@@ -153,11 +156,8 @@ def merge_tags(*tag_sets: list[str]) -> list[str]:
 
 def default_export_dir(mod_name: str) -> Path | None:
     candidates: list[Path] = []
-    for root in (Path.home() / "OneDrive", Path.home()):
-        for documents_dir in ("Documents", "Документы"):
-            candidates.append(
-                root / documents_dir / "My Games" / "Terraria" / "tModLoader" / "Mods" / "Cache" / "TerraPath" / "Exports" / mod_name
-            )
+    for root in export_roots():
+        candidates.append(root / mod_name)
     for candidate in candidates:
         if candidate.exists():
             return candidate
@@ -166,9 +166,23 @@ def default_export_dir(mod_name: str) -> Path | None:
 
 def export_roots() -> list[Path]:
     roots: list[Path] = []
-    for root in (Path.home() / "OneDrive", Path.home()):
-        for documents_dir in ("Documents", "Документы"):
-            roots.append(root / documents_dir / "My Games" / "Terraria" / "tModLoader" / "Mods" / "Cache" / "TerraPath" / "Exports")
+    checked: set[Path] = set()
+
+    for base in (Path.home() / "OneDrive", Path.home()):
+        candidates: list[Path] = [base / "Documents", base / RUS_DOCS_TITLE]
+        if base.exists():
+            try:
+                for child in base.iterdir():
+                    if child.is_dir() and child.name.strip().lower() in DOCUMENTS_DIR_NAMES:
+                        candidates.append(child)
+            except OSError:
+                pass
+
+        for documents_dir in candidates:
+            exports_path = documents_dir / "My Games" / "Terraria" / "tModLoader" / "Mods" / "Cache" / "TerraPath" / "Exports"
+            if exports_path not in checked:
+                checked.add(exports_path)
+                roots.append(exports_path)
     return roots
 
 

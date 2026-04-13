@@ -1,0 +1,1529 @@
+{
+  "mod": "CalamityHunt",
+  "contentType": "items",
+  "items": [
+    {
+      "id": "CalamityHunt/AntiMassAccumulator",
+      "kind": "item",
+      "internalName": "AntiMassAccumulator",
+      "displayName": "Anti Mass Accumulator",
+      "displayNameRu": "\u0410\u043a\u043a\u0443\u043c\u0443\u043b\u044f\u0442\u043e\u0440 \u0430\u043d\u0442\u0438-\u043c\u0430\u0441\u0441\u044b",
+      "icon": "assets/icons/calamityhunt/items/antimassaccumulator.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticCampfire",
+      "kind": "item",
+      "internalName": "ChromaticCampfire",
+      "displayName": "Chromatic Campfire",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043a\u043e\u0441\u0442\u0451\u0440",
+      "icon": "assets/icons/calamityhunt/items/chromaticcampfire.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "CalamityHunt/CometKunai",
+      "kind": "item",
+      "internalName": "CometKunai",
+      "displayName": "Comet Kunai",
+      "displayNameRu": "\u041a\u043e\u043c\u0435\u0442\u043d\u044b\u0439 \u043a\u0443\u043d\u0430\u0439",
+      "icon": "assets/icons/calamityhunt/items/cometkunai.png",
+      "category": "weapon",
+      "tags": [
+        "rogue",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/CrimulanMask",
+      "kind": "item",
+      "internalName": "CrimulanMask",
+      "displayName": "Crimulan Mask",
+      "displayNameRu": "\u0411\u0430\u0433\u0440\u043e\u0442\u0430\u043d\u043e\u0432\u0430\u044f \u043c\u0430\u0441\u043a\u0430",
+      "icon": "assets/icons/calamityhunt/items/crimulanmask.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "crimulan"
+    },
+    {
+      "id": "CalamityHunt/CrystalGauntlets",
+      "kind": "item",
+      "internalName": "CrystalGauntlets",
+      "displayName": "Crystal Gauntlets",
+      "displayNameRu": "\u041a\u0440\u0438\u0441\u0442\u0430\u043b\u043b\u0438\u0447\u0435\u0441\u043a\u0438\u0435 \u043f\u0435\u0440\u0447\u0430\u0442\u043a\u0438",
+      "icon": "assets/icons/calamityhunt/items/crystalgauntlets.png",
+      "category": "weapon",
+      "tags": [
+        "magic",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/DivineMask",
+      "kind": "item",
+      "internalName": "DivineMask",
+      "displayName": "Divine Mask",
+      "displayNameRu": "\u0411\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f \u043c\u0430\u0441\u043a\u0430",
+      "icon": "assets/icons/calamityhunt/items/divinemask.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "divine"
+    },
+    {
+      "id": "CalamityHunt/EbonianMask",
+      "kind": "item",
+      "internalName": "EbonianMask",
+      "displayName": "Ebonian Mask",
+      "displayNameRu": "\u042d\u0431\u043e\u043d\u0438\u0442\u043e\u0432\u0430\u044f \u043c\u0430\u0441\u043a\u0430",
+      "icon": "assets/icons/calamityhunt/items/ebonianmask.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "ebonian"
+    },
+    {
+      "id": "CalamityHunt/FissionFlyer",
+      "kind": "item",
+      "internalName": "FissionFlyer",
+      "displayName": "Fission Flyer",
+      "displayNameRu": "\u0420\u0430\u0441\u0449\u0435\u043f\u043b\u044f\u044e\u0449\u0438\u0439 \u0440\u0435\u0437\u0430\u043a",
+      "icon": "assets/icons/calamityhunt/items/fissionflyer.png",
+      "category": "weapon",
+      "tags": [
+        "rogue",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/Gobflogger",
+      "kind": "item",
+      "internalName": "Gobflogger",
+      "displayName": "Gobflogger",
+      "displayNameRu": "\u0421\u043b\u0438\u0437\u044c\u0442\u0430\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/calamityhunt/items/gobflogger.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "summoner",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/Goomoire",
+      "kind": "item",
+      "internalName": "Goomoire",
+      "displayName": "Goomoire",
+      "displayNameRu": "\u0413\u0443\u043c\u0443\u0430\u0440",
+      "icon": "assets/icons/calamityhunt/items/goomoire.png",
+      "category": "weapon",
+      "tags": [
+        "magic",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoozmaMusicBoxP1",
+      "kind": "item",
+      "internalName": "GoozmaMusicBoxP1",
+      "displayName": "Goozma Music Box P1",
+      "displayNameRu": "\u041c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0448\u043a\u0430\u0442\u0443\u043b\u043a\u0430 (\u0413\u0443\u0437\u043c\u0430)",
+      "icon": "assets/icons/calamityhunt/items/goozmamusicboxp1.png",
+      "category": "accessory",
+      "tags": [
+        "consumable",
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoozmaMusicBoxP2",
+      "kind": "item",
+      "internalName": "GoozmaMusicBoxP2",
+      "displayName": "Goozma Music Box P2",
+      "displayNameRu": "\u041c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0448\u043a\u0430\u0442\u0443\u043b\u043a\u0430 (\u041e\u0442\u0447\u0430\u044f\u043d\u043d\u044b\u0439 \u0413\u0443\u0437\u043c\u0430)",
+      "icon": "assets/icons/calamityhunt/items/goozmamusicboxp2.png",
+      "category": "accessory",
+      "tags": [
+        "consumable",
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoozmaSoulMusicBox",
+      "kind": "item",
+      "internalName": "GoozmaSoulMusicBox",
+      "displayName": "Goozma Soul Music Box",
+      "displayNameRu": "\u041c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0448\u043a\u0430\u0442\u0443\u043b\u043a\u0430 (\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0434\u0443\u0448\u0430)",
+      "icon": "assets/icons/calamityhunt/items/goozmasoulmusicbox.png",
+      "category": "accessory",
+      "tags": [
+        "consumable",
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CalamityHunt/Goozmaga",
+      "kind": "item",
+      "internalName": "Goozmaga",
+      "displayName": "Goozmaga",
+      "displayNameRu": "\u0413\u0443\u0437\u043c\u0430\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u043e",
+      "icon": "assets/icons/calamityhunt/items/goozmaga.png",
+      "category": "weapon",
+      "tags": [
+        "rogue",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ImperialGelato",
+      "kind": "item",
+      "internalName": "ImperialGelato",
+      "displayName": "Imperial Gelato",
+      "displayNameRu": "\u0418\u043c\u043f\u0435\u0440\u0441\u043a\u043e\u0435 \u0434\u0436\u0435\u043b\u0430\u0442\u043e",
+      "icon": "assets/icons/calamityhunt/items/imperialgelato.png",
+      "category": "buff",
+      "tags": [
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "CalamityHunt/NuclearLemonade",
+      "kind": "item",
+      "internalName": "NuclearLemonade",
+      "displayName": "Nuclear Lemonade",
+      "displayNameRu": "\u042f\u0434\u0435\u0440\u043d\u044b\u0439 \u043b\u0438\u043c\u043e\u043d\u0430\u0434",
+      "icon": "assets/icons/calamityhunt/items/nuclearlemonade.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "CalamityHunt/Parasanguine",
+      "kind": "item",
+      "internalName": "Parasanguine",
+      "displayName": "Parasanguine",
+      "displayNameRu": "\u041f\u0430\u0440\u0430\u0441\u0430\u043d\u0433\u0432\u0438\u043d\u043d\u0438\u043a",
+      "icon": "assets/icons/calamityhunt/items/parasanguine.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ScytheOfTheOldGod",
+      "kind": "item",
+      "internalName": "ScytheOfTheOldGod",
+      "displayName": "Scythe Of The Old God",
+      "displayNameRu": "\u041a\u043e\u0441\u0430 \u0441\u0442\u0430\u0440\u043e\u0433\u043e \u0431\u043e\u0433\u0430",
+      "icon": "assets/icons/calamityhunt/items/scytheoftheoldgod.png",
+      "category": "weapon",
+      "tags": [
+        "melee",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ShogunChestplate",
+      "kind": "item",
+      "internalName": "ShogunChestplate",
+      "displayName": "Shogun Chestplate",
+      "displayNameRu": "\u041d\u0430\u0433\u0440\u0443\u0434\u043d\u0438\u043a \u0441\u043a\u043e\u043b\u044c\u0437\u043a\u043e\u0433\u043e \u0441\u0451\u0433\u0443\u043d\u0430",
+      "icon": "assets/icons/calamityhunt/items/shogunchestplate.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "shogun"
+    },
+    {
+      "id": "CalamityHunt/ShogunHelm",
+      "kind": "item",
+      "internalName": "ShogunHelm",
+      "displayName": "Shogun Helm",
+      "displayNameRu": "\u0428\u043b\u0435\u043c \u0441\u043a\u043e\u043b\u044c\u0437\u043a\u043e\u0433\u043e \u0441\u0451\u0433\u0443\u043d\u0430",
+      "icon": "assets/icons/calamityhunt/items/shogunhelm.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "shogun"
+    },
+    {
+      "id": "CalamityHunt/ShogunPants",
+      "kind": "item",
+      "internalName": "ShogunPants",
+      "displayName": "Shogun Pants",
+      "displayNameRu": "\u0428\u0442\u0430\u043d\u044b \u0441\u043a\u043e\u043b\u044c\u0437\u043a\u043e\u0433\u043e \u0441\u0451\u0433\u0443\u043d\u0430",
+      "icon": "assets/icons/calamityhunt/items/shogunpants.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "shogun"
+    },
+    {
+      "id": "CalamityHunt/ShogunWings",
+      "kind": "item",
+      "internalName": "ShogunWings",
+      "displayName": "Shogun Wings",
+      "displayNameRu": "\u0422\u044b\u0441\u044f\u0447\u0435\u043a\u0440\u0430\u0442\u043d\u043e \u0441\u043b\u043e\u0436\u0435\u043d\u043d\u044b\u0435 \u0431\u0443\u043c\u0430\u0436\u043d\u044b\u0435 \u0432\u0435\u0435\u0440\u0430",
+      "icon": "assets/icons/calamityhunt/items/shogunwings.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CalamityHunt/SlimeCane",
+      "kind": "item",
+      "internalName": "SlimeCane",
+      "displayName": "Slime Cane",
+      "displayNameRu": "\u0422\u0440\u043e\u0441\u0442\u044c \u0441\u043b\u0438\u0437\u043d\u044f",
+      "icon": "assets/icons/calamityhunt/items/slimecane.png",
+      "category": "buff",
+      "tags": [
+        "summoner",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "CalamityHunt/SlimeMonsoonMonolith",
+      "kind": "item",
+      "internalName": "SlimeMonsoonMonolith",
+      "displayName": "Slime Monsoon Monolith",
+      "displayNameRu": "\u041c\u043e\u043d\u043e\u043b\u0438\u0442 \u0441\u043b\u0438\u0437\u043d\u0435\u0432\u043e\u0433\u043e \u043c\u0443\u0441\u0441\u043e\u043d\u0430",
+      "icon": "assets/icons/calamityhunt/items/slimemonsoonmonolith.png",
+      "category": "accessory",
+      "tags": [
+        "consumable",
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CalamityHunt/SludgeShaker",
+      "kind": "item",
+      "internalName": "SludgeShaker",
+      "displayName": "Sludge Shaker",
+      "displayNameRu": "\u0421\u043e\u0442\u0440\u044f\u0441\u0430\u0442\u0435\u043b\u044c \u0441\u043b\u044f\u043a\u043e\u0442\u0438",
+      "icon": "assets/icons/calamityhunt/items/sludgeshaker.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/SplendorJam",
+      "kind": "item",
+      "internalName": "SplendorJam",
+      "displayName": "Splendor Jam",
+      "displayNameRu": "\u0412\u0430\u0440\u0435\u043d\u044c\u0435 \u0432\u0435\u043b\u0438\u043a\u043e\u043b\u0435\u043f\u0438\u044f",
+      "icon": "assets/icons/calamityhunt/items/splendorjam.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CalamityHunt/StellarMask",
+      "kind": "item",
+      "internalName": "StellarMask",
+      "displayName": "Stellar Mask",
+      "displayNameRu": "\u0417\u0432\u0451\u0437\u0434\u043d\u0430\u044f \u043c\u0430\u0441\u043a\u0430",
+      "icon": "assets/icons/calamityhunt/items/stellarmask.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "stellar"
+    },
+    {
+      "id": "CalamityHunt/SupremeRestorationPotion",
+      "kind": "item",
+      "internalName": "SupremeRestorationPotion",
+      "displayName": "Supreme Restoration Potion",
+      "displayNameRu": "\u041e\u043c\u0435\u0433\u0430 \u0437\u0435\u043b\u044c\u0435 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f",
+      "icon": "assets/icons/calamityhunt/items/supremerestorationpotion.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "CalamityHunt/TendrilCursorAttachment",
+      "kind": "item",
+      "internalName": "TendrilCursorAttachment",
+      "displayName": "Tendril Cursor Attachment",
+      "displayNameRu": "\u041c\u0443\u0442\u0430\u0433\u0435\u043d \u043a\u0443\u0440\u0441\u043e\u0440\u0430",
+      "icon": "assets/icons/calamityhunt/items/tendrilcursorattachment.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CalamityHunt/Trailblazer",
+      "kind": "item",
+      "internalName": "Trailblazer",
+      "displayName": "Trailblazer",
+      "displayNameRu": "\u041f\u0435\u0440\u0432\u043e\u043f\u0440\u043e\u0445\u043e\u0434\u0435\u0446",
+      "icon": "assets/icons/calamityhunt/items/trailblazer.png",
+      "category": "weapon",
+      "tags": [
+        "ranged",
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "CalamityHunt/TrailblazerBackpack",
+      "kind": "item",
+      "internalName": "TrailblazerBackpack",
+      "displayName": "Trailblazer Backpack",
+      "displayNameRu": "\u0422\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0440\u044e\u043a\u0437\u0430\u0447\u043e\u043a \u043f\u0435\u0440\u0432\u043e\u043f\u0440\u043e\u0445\u043e\u0434\u0446\u0430",
+      "icon": "assets/icons/calamityhunt/items/trailblazerbackpack.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CalamityHunt/TrailblazerGoggles",
+      "kind": "item",
+      "internalName": "TrailblazerGoggles",
+      "displayName": "Trailblazer Goggles",
+      "displayNameRu": "\u041e\u0447\u043a\u0438 \u043f\u0435\u0440\u0432\u043e\u043f\u0440\u043e\u0445\u043e\u0434\u0446\u0430",
+      "icon": "assets/icons/calamityhunt/items/trailblazergoggles.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CalamityHunt/YharonSoulMusicBox",
+      "kind": "item",
+      "internalName": "YharonSoulMusicBox",
+      "displayName": "Yharon Soul Music Box",
+      "displayNameRu": "\u041c\u0443\u0437\u044b\u043a\u0430\u043b\u044c\u043d\u0430\u044f \u0448\u043a\u0430\u0442\u0443\u043b\u043a\u0430 (\u0414\u0440\u0430\u043a\u043e\u043d\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0434\u0443\u0448\u0430)",
+      "icon": "assets/icons/calamityhunt/items/yharonsoulmusicbox.png",
+      "category": "accessory",
+      "tags": [
+        "consumable",
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoozmaLore",
+      "kind": "ore",
+      "internalName": "GoozmaLore",
+      "displayName": "Goozma Lore",
+      "displayNameRu": "\u0413\u0443\u0437\u043c\u0430",
+      "icon": "assets/icons/calamityhunt/items/goozmalore.png",
+      "category": "other",
+      "tags": [
+        "ore",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/AuricSole",
+      "kind": "other",
+      "internalName": "AuricSole",
+      "displayName": "Auric Sole",
+      "displayNameRu": "\u0410\u0443\u0440\u0438\u0442\u043e\u0432\u0430\u044f \u043f\u043e\u0434\u0443\u0448\u0432\u0430",
+      "icon": "assets/icons/calamityhunt/items/auricsole.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/BadApple",
+      "kind": "other",
+      "internalName": "BadApple",
+      "displayName": "Bad Apple",
+      "displayNameRu": "\u041f\u043b\u043e\u0445\u043e\u0435 \u044f\u0431\u043b\u043e\u043a\u043e",
+      "icon": "assets/icons/calamityhunt/items/badapple.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye0",
+      "kind": "other",
+      "internalName": "ChromaticDye0",
+      "displayName": "Chromatic Dye0",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041c\u0430\u0441\u043b\u043e",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye0.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye1",
+      "kind": "other",
+      "internalName": "ChromaticDye1",
+      "displayName": "Chromatic Dye1",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u042f\u0434\u0435\u0440\u043d\u044b\u0439",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye1.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye10",
+      "kind": "other",
+      "internalName": "ChromaticDye10",
+      "displayName": "Chromatic Dye10",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: ZX Spectrum",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye10.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye11",
+      "kind": "other",
+      "internalName": "ChromaticDye11",
+      "displayName": "Chromatic Dye11",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0417\u043b\u043e",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye11.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye12",
+      "kind": "other",
+      "internalName": "ChromaticDye12",
+      "displayName": "Chromatic Dye12",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0422\u0435\u043d\u0435\u0432\u043e\u0435 \u043f\u043b\u0430\u043c\u044f",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye12.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye13",
+      "kind": "other",
+      "internalName": "ChromaticDye13",
+      "displayName": "Chromatic Dye13",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0414\u043e\u0433\u043c\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye13.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye14",
+      "kind": "other",
+      "internalName": "ChromaticDye14",
+      "displayName": "Chromatic Dye14",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: FIREBLU",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye14.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye15",
+      "kind": "other",
+      "internalName": "ChromaticDye15",
+      "displayName": "Chromatic Dye15",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0418\u0441\u043a\u0430\u0436\u0435\u043d\u0438\u0435",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye15.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye16",
+      "kind": "other",
+      "internalName": "ChromaticDye16",
+      "displayName": "Chromatic Dye16",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u042d\u043b\u0435\u043a\u0442\u0440\u0438\u0447\u0435\u0441\u0442\u0432\u043e",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye16.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye17",
+      "kind": "other",
+      "internalName": "ChromaticDye17",
+      "displayName": "Chromatic Dye17",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041f\u043e\u043b\u0442\u0435\u0440\u043f\u043b\u0430\u0437\u043c\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye17.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye18",
+      "kind": "other",
+      "internalName": "ChromaticDye18",
+      "displayName": "Chromatic Dye18",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041d\u0430\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye18.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye19",
+      "kind": "other",
+      "internalName": "ChromaticDye19",
+      "displayName": "Chromatic Dye19",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0412\u043e\u0441\u0442\u043e\u0440\u0433",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye19.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye2",
+      "kind": "other",
+      "internalName": "ChromaticDye2",
+      "displayName": "Chromatic Dye2",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0417\u043e\u043b\u043e\u0442\u043e",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye2.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye20",
+      "kind": "other",
+      "internalName": "ChromaticDye20",
+      "displayName": "Chromatic Dye20",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: Iban-\u0438\u0447\u0435\u0441\u043a\u0438\u0439",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye20.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye21",
+      "kind": "other",
+      "internalName": "ChromaticDye21",
+      "displayName": "Chromatic Dye21",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041a\u0438\u0441\u043b\u043e\u0442\u043d\u0430\u044f \u0440\u0430\u0434\u0443\u0433\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye21.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye22",
+      "kind": "other",
+      "internalName": "ChromaticDye22",
+      "displayName": "Chromatic Dye22",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0420\u0443\u0431\u0438\u043a\u043e\u043d",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye22.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye23",
+      "kind": "other",
+      "internalName": "ChromaticDye23",
+      "displayName": "Chromatic Dye23",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0414\u0432\u043e\u0439\u043d\u0430\u044f \u0440\u0430\u0434\u0443\u0433\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye23.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye24",
+      "kind": "other",
+      "internalName": "ChromaticDye24",
+      "displayName": "Chromatic Dye24",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041d\u0435\u043f\u0440\u0438\u044f\u0442\u043d\u043e\u0441\u0442\u044c",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye24.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye25",
+      "kind": "other",
+      "internalName": "ChromaticDye25",
+      "displayName": "Chromatic Dye25",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041e\u043a\u0435\u0430\u043d\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u044f\u0448\u043c\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye25.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye26",
+      "kind": "other",
+      "internalName": "ChromaticDye26",
+      "displayName": "Chromatic Dye26",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0420\u0430\u043a\u0443\u0448\u043a\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye26.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye27",
+      "kind": "other",
+      "internalName": "ChromaticDye27",
+      "displayName": "Chromatic Dye27",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0421\u0432\u0435\u0442\u0438\u043b\u044c\u043d\u0438\u043a \u0434\u0436\u0435\u043a\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye27.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye28",
+      "kind": "other",
+      "internalName": "ChromaticDye28",
+      "displayName": "Chromatic Dye28",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0421\u0430\u0445\u0430\u0440\u043d\u0430\u044f \u0432\u0430\u0442\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye28.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye29",
+      "kind": "other",
+      "internalName": "ChromaticDye29",
+      "displayName": "Chromatic Dye29",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0417\u0435\u043b\u0451\u043d\u044b\u0439 \u043d\u0430\u0445\u0430\u043b",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye29.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye3",
+      "kind": "other",
+      "internalName": "ChromaticDye3",
+      "displayName": "Chromatic Dye3",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0427\u0451\u0440\u043d\u043e-\u0431\u0435\u043b\u044b\u0439",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye3.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye30",
+      "kind": "other",
+      "internalName": "ChromaticDye30",
+      "displayName": "Chromatic Dye30",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041a\u0430\u043b\u0438\u0431\u0440\u043e\u0432\u043a\u0430 \u0446\u0432\u0435\u0442\u043e\u0432",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye30.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye31",
+      "kind": "other",
+      "internalName": "ChromaticDye31",
+      "displayName": "Chromatic Dye31",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u0438\u0435",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye31.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye32",
+      "kind": "other",
+      "internalName": "ChromaticDye32",
+      "displayName": "Chromatic Dye32",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0421\u0438\u0437\u0438\u0444",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye32.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye33",
+      "kind": "other",
+      "internalName": "ChromaticDye33",
+      "displayName": "Chromatic Dye33",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0412\u0430\u0432\u0438\u043b\u043e\u043d",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye33.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye34",
+      "kind": "other",
+      "internalName": "ChromaticDye34",
+      "displayName": "Chromatic Dye34",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0421\u0443\u0434\u043d\u044b\u0439 \u0434\u0435\u043d\u044c",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye34.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye35",
+      "kind": "other",
+      "internalName": "ChromaticDye35",
+      "displayName": "Chromatic Dye35",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0420\u0443\u0433\u0430\u043d\u0438\u0430\u043d\u0435\u0446",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye35.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye36",
+      "kind": "other",
+      "internalName": "ChromaticDye36",
+      "displayName": "Chromatic Dye36",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041a\u0430\u043a\u0430\u0448\u043a\u0438",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye36.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye37",
+      "kind": "other",
+      "internalName": "ChromaticDye37",
+      "displayName": "Chromatic Dye37",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0424\u0435\u0441\u0442\u0438\u0432\u0430\u043b\u044c",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye37.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye38",
+      "kind": "other",
+      "internalName": "ChromaticDye38",
+      "displayName": "Chromatic Dye38",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0413\u0440\u044f\u0437\u043d\u044b\u0439 \u043a\u043e\u0432\u0451\u0440",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye38.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye39",
+      "kind": "other",
+      "internalName": "ChromaticDye39",
+      "displayName": "Chromatic Dye39",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0425\u0430\u0439\u043d",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye39.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye4",
+      "kind": "other",
+      "internalName": "ChromaticDye4",
+      "displayName": "Chromatic Dye4",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041c\u0451\u0434",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye4.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye40",
+      "kind": "other",
+      "internalName": "ChromaticDye40",
+      "displayName": "Chromatic Dye40",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0417\u0435\u0440\u043e\u043c\u0443\u0441",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye40.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye41",
+      "kind": "other",
+      "internalName": "ChromaticDye41",
+      "displayName": "Chromatic Dye41",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0412\u043e\u0434\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye41.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye42",
+      "kind": "other",
+      "internalName": "ChromaticDye42",
+      "displayName": "Chromatic Dye42",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0417\u0432\u0451\u0437\u0434\u044b",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye42.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye43",
+      "kind": "other",
+      "internalName": "ChromaticDye43",
+      "displayName": "Chromatic Dye43",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0411\u0430\u0433\u0440\u044f\u043d\u0435\u0446",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye43.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye44",
+      "kind": "other",
+      "internalName": "ChromaticDye44",
+      "displayName": "Chromatic Dye44",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041f\u043e\u0440\u0447\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye44.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye45",
+      "kind": "other",
+      "internalName": "ChromaticDye45",
+      "displayName": "Chromatic Dye45",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041e\u0441\u0432\u044f\u0449\u0435\u043d\u0438\u0435",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye45.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye46",
+      "kind": "other",
+      "internalName": "ChromaticDye46",
+      "displayName": "Chromatic Dye46",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0414\u0440\u0430\u043a\u043e\u043d",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye46.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye47",
+      "kind": "other",
+      "internalName": "ChromaticDye47",
+      "displayName": "Chromatic Dye47",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0417\u043b\u043e\u0440\u043e\u0441\u0442\u044c",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye47.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye48",
+      "kind": "other",
+      "internalName": "ChromaticDye48",
+      "displayName": "Chromatic Dye48",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0413\u0438\u043f\u0435\u0440\u0440\u0435\u0430\u043b\u0438\u0441\u0442\u0438\u0447\u043d\u0430\u044f \u043a\u0440\u043e\u0432\u044c",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye48.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye49",
+      "kind": "other",
+      "internalName": "ChromaticDye49",
+      "displayName": "Chromatic Dye49",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0410\u0443\u0440\u0438\u0442\u043e\u0432\u0430\u044f \u0442\u0435\u0441\u043b\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye49.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye5",
+      "kind": "other",
+      "internalName": "ChromaticDye5",
+      "displayName": "Chromatic Dye5",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041c\u0430\u0441\u0442\u0435\u0440\u0441\u0442\u0432\u043e",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye5.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye50",
+      "kind": "other",
+      "internalName": "ChromaticDye50",
+      "displayName": "Chromatic Dye50",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041f\u0438\u043a\u043c\u0438\u043d",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye50.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye51",
+      "kind": "other",
+      "internalName": "ChromaticDye51",
+      "displayName": "Chromatic Dye51",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041f\u043b\u0430\u043c\u044f",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye51.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye52",
+      "kind": "other",
+      "internalName": "ChromaticDye52",
+      "displayName": "Chromatic Dye52",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041f\u043e\u043b\u044c\u0448\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye52.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye53",
+      "kind": "other",
+      "internalName": "ChromaticDye53",
+      "displayName": "Chromatic Dye53",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0414\u0435\u0442\u0441\u043a\u0438\u0439 \u0441\u0430\u0434",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye53.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye54",
+      "kind": "other",
+      "internalName": "ChromaticDye54",
+      "displayName": "Chromatic Dye54",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0414\u0430\u043d\u0438\u044d\u043b\u044c",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye54.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye55",
+      "kind": "other",
+      "internalName": "ChromaticDye55",
+      "displayName": "Chromatic Dye55",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041e\u0441\u0435\u043d\u044c",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye55.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye56",
+      "kind": "other",
+      "internalName": "ChromaticDye56",
+      "displayName": "Chromatic Dye56",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041f\u043e\u0434\u043c\u0438\u0440",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye56.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye57",
+      "kind": "other",
+      "internalName": "ChromaticDye57",
+      "displayName": "Chromatic Dye57",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041a\u0440\u0430\u0431\u043e\u0432\u044b\u0439 \u0441\u0430\u043b\u0430\u0442",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye57.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye58",
+      "kind": "other",
+      "internalName": "ChromaticDye58",
+      "displayName": "Chromatic Dye58",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0413\u0430\u0440\u0440\u043e\u0442",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye58.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye6",
+      "kind": "other",
+      "internalName": "ChromaticDye6",
+      "displayName": "Chromatic Dye6",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0422\u0451\u043c\u043d\u0430\u044f \u044d\u043d\u0435\u0440\u0433\u0438\u044f",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye6.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye7",
+      "kind": "other",
+      "internalName": "ChromaticDye7",
+      "displayName": "Chromatic Dye7",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041a\u0430\u043b\u044c\u043c\u0430\u0440",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye7.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye8",
+      "kind": "other",
+      "internalName": "ChromaticDye8",
+      "displayName": "Chromatic Dye8",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u0422\u0440\u0438\u0442\u0430\u043d\u043e\u043f\u0438\u044f",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye8.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticDye9",
+      "kind": "other",
+      "internalName": "ChromaticDye9",
+      "displayName": "Chromatic Dye9",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u041a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c: \u041f\u0430\u0441\u043c\u0443\u0440\u043d\u044b\u0439",
+      "icon": "assets/icons/calamityhunt/items/chromaticdye9.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticGooztick",
+      "kind": "other",
+      "internalName": "ChromaticGooztick",
+      "displayName": "Chromatic Gooztick",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0441\u0432\u0435\u0442\u044f\u0449\u0430\u044f\u0441\u044f \u043b\u0438\u043f\u0430\u043b\u043a\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticgooztick.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticMass",
+      "kind": "other",
+      "internalName": "ChromaticMass",
+      "displayName": "Chromatic Mass",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043c\u0430\u0441\u0441\u0430",
+      "icon": "assets/icons/calamityhunt/items/chromaticmass.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/ChromaticTorch",
+      "kind": "other",
+      "internalName": "ChromaticTorch",
+      "displayName": "Chromatic Torch",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u0444\u0430\u043a\u0435\u043b",
+      "icon": "assets/icons/calamityhunt/items/chromatictorch.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/CrimulanGlopstrosityTrophy",
+      "kind": "other",
+      "internalName": "CrimulanGlopstrosityTrophy",
+      "displayName": "Crimulan Glopstrosity Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u0411\u0430\u0433\u0440\u043e\u0442\u0430\u043d\u043e\u0432\u043e\u0433\u043e \u043a\u0430\u043f\u043b\u0438\u0449\u0430",
+      "icon": "assets/icons/calamityhunt/items/crimulanglopstrositytrophy.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/DischargedAuricSole",
+      "kind": "other",
+      "internalName": "DischargedAuricSole",
+      "displayName": "Discharged Auric Sole",
+      "displayNameRu": "\u0420\u0430\u0437\u0440\u044f\u0436\u0435\u043d\u043d\u0430\u044f \u0430\u0443\u0440\u0438\u0442\u043e\u0432\u0430\u044f \u043f\u043e\u0434\u0443\u0448\u0432\u0430",
+      "icon": "assets/icons/calamityhunt/items/dischargedauricsole.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/DivineGargooptuarTrophy",
+      "kind": "other",
+      "internalName": "DivineGargooptuarTrophy",
+      "displayName": "Divine Gargooptuar Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u0411\u043e\u0436\u0435\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u0431\u0443\u0440\u0434\u0430\u043d\u0442\u044e\u0430",
+      "icon": "assets/icons/calamityhunt/items/divinegargooptuartrophy.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/EbonianBehemuckTrophy",
+      "kind": "other",
+      "internalName": "EbonianBehemuckTrophy",
+      "displayName": "Ebonian Behemuck Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u042d\u0431\u043e\u043d\u0438\u0442\u043e\u0432\u043e\u0433\u043e \u0433\u0440\u044f\u0437\u0435\u043c\u043e\u0442\u0430",
+      "icon": "assets/icons/calamityhunt/items/ebonianbehemucktrophy.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GelatinousCatalyst",
+      "kind": "other",
+      "internalName": "GelatinousCatalyst",
+      "displayName": "Gelatinous Catalyst",
+      "displayNameRu": "\u0416\u0435\u043b\u0435\u0439\u043d\u044b\u0439 \u043a\u0430\u0442\u0430\u043b\u0438\u0437\u0430\u0442\u043e\u0440",
+      "icon": "assets/icons/calamityhunt/items/gelatinouscatalyst.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoopDye",
+      "kind": "other",
+      "internalName": "GoopDye",
+      "displayName": "Goop Dye",
+      "displayNameRu": "\u0421\u043a\u043b\u0438\u0437\u043a\u0438\u0439 \u043a\u0440\u0430\u0441\u0438\u0442\u0435\u043b\u044c",
+      "icon": "assets/icons/calamityhunt/items/goopdye.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoopHairDye",
+      "kind": "other",
+      "internalName": "GoopHairDye",
+      "displayName": "Goop Hair Dye",
+      "displayNameRu": "\u0421\u043a\u043b\u0438\u0437\u043a\u0430\u044f \u043a\u0440\u0430\u0441\u043a\u0430 \u0434\u043b\u044f \u0432\u043e\u043b\u043e\u0441",
+      "icon": "assets/icons/calamityhunt/items/goophairdye.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoozmaBoulderItem",
+      "kind": "other",
+      "internalName": "GoozmaBoulderItem",
+      "displayName": "Goozma Boulder Item",
+      "displayNameRu": "\u041f\u0451\u0441\u0442\u0440\u044b\u0439 \u0448\u0430\u0440\u0438\u043a",
+      "icon": "assets/icons/calamityhunt/items/goozmaboulderitem.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoozmaInfernumRelic",
+      "kind": "other",
+      "internalName": "GoozmaInfernumRelic",
+      "displayName": "Goozma Infernum Relic",
+      "displayNameRu": "Infernal Goozma Relic",
+      "icon": "assets/icons/calamityhunt/items/goozmainfernumrelic.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoozmaRelic",
+      "kind": "other",
+      "internalName": "GoozmaRelic",
+      "displayName": "Goozma Relic",
+      "displayNameRu": "\u0420\u0435\u043b\u0438\u043a\u0432\u0438\u044f \u0413\u0443\u0437\u043c\u044b",
+      "icon": "assets/icons/calamityhunt/items/goozmarelic.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoozmaSoul",
+      "kind": "other",
+      "internalName": "GoozmaSoul",
+      "displayName": "Goozma Soul",
+      "displayNameRu": "\u0425\u0440\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0430\u0443\u0440\u0438\u0442\u043e\u0432\u0430\u044f \u0434\u0443\u0448\u0430",
+      "icon": "assets/icons/calamityhunt/items/goozmasoul.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/GoozmaTrophy",
+      "kind": "other",
+      "internalName": "GoozmaTrophy",
+      "displayName": "Goozma Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u0413\u0443\u0437\u043c\u044b",
+      "icon": "assets/icons/calamityhunt/items/goozmatrophy.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/OverloadedSludge",
+      "kind": "other",
+      "internalName": "OverloadedSludge",
+      "displayName": "Overloaded Sludge",
+      "displayNameRu": "\u041f\u0435\u0440\u0435\u0433\u0440\u0443\u0436\u0435\u043d\u043d\u0430\u044f \u0441\u043b\u044f\u043a\u043e\u0442\u044c",
+      "icon": "assets/icons/calamityhunt/items/overloadedsludge.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/PaladinPalanquin",
+      "kind": "other",
+      "internalName": "PaladinPalanquin",
+      "displayName": "Paladin Palanquin",
+      "displayNameRu": "\u041f\u0430\u043b\u0430\u043d\u043a\u0438\u043d \u043f\u0430\u043b\u0430\u0434\u0438\u043d\u0430",
+      "icon": "assets/icons/calamityhunt/items/paladinpalanquin.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/PluripotentSpawnEgg",
+      "kind": "other",
+      "internalName": "PluripotentSpawnEgg",
+      "displayName": "Pluripotent Spawn Egg",
+      "displayNameRu": "\u041f\u043b\u044e\u0440\u0438\u043f\u043e\u0442\u0435\u043d\u0442\u043d\u043e\u0435 \u044f\u0439\u0446\u043e \u043f\u0440\u0438\u0437\u044b\u0432\u0430",
+      "icon": "assets/icons/calamityhunt/items/pluripotentspawnegg.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/PumpActionSwampgun",
+      "kind": "other",
+      "internalName": "PumpActionSwampgun",
+      "displayName": "Pump Action Swampgun",
+      "displayNameRu": "\u041f\u043e\u043c\u043f\u043e\u0432\u044b\u0439 \u0431\u043e\u043b\u043e\u0442\u043e\u0432\u0438\u043a",
+      "icon": "assets/icons/calamityhunt/items/pumpactionswampgun.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/SlimeNinjaStatue",
+      "kind": "other",
+      "internalName": "SlimeNinjaStatue",
+      "displayName": "Slime Ninja Statue",
+      "displayNameRu": "\u0421\u0442\u0430\u0442\u0443\u044f \u043d\u0438\u043d\u0434\u0437\u044f \u0441\u043b\u0438\u0437\u043d\u0435\u0439",
+      "icon": "assets/icons/calamityhunt/items/slimeninjastatue.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/StellarGeliathTrophy",
+      "kind": "other",
+      "internalName": "StellarGeliathTrophy",
+      "displayName": "Stellar Geliath Trophy",
+      "displayNameRu": "\u0422\u0440\u043e\u0444\u0435\u0439 \u0417\u0432\u0451\u0437\u0434\u043d\u043e\u0433\u043e \u0433\u0435\u043b\u0438\u0430\u0444\u0430",
+      "icon": "assets/icons/calamityhunt/items/stellargeliathtrophy.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/StickyHand",
+      "kind": "other",
+      "internalName": "StickyHand",
+      "displayName": "Sticky Hand",
+      "displayNameRu": "\u041c\u0435\u0440\u0437\u043a\u0430\u044f \u0440\u0443\u043a\u0430",
+      "icon": "assets/icons/calamityhunt/items/stickyhand.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/TreasureBucket",
+      "kind": "other",
+      "internalName": "TreasureBucket",
+      "displayName": "Treasure Bucket",
+      "displayNameRu": "\u0412\u0435\u0434\u0440\u043e \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438",
+      "icon": "assets/icons/calamityhunt/items/treasurebucket.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/TreasureTrunk",
+      "kind": "other",
+      "internalName": "TreasureTrunk",
+      "displayName": "Treasure Trunk",
+      "displayNameRu": "\u041a\u043e\u0444\u0440 \u0441 \u0441\u043e\u043a\u0440\u043e\u0432\u0438\u0449\u0430\u043c\u0438",
+      "icon": "assets/icons/calamityhunt/items/treasuretrunk.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "CalamityHunt/YharonSoul",
+      "kind": "other",
+      "internalName": "YharonSoul",
+      "displayName": "Yharon Soul",
+      "displayNameRu": "\u0412\u043e\u0437\u0440\u043e\u0436\u0434\u0451\u043d\u043d\u0430\u044f \u0430\u0443\u0440\u0438\u0442\u043e\u0432\u0430\u044f \u0434\u0443\u0448\u0430",
+      "icon": "assets/icons/calamityhunt/items/yharonsoul.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    }
+  ]
+}

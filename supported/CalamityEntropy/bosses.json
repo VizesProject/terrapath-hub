@@ -1,0 +1,174 @@
+{
+  "mod": "CalamityEntropy",
+  "contentType": "bosses",
+  "bosses": [
+    {
+      "id": "CalamityEntropy/AbyssalWraith",
+      "kind": "boss",
+      "internalName": "AbyssalWraith",
+      "displayName": "Abyssal Wraith",
+      "displayNameRu": "\u041f\u0440\u0438\u0437\u0440\u0430\u043a \u0431\u0435\u0437\u0434\u043d\u044b",
+      "icon": "assets/icons/calamityentropy/bosses/abyssalwraith.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/AbyssalWraith",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/Apsychos",
+      "kind": "boss",
+      "internalName": "Apsychos",
+      "displayName": "Apsychos",
+      "displayNameRu": "\u0410\u043f\u0441\u0438\u0445\u043e\u0441",
+      "icon": "assets/icons/calamityentropy/bosses/apsychos.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/Apsychos",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/ChaoticCell",
+      "kind": "boss",
+      "internalName": "ChaoticCell",
+      "displayName": "Chaotic Cell",
+      "displayNameRu": "\u041a\u043b\u0435\u0442\u043a\u0430 \u0425\u0430\u043e\u0441\u0430",
+      "icon": "assets/icons/calamityentropy/bosses/chaoticcell.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/ChaoticCell",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/CruiserBody",
+      "kind": "boss",
+      "internalName": "CruiserBody",
+      "displayName": "Cruiser Body",
+      "displayNameRu": "\u041a\u0440\u0435\u0439\u0441\u0435\u0440",
+      "icon": "assets/icons/calamityentropy/bosses/cruiserbody.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/CruiserBody",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/CruiserHead",
+      "kind": "boss",
+      "internalName": "CruiserHead",
+      "displayName": "Cruiser Head",
+      "displayNameRu": "\u041a\u0440\u0435\u0439\u0441\u0435\u0440",
+      "icon": "assets/icons/calamityentropy/bosses/cruiserhead.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/CruiserHead",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/CruiserTail",
+      "kind": "boss",
+      "internalName": "CruiserTail",
+      "displayName": "Cruiser Tail",
+      "displayNameRu": "\u041a\u0440\u0435\u0439\u0441\u0435\u0440",
+      "icon": "assets/icons/calamityentropy/bosses/cruisertail.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/CruiserTail",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/Luminaris",
+      "kind": "boss",
+      "internalName": "Luminaris",
+      "displayName": "Luminaris",
+      "displayNameRu": "\u0424\u0430\u043d\u0442\u043e\u043c\u043d\u0430\u044f \u041c\u043e\u043b\u044c",
+      "icon": "assets/icons/calamityentropy/bosses/luminaris.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/Luminaris",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/NihilityActeriophage",
+      "kind": "boss",
+      "internalName": "NihilityActeriophage",
+      "displayName": "Nihility Acteriophage",
+      "displayNameRu": "\u0411\u0430\u043a\u0442\u0435\u0440\u0438\u043e\u0444\u0430\u0433 \u041f\u0443\u0441\u0442\u043e\u0442\u044b",
+      "icon": "assets/icons/calamityentropy/bosses/nihilityacteriophage.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/NihilityActeriophage",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/SpiritFountain",
+      "kind": "boss",
+      "internalName": "SpiritFountain",
+      "displayName": "Spirit Fountain",
+      "displayNameRu": "\u0424\u043e\u043d\u0442\u0430\u043d \u0434\u0443\u0445\u043e\u0432",
+      "icon": "assets/icons/calamityentropy/bosses/spiritfountain.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/SpiritFountain",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/SpiritRing",
+      "kind": "boss",
+      "internalName": "SpiritRing",
+      "displayName": "Spirit Ring",
+      "displayNameRu": "\u041a\u043e\u043b\u044c\u0446\u043e \u0434\u0443\u0445\u043e\u0432",
+      "icon": "assets/icons/calamityentropy/bosses/spiritring.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/SpiritRing",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/TheProphet",
+      "kind": "boss",
+      "internalName": "TheProphet",
+      "displayName": "The Prophet",
+      "displayNameRu": "\u041f\u0440\u043e\u0440\u043e\u043a",
+      "icon": "assets/icons/calamityentropy/bosses/theprophet.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/TheProphet",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "CalamityEntropy/VoidPope",
+      "kind": "boss",
+      "internalName": "VoidPope",
+      "displayName": "Void Pope",
+      "displayNameRu": "\u041f\u0430\u0442\u0440\u0438\u0430\u0440\u0445 \u041f\u0443\u0441\u0442\u043e\u0442\u044b",
+      "icon": "assets/icons/calamityentropy/bosses/voidpope.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "CalamityEntropy/VoidPope",
+      "bossColumn": "hardmode"
+    }
+  ]
+}
