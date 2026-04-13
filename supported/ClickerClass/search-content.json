@@ -217,10 +217,10 @@
       "displayName": "Candle Clicker",
       "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440-\u0441\u0432\u0435\u0447\u0430",
       "icon": "assets/icons/clickerclass/items/candleclicker.png",
-      "category": "buff",
+      "category": "weapon",
       "tags": [
         "item",
-        "buff"
+        "weapon"
       ]
     },
     {

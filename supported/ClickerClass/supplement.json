@@ -10,7 +10,9 @@
     "displayOverrides": {}
   },
   "taxonomyOverrides": {
-    "forcedCategories": {},
+    "forcedCategories": {
+      "ClickerClass/CandleClicker": "weapon"
+    },
     "blacklist": []
   },
   "exportPolicy": {
