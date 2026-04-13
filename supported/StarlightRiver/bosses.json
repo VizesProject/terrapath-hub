@@ -1,0 +1,48 @@
+{
+  "mod": "StarlightRiver",
+  "contentType": "bosses",
+  "bosses": [
+    {
+      "id": "StarlightRiver/Glassweaver",
+      "kind": "boss",
+      "internalName": "Glassweaver",
+      "displayName": "Glassweaver",
+      "displayNameRu": "\u0421\u0442\u0435\u043a\u043b\u043e\u043f\u0440\u044f\u0434",
+      "icon": "assets/icons/starlightriver/bosses/glassweaver.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarlightRiver/Glassweaver",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarlightRiver/SquidBoss",
+      "kind": "boss",
+      "internalName": "SquidBoss",
+      "displayName": "Squid Boss",
+      "displayNameRu": "\u0410\u0432\u0440\u043e\u0440\u0430\u043a\u0443\u043b",
+      "icon": "assets/icons/starlightriver/bosses/squidboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarlightRiver/SquidBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarlightRiver/VitricBoss",
+      "kind": "boss",
+      "internalName": "VitricBoss",
+      "displayName": "Vitric Boss",
+      "displayNameRu": "\u0421\u0435\u0439\u0440\u043e\u0441",
+      "icon": "assets/icons/starlightriver/bosses/vitricboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarlightRiver/VitricBoss",
+      "bossColumn": "hardmode"
+    }
+  ]
+}

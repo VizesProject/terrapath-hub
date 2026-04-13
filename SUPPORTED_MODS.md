@@ -21,8 +21,8 @@ runtime category guessing.
 | 3 | Calamity Catalyst | `CatalystMod` | Planned | Calamity addon wave with shared normalization contracts. |
 | 3 | Calamity Infernum | `InfernumMode` | Planned | Calamity addon wave with shared normalization contracts. |
 | 3 | Calamity: Hunt of the Old God | `CalamityHunt` | Planned | Calamity addon wave with shared normalization contracts. |
-| 4 | The Stars Above | `TheStarsAbove` | Planned | Standalone wave after shared pipeline hardening. |
-| 4 | Starlight River | `StarlightRiver` | Planned | Standalone wave after shared pipeline hardening. |
+|4|The Stars Above|`StarsAbove`| Official | Promoted after deterministic validation gates. |
+|4|Starlight River|`StarlightRiver`| Official | Promoted after deterministic validation gates. |
 
 ## Registry and Data Contracts
 
@@ -47,7 +47,8 @@ runtime category guessing.
 6. Run `python tools/validate_support_data.py --promotion-mod <InternalModName>`.
 7. Promote per-mod: `python tools/promote_mod_official.py --mod <InternalModName>`.
 8. Wave 3 batch mode: `python tools/run_wave3.py` (or `python tools/run_wave3.py --promote`).
-9. Wave 3 missing-mod policy: modules without export folders or absent in `modlist.json` are skipped and remain `planned`.
+9. Wave 4 batch mode: `python tools/run_wave4.py` (or `python tools/run_wave4.py --promote`).
+10. Missing-mod policy for wave scripts: modules without export folders or absent in `modlist.json` are skipped and remain `planned`.
 
 ## Quality Gates
 

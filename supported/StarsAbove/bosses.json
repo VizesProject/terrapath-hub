@@ -1,0 +1,174 @@
+{
+  "mod": "StarsAbove",
+  "contentType": "bosses",
+  "bosses": [
+    {
+      "id": "StarsAbove/ArbitrationBoss",
+      "kind": "boss",
+      "internalName": "ArbitrationBoss",
+      "displayName": "Arbitration Boss",
+      "displayNameRu": "\u0410\u0440\u0431\u0438\u0442\u0440\u0430\u0436",
+      "icon": "assets/icons/starsabove/bosses/arbitrationboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/ArbitrationBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/CastorBoss",
+      "kind": "boss",
+      "internalName": "CastorBoss",
+      "displayName": "Castor Boss",
+      "displayNameRu": "\u041a\u0430\u0441\u0442\u043e\u0440, \u0414\u0438\u0442\u044f \u0440\u043e\u043a\u0430",
+      "icon": "assets/icons/starsabove/bosses/castorboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/CastorBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/NalhaunBoss",
+      "kind": "boss",
+      "internalName": "NalhaunBoss",
+      "displayName": "Nalhaun Boss",
+      "displayNameRu": "\u041d\u0430\u043b\u0445\u0430\u043d, \u0412\u043e\u0440\u043e\u043d\u0451\u043d\u044b\u0439 \u043a\u043e\u0440\u043e\u043b\u044c",
+      "icon": "assets/icons/starsabove/bosses/nalhaunboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/NalhaunBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/NalhaunBossPhase2",
+      "kind": "boss",
+      "internalName": "NalhaunBossPhase2",
+      "displayName": "Nalhaun Boss Phase2",
+      "displayNameRu": "\u041d\u0430\u043b\u0445\u0430\u043d, \u0412\u043b\u0430\u0434\u044b\u043a\u0430 \u043f\u043e\u043b\u043e\u0433\u043e \u043c\u0438\u0440\u0430",
+      "icon": "assets/icons/starsabove/bosses/nalhaunbossphase2.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/NalhaunBossPhase2",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/PenthesileaBoss",
+      "kind": "boss",
+      "internalName": "PenthesileaBoss",
+      "displayName": "Penthesilea Boss",
+      "displayNameRu": "\u041f\u0435\u043d\u0442\u0435\u0441\u0438\u043b\u0435\u044f, \u0412\u0435\u0434\u044c\u043c\u0430 \u0447\u0435\u0440\u043d\u0438\u043b",
+      "icon": "assets/icons/starsabove/bosses/penthesileaboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/PenthesileaBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/PolluxBoss",
+      "kind": "boss",
+      "internalName": "PolluxBoss",
+      "displayName": "Pollux Boss",
+      "displayNameRu": "\u041f\u043e\u043b\u043b\u0443\u043a\u0441, \u0414\u0438\u0442\u044f \u0440\u043e\u043a\u0430",
+      "icon": "assets/icons/starsabove/bosses/polluxboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/PolluxBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/StarfarerBoss",
+      "kind": "boss",
+      "internalName": "StarfarerBoss",
+      "displayName": "Starfarer Boss",
+      "displayNameRu": "\u0410\u0441\u0444\u043e\u0434\u0435\u043d\u0430 \u0438 \u042d\u0440\u0438\u0434\u0430\u043d\u0438",
+      "icon": "assets/icons/starsabove/bosses/starfarerboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/StarfarerBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/ThespianBoss",
+      "kind": "boss",
+      "internalName": "ThespianBoss",
+      "displayName": "Thespian Boss",
+      "displayNameRu": "\u0422\u0435\u0430\u0442\u0440\u0430\u043b, \u0421\u043e\u0437\u0434\u0430\u043d\u043d\u044b\u0439 \u0430\u043b\u0445\u0438\u043c\u0438\u0435\u0439",
+      "icon": "assets/icons/starsabove/bosses/thespianboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/ThespianBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/TsukiyomiBoss",
+      "kind": "boss",
+      "internalName": "TsukiyomiBoss",
+      "displayName": "Tsukiyomi Boss",
+      "displayNameRu": "\u0426\u0443\u043a\u0438\u0451\u043c\u0438, \u041f\u0435\u0440\u0432\u0430\u044f \u0410\u0441\u0442\u0440\u0430",
+      "icon": "assets/icons/starsabove/bosses/tsukiyomiboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/TsukiyomiBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/VagrantBoss",
+      "kind": "boss",
+      "internalName": "VagrantBoss",
+      "displayName": "Vagrant Boss",
+      "displayNameRu": "\u0421\u043a\u0438\u0442\u0430\u043b\u0435\u0446 \u043c\u0435\u0436\u0434\u0443 \u0438\u0437\u043c\u0435\u0440\u0435\u043d\u0438\u044f\u043c\u0438",
+      "icon": "assets/icons/starsabove/bosses/vagrantboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/VagrantBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/WarriorOfLightBoss",
+      "kind": "boss",
+      "internalName": "WarriorOfLightBoss",
+      "displayName": "Warrior Of Light Boss",
+      "displayNameRu": "\u0412\u043e\u0438\u043d \u0421\u0432\u0435\u0442\u0430",
+      "icon": "assets/icons/starsabove/bosses/warrioroflightboss.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/WarriorOfLightBoss",
+      "bossColumn": "hardmode"
+    },
+    {
+      "id": "StarsAbove/WarriorOfLightBossFinalPhase",
+      "kind": "boss",
+      "internalName": "WarriorOfLightBossFinalPhase",
+      "displayName": "Warrior Of Light Boss Final Phase",
+      "displayNameRu": "\u0412\u043e\u0438\u043d \u0421\u0432\u0435\u0442\u0430",
+      "icon": "assets/icons/starsabove/bosses/warrioroflightbossfinalphase.png",
+      "tags": [
+        "boss"
+      ],
+      "bossPickerEligible": true,
+      "canonicalBossId": "StarsAbove/WarriorOfLightBossFinalPhase",
+      "bossColumn": "hardmode"
+    }
+  ]
+}

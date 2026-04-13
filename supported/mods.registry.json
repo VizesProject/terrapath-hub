@@ -236,9 +236,9 @@
       ]
     },
     {
-      "id": "TheStarsAbove",
+      "id": "StarsAbove",
       "displayName": "The Stars Above",
-      "status": "planned",
+      "status": "official",
       "rolloutWave": 4,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
@@ -256,7 +256,7 @@
     {
       "id": "StarlightRiver",
       "displayName": "Starlight River",
-      "status": "planned",
+      "status": "official",
       "rolloutWave": 4,
       "sourcePolicy": "local-export-plus-supplement",
       "iconStrategy": "wiki-first-fallback-local",
