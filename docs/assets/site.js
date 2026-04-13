@@ -424,7 +424,7 @@
       }
     }
 
-    return "https://github.com/Vizeore7/terrapath-hub";
+    return "https://github.com/VizesProject/terrapath-hub";
   }
 
   function getGuideSubmissionUrl() {

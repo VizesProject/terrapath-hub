@@ -10,13 +10,13 @@ new guides and report project feedback.
 
 ## Quick Links
 
-- Published site: https://vizeore7.github.io/terrapath-hub/
-- Browse guides: https://vizeore7.github.io/terrapath-hub/browse.html
-- Open the editor: https://vizeore7.github.io/terrapath-hub/editor.html
-- Submit a guide: https://github.com/Vizeore7/terrapath-hub/issues/new?template=guide_submission.yml
-- Report a bug: https://github.com/Vizeore7/terrapath-hub/issues/new?template=bug_report.yml
-- UI feedback: https://github.com/Vizeore7/terrapath-hub/issues/new?template=ui_feedback.yml
-- Request supported mod data: https://github.com/Vizeore7/terrapath-hub/issues/new?template=supported_mod_request.yml
+- Published site: https://vizesproject.github.io/terrapath-hub/
+- Browse guides: https://vizesproject.github.io/terrapath-hub/browse.html
+- Open the editor: https://vizesproject.github.io/terrapath-hub/editor.html
+- Submit a guide: https://github.com/VizesProject/terrapath-hub/issues/new?template=guide_submission.yml
+- Report a bug: https://github.com/VizesProject/terrapath-hub/issues/new?template=bug_report.yml
+- UI feedback: https://github.com/VizesProject/terrapath-hub/issues/new?template=ui_feedback.yml
+- Request supported mod data: https://github.com/VizesProject/terrapath-hub/issues/new?template=supported_mod_request.yml
 - Guide schema: [schema/guide.schema.json](schema/guide.schema.json)
 - Contributing: [CONTRIBUTING.md](CONTRIBUTING.md)
 - Supported content: [SUPPORTED_MODS.md](SUPPORTED_MODS.md)

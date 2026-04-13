@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: TerraPath project guide
-    url: https://github.com/Vizeore7/terrapath-hub/blob/main/README.md
+    url: https://github.com/VizesProject/terrapath-hub/blob/main/README.md
     about: Start here to understand what this repository is for and how to use it.
   - name: Guide author instructions
-    url: https://github.com/Vizeore7/terrapath-hub/blob/main/CONTRIBUTING.md
+    url: https://github.com/VizesProject/terrapath-hub/blob/main/CONTRIBUTING.md
     about: Read the guide submission rules before opening a guide issue.
