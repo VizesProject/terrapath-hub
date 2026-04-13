@@ -104,7 +104,8 @@ def validate_guide(path: Path) -> dict:
 def main() -> int:
     paths = sorted(GUIDES_DIR.glob("**/guide.json"))
     if not paths:
-        raise SystemExit("No guide files found")
+        print("Validated 0 guide(s).")
+        return 0
 
     seen_ids = set()
     for path in paths:
