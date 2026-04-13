@@ -36,6 +36,7 @@ function classLabel(tag) {
     ranged: { en: "Ranged", ru: "Стрелок" },
     magic: { en: "Magic", ru: "Маг" },
     summoner: { en: "Summoner", ru: "Призыватель" },
+    clicker: { en: "Clicker", ru: "Кликер" },
     rogue: { en: "Rogue", ru: "Разбойник" },
     bard: { en: "Bard", ru: "Бард" },
     other: { en: "Other", ru: "Другое" }

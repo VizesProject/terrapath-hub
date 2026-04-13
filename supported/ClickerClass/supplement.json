@@ -1,0 +1,75 @@
+{
+  "mod": "ClickerClass",
+  "contentType": "supplement",
+  "entries": [],
+  "bossNormalization": {
+    "aliasMap": {},
+    "hiddenBosses": [],
+    "eligibleMinibosses": [],
+    "columnMap": {},
+    "displayOverrides": {}
+  },
+  "taxonomyOverrides": {
+    "forcedCategories": {},
+    "blacklist": []
+  },
+  "exportPolicy": {
+    "allowEmptyNpcs": true
+  },
+  "localizationPolicy": {
+    "coverageThresholdPickerVisible": 0.85,
+    "criticalRuIds": [
+      "ClickerClass/AdamantiteClicker",
+      "ClickerClass/ArcaneClicker",
+      "ClickerClass/ArthursClicker",
+      "ClickerClass/AshenClicker",
+      "ClickerClass/AstralClicker",
+      "ClickerClass/BalloonClicker",
+      "ClickerClass/BlizzardClicker",
+      "ClickerClass/BoneClicker",
+      "ClickerClass/BurningSuperDeathClicker",
+      "ClickerClass/CaptainsClicker",
+      "ClickerClass/ChlorophyteClicker",
+      "ClickerClass/CobaltClicker",
+      "ClickerClass/ConfettiClicker",
+      "ClickerClass/CopperClicker",
+      "ClickerClass/CorruptClicker",
+      "ClickerClass/CrimsonClicker",
+      "ClickerClass/MiceBoots",
+      "ClickerClass/MiceMask",
+      "ClickerClass/MiceSuit",
+      "ClickerClass/MotherboardBoots",
+      "ClickerClass/MotherboardHelmet",
+      "ClickerClass/MotherboardSuit",
+      "ClickerClass/OverclockBoots",
+      "ClickerClass/OverclockHelmet",
+      "ClickerClass/OverclockSuit",
+      "ClickerClass/PrecursorBreastplate",
+      "ClickerClass/PrecursorGreaves",
+      "ClickerClass/PrecursorHelmet",
+      "ClickerClass/AimAssistModule",
+      "ClickerClass/AimbotModule",
+      "ClickerClass/AMedal",
+      "ClickerClass/AncientClickingGlove",
+      "ClickerClass/BigRedButton",
+      "ClickerClass/BottomlessBoxofPaperclips",
+      "ClickerClass/ButtonMasher",
+      "ClickerClass/ChocolateChip",
+      "ClickerClass/ChocolateMilkCookies",
+      "ClickerClass/ClearKeychain",
+      "ClickerClass/ClickerEmblem",
+      "ClickerClass/ClickingGlove",
+      "ClickerClass/Cookie",
+      "ClickerClass/EnchantedLED",
+      "ClickerClass/CandleClicker",
+      "ClickerClass/InfluencePotion",
+      "ClickerClass/MiceCandle"
+    ],
+    "criticalPerCategory": {
+      "weapon": 16,
+      "armor": 12,
+      "accessory": 14,
+      "buff": 12
+    }
+  }
+}

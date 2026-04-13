@@ -21,6 +21,7 @@ runtime category guessing.
 | 3 | Calamity Catalyst | `CatalystMod` | Planned | Calamity addon wave with shared normalization contracts. |
 | 3 | Calamity Infernum | `InfernumMode` | Planned | Calamity addon wave with shared normalization contracts. |
 | 3 | Calamity: Hunt of the Old God | `CalamityHunt` | Planned | Calamity addon wave with shared normalization contracts. |
+|4|The Clicker Class|`ClickerClass`| Official | Promoted after deterministic validation gates. |
 |4|The Stars Above|`StarsAbove`| Official | Promoted after deterministic validation gates. |
 |4|Starlight River|`StarlightRiver`| Official | Promoted after deterministic validation gates. |
 

@@ -236,6 +236,22 @@
       ]
     },
     {
+      "id": "ClickerClass",
+      "displayName": "The Clicker Class",
+      "status": "official",
+      "rolloutWave": 4,
+      "sourcePolicy": "local-export-plus-supplement",
+      "iconStrategy": "wiki-first-fallback-local",
+      "supportedKinds": [
+        "item",
+        "npc",
+        "event",
+        "biome",
+        "system",
+        "other"
+      ]
+    },
+    {
       "id": "StarsAbove",
       "displayName": "The Stars Above",
       "status": "official",

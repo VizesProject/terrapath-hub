@@ -651,17 +651,29 @@ def build_generic_pack(mod_name: str, export_dir: Path) -> tuple[dict, dict, dic
     if not items_path.exists() or not npcs_path.exists():
         raise SystemExit(f"{mod_name}: export is incomplete in {export_dir}. Expected items.json and npcs.json.")
 
+    supplement = load_supplement(mod_name)
+    export_policy = supplement.get("exportPolicy", {}) if isinstance(supplement, dict) else {}
+    allow_empty_items = bool(export_policy.get("allowEmptyItems", False)) if isinstance(export_policy, dict) else False
+    allow_empty_npcs = bool(export_policy.get("allowEmptyNpcs", False)) if isinstance(export_policy, dict) else False
+
     raw_items = read_json(items_path).get("items", [])
     raw_npcs = read_json(npcs_path).get("npcs", [])
     if not isinstance(raw_items, list) or not isinstance(raw_npcs, list):
         raise SystemExit(f"{mod_name}: export payload is invalid in {export_dir}. Expected JSON arrays for items and npcs.")
-    if len(raw_items) == 0 or len(raw_npcs) == 0:
+    if len(raw_items) == 0 and len(raw_npcs) == 0:
+        raise SystemExit(f"{mod_name}: preflight failed. Export is empty. Got items=0, npcs=0.")
+    if len(raw_items) == 0 and not allow_empty_items:
         raise SystemExit(
-            f"{mod_name}: preflight failed. Export must contain both items and npcs (>0). Got items={len(raw_items)}, npcs={len(raw_npcs)}."
+            f"{mod_name}: preflight failed. Export must contain items (>0) unless supplement.exportPolicy.allowEmptyItems=true. "
+            f"Got items={len(raw_items)}, npcs={len(raw_npcs)}."
+        )
+    if len(raw_npcs) == 0 and not allow_empty_npcs:
+        raise SystemExit(
+            f"{mod_name}: preflight failed. Export must contain npcs (>0) unless supplement.exportPolicy.allowEmptyNpcs=true. "
+            f"Got items={len(raw_items)}, npcs={len(raw_npcs)}."
         )
 
     previous = load_previous_entries(mod_name)
-    supplement = load_supplement(mod_name)
 
     entries_by_id: dict[str, dict] = {}
     for raw in raw_items:

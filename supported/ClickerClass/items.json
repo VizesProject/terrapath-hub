@@ -1,0 +1,2212 @@
+{
+  "mod": "ClickerClass",
+  "contentType": "items",
+  "items": [
+    {
+      "id": "ClickerClass/AdamantiteClicker",
+      "kind": "item",
+      "internalName": "AdamantiteClicker",
+      "displayName": "Adamantite Clicker",
+      "displayNameRu": "\u0410\u0434\u0430\u043c\u0430\u043d\u0442\u0438\u0442\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/adamantiteclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/AimAssistModule",
+      "kind": "item",
+      "internalName": "AimAssistModule",
+      "displayName": "Aim Assist Module",
+      "displayNameRu": "\u041c\u043e\u0434\u0443\u043b\u044c \u043f\u043e\u043c\u043e\u0449\u0438 \u0432 \u043d\u0430\u0432\u043e\u0434\u043a\u0435",
+      "icon": "assets/icons/clickerclass/items/aimassistmodule.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/AimbotModule",
+      "kind": "item",
+      "internalName": "AimbotModule",
+      "displayName": "Aimbot Module",
+      "displayNameRu": "\u041c\u043e\u0434\u0443\u043b\u044c \u0430\u0432\u0442\u043e\u043d\u0430\u0432\u043e\u0434\u043a\u0438",
+      "icon": "assets/icons/clickerclass/items/aimbotmodule.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/AMedal",
+      "kind": "item",
+      "internalName": "AMedal",
+      "displayName": "AMedal",
+      "displayNameRu": "\u041c\u0435\u0434\u0430\u043b\u044c A",
+      "icon": "assets/icons/clickerclass/items/amedal.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/AncientClickingGlove",
+      "kind": "item",
+      "internalName": "AncientClickingGlove",
+      "displayName": "Ancient Clicking Glove",
+      "displayNameRu": "\u0414\u0440\u0435\u0432\u043d\u044f\u044f \u043a\u043b\u0438\u043a\u0430\u044e\u0449\u0430\u044f \u043f\u0435\u0440\u0447\u0430\u0442\u043a\u0430",
+      "icon": "assets/icons/clickerclass/items/ancientclickingglove.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/ArcaneClicker",
+      "kind": "item",
+      "internalName": "ArcaneClicker",
+      "displayName": "Arcane Clicker",
+      "displayNameRu": "\u041c\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/arcaneclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/ArthursClicker",
+      "kind": "item",
+      "internalName": "ArthursClicker",
+      "displayName": "Arthurs Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u0410\u0440\u0442\u0443\u0440\u0430",
+      "icon": "assets/icons/clickerclass/items/arthursclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/AshenClicker",
+      "kind": "item",
+      "internalName": "AshenClicker",
+      "displayName": "Ashen Clicker",
+      "displayNameRu": "\u041f\u0435\u043f\u0435\u043b\u044c\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/ashenclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/AstralClicker",
+      "kind": "item",
+      "internalName": "AstralClicker",
+      "displayName": "Astral Clicker",
+      "displayNameRu": "\u0410\u0441\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/astralclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/BalloonClicker",
+      "kind": "item",
+      "internalName": "BalloonClicker",
+      "displayName": "Balloon Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440-\u0432\u043e\u0437\u0434\u0443\u0448\u043d\u044b\u0439 \u0448\u0430\u0440",
+      "icon": "assets/icons/clickerclass/items/balloonclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/BigRedButton",
+      "kind": "item",
+      "internalName": "BigRedButton",
+      "displayName": "Big Red Button",
+      "displayNameRu": "\u0411\u043e\u043b\u044c\u0448\u0430\u044f \u043a\u0440\u0430\u0441\u043d\u0430\u044f \u043a\u043d\u043e\u043f\u043a\u0430",
+      "icon": "assets/icons/clickerclass/items/bigredbutton.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/BlizzardClicker",
+      "kind": "item",
+      "internalName": "BlizzardClicker",
+      "displayName": "Blizzard Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u0441\u043d\u0435\u0436\u043d\u043e\u0439 \u0431\u0443\u0440\u0438",
+      "icon": "assets/icons/clickerclass/items/blizzardclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/BoneClicker",
+      "kind": "item",
+      "internalName": "BoneClicker",
+      "displayName": "Bone Clicker",
+      "displayNameRu": "\u041a\u043e\u0441\u0442\u044f\u043d\u043e\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/boneclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/BottomlessBoxofPaperclips",
+      "kind": "item",
+      "internalName": "BottomlessBoxofPaperclips",
+      "displayName": "Bottomless Boxof Paperclips",
+      "displayNameRu": "\u0411\u0435\u0437\u0434\u043e\u043d\u043d\u0430\u044f \u043a\u043e\u0440\u043e\u0431\u043e\u0447\u043a\u0430 \u0441\u043a\u0440\u0435\u043f\u043e\u043a",
+      "icon": "assets/icons/clickerclass/items/bottomlessboxofpaperclips.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/BurningSuperDeathClicker",
+      "kind": "item",
+      "internalName": "BurningSuperDeathClicker",
+      "displayName": "Burning Super Death Clicker",
+      "displayNameRu": "\u0413\u043e\u0440\u044f\u0449\u0438\u0439 \u0441\u0443\u043f\u0435\u0440\u0441\u043c\u0435\u0440\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/burningsuperdeathclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/ButtonMasher",
+      "kind": "item",
+      "internalName": "ButtonMasher",
+      "displayName": "Button Masher",
+      "displayNameRu": "\u041a\u043d\u043e\u043f\u043e\u0447\u043d\u044b\u0439 \u044d\u043a\u0441\u043f\u0430\u043d\u0434\u0435\u0440",
+      "icon": "assets/icons/clickerclass/items/buttonmasher.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/CandleClicker",
+      "kind": "item",
+      "internalName": "CandleClicker",
+      "displayName": "Candle Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440-\u0441\u0432\u0435\u0447\u0430",
+      "icon": "assets/icons/clickerclass/items/candleclicker.png",
+      "category": "buff",
+      "tags": [
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "ClickerClass/CaptainsClicker",
+      "kind": "item",
+      "internalName": "CaptainsClicker",
+      "displayName": "Captains Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u043a\u0430\u043f\u0438\u0442\u0430\u043d\u0430",
+      "icon": "assets/icons/clickerclass/items/captainsclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/ChlorophyteClicker",
+      "kind": "item",
+      "internalName": "ChlorophyteClicker",
+      "displayName": "Chlorophyte Clicker",
+      "displayNameRu": "\u0425\u043b\u043e\u0440\u043e\u0444\u0438\u0442\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/chlorophyteclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/ChocolateChip",
+      "kind": "item",
+      "internalName": "ChocolateChip",
+      "displayName": "Chocolate Chip",
+      "displayNameRu": "\u0428\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u0430\u044f \u043a\u0440\u043e\u0448\u043a\u0430",
+      "icon": "assets/icons/clickerclass/items/chocolatechip.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/ChocolateMilkCookies",
+      "kind": "item",
+      "internalName": "ChocolateMilkCookies",
+      "displayName": "Chocolate Milk Cookies",
+      "displayNameRu": "\u0428\u043e\u043a\u043e\u043b\u0430\u0434\u043d\u043e\u0435 \u043c\u043e\u043b\u043e\u043a\u043e \u0441 \u043f\u0435\u0447\u0435\u043d\u044c\u0435\u043c",
+      "icon": "assets/icons/clickerclass/items/chocolatemilkcookies.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/ClearKeychain",
+      "kind": "item",
+      "internalName": "ClearKeychain",
+      "displayName": "Clear Keychain",
+      "displayNameRu": "\u041a\u0440\u0438\u0441\u0442\u0430\u043b\u044c\u043d\u0430\u044f \u0441\u0432\u044f\u0437\u043a\u0430 \u043a\u043b\u044e\u0447\u0435\u0439",
+      "icon": "assets/icons/clickerclass/items/clearkeychain.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/ClickerEmblem",
+      "kind": "item",
+      "internalName": "ClickerEmblem",
+      "displayName": "Clicker Emblem",
+      "displayNameRu": "\u042d\u043c\u0431\u043b\u0435\u043c\u0430 \u043a\u043b\u0438\u043a\u0435\u0440\u0430",
+      "icon": "assets/icons/clickerclass/items/clickeremblem.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/ClickingGlove",
+      "kind": "item",
+      "internalName": "ClickingGlove",
+      "displayName": "Clicking Glove",
+      "displayNameRu": "\u041a\u043b\u0438\u043a\u0430\u044e\u0449\u0430\u044f \u043f\u0435\u0440\u0447\u0430\u0442\u043a\u0430",
+      "icon": "assets/icons/clickerclass/items/clickingglove.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/CobaltClicker",
+      "kind": "item",
+      "internalName": "CobaltClicker",
+      "displayName": "Cobalt Clicker",
+      "displayNameRu": "\u041a\u043e\u0431\u0430\u043b\u044c\u0442\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/cobaltclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/ConfettiClicker",
+      "kind": "item",
+      "internalName": "ConfettiClicker",
+      "displayName": "Confetti Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440-\u043a\u043e\u043d\u0444\u0435\u0442\u0442\u0438",
+      "icon": "assets/icons/clickerclass/items/confetticlicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/Cookie",
+      "kind": "item",
+      "internalName": "Cookie",
+      "displayName": "Cookie",
+      "displayNameRu": "\u041f\u0435\u0447\u0435\u043d\u044c\u0435",
+      "icon": "assets/icons/clickerclass/items/cookie.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/CopperClicker",
+      "kind": "item",
+      "internalName": "CopperClicker",
+      "displayName": "Copper Clicker",
+      "displayNameRu": "\u041c\u0435\u0434\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/copperclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/CorruptClicker",
+      "kind": "item",
+      "internalName": "CorruptClicker",
+      "displayName": "Corrupt Clicker",
+      "displayNameRu": "\u0418\u0441\u043a\u0430\u0436\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/corruptclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/CrimsonClicker",
+      "kind": "item",
+      "internalName": "CrimsonClicker",
+      "displayName": "Crimson Clicker",
+      "displayNameRu": "\u0411\u0430\u0433\u0440\u044f\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/crimsonclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/CritterClicker",
+      "kind": "item",
+      "internalName": "CritterClicker",
+      "displayName": "Critter Clicker",
+      "displayNameRu": "\u0416\u0438\u0432\u043e\u0442\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/critterclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/CrystalClicker",
+      "kind": "item",
+      "internalName": "CrystalClicker",
+      "displayName": "Crystal Clicker",
+      "displayNameRu": "\u041a\u0440\u0438\u0441\u0442\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/crystalclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/CyclopsClicker",
+      "kind": "item",
+      "internalName": "CyclopsClicker",
+      "displayName": "Cyclops Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u0446\u0438\u043a\u043b\u043e\u043f\u0430",
+      "icon": "assets/icons/clickerclass/items/cyclopsclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/DarkClicker",
+      "kind": "item",
+      "internalName": "DarkClicker",
+      "displayName": "Dark Clicker",
+      "displayNameRu": "\u0422\u0451\u043c\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/darkclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/DraconicClicker",
+      "kind": "item",
+      "internalName": "DraconicClicker",
+      "displayName": "Draconic Clicker",
+      "displayNameRu": "\u0414\u0440\u0430\u043a\u043e\u043d\u0438\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/draconicclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/DreamClicker",
+      "kind": "item",
+      "internalName": "DreamClicker",
+      "displayName": "Dream Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u043c\u0435\u0447\u0442\u044b",
+      "icon": "assets/icons/clickerclass/items/dreamclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/EclipticClicker",
+      "kind": "item",
+      "internalName": "EclipticClicker",
+      "displayName": "Ecliptic Clicker",
+      "displayNameRu": "\u041f\u043e\u0442\u0443\u0441\u043a\u043d\u0435\u0432\u0448\u0438\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/eclipticclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/EnchantedLED",
+      "kind": "item",
+      "internalName": "EnchantedLED",
+      "displayName": "Enchanted LED",
+      "displayNameRu": "\u0417\u0430\u0447\u0430\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0441\u0432\u0435\u0442\u043e\u0434\u0438\u043e\u0434",
+      "icon": "assets/icons/clickerclass/items/enchantedled.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/FaultyClicker",
+      "kind": "item",
+      "internalName": "FaultyClicker",
+      "displayName": "Faulty Clicker",
+      "displayNameRu": "\u041d\u0435\u0438\u0441\u043f\u0440\u0430\u0432\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/faultyclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/FMedal",
+      "kind": "item",
+      "internalName": "FMedal",
+      "displayName": "FMedal",
+      "displayNameRu": "\u041c\u0435\u0434\u0430\u043b\u044c F",
+      "icon": "assets/icons/clickerclass/items/fmedal.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/FrozenClicker",
+      "kind": "item",
+      "internalName": "FrozenClicker",
+      "displayName": "Frozen Clicker",
+      "displayNameRu": "\u0417\u0430\u043c\u043e\u0440\u043e\u0436\u0435\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/frozenclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/GamerCrate",
+      "kind": "item",
+      "internalName": "GamerCrate",
+      "displayName": "Gamer Crate",
+      "displayNameRu": "\u0418\u0433\u0440\u043e\u0432\u043e\u0439 \u044f\u0449\u0438\u043a",
+      "icon": "assets/icons/clickerclass/items/gamercrate.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/GoldClicker",
+      "kind": "item",
+      "internalName": "GoldClicker",
+      "displayName": "Gold Clicker",
+      "displayNameRu": "\u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/goldclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/GoldenTicket",
+      "kind": "item",
+      "internalName": "GoldenTicket",
+      "displayName": "Golden Ticket",
+      "displayNameRu": "\u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u0431\u0438\u043b\u0435\u0442",
+      "icon": "assets/icons/clickerclass/items/goldenticket.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/HandCream",
+      "kind": "item",
+      "internalName": "HandCream",
+      "displayName": "Hand Cream",
+      "displayNameRu": "\u041a\u0440\u0435\u043c \u0434\u043b\u044f \u0440\u0443\u043a",
+      "icon": "assets/icons/clickerclass/items/handcream.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/HeartyClicker",
+      "kind": "item",
+      "internalName": "HeartyClicker",
+      "displayName": "Hearty Clicker",
+      "displayNameRu": "\u0421\u0435\u0440\u0434\u0435\u0447\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/heartyclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/HemoClicker",
+      "kind": "item",
+      "internalName": "HemoClicker",
+      "displayName": "Hemo Clicker",
+      "displayNameRu": "\u041a\u0440\u043e\u0432\u0430\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/hemoclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/HighTechClicker",
+      "kind": "item",
+      "internalName": "HighTechClicker",
+      "displayName": "High Tech Clicker",
+      "displayNameRu": "\u0412\u044b\u0441\u043e\u043a\u043e\u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0447\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/hightechclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/HoneyGlazedClicker",
+      "kind": "item",
+      "internalName": "HoneyGlazedClicker",
+      "displayName": "Honey Glazed Clicker",
+      "displayNameRu": "\u041c\u0451\u0434\u043e\u0433\u043b\u0430\u0437\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/honeyglazedclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/HotKeychain",
+      "kind": "item",
+      "internalName": "HotKeychain",
+      "displayName": "Hot Keychain",
+      "displayNameRu": "\u0413\u043e\u0440\u044f\u0447\u0430\u044f \u0441\u0432\u044f\u0437\u043a\u0430 \u043a\u043b\u044e\u0447\u0435\u0439",
+      "icon": "assets/icons/clickerclass/items/hotkeychain.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/IcePack",
+      "kind": "item",
+      "internalName": "IcePack",
+      "displayName": "Ice Pack",
+      "displayNameRu": "\u041f\u0430\u043a\u0435\u0442 \u043b\u044c\u0434\u0430",
+      "icon": "assets/icons/clickerclass/items/icepack.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/ImpishClicker",
+      "kind": "item",
+      "internalName": "ImpishClicker",
+      "displayName": "Impish Clicker",
+      "displayNameRu": "\u041e\u0437\u043e\u0440\u043d\u043e\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/impishclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/InfluencePotion",
+      "kind": "item",
+      "internalName": "InfluencePotion",
+      "displayName": "Influence Potion",
+      "displayNameRu": "\u0417\u0435\u043b\u044c\u0435 \u0432\u043b\u0438\u044f\u043d\u0438\u044f",
+      "icon": "assets/icons/clickerclass/items/influencepotion.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "ClickerClass/IronClicker",
+      "kind": "item",
+      "internalName": "IronClicker",
+      "displayName": "Iron Clicker",
+      "displayNameRu": "\u0416\u0435\u043b\u0435\u0437\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/ironclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/LanternClicker",
+      "kind": "item",
+      "internalName": "LanternClicker",
+      "displayName": "Lantern Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440-\u0444\u043e\u043d\u0430\u0440\u044c",
+      "icon": "assets/icons/clickerclass/items/lanternclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/LeadClicker",
+      "kind": "item",
+      "internalName": "LeadClicker",
+      "displayName": "Lead Clicker",
+      "displayNameRu": "\u0421\u0432\u0438\u043d\u0446\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/leadclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/LihzahrdClicker",
+      "kind": "item",
+      "internalName": "LihzahrdClicker",
+      "displayName": "Lihzahrd Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u044f\u0449\u0449\u0435\u0440\u043e\u0432",
+      "icon": "assets/icons/clickerclass/items/lihzahrdclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/LordsClicker",
+      "kind": "item",
+      "internalName": "LordsClicker",
+      "displayName": "Lords Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u041b\u043e\u0440\u0434\u0430",
+      "icon": "assets/icons/clickerclass/items/lordsclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/MagnetClicker",
+      "kind": "item",
+      "internalName": "MagnetClicker",
+      "displayName": "Magnet Clicker",
+      "displayNameRu": "\u041c\u0430\u0433\u043d\u0438\u0442\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/magnetclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/MasterKeychain",
+      "kind": "item",
+      "internalName": "MasterKeychain",
+      "displayName": "Master Keychain",
+      "displayNameRu": "\u041c\u0430\u0441\u0442\u0435\u0440-\u0441\u0432\u044f\u0437\u043a\u0430 \u043a\u043b\u044e\u0447\u0435\u0439",
+      "icon": "assets/icons/clickerclass/items/masterkeychain.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceBoots",
+      "kind": "item",
+      "internalName": "MiceBoots",
+      "displayName": "Mice Boots",
+      "displayNameRu": "\u0421\u0430\u043f\u043e\u0433\u0438 \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/miceboots.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "miceboots"
+    },
+    {
+      "id": "ClickerClass/MiceCandle",
+      "kind": "item",
+      "internalName": "MiceCandle",
+      "displayName": "Mice Candle",
+      "displayNameRu": "\u0421\u0432\u0435\u0447\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micecandle.png",
+      "category": "buff",
+      "tags": [
+        "consumable",
+        "item",
+        "buff"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceClicker",
+      "kind": "item",
+      "internalName": "MiceClicker",
+      "displayName": "Mice Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/miceclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceMask",
+      "kind": "item",
+      "internalName": "MiceMask",
+      "displayName": "Mice Mask",
+      "displayNameRu": "\u041c\u0430\u0441\u043a\u0430 \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micemask.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "mice"
+    },
+    {
+      "id": "ClickerClass/MiceSuit",
+      "kind": "item",
+      "internalName": "MiceSuit",
+      "displayName": "Mice Suit",
+      "displayNameRu": "\u041a\u043e\u0441\u0442\u044e\u043c \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micesuit.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "micesuit"
+    },
+    {
+      "id": "ClickerClass/Milk",
+      "kind": "item",
+      "internalName": "Milk",
+      "displayName": "Milk",
+      "displayNameRu": "\u0421\u0442\u0430\u043a\u0430\u043d \u043c\u043e\u043b\u043e\u043a\u0430",
+      "icon": "assets/icons/clickerclass/items/milk.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/MilkCookies",
+      "kind": "item",
+      "internalName": "MilkCookies",
+      "displayName": "Milk Cookies",
+      "displayNameRu": "\u041c\u043e\u043b\u043e\u043a\u043e \u0441 \u043f\u0435\u0447\u0435\u043d\u044c\u0435\u043c",
+      "icon": "assets/icons/clickerclass/items/milkcookies.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/MotherboardBoots",
+      "kind": "item",
+      "internalName": "MotherboardBoots",
+      "displayName": "Motherboard Boots",
+      "displayNameRu": "\u0421\u0430\u043f\u043e\u0433\u0438 \u043c\u0430\u0442\u0435\u0440\u0438\u043d\u0441\u043a\u043e\u0439 \u043f\u043b\u0430\u0442\u044b",
+      "icon": "assets/icons/clickerclass/items/motherboardboots.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "motherboardboots"
+    },
+    {
+      "id": "ClickerClass/MotherboardHelmet",
+      "kind": "item",
+      "internalName": "MotherboardHelmet",
+      "displayName": "Motherboard Helmet",
+      "displayNameRu": "\u0428\u043b\u0435\u043c \u043c\u0430\u0442\u0435\u0440\u0438\u043d\u0441\u043a\u043e\u0439 \u043f\u043b\u0430\u0442\u044b",
+      "icon": "assets/icons/clickerclass/items/motherboardhelmet.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "motherboard"
+    },
+    {
+      "id": "ClickerClass/MotherboardSuit",
+      "kind": "item",
+      "internalName": "MotherboardSuit",
+      "displayName": "Motherboard Suit",
+      "displayNameRu": "\u041a\u043e\u0441\u0442\u044e\u043c \u043c\u0430\u0442\u0435\u0440\u0438\u043d\u0441\u043a\u043e\u0439 \u043f\u043b\u0430\u0442\u044b",
+      "icon": "assets/icons/clickerclass/items/motherboardsuit.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "motherboardsuit"
+    },
+    {
+      "id": "ClickerClass/MouseClicker",
+      "kind": "item",
+      "internalName": "MouseClicker",
+      "displayName": "Mouse Clicker",
+      "displayNameRu": "\u041c\u044b\u0448\u0438\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/mouseclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/MousePad",
+      "kind": "item",
+      "internalName": "MousePad",
+      "displayName": "Mouse Pad",
+      "displayNameRu": "\u041a\u043e\u0432\u0440\u0438\u043a \u0434\u043b\u044f \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/mousepad.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/MouseTrap",
+      "kind": "item",
+      "internalName": "MouseTrap",
+      "displayName": "Mouse Trap",
+      "displayNameRu": "\u041c\u044b\u0448\u0435\u043b\u043e\u0432\u043a\u0430",
+      "icon": "assets/icons/clickerclass/items/mousetrap.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/MyceliumClicker",
+      "kind": "item",
+      "internalName": "MyceliumClicker",
+      "displayName": "Mycelium Clicker",
+      "displayNameRu": "\u041c\u0438\u0446\u0435\u043b\u0438\u0435\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/myceliumclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/MythrilClicker",
+      "kind": "item",
+      "internalName": "MythrilClicker",
+      "displayName": "Mythril Clicker",
+      "displayNameRu": "\u041c\u0438\u0444\u0440\u0438\u043b\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/mythrilclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/NaughtyClicker",
+      "kind": "item",
+      "internalName": "NaughtyClicker",
+      "displayName": "Naughty Clicker",
+      "displayNameRu": "\u041d\u0435\u043f\u043e\u0441\u043b\u0443\u0448\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/naughtyclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/OrichalcumClicker",
+      "kind": "item",
+      "internalName": "OrichalcumClicker",
+      "displayName": "Orichalcum Clicker",
+      "displayNameRu": "\u041e\u0440\u0438\u0445\u0430\u043b\u043a\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/orichalcumclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/OverclockBoots",
+      "kind": "item",
+      "internalName": "OverclockBoots",
+      "displayName": "Overclock Boots",
+      "displayNameRu": "\u0421\u0430\u043f\u043e\u0433\u0438 \u0440\u0430\u0437\u0433\u043e\u043d\u0430",
+      "icon": "assets/icons/clickerclass/items/overclockboots.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "overclockboots"
+    },
+    {
+      "id": "ClickerClass/OverclockHelmet",
+      "kind": "item",
+      "internalName": "OverclockHelmet",
+      "displayName": "Overclock Helmet",
+      "displayNameRu": "\u0428\u043b\u0435\u043c \u0440\u0430\u0437\u0433\u043e\u043d\u0430",
+      "icon": "assets/icons/clickerclass/items/overclockhelmet.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "overclock"
+    },
+    {
+      "id": "ClickerClass/OverclockSuit",
+      "kind": "item",
+      "internalName": "OverclockSuit",
+      "displayName": "Overclock Suit",
+      "displayNameRu": "\u041a\u043e\u0441\u0442\u044e\u043c \u0440\u0430\u0437\u0433\u043e\u043d\u0430",
+      "icon": "assets/icons/clickerclass/items/overclocksuit.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "overclocksuit"
+    },
+    {
+      "id": "ClickerClass/PalladiumClicker",
+      "kind": "item",
+      "internalName": "PalladiumClicker",
+      "displayName": "Palladium Clicker",
+      "displayNameRu": "\u041f\u0430\u043b\u043b\u0430\u0434\u0438\u0435\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/palladiumclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/PharaohsClicker",
+      "kind": "item",
+      "internalName": "PharaohsClicker",
+      "displayName": "Pharaohs Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u0444\u0430\u0440\u0430\u043e\u043d\u0430",
+      "icon": "assets/icons/clickerclass/items/pharaohsclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/PlatinumClicker",
+      "kind": "item",
+      "internalName": "PlatinumClicker",
+      "displayName": "Platinum Clicker",
+      "displayNameRu": "\u041f\u043b\u0430\u0442\u0438\u043d\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/platinumclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/PointyClicker",
+      "kind": "item",
+      "internalName": "PointyClicker",
+      "displayName": "Pointy Clicker",
+      "displayNameRu": "\u0417\u0430\u043e\u0441\u0442\u0440\u0451\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/pointyclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/PortableParticleAccelerator",
+      "kind": "item",
+      "internalName": "PortableParticleAccelerator",
+      "displayName": "Portable Particle Accelerator",
+      "displayNameRu": "\u041a\u0430\u0440\u043c\u0430\u043d\u043d\u044b\u0439 \u0443\u0441\u043a\u043e\u0440\u0438\u0442\u0435\u043b\u044c \u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0445 \u0447\u0430\u0441\u0442\u0438\u0446",
+      "icon": "assets/icons/clickerclass/items/portableparticleaccelerator.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/PrecursorBreastplate",
+      "kind": "item",
+      "internalName": "PrecursorBreastplate",
+      "displayName": "Precursor Breastplate",
+      "displayNameRu": "\u041d\u0430\u0433\u0440\u0443\u0434\u043d\u0438\u043a \u043f\u0440\u0435\u0434\u0442\u0435\u0447\u0438",
+      "icon": "assets/icons/clickerclass/items/precursorbreastplate.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "precursor"
+    },
+    {
+      "id": "ClickerClass/PrecursorGreaves",
+      "kind": "item",
+      "internalName": "PrecursorGreaves",
+      "displayName": "Precursor Greaves",
+      "displayNameRu": "\u041f\u043e\u043d\u043e\u0436\u0438 \u043f\u0440\u0435\u0434\u0442\u0435\u0447\u0438",
+      "icon": "assets/icons/clickerclass/items/precursorgreaves.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "precursor"
+    },
+    {
+      "id": "ClickerClass/PrecursorHelmet",
+      "kind": "item",
+      "internalName": "PrecursorHelmet",
+      "displayName": "Precursor Helmet",
+      "displayNameRu": "\u0428\u043b\u0435\u043c \u043f\u0440\u0435\u0434\u0442\u0435\u0447\u0438",
+      "icon": "assets/icons/clickerclass/items/precursorhelmet.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "precursor"
+    },
+    {
+      "id": "ClickerClass/RainbowClicker",
+      "kind": "item",
+      "internalName": "RainbowClicker",
+      "displayName": "Rainbow Clicker",
+      "displayNameRu": "\u0420\u0430\u0434\u0443\u0436\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/rainbowclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/RedHotClicker",
+      "kind": "item",
+      "internalName": "RedHotClicker",
+      "displayName": "Red Hot Clicker",
+      "displayNameRu": "\u041f\u044b\u043b\u0430\u044e\u0449\u0438\u0439 \u043a\u0440\u0430\u0441\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/redhotclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/RegalClickingGlove",
+      "kind": "item",
+      "internalName": "RegalClickingGlove",
+      "displayName": "Regal Clicking Glove",
+      "displayNameRu": "\u041a\u043e\u0440\u043e\u043b\u0435\u0432\u0441\u043a\u0430\u044f \u043a\u043b\u0438\u043a\u0430\u044e\u0449\u0430\u044f \u043f\u0435\u0440\u0447\u0430\u0442\u043a\u0430",
+      "icon": "assets/icons/clickerclass/items/regalclickingglove.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/RGBBreastplate",
+      "kind": "item",
+      "internalName": "RGBBreastplate",
+      "displayName": "RGBBreastplate",
+      "displayNameRu": "RGB-\u043d\u0430\u0433\u0440\u0443\u0434\u043d\u0438\u043a",
+      "icon": "assets/icons/clickerclass/items/rgbbreastplate.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "rgb"
+    },
+    {
+      "id": "ClickerClass/RGBGreaves",
+      "kind": "item",
+      "internalName": "RGBGreaves",
+      "displayName": "RGBGreaves",
+      "displayNameRu": "RGB-\u043f\u043e\u043d\u043e\u0436\u0438",
+      "icon": "assets/icons/clickerclass/items/rgbgreaves.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "piece",
+      "armorGroupKey": "rgb"
+    },
+    {
+      "id": "ClickerClass/RGBHelm",
+      "kind": "item",
+      "internalName": "RGBHelm",
+      "displayName": "RGBHelm",
+      "displayNameRu": "RGB-\u0448\u043b\u0435\u043c",
+      "icon": "assets/icons/clickerclass/items/rgbhelm.png",
+      "category": "armor",
+      "tags": [
+        "item",
+        "armor"
+      ],
+      "armorMode": "set",
+      "armorGroupKey": "rgb"
+    },
+    {
+      "id": "ClickerClass/SandstormClicker",
+      "kind": "item",
+      "internalName": "SandstormClicker",
+      "displayName": "Sandstorm Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u043f\u0435\u0441\u0447\u0430\u043d\u043e\u0439 \u0431\u0443\u0440\u0438",
+      "icon": "assets/icons/clickerclass/items/sandstormclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/SeafoamClicker",
+      "kind": "item",
+      "internalName": "SeafoamClicker",
+      "displayName": "Seafoam Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u043c\u043e\u0440\u0441\u043a\u043e\u0439 \u043f\u0435\u043d\u044b",
+      "icon": "assets/icons/clickerclass/items/seafoamclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/ShadowyClicker",
+      "kind": "item",
+      "internalName": "ShadowyClicker",
+      "displayName": "Shadowy Clicker",
+      "displayNameRu": "\u041c\u0440\u0430\u0447\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/shadowyclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/ShroomiteClicker",
+      "kind": "item",
+      "internalName": "ShroomiteClicker",
+      "displayName": "Shroomite Clicker",
+      "displayNameRu": "\u0413\u0440\u0438\u0431\u043d\u043e\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/shroomiteclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/SilverClicker",
+      "kind": "item",
+      "internalName": "SilverClicker",
+      "displayName": "Silver Clicker",
+      "displayNameRu": "\u0421\u0435\u0440\u0435\u0431\u0440\u044f\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/silverclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/SinisterClicker",
+      "kind": "item",
+      "internalName": "SinisterClicker",
+      "displayName": "Sinister Clicker",
+      "displayNameRu": "\u0417\u043b\u043e\u0432\u0435\u0449\u0438\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/sinisterclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/SlickClicker",
+      "kind": "item",
+      "internalName": "SlickClicker",
+      "displayName": "Slick Clicker",
+      "displayNameRu": "\u0421\u043a\u043e\u043b\u044c\u0437\u043a\u0438\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/slickclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/SMedal",
+      "kind": "item",
+      "internalName": "SMedal",
+      "displayName": "SMedal",
+      "displayNameRu": "\u041c\u0435\u0434\u0430\u043b\u044c S",
+      "icon": "assets/icons/clickerclass/items/smedal.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/SnottyClicker",
+      "kind": "item",
+      "internalName": "SnottyClicker",
+      "displayName": "Snotty Clicker",
+      "displayNameRu": "\u0421\u043e\u043f\u043b\u0438\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/snottyclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/Soda",
+      "kind": "item",
+      "internalName": "Soda",
+      "displayName": "Soda",
+      "displayNameRu": "\u0421\u043e\u0434\u0430",
+      "icon": "assets/icons/clickerclass/items/soda.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/SpaceClicker",
+      "kind": "item",
+      "internalName": "SpaceClicker",
+      "displayName": "Space Clicker",
+      "displayNameRu": "\u041a\u043e\u0441\u043c\u0438\u0447\u0435\u0441\u043a\u0438\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/spaceclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/SpectreClicker",
+      "kind": "item",
+      "internalName": "SpectreClicker",
+      "displayName": "Spectre Clicker",
+      "displayNameRu": "\u0421\u043f\u0435\u043a\u0442\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/spectreclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/SpiralClicker",
+      "kind": "item",
+      "internalName": "SpiralClicker",
+      "displayName": "Spiral Clicker",
+      "displayNameRu": "\u0421\u043f\u0438\u0440\u0430\u043b\u044c\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/spiralclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/StarryClicker",
+      "kind": "item",
+      "internalName": "StarryClicker",
+      "displayName": "Starry Clicker",
+      "displayNameRu": "\u0417\u0432\u0451\u0437\u0434\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/starryclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/StickyKeychain",
+      "kind": "item",
+      "internalName": "StickyKeychain",
+      "displayName": "Sticky Keychain",
+      "displayNameRu": "\u041b\u0438\u043f\u043a\u0430\u044f \u0441\u0432\u044f\u0437\u043a\u0430 \u043a\u043b\u044e\u0447\u0435\u0439",
+      "icon": "assets/icons/clickerclass/items/stickykeychain.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/TheClicker",
+      "kind": "item",
+      "internalName": "TheClicker",
+      "displayName": "The Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/theclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/TheScroller",
+      "kind": "item",
+      "internalName": "TheScroller",
+      "displayName": "The Scroller",
+      "displayNameRu": "\u041a\u043e\u043b\u0451\u0441\u0438\u043a\u043e",
+      "icon": "assets/icons/clickerclass/items/thescroller.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/TinClicker",
+      "kind": "item",
+      "internalName": "TinClicker",
+      "displayName": "Tin Clicker",
+      "displayNameRu": "\u041e\u043b\u043e\u0432\u044f\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/tinclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/TitaniumClicker",
+      "kind": "item",
+      "internalName": "TitaniumClicker",
+      "displayName": "Titanium Clicker",
+      "displayNameRu": "\u0422\u0438\u0442\u0430\u043d\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/titaniumclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/TorchClicker",
+      "kind": "item",
+      "internalName": "TorchClicker",
+      "displayName": "Torch Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440-\u0444\u0430\u043a\u0435\u043b",
+      "icon": "assets/icons/clickerclass/items/torchclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/TriggerFinger",
+      "kind": "item",
+      "internalName": "TriggerFinger",
+      "displayName": "Trigger Finger",
+      "displayNameRu": "\u0423\u043a\u0430\u0437\u0430\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u043f\u0430\u043b\u0435\u0446",
+      "icon": "assets/icons/clickerclass/items/triggerfinger.png",
+      "category": "accessory",
+      "tags": [
+        "item",
+        "accessory"
+      ]
+    },
+    {
+      "id": "ClickerClass/TungstenClicker",
+      "kind": "item",
+      "internalName": "TungstenClicker",
+      "displayName": "Tungsten Clicker",
+      "displayNameRu": "\u0412\u043e\u043b\u044c\u0444\u0440\u0430\u043c\u043e\u0432\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/tungstenclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/UmbralClicker",
+      "kind": "item",
+      "internalName": "UmbralClicker",
+      "displayName": "Umbral Clicker",
+      "displayNameRu": "\u0422\u0435\u043d\u0435\u0432\u043e\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/umbralclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/WebClicker",
+      "kind": "item",
+      "internalName": "WebClicker",
+      "displayName": "Web Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u043f\u0430\u0443\u0442\u0438\u043d\u044b",
+      "icon": "assets/icons/clickerclass/items/webclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/WitchClicker",
+      "kind": "item",
+      "internalName": "WitchClicker",
+      "displayName": "Witch Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u0432\u0435\u0434\u044c\u043c\u044b",
+      "icon": "assets/icons/clickerclass/items/witchclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/WoodenClicker",
+      "kind": "item",
+      "internalName": "WoodenClicker",
+      "displayName": "Wooden Clicker",
+      "displayNameRu": "\u0414\u0435\u0440\u0435\u0432\u044f\u043d\u043d\u044b\u0439 \u043a\u0443\u0440\u0441\u043e\u0440",
+      "icon": "assets/icons/clickerclass/items/woodenclicker.png",
+      "category": "weapon",
+      "tags": [
+        "item",
+        "weapon"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceFragment",
+      "kind": "material",
+      "internalName": "MiceFragment",
+      "displayName": "Mice Fragment",
+      "displayNameRu": "\u0424\u0440\u0430\u0433\u043c\u0435\u043d\u0442 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micefragment.png",
+      "category": "other",
+      "tags": [
+        "material",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/QuintessenceClicker",
+      "kind": "material",
+      "internalName": "QuintessenceClicker",
+      "displayName": "Quintessence Clicker",
+      "displayNameRu": "\u041a\u0443\u0440\u0441\u043e\u0440 \u043a\u0432\u0438\u043d\u0442\u044d\u0441\u0441\u0435\u043d\u0446\u0438\u0438",
+      "icon": "assets/icons/clickerclass/items/quintessenceclicker.png",
+      "category": "other",
+      "tags": [
+        "material",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/ABlissfulDay",
+      "kind": "other",
+      "internalName": "ABlissfulDay",
+      "displayName": "ABlissful Day",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u00ab\u0411\u043b\u0430\u0436\u0435\u043d\u043d\u044b\u0439 \u0434\u0435\u043d\u044c\u00bb",
+      "icon": "assets/icons/clickerclass/items/ablissfulday.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/ClickSpeedHairDye",
+      "kind": "other",
+      "internalName": "ClickSpeedHairDye",
+      "displayName": "Click Speed Hair Dye",
+      "displayNameRu": "\u041a\u0440\u0430\u0441\u043a\u0430 \u0434\u043b\u044f \u0432\u043e\u043b\u043e\u0441 \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u043d\u044b\u0445 \u043a\u043b\u0438\u043a\u043e\u0432",
+      "icon": "assets/icons/clickerclass/items/clickspeedhairdye.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/ClickerEffectHairDye",
+      "kind": "other",
+      "internalName": "ClickerEffectHairDye",
+      "displayName": "Clicker Effect Hair Dye",
+      "displayNameRu": "\u041a\u0440\u0430\u0441\u043a\u0430 \u0434\u043b\u044f \u0432\u043e\u043b\u043e\u0441 \u0441 \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u043c \u043a\u0443\u0440\u0441\u043e\u0440\u0430",
+      "icon": "assets/icons/clickerclass/items/clickereffecthairdye.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/ConfectioneryMice",
+      "kind": "other",
+      "internalName": "ConfectioneryMice",
+      "displayName": "Confectionery Mice",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u00ab\u0421\u043b\u0430\u0434\u043a\u043e\u0435 \u043d\u0430\u0436\u0430\u0442\u0438\u0435\u00bb",
+      "icon": "assets/icons/clickerclass/items/confectionerymice.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/DesktopComputer",
+      "kind": "other",
+      "internalName": "DesktopComputer",
+      "displayName": "Desktop Computer",
+      "displayNameRu": "\u041d\u0430\u0441\u0442\u043e\u043b\u044c\u043d\u044b\u0439 \u043a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440",
+      "icon": "assets/icons/clickerclass/items/desktopcomputer.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/DungeonChest",
+      "kind": "other",
+      "internalName": "DungeonChest",
+      "displayName": "Dungeon Chest",
+      "displayNameRu": "\u0421\u0443\u043d\u0434\u0443\u043a \u0422\u0435\u043c\u043d\u0438\u0446\u044b",
+      "icon": "assets/icons/clickerclass/items/dungeonchest.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/DungeonChest_Trapped",
+      "kind": "other",
+      "internalName": "DungeonChest_Trapped",
+      "displayName": "Dungeon Chest  Trapped",
+      "displayNameRu": "\u0421\u0443\u043d\u0434\u0443\u043a-\u043b\u043e\u0432\u0443\u0448\u043a\u0430 \u0422\u0435\u043c\u043d\u0438\u0446\u044b",
+      "icon": "assets/icons/clickerclass/items/dungeonchest-trapped.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/DungeonKey",
+      "kind": "other",
+      "internalName": "DungeonKey",
+      "displayName": "Dungeon Key",
+      "displayNameRu": "\u041a\u043b\u044e\u0447 \u0422\u0435\u043c\u043d\u0438\u0446\u044b",
+      "icon": "assets/icons/clickerclass/items/dungeonkey.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/Galaxies",
+      "kind": "other",
+      "internalName": "Galaxies",
+      "displayName": "Galaxies",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u00ab\u0421\u0442\u043e\u043b\u043a\u043d\u043e\u0432\u0435\u043d\u0438\u0435 \u0433\u0430\u043b\u0430\u043a\u0442\u0438\u043a\u00bb",
+      "icon": "assets/icons/clickerclass/items/galaxies.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/HeavenlyChip",
+      "kind": "other",
+      "internalName": "HeavenlyChip",
+      "displayName": "Heavenly Chip",
+      "displayNameRu": "\u041d\u0435\u0431\u0435\u0441\u043d\u0430\u044f \u043a\u0440\u043e\u0448\u043a\u0430",
+      "icon": "assets/icons/clickerclass/items/heavenlychip.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceBathtub",
+      "kind": "other",
+      "internalName": "MiceBathtub",
+      "displayName": "Mice Bathtub",
+      "displayNameRu": "\u0412\u0430\u043d\u043d\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micebathtub.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceBed",
+      "kind": "other",
+      "internalName": "MiceBed",
+      "displayName": "Mice Bed",
+      "displayNameRu": "\u041a\u0440\u043e\u0432\u0430\u0442\u044c \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micebed.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceBookcase",
+      "kind": "other",
+      "internalName": "MiceBookcase",
+      "displayName": "Mice Bookcase",
+      "displayNameRu": "\u041a\u043d\u0438\u0436\u043d\u044b\u0439 \u0448\u043a\u0430\u0444 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micebookcase.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceBrick",
+      "kind": "other",
+      "internalName": "MiceBrick",
+      "displayName": "Mice Brick",
+      "displayNameRu": "\u041a\u0438\u0440\u043f\u0438\u0447 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micebrick.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceBrickWall",
+      "kind": "other",
+      "internalName": "MiceBrickWall",
+      "displayName": "Mice Brick Wall",
+      "displayNameRu": "\u041a\u0438\u0440\u043f\u0438\u0447\u043d\u0430\u044f \u0441\u0442\u0435\u043d\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micebrickwall.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceCandelabra",
+      "kind": "other",
+      "internalName": "MiceCandelabra",
+      "displayName": "Mice Candelabra",
+      "displayNameRu": "\u041f\u043e\u0434\u0441\u0432\u0435\u0447\u043d\u0438\u043a \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micecandelabra.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceChair",
+      "kind": "other",
+      "internalName": "MiceChair",
+      "displayName": "Mice Chair",
+      "displayNameRu": "\u0421\u0442\u0443\u043b \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micechair.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceChandelier",
+      "kind": "other",
+      "internalName": "MiceChandelier",
+      "displayName": "Mice Chandelier",
+      "displayNameRu": "\u041b\u044e\u0441\u0442\u0440\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micechandelier.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceChest",
+      "kind": "other",
+      "internalName": "MiceChest",
+      "displayName": "Mice Chest",
+      "displayNameRu": "\u0421\u0443\u043d\u0434\u0443\u043a \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micechest.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceChest_Trapped",
+      "kind": "other",
+      "internalName": "MiceChest_Trapped",
+      "displayName": "Mice Chest  Trapped",
+      "displayNameRu": "\u0421\u0443\u043d\u0434\u0443\u043a-\u043b\u043e\u0432\u0443\u0448\u043a\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micechest-trapped.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceClock",
+      "kind": "other",
+      "internalName": "MiceClock",
+      "displayName": "Mice Clock",
+      "displayNameRu": "\u0427\u0430\u0441\u044b \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/miceclock.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceDoor",
+      "kind": "other",
+      "internalName": "MiceDoor",
+      "displayName": "Mice Door",
+      "displayNameRu": "\u0414\u0432\u0435\u0440\u0438 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micedoor.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceDresser",
+      "kind": "other",
+      "internalName": "MiceDresser",
+      "displayName": "Mice Dresser",
+      "displayNameRu": "\u041a\u043e\u043c\u043e\u0434 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micedresser.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceDrill",
+      "kind": "other",
+      "internalName": "MiceDrill",
+      "displayName": "Mice Drill",
+      "displayNameRu": "\u0411\u0443\u0440 \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micedrill.png",
+      "category": "other",
+      "tags": [
+        "melee",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceHamaxe",
+      "kind": "other",
+      "internalName": "MiceHamaxe",
+      "displayName": "Mice Hamaxe",
+      "displayNameRu": "\u041c\u043e\u043b\u043e\u0442\u043e\u043f\u043e\u0440 \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micehamaxe.png",
+      "category": "other",
+      "tags": [
+        "melee",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceLamp",
+      "kind": "other",
+      "internalName": "MiceLamp",
+      "displayName": "Mice Lamp",
+      "displayNameRu": "\u041b\u0430\u043c\u043f\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micelamp.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceLantern",
+      "kind": "other",
+      "internalName": "MiceLantern",
+      "displayName": "Mice Lantern",
+      "displayNameRu": "\u0424\u043e\u043d\u0430\u0440\u044c \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micelantern.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MicePiano",
+      "kind": "other",
+      "internalName": "MicePiano",
+      "displayName": "Mice Piano",
+      "displayNameRu": "\u041f\u0438\u0430\u043d\u0438\u043d\u043e \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micepiano.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MicePickaxe",
+      "kind": "other",
+      "internalName": "MicePickaxe",
+      "displayName": "Mice Pickaxe",
+      "displayNameRu": "\u041a\u0438\u0440\u043a\u0430 \u0444\u0440\u0430\u0433\u043c\u0435\u043d\u0442\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micepickaxe.png",
+      "category": "other",
+      "tags": [
+        "melee",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MicePlatform",
+      "kind": "other",
+      "internalName": "MicePlatform",
+      "displayName": "Mice Platform",
+      "displayNameRu": "\u041f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/miceplatform.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceSink",
+      "kind": "other",
+      "internalName": "MiceSink",
+      "displayName": "Mice Sink",
+      "displayNameRu": "\u0420\u0430\u043a\u043e\u0432\u0438\u043d\u0430 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micesink.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceSofa",
+      "kind": "other",
+      "internalName": "MiceSofa",
+      "displayName": "Mice Sofa",
+      "displayNameRu": "\u0414\u0438\u0432\u0430\u043d \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micesofa.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceTable",
+      "kind": "other",
+      "internalName": "MiceTable",
+      "displayName": "Mice Table",
+      "displayNameRu": "\u0421\u0442\u043e\u043b \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micetable.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceToilet",
+      "kind": "other",
+      "internalName": "MiceToilet",
+      "displayName": "Mice Toilet",
+      "displayNameRu": "\u0423\u043d\u0438\u0442\u0430\u0437 \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/micetoilet.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/MiceWorkbench",
+      "kind": "other",
+      "internalName": "MiceWorkbench",
+      "displayName": "Mice Workbench",
+      "displayNameRu": "\u0412\u0435\u0440\u0441\u0442\u0430\u043a \u043c\u044b\u0448\u0438",
+      "icon": "assets/icons/clickerclass/items/miceworkbench.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/OutsideTheCave",
+      "kind": "other",
+      "internalName": "OutsideTheCave",
+      "displayName": "Outside The Cave",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u00ab\u0417\u0430 \u043f\u0440\u0435\u0434\u0435\u043b\u0430\u043c\u0438 \u043f\u0435\u0449\u0435\u0440\u044b\u00bb",
+      "icon": "assets/icons/clickerclass/items/outsidethecave.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/Papa",
+      "kind": "other",
+      "internalName": "Papa",
+      "displayName": "Papa",
+      "displayNameRu": "\u041a\u0430\u0440\u0442\u0438\u043d\u0430 \u00ab\u041f\u0430\u043f\u0430\u00bb",
+      "icon": "assets/icons/clickerclass/items/papa.png",
+      "category": "other",
+      "tags": [
+        "consumable",
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/SFXButtonA",
+      "kind": "other",
+      "internalName": "SFXButtonA",
+      "displayName": "SFXButton A",
+      "displayNameRu": "\u041a\u043d\u043e\u043f\u043a\u0430 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0445 \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u0432 A",
+      "icon": "assets/icons/clickerclass/items/sfxbuttona.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/SFXButtonB",
+      "kind": "other",
+      "internalName": "SFXButtonB",
+      "displayName": "SFXButton B",
+      "displayNameRu": "\u041a\u043d\u043e\u043f\u043a\u0430 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0445 \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u0432 B",
+      "icon": "assets/icons/clickerclass/items/sfxbuttonb.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/SFXButtonC",
+      "kind": "other",
+      "internalName": "SFXButtonC",
+      "displayName": "SFXButton C",
+      "displayNameRu": "\u041a\u043d\u043e\u043f\u043a\u0430 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0445 \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u0432 C",
+      "icon": "assets/icons/clickerclass/items/sfxbuttonc.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/SFXButtonD",
+      "kind": "other",
+      "internalName": "SFXButtonD",
+      "displayName": "SFXButton D",
+      "displayNameRu": "\u041a\u043d\u043e\u043f\u043a\u0430 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0445 \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u0432 D",
+      "icon": "assets/icons/clickerclass/items/sfxbuttond.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/SFXButtonE",
+      "kind": "other",
+      "internalName": "SFXButtonE",
+      "displayName": "SFXButton E",
+      "displayNameRu": "\u041a\u043d\u043e\u043f\u043a\u0430 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0445 \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u0432 E",
+      "icon": "assets/icons/clickerclass/items/sfxbuttone.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/SFXButtonF",
+      "kind": "other",
+      "internalName": "SFXButtonF",
+      "displayName": "SFXButton F",
+      "displayNameRu": "\u041a\u043d\u043e\u043f\u043a\u0430 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0445 \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u0432 F",
+      "icon": "assets/icons/clickerclass/items/sfxbuttonf.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/SFXButtonG",
+      "kind": "other",
+      "internalName": "SFXButtonG",
+      "displayName": "SFXButton G",
+      "displayNameRu": "\u041a\u043d\u043e\u043f\u043a\u0430 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0445 \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u0432 G",
+      "icon": "assets/icons/clickerclass/items/sfxbuttong.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/SFXButtonH",
+      "kind": "other",
+      "internalName": "SFXButtonH",
+      "displayName": "SFXButton H",
+      "displayNameRu": "\u041a\u043d\u043e\u043f\u043a\u0430 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0445 \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u0432 H",
+      "icon": "assets/icons/clickerclass/items/sfxbuttonh.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    },
+    {
+      "id": "ClickerClass/SFXSoundboard",
+      "kind": "other",
+      "internalName": "SFXSoundboard",
+      "displayName": "SFXSoundboard",
+      "displayNameRu": "\u0414\u0435\u043a\u0430 \u0437\u0432\u0443\u043a\u043e\u0432\u044b\u0445 \u044d\u0444\u0444\u0435\u043a\u0442\u043e\u0432",
+      "icon": "assets/icons/clickerclass/items/sfxsoundboard.png",
+      "category": "other",
+      "tags": [
+        "other"
+      ]
+    }
+  ]
+}

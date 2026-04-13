@@ -95,6 +95,7 @@ function classLabel(tag) {
     ranged: { en: "Ranged", ru: "\u0421\u0442\u0440\u0435\u043b\u043e\u043a" },
     magic: { en: "Magic", ru: "\u041c\u0430\u0433" },
     summoner: { en: "Summoner", ru: "\u041f\u0440\u0438\u0437\u044b\u0432\u0430\u0442\u0435\u043b\u044c" },
+    clicker: { en: "Clicker", ru: "\u041a\u043b\u0438\u043a\u0435\u0440" },
     rogue: { en: "Rogue", ru: "\u0420\u0430\u0437\u0431\u043e\u0439\u043d\u0438\u043a" },
     bard: { en: "Bard", ru: "\u0411\u0430\u0440\u0434" },
     other: { en: "Other", ru: "\u0414\u0440\u0443\u0433\u043e\u0435" }
