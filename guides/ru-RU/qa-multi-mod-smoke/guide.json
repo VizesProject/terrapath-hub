@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "qa-multi-mod-smoke",
+  "title": "QA Smoke: все моды + кликер",
+  "author": "TerraPath QA",
+  "language": "ru-RU",
+  "summary": "Техническое тестовое руководство для проверки фильтров, иконок, категорий предметов, подгрупп аксессуаров и рендера контента из всех подключенных модов.",
+  "requiredMods": [
+    "Terraria",
+    "CalamityMod",
+    "ThoriumMod",
+    "SpiritReforged",
+    "Fargowiltas",
+    "FargowiltasSouls",
+    "FargowiltasCrossmod",
+    "CalamityEntropy",
+    "CalamityFables",
+    "NoxusBoss",
+    "CatalystMod",
+    "InfernumMode",
+    "CalamityHunt",
+    "StarsAbove",
+    "StarlightRiver",
+    "ClickerClass"
+  ],
+  "classTags": [
+    "melee",
+    "ranged",
+    "magic",
+    "summoner",
+    "rogue",
+    "bard",
+    "clicker"
+  ],
+  "createdAt": "2026-04-13",
+  "updatedAt": "2026-04-13",
+  "stages": [
+    {
+      "id": "qa-prehardmode",
+      "title": "Pre-Hardmode QA {{icon:Terraria/BrainofCthulhu}} {{icon:CalamityMod/Anahita}}",
+      "era": "prehardmode",
+      "subStages": [
+        {
+          "title": "Проверка базовых pickers",
+          "description": "Проверяем выбор предметов Terraria/Calamity/Thorium/Spirit и новый класс {{icon:ClickerClass/AdamantiteClicker}}."
+        }
+      ],
+      "description": "Стадия проверяет inline-иконки в тексте: {{icon:Terraria/BloodMoon}}, {{icon:Terraria/CorruptionBiome}}, {{icon:CalamityMod/AcidRain}}, {{icon:CalamityMod/Abyss}}.",
+      "bossRefs": [
+        "Terraria/BrainofCthulhu",
+        "CalamityMod/Anahita",
+        "ThoriumMod/Aquaius",
+        "SpiritReforged/Scarabeus"
+      ],
+      "items": [
+        {
+          "itemId": "Terraria/AdamantiteSword",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/AbandonedSlimeStaff",
+          "category": "weapon"
+        },
+        {
+          "itemId": "ThoriumMod/AcousticGuitar",
+          "category": "weapon"
+        },
+        {
+          "itemId": "SpiritReforged/AdornedBow",
+          "category": "weapon"
+        },
+        {
+          "itemId": "ClickerClass/AdamantiteClicker",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/AaronsHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "ClickerClass/MiceBoots",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/AdhesiveBandage",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "ClickerClass/AimAssistModule",
+          "category": "accessory",
+          "subgroup": "Кликер"
+        },
+        {
+          "itemId": "Terraria/ShimmerCampfire",
+          "category": "buff"
+        },
+        {
+          "itemId": "ClickerClass/CandleClicker",
+          "category": "buff"
+        },
+        {
+          "itemId": "Terraria/AlphabetStatue0",
+          "category": "other"
+        }
+      ]
+    },
+    {
+      "id": "qa-hardmode",
+      "title": "Hardmode QA {{icon:FargowiltasSouls/AbomBoss}} {{icon:CalamityEntropy/CruiserHead}}",
+      "era": "hardmode",
+      "subStages": [
+        {
+          "title": "Проверка сложных нормализаций",
+          "description": "Проверяем canonical boss ids, скрытые сегменты и категории на волнах Fargo/Entropy/Fables."
+        }
+      ],
+      "description": "Тут проверяем проблемные зоны боссов и отображение иконок: {{icon:CalamityEntropy/CruiserHead}}, {{icon:CalamityFables/DesertScourge}}, {{icon:CalamityFables/SirNautilus}}.",
+      "bossRefs": [
+        "FargowiltasSouls/AbomBoss",
+        "FargowiltasCrossmod/PermafrostBoss",
+        "CalamityEntropy/AbyssalWraith",
+        "CalamityFables/Crabulon",
+        "NoxusBoss/AvatarOfEmptiness"
+      ],
+      "items": [
+        {
+          "itemId": "Fargowiltas/BoomShuriken",
+          "category": "weapon"
+        },
+        {
+          "itemId": "FargowiltasSouls/BigBrainBuster",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityEntropy/AbyssFractal",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityFables/AmpstringBow",
+          "category": "weapon"
+        },
+        {
+          "itemId": "NoxusBoss/StaffOfRejuvenation",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Fargowiltas/AbominationnBody",
+          "category": "armor"
+        },
+        {
+          "itemId": "CalamityEntropy/AcropolisHeavyArmor",
+          "category": "armor"
+        },
+        {
+          "itemId": "CalamityFables/AbandonedWulfrumHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "FargowiltasCrossmod/AerospecEnchant",
+          "category": "accessory",
+          "subgroup": "Кроссмод"
+        },
+        {
+          "itemId": "CalamityEntropy/AbyssLantern",
+          "category": "accessory",
+          "subgroup": "Утилити"
+        },
+        {
+          "itemId": "FargowiltasSouls/AccursedRags",
+          "category": "buff"
+        },
+        {
+          "itemId": "CalamityFables/BouncyDart",
+          "category": "buff"
+        },
+        {
+          "itemId": "FargowiltasCrossmod/DefiledCore",
+          "category": "other"
+        }
+      ]
+    },
+    {
+      "id": "qa-postmoonlord",
+      "title": "Post-Moon Lord QA {{icon:CatalystMod/Astrageldon}} {{icon:StarsAbove/ArbitrationBoss}}",
+      "era": "postmoonlord",
+      "subStages": [
+        {
+          "title": "Финальная проверка мод-паков",
+          "description": "Собираем в одной панели поздние моды и проверяем рендер guide page + reader parity."
+        }
+      ],
+      "description": "Финальный тест: {{icon:CalamityHunt/Goozma}}, {{icon:StarlightRiver/Glassweaver}}, {{icon:InfernumMode/BereftVassal}}, {{icon:StarsAbove/ArbitrationBoss}}.",
+      "bossRefs": [
+        "CatalystMod/Astrageldon",
+        "InfernumMode/BereftVassal",
+        "CalamityHunt/Goozma",
+        "StarsAbove/ArbitrationBoss",
+        "StarlightRiver/Glassweaver"
+      ],
+      "items": [
+        {
+          "itemId": "CatalystMod/Astragelgun",
+          "category": "weapon"
+        },
+        {
+          "itemId": "InfernumMode/AridBattlecry",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityHunt/AntiMassAccumulator",
+          "category": "weapon"
+        },
+        {
+          "itemId": "StarsAbove/AegisDriver",
+          "category": "weapon"
+        },
+        {
+          "itemId": "StarlightRiver/ArchaeologistsWhip",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CatalystMod/AstrageldonMask",
+          "category": "armor"
+        },
+        {
+          "itemId": "StarsAbove/AfterburnerBottom",
+          "category": "armor"
+        },
+        {
+          "itemId": "StarlightRiver/AncientStarwoodBoots",
+          "category": "armor"
+        },
+        {
+          "itemId": "InfernumMode/CherishedSealocket",
+          "category": "accessory",
+          "subgroup": "Защита"
+        },
+        {
+          "itemId": "StarsAbove/AfterburnerWings",
+          "category": "accessory",
+          "subgroup": "Мобильность"
+        },
+        {
+          "itemId": "StarlightRiver/AcornSprout",
+          "category": "accessory",
+          "subgroup": "Утилити"
+        },
+        {
+          "itemId": "CatalystMod/AstraJelly",
+          "category": "buff"
+        },
+        {
+          "itemId": "InfernumMode/Blahaj",
+          "category": "buff"
+        },
+        {
+          "itemId": "CalamityHunt/ChromaticCampfire",
+          "category": "buff"
+        },
+        {
+          "itemId": "NoxusBoss/LoreAvatar",
+          "category": "other"
+        }
+      ]
+    }
+  ],
+  "guideTags": [
+    "qa",
+    "smoke",
+    "multimod",
+    "editor"
+  ]
+}

@@ -3,8 +3,14 @@
   "contentType": "supplement",
   "entries": [],
   "bossNormalization": {
-    "aliasMap": {},
-    "hiddenBosses": [],
+    "aliasMap": {
+      "CalamityEntropy/CruiserBody": "CalamityEntropy/CruiserHead",
+      "CalamityEntropy/CruiserTail": "CalamityEntropy/CruiserHead"
+    },
+    "hiddenBosses": [
+      "CalamityEntropy/CruiserBody",
+      "CalamityEntropy/CruiserTail"
+    ],
     "eligibleMinibosses": [],
     "columnMap": {},
     "displayOverrides": {}

@@ -562,6 +562,8 @@ def apply_boss_normalization(entries_by_id: dict[str, dict], supplement: dict) -
             entry["displayName"] = str(values["displayName"])
         if values.get("displayNameRu"):
             entry["displayNameRu"] = str(values["displayNameRu"])
+        if values.get("icon"):
+            entry["icon"] = str(values["icon"])
 
 
 def enforce_entry_shape(entries_by_id: dict[str, dict]) -> None:

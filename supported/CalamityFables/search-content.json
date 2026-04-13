@@ -42,10 +42,10 @@
       "tags": [
         "boss"
       ],
-      "bossPickerEligible": true,
-      "canonicalBossId": "CalamityFables/DesertScourgeHitbox",
+      "bossPickerEligible": false,
+      "canonicalBossId": "CalamityFables/DesertScourge",
       "bossColumn": "hardmode",
-      "pickerHidden": false
+      "pickerHidden": true
     },
     {
       "id": "CalamityFables/SirNautilus",
@@ -53,7 +53,7 @@
       "internalName": "SirNautilus",
       "displayName": "Sir Nautilus",
       "displayNameRu": "\u0421\u044d\u0440 \u041d\u0430\u0443\u0442\u0438\u043b\u0443\u0441",
-      "icon": "assets/icons/calamityfables/bosses/sirnautilus.png",
+      "icon": "assets/icons/calamityfables/items/sirnautilusbossmask.png",
       "tags": [
         "boss"
       ],

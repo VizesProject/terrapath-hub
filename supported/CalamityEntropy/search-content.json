@@ -57,10 +57,10 @@
       "tags": [
         "boss"
       ],
-      "bossPickerEligible": true,
-      "canonicalBossId": "CalamityEntropy/CruiserBody",
+      "bossPickerEligible": false,
+      "canonicalBossId": "CalamityEntropy/CruiserHead",
       "bossColumn": "hardmode",
-      "pickerHidden": false
+      "pickerHidden": true
     },
     {
       "id": "CalamityEntropy/CruiserHead",
@@ -87,10 +87,10 @@
       "tags": [
         "boss"
       ],
-      "bossPickerEligible": true,
-      "canonicalBossId": "CalamityEntropy/CruiserTail",
+      "bossPickerEligible": false,
+      "canonicalBossId": "CalamityEntropy/CruiserHead",
       "bossColumn": "hardmode",
-      "pickerHidden": false
+      "pickerHidden": true
     },
     {
       "id": "CalamityEntropy/Luminaris",

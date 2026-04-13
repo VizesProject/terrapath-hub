@@ -778,6 +778,11 @@ function saveAndRender(full = true) {
 }
 
 function choiceCard(option, selected, groupName) {
+  if (groupName === "mods") {
+    const title = option.label || option[lang()] || option.value;
+    return `<label class="choice-card"><input type="checkbox" value="${esc(option.value)}" data-choice-group="${esc(groupName)}" ${selected.includes(option.value) ? "checked" : ""}><span class="choice-card__copy"><strong class="choice-card__title">${esc(title)}</strong></span></label>`;
+  }
+
   if (groupName !== "mods") {
     const title = option.label || option[lang()] || option.value;
     return `<label class="choice-card"><input type="checkbox" value="${esc(option.value)}" data-choice-group="${esc(groupName)}" ${selected.includes(option.value) ? "checked" : ""}><span class="choice-card__copy"><strong class="choice-card__title">${esc(title)}</strong></span></label>`;

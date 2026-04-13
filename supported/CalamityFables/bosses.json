@@ -31,26 +31,12 @@
       "bossColumn": "hardmode"
     },
     {
-      "id": "CalamityFables/DesertScourgeHitbox",
-      "kind": "boss",
-      "internalName": "DesertScourgeHitbox",
-      "displayName": "Desert Scourge Hitbox",
-      "displayNameRu": "\u041f\u0443\u0441\u0442\u044b\u043d\u043d\u044b\u0439 \u0431\u0438\u0447",
-      "icon": "assets/icons/calamityfables/bosses/desertscourgehitbox.png",
-      "tags": [
-        "boss"
-      ],
-      "bossPickerEligible": true,
-      "canonicalBossId": "CalamityFables/DesertScourgeHitbox",
-      "bossColumn": "hardmode"
-    },
-    {
       "id": "CalamityFables/SirNautilus",
       "kind": "boss",
       "internalName": "SirNautilus",
       "displayName": "Sir Nautilus",
       "displayNameRu": "\u0421\u044d\u0440 \u041d\u0430\u0443\u0442\u0438\u043b\u0443\u0441",
-      "icon": "assets/icons/calamityfables/bosses/sirnautilus.png",
+      "icon": "assets/icons/calamityfables/items/sirnautilusbossmask.png",
       "tags": [
         "boss"
       ],

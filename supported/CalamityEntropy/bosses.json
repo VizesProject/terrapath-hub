@@ -45,20 +45,6 @@
       "bossColumn": "hardmode"
     },
     {
-      "id": "CalamityEntropy/CruiserBody",
-      "kind": "boss",
-      "internalName": "CruiserBody",
-      "displayName": "Cruiser Body",
-      "displayNameRu": "\u041a\u0440\u0435\u0439\u0441\u0435\u0440",
-      "icon": "assets/icons/calamityentropy/bosses/cruiserbody.png",
-      "tags": [
-        "boss"
-      ],
-      "bossPickerEligible": true,
-      "canonicalBossId": "CalamityEntropy/CruiserBody",
-      "bossColumn": "hardmode"
-    },
-    {
       "id": "CalamityEntropy/CruiserHead",
       "kind": "boss",
       "internalName": "CruiserHead",
@@ -70,20 +56,6 @@
       ],
       "bossPickerEligible": true,
       "canonicalBossId": "CalamityEntropy/CruiserHead",
-      "bossColumn": "hardmode"
-    },
-    {
-      "id": "CalamityEntropy/CruiserTail",
-      "kind": "boss",
-      "internalName": "CruiserTail",
-      "displayName": "Cruiser Tail",
-      "displayNameRu": "\u041a\u0440\u0435\u0439\u0441\u0435\u0440",
-      "icon": "assets/icons/calamityentropy/bosses/cruisertail.png",
-      "tags": [
-        "boss"
-      ],
-      "bossPickerEligible": true,
-      "canonicalBossId": "CalamityEntropy/CruiserTail",
       "bossColumn": "hardmode"
     },
     {

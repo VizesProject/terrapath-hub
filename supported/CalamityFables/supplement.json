@@ -3,11 +3,19 @@
   "contentType": "supplement",
   "entries": [],
   "bossNormalization": {
-    "aliasMap": {},
-    "hiddenBosses": [],
+    "aliasMap": {
+      "CalamityFables/DesertScourgeHitbox": "CalamityFables/DesertScourge"
+    },
+    "hiddenBosses": [
+      "CalamityFables/DesertScourgeHitbox"
+    ],
     "eligibleMinibosses": [],
     "columnMap": {},
-    "displayOverrides": {}
+    "displayOverrides": {
+      "CalamityFables/SirNautilus": {
+        "icon": "assets/icons/calamityfables/items/sirnautilusbossmask.png"
+      }
+    }
   },
   "taxonomyOverrides": {
     "forcedCategories": {},
