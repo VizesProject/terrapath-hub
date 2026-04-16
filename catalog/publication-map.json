@@ -1,4 +1,11 @@
 {
   "schemaVersion": 1,
-  "issues": {}
+  "issues": {
+    "2": {
+      "guideId": "terraria-melee-for-test",
+      "language": "en-US",
+      "path": "guides/en-US/terraria-melee-for-test/guide.json",
+      "updatedAt": "2026-04-16T20:18:55Z"
+    }
+  }
 }
