@@ -19,6 +19,27 @@
       "stageCount": 19,
       "path": "guides/ru-RU/calamity-ranger-wiki-3-eras/guide.json",
       "popularity": 0
+    },
+    {
+      "id": "terraria-melee-for-test",
+      "title": "For test",
+      "author": "Random145",
+      "language": "ru-RU",
+      "summary": "\u041f\u0440\u0438\u043a\u043e\u043b \u0440\u043e\u0444\u043b",
+      "requiredMods": [
+        "Terraria",
+        "CalamityMod",
+        "ThoriumMod"
+      ],
+      "classTags": [
+        "melee",
+        "summoner"
+      ],
+      "guideTags": [],
+      "updatedAt": "2026-04-16T21:15:43Z",
+      "stageCount": 3,
+      "path": "guides/ru-RU/terraria-melee-for-test/guide.json",
+      "popularity": 0
     }
   ]
 }
