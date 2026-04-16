@@ -84,8 +84,45 @@ jobs:
         if: steps.gate.outputs.run_publish == 'true'
         run: python tools/build_catalog.py
 
-      - name: Create publication pull request (GITHUB_TOKEN)
+      - name: Detect BOT_PAT availability
         if: steps.gate.outputs.run_publish == 'true'
+        id: bot_pat
+        env:
+          BOT_PAT: ${{ secrets.BOT_PAT }}
+        run: |
+          set -euo pipefail
+          if [ -n "${BOT_PAT}" ]; then
+            echo "has_bot_pat=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_bot_pat=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Create publication pull request (BOT_PAT)
+        id: cpr_pat
+        if: steps.gate.outputs.run_publish == 'true' && steps.bot_pat.outputs.has_bot_pat == 'true'
+        continue-on-error: true
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.BOT_PAT }}
+          commit-message: "Publish guide from issue #${{ github.event.issue.number }}"
+          branch: "publish/issue-${{ github.event.issue.number }}"
+          delete-branch: true
+          title: "Publish guide: ${{ steps.export.outputs.guide_id }}"
+          body: |
+            Closes #${{ github.event.issue.number }}
+
+            This pull request was created automatically by the TerraPath moderation workflow.
+
+            Published guide:
+            - ID: `${{ steps.export.outputs.guide_id }}`
+            - Path: `${{ steps.export.outputs.guide_path }}`
+          labels: automated-pr
+          add-paths: |
+            guides/**
+            catalog/**
+
+      - name: Create publication pull request (GITHUB_TOKEN fallback)
+        if: steps.gate.outputs.run_publish == 'true' && steps.bot_pat.outputs.has_bot_pat != 'true'
         id: cpr_default
         continue-on-error: true
         uses: peter-evans/create-pull-request@v6
@@ -108,61 +145,24 @@ jobs:
             guides/**
             catalog/**
 
-      - name: Detect BOT_PAT availability
-        if: steps.gate.outputs.run_publish == 'true'
-        id: bot_pat
-        env:
-          BOT_PAT: ${{ secrets.BOT_PAT }}
-        run: |
-          set -euo pipefail
-          if [ -n "${BOT_PAT}" ]; then
-            echo "has_bot_pat=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "has_bot_pat=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Create publication pull request (BOT_PAT fallback)
-        id: cpr_pat
-        if: steps.gate.outputs.run_publish == 'true' && steps.cpr_default.outcome == 'failure' && steps.bot_pat.outputs.has_bot_pat == 'true'
-        continue-on-error: true
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.BOT_PAT }}
-          commit-message: "Publish guide from issue #${{ github.event.issue.number }}"
-          branch: "publish/issue-${{ github.event.issue.number }}"
-          delete-branch: true
-          title: "Publish guide: ${{ steps.export.outputs.guide_id }}"
-          body: |
-            Closes #${{ github.event.issue.number }}
-
-            This pull request was created automatically by the TerraPath moderation workflow.
-
-            Published guide:
-            - ID: `${{ steps.export.outputs.guide_id }}`
-            - Path: `${{ steps.export.outputs.guide_path }}`
-          labels: automated-pr
-          add-paths: |
-            guides/**
-            catalog/**
-
       - name: Resolve publication result
         if: steps.gate.outputs.run_publish == 'true'
         id: publication
         env:
-          DEFAULT_OUTCOME: ${{ steps.cpr_default.outcome }}
           PAT_OUTCOME: ${{ steps.cpr_pat.outcome }}
-          DEFAULT_PR_URL: ${{ steps.cpr_default.outputs.pull-request-url }}
+          DEFAULT_OUTCOME: ${{ steps.cpr_default.outcome }}
           PAT_PR_URL: ${{ steps.cpr_pat.outputs.pull-request-url }}
+          DEFAULT_PR_URL: ${{ steps.cpr_default.outputs.pull-request-url }}
         run: |
           set -euo pipefail
-          PR_URL="$DEFAULT_PR_URL"
+          PR_URL="$PAT_PR_URL"
           if [ -z "$PR_URL" ]; then
-            PR_URL="$PAT_PR_URL"
+            PR_URL="$DEFAULT_PR_URL"
           fi
 
           if [ -n "$PR_URL" ]; then
             OUTCOME="created"
-          elif [ "$DEFAULT_OUTCOME" = "failure" ] && { [ -z "$PAT_OUTCOME" ] || [ "$PAT_OUTCOME" = "failure" ]; }; then
+          elif [ "$PAT_OUTCOME" = "failure" ] && { [ -z "$DEFAULT_OUTCOME" ] || [ "$DEFAULT_OUTCOME" = "failure" ]; }; then
             OUTCOME="failure"
           else
             OUTCOME="no_changes"
