@@ -1,4 +1,11 @@
 {
   "schemaVersion": 1,
-  "issues": {}
+  "issues": {
+    "1": {
+      "guideId": "terraria-melee-vanilla-melee-starter-path",
+      "language": "en-US",
+      "path": "guides/en-US/terraria-melee-vanilla-melee-starter-path/guide.json",
+      "updatedAt": "2026-04-16T19:36:54Z"
+    }
+  }
 }

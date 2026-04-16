@@ -2,6 +2,25 @@
   "catalogSchemaVersion": 1,
   "guides": [
     {
+      "id": "terraria-melee-vanilla-melee-starter-path",
+      "title": "Vanilla Melee Starter Path",
+      "author": "TerraPath Team",
+      "language": "en-US",
+      "summary": "A simple vanilla melee progression guide.",
+      "requiredMods": [
+        "Terraria",
+        "CalamityMod"
+      ],
+      "classTags": [
+        "melee"
+      ],
+      "guideTags": [],
+      "updatedAt": "2026-04-16T19:36:54Z",
+      "stageCount": 3,
+      "path": "guides/en-US/terraria-melee-vanilla-melee-starter-path/guide.json",
+      "popularity": 0
+    },
+    {
       "id": "calamity-ranged-wiki-full-3-era",
       "title": "Calamity Ranger: wiki copy (3 \u044d\u043f\u043e\u0445\u0438)",
       "author": "TerraPath Team",
