@@ -108,9 +108,22 @@ jobs:
             guides/**
             catalog/**
 
+      - name: Detect BOT_PAT availability
+        if: steps.gate.outputs.run_publish == 'true'
+        id: bot_pat
+        env:
+          BOT_PAT: ${{ secrets.BOT_PAT }}
+        run: |
+          set -euo pipefail
+          if [ -n "${BOT_PAT}" ]; then
+            echo "has_bot_pat=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_bot_pat=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Create publication pull request (BOT_PAT fallback)
         id: cpr_pat
-        if: steps.gate.outputs.run_publish == 'true' && steps.cpr_default.outcome == 'failure' && secrets.BOT_PAT != ''
+        if: steps.gate.outputs.run_publish == 'true' && steps.cpr_default.outcome == 'failure' && steps.bot_pat.outputs.has_bot_pat == 'true'
         continue-on-error: true
         uses: peter-evans/create-pull-request@v6
         with:
