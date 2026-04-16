@@ -50,6 +50,10 @@
           "category": "armor"
         },
         {
+          "itemId": "CalamityMod/WulfrumHat",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/SpiritGlyph",
           "category": "accessory",
           "subgroup": "Универсальные"
@@ -61,6 +65,18 @@
         },
         {
           "itemId": "Terraria/Gi",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/GoldHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/PlatinumHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/SilverHelmet",
           "category": "armor"
         },
         {
@@ -77,6 +93,11 @@
           "itemId": "CalamityMod/RoverDrive",
           "category": "accessory",
           "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/CloudinaBottle",
+          "category": "accessory",
+          "subgroup": "Мобильные"
         },
         {
           "itemId": "Terraria/FrogLeg",
@@ -119,7 +140,17 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/RoastedBird",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -134,7 +165,17 @@
           "subgroup": "Защитные"
         },
         {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
           "itemId": "Terraria/ThornsPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -178,6 +219,14 @@
           "category": "armor"
         },
         {
+          "itemId": "CalamityMod/VictideHeadSummon",
+          "category": "armor"
+        },
+        {
+          "itemId": "CalamityMod/WulfrumHat",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/SpiritGlyph",
           "category": "accessory",
           "subgroup": "Универсальные"
@@ -191,6 +240,14 @@
           "itemId": "Terraria/SummoningPotion",
           "category": "buff",
           "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/GoldHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/PlatinumHelmet",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/UnholyTonic",
@@ -216,6 +273,11 @@
           "itemId": "CalamityMod/RoverDrive",
           "category": "accessory",
           "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/BalloonPufferfish",
+          "category": "accessory",
+          "subgroup": "Мобильные"
         },
         {
           "itemId": "Terraria/CreativeWings",
@@ -273,7 +335,17 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -293,7 +365,17 @@
           "subgroup": "Мобильные"
         },
         {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
           "itemId": "Terraria/ThornsPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -334,6 +416,10 @@
           "category": "weapon"
         },
         {
+          "itemId": "Terraria/ObsidianHelm",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/SpiritGlyph",
           "category": "accessory",
           "subgroup": "Универсальные"
@@ -347,6 +433,19 @@
           "itemId": "Terraria/SummoningPotion",
           "category": "buff",
           "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/CrimsonHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/ShadowHelmet",
+          "category": "armor"
         },
         {
           "itemId": "Terraria/BrainOfConfusion",
@@ -377,6 +476,11 @@
           "itemId": "Terraria/WormScarf",
           "category": "accessory",
           "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/BalloonPufferfish",
+          "category": "accessory",
+          "subgroup": "Мобильные"
         },
         {
           "itemId": "Terraria/CreativeWings",
@@ -419,7 +523,22 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/Honeyfin",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -439,7 +558,17 @@
           "subgroup": "Мобильные"
         },
         {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
           "itemId": "Terraria/ThornsPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -484,6 +613,18 @@
           "category": "weapon"
         },
         {
+          "itemId": "CalamityMod/AerospecHeadSummon",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/BeeHeadgear",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/ObsidianHelm",
+          "category": "armor"
+        },
+        {
           "itemId": "Terraria/HiveBackpack",
           "category": "accessory",
           "subgroup": "Атакующие"
@@ -519,8 +660,21 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/Aestheticus",
           "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/CrimsonHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/ShadowHelmet",
+          "category": "armor"
         },
         {
           "itemId": "Terraria/BrainOfConfusion",
@@ -583,7 +737,22 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/Honeyfin",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -598,9 +767,24 @@
           "subgroup": "Защитные"
         },
         {
+          "itemId": "Terraria/WarmthPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
           "itemId": "CalamityMod/BoundingPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -642,6 +826,14 @@
           "category": "weapon"
         },
         {
+          "itemId": "Terraria/BeeHeadgear",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/ObsidianHelm",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/StatigelArmor",
           "category": "armor"
         },
@@ -672,6 +864,16 @@
         },
         {
           "itemId": "Terraria/SummoningPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
           "category": "buff",
           "subgroup": "Атакующие"
         },
@@ -745,12 +947,32 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/Honeyfin",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/RestorationPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/InfernoPotion",
           "category": "buff",
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -775,9 +997,19 @@
           "subgroup": "Мобильные"
         },
         {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
           "itemId": "Terraria/SliceOfCake",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -809,6 +1041,10 @@
         {
           "itemId": "Terraria/FireWhip",
           "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/SpiderMask",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/TheFirstShadowflame",
@@ -846,12 +1082,26 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/LunicEye",
           "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
           "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/CrystalNinjaHelmet",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/AmalgamatedBrain",
@@ -934,7 +1184,17 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -959,9 +1219,24 @@
           "subgroup": "Защитные"
         },
         {
+          "itemId": "Terraria/WarmthPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -1000,6 +1275,14 @@
           "category": "weapon"
         },
         {
+          "itemId": "Terraria/SpiderMask",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/SquireGreatHelm",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/TheFirstShadowflame",
           "category": "accessory",
           "subgroup": "Атакующие"
@@ -1035,12 +1318,26 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/LunicEye",
           "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
           "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/CrystalNinjaHelmet",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/AmalgamatedBrain",
@@ -1063,7 +1360,7 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "CalamityMod/HoneyDew",
+          "itemId": "Terraria/CharmofMyths",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -1123,7 +1420,17 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -1151,6 +1458,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -1188,6 +1505,14 @@
           "category": "weapon"
         },
         {
+          "itemId": "CalamityMod/DaedalusHeadSummon",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/SquireGreatHelm",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/TheFirstShadowflame",
           "category": "accessory",
           "subgroup": "Атакующие"
@@ -1223,12 +1548,26 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/LunicEye",
           "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
           "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/CrystalNinjaHelmet",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/AmalgamatedBrain",
@@ -1251,7 +1590,7 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "CalamityMod/HoneyDew",
+          "itemId": "Terraria/CharmofMyths",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -1311,7 +1650,17 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -1339,6 +1688,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -1376,6 +1735,18 @@
           "category": "weapon"
         },
         {
+          "itemId": "CalamityMod/DaedalusHeadSummon",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/HallowedHeadgear",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/SquireGreatHelm",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/TheFirstShadowflame",
           "category": "accessory",
           "subgroup": "Атакующие"
@@ -1411,6 +1782,16 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/LunicEye",
           "category": "weapon"
         },
@@ -1439,7 +1820,7 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "CalamityMod/HoneyDew",
+          "itemId": "Terraria/CharmofMyths",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -1489,6 +1870,11 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
           "category": "buff",
           "subgroup": "Защитные"
@@ -1512,6 +1898,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -1553,8 +1949,24 @@
           "category": "weapon"
         },
         {
+          "itemId": "CalamityMod/BorealisBomber",
+          "category": "weapon"
+        },
+        {
           "itemId": "Terraria/MaceWhip",
           "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/FathomSwarmerVisage",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/SquireGreatHelm",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/TikiMask",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/HallowedRune",
@@ -1592,12 +2004,26 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/LunicEye",
           "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
           "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/ReaverCuisses",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/AmalgamatedBrain",
@@ -1620,7 +2046,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/FrozenShield",
+          "itemId": "Terraria/CharmofMyths",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -1675,7 +2101,17 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -1703,6 +2139,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -1740,6 +2186,10 @@
           "category": "weapon"
         },
         {
+          "itemId": "CalamityMod/BorealisBomber",
+          "category": "weapon"
+        },
+        {
           "itemId": "Terraria/ScytheWhip",
           "category": "weapon"
         },
@@ -1749,6 +2199,10 @@
         },
         {
           "itemId": "CalamityMod/HydrothermicArmor",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/SquireAltHead",
           "category": "armor"
         },
         {
@@ -1787,12 +2241,26 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/LunicEye",
           "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
           "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/ReaverCuisses",
+          "category": "armor"
         },
         {
           "itemId": "Terraria/CelestialShell",
@@ -1805,7 +2273,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/FrozenShield",
+          "itemId": "Terraria/CharmofMyths",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -1860,7 +2328,17 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -1888,6 +2366,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -1937,6 +2425,14 @@
           "category": "armor"
         },
         {
+          "itemId": "Terraria/PlaguebringerHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/SquireAltHead",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/HallowedRune",
           "category": "accessory",
           "subgroup": "Универсальные"
@@ -1972,6 +2468,16 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "Terraria/ApprenticeStaffT3",
           "category": "weapon"
         },
@@ -1982,6 +2488,10 @@
         {
           "itemId": "Terraria/RodofDiscord",
           "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/ReaverCuisses",
+          "category": "armor"
         },
         {
           "itemId": "Terraria/CelestialShell",
@@ -1999,7 +2509,7 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "Terraria/FrozenShield",
+          "itemId": "Terraria/CharmofMyths",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -2069,7 +2579,17 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -2097,6 +2617,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -2135,6 +2665,14 @@
         },
         {
           "itemId": "CalamityMod/HydrothermicArmor",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/PlaguebringerHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/SquireAltHead",
           "category": "armor"
         },
         {
@@ -2178,6 +2716,16 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "Terraria/ApprenticeStaffT3",
           "category": "weapon"
         },
@@ -2188,6 +2736,14 @@
         {
           "itemId": "Terraria/RodofDiscord",
           "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/AstralHelm",
+          "category": "armor"
+        },
+        {
+          "itemId": "CalamityMod/ReaverCuisses",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -2275,6 +2831,11 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
           "category": "buff",
           "subgroup": "Защитные"
@@ -2298,6 +2859,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -2335,6 +2906,14 @@
           "category": "weapon"
         },
         {
+          "itemId": "Terraria/StardustHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/SquireAltHead",
+          "category": "armor"
+        },
+        {
           "itemId": "Terraria/WingsStardust",
           "category": "accessory",
           "subgroup": "Мобильные"
@@ -2365,7 +2944,21 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/HolyFireBullet",
+          "category": "ammo"
+        },
+        {
+          "itemId": "Terraria/MoonlordBullet",
           "category": "ammo"
         },
         {
@@ -2379,6 +2972,10 @@
         {
           "itemId": "Terraria/RodofDiscord",
           "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/AstralHelm",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -2456,7 +3053,17 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -2484,6 +3091,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -2529,6 +3146,18 @@
           "category": "weapon"
         },
         {
+          "itemId": "CalamityMod/TarragonHeadSummon",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/StardustHelmet",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/SquireAltHead",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/ProfanedSoulArtifact",
           "category": "accessory",
           "subgroup": "Универсальные"
@@ -2555,6 +3184,16 @@
         },
         {
           "itemId": "Terraria/SummoningPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
           "category": "buff",
           "subgroup": "Атакующие"
         },
@@ -2646,6 +3285,11 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
           "category": "buff",
           "subgroup": "Защитные"
@@ -2669,6 +3313,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -2714,6 +3368,14 @@
           "category": "weapon"
         },
         {
+          "itemId": "CalamityMod/BloodflareHeadSummon",
+          "category": "armor"
+        },
+        {
+          "itemId": "Terraria/StardustHelmet",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/ProfanedSoulArtifact",
           "category": "accessory",
           "subgroup": "Универсальные"
@@ -2744,6 +3406,16 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/EyeofMagnus",
           "category": "weapon"
         },
@@ -2754,6 +3426,10 @@
         {
           "itemId": "Terraria/RodofDiscord",
           "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/OmegaBlueHelmet",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -2831,6 +3507,11 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
           "category": "buff",
           "subgroup": "Защитные"
@@ -2854,6 +3535,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -2895,6 +3586,10 @@
           "category": "weapon"
         },
         {
+          "itemId": "CalamityMod/FearmongerGreathelm",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/SilvaArmor",
           "category": "armor"
         },
@@ -2915,6 +3610,16 @@
         },
         {
           "itemId": "Terraria/SummoningPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
           "category": "buff",
           "subgroup": "Атакующие"
         },
@@ -3021,6 +3726,11 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
           "category": "buff",
           "subgroup": "Защитные"
@@ -3044,6 +3754,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -3089,6 +3809,10 @@
           "category": "weapon"
         },
         {
+          "itemId": "CalamityMod/AuricTeslaHeadSummon",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/Nucleogenesis",
           "category": "accessory",
           "subgroup": "Атакующие"
@@ -3109,12 +3833,26 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/EyeofMagnus",
           "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
           "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/GemTechHeadgear",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -3217,6 +3955,11 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
           "category": "buff",
           "subgroup": "Защитные"
@@ -3240,6 +3983,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ],
       "bossRefs": [
@@ -3286,6 +4039,10 @@
           "category": "weapon"
         },
         {
+          "itemId": "CalamityMod/AuricTeslaHeadSummon",
+          "category": "armor"
+        },
+        {
           "itemId": "CalamityMod/AngelicAlliance",
           "category": "accessory",
           "subgroup": "Атакующие"
@@ -3316,12 +4073,30 @@
           "subgroup": "Атакующие"
         },
         {
+          "itemId": "Terraria/BewitchingTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WarTable",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
           "itemId": "CalamityMod/EyeofMagnus",
           "category": "weapon"
         },
         {
           "itemId": "Terraria/RodOfHarmony",
           "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/DemonshadeHelm",
+          "category": "armor"
+        },
+        {
+          "itemId": "CalamityMod/GemTechHeadgear",
+          "category": "armor"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -3419,6 +4194,11 @@
           "subgroup": "Универсальные"
         },
         {
+          "itemId": "Terraria/SeafoodDinner",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
           "itemId": "Terraria/EndurancePotion",
           "category": "buff",
           "subgroup": "Защитные"
@@ -3442,6 +4222,16 @@
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SwiftnessPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/WrathPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         }
       ]
     }

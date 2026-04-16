@@ -118,6 +118,36 @@ MANUAL_ALIASES = {
     "волфрамоваяпуля": "Terraria/MusketBall",
     "волшебнаясила": "Terraria/MagicPowerPotion",
     "ясновидение": "Terraria/Clairvoyance",
+    "заточенноеоружие": "Terraria/SharpeningStation",
+    "перекус": "Terraria/RoastedBird",
+    "сытнаятрапеза": "Terraria/SeafoodDinner",
+    "любойдвойнойпрыжок": "Terraria/CloudinaBottle",
+    "любойнадувнойшарик": "Terraria/BalloonPufferfish",
+    "противовес": "Terraria/BlackCounterweight",
+    "зельесердечногопритяжения": "Terraria/HeartreachPotion",
+    "зельестремительности": "Terraria/SwiftnessPotion",
+    "зельегнева": "Terraria/WrathPotion",
+    "зельеэкономиибоеприпасов": "Terraria/AmmoReservationPotion",
+    "зельевосстановленияманы": "Terraria/ManaRegenerationPotion",
+    "медоперка": "Terraria/Honeyfin",
+    "кристальнаяброняассасина": "Terraria/CrystalNinjaHelmet",
+    "бронярыцарявальхаллы": "Terraria/SquireAltHead",
+    "неземнаяракушка": "Terraria/CelestialShell",
+    "амулетмифов": "Terraria/CharmofMyths",
+    "превосходноезельеманы": "Terraria/SuperManaPotion",
+    "колдовство": "Terraria/BewitchingTable",
+    "стратег": "Terraria/WarTable",
+    "взрывнаяпуля": "Terraria/ExplodingBullet",
+    "шутовскаястрела": "Terraria/JestersArrow",
+    "сумкадляйойо": "Terraria/YoyoBag",
+    "мушкетнаяпуля": "Terraria/MusketBall",
+    "высокоскоростнойпатрон": "Terraria/HighVelocityBullet",
+    "броняджунглей": "Terraria/JungleHat",
+    "солнечныйвыброс": "Terraria/SolarEruption",
+    "одеждамонаха": "Terraria/MonkBrows",
+    "одеждасинобилазутчика": "Terraria/MonkAltHead",
+    "окровавленная": "CalamityMod/BloodstainedGlove",
+    "согревающеезелье": "Terraria/WarmthPotion",
 }
 
 
@@ -158,7 +188,10 @@ def parse_markdown_item_cells(line: str) -> list[tuple[str, str]]:
             continue
         if label in {"+", "†", "≤", "∞"}:
             continue
-        slug = unquote(urlparse(url).path.split("/")[-1]).split("?")[0]
+        # Wiki dumps may include Markdown title in URL part: (url "Title").
+        # Keep only the first token as real URL before parsing slug.
+        clean_url = url.strip().split(" ", 1)[0]
+        slug = unquote(urlparse(clean_url).path.split("/")[-1]).split("?")[0]
         out.append((label, slug))
     if out:
         return out
@@ -227,7 +260,18 @@ def bucket_to_category(bucket: str) -> tuple[str, str | None]:
 def load_item_entries() -> list[dict]:
     terraria = json.loads(TERRARIA_SEARCH.read_text(encoding="utf-8")).get("entries", [])
     calamity = json.loads(CALAMITY_SEARCH.read_text(encoding="utf-8")).get("entries", [])
-    return [entry for entry in (terraria + calamity) if entry.get("kind") == "item" and entry.get("id")]
+    allowed_categories = {"weapon", "armor", "accessory", "buff", "other", "ammo"}
+    out: list[dict] = []
+    for entry in terraria + calamity:
+        if not entry.get("id"):
+            continue
+        kind = str(entry.get("kind", "")).lower()
+        category = str(entry.get("category", "")).lower()
+        # Some support packs still contain mis-tagged kinds (e.g. weapon as "ore").
+        # For deterministic wiki-copy generation we keep all item-like categories.
+        if kind == "item" or category in allowed_categories:
+            out.append(entry)
+    return out
 
 
 def build_indexes(entries: Iterable[dict]) -> dict[str, dict[str, list[dict]]]:
@@ -280,7 +324,7 @@ def expected_categories(bucket: str, output_category: str) -> set[str]:
     if output_category == "accessory":
         return {"accessory"}
     if output_category == "buff":
-        return {"buff"}
+        return {"buff", "other"}
     if b == "ammo":
         return {"buff", "other"}
     return set()
@@ -291,6 +335,66 @@ def slug_variants(slug: str) -> list[str]:
         return []
     base = slug.split("#", 1)[0].split("?", 1)[0]
     return [base, base.replace("_", " "), re.sub(r"\s*\([^)]*\)\s*$", "", base)]
+
+
+def class_token_preferences(class_key: str) -> list[str]:
+    if class_key == "melee":
+        return ["melee", "warrior", "helmet", "helm", "headgear"]
+    if class_key == "ranged":
+        return ["ranged", "archer", "gunslinger", "mask", "helmet", "headgear"]
+    if class_key == "magic":
+        return ["magic", "mage", "wizard", "hat", "hood", "headgear"]
+    if class_key == "summoner":
+        return ["summon", "summoner", "cowl", "hood", "headgear", "helmet"]
+    if class_key == "rogue":
+        return ["rogue", "stealth", "hood", "mask", "helmet", "headgear"]
+    return ["helmet", "helm", "headgear", "mask", "hood", "hat"]
+
+
+def pick_armor_set_piece(slug_en: str, slug_ru: str, name_en: str, name_ru: str, class_key: str, entries: list[dict]) -> str | None:
+    seed = slug_en or slug_ru or name_en or name_ru
+    if not seed:
+        return None
+    norm_seed = normalize(seed)
+    if not norm_seed:
+        return None
+
+    base = norm_seed
+    for suffix in ("armor", "броня", "комплект", "set"):
+        if base.endswith(suffix):
+            base = base[: -len(suffix)]
+    if base.endswith("armor"):
+        base = base[: -len("armor")]
+    base = base.rstrip("_")
+    if not base:
+        return None
+
+    armor_entries = [entry for entry in entries if entry.get("category") == "armor" and entry.get("id")]
+    candidates: list[dict] = []
+    for entry in armor_entries:
+        internal = normalize(str(entry.get("internalName", "")))
+        if internal.startswith(base):
+            candidates.append(entry)
+
+    if not candidates:
+        return None
+
+    def score(entry: dict) -> int:
+        internal = normalize(str(entry.get("internalName", "")))
+        s = 0
+        if any(token in internal for token in ["helmet", "helm", "headgear", "mask", "hat", "hood", "cowl", "crown"]):
+            s += 40
+        if any(token in internal for token in ["breast", "chest", "plate", "mail", "cuirass", "greaves", "leggings", "pants", "boots"]):
+            s -= 30
+        for token in class_token_preferences(class_key):
+            if token in internal:
+                s += 10
+        if "set" in internal:
+            s += 5
+        return s
+
+    candidates.sort(key=score, reverse=True)
+    return str(candidates[0]["id"])
 
 
 def pick_best(candidates: list[tuple[int, dict]], expect: set[str]) -> dict | None:
@@ -306,7 +410,7 @@ def pick_best(candidates: list[tuple[int, dict]], expect: set[str]) -> dict | No
     return scored[0][1]
 
 
-def resolve_content_id(item: RowItem, category: str, indexes: dict[str, dict[str, list[dict]]]) -> str | None:
+def resolve_content_id(item: RowItem, category: str, class_key: str, indexes: dict[str, dict[str, list[dict]]], entries: list[dict]) -> str | None:
     alias = MANUAL_ALIASES.get(normalize(item.name_ru))
     if alias:
         return alias
@@ -343,6 +447,10 @@ def resolve_content_id(item: RowItem, category: str, indexes: dict[str, dict[str
     best = pick_best(list(candidates.values()), expect)
     if best:
         return str(best["id"])
+    if category == "armor":
+        armor_pick = pick_armor_set_piece(item.slug_en, item.slug_ru, item.name_en, item.name_ru, class_key, entries)
+        if armor_pick:
+            return armor_pick
     return None
 
 
@@ -383,7 +491,7 @@ def build_rows_with_pairs() -> list[RowItem]:
     return paired
 
 
-def build_items_for_class(class_tag: str, rows: list[RowItem], indexes: dict[str, dict[str, list[dict]]]) -> tuple[dict[str, list[dict]], list[RowItem]]:
+def build_items_for_class(class_tag: str, rows: list[RowItem], indexes: dict[str, dict[str, list[dict]]], entries: list[dict]) -> tuple[dict[str, list[dict]], list[RowItem]]:
     by_stage: dict[str, list[dict]] = {stage_id: [] for stage_id in STAGE_ORDER}
     dedupe: dict[str, set[tuple[str, str, str | None]]] = defaultdict(set)
     unresolved: list[RowItem] = []
@@ -394,7 +502,7 @@ def build_items_for_class(class_tag: str, rows: list[RowItem], indexes: dict[str
         if not should_include_row(class_key, row.class_key):
             continue
         category, subgroup = bucket_to_category(row.bucket)
-        item_id = resolve_content_id(row, category, indexes)
+        item_id = resolve_content_id(row, category, class_tag, indexes, entries)
         if not item_id:
             unresolved.append(row)
             continue
@@ -446,11 +554,12 @@ def build_document(plan: dict, stage_items: dict[str, list[dict]]) -> dict:
 
 def write_guides() -> dict[str, list[RowItem]]:
     rows = build_rows_with_pairs()
-    indexes = build_indexes(load_item_entries())
+    entries = load_item_entries()
+    indexes = build_indexes(entries)
 
     unresolved_by_class: dict[str, list[RowItem]] = {}
     for plan in CLASS_PLANS:
-        stage_items, unresolved = build_items_for_class(plan["tag"], rows, indexes)
+        stage_items, unresolved = build_items_for_class(plan["tag"], rows, indexes, entries)
         unresolved_by_class[plan["tag"]] = unresolved
         document = build_document(plan, stage_items)
         out = OUTPUT_ROOT / plan["slug"] / "guide.json"
