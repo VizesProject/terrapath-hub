@@ -1,121 +1,80 @@
 {
   "schemaVersion": 1,
-  "id": "calamity-ranged-wiki-full-3-era",
-  "title": "Calamity Ranger: wiki copy (3 эпохи)",
+  "id": "calamity-wiki-rogue",
+  "title": "Calamity wiki - Разбойник",
   "author": "TerraPath Team",
   "language": "ru-RU",
-  "summary": "Тестовый гайд по стрелку, собранный по структуре трёх wiki-страниц Calamity: пре-хардмод, хардмод и пост-лунный лорд.",
+  "summary": "Копия wiki-конфигурации класса Разбойник для Calamity (описания этапов оставлены пустыми).",
   "requiredMods": [
     "Terraria",
     "CalamityMod"
   ],
   "classTags": [
-    "ranged"
+    "rogue"
   ],
-  "createdAt": "2026-04-16",
-  "updatedAt": "2026-04-16",
+  "createdAt": "2026-04-17",
+  "updatedAt": "2026-04-17",
   "stages": [
     {
       "id": "pre-boss",
-      "title": "Пре-босс {{icon:CalamityMod/DesertScourgeHead}}",
+      "title": "Пре-боссы {{icon:CalamityMod/DesertScourgeHead}}",
       "era": "prehardmode",
-      "description": "Начинайте как обычно — постройте пару домов и увеличьте своё максимальное здоровье и ману. Обязательно отыщите Ботинки Гермеса и прочее. Если у вас есть Зелье гравитации, поищите парящие острова и планетоиды.",
+      "description": "",
       "items": [
         {
-          "itemId": "Terraria/DemonBow",
+          "itemId": "CalamityMod/AntlionSkewer",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/TendonBow",
+          "itemId": "CalamityMod/ContaminatedBile",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/FlintlockPistol",
+          "itemId": "CalamityMod/GleamingDagger",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/MolotovCocktail",
+          "itemId": "CalamityMod/UrchinStinger",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/PainterPaintballGun",
+          "itemId": "CalamityMod/WulfrumKnife",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/SparkSpreader",
+          "itemId": "CalamityMod/IronFrancisca",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/FossilHelm",
-          "category": "armor"
+          "itemId": "CalamityMod/LeadTomahawk",
+          "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/SnowRuffianMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/ScionsCurio",
+          "itemId": "CalamityMod/CoinofDeceit",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/ScuttlersJewel",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/PurpleHaze",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/FrostburnArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/JestersArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/UnholyArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/FlashRound",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/SilverBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/TungstenBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/WulfrumController",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/Gi",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/GoldHelmet",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/PlatinumHelmet",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/SilverHelmet",
           "category": "armor"
         },
         {
@@ -132,11 +91,6 @@
           "itemId": "CalamityMod/RoverDrive",
           "category": "accessory",
           "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/CloudinaBottle",
-          "category": "accessory",
-          "subgroup": "Мобильные"
         },
         {
           "itemId": "Terraria/FrogLeg",
@@ -159,16 +113,6 @@
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/CrawCarapace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/SharkToothNecklace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
           "itemId": "Terraria/LesserHealingPotion",
           "category": "buff",
           "subgroup": "Универсальные"
@@ -179,17 +123,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/RoastedBird",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -204,22 +138,12 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
           "itemId": "Terraria/ThornsPotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -232,90 +156,58 @@
       "id": "pre-evil1",
       "title": "Пре-Пожиратель миров/Мозг Ктулху {{icon:Terraria/EaterofWorldsHead}} {{icon:Terraria/BrainofCthulhu}}",
       "era": "prehardmode",
-      "description": "Поражение первого босса значительно раскрывает ваши возможности: После поражения Глаза Ктулху, вам стоит исследовать подземные джунгли, пройти Кровавую луну и Армию гоблинов, и бросить вызов недавно открытому событию Кислотный дождь. Поражение Пустынного бича открывает минибосса Гигантcкого моллюска и так же является точкой с которой вы должны исследовать Затерянное море. Так же можно сразиться с Крабулоном ради оружия и улучшения для режима ярости. Наконец, максимизирование ваше здоровья и маны поможет вам подготовиться к первому важному шагу в прогрессии.",
+      "description": "",
       "items": [
         {
-          "itemId": "Terraria/BloodRainBow",
+          "itemId": "CalamityMod/ContaminatedBile",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/Boomstick",
+          "itemId": "CalamityMod/Mycoroot",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Fungicide",
+          "itemId": "CalamityMod/SandDollar",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/SparkSpreader",
+          "itemId": "CalamityMod/SeafoamBomb",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/SpikyBall",
+          "itemId": "CalamityMod/SnapClam",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/FossilHelm",
-          "category": "armor"
+          "itemId": "CalamityMod/BouncingEyeball",
+          "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/SnowRuffianMask",
-          "category": "armor"
+          "itemId": "CalamityMod/ScourgeoftheDesert",
+          "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/VictideHeadRanged",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/ScionsCurio",
+          "itemId": "CalamityMod/CoinofDeceit",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
-          "category": "buff",
+          "itemId": "CalamityMod/RottenDogtooth",
+          "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/ShimmerArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/FlashRound",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MusketBall",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/TungstenBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/BrittleStarStaff",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/WulfrumController",
-          "category": "other"
-        },
-        {
-          "itemId": "Terraria/GoldHelmet",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/PlatinumHelmet",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/UnholyTonic",
@@ -341,11 +233,6 @@
           "itemId": "CalamityMod/RoverDrive",
           "category": "accessory",
           "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/BundleofBalloons",
-          "category": "accessory",
-          "subgroup": "Мобильные"
         },
         {
           "itemId": "Terraria/CreativeWings",
@@ -388,11 +275,6 @@
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/CrawCarapace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
           "itemId": "Terraria/HealingPotion",
           "category": "buff",
           "subgroup": "Универсальные"
@@ -403,17 +285,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -433,22 +305,12 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
           "itemId": "Terraria/ThornsPotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -462,86 +324,61 @@
       "id": "pre-evil2",
       "title": "Пре-Разум улья/Перфораторы {{icon:CalamityMod/HiveMind}} {{icon:CalamityMod/PerforatorHive}}",
       "era": "prehardmode",
-      "description": "К этому моменту вы уже должны убить несколько боссов — включая Мозга Ктулху или Пожирателя миров — и должны быть готовы к путешествию в Преисподнюю. Кроме того теперь доступен метеорит.",
+      "description": "",
       "items": [
         {
-          "itemId": "Terraria/Boomstick",
+          "itemId": "CalamityMod/InfernalKris",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/FirestormCannon",
+          "itemId": "CalamityMod/MeteorFist",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/MagnaCannon",
+          "itemId": "CalamityMod/Mycoroot",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/OpalStriker",
+          "itemId": "CalamityMod/SludgeSplotch",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/MoltenFury",
-          "category": "weapon"
-        },
-        {
-          "itemId": "Terraria/SpikyBall",
-          "category": "weapon"
-        },
-        {
-          "itemId": "Terraria/FossilHelm",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/ProtolithBangle",
+          "itemId": "CalamityMod/BlackGlassBand",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/ScionsCurio",
+          "itemId": "CalamityMod/CoinofDeceit",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
-          "category": "buff",
+          "itemId": "Terraria/SharkToothNecklace",
+          "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
-          "category": "buff",
+          "itemId": "CalamityMod/RottenDogtooth",
+          "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/MeteorShot",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
+          "itemId": "CalamityMod/SilencingSheath",
+          "category": "accessory",
+          "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/HellfireArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/UnholyArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
+          "itemId": "CalamityMod/ShadowPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         },
         {
           "itemId": "CalamityMod/BrittleStarStaff",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/WulfrumController",
-          "category": "other"
-        },
-        {
-          "itemId": "Terraria/CrimsonHelmet",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/ShadowHelmet",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/BrainOfConfusion",
@@ -574,11 +411,6 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "Terraria/BundleofBalloons",
-          "category": "accessory",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/CreativeWings",
           "category": "accessory",
           "subgroup": "Мобильные"
@@ -609,32 +441,12 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "CalamityMod/CrawCarapace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
           "itemId": "Terraria/HealingPotion",
           "category": "buff",
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/Honeyfin",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -654,22 +466,12 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
           "itemId": "Terraria/ThornsPotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -683,81 +485,78 @@
       "id": "pre-skeletron",
       "title": "Пре-Скелетрон {{icon:Terraria/SkeletronHead}}",
       "era": "prehardmode",
-      "description": "После поражения Разума улья или Перфораторов, вы теперь сможете вскопать аэриалит, который находится на парящих островах. Вы так же можете сразиться с Королевой пчёл и Циклопом-оленем для помощи в подготовке к Скелетрону.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/AquashardShotgun",
+          "itemId": "CalamityMod/HardenedHoneycomb",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Galeforce",
+          "itemId": "CalamityMod/RotBall",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/FirestormCannon",
+          "itemId": "CalamityMod/ToothBall",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Shadethrower",
+          "itemId": "CalamityMod/AerialTracker",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/ShortCircuit",
+          "itemId": "CalamityMod/Turbulance",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/AerospecHeadRanged",
-          "category": "armor"
+          "itemId": "CalamityMod/SludgeSplotch",
+          "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/ProtolithBangle",
+          "itemId": "CalamityMod/CoinofDeceit",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "Terraria/SharkToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FilthyGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SilencingSheath",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofFire",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "Terraria/FlaskofPoison",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/HellfireArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MusketBall",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/TungstenBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
+          "itemId": "CalamityMod/ShadowPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         },
         {
           "itemId": "CalamityMod/Aestheticus",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/BrittleStarStaff",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/WulfrumController",
-          "category": "other"
-        },
-        {
-          "itemId": "Terraria/CrimsonHelmet",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/ShadowHelmet",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/BrainOfConfusion",
@@ -810,32 +609,12 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "CalamityMod/CrawCarapace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
           "itemId": "Terraria/HealingPotion",
           "category": "buff",
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/Honeyfin",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -850,27 +629,12 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "Terraria/WarmthPotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
           "itemId": "CalamityMod/BoundingPotion",
           "category": "buff",
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -883,82 +647,99 @@
       "id": "pre-wof",
       "title": "Пре-Стена плоти {{icon:Terraria/WallofFlesh}}",
       "era": "prehardmode",
-      "description": "С поражённым Скелетроном вам стоит направиться в Бездну и разграбить только что открытые Древние сундуки с сокровищами для снаряжения, которое поможет вам победить Бога слизней, с которого падают полезные материалы и снаряжение. К тому же теперь вы можете использовать Кровавые сферы на Алхимическим столом чтобы сделать многие доступные зелья. Когда вы готовы, победите Стены плоти и перейдите в хардмод.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/Archerfish",
+          "itemId": "CalamityMod/EnchantedAxe",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/FlurrystormCannon",
+          "itemId": "CalamityMod/GelDart",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/GunkShot",
+          "itemId": "CalamityMod/Glaive",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/LunarianBow",
+          "itemId": "CalamityMod/Kylie",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Shadethrower",
+          "itemId": "CalamityMod/ShinobiBlade",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/NecroHelmet",
-          "category": "armor"
+          "itemId": "CalamityMod/MetalMonstrosity",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/SlickCane",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/AerialTracker",
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/StatigelArmor",
           "category": "armor"
         },
         {
-          "itemId": "CalamityMod/ProtolithBangle",
+          "itemId": "CalamityMod/CoinofDeceit",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "Terraria/SharkToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FilthyGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/MirageMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SilencingSheath",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofFire",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "Terraria/FlaskofPoison",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ShimmerArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
+          "itemId": "CalamityMod/ShadowPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/MeteorShot",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MusketBall",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/TungstenBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
+          "itemId": "Terraria/GoldCoin",
+          "category": "ammo"
         },
         {
           "itemId": "CalamityMod/Aestheticus",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/BrittleStarStaff",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/WulfrumController",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/BrainOfConfusion",
@@ -1021,37 +802,12 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/BoneGlove",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/Honeyfin",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "Terraria/RestorationPotion",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/InfernoPotion",
           "category": "buff",
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -1076,22 +832,12 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/SliceOfCake",
           "category": "buff",
           "subgroup": "Мобильные"
         },
         {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -1104,112 +850,87 @@
       "id": "pre-mech",
       "title": "Пре-Механические боссы {{icon:Terraria/QueenSlimeBoss}} {{icon:CalamityMod/Cryogen}}",
       "era": "hardmode",
-      "description": "Переход в хардмод массово расширяет варианты снаряжения для каждого класса. Фрукты жизни теперь доступны сразу же, и вы также можете сделать Осколок кометы чтобы увеличить свою максимальную ману. Вы можете сразиться с Королевой слизней или Криогеном для лучшего снаряжения. Также присутствует несколько биомных изменений: в мире появляются Астральная инфекция и Освящение, и улучшаются Затерянное море и Серный утёс с более сложными угрозами и новыми материалами. Мод Calamity также добавляет конфиг, который перерабатывает прогрессию в раннем хардмоде если включена. Это руководство подразумевает что оно включено изначально.",
+      "description": "",
       "items": [
         {
-          "itemId": "Terraria/DaedalusStormbow",
+          "itemId": "CalamityMod/CursedDagger",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/FlarewingBow",
+          "itemId": "CalamityMod/CobaltKunai",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/Marrow",
+          "itemId": "CalamityMod/Equanimity",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Needler",
+          "itemId": "CalamityMod/KelvinCatalyst",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/Toxikarp",
+          "itemId": "CalamityMod/PalladiumJavelin",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/CobaltMask",
-          "category": "armor"
+          "itemId": "CalamityMod/Prismalline",
+          "category": "weapon"
         },
         {
-          "itemId": "Terraria/PalladiumMask",
-          "category": "armor"
+          "itemId": "CalamityMod/BurningStrife",
+          "category": "weapon"
         },
         {
-          "itemId": "Terraria/MagicQuiver",
+          "itemId": "CalamityMod/IchorSpear",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/CoinofDeceit",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RangerEmblem",
+          "itemId": "CalamityMod/RogueEmblem",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/FilthyGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/MirageMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SilencingSheath",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofCursedFlames",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "Terraria/FlaskofIchor",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoBox",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/CursedArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/IchorArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/JestersArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/CursedBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/ExplodingBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/IchorBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MusketBall",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/TungstenBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/LunicEye",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/UmbraphileHood",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/AmalgamatedBrain",
@@ -1217,14 +938,9 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "CalamityMod/GrandGelatin",
+          "itemId": "CalamityMod/FrostFlare",
           "category": "accessory",
           "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "Terraria/AnkhShield",
-          "category": "accessory",
-          "subgroup": "Защитные"
         },
         {
           "itemId": "Terraria/CharmofMyths",
@@ -1232,17 +948,12 @@
           "subgroup": "Защитные"
         },
         {
+          "itemId": "CalamityMod/GiantTortoiseShell",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
           "itemId": "CalamityMod/HoneyDew",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "CalamityMod/RadiantOoze",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/StarVeil",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -1307,17 +1018,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -1342,27 +1043,12 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "Terraria/WarmthPotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
           "itemId": "CalamityMod/SoaringPotion",
           "category": "buff",
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -1376,120 +1062,83 @@
       "id": "post-mech1",
       "title": "Пост-Механический босс 1 {{icon:CalamityMod/AquaticScourgeHead}}",
       "era": "hardmode",
-      "description": "После поражения Механического босса, у вас появится доступ к хардмодным наковальням. Вы также сможете добывать Инфернальный зювит в Серному утёсу. После получения улучшенного снаряжения доступного на этом этапе, вам рекомендуется сразиться с Акватическим бичом в Сернистом море чтобы разблокировать второй уровень события Кислотный дождь. Событие, как и сам босс, предлагают много сильных предметов. Всего этого должно хватать чтобы подготовиться к битве со следующим мехом.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/Barinautical",
+          "itemId": "CalamityMod/Equanimity",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/BrimstoneFury",
+          "itemId": "CalamityMod/KelvinCatalyst",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Buzzkill",
+          "itemId": "CalamityMod/ScourgeoftheSeas",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/Flamethrower",
+          "itemId": "CalamityMod/SkyfinBombers",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/OnyxBlaster",
+          "itemId": "CalamityMod/StormfrontRazor",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/DD2PhoenixBow",
+          "itemId": "CalamityMod/BurningStrife",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/SpeedBlaster",
+          "itemId": "CalamityMod/PulseGrenade",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/MythrilHat",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/OrichalcumMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/MagicQuiver",
+          "itemId": "CalamityMod/RogueEmblem",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RangerEmblem",
+          "itemId": "CalamityMod/RuinMedallion",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/ElectriciansGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/MirageMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SilencingSheath",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofCursedFlames",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "Terraria/FlaskofIchor",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoBox",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/CinderArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/IchorArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/JestersArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/CrystalBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/ExplodingBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/HighVelocityBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/IchorBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/LunicEye",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/UmbraphileHood",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/AmalgamatedBrain",
@@ -1497,7 +1146,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "CalamityMod/GrandGelatin",
+          "itemId": "CalamityMod/FrostFlare",
           "category": "accessory",
           "subgroup": "Универсальные"
         },
@@ -1507,22 +1156,12 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/AnkhShield",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/CharmofMyths",
+          "itemId": "CalamityMod/GiantTortoiseShell",
           "category": "accessory",
           "subgroup": "Защитные"
         },
         {
           "itemId": "CalamityMod/HoneyDew",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "CalamityMod/RadiantOoze",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -1587,17 +1226,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -1627,17 +1256,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -1650,125 +1269,83 @@
       "id": "post-mech2",
       "title": "Пост-Механический босс 2 {{icon:CalamityMod/BrimstoneElemental}}",
       "era": "hardmode",
-      "description": "После поражения второго механического босса вы теперь должны иметь доступ к хардмодной кузне. Вы также сможете добыть Крионитовую руду во Льдах если вы победили Криогена. Опционально вы можете сразить Серного элементаля на этом этапе для лучшего оружия. Все эти предметы должны позволить вам сразить финального механического босса.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/AdamantiteParticleAccelerator",
+          "itemId": "CalamityMod/AdamantiteThrowingAxe",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Barinautical",
+          "itemId": "CalamityMod/DesecratedWater",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Buzzkill",
+          "itemId": "CalamityMod/KelvinCatalyst",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/DarkechoGreatbow",
+          "itemId": "CalamityMod/SkyfinBombers",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Hellborn",
+          "itemId": "CalamityMod/StormfrontRazor",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/DD2PhoenixBow",
+          "itemId": "CalamityMod/PulseGrenade",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/TitaniumRailgun",
+          "itemId": "CalamityMod/TitaniumShuriken",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/AdamantiteMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/OrichalcumMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/MagicQuiver",
+          "itemId": "CalamityMod/RogueEmblem",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RangerEmblem",
+          "itemId": "CalamityMod/RuinMedallion",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/ElectriciansGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/MirageMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SilencingSheath",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofCursedFlames",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "Terraria/FlaskofIchor",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoBox",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/CinderArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/HolyArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/IchorArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/JestersArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/VeriumBolt",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/CrystalBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/ExplodingBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/HighVelocityBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/IchorBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/LunicEye",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/UmbraphileHood",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/AmalgamatedBrain",
@@ -1776,7 +1353,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "CalamityMod/GrandGelatin",
+          "itemId": "CalamityMod/FrostFlare",
           "category": "accessory",
           "subgroup": "Универсальные"
         },
@@ -1786,22 +1363,12 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/AnkhShield",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/CharmofMyths",
+          "itemId": "CalamityMod/GiantTortoiseShell",
           "category": "accessory",
           "subgroup": "Защитные"
         },
         {
           "itemId": "CalamityMod/HoneyDew",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "CalamityMod/RadiantOoze",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -1866,17 +1433,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -1906,17 +1463,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -1929,112 +1476,82 @@
       "id": "pre-plantera",
       "title": "Пре-Плантера {{icon:Terraria/Plantera}}",
       "era": "hardmode",
-      "description": "После поражения финального механического босса, у вас будет полный доступ к Освящённым слиткам и Хлорофитовым слиткам. Вы также можете создать Кровавый апельсин Кровавого апельсина чтобы увеличить ваше максимальное ОЗ. На этом этапе вам нужно специализироваться в один класс, так как бонусы снаряжения становятся намного сильнее. Ещё вам стоит сразиться с Клоном Каламитас для нового снаряжения, в особенности для класса разбойника из-за Солнечных вуалей. Когда вы готовы, время сразиться с Плантерой.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/Animosity",
+          "itemId": "CalamityMod/DeepWounder",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/ChlorophyteShotbow",
+          "itemId": "CalamityMod/DesecratedWater",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/HallowedRepeater",
+          "itemId": "CalamityMod/SpearofDestiny",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/HavocsBreath",
+          "itemId": "CalamityMod/TotalityBreakers",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Hellborn",
+          "itemId": "CalamityMod/ConsecratedWater",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/SeasSearing",
+          "itemId": "CalamityMod/CrushsawCrasher",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/ChlorophyteMask",
-          "category": "armor"
+          "itemId": "CalamityMod/FrostyFlare",
+          "category": "weapon"
         },
         {
-          "itemId": "Terraria/HallowedMask",
-          "category": "armor"
+          "itemId": "CalamityMod/TerrorTalons",
+          "category": "weapon"
         },
         {
-          "itemId": "Terraria/MagicQuiver",
+          "itemId": "CalamityMod/RuinMedallion",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RangerEmblem",
+          "itemId": "CalamityMod/VampiricTalisman",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/ElectriciansGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/MirageMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfBrimstone",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "Terraria/FlaskofIchor",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoBox",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/CinderArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/HolyArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/IchorArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/VeriumBolt",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/ChlorophyteBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/HallowPointRound",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/IchorBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/LunicEye",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/AmalgamatedBrain",
@@ -2052,22 +1569,12 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/AnkhShield",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/CharmofMyths",
+          "itemId": "CalamityMod/GiantTortoiseShell",
           "category": "accessory",
           "subgroup": "Защитные"
         },
         {
           "itemId": "CalamityMod/HoneyDew",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "CalamityMod/RadiantOoze",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -2122,11 +1629,6 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
           "category": "buff",
           "subgroup": "Защитные"
@@ -2152,17 +1654,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -2175,110 +1667,88 @@
       "id": "pre-golem",
       "title": "Пре-Голем {{icon:Terraria/Golem}}",
       "era": "hardmode",
-      "description": "После поражения Плантеры, появляется Многолетняя руда. Враги в Темнице становятся сильнее и из них начинает выпадать Эктоплазма. Песчаные бури могут призвать Большую песчаную акулу, предлагая оружия и новые материалы для создания. Вам нужно сразиться с Левиафан и Анахитой и Аструм Ареусом на этом этапе, первый открывает новые материалы для создания в Бездне, а второй предлагает много нового оружия из врагов Астральной инфекции. Когда вы готовы, входите в Храм джунглей и сразитесь с Големом.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/BlossomFlux",
+          "itemId": "CalamityMod/Apoctolith",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/FlakKraken",
+          "itemId": "CalamityMod/AuroradicalThrow",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Hydra",
+          "itemId": "CalamityMod/Whitewater",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/MarksmanBow",
+          "itemId": "CalamityMod/CrushsawCrasher",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/PiranhaGun",
+          "itemId": "CalamityMod/DefectiveSphere",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/VernalBolter",
+          "itemId": "CalamityMod/HeavenfallenStardisk",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/WildfireBloom",
+          "itemId": "CalamityMod/StellarKnife",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/HallowedMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/ShroomiteMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/DeadshotBrooch",
+          "itemId": "CalamityMod/GloveOfRecklessness",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RangerEmblem",
+          "itemId": "CalamityMod/RuinMedallion",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/VampiricTalisman",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/AbyssalMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ElectriciansGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/GloveOfPrecision",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfBrimstone",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "Terraria/FlaskofVenom",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoBox",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/ChlorophyteArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/SproutingArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/VenomArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/PartyBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/RocketIII",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/LunicEye",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/ReaverHeadMobility",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/AmalgamatedBrain",
@@ -2301,17 +1771,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/CharmofMyths",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
           "itemId": "Terraria/FrozenShield",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeroShield",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -2351,11 +1811,6 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "CalamityMod/SandSharkToothNecklace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
           "itemId": "Terraria/GreaterHealingPotion",
           "category": "buff",
           "subgroup": "Универсальные"
@@ -2366,17 +1821,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -2406,17 +1851,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -2429,125 +1864,101 @@
       "id": "post-golem",
       "title": "Пост-Голем {{icon:Terraria/Golem}}",
       "era": "hardmode",
-      "description": "Победа над Големом даёт доступ к Магматитовой руде, и в Джунглях начинают появляться враги Чумы. Вы также можете создать Сплав жизни, который используется во многих рецептах. Обязательно используйте Чудо-фрукт, которое увеличивает максимальное ОЗ. Вы также можете пройти Марсианское безумие, последний этап Армии Древних, Солнечное затмение если вы его ещё не прошли, и две луны: Морозная луна и Тыквенная луна.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/ArcNovaDiffuser",
+          "itemId": "CalamityMod/DefectiveSphere",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/AuroraBlazer",
+          "itemId": "CalamityMod/EpidemicShredder",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/EternalBlizzard",
+          "itemId": "CalamityMod/Plaguenade",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/FlakKraken",
+          "itemId": "CalamityMod/DoomsdayDevice",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Leviatitan",
+          "itemId": "CalamityMod/SubductionSlicer",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/SnowmanCannon",
+          "itemId": "CalamityMod/Apoctolith",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/HydrothermicHeadRanged",
+          "itemId": "CalamityMod/HeavenfallenStardisk",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/StellarKnife",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/HydrothermicArmor",
           "category": "armor"
         },
         {
-          "itemId": "CalamityMod/PlagueReaperMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/ShroomiteMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/DeadshotBrooch",
+          "itemId": "Terraria/DestroyerEmblem",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RifleScope",
+          "itemId": "CalamityMod/GloveOfRecklessness",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/PlaguedFuelPack",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/RuinMedallion",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/AbyssalMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ElectriciansGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/GloveOfPrecision",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfBrimstone",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "Terraria/FlaskofVenom",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoBox",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/IcicleArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/SproutingArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/VenomArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/BubonicRound",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/HailstormBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/ClusterRocketI",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/RocketIII",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/LunicEye",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/ReaverHeadMobility",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/AmalgamatedBrain",
-          "category": "accessory",
-          "subgroup": "Универсальные"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/CelestialShell",
@@ -2560,17 +1971,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/CharmofMyths",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
           "itemId": "Terraria/FrozenShield",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeroShield",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -2595,6 +1996,11 @@
           "subgroup": "Мобильные"
         },
         {
+          "itemId": "CalamityMod/LeviathanAmbergris",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
           "itemId": "CalamityMod/AngelTreads",
           "category": "accessory",
           "subgroup": "Мобильные"
@@ -2605,22 +2011,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "CalamityMod/AsgardsValor",
-          "category": "accessory",
-          "subgroup": "Мобильные"
-        },
-        {
-          "itemId": "Terraria/MasterNinjaGear",
-          "category": "accessory",
-          "subgroup": "Мобильные"
-        },
-        {
-          "itemId": "Terraria/DestroyerEmblem",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/SandSharkToothNecklace",
+          "itemId": "CalamityMod/VoidofExtinction",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
@@ -2635,17 +2026,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -2675,17 +2056,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -2698,148 +2069,101 @@
       "id": "pre-lunar",
       "title": "Пре-Лунные события {{icon:Terraria/CultistBoss}}",
       "era": "hardmode",
-      "description": "Теперь вы должны сразиться с несколькими более сложными хардмодными боссами: Предвестница чумы, Голиаф, Императрица света, Герцог Рыброн, Разрушитель. Предметы с них подготовят вас к вашему предпоследнему вызову, Культиста-лунатика и Лунные события.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/HeavenlyGale",
+          "itemId": "CalamityMod/CraniumSmasher",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/BlightSpewer",
+          "itemId": "CalamityMod/Plaguenade",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Nidhogg",
+          "itemId": "CalamityMod/SubductionSlicer",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/TheHive",
+          "itemId": "CalamityMod/TheSyringe",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/Tsunami",
+          "itemId": "CalamityMod/DukesDecapitator",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/PestilentDefiler",
+          "itemId": "CalamityMod/Malachite",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/PlagueTaintedSMG",
+          "itemId": "CalamityMod/SystemBane",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/HydrothermicHeadRanged",
+          "itemId": "CalamityMod/HydrothermicArmor",
           "category": "armor"
         },
         {
-          "itemId": "CalamityMod/PlagueReaperMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/ShroomiteMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/AlchemicalDecanter",
+          "itemId": "Terraria/DestroyerEmblem",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/DeadshotBrooch",
+          "itemId": "CalamityMod/GloveOfRecklessness",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RifleScope",
+          "itemId": "CalamityMod/PlaguedFuelPack",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/RuinMedallion",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/AbyssalMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ElectriciansGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/GloveOfPrecision",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfBrimstone",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "Terraria/FlaskofVenom",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoBox",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/IcicleArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/SproutingArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/VenomArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/BubonicRound",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/HailstormBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MusketBall",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/TungstenBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/ClusterRocketI",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/RocketIII",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/DD2BetsyBow",
-          "category": "other"
+          "itemId": "Terraria/ApprenticeStaffT3",
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/LunicEye",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/ReaverHeadMobility",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/AmalgamatedBrain",
-          "category": "accessory",
-          "subgroup": "Универсальные"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/CelestialShell",
@@ -2853,11 +2177,6 @@
         },
         {
           "itemId": "CalamityMod/BloodPact",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/CharmofMyths",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -2912,17 +2231,12 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SoaringInsignia",
+          "itemId": "CalamityMod/InterstellarStompers",
           "category": "accessory",
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/DestroyerEmblem",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/SandSharkToothNecklace",
+          "itemId": "CalamityMod/VoidofExtinction",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
@@ -2937,17 +2251,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -2977,17 +2281,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -3000,146 +2294,100 @@
       "id": "pre-moonlord",
       "title": "Пре-Лунный лорд {{icon:Terraria/MoonLordCore}}",
       "era": "hardmode",
-      "description": "После победы над Культистом-лунатиком вы теперь имеете Манипулятор древних. После убийства нескольких башен и создания нового снаряжения из Литой конструкции и лунных фрагментов, вы можете пойти на предпоследнего босса: Аструм Деус, который открывает Астральные слитки. Всё это вместе даёт вам много новых аксессуаров и оружия, вместе с Эфирным ядром для повышения максимальной маны. Вы должны быть полностью готовы к битве с финальным хардмодным боссом, Лунным лордом.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/DeadSunsWind",
+          "itemId": "CalamityMod/CraniumSmasher",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/Phantasm",
+          "itemId": "CalamityMod/RadiantStar",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/Scorpion",
+          "itemId": "CalamityMod/RegulusRiot",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/SpectralstormCannon",
+          "itemId": "CalamityMod/StarofDestruction",
           "category": "weapon"
         },
         {
-          "itemId": "Terraria/VortexBeater",
+          "itemId": "CalamityMod/Malachite",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Vortexpopper",
+          "itemId": "CalamityMod/SystemBane",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/HydrothermicHeadRanged",
+          "itemId": "CalamityMod/HydrothermicArmor",
           "category": "armor"
         },
         {
-          "itemId": "CalamityMod/LunicCorpsHelmet",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/PlagueReaperMask",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/DeadshotBrooch",
+          "itemId": "Terraria/DestroyerEmblem",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RifleScope",
+          "itemId": "CalamityMod/DarkMatterSheath",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/GloveOfRecklessness",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/PlaguedFuelPack",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/AbyssalMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ElectriciansGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/GloveOfPrecision",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfBrimstone",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "Terraria/FlaskofVenom",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoBox",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/IcicleArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/SproutingArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/VenomArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/BubonicRound",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/ExplodingBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/HailstormBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/ClusterRocketI",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/RocketIII",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/CursedFlare",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/DD2BetsyBow",
-          "category": "other"
+          "itemId": "Terraria/ApprenticeStaffT3",
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/EyeofMagnus",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/AstralHelm",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/ReaverHeadMobility",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
-          "category": "accessory",
-          "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "CalamityMod/AmalgamatedBrain",
           "category": "accessory",
           "subgroup": "Универсальные"
         },
@@ -3159,17 +2407,17 @@
           "subgroup": "Защитные"
         },
         {
+          "itemId": "CalamityMod/BloodPact",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
           "itemId": "CalamityMod/DeificAmulet",
           "category": "accessory",
           "subgroup": "Защитные"
         },
         {
           "itemId": "Terraria/FrozenShield",
-          "category": "accessory",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "CalamityMod/InfectedJewel",
           "category": "accessory",
           "subgroup": "Защитные"
         },
@@ -3204,17 +2452,12 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SoaringInsignia",
+          "itemId": "CalamityMod/InterstellarStompers",
           "category": "accessory",
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/DestroyerEmblem",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/SandSharkToothNecklace",
+          "itemId": "CalamityMod/VoidofExtinction",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
@@ -3225,11 +2468,6 @@
         },
         {
           "itemId": "CalamityMod/VigorousCandle",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "Terraria/SeafoodDinner",
           "category": "buff",
           "subgroup": "Универсальные"
         },
@@ -3259,17 +2497,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -3282,112 +2510,86 @@
       "id": "pre-provi",
       "title": "Пре-Провиденс {{icon:CalamityMod/Providence}}",
       "era": "postmoonlord",
-      "description": "История Calamity продолжается после поражения Лунного лорда. Используя Люминитовые слитки и Галактические сингулярности вы можете создать новое снаряжение. Следующим боссом на очереди является Псевдодракон, который предлагает немного оружия и материал для создания; и Осквернённые стражи, которые дают Осквернённое ядро, нужное для призыва Провиденс.",
+      "description": "",
       "items": [
         {
-          "itemId": "Terraria/Celeb2",
+          "itemId": "CalamityMod/ReboundingRainbow",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/ClockworkBow",
+          "itemId": "CalamityMod/LunarKunai",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/SuperradiantSlaughterer",
+          "itemId": "CalamityMod/UtensilPoker",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/PlanetaryAnnihilation",
-          "category": "weapon"
-        },
-        {
-          "itemId": "CalamityMod/LunicCorpsHelmet",
-          "category": "armor"
-        },
-        {
-          "itemId": "Terraria/VortexHelmet",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/DeadshotBrooch",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/DynamoStemCells",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/RifleScope",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WingsVortex",
+          "itemId": "CalamityMod/ExodusWings",
           "category": "accessory",
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/BlunderBooster",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/DarkMatterSheath",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/DestroyerEmblem",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/GloveOfRecklessness",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/AbyssalMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ElectriciansGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/GloveOfPrecision",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/MoonstoneCrown",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfCrumbling",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/AmmoBox",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/VenomArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/WoodenArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/HolyFireBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MoonlordBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MiniNukeI",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/FallenStar",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/EyeofMagnus",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/RelicOfDeliverance",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/AstralHelm",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -3415,7 +2617,7 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "Terraria/StardustPlatform",
+          "itemId": "Terraria/LongRainbowTrailWings",
           "category": "accessory",
           "subgroup": "Мобильные"
         },
@@ -3440,19 +2642,9 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SoaringInsignia",
+          "itemId": "Terraria/EmpressFlightBooster",
           "category": "accessory",
           "subgroup": "Мобильные"
-        },
-        {
-          "itemId": "Terraria/DestroyerEmblem",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/SandSharkToothNecklace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
         },
         {
           "itemId": "CalamityMod/WarbanneroftheRighteous",
@@ -3470,17 +2662,7 @@
           "subgroup": "Универсальные"
         },
         {
-          "itemId": "Terraria/SeafoodDinner",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
           "itemId": "Terraria/EndurancePotion",
-          "category": "buff",
-          "subgroup": "Защитные"
-        },
-        {
-          "itemId": "Terraria/HeartreachPotion",
           "category": "buff",
           "subgroup": "Защитные"
         },
@@ -3510,17 +2692,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -3533,107 +2705,102 @@
       "id": "pre-polter",
       "title": "Пре-Полтергаст {{icon:CalamityMod/Polterghast}}",
       "era": "postmoonlord",
-      "description": "Победа над Провиденс открывает новые материалы для создания: Божественная жеода и Цветонитовая руда, позволяя вам создать эстрагоновый комплект и более сильное снаряжение. Вам также следует создать Осквернённая морошка чтобы увеличить своё максимальное здоровье. Из врагов в Серном утёсе начинает выпадать Кровавый камень, вместе с чем усиливается Разрушитель и из него выпадают новые вещи. К тому же, из Провиденс выпадает Знак Провиденс, позволяющая сразиться с тремя новыми боссами, каждый из которых предлагает оружия и материалы для создания. Со всем этим вместе, вы будете готовы сразиться с Полтергасте.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/ArterialAssault",
+          "itemId": "CalamityMod/MoltenAmputator",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Auralis",
+          "itemId": "CalamityMod/RealityRupture",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/BlissfulBombardier",
+          "itemId": "CalamityMod/ShatteredDawn",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/BloodBoiler",
+          "itemId": "CalamityMod/TwistingThunder",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/PristineFury",
+          "itemId": "CalamityMod/BloodsoakedCrasher",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/TheSevensStriker",
+          "itemId": "CalamityMod/CosmicKunai",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/TarragonHeadRanged",
-          "category": "armor"
+          "itemId": "CalamityMod/ProfanedPartisan",
+          "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/DeadshotBrooch",
+          "itemId": "CalamityMod/BlunderBooster",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/DynamoStemCells",
+          "itemId": "CalamityMod/DarkMatterSheath",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RifleScope",
+          "itemId": "Terraria/DestroyerEmblem",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/GloveOfRecklessness",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/AbyssalMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ElectriciansGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/GloveOfPrecision",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/MoonstoneCrown",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SpectralVeil",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofIchor",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/AmmoBox",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/ElysianArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MoonlordArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/BloodfireBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MiniNukeI",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/PlatinumCoin",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/EyeofMagnus",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/RelicOfDeliverance",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -3666,17 +2833,12 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "CalamityMod/MoonWalkers",
-          "category": "accessory",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "CalamityMod/ElysianWings",
           "category": "accessory",
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "CalamityMod/TarragonWings",
+          "itemId": "CalamityMod/MoonWalkers",
           "category": "accessory",
           "subgroup": "Мобильные"
         },
@@ -3701,16 +2863,6 @@
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/DestroyerEmblem",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/SandSharkToothNecklace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
           "itemId": "CalamityMod/Bloodfin",
           "category": "buff",
           "subgroup": "Универсальные"
@@ -3722,11 +2874,6 @@
         },
         {
           "itemId": "CalamityMod/VigorousCandle",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "Terraria/SeafoodDinner",
           "category": "buff",
           "subgroup": "Универсальные"
         },
@@ -3756,17 +2903,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -3779,115 +2916,98 @@
       "id": "pre-dog",
       "title": "Пре-Пожиратель богов {{icon:CalamityMod/DevourerofGodsHead}}",
       "era": "postmoonlord",
-      "description": "Поражение Полтергаста даёт вам Губительные души, позволяя вам создать Комплект кровавой вспышки и больше снаряжения - особенно Фантомное сердце, финальное улучшение маны. Вы также открываете третий уровень события Кислотный дождь, и вы можете сразиться со Старым герцогом для сильного оружия. Напоследок, вам нужно исследовать четвёртый слой Бездны, так как со здешних минибоссов падают новые сильные предметы. Всё это вместе подготовит вас для следующего большого вызова: поражение Пожирателя богов.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/CorinthPrime",
+          "itemId": "CalamityMod/TheOldReaper",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/DaemonsFlame",
+          "itemId": "CalamityMod/SealedSingularity",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/FetidEmesis",
+          "itemId": "CalamityMod/ToxicantTwister",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/HalleysInferno",
+          "itemId": "CalamityMod/TwistingThunder",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/PearlGod",
+          "itemId": "CalamityMod/JawsOfOblivion",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/TauCannon",
+          "itemId": "CalamityMod/Valediction",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/TheSevensStriker",
-          "category": "weapon"
-        },
-        {
-          "itemId": "CalamityMod/BloodflareHeadRanged",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/DeadshotBrooch",
+          "itemId": "CalamityMod/BlunderBooster",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/DynamoStemCells",
+          "itemId": "CalamityMod/DarkMatterSheath",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/QuiverofNihility",
+          "itemId": "CalamityMod/GloveOfRecklessness",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RifleScope",
+          "itemId": "CalamityMod/VampiricTalisman",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/AbyssalMirror",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ElectriciansGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/GloveOfPrecision",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/MoonstoneCrown",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SpectralVeil",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfCrumbling",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/AmmoBox",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/ElysianArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/BloodfireBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MoonlordBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/PlatinumCoin",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/EyeofMagnus",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/RelicOfDeliverance",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/OmegaBlueHelmet",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -3925,17 +3045,17 @@
           "subgroup": "Защитные"
         },
         {
-          "itemId": "CalamityMod/VoidStriders",
-          "category": "accessory",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "CalamityMod/ElysianWings",
           "category": "accessory",
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "CalamityMod/TarragonWings",
+          "itemId": "CalamityMod/VoidStriders",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/LeviathanAmbergris",
           "category": "accessory",
           "subgroup": "Мобильные"
         },
@@ -3945,22 +3065,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "CalamityMod/ElysianAegis",
-          "category": "accessory",
-          "subgroup": "Мобильные"
-        },
-        {
-          "itemId": "CalamityMod/StatisNinjaBelt",
-          "category": "accessory",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "CalamityMod/ArcFlashRing",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/ReaperToothNecklace",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
@@ -3976,11 +3081,6 @@
         },
         {
           "itemId": "CalamityMod/VigorousCandle",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "Terraria/SeafoodDinner",
           "category": "buff",
           "subgroup": "Универсальные"
         },
@@ -4010,17 +3110,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -4033,84 +3123,88 @@
       "id": "pre-yharon",
       "title": "Пре-Ярон {{icon:CalamityMod/Yharon}}",
       "era": "postmoonlord",
-      "description": "Победа над Пожирателем богов даёт Космилитовые слитки. Враги во многих событиях усиливаются и из них выпадают новые материалы для создания: Фрагменты тёмного солнца из Солнечного затмения, Эндотермическая энергия из Морозной луны, и Кошмарное топливо из Тыквенной луны. Вместе с Некроплазмой всё это позволяет создать Эссенцию восходящего духа, и Космическую наковальню дадут вам материалы для новых снаряжений. Когда всё сказанное выше сделано, наступит время сразиться с Ярона, Дракона возрождения.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/CleansingBlaze",
+          "itemId": "CalamityMod/EclipsesFall",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Riftburst",
+          "itemId": "CalamityMod/DimensionTearingDisk",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/PulseRifle",
+          "itemId": "CalamityMod/ExecutionersBlade",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Ultima",
+          "itemId": "CalamityMod/Hypothermia",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/UniversalGenesis",
+          "itemId": "CalamityMod/Penumbra",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/GodSlayerHeadRanged",
-          "category": "armor"
+          "itemId": "CalamityMod/GodsParanoia",
+          "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/DynamoStemCells",
+          "itemId": "CalamityMod/PlasmaGrenade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BlunderBooster",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/PlanebreakersPouch",
+          "itemId": "CalamityMod/EclipseMirror",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/QuiverofNihility",
+          "itemId": "CalamityMod/GloveOfRecklessness",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RifleScope",
+          "itemId": "CalamityMod/Nanotech",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/GloveOfPrecision",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SpectralVeil",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/VeneratedLocket",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofIchor",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/AmmoBox",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/VanquisherArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/EyeofMagnus",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -4193,22 +3287,12 @@
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/ReaperToothNecklace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
           "itemId": "CalamityMod/OmegaHealingPotion",
           "category": "buff",
           "subgroup": "Универсальные"
         },
         {
           "itemId": "CalamityMod/VigorousCandle",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "Terraria/SeafoodDinner",
           "category": "buff",
           "subgroup": "Универсальные"
         },
@@ -4238,17 +3322,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -4261,123 +3335,93 @@
       "id": "pre-scal-exo",
       "title": "Пре-Экзо-механизмы/Высшая ведьма, Каламитас {{icon:CalamityMod/AresBody}} {{icon:CalamityMod/SupremeCalamitas}}",
       "era": "postmoonlord",
-      "description": "Победа над Ярона, Дракона возрождения генерирует Ауритовую руду под Подземельем. Соедините её с Фрагментами души Ярона которые из него выпадают, и вы сможете создать Ауритовый тесла-комплект и новое снаряжение. Вы так же должны создать Священная клубника, последнее улучшение здоровья. Наконец вы можете сразиться с Экзо-механизмом и Высшей ведьмой, Каламитас. Можно сразиться с любым из них первым, и вещи с него помогут в убийстве второго.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/AcesHigh",
+          "itemId": "CalamityMod/DimensionTearingDisk",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/ChickenCannon",
+          "itemId": "CalamityMod/Seraphim",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/CleansingBlaze",
+          "itemId": "CalamityMod/Wrathwing",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Kingsbane",
+          "itemId": "CalamityMod/TheAtomSplitter",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/TyrannysEnd",
+          "itemId": "CalamityMod/Celestus",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/HeavenlyGale",
+          "itemId": "CalamityMod/Supernova",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/TheJailor",
+          "itemId": "CalamityMod/Sacrifice",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/MagnomalyCannon",
-          "category": "weapon"
-        },
-        {
-          "itemId": "CalamityMod/Photoviscerator",
-          "category": "weapon"
-        },
-        {
-          "itemId": "CalamityMod/Condemnation",
-          "category": "weapon"
-        },
-        {
-          "itemId": "CalamityMod/AuricTeslaHeadRanged",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/DynamoStemCells",
+          "itemId": "CalamityMod/BlunderBooster",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/PlanebreakersPouch",
+          "itemId": "CalamityMod/EclipseMirror",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RifleScope",
+          "itemId": "CalamityMod/GloveOfRecklessness",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/Nanotech",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/DragonScales",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/GloveOfPrecision",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SpectralVeil",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/VeneratedLocket",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfCrumbling",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/AmmoBox",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/VanquisherArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/GodSlayerSlug",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MusketBall",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/TungstenBullet",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MiniNukeI",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/EyeofMagnus",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodofDiscord",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/GemTechHeadgear",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -4460,11 +3504,6 @@
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/ReaperToothNecklace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
           "itemId": "CalamityMod/DraedonsHeart",
           "category": "accessory",
           "subgroup": "Защитные"
@@ -4481,11 +3520,6 @@
         },
         {
           "itemId": "CalamityMod/VigorousCandle",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "Terraria/SeafoodDinner",
           "category": "buff",
           "subgroup": "Универсальные"
         },
@@ -4515,17 +3549,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }
@@ -4539,102 +3563,81 @@
       "id": "endgame",
       "title": "Пост-Экзо-механизмы {{icon:CalamityMod/AresBody}}",
       "era": "postmoonlord",
-      "description": "Финальный набор после Экзо-механизмов и Каламитас для добора максимального урона и выживаемости.",
+      "description": "",
       "items": [
         {
-          "itemId": "CalamityMod/Contagion",
+          "itemId": "CalamityMod/Celestus",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/HalibutCannon",
+          "itemId": "CalamityMod/NanoblackReaper",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/SomaPrime",
+          "itemId": "CalamityMod/Sacrifice",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Svantechnical",
+          "itemId": "CalamityMod/ScarletDevil",
           "category": "weapon"
         },
         {
-          "itemId": "CalamityMod/Voidragon",
-          "category": "weapon"
-        },
-        {
-          "itemId": "CalamityMod/AuricTeslaHeadRanged",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/DynamoStemCells",
+          "itemId": "CalamityMod/BlunderBooster",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/PlanebreakersPouch",
+          "itemId": "CalamityMod/EclipseMirror",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/RifleScope",
+          "itemId": "CalamityMod/GloveOfRecklessness",
           "category": "accessory",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/AmmoReservationPotion",
+          "itemId": "CalamityMod/Nanotech",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/DragonScales",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/GloveOfPrecision",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SpectralVeil",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/VeneratedLocket",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfCrumbling",
           "category": "buff",
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "Terraria/ArcheryPotion",
+          "itemId": "CalamityMod/ShadowPotion",
           "category": "buff",
           "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/AmmoBox",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "CalamityMod/BloodfireArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/VanquisherArrow",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "CalamityMod/GodSlayerSlug",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/MiniNukeI",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
-        },
-        {
-          "itemId": "Terraria/Gel",
-          "category": "ammo",
-          "subgroup": "Боеприпасы"
         },
         {
           "itemId": "CalamityMod/EyeofMagnus",
-          "category": "other"
+          "category": "weapon"
         },
         {
           "itemId": "Terraria/RodOfHarmony",
-          "category": "other"
-        },
-        {
-          "itemId": "CalamityMod/DemonshadeHelm",
-          "category": "armor"
-        },
-        {
-          "itemId": "CalamityMod/GemTechHeadgear",
-          "category": "armor"
+          "category": "weapon"
         },
         {
           "itemId": "CalamityMod/TheAbsorber",
@@ -4722,22 +3725,12 @@
           "subgroup": "Атакующие"
         },
         {
-          "itemId": "CalamityMod/ReaperToothNecklace",
-          "category": "accessory",
-          "subgroup": "Атакующие"
-        },
-        {
           "itemId": "CalamityMod/OmegaHealingPotion",
           "category": "buff",
           "subgroup": "Универсальные"
         },
         {
           "itemId": "CalamityMod/VigorousCandle",
-          "category": "buff",
-          "subgroup": "Универсальные"
-        },
-        {
-          "itemId": "Terraria/SeafoodDinner",
           "category": "buff",
           "subgroup": "Универсальные"
         },
@@ -4767,17 +3760,7 @@
           "subgroup": "Мобильные"
         },
         {
-          "itemId": "Terraria/SwiftnessPotion",
-          "category": "buff",
-          "subgroup": "Мобильные"
-        },
-        {
           "itemId": "Terraria/RagePotion",
-          "category": "buff",
-          "subgroup": "Атакующие"
-        },
-        {
-          "itemId": "Terraria/WrathPotion",
           "category": "buff",
           "subgroup": "Атакующие"
         }

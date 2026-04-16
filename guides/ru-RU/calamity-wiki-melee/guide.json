@@ -1,0 +1,3361 @@
+{
+  "schemaVersion": 1,
+  "id": "calamity-wiki-melee",
+  "title": "Calamity wiki - Воин",
+  "author": "TerraPath Team",
+  "language": "ru-RU",
+  "summary": "Копия wiki-конфигурации класса Воин для Calamity (описания этапов оставлены пустыми).",
+  "requiredMods": [
+    "Terraria",
+    "CalamityMod"
+  ],
+  "classTags": [
+    "melee"
+  ],
+  "createdAt": "2026-04-17",
+  "updatedAt": "2026-04-17",
+  "stages": [
+    {
+      "id": "pre-boss",
+      "title": "Пре-боссы {{icon:CalamityMod/DesertScourgeHead}}",
+      "era": "prehardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/BurntSienna",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/EnchantedBoomerang",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/MonstrousKnives",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/Starfury",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/Terragrim",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/FeralClaws",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/WulfrumController",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/Gi",
+          "category": "armor"
+        },
+        {
+          "itemId": "CalamityMod/GladiatorsLocket",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/IlmerisSpark",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/RoverDrive",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/FrogLeg",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/HermesBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/Magiluminescence",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/BlackGlassBand",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/CrawCarapace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/SharkToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/LesserHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/Eggnog",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/ThornsPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "CalamityMod/DesertScourgeHead"
+      ]
+    },
+    {
+      "id": "pre-evil1",
+      "title": "Пре-Пожиратель миров/Мозг Ктулху {{icon:Terraria/EaterofWorldsHead}} {{icon:Terraria/BrainofCthulhu}}",
+      "era": "prehardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/Basher",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/SaharaSlicers",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/SeashineSword",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/UrchinMace",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/Trimarang",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/FeralClaws",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/BrittleStarStaff",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/WulfrumController",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/UnholyTonic",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/ViciousTonic",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/CrownJewel",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/GladiatorsLocket",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/RoverDrive",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/CreativeWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FrogLeg",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/LightningBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/Magiluminescence",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/EoCShield",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/FungalClump",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/AmidiasPendant",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/BlackGlassBand",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/CrawCarapace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/HealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/StrangeBrew",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/BoundingPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/ThornsPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "Terraria/EaterofWorldsHead",
+        "Terraria/BrainofCthulhu"
+      ]
+    },
+    {
+      "id": "pre-evil2",
+      "title": "Пре-Разум улья/Перфораторы {{icon:CalamityMod/HiveMind}} {{icon:CalamityMod/PerforatorHive}}",
+      "era": "prehardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/SeashineSword",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/SmokingComet",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/TheMeatball",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/UrchinMace",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/FeralClaws",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/MagmaStone",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/BrittleStarStaff",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/WulfrumController",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/BrainOfConfusion",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/UnholyTonic",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/ViciousTonic",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/CrownJewel",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/GladiatorsLocket",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/WormScarf",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/CreativeWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FrogLeg",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/LightningBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/Magiluminescence",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/EoCShield",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/FungalClump",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/CrawCarapace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/HealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/BoundingPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/ThornsPotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "CalamityMod/HiveMind",
+        "CalamityMod/PerforatorHive"
+      ]
+    },
+    {
+      "id": "pre-skeletron",
+      "title": "Пре-Скелетрон {{icon:Terraria/SkeletronHead}}",
+      "era": "prehardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/Aorta",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BladecrestOathsword",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/GoldplumeSpear",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/PerfectDark",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/VeinBurster",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/WindBlade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BloodyWormTooth",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FeralClaws",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofFire",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofPoison",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/Aestheticus",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BrittleStarStaff",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/WulfrumController",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/BrainOfConfusion",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/CrownJewel",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/HoneyDew",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/GladiatorsLocket",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/WormScarf",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HorseshoeBundle",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/SkylineWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FrogLeg",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/LightningBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/Magiluminescence",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/CrawCarapace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/HealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/BoundingPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "Terraria/SkeletronHead"
+      ]
+    },
+    {
+      "id": "pre-wof",
+      "title": "Пре-Стена плоти {{icon:Terraria/WallofFlesh}}",
+      "era": "prehardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "Terraria/DarkLance",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/FracturedArk",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/GoldplumeSpear",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/WindBlade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/StatigelArmor",
+          "category": "armor"
+        },
+        {
+          "itemId": "CalamityMod/BloodyWormTooth",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FeralClaws",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofFire",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofPoison",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/Aestheticus",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BrittleStarStaff",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/WulfrumController",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/BrainOfConfusion",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/CrownJewel",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/HoneyDew",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/GladiatorsLocket",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/ObsidianShield",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/RadiantOoze",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/HorseshoeBundle",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/SkylineWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/CounterScarf",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FrogLeg",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/Magiluminescence",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/TerrasparkBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/BoneGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/InfernoPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/BoundingPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/SliceOfCake",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "Terraria/WallofFlesh"
+      ]
+    },
+    {
+      "id": "pre-mech",
+      "title": "Пре-Механические боссы {{icon:Terraria/QueenSlimeBoss}} {{icon:CalamityMod/Cryogen}}",
+      "era": "hardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "Terraria/Bananarang",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/ChainGuillotines",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/CometQuasher",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/ShadowFlameKnife",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/StormSaber",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/PowerGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/BloodyWormScarf",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/WarriorEmblem",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofCursedFlames",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofIchor",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/LunicEye",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/AmalgamatedBrain",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/FrostFlare",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/CharmofMyths",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/GiantTortoiseShell",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/HoneyDew",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/AngelWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/DemonWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/HorseshoeBundle",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/CounterScarf",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/DeepDiver",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FairyBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/TerrasparkBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FrogLeg",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/PutridScent",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SlagsplitterPauldron",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/GreaterHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/PhotosynthesisPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "Terraria/QueenSlimeBoss",
+        "CalamityMod/Cryogen"
+      ]
+    },
+    {
+      "id": "post-mech1",
+      "title": "Пост-Механический босс 1 {{icon:CalamityMod/AquaticScourgeHead}}",
+      "era": "hardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "Terraria/ChainGuillotines",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/MajesticGuard",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/ShadowFlameKnife",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/StormSaber",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/BerserkerGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/PowerGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/BloodyWormScarf",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/WarriorEmblem",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofCursedFlames",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofIchor",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/LunicEye",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/AmalgamatedBrain",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/FrostFlare",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/MoonStone",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/GiantTortoiseShell",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/HoneyDew",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/StarVeil",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/ButterflyWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FlameWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/EvasionScarf",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/DeepDiver",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FairyBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/TerrasparkBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FrogLeg",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/Abaddon",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SlagsplitterPauldron",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/GreaterHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/PhotosynthesisPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "CalamityMod/AquaticScourgeHead"
+      ]
+    },
+    {
+      "id": "post-mech2",
+      "title": "Пост-Механический босс 2 {{icon:CalamityMod/BrimstoneElemental}}",
+      "era": "hardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "Terraria/ChainGuillotines",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/DarklightGreatsword",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/MajesticGuard",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/StarnightLance",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/BerserkerGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/PowerGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/BloodyWormScarf",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/WarriorEmblem",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofCursedFlames",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofIchor",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/LunicEye",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/AmalgamatedBrain",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/FrostFlare",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/MoonStone",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/GiantTortoiseShell",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/HoneyDew",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/StarVeil",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/ButterflyWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FlameWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/EvasionScarf",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/OrnateShield",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FairyBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/TerrasparkBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FrogLeg",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/Abaddon",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SlagsplitterPauldron",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/GreaterHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/PhotosynthesisPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "CalamityMod/BrimstoneElemental"
+      ]
+    },
+    {
+      "id": "pre-plantera",
+      "title": "Пре-Плантера {{icon:Terraria/Plantera}}",
+      "era": "hardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/Brimlash",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/DarklightGreatsword",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/MajesticGuard",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Oblivion",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Pwnagehammer",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/TrueNightsEdge",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BloodyWormScarf",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/MechanicalGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfBrimstone",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofIchor",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/LunicEye",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/AmalgamatedBrain",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/GrandGelatin",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/MoonStone",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/GiantTortoiseShell",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/HoneyDew",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/StarVeil",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/ButterflyWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FlameWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AngelTreads",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FairyBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/EvasionScarf",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/OrnateShield",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/Abaddon",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/GreaterHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "Terraria/Plantera"
+      ]
+    },
+    {
+      "id": "pre-golem",
+      "title": "Пре-Голем {{icon:Terraria/Golem}}",
+      "era": "hardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/AbyssBlade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BlightedCleaver",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BotanicPiercer",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Hellkite",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Quagmire",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/Terragrim",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/VampireKnives",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BloodyWormScarf",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/MechanicalGlove",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfBrimstone",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofVenom",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/LunicEye",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/AmalgamatedBrain",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/GrandGelatin",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/MoonStone",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/FrozenShield",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/LivingDew",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/StarVeil",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/GhostWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AngelTreads",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FairyBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AsgardsValor",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/MasterNinjaGear",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/SandSharkToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/GreaterHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/PhotosynthesisPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "Terraria/Golem"
+      ]
+    },
+    {
+      "id": "post-golem",
+      "title": "Пост-Голем {{icon:Terraria/Golem}}",
+      "era": "hardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/TrueArkoftheAncients",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/ChristmasTreeSword",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/FallenPaladinsHammer",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/FaultLine",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Omniblade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/TerraBlade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TyphonsGreed",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/HydrothermicArmor",
+          "category": "armor"
+        },
+        {
+          "itemId": "CalamityMod/BloodyWormScarf",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/FireGauntlet",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/YoyoBag",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfBrimstone",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofVenom",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/LunicEye",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/CelestialShell",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/FrozenShield",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/LivingDew",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/StarVeil",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/HadalMantle",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/GhostWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/LeviathanAmbergris",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AngelTreads",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FairyBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/VoidofExtinction",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SandSharkToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/GreaterHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/PhotosynthesisPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "Terraria/Golem"
+      ]
+    },
+    {
+      "id": "pre-lunar",
+      "title": "Пре-Лунные события {{icon:Terraria/CultistBoss}}",
+      "era": "hardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/ExaltedOathblade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/FallenPaladinsHammer",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/Flairon",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/PiercingStarlight",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TyphonsGreed",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Virulence",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/HydrothermicArmor",
+          "category": "armor"
+        },
+        {
+          "itemId": "CalamityMod/BloodyWormScarf",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/FireGauntlet",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfBrimstone",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofVenom",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/ApprenticeStaffT3",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/LunicEye",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/CelestialShell",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/BloodPact",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/FrozenShield",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/LivingDew",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/StarVeil",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/BetsyWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RainbowWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FishronWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AngelTreads",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FairyBoots",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AsgardsValor",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/MasterNinjaGear",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/InterstellarStompers",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/VoidofExtinction",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SandSharkToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/GreaterHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/PhotosynthesisPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "Terraria/CultistBoss"
+      ]
+    },
+    {
+      "id": "pre-moonlord",
+      "title": "Пре-Лунный лорд {{icon:Terraria/MoonLordCore}}",
+      "era": "hardmode",
+      "description": "",
+      "items": [
+        {
+          "itemId": "Terraria/DayBreak",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/ExaltedOathblade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/GrandGuardian",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TheMicrowave",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/MonkStaffT3",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/HydrothermicArmor",
+          "category": "armor"
+        },
+        {
+          "itemId": "CalamityMod/HideofAstrumDeus",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/FireGauntlet",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/YoyoBag",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfBrimstone",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofVenom",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/ApprenticeStaffT3",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/EyeofMagnus",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TheAbsorber",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/CelestialShell",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/AmbrosialAmpoule",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/BloodPact",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/DeificAmulet",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/FrozenShield",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/BetsyWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RainbowWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/FishronWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AngelTreads",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AsgardsValor",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/MasterNinjaGear",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/InterstellarStompers",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/VoidofExtinction",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SandSharkToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/SuperHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "Terraria/MoonLordCore"
+      ]
+    },
+    {
+      "id": "pre-provi",
+      "title": "Пре-Провиденс {{icon:CalamityMod/Providence}}",
+      "era": "postmoonlord",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/ArkoftheElements",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Lightspeed",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/Meowmere",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/StellarContempt",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/Terrarian",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/CelestialShell",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/FireGauntlet",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/WingsSolar",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/YoyoBag",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfCrumbling",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/EyeofMagnus",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/RelicOfDeliverance",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TheAbsorber",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/AmbrosialAmpoule",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/BloodPact",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/DeificAmulet",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LongRainbowTrailWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/MoonWalkers",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AsgardsValor",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/StatisNinjaBelt",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/ShieldoftheHighRuler",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/EmpressFlightBooster",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/DestroyerEmblem",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SandSharkToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/WarbanneroftheRighteous",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/SuperHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/PhotosynthesisPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "CalamityMod/Providence"
+      ]
+    },
+    {
+      "id": "pre-polter",
+      "title": "Пре-Полтергаст {{icon:CalamityMod/Polterghast}}",
+      "era": "postmoonlord",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/BurningRevelation",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/GalactusBlade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/HolyCollider",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/LifehuntScythe",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Mourningstar",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Terratomere",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BadgeofBravery",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/BloodyWormScarf",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/FireGauntlet",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/WarbanneroftheRighteous",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/YoyoBag",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofIchor",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/EyeofMagnus",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/RelicOfDeliverance",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TheAbsorber",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheEvolution",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/AmbrosialAmpoule",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/BloodPact",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/DeificAmulet",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/ElysianWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/MoonWalkers",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AscendantInsignia",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/ElysianAegis",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/StatisNinjaBelt",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/ArcFlashRing",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/DestroyerEmblem",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/SandSharkToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/Bloodfin",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/SupremeHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "CalamityMod/Polterghast"
+      ]
+    },
+    {
+      "id": "pre-dog",
+      "title": "Пре-Пожиратель богов {{icon:CalamityMod/DevourerofGodsHead}}",
+      "era": "postmoonlord",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/DeathsAscension",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/GalileoGladius",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/InsidiousImpaler",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/NeptunesBounty",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/LionHeart",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TerrorBlade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BadgeofBravery",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FireGauntlet",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/WarbanneroftheRighteous",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfCrumbling",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/EyeofMagnus",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/RelicOfDeliverance",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TheAbsorber",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/Affliction",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheEvolution",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/AmbrosialAmpoule",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/BloodPact",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/DeificAmulet",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/ElysianWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/VoidStriders",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/LeviathanAmbergris",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AscendantInsignia",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/ArcFlashRing",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ReaperToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/Bloodfin",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/SupremeHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "CalamityMod/DevourerofGodsHead"
+      ]
+    },
+    {
+      "id": "pre-yharon",
+      "title": "Пре-Ярон {{icon:CalamityMod/Yharon}}",
+      "era": "postmoonlord",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/CosmicDischarge",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/CosmicShiv",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/EmpyreanKnives",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/MawOfInfinity",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/GalaxySmasher",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Murasama",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BadgeofBravery",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ElementalGauntlet",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/WarbanneroftheRighteous",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/FlaskofIchor",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/EyeofMagnus",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TheAbsorber",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/Affliction",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheAmalgam",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/DarkSunRing",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheEvolution",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/AmbrosialAmpoule",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/ChaliceOfTheBloodGod",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/DeificAmulet",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/TheSponge",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/VoidStriders",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/SilvaWings",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AscendantInsignia",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AsgardianAegis",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/StatisVoidSash",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/ArcFlashRing",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ReaperToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/OmegaHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "CalamityMod/Yharon"
+      ]
+    },
+    {
+      "id": "pre-scal-exo",
+      "title": "Пре-Экзо-механизмы/Высшая ведьма, Каламитас {{icon:CalamityMod/AresBody}} {{icon:CalamityMod/SupremeCalamitas}}",
+      "era": "postmoonlord",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/ArkoftheCosmos",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Ataraxia",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/DragonPow",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/DragonRage",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TheOracle",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/Zenith",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Exoblade",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BadgeofBravery",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ElementalGauntlet",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "Terraria/YoyoBag",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfCrumbling",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/EyeofMagnus",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodofDiscord",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TheAbsorber",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/Affliction",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheAmalgam",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/DarkSunRing",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheEvolution",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/ChaliceOfTheBloodGod",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/Radiance",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/RampartofDeities",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/TheSponge",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/WingsofRebirth",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/SeraphTracers",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AscendantInsignia",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AsgardianAegis",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/StatisVoidSash",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/ArcFlashRing",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ReaperToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/DraedonsHeart",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/ShatteredCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/OmegaHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ],
+      "bossRefs": [
+        "CalamityMod/AresBody",
+        "CalamityMod/SupremeCalamitas"
+      ]
+    },
+    {
+      "id": "endgame",
+      "title": "Пост-Экзо-механизмы {{icon:CalamityMod/AresBody}}",
+      "era": "postmoonlord",
+      "description": "",
+      "items": [
+        {
+          "itemId": "CalamityMod/Earth",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/Ozzathoth",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/DraconicDestruction",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/IllustriousKnives",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/RedSun",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TriactisTruePaladinianMageHammerofMight",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/BadgeofBravery",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ElementalGauntlet",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/FlaskOfCrumbling",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/EyeofMagnus",
+          "category": "weapon"
+        },
+        {
+          "itemId": "Terraria/RodOfHarmony",
+          "category": "weapon"
+        },
+        {
+          "itemId": "CalamityMod/TheAbsorber",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/Affliction",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheAmalgam",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/DarkSunRing",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/TheEvolution",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/ShatteredCommunity",
+          "category": "accessory",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/ChaliceOfTheBloodGod",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/DraedonsHeart",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/Radiance",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/RampartofDeities",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/TheSponge",
+          "category": "accessory",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/WingsofRebirth",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/SeraphTracers",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AscendantInsignia",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/AsgardianAegis",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/StatisVoidSash",
+          "category": "accessory",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "CalamityMod/ArcFlashRing",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/ReaperToothNecklace",
+          "category": "accessory",
+          "subgroup": "Атакующие"
+        },
+        {
+          "itemId": "CalamityMod/OmegaHealingPotion",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "CalamityMod/VigorousCandle",
+          "category": "buff",
+          "subgroup": "Универсальные"
+        },
+        {
+          "itemId": "Terraria/EndurancePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/IronskinPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/LifeforcePotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "Terraria/RegenerationPotion",
+          "category": "buff",
+          "subgroup": "Защитные"
+        },
+        {
+          "itemId": "CalamityMod/SoaringPotion",
+          "category": "buff",
+          "subgroup": "Мобильные"
+        },
+        {
+          "itemId": "Terraria/RagePotion",
+          "category": "buff",
+          "subgroup": "Атакующие"
+        }
+      ]
+    }
+  ]
+}
