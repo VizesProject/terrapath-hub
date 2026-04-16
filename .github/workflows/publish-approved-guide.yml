@@ -100,9 +100,11 @@ jobs:
           BRANCH_NAME: ${{ steps.branch.outputs.branch_name }}
           GUIDE_ID: ${{ steps.export.outputs.guide_id }}
           GUIDE_PATH: ${{ steps.export.outputs.guide_path }}
+          BOT_PAT: ${{ secrets.BOT_PAT }}
         with:
-          github-token: ${{ secrets.BOT_PAT != '' && secrets.BOT_PAT || github.token }}
+          github-token: ${{ github.token }}
           script: |
+            const { getOctokit } = require("@actions/github");
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             const branchName = process.env.BRANCH_NAME;
@@ -123,8 +125,8 @@ jobs:
             let outcome = "no_changes";
             let errorMessage = "";
 
-            try {
-              const existing = await github.rest.pulls.list({
+            const upsertPublicationPr = async (client) => {
+              const existing = await client.rest.pulls.list({
                 owner,
                 repo,
                 state: "all",
@@ -141,7 +143,7 @@ jobs:
 
                 if (current.state === "closed" && !current.merged_at) {
                   try {
-                    const reopened = await github.rest.pulls.update({
+                    const reopened = await client.rest.pulls.update({
                       owner,
                       repo,
                       pull_number: current.number,
@@ -157,7 +159,7 @@ jobs:
 
                 outcome = "created";
               } else {
-                const created = await github.rest.pulls.create({
+                const created = await client.rest.pulls.create({
                   owner,
                   repo,
                   title,
@@ -169,7 +171,7 @@ jobs:
                 outcome = "created";
 
                 try {
-                  await github.rest.issues.addLabels({
+                  await client.rest.issues.addLabels({
                     owner,
                     repo,
                     issue_number: created.data.number,
@@ -179,10 +181,35 @@ jobs:
                   core.warning(`Could not add automated-pr label: ${labelError.message}`);
                 }
               }
+            };
+
+            try {
+              await upsertPublicationPr(github);
             } catch (error) {
-              outcome = "failure";
-              errorMessage = error.message || String(error);
-              core.warning(`Automatic PR creation failed: ${errorMessage}`);
+              const primaryMessage = error.message || String(error);
+              const shouldRetryWithPat =
+                !!process.env.BOT_PAT &&
+                (
+                  error.status === 401 ||
+                  error.status === 403 ||
+                  /bad credentials|resource not accessible by integration|not permitted/i.test(primaryMessage)
+                );
+
+              if (shouldRetryWithPat) {
+                core.warning(`Primary PR creation attempt failed (${primaryMessage}). Retrying with BOT_PAT...`);
+                try {
+                  const patGithub = getOctokit(process.env.BOT_PAT);
+                  await upsertPublicationPr(patGithub);
+                } catch (patError) {
+                  outcome = "failure";
+                  errorMessage = patError.message || String(patError);
+                  core.warning(`Automatic PR creation failed with BOT_PAT: ${errorMessage}`);
+                }
+              } else {
+                outcome = "failure";
+                errorMessage = primaryMessage;
+                core.warning(`Automatic PR creation failed: ${errorMessage}`);
+              }
             }
 
             core.setOutput("pull-request-url", prUrl);
