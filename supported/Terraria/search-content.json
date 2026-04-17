@@ -59595,6 +59595,7 @@
       "icon": "assets/icons/terraria/search-items/terragrim.png",
       "kind": "item",
       "tags": [
+        "override",
         "weapon"
       ]
     },
